@@ -41,7 +41,7 @@ West Virginia University, Morgantown, WV}
 
 \begin{abstract}
 %% Abstract goes here
-Recent work has shown the importance of environment to the properties of dark matter halos. This brings conflict to standard implementations of the halo model and excursion set theory which assume that the properties of a population within the halo is determined by the mass of the halo alone. We seek to find a definition of the size of a halo that allows us to circumvent these environmental effects. We analyze the dependence on environment of our properties using the method of marked correlation functions for several different halo definitions, utilizing the Max and Consuelo simulations. We find that environmental dependencies are dramatically different as we vary the definition of the halo radius in terms of the overdensity parameter $\Delta$. We show that not every halo property converges to our confidence region in the same manner and contemplate where our results may prove useful and what might be implied by the other cases.
+Recent work has shown the importance of environment to the properties of dark matter halos. This brings conflict to standard implementations of the halo model and excursion set theory which assume that the properties of a population within the halo is determined by the mass of the halo alone. We seek to find a definition of the size of a halo that allows us to circumvent these environmental effects. We analyze the dependence on environment of our properties using the method of marked correlation functions for several different halo definitions, utilizing the Consuelo and Diemer et al simulations. We find that environmental dependencies are dramatically different as we vary the definition of the halo radius in terms of the overdensity parameter $\Delta$.  Further, we analyze the mass dependence on these effects and how they factor into the ultimate applicability of our methodology.
 \end{abstract}
 
 \begin{keywords}
@@ -75,7 +75,7 @@ In \S~\ref{section:data} of this paper, we consider the simulated cosmological b
 \label{section:data}
 %------------------------------------
 
-In order to study the effects of halo redefinition, we make extensive use of two simulation suites. The Max simulation uses Zel'dovich approximation initial conditions with $\Om = 0.3036$, $\Ol = 0.6964$ and  $h_0 =  0.6814$. The simulation box has a comoving size of $200 \hMpc$ and a particle mass of $2.18396 \times 10^9 \hMsun$, with a total of $768^3$ particles. This allows us to make relevant analysis on structure formation inside of our box on scales up to about $30 \hMpc$. We also analyze the Consuelo simulation from the Large Suite of Dark Matter Simulations (LasDamas) (McBride et al, in prep? I literally cannot find this paper despite it being in prep since 2012!) :which ran with a cosmology with $\Om = 0.25$, $\Ol = 0.75$, and $h_o = 0.7$. This simulation box has a comoving size of $420 \hMpc$ and a particle mass of $1.87\times 10^9 \hMsun$, with a total of $1400^3$ particles.
+In order to study the effects of halo redefinition, we make extensive use of two simulation suites. The Diemer et al simulations each utilize a Planck best fit cosmology with $\Om = 0.32$, $\Ol = 0.68$, and $h_o = 0.67$. We use three simulation boxes with comoving sizes of $125, 250, and 500 \hMpc$ respectively. The particle mass of $1.6 \times 10^8 \hMsun$, with a total of $1024^3$ particles in each simulation. This set of simulations allows us to probe the resolution effects on halo finding, as each box has a factor of eight difference in effective resolution. We also analyze the Consuelo simulation from the Large Suite of Dark Matter Simulations (LasDamas) (McBride et al, in prep? I literally cannot find this paper despite it being in prep since 2012!) :which ran with a cosmology with $\Om = 0.25$, $\Ol = 0.75$, and $h_o = 0.7$. This simulation box has a comoving size of $420 \hMpc$ and a particle mass of $1.87\times 10^9 \hMsun$, with a total of $1400^3$ particles. The difference in cosmology between the two sets of boxes will allow us to determine if this has drastic implications on our method.
 
 For halo finding we use the ROCKSTAR halo finder, which works on the phase space algorithm described in \citet*{behroozi13}. In short, ROCKSTAR determines the initial groupings using a FOF algorithm in phase space, before then applying the spherical overdensity case in order to determine the properties of interest. Unbound particles are removed prior to the calculation of halo mass and other properties of interest. In addition, we take interest of the shape of the halo, which is determined through the sorted eigenvalues of the inertia tensor, with principal ellipsoid axes defined such that $a >b > c$. Some of these parameters are determined after fitting the particles to the Navarro-Frenk-White profile \citep*{nfw97}.
 
@@ -90,7 +90,7 @@ Here, $\rho_b$ is the background mass density of the simulation box, while $\rho
 With the combination of this analysis and the ROCKSTAR data, we define the following properties of interest:
 
 \beq
-	c_{\mathrm{vratio}} = \frac{v_{\mathrm{max}}}{v_{\Delta}} ; \ \ c_{\mathrm{NFW}} = \frac{\Rdel}{r_\mathrm{s}}; \ \ s = \frac{c}{a} \ \
+	c_{\mathrm{vratio}} = \frac{v_{\mathrm{max}}}{v_{\Delta}} ; \ \ c_{\mathrm{NFW}} = \frac{\Rdel}{r_\mathrm{s}}; \ \ s = \frac{c}{a}; \\ \Lambda = \frac{J \sqrt{\abs{E}}}{G M_{vir}^{2.5} \\
 \eeq
 
 \begin{figure}
@@ -99,19 +99,19 @@ With the combination of this analysis and the ROCKSTAR data, we define the follo
 	\caption{The relationship between the two different marks of concentration.}
 \end{figure}
 
-The first two marks listed above are different proxies for the concentration of the halo. The relationships between these marks are shown in Figure 1 and it can be seen that they can be related to each other with some scatter. The ROCKSTAR catalogs give us the max  circular velocity of a hypothetical particle, $v_{\mathrm{max}}$, the scale radius, $r_{\mathrm{s}}$, the halo radius, $\Rdel$, and both ellipsoidal axis parameters $c$ and $a$. The circular velocity of a particle at the halo radius is calculated by $v_{\Delta} = \sqrt{\frac{G M(< \Rdel)}{\Rdel}}$
+The first two marks listed above are different proxies for the concentration of the halo. The relationships between these marks are shown in Figure 1 and it can be seen that they can be related to each other with some scatter. The ROCKSTAR catalogs give us the max  circular velocity of a hypothetical particle, $v_{\mathrm{max}}$, the scale radius, $r_{\mathrm{s}}$, the halo radius, $\Rdel$, both ellipsoidal axis parameters $c$ and $a$, and the spin parameter, $\Lambda$ as introduced by \citep{peebles69} in terms of the halo angular momentrum $J$ and the total energy of the halo $E$ . The circular velocity of a particle at the halo radius is calculated by $v_{\Delta} = \sqrt{\frac{G M(< \Rdel)}{\Rdel}}$.
 
 %-----------------------
 \section[]{Methodology}
 \label{section:methodology}
 %-----------------------
 
-There are several well understood effects in our simulation that must be accounted for before we can draw any conclusions. The first is the matter of simulation resolution. In each of our generated halo catalogs, we can anticipate finding artificial halos. While existing under our constraint of having only a set overdensity, they will have properties that are contrary to the well known trends that have been shown in prior works, such as concentration decreasing as a function of halo mass \citep{wechsler06}. As shown in Figure 2, we can roughly identify the region in which these artificial halos become significant by looking for the turnover in the plot. In order to avoid our halo finding statistics being thrown off by these artificial halos, we set a lower mass threshold, limiting the sample to only those halos that are physically significant. We choose to use the higher mass constraint between the Max and Consuelo simulation boxes for consistency.
+There are several well understood effects in our simulation that must be accounted for before we can draw any conclusions. The first is the matter of simulation resolution. In each of our generated halo catalogs, we can anticipate finding artificial halos. While existing under our constraint of having only a set overdensity, they will have properties that conflict with well known trends that have been shown in prior works, such as concentration decreasing as a function of halo mass \citep{wechsler06}. As shown in Figure 2, we can roughly identify the region in which these artificial halos become significant by looking for the turnover in the plot. In order to avoid our halo finding statistics being thrown off by these artificial halos, we set a lower mass threshold, limiting the sample to only those halos that are physically significant. We choose to use the higher mass constraint between the Max and Consuelo simulation boxes for consistency.
 
 \begin{figure}
 	\centering
 		\includegraphics[width=.5\textwidth]{masscut_d200.pdf}
-	\caption{An example of the chosen lower limit on halo mass for our sample is marked as a black line, for the $\Delta = 200$ case. The shaded blue region depicts the spread on the power in the concentration-mass relationship proposed by \citet{duffy08}. At lower mass, halos are ill defined due to resolution limits. The shaded region illustrates the implied two-sigma band of \citet{duffy08} mass-concentration relation.}
+	\caption{An example of the chosen lower limit on halo mass for our sample is marked as a black line, for the $\Delta = 200$ case. The shaded blue region depicts the spread on the power in the concentration-mass relationship proposed by \citet{duffy08}.  The shaded region illustrates the implied two-sigma band of \citet{duffy08} mass-concentration relation. At lower mass, halos are ill defined due to resolution limits.}
 \end{figure}
 
 Another well known effect is the scaling of our properties as a function of halo mass, as well demonstrated within the literature \citep{duffy08}. We are interested in the clustering behavior beyond this well known effect, so we seek to remove this scaling. We take all host halos of interest and sort them by their halo mass. Each set of halo properties are then placed in bins of equal population in order to assure that enough data points exist for robust statistics. We then normalize each mark in a given bin to the mean value. The end result is halo properties that do not change as a function of mass, allowing us to more accurately analyze clustering behavior within our simulation.
@@ -127,12 +127,19 @@ The second method is to use a weighted correlation function, often referred to i
 \label{section:results}
 %----------------------------
 
-%% for each of the following results, should put Max and LasDamas results side by side
+%% for the time being, we should seek to have a square grid of plots - L0125, L0250, L0500, and Consuelo, for each major results plot. Time to Google how to do that!
+%% also, consider redoing this first plot. Perhaps do xi_highconc / xi_lowconc? Original problem with this was different radial bin centers, but this can be checked against
+%% for severity. Shouldn't be too bad an approximation though, and should also be less visually cluttered.
+%% perhaps just slap a \\ after the second subfloat and repeat? Maybe?
 \begin{figure}
 	\centering
-	\subfloat[Consuelo]{{\includegraphics[width=.5\textwidth]{ld_cf_compare_z00.pdf}} }
+	\subfloat[L0125]{{\includegraphics[width=.5\textwidth]{L0125_cf_compare_z00_hosts.pdf}} }
 	\qquad
-	\subfloat[Max]{{\includegraphics[width=.5\textwidth]{max_cf_compare_z00.pdf}} }
+	\subfloat[L0250]{{\includegraphics[width=.5\textwidth]{L0250_cf_compare_z00_hosts.pdf}} }
+	\\
+	\subfloat[L0500]{{\includegraphics[width=.5\textwidth]{L0500_cf_compare_z00_hosts.pdf}} }
+	\qquad
+	\subfloat[Consuelo]{{\includegraphics[width=.5\textwidth]{ld_cf_compare_z00_hosts.pdf}} }
 	\caption{The difference of the correlation function of all hosts compared to a cut of the 20 \% highest or lowest NFW defined concentration halos. The solid lines represent the difference from the highest concentration cut, the dashed lines represent the difference from the lowest concentration cut.}
 \end{figure}
 
@@ -140,9 +147,13 @@ Figure 3 demonstrates the results of our method as we change the value of $\Delt
 
 \begin{figure}
 	\centering
-	\subfloat[Consuelo]{{\includegraphics[width=.5\textwidth]{ld_mcf_cnfw_z00.pdf}} }
+	\subfloat[L0125]{{\includegraphics[width=.5\textwidth]{L0125_mcf_cnfw_z00_hosts.pdf}} }
 	\qquad
-	\subfloat[Max]{{\includegraphics[width=.5\textwidth]{max_mcf_cnfw_z00.pdf}} }
+	\subfloat[L0250]{{\includegraphics[width=.5\textwidth]{L0250_mcf_cnfw_z00_hosts.pdf}} }
+	\\
+	\subfloat[L0500]{{\includegraphics[width=.5\textwidth]{L0500_mcf_cnfw_z00_hosts.pdf}} }
+	\qquad
+	\subfloat[Consuelo]{{\includegrpahics[width=.5\textwidth]{ld_mcf_cnfw_z00_hosts.pdf}} }
 	\caption{The marked correlation function for the concentration defined according to the NFW profile. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The dashed line denotes the largest halo radius for a given value of the overdensity parameter.}
 \end{figure}
 
@@ -150,9 +161,13 @@ The NFW defined concentration MCF is shown in Figure 4. It can been that as we d
 
 \begin{figure}
 	\centering
-	\subfloat[Consuelo]{{\includegraphics[width=.5\textwidth]{ld_mcf_vrat_z00.pdf}} }
+	\subfloat[L0125]{{\includegraphics[width=.5\textwidth]{L0125_mcf_vrat_z00_hosts.pdf}} }
 	\qquad
-	\subfloat[Max]{{\includegraphics[width=.5\textwidth]{max_mcf_vrat_z00.pdf}} }
+	\subfloat[L0250]{{\includegraphics[width=.5\textwidth]{L0250_mcf_vrat_z00_hosts.pdf}} }
+	\\
+	\subfloat[L0500]{{\includegraphics[width=.5\textwidth]{L0500_mcf_vrat_z00_hosts.pdf}} }
+	\qquad
+	\subfloat[Consuelo]{{\includegraphics[width=.5\textwidth]{ld_mcf_vrat_z00_hosts.pdf}} }
 	\caption{The marked correlation function for the concentration defined according to the velocity ratio. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The dashed line denotes the largest halo radius for a given value of the overdensity parameter.}
 \end{figure}
 
@@ -160,19 +175,39 @@ The velocity ratio defined concentration MCF is shown in Figure 5. It can be imm
 
 \begin{figure}
 	\centering
-	\subfloat[Consuelo]{{\includegraphics[width=.5\textwidth]{ld_mcf_s_z00.pdf}} }
+	\subfloat[L0125]{{\includegraphics[width=.5\textwidth]{L0125_mcf_s_z00_hosts.pdf}} }
 	\qquad
-	\subfloat[Max]{{\includegraphics[width=.5\textwidth]{max_mcf_s_z00.pdf}} }
+	\subfloat[L0250]{{\includegraphics[width=.5\textwidth]{L0250_mcf_s_z00_hosts.pdf}} }
+	\\
+	\subfloat[L0500]{{\includegraphics[width=.5\textwidth]{L0500_mcf_s_z00_hosts.pdf}} }
+	\qquad
+	\subfloat[Consuelo]{{\includegraphics[width=.5\textwidth]{ld_mcf_s_z00_hosts.pdf}} }
 	\caption{The marked correlation function for the shape of the halo. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The dashed line denotes the largest halo radius for a given value of the overdensity parameter.}
 \end{figure}
 
-Figure 6 demonstrates a case in which the halo property does not have environmental dependence removed under our simple method of halo redefinition. In particular, with decreasing values of $\Delta$, we only serve to increase the strength of this environmental dependence. This result seems to indicate a process occurring to drive the shape of the halo is on scales that are significantly larger than the size of the halo, such that our method will not be able to encompass these effects. A similar result is located in Figure 7, in which the satellite number mark experiences the exact same effect.
+Figure 6 demonstrates a case in which the halo property does not have environmental dependence removed under our simple method of halo redefinition. In particular, with decreasing values of $\Delta$, we only serve to increase the strength of this environmental dependence. This result seems to indicate a process occurring to drive the shape of the halo is on scales that are significantly larger than the size of the halo, such that our method will not be able to encompass these effects. A similar result is located in both Figure 7 and Figure 8, in which the spin parameter mark and satellite number mark experience the exact same effect.
 
 \begin{figure}
 	\centering
-	\subfloat[Consuelo]{{\includegraphics[width=.5\textwidth]{ld_mcf_ns_z00.pdf}} }
+	\subfloat[L0125]{{\includegraphics[width=.5\textwidth]{L0125_mcf_spin_z00_hosts.pdf}} }
 	\qquad
-	\subfloat[Max]{{\includegraphics[width=.5\textwidth]{max_mcf_ns_z00.pdf}} }
+	\subfloat[L0250]{{\includegraphics[width=.5\textwidth]{L0250_mcf_spin_z00_hosts.pdf}} }
+	\\
+	\subfloat[L0500]{{\includegraphics[width=.5\textwidth]{L0500_mcf_spin_z00_hosts.pdf}} }
+	\qquad
+	\subfloat[Consuelo]{{\includegraphics[width=.5\textwidth]{ld_mcf_spin_z00_hosts.pdf}} }
+	\caption{The marked correlation function for the spin parameter of the halo. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The dashed line denotes the largest halo radius for a given value of the overdensity parameter.}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\subfloat[L0125]{{\includegraphics[width=.5\textwidth]{L0125_mcf_ns_z00_hosts.pdf}} }
+	\qquad
+	\subfloat[L0250]{{\includegraphics[width=.5\textwidth]{L0250_mcf_ns_z00_hosts.pdf}} }
+	\\
+	\subfloat[L0500]{{\includegraphics[width=.5\textwidth]{L0500_mcf_ns_z00_hosts.pdf}} }
+	\qquad
+	\subfloat[Consuelo]{{\includegrpahics[width=.5\textwidth]{ld_mcf_ns_z00_hosts.pdf}} }
 	\caption{The marked correlation function for the satellite number. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The dashed line denotes the largest halo radius for a given value of the overdensity parameter.}
 \end{figure}
 
@@ -189,6 +224,9 @@ In the case that the halo can be described well by an NFW profile, one expects a
 Halo shape and satellite number are statistics that do not end up having their environmental effects removed and can even be made more prominent by our methodology. One intuitive way to consider the former statistic is in the context of the cosmic web. Studies have shown a statistically significant alignment between filaments and satellite galaxy position \citep{tempel15, velliscig15}. Our method then expands the halo radius and subsumes material that was previously outside of the halo. A simple graphic illustrates this potential effect in Figure 8. As there is a preferential distribution of these satellites that are being subsumed into the halo, this would serve to induce a shape to the halo that would then be determined by Rockstar. In addition, as our satellite number is chosen by those halos within the halo radius, we anticipate that the most clustered regions would see the largest increase in satellite count and thus see an increase in the satellite number mark.
 
 The ``sweet spot'' behavior of this method is also of interest to us. The halo redefinition process that we use serves to decrease halo clustering for the most concentrated halos and increase halo clustering for the least concentrated halos. In the case of the high concentration cut, the reduced clustering can be seen as a result of halo exclusion. As we exchange collections of tightly clustered smaller halos for a single larger halo, then the most prominent contribution of the two-point correlation function will be reduced at all scales.
+
+
+%% add segment examining the mass dependence of this method in particular. Compariosn plots of L0125 vs L0250 and L0250 vs L0500 with the overlapping mass cuts is ideal
 
 %----------------------
 \section[]{Conclusions}
