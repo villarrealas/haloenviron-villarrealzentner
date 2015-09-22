@@ -90,13 +90,13 @@ Here, $\rho_b$ is the background mass density of the simulation box, while $\rho
 With the combination of this analysis and the ROCKSTAR data, we define the following properties of interest:
 
 \beq
-	c_{\mathrm{vratio}} = \frac{v_{\mathrm{max}}}{v_{\Delta}} ; \ \ c_{\mathrm{NFW}} = \frac{\Rdel}{r_\mathrm{s}}; \ \ s = \frac{c}{a}; \\ \Lambda = \frac{J \sqrt{\abs{E}}}{G M_{vir}^{2.5} \\
+	c_{\mathrm{vratio}} = \frac{v_{\mathrm{max}}}{v_{\Delta}} ; \ \ c_{\mathrm{NFW}} = \frac{\Rdel}{r_\mathrm{s}}; \ \ s = \frac{c}{a}; \\ \Lambda = \frac{J \sqrt{\lvert E\rvert}}{G M_{vir}^{2.5}} \\
 \eeq
 
 \begin{figure}
 	\centering
 		\includegraphics[width=.5\textwidth]{ldcompare_cnfwvscvrat_z00.pdf}
-	\caption{The relationship between the two different marks of concentration.}
+	\caption{The relationship between the two different marks of concentration, using halos in the Consuelo simulation box.}
 \end{figure}
 
 The first two marks listed above are different proxies for the concentration of the halo. The relationships between these marks are shown in Figure 1 and it can be seen that they can be related to each other with some scatter. The ROCKSTAR catalogs give us the max  circular velocity of a hypothetical particle, $v_{\mathrm{max}}$, the scale radius, $r_{\mathrm{s}}$, the halo radius, $\Rdel$, both ellipsoidal axis parameters $c$ and $a$, and the spin parameter, $\Lambda$ as introduced by \citep{peebles69} in terms of the halo angular momentrum $J$ and the total energy of the halo $E$ . The circular velocity of a particle at the halo radius is calculated by $v_{\Delta} = \sqrt{\frac{G M(< \Rdel)}{\Rdel}}$.
@@ -110,7 +110,7 @@ There are several well understood effects in our simulation that must be account
 
 \begin{figure}
 	\centering
-		\includegraphics[width=.5\textwidth]{masscut_d200.pdf}
+		\includegraphics[width=.5\textwidth]{masscut_cnfw_d200.pdf}
 	\caption{An example of the chosen lower limit on halo mass for our sample is marked as a black line, for the $\Delta = 200$ case. The shaded blue region depicts the spread on the power in the concentration-mass relationship proposed by \citet{duffy08}.  The shaded region illustrates the implied two-sigma band of \citet{duffy08} mass-concentration relation. At lower mass, halos are ill defined due to resolution limits.}
 \end{figure}
 
@@ -131,85 +131,73 @@ The second method is to use a weighted correlation function, often referred to i
 %% also, consider redoing this first plot. Perhaps do xi_highconc / xi_lowconc? Original problem with this was different radial bin centers, but this can be checked against
 %% for severity. Shouldn't be too bad an approximation though, and should also be less visually cluttered.
 %% perhaps just slap a \\ after the second subfloat and repeat? Maybe?
-\begin{figure}
+\begin{figure*}
 	\centering
-	\subfloat[L0125]{{\includegraphics[width=.5\textwidth]{L0125_cf_compare_z00_hosts.pdf}} }
-	\qquad
-	\subfloat[L0250]{{\includegraphics[width=.5\textwidth]{L0250_cf_compare_z00_hosts.pdf}} }
+	\subfloat[L0125]{{\includegraphics[width=.45\textwidth]{L0125_cf_compare_z00_hosts.pdf}} }
+	\subfloat[L0250]{{\includegraphics[width=.45\textwidth]{L0250_cf_compare_z00_hosts.pdf}} }
 	\\
-	\subfloat[L0500]{{\includegraphics[width=.5\textwidth]{L0500_cf_compare_z00_hosts.pdf}} }
-	\qquad
-	\subfloat[Consuelo]{{\includegraphics[width=.5\textwidth]{ld_cf_compare_z00_hosts.pdf}} }
+	\subfloat[L0500]{{\includegraphics[width=.45\textwidth]{L0250_cf_compare_z00_hosts.pdf}} }
+	\subfloat[Consuelo]{{\includegraphics[width=.45\textwidth]{ld_cf_compare_z00_hosts.pdf}} }
 	\caption{The difference of the correlation function of all hosts compared to a cut of the 20 \% highest or lowest NFW defined concentration halos. The solid lines represent the difference from the highest concentration cut, the dashed lines represent the difference from the lowest concentration cut.}
-\end{figure}
+\end{figure*}
 
 Figure 3 demonstrates the results of our method as we change the value of $\Delta$. It can be seen that for between the values of $\Delta = 100$ and $\Delta = 75$ that both the high and low concentration cuts of the data can be brought into close agreement. This feature is seen in both the Consuelo and Max simulations. It should be noted that both the high and low concentration cuts move closer toward a state with environmental dependencies being thoroughly removed within the margin of error from opposite directions in terms of clustering. Changing the value of $\Delta$ beyond the observed ``sweet spot" appears to reintroduce the problem we are attempting to remove.
 
-\begin{figure}
+\begin{figure*}
 	\centering
-	\subfloat[L0125]{{\includegraphics[width=.5\textwidth]{L0125_mcf_cnfw_z00_hosts.pdf}} }
-	\qquad
-	\subfloat[L0250]{{\includegraphics[width=.5\textwidth]{L0250_mcf_cnfw_z00_hosts.pdf}} }
+	\subfloat[L0125]{{\includegraphics[width=.45\textwidth]{L0125_mcf_cnfw_z00_hosts.pdf}} }
+	\subfloat[L0250]{{\includegraphics[width=.45\textwidth]{L0250_mcf_cnfw_z00_hosts.pdf}} }
 	\\
-	\subfloat[L0500]{{\includegraphics[width=.5\textwidth]{L0500_mcf_cnfw_z00_hosts.pdf}} }
-	\qquad
-	\subfloat[Consuelo]{{\includegrpahics[width=.5\textwidth]{ld_mcf_cnfw_z00_hosts.pdf}} }
+	\subfloat[L0500]{{\includegraphics[width=.45\textwidth]{L0250_mcf_cnfw_z00_hosts.pdf}} }
+	\subfloat[Consuelo]{{\includegraphics[width=.45\textwidth]{ld_mcf_cnfw_z00_hosts.pdf}} }
 	\caption{The marked correlation function for the concentration defined according to the NFW profile. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The dashed line denotes the largest halo radius for a given value of the overdensity parameter.}
-\end{figure}
+\end{figure*}
 
 The NFW defined concentration MCF is shown in Figure 4. It can been that as we decrease the value of the overdensity parameter $\Delta$ to lower values down to $\Delta = 50$. It can be seen that at scales of $r > 10 \hMpc$, environmental effects are removed between $\Delta = 100$ and $\Delta =75$. The fact that this holds true over two different realizations and box resolutions seems to indicate that this method is fairly robust.
 
-\begin{figure}
+\begin{figure*}
 	\centering
-	\subfloat[L0125]{{\includegraphics[width=.5\textwidth]{L0125_mcf_vrat_z00_hosts.pdf}} }
-	\qquad
-	\subfloat[L0250]{{\includegraphics[width=.5\textwidth]{L0250_mcf_vrat_z00_hosts.pdf}} }
+	\subfloat[L0125]{{\includegraphics[width=.45\textwidth]{L0125_mcf_vrat_z00_hosts.pdf}} }
+	\subfloat[L0250]{{\includegraphics[width=.45\textwidth]{L0250_mcf_vrat_z00_hosts.pdf}} }
 	\\
-	\subfloat[L0500]{{\includegraphics[width=.5\textwidth]{L0500_mcf_vrat_z00_hosts.pdf}} }
-	\qquad
-	\subfloat[Consuelo]{{\includegraphics[width=.5\textwidth]{ld_mcf_vrat_z00_hosts.pdf}} }
+	\subfloat[L0500]{{\includegraphics[width=.45\textwidth]{L0250_mcf_vrat_z00_hosts.pdf}} }
+	\subfloat[Consuelo]{{\includegraphics[width=.45\textwidth]{ld_mcf_vrat_z00_hosts.pdf}} }
 	\caption{The marked correlation function for the concentration defined according to the velocity ratio. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The dashed line denotes the largest halo radius for a given value of the overdensity parameter.}
-\end{figure}
+\end{figure*}
 
 The velocity ratio defined concentration MCF is shown in Figure 5. It can be immediately seen that many of the same features from the previous MCF can be seen in the different concentration proxy. Furthermore, in the range of $\Delta = 100$ and $\Delta=75$, we again see the feature that environmental effects are removed at these large scales. Combined with our previous result, this allows for this halo redefinition to prove useful for studies at this scale with regard to concentration.
 
-\begin{figure}
+\begin{figure*}
 	\centering
-	\subfloat[L0125]{{\includegraphics[width=.5\textwidth]{L0125_mcf_s_z00_hosts.pdf}} }
-	\qquad
-	\subfloat[L0250]{{\includegraphics[width=.5\textwidth]{L0250_mcf_s_z00_hosts.pdf}} }
+	\subfloat[L0125]{{\includegraphics[width=.45\textwidth]{L0125_mcf_s_z00_hosts.pdf}} }
+	\subfloat[L0250]{{\includegraphics[width=.45\textwidth]{L0250_mcf_s_z00_hosts.pdf}} }
 	\\
-	\subfloat[L0500]{{\includegraphics[width=.5\textwidth]{L0500_mcf_s_z00_hosts.pdf}} }
-	\qquad
-	\subfloat[Consuelo]{{\includegraphics[width=.5\textwidth]{ld_mcf_s_z00_hosts.pdf}} }
+	\subfloat[L0500]{{\includegraphics[width=.45\textwidth]{L0250_mcf_s_z00_hosts.pdf}} }
+	\subfloat[Consuelo]{{\includegraphics[width=.45\textwidth]{ld_mcf_s_z00_hosts.pdf}} }
 	\caption{The marked correlation function for the shape of the halo. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The dashed line denotes the largest halo radius for a given value of the overdensity parameter.}
-\end{figure}
+\end{figure*}
 
 Figure 6 demonstrates a case in which the halo property does not have environmental dependence removed under our simple method of halo redefinition. In particular, with decreasing values of $\Delta$, we only serve to increase the strength of this environmental dependence. This result seems to indicate a process occurring to drive the shape of the halo is on scales that are significantly larger than the size of the halo, such that our method will not be able to encompass these effects. A similar result is located in both Figure 7 and Figure 8, in which the spin parameter mark and satellite number mark experience the exact same effect.
 
-\begin{figure}
+\begin{figure*}
 	\centering
-	\subfloat[L0125]{{\includegraphics[width=.5\textwidth]{L0125_mcf_spin_z00_hosts.pdf}} }
-	\qquad
-	\subfloat[L0250]{{\includegraphics[width=.5\textwidth]{L0250_mcf_spin_z00_hosts.pdf}} }
+	\subfloat[L0125]{{\includegraphics[width=.45\textwidth]{L0125_mcf_spin_z00_hosts.pdf}} }
+	\subfloat[L0250]{{\includegraphics[width=.45\textwidth]{L0250_mcf_spin_z00_hosts.pdf}} }
 	\\
-	\subfloat[L0500]{{\includegraphics[width=.5\textwidth]{L0500_mcf_spin_z00_hosts.pdf}} }
-	\qquad
-	\subfloat[Consuelo]{{\includegraphics[width=.5\textwidth]{ld_mcf_spin_z00_hosts.pdf}} }
+	\subfloat[L0500]{{\includegraphics[width=.45\textwidth]{L0250_mcf_spin_z00_hosts.pdf}} }
+	\subfloat[Consuelo]{{\includegraphics[width=.45\textwidth]{ld_mcf_spin_z00_hosts.pdf}} }
 	\caption{The marked correlation function for the spin parameter of the halo. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The dashed line denotes the largest halo radius for a given value of the overdensity parameter.}
-\end{figure}
+\end{figure*}
 
-\begin{figure}
+\begin{figure*}
 	\centering
-	\subfloat[L0125]{{\includegraphics[width=.5\textwidth]{L0125_mcf_ns_z00_hosts.pdf}} }
-	\qquad
-	\subfloat[L0250]{{\includegraphics[width=.5\textwidth]{L0250_mcf_ns_z00_hosts.pdf}} }
+	\subfloat[L0125]{{\includegraphics[width=.45\textwidth]{L0125_mcf_ns_z00_hosts.pdf}} }
+	\subfloat[L0250]{{\includegraphics[width=.45\textwidth]{L0250_mcf_ns_z00_hosts.pdf}} }
 	\\
-	\subfloat[L0500]{{\includegraphics[width=.5\textwidth]{L0500_mcf_ns_z00_hosts.pdf}} }
-	\qquad
-	\subfloat[Consuelo]{{\includegrpahics[width=.5\textwidth]{ld_mcf_ns_z00_hosts.pdf}} }
+	\subfloat[L0500]{{\includegraphics[width=.45\textwidth]{L0250_mcf_ns_z00_hosts.pdf}} }
+	\subfloat[Consuelo]{{\includegraphics[width=.45\textwidth]{ld_mcf_ns_z00_hosts.pdf}} }
 	\caption{The marked correlation function for the satellite number. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The dashed line denotes the largest halo radius for a given value of the overdensity parameter.}
-\end{figure}
+\end{figure*}
 
 Overall, while some statistics of the halo can be made to become independent of environmental effects, there exist several that cannot. These environmental effects are not negligible when considering applications of the halo model. In contrast, if one is only interested in the concentration of the halo, it is feasible to take advantage of our methodology in order to remove environmental effects. In contrast, it is not possible to apply the halo model directly to statistics such as the number of satellite halos or the shape without accounting for these environmental effects. We do not yet have a full understanding of what leads to the visible effects that we see on some of these marks, but we present a series of cases in which an intuitive understanding may be gained as to the root causes.
 

@@ -1,43 +1,42 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  13 MAY 2015 14:18
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.1.31)  22 SEP 2015 13:00
 entering extended mode
- restricted \write18 enabled.
- %&-line parsing enabled.
 **villarrealzentner2015.tex
-(./villarrealzentner2015.tex
+
+(C:\Users\Antonio\Documents\haloenviron\haloenviron-villarrealzentner\villarrea
+lzentner2015.tex
 LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, ge
-rman-x-2012-05-30, ngerman-x-2012-05-30, afrikaans, ancientgreek, ibycus, arabi
-c, armenian, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danis
-h, dutch, ukenglish, usenglishmax, esperanto, estonian, ethiopic, farsi, finnis
-h, french, friulan, galician, german, ngerman, swissgerman, monogreek, greek, h
-ungarian, icelandic, assamese, bengali, gujarati, hindi, kannada, malayalam, ma
-rathi, oriya, panjabi, tamil, telugu, indonesian, interlingua, irish, italian, 
-kurmanji, latin, latvian, lithuanian, mongolian, mongolianlmc, bokmal, nynorsk,
- polish, portuguese, romanian, romansh, russian, sanskrit, serbian, serbianc, s
-lovak, slovenian, spanish, swedish, turkish, turkmen, ukrainian, uppersorbian, 
-welsh, loaded.
-(./mn2e.cls
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
+ lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
+german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
+ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
+an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
+ishmax, welsh, loaded.
+(C:\Users\Antonio\Documents\haloenviron\haloenviron-villarrealzentner\mn2e.cls
 Document Class: mn2e 2001/02/06 v2.2 LaTeX2e MN document class
 Document Style `MN' v2.2, released 2001 February 20
-(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/graphicx.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/keyval.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/graphics.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/trig.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/graphics.cfg
-File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
 Package graphics Info: Driver file: dvips.def on input line 91.
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/dvips.def
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\dvips.def"
 File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
 ))
 \Gin@req@height=\dimen102
@@ -61,7 +60,7 @@ LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
 \@leftskip=\skip45
 \c@dummy=\count85
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/natbib/natbib.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\natbib\natbib.sty"
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip46
 \bibsep=\skip47
@@ -72,18 +71,18 @@ LaTeX Info: Redefining \cite on input line 694.
 \c@figure=\count88
 \mathindent=\dimen105
 )
-(/usr/local/texlive/2012/texmf-dist/tex/latex/geometry/geometry.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
-(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
 Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-(/usr/local/texlive/2012/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count89
@@ -98,58 +97,59 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layouthoffset=\dimen112
 \Gm@layoutvoffset=\dimen113
 \Gm@dimlist=\toks16
-)
-(/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/amssymb.sty
-Package: amssymb 2009/06/22 v3.00
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/amsfonts.sty
-Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks17
 \symAMSa=\mathgroup5
 \symAMSb=\mathgroup6
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
-(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/epsfig.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\epsfig.sty"
 Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
 \epsfxsize=\dimen114
 \epsfysize=\dimen115
 )
-(/usr/local/texlive/2012/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2000/07/18 v2.13 AMS math features
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip48
 
 For additional information on amsmath, use the `?' option.
-(/usr/local/texlive/2012/texmf-dist/tex/latex/amsmath/amstext.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
 Package: amstext 2000/06/29 v2.01
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/amsmath/amsgen.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks18
 \ex@=\dimen116
 ))
-(/usr/local/texlive/2012/texmf-dist/tex/latex/amsmath/amsbsy.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen117
 )
-(/usr/local/texlive/2012/texmf-dist/tex/latex/amsmath/amsopn.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count92
-LaTeX Info: Redefining \frac on input line 211.
+LaTeX Info: Redefining \frac on input line 210.
 \uproot@=\count93
 \leftroot@=\count94
-LaTeX Info: Redefining \overline on input line 307.
+LaTeX Info: Redefining \overline on input line 306.
 \classnum@=\count95
 \DOTSCASE@=\count96
-LaTeX Info: Redefining \ldots on input line 379.
-LaTeX Info: Redefining \dots on input line 382.
-LaTeX Info: Redefining \cdots on input line 467.
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
 \Mathstrutbox@=\box26
 \strutbox@=\box27
 \big@size=\dimen118
-LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \macc@depth=\count97
 \c@MaxMatrixCols=\count98
 \dotsspace@=\muskip10
@@ -170,32 +170,32 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 \multlinegap=\skip49
 \multlinetaggap=\skip50
 \mathdisplay@stack=\toks22
-LaTeX Info: Redefining \[ on input line 2666.
-LaTeX Info: Redefining \] on input line 2667.
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
 )
-(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/color.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\color.sty"
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/color.cfg
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 130.
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/pdftex-def/pdftex.def
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count104
 ))
-(/usr/local/texlive/2012/texmf-dist/tex/latex/xcolor/xcolor.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/color.cfg
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -209,10 +209,10 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/dvipsnam.def
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\dvipsnam.def"
 File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
 ))
-(/usr/local/texlive/2012/texmf-dist/tex/latex/subfig/subfig.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\subfig\subfig.sty"
 Package: subfig 2005/06/28 ver: 1.3 subfig package
 
 
@@ -237,17 +237,19 @@ Package subfig Warning: Your document class has a bad definition
  can't take effect on \endtable.
  Please complain to your document class author.
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2012/02/19 v3.2f Customizing captions (AR)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption.sty"
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2012/01/12 v1.4b caption3 kernel (AR)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption3.sty"
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
 \captionmargin=\dimen125
 \captionmargin@=\dimen126
 \captionwidth=\dimen127
-\caption@indent=\dimen128
-\caption@parindent=\dimen129
-\caption@hangindent=\dimen130
+\caption@tempdima=\dimen128
+\caption@indent=\dimen129
+\caption@parindent=\dimen130
+\caption@hangindent=\dimen131
 \abovecaptionskip=\skip51
 \belowcaptionskip=\skip52
 Package caption Info: Unknown document class (or package),
@@ -263,7 +265,7 @@ Package caption Info: \@makecaption = undefined.
 )
 \c@KVtest=\count106
 \sf@farskip=\skip53
-\sf@captopadj=\dimen131
+\sf@captopadj=\dimen132
 \sf@capskip=\skip54
 \sf@nearskip=\skip55
 \c@subfigure=\count107
@@ -274,10 +276,10 @@ Package caption Info: \@makecaption = undefined.
 \c@lotdepth=\count112
 \sf@top=\skip56
 \sf@bottom=\skip57
-) (/usr/local/texlive/2012/texmf-dist/tex/latex/rotating/rotating.sty
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\rotating\rotating.sty"
 Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/base/ifthen.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ifthen.sty"
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \c@r@tfl@t=\count113
@@ -287,16 +289,16 @@ Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 \rot@mess@toks=\toks23
 )
 \@input{villareal_zentner_macros.aux}
-\openout2 = `villareal_zentner_macros.aux'.
 
-(./villareal_zentner_macros.tex)
+(C:\Users\Antonio\Documents\haloenviron\haloenviron-villarrealzentner\villareal
+_zentner_macros.tex)
 
 LaTeX Warning: Unused global option(s):
     [letterpaper].
 
-(./villarrealzentner2015.aux)
-\openout1 = `villarrealzentner2015.aux'.
 
+(C:\Users\Antonio\Documents\haloenviron\haloenviron-villarrealzentner\villarrea
+lzentner2015.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
 LaTeX Font Info:    ... okay on input line 21.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
@@ -310,52 +312,6 @@ LaTeX Font Info:    ... okay on input line 21.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
 LaTeX Font Info:    ... okay on input line 21.
 
-(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
-)
-
-(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
-(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
-
-(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
-
-(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
-Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
-))
-(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
-
-(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
-
-(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/etexcmds.sty
-Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)))
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-34.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 452.
-
-(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -390,16 +346,16 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(/usr/local/texlive/2012/texmf-dist/tex/context/base/supp-pdf.mkii
+("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count114
-\scratchdimen=\dimen132
+\scratchdimen=\dimen133
 \scratchbox=\box29
 \nofMPsegments=\count115
 \nofMParguments=\count116
 \everyMPshowfont=\toks24
 \MPscratchCnt=\count117
-\MPscratchDim=\dimen133
+\MPscratchDim=\dimen134
 \MPnumerator=\count118
 \makeMPintoPDFobject=\count119
 \everyMPtoPDFconversion=\toks25
@@ -419,24 +375,24 @@ See the caption package documentation for explanation.
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Try loading font information for U+msa on input line 40.
-(/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 40.
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 70.
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/base/omscmr.fd
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 70.
- [1{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+ [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
 
@@ -449,7 +405,7 @@ Underfull \hbox (badness 1005) in paragraph at lines 90--91
 []\OT1/cmr/m/n/9 With the com-bi-na-tion of this anal-y-sis and the
  []
 
-<ldcompare_cnfwvscvrat_z00.pdf, id=20, 361.35pt x 361.35pt>
+<ldcompare_cnfwvscvrat_z00.pdf, id=19, 361.35pt x 361.35pt>
 File: ldcompare_cnfwvscvrat_z00.pdf Graphic file (type pdf)
 
 <use ldcompare_cnfwvscvrat_z00.pdf>
@@ -460,196 +416,322 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 98--99
  [][] 
  []
 
-[2 <./ldcompare_cnfwvscvrat_z00.pdf>]
-<masscut_d200.pdf, id=65, 578.16pt x 433.62pt>
-File: masscut_d200.pdf Graphic file (type pdf)
- <use masscut_d200.pdf>
-Package pdftex.def Info: masscut_d200.pdf used on input line 113.
+
+Package natbib Warning: Citation `peebles69' on page 2 undefined on input line 
+102.
+
+[2 <C:/Users/Antonio/Documents/haloenviron/haloenviron-villarrealzentner/ldcomp
+are_cnfwvscvrat_z00.pdf>] <masscut_cnfw_d200.pdf, id=64, 578.16pt x 433.62pt>
+File: masscut_cnfw_d200.pdf Graphic file (type pdf)
+
+<use masscut_cnfw_d200.pdf>
+Package pdftex.def Info: masscut_cnfw_d200.pdf used on input line 113.
 (pdftex.def)             Requested size: 240.0pt x 179.99525pt.
 
 Overfull \hbox (12.0pt too wide) in paragraph at lines 113--114
  [][] 
  []
 
-<ld_cf_compare_z00.pdf, id=66, 578.16pt x 433.62pt>
-File: ld_cf_compare_z00.pdf Graphic file (type pdf)
+<L0125_cf_compare_z00_hosts.pdf, id=65, 578.16pt x 433.62pt>
+File: L0125_cf_compare_z00_hosts.pdf Graphic file (type pdf)
 
-<use ld_cf_compare_z00.pdf>
-Package pdftex.def Info: ld_cf_compare_z00.pdf used on input line 133.
-(pdftex.def)             Requested size: 240.0pt x 179.99525pt.
+<use L0125_cf_compare_z00_hosts.pdf>
+Package pdftex.def Info: L0125_cf_compare_z00_hosts.pdf used on input line 136.
 
-<max_cf_compare_z00.pdf, id=67, 578.16pt x 433.62pt>
-File: max_cf_compare_z00.pdf Graphic file (type pdf)
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
 
-<use max_cf_compare_z00.pdf>
-Package pdftex.def Info: max_cf_compare_z00.pdf used on input line 135.
-(pdftex.def)             Requested size: 240.0pt x 179.99525pt.
+<L0250_cf_compare_z00_hosts.pdf, id=66, 578.16pt x 433.62pt>
+File: L0250_cf_compare_z00_hosts.pdf Graphic file (type pdf)
 
-Overfull \hbox (14.83337pt too wide) in paragraph at lines 133--136
- [][] 
- []
+<use L0250_cf_compare_z00_hosts.pdf>
+Package pdftex.def Info: L0250_cf_compare_z00_hosts.pdf used on input line 137.
+
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+File: L0250_cf_compare_z00_hosts.pdf Graphic file (type pdf)
+ <use L0250_cf_compare_z00_hosts.pdf>
+Package pdftex.def Info: L0250_cf_compare_z00_hosts.pdf used on input line 139.
+
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+
+<ld_cf_compare_z00_hosts.pdf, id=67, 578.16pt x 433.62pt>
+File: ld_cf_compare_z00_hosts.pdf Graphic file (type pdf)
+
+<use ld_cf_compare_z00_hosts.pdf>
+Package pdftex.def Info: ld_cf_compare_z00_hosts.pdf used on input line 140.
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+
+<L0125_mcf_cnfw_z00_hosts.pdf, id=68, 578.16pt x 433.62pt>
+File: L0125_mcf_cnfw_z00_hosts.pdf Graphic file (type pdf)
+
+<use L0125_mcf_cnfw_z00_hosts.pdf>
+Package pdftex.def Info: L0125_mcf_cnfw_z00_hosts.pdf used on input line 148.
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+
+<L0250_mcf_cnfw_z00_hosts.pdf, id=69, 578.16pt x 433.62pt>
+File: L0250_mcf_cnfw_z00_hosts.pdf Graphic file (type pdf)
+
+<use L0250_mcf_cnfw_z00_hosts.pdf>
+Package pdftex.def Info: L0250_mcf_cnfw_z00_hosts.pdf used on input line 149.
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+File: L0250_mcf_cnfw_z00_hosts.pdf Graphic file (type pdf)
+ <use L0250_mcf_cnfw_z00_hosts.pdf>
+Package pdftex.def Info: L0250_mcf_cnfw_z00_hosts.pdf used on input line 151.
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+
+<ld_mcf_cnfw_z00_hosts.pdf, id=70, 578.16pt x 433.62pt>
+File: ld_mcf_cnfw_z00_hosts.pdf Graphic file (type pdf)
+
+<use ld_mcf_cnfw_z00_hosts.pdf>
+Package pdftex.def Info: ld_mcf_cnfw_z00_hosts.pdf used on input line 152.
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+
+<L0125_mcf_vrat_z00_hosts.pdf, id=71, 578.16pt x 433.62pt>
+File: L0125_mcf_vrat_z00_hosts.pdf Graphic file (type pdf)
+
+<use L0125_mcf_vrat_z00_hosts.pdf>
+Package pdftex.def Info: L0125_mcf_vrat_z00_hosts.pdf used on input line 160.
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+
+<L0250_mcf_vrat_z00_hosts.pdf, id=72, 578.16pt x 433.62pt>
+File: L0250_mcf_vrat_z00_hosts.pdf Graphic file (type pdf)
+
+<use L0250_mcf_vrat_z00_hosts.pdf>
+Package pdftex.def Info: L0250_mcf_vrat_z00_hosts.pdf used on input line 161.
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+File: L0250_mcf_vrat_z00_hosts.pdf Graphic file (type pdf)
+ <use L0250_mcf_vrat_z00_hosts.pdf>
+Package pdftex.def Info: L0250_mcf_vrat_z00_hosts.pdf used on input line 163.
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+
+<ld_mcf_vrat_z00_hosts.pdf, id=73, 578.16pt x 433.62pt>
+File: ld_mcf_vrat_z00_hosts.pdf Graphic file (type pdf)
+
+<use ld_mcf_vrat_z00_hosts.pdf>
+Package pdftex.def Info: ld_mcf_vrat_z00_hosts.pdf used on input line 164.
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+
+<L0125_mcf_s_z00_hosts.pdf, id=74, 578.16pt x 433.62pt>
+File: L0125_mcf_s_z00_hosts.pdf Graphic file (type pdf)
+
+<use L0125_mcf_s_z00_hosts.pdf>
+Package pdftex.def Info: L0125_mcf_s_z00_hosts.pdf used on input line 172.
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+
+<L0250_mcf_s_z00_hosts.pdf, id=75, 578.16pt x 433.62pt>
+File: L0250_mcf_s_z00_hosts.pdf Graphic file (type pdf)
+
+<use L0250_mcf_s_z00_hosts.pdf>
+Package pdftex.def Info: L0250_mcf_s_z00_hosts.pdf used on input line 173.
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+File: L0250_mcf_s_z00_hosts.pdf Graphic file (type pdf)
+ <use L0250_mcf_s_z00_hosts.pdf>
+Package pdftex.def Info: L0250_mcf_s_z00_hosts.pdf used on input line 175.
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+
+<ld_mcf_s_z00_hosts.pdf, id=76, 578.16pt x 433.62pt>
+File: ld_mcf_s_z00_hosts.pdf Graphic file (type pdf)
+
+<use ld_mcf_s_z00_hosts.pdf>
+Package pdftex.def Info: ld_mcf_s_z00_hosts.pdf used on input line 176.
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+ [3 <C:/Users/Antonio/Documents/haloenviron/haloenviron-villarrealzentner/massc
+ut_cnfw_d200.pdf>]
+<L0125_mcf_spin_z00_hosts.pdf, id=236, 578.16pt x 433.62pt>
+File: L0125_mcf_spin_z00_hosts.pdf Graphic file (type pdf)
+
+<use L0125_mcf_spin_z00_hosts.pdf>
+Package pdftex.def Info: L0125_mcf_spin_z00_hosts.pdf used on input line 184.
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+
+<L0250_mcf_spin_z00_hosts.pdf, id=237, 578.16pt x 433.62pt>
+File: L0250_mcf_spin_z00_hosts.pdf Graphic file (type pdf)
+
+<use L0250_mcf_spin_z00_hosts.pdf>
+Package pdftex.def Info: L0250_mcf_spin_z00_hosts.pdf used on input line 185.
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+File: L0250_mcf_spin_z00_hosts.pdf Graphic file (type pdf)
+ <use L0250_mcf_spin_z00_hosts.pdf>
+Package pdftex.def Info: L0250_mcf_spin_z00_hosts.pdf used on input line 187.
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+
+<ld_mcf_spin_z00_hosts.pdf, id=238, 578.16pt x 433.62pt>
+File: ld_mcf_spin_z00_hosts.pdf Graphic file (type pdf)
+
+<use ld_mcf_spin_z00_hosts.pdf>
+Package pdftex.def Info: ld_mcf_spin_z00_hosts.pdf used on input line 188.
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+
+<L0125_mcf_ns_z00_hosts.pdf, id=239, 578.16pt x 433.62pt>
+File: L0125_mcf_ns_z00_hosts.pdf Graphic file (type pdf)
+
+<use L0125_mcf_ns_z00_hosts.pdf>
+Package pdftex.def Info: L0125_mcf_ns_z00_hosts.pdf used on input line 194.
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+
+<L0250_mcf_ns_z00_hosts.pdf, id=240, 578.16pt x 433.62pt>
+File: L0250_mcf_ns_z00_hosts.pdf Graphic file (type pdf)
+
+<use L0250_mcf_ns_z00_hosts.pdf>
+Package pdftex.def Info: L0250_mcf_ns_z00_hosts.pdf used on input line 195.
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+File: L0250_mcf_ns_z00_hosts.pdf Graphic file (type pdf)
+ <use L0250_mcf_ns_z00_hosts.pdf>
+Package pdftex.def Info: L0250_mcf_ns_z00_hosts.pdf used on input line 197.
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+
+<ld_mcf_ns_z00_hosts.pdf, id=241, 578.16pt x 433.62pt>
+File: ld_mcf_ns_z00_hosts.pdf Graphic file (type pdf)
+
+<use ld_mcf_ns_z00_hosts.pdf>
+Package pdftex.def Info: ld_mcf_ns_z00_hosts.pdf used on input line 198.
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Overfull \hbox (14.83337pt too wide) in paragraph at lines 133--136
- [] 
- []
-
-<ld_mcf_cnfw_z00.pdf, id=68, 578.16pt x 433.62pt>
-File: ld_mcf_cnfw_z00.pdf Graphic file (type pdf)
- <use ld_mcf_cnfw_z00.pdf>
-Package pdftex.def Info: ld_mcf_cnfw_z00.pdf used on input line 143.
-(pdftex.def)             Requested size: 240.0pt x 179.99525pt.
-
-<max_mcf_cnfw_z00.pdf, id=69, 578.16pt x 433.62pt>
-File: max_mcf_cnfw_z00.pdf Graphic file (type pdf)
- <use max_mcf_cnfw_z00.pdf>
-Package pdftex.def Info: max_mcf_cnfw_z00.pdf used on input line 145.
-(pdftex.def)             Requested size: 240.0pt x 179.99525pt.
-
-Overfull \hbox (14.83337pt too wide) in paragraph at lines 143--146
- [][] 
- []
-
-
-Overfull \hbox (14.83337pt too wide) in paragraph at lines 143--146
- [] 
- []
-
-<ld_mcf_vrat_z00.pdf, id=70, 578.16pt x 433.62pt>
-File: ld_mcf_vrat_z00.pdf Graphic file (type pdf)
- <use ld_mcf_vrat_z00.pdf>
-Package pdftex.def Info: ld_mcf_vrat_z00.pdf used on input line 153.
-(pdftex.def)             Requested size: 240.0pt x 179.99525pt.
-
-<max_mcf_vrat_z00.pdf, id=71, 578.16pt x 433.62pt>
-File: max_mcf_vrat_z00.pdf Graphic file (type pdf)
- <use max_mcf_vrat_z00.pdf>
-Package pdftex.def Info: max_mcf_vrat_z00.pdf used on input line 155.
-(pdftex.def)             Requested size: 240.0pt x 179.99525pt.
-
-Overfull \hbox (14.83337pt too wide) in paragraph at lines 153--156
- [][] 
- []
-
-
-Overfull \hbox (14.83337pt too wide) in paragraph at lines 153--156
- [] 
- []
-
-<ld_mcf_s_z00.pdf, id=72, 578.16pt x 433.62pt>
-File: ld_mcf_s_z00.pdf Graphic file (type pdf)
- <use ld_mcf_s_z00.pdf>
-Package pdftex.def Info: ld_mcf_s_z00.pdf used on input line 163.
-(pdftex.def)             Requested size: 240.0pt x 179.99525pt.
-
-<max_mcf_s_z00.pdf, id=73, 578.16pt x 433.62pt>
-File: max_mcf_s_z00.pdf Graphic file (type pdf)
- <use max_mcf_s_z00.pdf>
-Package pdftex.def Info: max_mcf_s_z00.pdf used on input line 165.
-(pdftex.def)             Requested size: 240.0pt x 179.99525pt.
-
-Overfull \hbox (14.83337pt too wide) in paragraph at lines 163--166
- [][] 
- []
-
-
-Overfull \hbox (14.83337pt too wide) in paragraph at lines 163--166
- [] 
- []
-
-[3 <./masscut_d200.pdf>] <ld_mcf_ns_z00.pdf, id=134, 578.16pt x 433.62pt>
-File: ld_mcf_ns_z00.pdf Graphic file (type pdf)
-
-<use ld_mcf_ns_z00.pdf>
-Package pdftex.def Info: ld_mcf_ns_z00.pdf used on input line 173.
-(pdftex.def)             Requested size: 240.0pt x 179.99525pt.
- <max_mcf_ns_z00.pdf, id=135, 578.16pt x 433.62pt>
-File: max_mcf_ns_z00.pdf Graphic file (type pdf)
-
-<use max_mcf_ns_z00.pdf>
-Package pdftex.def Info: max_mcf_ns_z00.pdf used on input line 175.
-(pdftex.def)             Requested size: 240.0pt x 179.99525pt.
-
-Overfull \hbox (14.83337pt too wide) in paragraph at lines 173--176
- [][] 
- []
-
-
-Overfull \hbox (14.83337pt too wide) in paragraph at lines 173--176
- [] 
- []
-
-<plotcircles.pdf, id=136, 578.16pt x 433.62pt>
+<plotcircles.pdf, id=242, 578.16pt x 433.62pt>
 File: plotcircles.pdf Graphic file (type pdf)
  <use plotcircles.pdf>
-Package pdftex.def Info: plotcircles.pdf used on input line 185.
+Package pdftex.def Info: plotcircles.pdf used on input line 208.
 (pdftex.def)             Requested size: 480.0pt x 359.99715pt.
- [4 <./ld_cf_compare_z00.pdf> <./max_cf_compare_z00.pdf
 
-pdfTeX warning: /usr/texbin/pdflatex (file ./max_cf_compare_z00.pdf): PDF inclu
-sion: multiple pdfs with page group included in a single page
-> <./ld_mcf_cnfw_z00.pdf
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-pdfTeX warning: /usr/texbin/pdflatex (file ./ld_mcf_cnfw_z00.pdf): PDF inclusio
-n: multiple pdfs with page group included in a single page
-> <./max_mcf_cnfw_z00.pdf
+ [4 <C:/Users/Antonio/Documents/haloenviron/haloenviron-villarrealzentner/L0125
+_cf_compare_z00_hosts.pdf> <C:/Users/Antonio/Documents/haloenviron/haloenviron-
+villarrealzentner/L0250_cf_compare_z00_hosts.pdf
 
-pdfTeX warning: /usr/texbin/pdflatex (file ./max_mcf_cnfw_z00.pdf): PDF inclusi
-on: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file C:/Users/Antonio/Documents/haloenviron/haloe
+nviron-villarrealzentner/L0250_cf_compare_z00_hosts.pdf): PDF inclusion: multip
+le pdfs with page group included in a single page
+> <C:/Users/Antonio/Documents/haloenviron/haloenviron-villarrealzentner/ld_cf_c
+ompare_z00_hosts.pdf
+
+pdfTeX warning: pdflatex.exe (file C:/Users/Antonio/Documents/haloenviron/haloe
+nviron-villarrealzentner/ld_cf_compare_z00_hosts.pdf): PDF inclusion: multiple 
+pdfs with page group included in a single page
 >]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [5 <./plotcircles.pdf>] (./villarrealzentner2015.bbl [6 <./ld_mcf_vrat_z00.pdf
-> <./max_mcf_vrat_z00.pdf
+ [5 <C:/Users/Antonio/Documents/haloenviron/haloenviron-villarrealzentner/L0125
+_mcf_cnfw_z00_hosts.pdf> <C:/Users/Antonio/Documents/haloenviron/haloenviron-vi
+llarrealzentner/L0250_mcf_cnfw_z00_hosts.pdf
 
-pdfTeX warning: /usr/texbin/pdflatex (file ./max_mcf_vrat_z00.pdf): PDF inclusi
-on: multiple pdfs with page group included in a single page
-> <./ld_mcf_s_z00.pdf
+pdfTeX warning: pdflatex.exe (file C:/Users/Antonio/Documents/haloenviron/haloe
+nviron-villarrealzentner/L0250_mcf_cnfw_z00_hosts.pdf): PDF inclusion: multiple
+ pdfs with page group included in a single page
+> <C:/Users/Antonio/Documents/haloenviron/haloenviron-villarrealzentner/ld_mcf_
+cnfw_z00_hosts.pdf
 
-pdfTeX warning: /usr/texbin/pdflatex (file ./ld_mcf_s_z00.pdf): PDF inclusion: 
-multiple pdfs with page group included in a single page
-> <./max_mcf_s_z00.pdf
+pdfTeX warning: pdflatex.exe (file C:/Users/Antonio/Documents/haloenviron/haloe
+nviron-villarrealzentner/ld_mcf_cnfw_z00_hosts.pdf): PDF inclusion: multiple pd
+fs with page group included in a single page
+>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-pdfTeX warning: /usr/texbin/pdflatex (file ./max_mcf_s_z00.pdf): PDF inclusion:
- multiple pdfs with page group included in a single page
->]) [7 <./ld_mcf_ns_z00.pdf> <./max_mcf_ns_z00.pdf
 
-pdfTeX warning: /usr/texbin/pdflatex (file ./max_mcf_ns_z00.pdf): PDF inclusion
-: multiple pdfs with page group included in a single page
->] (./villarrealzentner2015.aux) ) 
+(C:\Users\Antonio\Documents\haloenviron\haloenviron-villarrealzentner\villarrea
+lzentner2015.bbl [6 <C:/Users/Antonio/Documents/haloenviron/haloenviron-villarr
+ealzentner/L0125_mcf_vrat_z00_hosts.pdf> <C:/Users/Antonio/Documents/haloenviro
+n/haloenviron-villarrealzentner/L0250_mcf_vrat_z00_hosts.pdf
+
+pdfTeX warning: pdflatex.exe (file C:/Users/Antonio/Documents/haloenviron/haloe
+nviron-villarrealzentner/L0250_mcf_vrat_z00_hosts.pdf): PDF inclusion: multiple
+ pdfs with page group included in a single page
+> <C:/Users/Antonio/Documents/haloenviron/haloenviron-villarrealzentner/ld_mcf_
+vrat_z00_hosts.pdf
+
+pdfTeX warning: pdflatex.exe (file C:/Users/Antonio/Documents/haloenviron/haloe
+nviron-villarrealzentner/ld_mcf_vrat_z00_hosts.pdf): PDF inclusion: multiple pd
+fs with page group included in a single page
+>])
+
+Package natbib Warning: There were undefined citations.
+
+[7 <C:/Users/Antonio/Documents/haloenviron/haloenviron-villarrealzentner/L0125_
+mcf_s_z00_hosts.pdf> <C:/Users/Antonio/Documents/haloenviron/haloenviron-villar
+realzentner/L0250_mcf_s_z00_hosts.pdf
+
+pdfTeX warning: pdflatex.exe (file C:/Users/Antonio/Documents/haloenviron/haloe
+nviron-villarrealzentner/L0250_mcf_s_z00_hosts.pdf): PDF inclusion: multiple pd
+fs with page group included in a single page
+> <C:/Users/Antonio/Documents/haloenviron/haloenviron-villarrealzentner/ld_mcf_
+s_z00_hosts.pdf
+
+pdfTeX warning: pdflatex.exe (file C:/Users/Antonio/Documents/haloenviron/haloe
+nviron-villarrealzentner/ld_mcf_s_z00_hosts.pdf): PDF inclusion: multiple pdfs 
+with page group included in a single page
+>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8 <C:/Users/Antonio/Documents/haloenviron/haloenviron-villarrealzentner/L0125
+_mcf_spin_z00_hosts.pdf> <C:/Users/Antonio/Documents/haloenviron/haloenviron-vi
+llarrealzentner/L0250_mcf_spin_z00_hosts.pdf
+
+pdfTeX warning: pdflatex.exe (file C:/Users/Antonio/Documents/haloenviron/haloe
+nviron-villarrealzentner/L0250_mcf_spin_z00_hosts.pdf): PDF inclusion: multiple
+ pdfs with page group included in a single page
+> <C:/Users/Antonio/Documents/haloenviron/haloenviron-villarrealzentner/ld_mcf_
+spin_z00_hosts.pdf
+
+pdfTeX warning: pdflatex.exe (file C:/Users/Antonio/Documents/haloenviron/haloe
+nviron-villarrealzentner/ld_mcf_spin_z00_hosts.pdf): PDF inclusion: multiple pd
+fs with page group included in a single page
+>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [9 <C:/Users/Antonio/Documents/haloenviron/haloenviron-villarrealzentner/L0125
+_mcf_ns_z00_hosts.pdf> <C:/Users/Antonio/Documents/haloenviron/haloenviron-vill
+arrealzentner/L0250_mcf_ns_z00_hosts.pdf
+
+pdfTeX warning: pdflatex.exe (file C:/Users/Antonio/Documents/haloenviron/haloe
+nviron-villarrealzentner/L0250_mcf_ns_z00_hosts.pdf): PDF inclusion: multiple p
+dfs with page group included in a single page
+> <C:/Users/Antonio/Documents/haloenviron/haloenviron-villarrealzentner/ld_mcf_
+ns_z00_hosts.pdf
+
+pdfTeX warning: pdflatex.exe (file C:/Users/Antonio/Documents/haloenviron/haloe
+nviron-villarrealzentner/ld_mcf_ns_z00_hosts.pdf): PDF inclusion: multiple pdfs
+ with page group included in a single page
+>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [10 <C:/Users/Antonio/Documents/haloenviron/haloenviron-villarrealzentner/plot
+circles.pdf>]
+(C:\Users\Antonio\Documents\haloenviron\haloenviron-villarrealzentner\villarrea
+lzentner2015.aux) ) 
 Here is how much of TeX's memory you used:
- 5505 strings out of 493488
- 77639 string characters out of 3141326
- 165295 words of memory out of 3000000
- 8701 multiletter control sequences out of 15000+200000
+ 5256 strings out of 493921
+ 74752 string characters out of 3144870
+ 157517 words of memory out of 3000000
+ 8456 multiletter control sequences out of 15000+200000
  17216 words of font info for 63 fonts, out of 3000000 for 9000
- 957 hyphenation exceptions out of 8191
- 44i,15n,46p,1023b,386s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/local/texlive/2012/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/pub
-lic/amsfonts/cmextra/cmex9.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmr10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr12.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmr5.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr6.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr8.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr9.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
-10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6
-.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.p
-fb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb
-></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on villarrealzentner2015.pdf (7 pages, 741408 bytes).
+ 841 hyphenation exceptions out of 8191
+ 44i,15n,47p,1159b,392s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmbx8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+mbx9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra
+/cmex9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+mi10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi
+6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.p
+fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi9.pfb>
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:
+/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Pr
+ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Fi
+les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files 
+(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files (x86
+)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files (x86)/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Program Files (x86)/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmti8.pfb>
+Output written on villarrealzentner2015.pdf (10 pages, 1088050 bytes).
 PDF statistics:
- 763 PDF objects out of 1000 (max. 8388607)
- 306 compressed objects within 4 object streams
+ 1278 PDF objects out of 1440 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 66 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 106 words of extra memory for PDF output out of 10000 (max. 10000000)
 
