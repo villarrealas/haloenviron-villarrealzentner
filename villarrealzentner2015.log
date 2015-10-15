@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  8 OCT 2015 10:40
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  15 OCT 2015 10:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -699,98 +699,6 @@ clusion: multiple pdfs with page group included in a single page
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-<L0125_cf_compare_z00_l0125cut.pdf, id=652, 578.16pt x 433.62pt>
-File: L0125_cf_compare_z00_l0125cut.pdf Graphic file (type pdf)
-
-<use L0125_cf_compare_z00_l0125cut.pdf>
-Package pdftex.def Info: L0125_cf_compare_z00_l0125cut.pdf used on input line 2
-35.
-(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
-
-<L0250_cf_compare_z00_l0125cut.pdf, id=653, 578.16pt x 433.62pt>
-File: L0250_cf_compare_z00_l0125cut.pdf Graphic file (type pdf)
-
-<use L0250_cf_compare_z00_l0125cut.pdf>
-Package pdftex.def Info: L0250_cf_compare_z00_l0125cut.pdf used on input line 2
-36.
-(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
-
-<L0125_mcf_cnfw_z00_l0125cut.pdf, id=654, 578.16pt x 433.62pt>
-File: L0125_mcf_cnfw_z00_l0125cut.pdf Graphic file (type pdf)
-
-<use L0125_mcf_cnfw_z00_l0125cut.pdf>
-Package pdftex.def Info: L0125_mcf_cnfw_z00_l0125cut.pdf used on input line 242
-.
-(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
-
-<L0250_mcf_cnfw_z00_l0125cut.pdf, id=655, 578.16pt x 433.62pt>
-File: L0250_mcf_cnfw_z00_l0125cut.pdf Graphic file (type pdf)
-
-<use L0250_mcf_cnfw_z00_l0125cut.pdf>
-Package pdftex.def Info: L0250_mcf_cnfw_z00_l0125cut.pdf used on input line 243
-.
-(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
-
-<L0125_mcf_vrat_z00_l0125cut.pdf, id=656, 578.16pt x 433.62pt>
-File: L0125_mcf_vrat_z00_l0125cut.pdf Graphic file (type pdf)
-
-<use L0125_mcf_vrat_z00_l0125cut.pdf>
-Package pdftex.def Info: L0125_mcf_vrat_z00_l0125cut.pdf used on input line 249
-.
-(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
-
-<L0250_mcf_vrat_z00_l0125cut.pdf, id=657, 578.16pt x 433.62pt>
-File: L0250_mcf_vrat_z00_l0125cut.pdf Graphic file (type pdf)
-
-<use L0250_mcf_vrat_z00_l0125cut.pdf>
-Package pdftex.def Info: L0250_mcf_vrat_z00_l0125cut.pdf used on input line 250
-.
-(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
-
-<L0125_mcf_s_z00_l0125cut.pdf, id=658, 578.16pt x 433.62pt>
-File: L0125_mcf_s_z00_l0125cut.pdf Graphic file (type pdf)
-
-<use L0125_mcf_s_z00_l0125cut.pdf>
-Package pdftex.def Info: L0125_mcf_s_z00_l0125cut.pdf used on input line 256.
-(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
-
-<L0250_mcf_s_z00_l0125cut.pdf, id=659, 578.16pt x 433.62pt>
-File: L0250_mcf_s_z00_l0125cut.pdf Graphic file (type pdf)
-
-<use L0250_mcf_s_z00_l0125cut.pdf>
-Package pdftex.def Info: L0250_mcf_s_z00_l0125cut.pdf used on input line 257.
-(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
-
-<L0125_mcf_ns_z00_l0125cut.pdf, id=660, 578.16pt x 433.62pt>
-File: L0125_mcf_ns_z00_l0125cut.pdf Graphic file (type pdf)
-
-<use L0125_mcf_ns_z00_l0125cut.pdf>
-Package pdftex.def Info: L0125_mcf_ns_z00_l0125cut.pdf used on input line 263.
-(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
-
-<L0250_mcf_ns_z00_l0125cut.pdf, id=661, 578.16pt x 433.62pt>
-File: L0250_mcf_ns_z00_l0125cut.pdf Graphic file (type pdf)
-
-<use L0250_mcf_ns_z00_l0125cut.pdf>
-Package pdftex.def Info: L0250_mcf_ns_z00_l0125cut.pdf used on input line 264.
-(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
-
-<L0125_mcf_spin_z00_l0125cut.pdf, id=662, 578.16pt x 433.62pt>
-File: L0125_mcf_spin_z00_l0125cut.pdf Graphic file (type pdf)
-
-<use L0125_mcf_spin_z00_l0125cut.pdf>
-Package pdftex.def Info: L0125_mcf_spin_z00_l0125cut.pdf used on input line 270
-.
-(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
-
-<L0250_mcf_spin_z00_l0125cut.pdf, id=663, 578.16pt x 433.62pt>
-File: L0250_mcf_spin_z00_l0125cut.pdf Graphic file (type pdf)
-
-<use L0250_mcf_spin_z00_l0125cut.pdf>
-Package pdftex.def Info: L0250_mcf_spin_z00_l0125cut.pdf used on input line 271
-.
-(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [6 <./L0125_mcf_vrat_z00_hosts.pdf> <./L0250_mcf_vrat_z00_hosts.pdf
@@ -805,95 +713,193 @@ pdfTeX warning: /usr/texbin/pdflatex (file ./L0500_mcf_vrat_z00_hosts.pdf): PDF
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./ld_mcf_vrat_z00_hosts.pdf): PDF in
 clusion: multiple pdfs with page group included in a single page
->] <L0250_cf_compare_z00_l0500cut.pdf, id=885, 578.16pt x 433.62pt>
-File: L0250_cf_compare_z00_l0500cut.pdf Graphic file (type pdf)
+>] <L0125_cf_compare_z00_hosts_match.pdf, id=873, 578.16pt x 433.62pt>
+File: L0125_cf_compare_z00_hosts_match.pdf Graphic file (type pdf)
 
-<use L0250_cf_compare_z00_l0500cut.pdf>
-Package pdftex.def Info: L0250_cf_compare_z00_l0500cut.pdf used on input line 2
-79.
+<use L0125_cf_compare_z00_hosts_match.pdf>
+Package pdftex.def Info: L0125_cf_compare_z00_hosts_match.pdf used on input lin
+e 239.
 (pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
 
-<L0500_cf_compare_z00_l0500cut.pdf, id=886, 578.16pt x 433.62pt>
-File: L0500_cf_compare_z00_l0500cut.pdf Graphic file (type pdf)
+<L0250_cf_compare_z00_hosts_match.pdf, id=874, 578.16pt x 433.62pt>
+File: L0250_cf_compare_z00_hosts_match.pdf Graphic file (type pdf)
 
-<use L0500_cf_compare_z00_l0500cut.pdf>
-Package pdftex.def Info: L0500_cf_compare_z00_l0500cut.pdf used on input line 2
-80.
+<use L0250_cf_compare_z00_hosts_match.pdf>
+Package pdftex.def Info: L0250_cf_compare_z00_hosts_match.pdf used on input lin
+e 240.
 (pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
 
-<L0250_mcf_cnfw_z00_l0500cut.pdf, id=887, 578.16pt x 433.62pt>
-File: L0250_mcf_cnfw_z00_l0500cut.pdf Graphic file (type pdf)
+<L0500_cf_compare_z00_hosts_match.pdf, id=875, 578.16pt x 433.62pt>
+File: L0500_cf_compare_z00_hosts_match.pdf Graphic file (type pdf)
 
-<use L0250_mcf_cnfw_z00_l0500cut.pdf>
-Package pdftex.def Info: L0250_mcf_cnfw_z00_l0500cut.pdf used on input line 286
+<use L0500_cf_compare_z00_hosts_match.pdf>
+Package pdftex.def Info: L0500_cf_compare_z00_hosts_match.pdf used on input lin
+e 242.
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+
+<ld_cf_compare_z00_hosts_match.pdf, id=876, 578.16pt x 433.62pt>
+File: ld_cf_compare_z00_hosts_match.pdf Graphic file (type pdf)
+
+<use ld_cf_compare_z00_hosts_match.pdf>
+Package pdftex.def Info: ld_cf_compare_z00_hosts_match.pdf used on input line 2
+43.
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+
+<L0125_mcf_cnfw_z00_hosts_match.pdf, id=877, 578.16pt x 433.62pt>
+File: L0125_mcf_cnfw_z00_hosts_match.pdf Graphic file (type pdf)
+
+<use L0125_mcf_cnfw_z00_hosts_match.pdf>
+Package pdftex.def Info: L0125_mcf_cnfw_z00_hosts_match.pdf used on input line 
+249.
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+
+<L0250_mcf_cnfw_z00_hosts_match.pdf, id=878, 578.16pt x 433.62pt>
+File: L0250_mcf_cnfw_z00_hosts_match.pdf Graphic file (type pdf)
+
+<use L0250_mcf_cnfw_z00_hosts_match.pdf>
+Package pdftex.def Info: L0250_mcf_cnfw_z00_hosts_match.pdf used on input line 
+250.
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+
+<L0500_mcf_cnfw_z00_hosts_match.pdf, id=879, 578.16pt x 433.62pt>
+File: L0500_mcf_cnfw_z00_hosts_match.pdf Graphic file (type pdf)
+
+<use L0500_mcf_cnfw_z00_hosts_match.pdf>
+Package pdftex.def Info: L0500_mcf_cnfw_z00_hosts_match.pdf used on input line 
+252.
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+
+<ld_mcf_cnfw_z00_hosts_match.pdf, id=880, 578.16pt x 433.62pt>
+File: ld_mcf_cnfw_z00_hosts_match.pdf Graphic file (type pdf)
+
+<use ld_mcf_cnfw_z00_hosts_match.pdf>
+Package pdftex.def Info: ld_mcf_cnfw_z00_hosts_match.pdf used on input line 253
 .
 (pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
 
-<L0500_mcf_cnfw_z00_l0500cut.pdf, id=888, 578.16pt x 433.62pt>
-File: L0500_mcf_cnfw_z00_l0500cut.pdf Graphic file (type pdf)
+<L0125_mcf_vrat_z00_hosts_match.pdf, id=881, 578.16pt x 433.62pt>
+File: L0125_mcf_vrat_z00_hosts_match.pdf Graphic file (type pdf)
 
-<use L0500_mcf_cnfw_z00_l0500cut.pdf>
-Package pdftex.def Info: L0500_mcf_cnfw_z00_l0500cut.pdf used on input line 287
+<use L0125_mcf_vrat_z00_hosts_match.pdf>
+Package pdftex.def Info: L0125_mcf_vrat_z00_hosts_match.pdf used on input line 
+259.
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+
+<L0250_mcf_vrat_z00_hosts_match.pdf, id=882, 578.16pt x 433.62pt>
+File: L0250_mcf_vrat_z00_hosts_match.pdf Graphic file (type pdf)
+
+<use L0250_mcf_vrat_z00_hosts_match.pdf>
+Package pdftex.def Info: L0250_mcf_vrat_z00_hosts_match.pdf used on input line 
+260.
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+
+<L0500_mcf_vrat_z00_hosts_match.pdf, id=883, 578.16pt x 433.62pt>
+File: L0500_mcf_vrat_z00_hosts_match.pdf Graphic file (type pdf)
+
+<use L0500_mcf_vrat_z00_hosts_match.pdf>
+Package pdftex.def Info: L0500_mcf_vrat_z00_hosts_match.pdf used on input line 
+262.
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+
+<ld_mcf_vrat_z00_hosts_match.pdf, id=884, 578.16pt x 433.62pt>
+File: ld_mcf_vrat_z00_hosts_match.pdf Graphic file (type pdf)
+
+<use ld_mcf_vrat_z00_hosts_match.pdf>
+Package pdftex.def Info: ld_mcf_vrat_z00_hosts_match.pdf used on input line 263
 .
 (pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
 
-<L0250_mcf_vrat_z00_l0500cut.pdf, id=889, 578.16pt x 433.62pt>
-File: L0250_mcf_vrat_z00_l0500cut.pdf Graphic file (type pdf)
+<L0125_mcf_s_z00_hosts_match.pdf, id=885, 578.16pt x 433.62pt>
+File: L0125_mcf_s_z00_hosts_match.pdf Graphic file (type pdf)
 
-<use L0250_mcf_vrat_z00_l0500cut.pdf>
-Package pdftex.def Info: L0250_mcf_vrat_z00_l0500cut.pdf used on input line 293
+<use L0125_mcf_s_z00_hosts_match.pdf>
+Package pdftex.def Info: L0125_mcf_s_z00_hosts_match.pdf used on input line 269
 .
 (pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
 
-<L0500_mcf_vrat_z00_l0500cut.pdf, id=890, 578.16pt x 433.62pt>
-File: L0500_mcf_vrat_z00_l0500cut.pdf Graphic file (type pdf)
+<L0250_mcf_s_z00_hosts_match.pdf, id=886, 578.16pt x 433.62pt>
+File: L0250_mcf_s_z00_hosts_match.pdf Graphic file (type pdf)
 
-<use L0500_mcf_vrat_z00_l0500cut.pdf>
-Package pdftex.def Info: L0500_mcf_vrat_z00_l0500cut.pdf used on input line 294
+<use L0250_mcf_s_z00_hosts_match.pdf>
+Package pdftex.def Info: L0250_mcf_s_z00_hosts_match.pdf used on input line 270
 .
 (pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
 
-<L0250_mcf_s_z00_l0500cut.pdf, id=891, 578.16pt x 433.62pt>
-File: L0250_mcf_s_z00_l0500cut.pdf Graphic file (type pdf)
+<L0500_mcf_s_z00_hosts_match.pdf, id=887, 578.16pt x 433.62pt>
+File: L0500_mcf_s_z00_hosts_match.pdf Graphic file (type pdf)
 
-<use L0250_mcf_s_z00_l0500cut.pdf>
-Package pdftex.def Info: L0250_mcf_s_z00_l0500cut.pdf used on input line 300.
-(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
-
-<L0500_mcf_s_z00_l0500cut.pdf, id=892, 578.16pt x 433.62pt>
-File: L0500_mcf_s_z00_l0500cut.pdf Graphic file (type pdf)
-
-<use L0500_mcf_s_z00_l0500cut.pdf>
-Package pdftex.def Info: L0500_mcf_s_z00_l0500cut.pdf used on input line 301.
-(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
-
-<L0250_mcf_ns_z00_l0500cut.pdf, id=893, 578.16pt x 433.62pt>
-File: L0250_mcf_ns_z00_l0500cut.pdf Graphic file (type pdf)
-
-<use L0250_mcf_ns_z00_l0500cut.pdf>
-Package pdftex.def Info: L0250_mcf_ns_z00_l0500cut.pdf used on input line 307.
-(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
-
-<L0500_mcf_ns_z00_l0500cut.pdf, id=894, 578.16pt x 433.62pt>
-File: L0500_mcf_ns_z00_l0500cut.pdf Graphic file (type pdf)
-
-<use L0500_mcf_ns_z00_l0500cut.pdf>
-Package pdftex.def Info: L0500_mcf_ns_z00_l0500cut.pdf used on input line 308.
-(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
-
-<L0250_mcf_spin_z00_l0500cut.pdf, id=895, 578.16pt x 433.62pt>
-File: L0250_mcf_spin_z00_l0500cut.pdf Graphic file (type pdf)
-
-<use L0250_mcf_spin_z00_l0500cut.pdf>
-Package pdftex.def Info: L0250_mcf_spin_z00_l0500cut.pdf used on input line 314
+<use L0500_mcf_s_z00_hosts_match.pdf>
+Package pdftex.def Info: L0500_mcf_s_z00_hosts_match.pdf used on input line 272
 .
 (pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
 
-<L0500_mcf_spin_z00_l0500cut.pdf, id=896, 578.16pt x 433.62pt>
-File: L0500_mcf_spin_z00_l0500cut.pdf Graphic file (type pdf)
+<ld_mcf_s_z00_hosts_match.pdf, id=888, 578.16pt x 433.62pt>
+File: ld_mcf_s_z00_hosts_match.pdf Graphic file (type pdf)
 
-<use L0500_mcf_spin_z00_l0500cut.pdf>
-Package pdftex.def Info: L0500_mcf_spin_z00_l0500cut.pdf used on input line 315
+<use ld_mcf_s_z00_hosts_match.pdf>
+Package pdftex.def Info: ld_mcf_s_z00_hosts_match.pdf used on input line 273.
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+
+<L0125_mcf_ns_z00_hosts_match.pdf, id=889, 578.16pt x 433.62pt>
+File: L0125_mcf_ns_z00_hosts_match.pdf Graphic file (type pdf)
+
+<use L0125_mcf_ns_z00_hosts_match.pdf>
+Package pdftex.def Info: L0125_mcf_ns_z00_hosts_match.pdf used on input line 27
+9.
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+
+<L0250_mcf_ns_z00_hosts_match.pdf, id=890, 578.16pt x 433.62pt>
+File: L0250_mcf_ns_z00_hosts_match.pdf Graphic file (type pdf)
+
+<use L0250_mcf_ns_z00_hosts_match.pdf>
+Package pdftex.def Info: L0250_mcf_ns_z00_hosts_match.pdf used on input line 28
+0.
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+
+<L0500_mcf_ns_z00_hosts_match.pdf, id=891, 578.16pt x 433.62pt>
+File: L0500_mcf_ns_z00_hosts_match.pdf Graphic file (type pdf)
+
+<use L0500_mcf_ns_z00_hosts_match.pdf>
+Package pdftex.def Info: L0500_mcf_ns_z00_hosts_match.pdf used on input line 28
+2.
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+
+<ld_mcf_ns_z00_hosts_match.pdf, id=892, 578.16pt x 433.62pt>
+File: ld_mcf_ns_z00_hosts_match.pdf Graphic file (type pdf)
+
+<use ld_mcf_ns_z00_hosts_match.pdf>
+Package pdftex.def Info: ld_mcf_ns_z00_hosts_match.pdf used on input line 283.
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+
+<L0125_mcf_spin_z00_hosts_match.pdf, id=893, 578.16pt x 433.62pt>
+File: L0125_mcf_spin_z00_hosts_match.pdf Graphic file (type pdf)
+
+<use L0125_mcf_spin_z00_hosts_match.pdf>
+Package pdftex.def Info: L0125_mcf_spin_z00_hosts_match.pdf used on input line 
+289.
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+
+<L0250_mcf_spin_z00_hosts_match.pdf, id=894, 578.16pt x 433.62pt>
+File: L0250_mcf_spin_z00_hosts_match.pdf Graphic file (type pdf)
+
+<use L0250_mcf_spin_z00_hosts_match.pdf>
+Package pdftex.def Info: L0250_mcf_spin_z00_hosts_match.pdf used on input line 
+290.
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+
+<L0500_mcf_spin_z00_hosts_match.pdf, id=895, 578.16pt x 433.62pt>
+File: L0500_mcf_spin_z00_hosts_match.pdf Graphic file (type pdf)
+
+<use L0500_mcf_spin_z00_hosts_match.pdf>
+Package pdftex.def Info: L0500_mcf_spin_z00_hosts_match.pdf used on input line 
+292.
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+
+<ld_mcf_spin_z00_hosts_match.pdf, id=896, 578.16pt x 433.62pt>
+File: ld_mcf_spin_z00_hosts_match.pdf Graphic file (type pdf)
+
+<use ld_mcf_spin_z00_hosts_match.pdf>
+Package pdftex.def Info: ld_mcf_spin_z00_hosts_match.pdf used on input line 293
 .
 (pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
  [7
@@ -943,282 +949,10 @@ usion: multiple pdfs with page group included in a single page
 >]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [10 <./plotcircles.pdf> <./L0125_cf_compare_z00_l0125cut.pdf
-
-pdfTeX warning: /usr/texbin/pdflatex (file ./L0125_cf_compare_z00_l0125cut.pdf)
-: PDF inclusion: multiple pdfs with page group included in a single page
-> <./L0250_cf_compare_z00_l0125cut.pdf
-
-pdfTeX warning: /usr/texbin/pdflatex (file ./L0250_cf_compare_z00_l0125cut.pdf)
-: PDF inclusion: multiple pdfs with page group included in a single page
->]
+ [10 <./plotcircles.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [11 <./L0125_mcf_cnfw_z00_l0125cut.pdf> <./L0250_mcf_cnfw_z00_l0125cut.pdf
-
-pdfTeX warning: /usr/texbin/pdflatex (file ./L0250_mcf_cnfw_z00_l0125cut.pdf): 
-PDF inclusion: multiple pdfs with page group included in a single page
-> <./L0125_mcf_vrat_z00_l0125cut.pdf
-
-pdfTeX warning: /usr/texbin/pdflatex (file ./L0125_mcf_vrat_z00_l0125cut.pdf): 
-PDF inclusion: multiple pdfs with page group included in a single page
-> <./L0250_mcf_vrat_z00_l0125cut.pdf
-
-pdfTeX warning: /usr/texbin/pdflatex (file ./L0250_mcf_vrat_z00_l0125cut.pdf): 
-PDF inclusion: multiple pdfs with page group included in a single page
->]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [12 <./L0125_mcf_s_z00_l0125cut.pdf> <./L0250_mcf_s_z00_l0125cut.pdf
-
-pdfTeX warning: /usr/texbin/pdflatex (file ./L0250_mcf_s_z00_l0125cut.pdf): PDF
- inclusion: multiple pdfs with page group included in a single page
-> <./L0125_mcf_ns_z00_l0125cut.pdf
-
-pdfTeX warning: /usr/texbin/pdflatex (file ./L0125_mcf_ns_z00_l0125cut.pdf): PD
-F inclusion: multiple pdfs with page group included in a single page
-> <./L0250_mcf_ns_z00_l0125cut.pdf
-
-pdfTeX warning: /usr/texbin/pdflatex (file ./L0250_mcf_ns_z00_l0125cut.pdf): PD
-F inclusion: multiple pdfs with page group included in a single page
->]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [13 <./L0125_mcf_spin_z00_l0125cut.pdf> <./L0250_mcf_spin_z00_l0125cut.pdf
-
-pdfTeX warning: /usr/texbin/pdflatex (file ./L0250_mcf_spin_z00_l0125cut.pdf): 
-PDF inclusion: multiple pdfs with page group included in a single page
-> <./L0250_cf_compare_z00_l0500cut.pdf
-
-pdfTeX warning: /usr/texbin/pdflatex (file ./L0250_cf_compare_z00_l0500cut.pdf)
-: PDF inclusion: multiple pdfs with page group included in a single page
-> <./L0500_cf_compare_z00_l0500cut.pdf
-
-pdfTeX warning: /usr/texbin/pdflatex (file ./L0500_cf_compare_z00_l0500cut.pdf)
-: PDF inclusion: multiple pdfs with page group included in a single page
->]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [14 <./L0250_mcf_cnfw_z00_l0500cut.pdf> <./L0500_mcf_cnfw_z00_l0500cut.pdf
-
-pdfTeX warning: /usr/texbin/pdflatex (file ./L0500_mcf_cnfw_z00_l0500cut.pdf): 
-PDF inclusion: multiple pdfs with page group included in a single page
-> <./L0250_mcf_vrat_z00_l0500cut.pdf
-
-pdfTeX warning: /usr/texbin/pdflatex (file ./L0250_mcf_vrat_z00_l0500cut.pdf): 
-PDF inclusion: multiple pdfs with page group included in a single page
-> <./L0500_mcf_vrat_z00_l0500cut.pdf
-
-pdfTeX warning: /usr/texbin/pdflatex (file ./L0500_mcf_vrat_z00_l0500cut.pdf): 
-PDF inclusion: multiple pdfs with page group included in a single page
->]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [15 <./L0250_mcf_s_z00_l0500cut.pdf> <./L0500_mcf_s_z00_l0500cut.pdf
-
-pdfTeX warning: /usr/texbin/pdflatex (file ./L0500_mcf_s_z00_l0500cut.pdf): PDF
- inclusion: multiple pdfs with page group included in a single page
-> <./L0250_mcf_ns_z00_l0500cut.pdf
-
-pdfTeX warning: /usr/texbin/pdflatex (file ./L0250_mcf_ns_z00_l0500cut.pdf): PD
-F inclusion: multiple pdfs with page group included in a single page
-> <./L0500_mcf_ns_z00_l0500cut.pdf
-
-pdfTeX warning: /usr/texbin/pdflatex (file ./L0500_mcf_ns_z00_l0500cut.pdf): PD
-F inclusion: multiple pdfs with page group included in a single page
->]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [16 <./L0250_mcf_spin_z00_l0500cut.pdf> <./L0500_mcf_spin_z00_l0500cut.pdf
-
-pdfTeX warning: /usr/texbin/pdflatex (file ./L0500_mcf_spin_z00_l0500cut.pdf): 
-PDF inclusion: multiple pdfs with page group included in a single page
->] <L0125_cf_compare_z00_hosts_match.pdf, id=2788, 578.16pt x 433.62pt>
-File: L0125_cf_compare_z00_hosts_match.pdf Graphic file (type pdf)
-
-<use L0125_cf_compare_z00_hosts_match.pdf>
-Package pdftex.def Info: L0125_cf_compare_z00_hosts_match.pdf used on input lin
-e 327.
-(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
-
-<L0250_cf_compare_z00_hosts_match.pdf, id=2789, 578.16pt x 433.62pt>
-File: L0250_cf_compare_z00_hosts_match.pdf Graphic file (type pdf)
-
-<use L0250_cf_compare_z00_hosts_match.pdf>
-Package pdftex.def Info: L0250_cf_compare_z00_hosts_match.pdf used on input lin
-e 328.
-(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
-
-<L0500_cf_compare_z00_hosts_match.pdf, id=2790, 578.16pt x 433.62pt>
-File: L0500_cf_compare_z00_hosts_match.pdf Graphic file (type pdf)
-
-<use L0500_cf_compare_z00_hosts_match.pdf>
-Package pdftex.def Info: L0500_cf_compare_z00_hosts_match.pdf used on input lin
-e 330.
-(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
-File: L0500_cf_compare_z00_hosts_match.pdf Graphic file (type pdf)
-
-<use L0500_cf_compare_z00_hosts_match.pdf>
-Package pdftex.def Info: L0500_cf_compare_z00_hosts_match.pdf used on input lin
-e 331.
-(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-<L0125_mcf_cnfw_z00_hosts_match.pdf, id=2791, 578.16pt x 433.62pt>
-File: L0125_mcf_cnfw_z00_hosts_match.pdf Graphic file (type pdf)
-
-<use L0125_mcf_cnfw_z00_hosts_match.pdf>
-Package pdftex.def Info: L0125_mcf_cnfw_z00_hosts_match.pdf used on input line 
-337.
-(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
-
-<L0250_mcf_cnfw_z00_hosts_match.pdf, id=2792, 578.16pt x 433.62pt>
-File: L0250_mcf_cnfw_z00_hosts_match.pdf Graphic file (type pdf)
-
-<use L0250_mcf_cnfw_z00_hosts_match.pdf>
-Package pdftex.def Info: L0250_mcf_cnfw_z00_hosts_match.pdf used on input line 
-338.
-(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
-
-<L0500_mcf_cnfw_z00_hosts_match.pdf, id=2793, 578.16pt x 433.62pt>
-File: L0500_mcf_cnfw_z00_hosts_match.pdf Graphic file (type pdf)
-
-<use L0500_mcf_cnfw_z00_hosts_match.pdf>
-Package pdftex.def Info: L0500_mcf_cnfw_z00_hosts_match.pdf used on input line 
-340.
-(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
-File: L0500_mcf_cnfw_z00_hosts_match.pdf Graphic file (type pdf)
-
-<use L0500_mcf_cnfw_z00_hosts_match.pdf>
-Package pdftex.def Info: L0500_mcf_cnfw_z00_hosts_match.pdf used on input line 
-341.
-(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
-
-<L0125_mcf_vrat_z00_hosts_match.pdf, id=2794, 578.16pt x 433.62pt>
-File: L0125_mcf_vrat_z00_hosts_match.pdf Graphic file (type pdf)
-
-<use L0125_mcf_vrat_z00_hosts_match.pdf>
-Package pdftex.def Info: L0125_mcf_vrat_z00_hosts_match.pdf used on input line 
-347.
-(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
-
-<L0250_mcf_vrat_z00_hosts_match.pdf, id=2795, 578.16pt x 433.62pt>
-File: L0250_mcf_vrat_z00_hosts_match.pdf Graphic file (type pdf)
-
-<use L0250_mcf_vrat_z00_hosts_match.pdf>
-Package pdftex.def Info: L0250_mcf_vrat_z00_hosts_match.pdf used on input line 
-348.
-(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
-
-<L0500_mcf_vrat_z00_hosts_match.pdf, id=2796, 578.16pt x 433.62pt>
-File: L0500_mcf_vrat_z00_hosts_match.pdf Graphic file (type pdf)
-
-<use L0500_mcf_vrat_z00_hosts_match.pdf>
-Package pdftex.def Info: L0500_mcf_vrat_z00_hosts_match.pdf used on input line 
-350.
-(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
-File: L0500_mcf_vrat_z00_hosts_match.pdf Graphic file (type pdf)
-
-<use L0500_mcf_vrat_z00_hosts_match.pdf>
-Package pdftex.def Info: L0500_mcf_vrat_z00_hosts_match.pdf used on input line 
-351.
-(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
-
-<L0125_mcf_s_z00_hosts_match.pdf, id=2797, 578.16pt x 433.62pt>
-File: L0125_mcf_s_z00_hosts_match.pdf Graphic file (type pdf)
-
-<use L0125_mcf_s_z00_hosts_match.pdf>
-Package pdftex.def Info: L0125_mcf_s_z00_hosts_match.pdf used on input line 357
-.
-(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
-
-<L0250_mcf_s_z00_hosts_match.pdf, id=2798, 578.16pt x 433.62pt>
-File: L0250_mcf_s_z00_hosts_match.pdf Graphic file (type pdf)
-
-<use L0250_mcf_s_z00_hosts_match.pdf>
-Package pdftex.def Info: L0250_mcf_s_z00_hosts_match.pdf used on input line 358
-.
-(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
-
-<L0500_mcf_s_z00_hosts_match.pdf, id=2799, 578.16pt x 433.62pt>
-File: L0500_mcf_s_z00_hosts_match.pdf Graphic file (type pdf)
-
-<use L0500_mcf_s_z00_hosts_match.pdf>
-Package pdftex.def Info: L0500_mcf_s_z00_hosts_match.pdf used on input line 360
-.
-(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
-File: L0500_mcf_s_z00_hosts_match.pdf Graphic file (type pdf)
- <use L0500_mcf_s_z00_hosts_match.pdf>
-Package pdftex.def Info: L0500_mcf_s_z00_hosts_match.pdf used on input line 361
-.
-(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
-
-<L0125_mcf_ns_z00_hosts_match.pdf, id=2800, 578.16pt x 433.62pt>
-File: L0125_mcf_ns_z00_hosts_match.pdf Graphic file (type pdf)
-
-<use L0125_mcf_ns_z00_hosts_match.pdf>
-Package pdftex.def Info: L0125_mcf_ns_z00_hosts_match.pdf used on input line 36
-7.
-(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
-
-<L0250_mcf_ns_z00_hosts_match.pdf, id=2801, 578.16pt x 433.62pt>
-File: L0250_mcf_ns_z00_hosts_match.pdf Graphic file (type pdf)
-
-<use L0250_mcf_ns_z00_hosts_match.pdf>
-Package pdftex.def Info: L0250_mcf_ns_z00_hosts_match.pdf used on input line 36
-8.
-(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
-
-<L0500_mcf_ns_z00_hosts_match.pdf, id=2802, 578.16pt x 433.62pt>
-File: L0500_mcf_ns_z00_hosts_match.pdf Graphic file (type pdf)
-
-<use L0500_mcf_ns_z00_hosts_match.pdf>
-Package pdftex.def Info: L0500_mcf_ns_z00_hosts_match.pdf used on input line 37
-0.
-(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
-File: L0500_mcf_ns_z00_hosts_match.pdf Graphic file (type pdf)
- <use L0500_mcf_ns_z00_hosts_match.pdf>
-Package pdftex.def Info: L0500_mcf_ns_z00_hosts_match.pdf used on input line 37
-1.
-(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
-
-<L0125_mcf_spin_z00_hosts_match.pdf, id=2803, 578.16pt x 433.62pt>
-File: L0125_mcf_spin_z00_hosts_match.pdf Graphic file (type pdf)
-
-<use L0125_mcf_spin_z00_hosts_match.pdf>
-Package pdftex.def Info: L0125_mcf_spin_z00_hosts_match.pdf used on input line 
-377.
-(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
-
-<L0250_mcf_spin_z00_hosts_match.pdf, id=2804, 578.16pt x 433.62pt>
-File: L0250_mcf_spin_z00_hosts_match.pdf Graphic file (type pdf)
-
-<use L0250_mcf_spin_z00_hosts_match.pdf>
-Package pdftex.def Info: L0250_mcf_spin_z00_hosts_match.pdf used on input line 
-378.
-(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
-
-<L0500_mcf_spin_z00_hosts_match.pdf, id=2805, 578.16pt x 433.62pt>
-File: L0500_mcf_spin_z00_hosts_match.pdf Graphic file (type pdf)
-
-<use L0500_mcf_spin_z00_hosts_match.pdf>
-Package pdftex.def Info: L0500_mcf_spin_z00_hosts_match.pdf used on input line 
-380.
-(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
-File: L0500_mcf_spin_z00_hosts_match.pdf Graphic file (type pdf)
-
-<use L0500_mcf_spin_z00_hosts_match.pdf>
-Package pdftex.def Info: L0500_mcf_spin_z00_hosts_match.pdf used on input line 
-381.
-(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
- [17
-
-] (./villarrealzentner2015.bbl
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [18 <./L0125_cf_compare_z00_hosts_match.pdf> <./L0250_cf_compare_z00_hosts_mat
+ [11 <./L0125_cf_compare_z00_hosts_match.pdf> <./L0250_cf_compare_z00_hosts_mat
 ch.pdf
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./L0250_cf_compare_z00_hosts_match.p
@@ -1227,12 +961,15 @@ df): PDF inclusion: multiple pdfs with page group included in a single page
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./L0500_cf_compare_z00_hosts_match.p
 df): PDF inclusion: multiple pdfs with page group included in a single page
->])
+> <./ld_cf_compare_z00_hosts_match.pdf
 
-Package natbib Warning: There were undefined citations.
+pdfTeX warning: /usr/texbin/pdflatex (file ./ld_cf_compare_z00_hosts_match.pdf)
+: PDF inclusion: multiple pdfs with page group included in a single page
+>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[19 <./L0125_mcf_cnfw_z00_hosts_match.pdf> <./L0250_mcf_cnfw_z00_hosts_match.pd
-f
+ [12 <./L0125_mcf_cnfw_z00_hosts_match.pdf> <./L0250_mcf_cnfw_z00_hosts_match.p
+df
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./L0250_mcf_cnfw_z00_hosts_match.pdf
 ): PDF inclusion: multiple pdfs with page group included in a single page
@@ -1240,10 +977,14 @@ pdfTeX warning: /usr/texbin/pdflatex (file ./L0250_mcf_cnfw_z00_hosts_match.pdf
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./L0500_mcf_cnfw_z00_hosts_match.pdf
 ): PDF inclusion: multiple pdfs with page group included in a single page
+> <./ld_mcf_cnfw_z00_hosts_match.pdf
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./ld_mcf_cnfw_z00_hosts_match.pdf): 
+PDF inclusion: multiple pdfs with page group included in a single page
 >]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [20 <./L0125_mcf_vrat_z00_hosts_match.pdf> <./L0250_mcf_vrat_z00_hosts_match.p
+ [13 <./L0125_mcf_vrat_z00_hosts_match.pdf> <./L0250_mcf_vrat_z00_hosts_match.p
 df
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./L0250_mcf_vrat_z00_hosts_match.pdf
@@ -1252,10 +993,14 @@ pdfTeX warning: /usr/texbin/pdflatex (file ./L0250_mcf_vrat_z00_hosts_match.pdf
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./L0500_mcf_vrat_z00_hosts_match.pdf
 ): PDF inclusion: multiple pdfs with page group included in a single page
+> <./ld_mcf_vrat_z00_hosts_match.pdf
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./ld_mcf_vrat_z00_hosts_match.pdf): 
+PDF inclusion: multiple pdfs with page group included in a single page
 >]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [21 <./L0125_mcf_s_z00_hosts_match.pdf> <./L0250_mcf_s_z00_hosts_match.pdf
+ [14 <./L0125_mcf_s_z00_hosts_match.pdf> <./L0250_mcf_s_z00_hosts_match.pdf
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./L0250_mcf_s_z00_hosts_match.pdf): 
 PDF inclusion: multiple pdfs with page group included in a single page
@@ -1263,10 +1008,14 @@ PDF inclusion: multiple pdfs with page group included in a single page
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./L0500_mcf_s_z00_hosts_match.pdf): 
 PDF inclusion: multiple pdfs with page group included in a single page
+> <./ld_mcf_s_z00_hosts_match.pdf
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./ld_mcf_s_z00_hosts_match.pdf): PDF
+ inclusion: multiple pdfs with page group included in a single page
 >]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [22 <./L0125_mcf_ns_z00_hosts_match.pdf> <./L0250_mcf_ns_z00_hosts_match.pdf
+ [15 <./L0125_mcf_ns_z00_hosts_match.pdf> <./L0250_mcf_ns_z00_hosts_match.pdf
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./L0250_mcf_ns_z00_hosts_match.pdf):
  PDF inclusion: multiple pdfs with page group included in a single page
@@ -1274,10 +1023,14 @@ pdfTeX warning: /usr/texbin/pdflatex (file ./L0250_mcf_ns_z00_hosts_match.pdf):
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./L0500_mcf_ns_z00_hosts_match.pdf):
  PDF inclusion: multiple pdfs with page group included in a single page
+> <./ld_mcf_ns_z00_hosts_match.pdf
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./ld_mcf_ns_z00_hosts_match.pdf): PD
+F inclusion: multiple pdfs with page group included in a single page
 >]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [23 <./L0125_mcf_spin_z00_hosts_match.pdf> <./L0250_mcf_spin_z00_hosts_match.p
+ [16 <./L0125_mcf_spin_z00_hosts_match.pdf> <./L0250_mcf_spin_z00_hosts_match.p
 df
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./L0250_mcf_spin_z00_hosts_match.pdf
@@ -1286,44 +1039,334 @@ pdfTeX warning: /usr/texbin/pdflatex (file ./L0250_mcf_spin_z00_hosts_match.pdf
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./L0500_mcf_spin_z00_hosts_match.pdf
 ): PDF inclusion: multiple pdfs with page group included in a single page
->] (./villarrealzentner2015.aux)
+> <./ld_mcf_spin_z00_hosts_match.pdf
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+pdfTeX warning: /usr/texbin/pdflatex (file ./ld_mcf_spin_z00_hosts_match.pdf): 
+PDF inclusion: multiple pdfs with page group included in a single page
+>] <L0125_cf_compare_z00_l0125cut.pdf, id=2788, 578.16pt x 433.62pt>
+File: L0125_cf_compare_z00_l0125cut.pdf Graphic file (type pdf)
 
- ) 
+<use L0125_cf_compare_z00_l0125cut.pdf>
+Package pdftex.def Info: L0125_cf_compare_z00_l0125cut.pdf used on input line 3
+04.
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+
+<L0250_cf_compare_z00_l0125cut.pdf, id=2789, 578.16pt x 433.62pt>
+File: L0250_cf_compare_z00_l0125cut.pdf Graphic file (type pdf)
+
+<use L0250_cf_compare_z00_l0125cut.pdf>
+Package pdftex.def Info: L0250_cf_compare_z00_l0125cut.pdf used on input line 3
+05.
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+
+<L0125_mcf_cnfw_z00_l0125cut.pdf, id=2790, 578.16pt x 433.62pt>
+File: L0125_mcf_cnfw_z00_l0125cut.pdf Graphic file (type pdf)
+
+<use L0125_mcf_cnfw_z00_l0125cut.pdf>
+Package pdftex.def Info: L0125_mcf_cnfw_z00_l0125cut.pdf used on input line 311
+.
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+
+<L0250_mcf_cnfw_z00_l0125cut.pdf, id=2791, 578.16pt x 433.62pt>
+File: L0250_mcf_cnfw_z00_l0125cut.pdf Graphic file (type pdf)
+
+<use L0250_mcf_cnfw_z00_l0125cut.pdf>
+Package pdftex.def Info: L0250_mcf_cnfw_z00_l0125cut.pdf used on input line 312
+.
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+
+<L0125_mcf_vrat_z00_l0125cut.pdf, id=2792, 578.16pt x 433.62pt>
+File: L0125_mcf_vrat_z00_l0125cut.pdf Graphic file (type pdf)
+
+<use L0125_mcf_vrat_z00_l0125cut.pdf>
+Package pdftex.def Info: L0125_mcf_vrat_z00_l0125cut.pdf used on input line 318
+.
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+
+<L0250_mcf_vrat_z00_l0125cut.pdf, id=2793, 578.16pt x 433.62pt>
+File: L0250_mcf_vrat_z00_l0125cut.pdf Graphic file (type pdf)
+
+<use L0250_mcf_vrat_z00_l0125cut.pdf>
+Package pdftex.def Info: L0250_mcf_vrat_z00_l0125cut.pdf used on input line 319
+.
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+
+<L0125_mcf_s_z00_l0125cut.pdf, id=2794, 578.16pt x 433.62pt>
+File: L0125_mcf_s_z00_l0125cut.pdf Graphic file (type pdf)
+
+<use L0125_mcf_s_z00_l0125cut.pdf>
+Package pdftex.def Info: L0125_mcf_s_z00_l0125cut.pdf used on input line 325.
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+
+<L0250_mcf_s_z00_l0125cut.pdf, id=2795, 578.16pt x 433.62pt>
+File: L0250_mcf_s_z00_l0125cut.pdf Graphic file (type pdf)
+
+<use L0250_mcf_s_z00_l0125cut.pdf>
+Package pdftex.def Info: L0250_mcf_s_z00_l0125cut.pdf used on input line 326.
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+
+<L0125_mcf_ns_z00_l0125cut.pdf, id=2796, 578.16pt x 433.62pt>
+File: L0125_mcf_ns_z00_l0125cut.pdf Graphic file (type pdf)
+
+<use L0125_mcf_ns_z00_l0125cut.pdf>
+Package pdftex.def Info: L0125_mcf_ns_z00_l0125cut.pdf used on input line 332.
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+
+<L0250_mcf_ns_z00_l0125cut.pdf, id=2797, 578.16pt x 433.62pt>
+File: L0250_mcf_ns_z00_l0125cut.pdf Graphic file (type pdf)
+
+<use L0250_mcf_ns_z00_l0125cut.pdf>
+Package pdftex.def Info: L0250_mcf_ns_z00_l0125cut.pdf used on input line 333.
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+
+<L0125_mcf_spin_z00_l0125cut.pdf, id=2798, 578.16pt x 433.62pt>
+File: L0125_mcf_spin_z00_l0125cut.pdf Graphic file (type pdf)
+
+<use L0125_mcf_spin_z00_l0125cut.pdf>
+Package pdftex.def Info: L0125_mcf_spin_z00_l0125cut.pdf used on input line 339
+.
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+
+<L0250_mcf_spin_z00_l0125cut.pdf, id=2799, 578.16pt x 433.62pt>
+File: L0250_mcf_spin_z00_l0125cut.pdf Graphic file (type pdf)
+
+<use L0250_mcf_spin_z00_l0125cut.pdf>
+Package pdftex.def Info: L0250_mcf_spin_z00_l0125cut.pdf used on input line 340
+.
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+<L0250_cf_compare_z00_l0500cut.pdf, id=2800, 578.16pt x 433.62pt>
+File: L0250_cf_compare_z00_l0500cut.pdf Graphic file (type pdf)
+
+<use L0250_cf_compare_z00_l0500cut.pdf>
+Package pdftex.def Info: L0250_cf_compare_z00_l0500cut.pdf used on input line 3
+48.
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+
+<L0500_cf_compare_z00_l0500cut.pdf, id=2801, 578.16pt x 433.62pt>
+File: L0500_cf_compare_z00_l0500cut.pdf Graphic file (type pdf)
+
+<use L0500_cf_compare_z00_l0500cut.pdf>
+Package pdftex.def Info: L0500_cf_compare_z00_l0500cut.pdf used on input line 3
+49.
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+
+<L0250_mcf_cnfw_z00_l0500cut.pdf, id=2802, 578.16pt x 433.62pt>
+File: L0250_mcf_cnfw_z00_l0500cut.pdf Graphic file (type pdf)
+
+<use L0250_mcf_cnfw_z00_l0500cut.pdf>
+Package pdftex.def Info: L0250_mcf_cnfw_z00_l0500cut.pdf used on input line 355
+.
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+
+<L0500_mcf_cnfw_z00_l0500cut.pdf, id=2803, 578.16pt x 433.62pt>
+File: L0500_mcf_cnfw_z00_l0500cut.pdf Graphic file (type pdf)
+
+<use L0500_mcf_cnfw_z00_l0500cut.pdf>
+Package pdftex.def Info: L0500_mcf_cnfw_z00_l0500cut.pdf used on input line 356
+.
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+
+<L0250_mcf_vrat_z00_l0500cut.pdf, id=2804, 578.16pt x 433.62pt>
+File: L0250_mcf_vrat_z00_l0500cut.pdf Graphic file (type pdf)
+
+<use L0250_mcf_vrat_z00_l0500cut.pdf>
+Package pdftex.def Info: L0250_mcf_vrat_z00_l0500cut.pdf used on input line 362
+.
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+
+<L0500_mcf_vrat_z00_l0500cut.pdf, id=2805, 578.16pt x 433.62pt>
+File: L0500_mcf_vrat_z00_l0500cut.pdf Graphic file (type pdf)
+
+<use L0500_mcf_vrat_z00_l0500cut.pdf>
+Package pdftex.def Info: L0500_mcf_vrat_z00_l0500cut.pdf used on input line 363
+.
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+
+<L0250_mcf_s_z00_l0500cut.pdf, id=2806, 578.16pt x 433.62pt>
+File: L0250_mcf_s_z00_l0500cut.pdf Graphic file (type pdf)
+
+<use L0250_mcf_s_z00_l0500cut.pdf>
+Package pdftex.def Info: L0250_mcf_s_z00_l0500cut.pdf used on input line 369.
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+
+<L0500_mcf_s_z00_l0500cut.pdf, id=2807, 578.16pt x 433.62pt>
+File: L0500_mcf_s_z00_l0500cut.pdf Graphic file (type pdf)
+
+<use L0500_mcf_s_z00_l0500cut.pdf>
+Package pdftex.def Info: L0500_mcf_s_z00_l0500cut.pdf used on input line 370.
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+
+<L0250_mcf_ns_z00_l0500cut.pdf, id=2808, 578.16pt x 433.62pt>
+File: L0250_mcf_ns_z00_l0500cut.pdf Graphic file (type pdf)
+
+<use L0250_mcf_ns_z00_l0500cut.pdf>
+Package pdftex.def Info: L0250_mcf_ns_z00_l0500cut.pdf used on input line 376.
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+
+<L0500_mcf_ns_z00_l0500cut.pdf, id=2809, 578.16pt x 433.62pt>
+File: L0500_mcf_ns_z00_l0500cut.pdf Graphic file (type pdf)
+
+<use L0500_mcf_ns_z00_l0500cut.pdf>
+Package pdftex.def Info: L0500_mcf_ns_z00_l0500cut.pdf used on input line 377.
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+
+<L0250_mcf_spin_z00_l0500cut.pdf, id=2810, 578.16pt x 433.62pt>
+File: L0250_mcf_spin_z00_l0500cut.pdf Graphic file (type pdf)
+
+<use L0250_mcf_spin_z00_l0500cut.pdf>
+Package pdftex.def Info: L0250_mcf_spin_z00_l0500cut.pdf used on input line 383
+.
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+
+<L0500_mcf_spin_z00_l0500cut.pdf, id=2811, 578.16pt x 433.62pt>
+File: L0500_mcf_spin_z00_l0500cut.pdf Graphic file (type pdf)
+
+<use L0500_mcf_spin_z00_l0500cut.pdf>
+Package pdftex.def Info: L0500_mcf_spin_z00_l0500cut.pdf used on input line 384
+.
+(pdftex.def)             Requested size: 215.99854pt x 161.99838pt.
+ [17
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+(./villarrealzentner2015.bbl
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [18 <./L0125_cf_compare_z00_l0125cut.pdf> <./L0250_cf_compare_z00_l0125cut.pdf
+
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./L0250_cf_compare_z00_l0125cut.pdf)
+: PDF inclusion: multiple pdfs with page group included in a single page
+> <./L0125_mcf_cnfw_z00_l0125cut.pdf
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./L0125_mcf_cnfw_z00_l0125cut.pdf): 
+PDF inclusion: multiple pdfs with page group included in a single page
+> <./L0250_mcf_cnfw_z00_l0125cut.pdf
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./L0250_mcf_cnfw_z00_l0125cut.pdf): 
+PDF inclusion: multiple pdfs with page group included in a single page
+>]
+Underfull \vbox (badness 7397) has occurred while \output is active []
+
+
+Underfull \vbox (badness 8189) has occurred while \output is active []
+
+ [19 <./L0125_mcf_vrat_z00_l0125cut.pdf> <./L0250_mcf_vrat_z00_l0125cut.pdf
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./L0250_mcf_vrat_z00_l0125cut.pdf): 
+PDF inclusion: multiple pdfs with page group included in a single page
+> <./L0125_mcf_s_z00_l0125cut.pdf
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./L0125_mcf_s_z00_l0125cut.pdf): PDF
+ inclusion: multiple pdfs with page group included in a single page
+> <./L0250_mcf_s_z00_l0125cut.pdf
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./L0250_mcf_s_z00_l0125cut.pdf): PDF
+ inclusion: multiple pdfs with page group included in a single page
+>])
+
+Package natbib Warning: There were undefined citations.
+
+[20
+
+ <./L0125_mcf_ns_z00_l0125cut.pdf> <./L0250_mcf_ns_z00_l0125cut.pdf
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./L0250_mcf_ns_z00_l0125cut.pdf): PD
+F inclusion: multiple pdfs with page group included in a single page
+> <./L0125_mcf_spin_z00_l0125cut.pdf
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./L0125_mcf_spin_z00_l0125cut.pdf): 
+PDF inclusion: multiple pdfs with page group included in a single page
+> <./L0250_mcf_spin_z00_l0125cut.pdf
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./L0250_mcf_spin_z00_l0125cut.pdf): 
+PDF inclusion: multiple pdfs with page group included in a single page
+>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [21 <./L0250_cf_compare_z00_l0500cut.pdf> <./L0500_cf_compare_z00_l0500cut.pdf
+
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./L0500_cf_compare_z00_l0500cut.pdf)
+: PDF inclusion: multiple pdfs with page group included in a single page
+> <./L0250_mcf_cnfw_z00_l0500cut.pdf
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./L0250_mcf_cnfw_z00_l0500cut.pdf): 
+PDF inclusion: multiple pdfs with page group included in a single page
+> <./L0500_mcf_cnfw_z00_l0500cut.pdf
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./L0500_mcf_cnfw_z00_l0500cut.pdf): 
+PDF inclusion: multiple pdfs with page group included in a single page
+>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [22 <./L0250_mcf_vrat_z00_l0500cut.pdf> <./L0500_mcf_vrat_z00_l0500cut.pdf
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./L0500_mcf_vrat_z00_l0500cut.pdf): 
+PDF inclusion: multiple pdfs with page group included in a single page
+> <./L0250_mcf_s_z00_l0500cut.pdf
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./L0250_mcf_s_z00_l0500cut.pdf): PDF
+ inclusion: multiple pdfs with page group included in a single page
+> <./L0500_mcf_s_z00_l0500cut.pdf
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./L0500_mcf_s_z00_l0500cut.pdf): PDF
+ inclusion: multiple pdfs with page group included in a single page
+>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [23 <./L0250_mcf_ns_z00_l0500cut.pdf> <./L0500_mcf_ns_z00_l0500cut.pdf
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./L0500_mcf_ns_z00_l0500cut.pdf): PD
+F inclusion: multiple pdfs with page group included in a single page
+> <./L0250_mcf_spin_z00_l0500cut.pdf
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./L0250_mcf_spin_z00_l0500cut.pdf): 
+PDF inclusion: multiple pdfs with page group included in a single page
+> <./L0500_mcf_spin_z00_l0500cut.pdf
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./L0500_mcf_spin_z00_l0500cut.pdf): 
+PDF inclusion: multiple pdfs with page group included in a single page
+>] (./villarrealzentner2015.aux) ) 
 Here is how much of TeX's memory you used:
- 5833 strings out of 493488
- 88275 string characters out of 3141326
- 168900 words of memory out of 3000000
- 8970 multiletter control sequences out of 15000+200000
+ 5863 strings out of 493488
+ 89304 string characters out of 3141326
+ 169900 words of memory out of 3000000
+ 8994 multiletter control sequences out of 15000+200000
  17216 words of font info for 63 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 44i,15n,46p,1901b,393s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></
-usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></us
-r/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb><
-/usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
-usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></us
-r/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/
-local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/lo
-cal/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loca
-l/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/
-texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/tex
-live/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texliv
-e/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2
-012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2012
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2012/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2012/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2012/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2012/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2012/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on villarrealzentner2015.pdf (23 pages, 1791877 bytes).
+ 44i,15n,46p,1701b,389s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/local/texlive/2012/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/pub
+lic/amsfonts/cmextra/cmex9.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr12.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr5.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr6.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr8.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr9.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
+10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6
+.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.p
+fb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb
+></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb>
+Output written on villarrealzentner2015.pdf (23 pages, 1899888 bytes).
 PDF statistics:
- 3810 PDF objects out of 4296 (max. 8388607)
- 1307 compressed objects within 14 object streams
+ 4119 PDF objects out of 4296 (max. 8388607)
+ 1409 compressed objects within 15 object streams
  0 named destinations out of 1000 (max. 500000)
- 346 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 376 words of extra memory for PDF output out of 10000 (max. 10000000)
 

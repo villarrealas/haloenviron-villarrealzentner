@@ -225,10 +225,79 @@ In the case that the halo can be described well by an NFW profile, one expects a
 \end{figure*}
 
 Halo shape and satellite number are statistics that do not end up having their environmental effects removed and can even be made more prominent by our methodology. One intuitive way to consider the former statistic is in the context of the cosmic web. Studies have shown a statistically significant alignment between filaments and satellite galaxy position \citep{tempel15, velliscig15}. Our method then expands the halo radius and subsumes material that was previously outside of the halo. A simple graphic illustrates this potential effect in Figure 8. As there is a preferential distribution of these satellites that are being subsumed into the halo, this would serve to induce a shape to the halo that would then be determined by Rockstar. In addition, as our satellite number is chosen by those halos within the halo radius, we anticipate that the most clustered regions would see the largest increase in satellite count and thus see an increase in the satellite number mark.
-vi 
+
 The ``sweet spot'' behavior of this method is also of interest to us. The halo redefinition process that we use serves to decrease halo clustering for the most concentrated halos and increase halo clustering for the least concentrated halos. In the case of the high concentration cut, the reduced clustering can be seen as a result of halo exclusion. As we exchange collections of tightly clustered smaller halos for a single larger halo, then the most prominent contribution of the two-point correlation function will be reduced at all scales.
 
-Given the differences between the simulation results and with the data available to us with the Diemer et al. simulations, we then explore the effect of the choice in mass cut. The low mass cut effects are shown in Figures 10 through 15. This cut explores the area in which we are including ill-resolved halos potentially into the simulation. Namely, utilizing this mass cut on the L0250 simulation box data includes halos that do not fit the form of the expected monotonic halo mass-concentration relation. We can determine several facts from this exercise in resolution testing. The first is that the general behavior of the marks seems to be the same regardless of the influence of the resolution effects. Decreasing the value of $\Delta$ still moves our marked correlation functions in the same directions as the previous mass cut, although often from a very different starting location. A second interesting fact is that despite the L0250 simulation potentially having ill-resolved halos included in the sample, the effect on the overall marked correlation function result is relatively minor. Both samples seem to converge to the same answers within simulation variance. Finally, it should be noted that an unreasonable amount of reduction in $\Delta$ is necessary to bring the lowest mass halos into a region where they will work with this method. We will further explore this effect in the highest mass cuts.
+We would also like to study our sample for some insight as to how this process of correction is actually functioning. For example, we would like to know if it is a more careful selection of halos in our simulation that results in the removal of this apparent assembly bias or if it is the increased noise in the statistics as a result of reducing the number of halos. There is also the possibility of halo statistics changing as a result of the new halo definitions to be considered. One can imagine that the addition of a large amount of mass toward the edge of the halo would reasonably change measures of concentration, shape, and spin. To test some of these possibilities, we run an algorithm to match halos across our multiple catalogs. We identify halos that are within a distance tolerance that we scale such that there are no identifications of multiple halos to the same object in another catalog. Catalogs are all matched against a single target catalog. This target catalog is chosen to fit the value of $\Delta$ that we find best removes assembly bias in large scales for the concentration marks chosen. For the Diemer et al. simulations, we find this to be a value of approximately $\Delta = 70$, while the Consuelo simulation favors a slightly higher value of $\Delta = 90$. Once the catalogs have been matched against this primary catalog, we rerun our marked correlation function calculations using only host halos identified across both catalogs. This tests if the exclusion of halos that are subsumed in the lower $\Delta$ catalog is the primary cause of our results as well as those halos that are commonly referred to as backsplash halos.
+
+We can see the results of this test in Figures 10 through 15. Comparing in each case, the $\Delta = 200$ result when utilizing a catalog matched to our best fit $\Delta$ demonstrates less assembly bias than the full catalog for the mass cut would demonstrate for our concentration marks. While the magnitude of this result does vary with scale, upwards of 80\% of assembly bias can be accounted for as a result of this selection effect. Furthermore, most of the removed assembly bias occurs on scales that are comparable to the increase in the halo radius between the samples. This seems to indicate that there is significant contamination of host halo statistics by backsplash halos and other halos that would be subsumed into a common host given an increase in halo size.
+
+However, it is worth noting that statistics such as spin parameter, shape, and satellite numbers do not benefit from this selection effect. Assembly bias in these statistics remains nearly identical, suggesting that the selection effects that preferentially account for backsplash halos do not impact these marks. This does serve as a consistency check: given that our methodology does not seem to have a positive impact on the behavior of these marks, the fact that this selection criteria would have positive impact on the data would be an oddity. Instead, we have another confirmation as to the intrinsic ties between these halo statistics and environment.
+
+\begin{figure*}
+	\centering
+	\subfloat[L0125]{{\includegraphics[width=.45\textwidth]{L0125_cf_compare_z00_hosts_match.pdf}} }
+	\subfloat[L0250]{{\includegraphics[width=.45\textwidth]{L0250_cf_compare_z00_hosts_match.pdf}} }
+	\\
+	\subfloat[L0500]{{\includegraphics[width=.45\textwidth]{L0500_cf_compare_z00_hosts_match.pdf}} }
+	\subfloat[Consuelo]{{\includegraphics[width=.45\textwidth]{ld_cf_compare_z00_hosts_match.pdf}} }
+	\caption{The difference of the correlation function of all hosts compared to a cut of the 20 \% highest or lowest NFW defined concentration halos utilizing the catalogs matched against the halo catalog of the best fit overdensity parameter. The solid lines represent the difference from the highest concentration cut, the dashed lines represent the difference from the lowest concentration cut.}
+\end{figure*}
+
+\begin{figure*}
+	\centering
+	\subfloat[L0125]{{\includegraphics[width=.45\textwidth]{L0125_mcf_cnfw_z00_hosts_match.pdf}} }
+	\subfloat[L0250]{{\includegraphics[width=.45\textwidth]{L0250_mcf_cnfw_z00_hosts_match.pdf}} }
+	\\
+	\subfloat[L0500]{{\includegraphics[width=.45\textwidth]{L0500_mcf_cnfw_z00_hosts_match.pdf}} }
+	\subfloat[Consuelo]{{\includegraphics[width=.45\textwidth]{ld_mcf_cnfw_z00_hosts_match.pdf}} }
+	\caption{The marked correlation function for the concentration defined according to the NFW profile utilizing the catalogs matched against the halo catalog of the best fit overdensity parameter. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The dashed line denotes the largest halo radius for a given value of the overdensity parameter.}
+\end{figure*}
+
+\begin{figure*}
+	\centering
+	\subfloat[L0125]{{\includegraphics[width=.45\textwidth]{L0125_mcf_vrat_z00_hosts_match.pdf}} }
+	\subfloat[L0250]{{\includegraphics[width=.45\textwidth]{L0250_mcf_vrat_z00_hosts_match.pdf}} }
+	\\
+	\subfloat[L0500]{{\includegraphics[width=.45\textwidth]{L0500_mcf_vrat_z00_hosts_match.pdf}} }
+	\subfloat[Consuelo]{{\includegraphics[width=.45\textwidth]{ld_mcf_vrat_z00_hosts_match.pdf}} }
+	\caption{The marked correlation function for the concentration defined according to the velocity ratio utilizing the catalogs matched against the halo catalog of the best fit overdensity parameter. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The dashed line denotes the largest halo radius for a given value of the overdensity parameter.}
+\end{figure*}
+
+\begin{figure*}
+	\centering
+	\subfloat[L0125]{{\includegraphics[width=.45\textwidth]{L0125_mcf_s_z00_hosts_match.pdf}} }
+	\subfloat[L0250]{{\includegraphics[width=.45\textwidth]{L0250_mcf_s_z00_hosts_match.pdf}} }
+	\\
+	\subfloat[L0500]{{\includegraphics[width=.45\textwidth]{L0500_mcf_s_z00_hosts_match.pdf}} }
+	\subfloat[Consuelo]{{\includegraphics[width=.45\textwidth]{ld_mcf_s_z00_hosts_match.pdf}} }
+	\caption{The marked correlation function for the concentration defined according to the shape of the halo utilizing the catalogs matched against the halo catalog of the best fit overdensity parameter. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The dashed line denotes the largest halo radius for a given value of the overdensity parameter.}
+\end{figure*}
+
+\begin{figure*}
+	\centering
+	\subfloat[L0125]{{\includegraphics[width=.45\textwidth]{L0125_mcf_ns_z00_hosts_match.pdf}} }
+	\subfloat[L0250]{{\includegraphics[width=.45\textwidth]{L0250_mcf_ns_z00_hosts_match.pdf}} }
+	\\
+	\subfloat[L0500]{{\includegraphics[width=.45\textwidth]{L0500_mcf_ns_z00_hosts_match.pdf}} }
+	\subfloat[Consuelo]{{\includegraphics[width=.45\textwidth]{ld_mcf_ns_z00_hosts_match.pdf}} }
+	\caption{The marked correlation function for the concentration defined according to the satellite number of the halo utilizing the catalogs matched against the halo catalog of the best fit overdensity parameter. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The dashed line denotes the largest halo radius for a given value of the overdensity parameter.}
+\end{figure*}
+
+\begin{figure*}
+	\centering
+	\subfloat[L0125]{{\includegraphics[width=.45\textwidth]{L0125_mcf_spin_z00_hosts_match.pdf}} }
+	\subfloat[L0250]{{\includegraphics[width=.45\textwidth]{L0250_mcf_spin_z00_hosts_match.pdf}} }
+	\\
+	\subfloat[L0500]{{\includegraphics[width=.45\textwidth]{L0500_mcf_spin_z00_hosts_match.pdf}} }
+	\subfloat[Consuelo]{{\includegraphics[width=.45\textwidth]{ld_mcf_spin_z00_hosts_match.pdf}} }
+	\caption{The marked correlation function for the concentration defined according to the spin parameter of the halo utilizing the catalogs matched against the halo catalog of the best fit overdensity parameter. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The dashed line denotes the largest halo radius for a given value of the overdensity parameter.}
+\end{figure*}
+
+%% clearpage is here to try to make this actually compile! I DON'T KNOW WHY.
+\clearpage
+
+Given the differences between the simulation results and with the data available to us with the Diemer et al. simulations, we then explore the effect of the choice in mass cut. The low mass cut effects are shown in Figures 16 through 21. This cut explores the area in which we are including ill-resolved halos potentially into the simulation. Namely, utilizing this mass cut on the L0250 simulation box data includes halos that do not fit the form of the expected monotonic halo mass-concentration relation. We can determine several facts from this exercise in resolution testing. The first is that the general behavior of the marks seems to be the same regardless of the influence of the resolution effects. Decreasing the value of $\Delta$ still moves our marked correlation functions in the same directions as the previous mass cut, although often from a very different starting location. A second interesting fact is that despite the L0250 simulation potentially having ill-resolved halos included in the sample, the effect on the overall marked correlation function result is relatively minor. Both samples seem to converge to the same answers within simulation variance. Finally, it should be noted that an unreasonable amount of reduction in $\Delta$ is necessary to bring the lowest mass halos into a region where they will work with this method. We will further explore this effect in the highest mass cuts.
 
 \begin{figure*}
 	\centering
@@ -272,7 +341,7 @@ Given the differences between the simulation results and with the data available
 	\caption{The marked correlation function for the spin of the halo utilizing the 'l0125cut' mass cutoffs. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The dashed line denotes the largest halo radius for a given value of the overdensity parameter.}
 \end{figure*}
 
-We can repeat this exercise by looking at a different set of mass cuts. In this case we will utilize our highest mass cut on the L0250 and L0500 boxes. This case does not include poorly resolved halos as we were including in the previous example. Instead, the smaller sized box runs the risk of having less of the most massive halos, resulting in having a larger variance for objects at high mass. The results of this are shown in Figures 16 through 20. There are several key observations to take away from this set of figures. It should be noted that the trend for the marked correlation functions to move is the opposite of what is seen in the low mass cut case. This seems to indicate a consistency in which you move from an excess of highly concentrated pairs in low mass bins to an excess of low concentrated pairs (or a lack of high concentrated pairs) at high mass bins. This may arise from many possible effects, though the possible exclusion due to the increased halo sizes is certainly not negligible. We also note that aside from additional noise, this trend is seen in both the L0500 and L0250 simulation boxes, asserting that this effect is not merely a statistical fluke.
+We can repeat this exercise by looking at a different set of mass cuts. In this case we will utilize our highest mass cut on the L0250 and L0500 boxes. This case does not include poorly resolved halos as we were including in the previous example. Instead, the smaller sized box runs the risk of having less of the most massive halos, resulting in having a larger variance for objects at high mass. The results of this are shown in Figures 22 through 27. There are several key observations to take away from this set of figures. It should be noted that the trend for the marked correlation functions to move is the opposite of what is seen in the low mass cut case. This seems to indicate a consistency in which you move from an excess of highly concentrated pairs in low mass bins to an excess of low concentrated pairs (or a lack of high concentrated pairs) at high mass bins. This may arise from many possible effects, though the possible exclusion due to the increased halo sizes is certainly not negligible. We also note that aside from additional noise, this trend is seen in both the L0500 and L0250 simulation boxes, asserting that this effect is not merely a statistical fluke.
 
 \begin{figure*}
 	\centering
@@ -316,71 +385,8 @@ We can repeat this exercise by looking at a different set of mass cuts. In this 
 	\caption{The marked correlation function for the spin of the halo utilizing the 'l0500cut' mass cutoffs. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The dashed line denotes the largest halo radius for a given value of the overdensity parameter.}
 \end{figure*}
 
-%% clearpage is here to try to make this actually compile! I DON'T KNOW WHY.
-\clearpage
 
-In addition to this study of how the choice of mass cut effects our best choice of model, we would also like to explore the nature of how this method functions. For example, we would like to know if it is a more careful selection of halos in our simulation that results in the removal of this apparent assembly bias or if it is the increased noise in the statistics as a result of reducing the number of halos. There is also the possibility of halo statistics changing as a result of the new halo definitions to be considered. One can imagine that the addition of a large amount of mass toward the edge of the halo would reasonably change measures of concentration, shape, and spin. To test some of these possibilities, we run an algorithm to match halos across our multiple catalogs. We identify halos that are within a distance tolerance that we scale such that there are no identifications of multiple halos to the same object in another catalog. Catalogs are all matched against a single target catalog. This target catalog is chosen to fit the value of $\Delta$ that we find best removes assembly bias in large scales for the concentration marks chosen. For the Diemer et al. simulations, we find this to be a value of approximately $\Delta = 70$, while the Consuelo simulation favors a slightly higher value of $\Delta = 90$. Once the catalogs have been matched against this primary catalog, we rerun our marked correlation function calculations using only halos identified across both catalogs. This tests if the exclusion of halos that are subsumed in the lower $\Delta$ catalog is the primary cause of our results. We can see the results of this test in Figures 21 through 26. In each case, the $\Delta = 200$ result when utilizing a catalog matched to our best fit $\Delta$ demonstrates less assembly bias than the full catalog for the mass cut would demonstrate.
-%% using  the L0500 as a placeholder for the LasDamas matches while those are being rerun for consistency
-%% qualitative results are more or less the same.
-\begin{figure*}
-	\centering
-	\subfloat[L0125]{{\includegraphics[width=.45\textwidth]{L0125_cf_compare_z00_hosts_match.pdf}} }
-	\subfloat[L0250]{{\includegraphics[width=.45\textwidth]{L0250_cf_compare_z00_hosts_match.pdf}} }
-	\\
-	\subfloat[L0500]{{\includegraphics[width=.45\textwidth]{L0500_cf_compare_z00_hosts_match.pdf}} }
-	\subfloat[Consuelo]{{\includegraphics[width=.45\textwidth]{L0500_cf_compare_z00_hosts_match.pdf}} }
-	\caption{The difference of the correlation function of all hosts compared to a cut of the 20 \% highest or lowest NFW defined concentration halos utilizing the catalogs matched against the halo catalog of the best fit overdensity parameter. The solid lines represent the difference from the highest concentration cut, the dashed lines represent the difference from the lowest concentration cut.}
-\end{figure*}
 
-\begin{figure*}
-	\centering
-	\subfloat[L0125]{{\includegraphics[width=.45\textwidth]{L0125_mcf_cnfw_z00_hosts_match.pdf}} }
-	\subfloat[L0250]{{\includegraphics[width=.45\textwidth]{L0250_mcf_cnfw_z00_hosts_match.pdf}} }
-	\\
-	\subfloat[L0500]{{\includegraphics[width=.45\textwidth]{L0500_mcf_cnfw_z00_hosts_match.pdf}} }
-	\subfloat[Consuelo]{{\includegraphics[width=.45\textwidth]{L0500_mcf_cnfw_z00_hosts_match.pdf}} }
-	\caption{The marked correlation function for the concentration defined according to the NFW profile utilizing the catalogs matched against the halo catalog of the best fit overdensity parameter. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The dashed line denotes the largest halo radius for a given value of the overdensity parameter.}
-\end{figure*}
-
-\begin{figure*}
-	\centering
-	\subfloat[L0125]{{\includegraphics[width=.45\textwidth]{L0125_mcf_vrat_z00_hosts_match.pdf}} }
-	\subfloat[L0250]{{\includegraphics[width=.45\textwidth]{L0250_mcf_vrat_z00_hosts_match.pdf}} }
-	\\
-	\subfloat[L0500]{{\includegraphics[width=.45\textwidth]{L0500_mcf_vrat_z00_hosts_match.pdf}} }
-	\subfloat[Consuelo]{{\includegraphics[width=.45\textwidth]{L0500_mcf_vrat_z00_hosts_match.pdf}} }
-	\caption{The marked correlation function for the concentration defined according to the velocity ratio utilizing the catalogs matched against the halo catalog of the best fit overdensity parameter. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The dashed line denotes the largest halo radius for a given value of the overdensity parameter.}
-\end{figure*}
-
-\begin{figure*}
-	\centering
-	\subfloat[L0125]{{\includegraphics[width=.45\textwidth]{L0125_mcf_s_z00_hosts_match.pdf}} }
-	\subfloat[L0250]{{\includegraphics[width=.45\textwidth]{L0250_mcf_s_z00_hosts_match.pdf}} }
-	\\
-	\subfloat[L0500]{{\includegraphics[width=.45\textwidth]{L0500_mcf_s_z00_hosts_match.pdf}} }
-	\subfloat[Consuelo]{{\includegraphics[width=.45\textwidth]{L0500_mcf_s_z00_hosts_match.pdf}} }
-	\caption{The marked correlation function for the concentration defined according to the shape of the halo utilizing the catalogs matched against the halo catalog of the best fit overdensity parameter. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The dashed line denotes the largest halo radius for a given value of the overdensity parameter.}
-\end{figure*}
-
-\begin{figure*}
-	\centering
-	\subfloat[L0125]{{\includegraphics[width=.45\textwidth]{L0125_mcf_ns_z00_hosts_match.pdf}} }
-	\subfloat[L0250]{{\includegraphics[width=.45\textwidth]{L0250_mcf_ns_z00_hosts_match.pdf}} }
-	\\
-	\subfloat[L0500]{{\includegraphics[width=.45\textwidth]{L0500_mcf_ns_z00_hosts_match.pdf}} }
-	\subfloat[Consuelo]{{\includegraphics[width=.45\textwidth]{L0500_mcf_ns_z00_hosts_match.pdf}} }
-	\caption{The marked correlation function for the concentration defined according to the satellite number of the halo utilizing the catalogs matched against the halo catalog of the best fit overdensity parameter. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The dashed line denotes the largest halo radius for a given value of the overdensity parameter.}
-\end{figure*}
-
-\begin{figure*}
-	\centering
-	\subfloat[L0125]{{\includegraphics[width=.45\textwidth]{L0125_mcf_spin_z00_hosts_match.pdf}} }
-	\subfloat[L0250]{{\includegraphics[width=.45\textwidth]{L0250_mcf_spin_z00_hosts_match.pdf}} }
-	\\
-	\subfloat[L0500]{{\includegraphics[width=.45\textwidth]{L0500_mcf_spin_z00_hosts_match.pdf}} }
-	\subfloat[Consuelo]{{\includegraphics[width=.45\textwidth]{L0500_mcf_spin_z00_hosts_match.pdf}} }
-	\caption{The marked correlation function for the concentration defined according to the spin parameter of the halo utilizing the catalogs matched against the halo catalog of the best fit overdensity parameter. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The dashed line denotes the largest halo radius for a given value of the overdensity parameter.}
-\end{figure*}
 %----------------------
 \section[]{Conclusions}
 \label{section:conclusions}
