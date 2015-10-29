@@ -59,9 +59,10 @@ dark matter -- galaxies: halos -- galaxies: formation -- large-scale structure o
 \section{Introduction}
 \label{section:introduction}
 %-----------------------
+\arz{NEVER refer to figures, tables, or equations using the literal number. For example, do not in your tex file write "Figure 1" or "Figure 2"! Then you will lose your cross-referencing if you change anything. Instead, give each figure a name and then refer to the figure by the name of a reference in latex as in Figure~\ref{fig:cnfwrelation} (see my example in the text).}
 
  \arz{We will need to work on the introduction considerably as we get a better handle on the final results. The first two paragraphs can probably be 
- combined into a single shorter paragraph. I also like to end the first paragraph by telling the reader what it is that we aim to do in the paper.}
+ combined into a single shorter paragraph. I also like to end the first paragraph by telling the reader what it is that we aim to do in the paper. The rest of the introduction will need be be completely rewritten in a more professional manner. However, let's get the middle of the paper complete before we work a lot on the introduction and conclusion sections.}
 
 In the current concordance cosmology, the creation of observed galaxies and clusters is often seen as arising from the hierarchical mergers of dark matter halos.\citep{white78}. Being able to model the properties of dark matter halos and the galaxies within gives us a potential probe for the physical processes that go into galaxy formation. The excursion-set formalism of galaxy clustering \citep{bond91,lacey93,somerville99, zentner06} and the standard halo model of galaxy clustering \citep{seljak00, peacock00, scoccimarro01, berlind02, bullock02, cooray02} both can help us in this task, but rely on underlying asumptions. The first is that the statistics of the objects within a dark matter halo is a function of the mass alone. The second is that the clustering of dark matter halos is a function of mass as well. In this paper we propose a simple redefinition of halo size that will help correct for inaccuracies in these two assumptions.
 
@@ -76,32 +77,171 @@ In \S~\ref{section:data} of this paper, we consider the simulated cosmological b
 \label{section:data}
 %------------------------------------
 
-In order to study the effects of halo redefinition, we make extensive use of three simulation boxes. The Diemer et al simulations each utilize a Planck best fit cosmology with $\Om = 0.32$, $\Ol = 0.68$, and $h_o = 0.67$. We use three simulation boxes with comoving sizes of 125, 250, and 500 $\hMpc$ respectively. The particle mass of $1.6 \times 10^8 \hMsun$, with a total of $1024^3$ particles in each simulation. This set of simulations allows us to probe the resolution effects on halo finding, as each box has a factor of eight difference in effective resolution from the next box.
+In order to study the effects of halo redefinition, we make extensive use of three simulation boxes. The Diemer et al simulations each utilize a Planck best fit cosmology with $\Om = 0.32$, $\Ol = 0.68$, and $h_o = 0.67$. We use three simulation boxes with comoving sizes of 125, 250, and 500 $\hMpc$ respectively. The particle mass of $1.6 \times 10^8 \hMsun$, with a total of $1024^3$ particles in each simulation. This set of simulations allows us to probe the resolution effects on halo finding, as each box has a factor of eight difference in effective resolution from the next box. \arz{The particle masses must all be different since the volumes are different but the particle numbers are the SAME! This must be corrected. Each simulation must also have a nominal spatial resolution that must be specified. Finally, tell the reader that you are going to refer to these simulations as L0125, L0250, and L0500 for the remainder of the paper.}
 
 For halo finding we use the ROCKSTAR halo finder, which works on the phase space algorithm described in \citet*{behroozi13}. In short, ROCKSTAR determines the initial groupings using a FOF algorithm in phase space, before then applying the spherical overdensity case in order to determine the properties of interest. Unbound particles are removed prior to the calculation of halo mass and other properties of interest. In addition, we take interest of the shape of the halo, which is determined through the sorted eigenvalues of the inertia tensor, with principal ellipsoid axes defined such that $a >b > c$. Some of these parameters are determined after fitting the particles to the Navarro-Frenk-White profile \citep*{nfw97}.
 
+\arz{Try rewriting this paragraph. There are many problems here. First, halo size is not hard to define, it is just that the definitions in common use are not particularly well motivated. Second, your statement of how a halo is defined is incorrect. There is no assumption made about the distribution of mass in the halo. The definition is with respect to the mean density within a given radius.} 
 Given the nature of the halo size as a hard to define statistic, we choose to redefine the halo in terms of the overdensity parameter, $\Delta$, by defining the halo radius, $\Rdel$, as follows:
 
 \beq
 	\rho(\Rdel) = \Delta \rho_b
 \eeq
 
-Here, $\rho_b$ is the background mass density of the simulation box, while $\rho$ is the density measured within at a radius under the assumption that it uniformly distributed in a sphere of radius $\Rdel$. It should be noted that the use of the critical density or the mean density is interchanged within the literature, though the change is relatively mild. We allow the overdensity parameter $\Delta$ to vary over the range of the fiducial definition of $\Delta = 200$ down to values as extreme as $\Delta = 10$. As discussed above, this change is motivated due to the fact that the definition of halo size is primarily a matter of convention.
+Here, $\rho_b$ is the background mass density of the simulation box, while $\rho$ is the density measured within at a radius under the assumption that it uniformly distributed in a sphere of radius $\Rdel$. It should be noted that the use of the critical density or the mean density is interchanged within the literature, though the change is relatively mild. We allow the overdensity parameter $\Delta$ to vary over the range of the fiducial definition of $\Delta = 200$ down to values as low as $\Delta = 10$. As discussed above, this change is motivated due to the fact that the definition of halo size is primarily a matter of convention.
 
-With the combination of this analysis and the ROCKSTAR data, we define the following properties of interest:
+%-------------------------------------
+\section{Halo Properties}
+\label{section:haloprops}
+%-------------------------------------
 
+\arz{I think we should start with a new section here where you list the halo properties that we will explore.}
+
+\arz{This section needs to be rewritten to include more details and a more professional style. I will try to outline 
+this section as it should be written here.}
+
+\arz{I'm changing your notation from $c_{\mathrm{ratio}}$ to $c_{\mathrm{V}}$ as it seems less cumbersome.}
+
+We explore the clustering of halos as a function of a number of halo properties that are commonly explored in the 
+literature and can be easily measured for a halo from an individual simulation snapshot. The first of these is the 
+halo concentration parameter, 
 \beq
-	c_{\mathrm{vratio}} = \frac{v_{\mathrm{max}}}{v_{\Delta}} ; \ \ c_{\mathrm{NFW}} = \frac{\Rdel}{r_\mathrm{s}}; \ \ s = \frac{c}{a}; \\ \Lambda = \frac{J \sqrt{\lvert E\rvert}}{G M_{vir}^{2.5}} \\
+c_{\mathrm{NFW}} = \frac{\Rdel}{r_\mathrm{s}},
+\eeq
+where $\Rdel$ is the radius of the halo given an overdensity parameter $\Delta$ used to define the halo and 
+$r_{\mathrm{s}}$ is the halo scale radius. We also use an additional measure of the concentration of the halo 
+density profile, 
+\beq
+c_{\mathrm{V}} = \frac{V_{\mathrm{max}}}{V_{\Delta}}, 
+\eeq
+where $V_{\mathrm{max}}$ is the maximum circular velocity achieved within the halo and $V_{\Delta}$ is the circular 
+velocity at the halo radius, $\Rdel$. The quantity $c_{\mathrm{V}}$ can be measured from simulations without 
+any need for fitting halo density profiles to determine scale radii and is therefore robust to choices of fitting methods. 
+
+
+Halo concentrations are useful to explore for these purposes for a number of reasons. First of all, environment dependence 
+of concentrations is of direct interest in modeling gravitational lensing statistics. Secondly, concentrations can be measured 
+from individual halo snapshots relatively easily yet halo concentrations are known to be strongly correlated with the formation 
+histories of dark matter halos with earlier forming halos having higher concentrations at fixed halo mass 
+\arz{Cite papers here like Wechsler et al. 2002}. As such, exploring concentrations dependence of halo clustering can 
+help quantify some of the halo age dependence of clustering without the need for constructing merger trees. This 
+is particularly important in the present study in which the halo finding is performed repeatedly and constructing a 
+merger tree for each run of the halo finder with different $\Delta$ can be prohibitive. We will explore measures of 
+halo age directly in a forthcoming follow-up study dedicated to halo formation histories.
+
+
+Figure~\ref{fig:cnfwrelation} shows the mean $c_{\mathrm{NFW}}$-$M_{\Delta}$ relation for halos defined with $\Delta=200$ 
+in the L0125, L0250, and L0500 simulations. For each simulation, we consider halos only above a minimum mass, as shown in Fig.~\ref{fig:cnfwrelation}, to ensure that concentration measurements are not compromised by resolution. Likewise, Figure~\ref{fig:cvrelation} shows the analogous 
+relation for the alternative definition of halo concentration, $c_{\mathrm{V}}$. 
+
+%------------------------------------------ Figure for Cnfw(M)
+\begin{figure}
+\centering
+\includegraphics[width=.5\textwidth]{masscut_cnfw_d200.pdf}
+\caption{An example of the chosen lower limit on halo mass for our sample is marked as a black line, for the $\Delta = 200$ case. The shaded blue region depicts the spread on the power in the concentration-mass relationship proposed by \citet{duffy08}.  The shaded region illustrates the implied two-sigma band of \citet{duffy08} mass-concentration relation. At lower mass, halos are ill defined due to resolution limits. \arz{This caption needs to be more specific. Lower limit for which simulation? It looks like maybe for L0250? We should put our lower limits for each simulation. Also, because c(M) is thought to be nearly a power law, the y-axis should be logarithmic as well. Try that and let's see what it looks like. Since we have a good resolution check, we no longer need the Duffy et al. result. It can be removed.} \arz{Show only L0125, L0250, and L0500 and rewrite the caption to include more detail. Show the mass cutoffs for EACH OF THE SIMULATIONS.}}
+\label{fig:cnfwrelation}
+\end{figure}
+%--------------------------------------------------------------------------------
+
+
+%------------------------------------------ Figure for C_V(M)
+\begin{figure}
+\centering
+\includegraphics[width=.5\textwidth]{masscut_cnfw_d200.pdf}
+\caption{\arz{I am putting this here as a placeholder. Notice that the figure is identical to Fig.~\ref{fig:cnfwrelation}. This is here as a placeholder. What should appear here is a figure that is the analog for Fig.~\ref{fig:cnfwrelation} but exploring the property $c_{\mathrm{V}}$. We must have the analogous figure for each of the halo properties that we explore.}}
+\label{fig:cvrelation}
+\end{figure}
+%--------------------------------------------------------------------------------
+
+Figure~\ref{fig:concentrations} shows the relationship between $c_{\mathrm{NFW}}$ and $c_{\mathrm{V}}$ for quantifying halo 
+concentration on a halo-by-halo basis. Generally the two proxies for concentration are related to each other in a simple manner 
+with relatively small scatter indicating that these two quantities largely contain the same information about each halo.
+
+%-------------------------------------------- Figure comparing Cnfw and Cv on a halo-by-halo basis
+\begin{figure}
+\centering
+\includegraphics[width=.5\textwidth]{ldcompare_cnfwvscvrat_z00.pdf}
+\caption{The relationship between the two different marks of concentration, using halos in the Consuelo simulation box.
+\arz{For this figure, you can show the results for only one simulation, say L0250 as an example.}}
+\label{fig:concentrations}
+\end{figure}
+%--------------------------------------------------------------------------------------------------------------------------------
+
+In addition to halo concentrations, we explore halo clustering as a function of a variety of other 
+halo properties. We explore halo clustering as a function of halo shape quantified by the ratio of 
+the minor and major axes length, 
+\beq
+s = \frac{c}{a},
+\eeq
+where $a$ is the major axis length and $c$ is the minor axis length. The mean relations of halo shapes 
+as a function of halo mass for $\Delta=200$ is shown in Figure~\ref{fig:relation} along with the mass 
+thresholds selected to ensure that our results are not compromised by resolution.
+
+
+%------------------------------------------ Figure for s(M)
+\begin{figure}
+\centering
+\includegraphics[width=.5\textwidth]{masscut_cnfw_d200.pdf}
+\caption{\arz{I am putting this here as a placeholder. Notice that the figure is identical to Fig.~\ref{fig:cnfwrelation}. This is here as a placeholder. What should appear here is a figure that is the analog for Fig.~\ref{fig:cnfwrelation} but exploring the property $s$. We must have the analogous figure for each of the halo properties that we explore.}}
+\label{fig:srelation}
+\end{figure}
+%--------------------------------------------------------------------------------
+
+
+\arz{Make the analogous new paragraph for the spin parameter please. Isn't the conventional parameter for the spin parameter a lower case $\lambda$? It doesn't matter too much, but we shouldn't deviate from convention without a pretty good reason.}
+\beq
+\lambda = \frac{J \sqrt{\lvert E\rvert}}{G M_{vir}^{2.5}}
 \eeq
 
+
+%------------------------------------------ Figure for lambda(M)
 \begin{figure}
-	\centering
-		\includegraphics[width=.5\textwidth]{ldcompare_cnfwvscvrat_z00.pdf}
-	\caption{The relationship between the two different marks of concentration, using halos in the Consuelo simulation box.}
+\centering
+\includegraphics[width=.5\textwidth]{masscut_cnfw_d200.pdf}
+\caption{\arz{I am putting this here as a placeholder. Notice that the figure is identical to Fig.~\ref{fig:cnfwrelation}. This is here as a placeholder. What should appear here is a figure that is the analog for Fig.~\ref{fig:cnfwrelation} but exploring the property $\lambda$. We must have the analogous figure for each of the halo properties that we explore.}}
+\label{fig:srelation}
 \end{figure}
+%--------------------------------------------------------------------------------
+
+In practice, the mean relations between the various halo properties and the mass thresholds must be determined 
+for each combination of simulation, halo property (e.g., $c_{\mathrm{NFW}}$ or $s$), and halo definition (e.g., value 
+of $\Delta$). We use thresholds determined by the particular case under consideration so as to ensure that resolution 
+limitations do not drive any of our primary results. As an example, we summarize some of the mass thresholds we have 
+used for a set of $\Delta$ values in Table~\ref{table:thresholds}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table*}
+\caption{
+Minimum mass thresholds for each of our analyses depending upon the simulation being used, the halo property under consideration, and the 
+value of the overdensity, $\Delta$, used to define the halos. In the columns below the values of $\Delta$ we show the minimum host halo masses 
+considered in units of $h^{-1}\mathrm{M}_{\odot}$. \arz{I put all of this in as a placeholder for what should be here. Please fill in all relevant cells of 
+this table and add to the table caption any additional description that might be necessary for a user to understand the plots. Keep in mind that many of the cells I have not even put in here, this is just an example to get started.}}
+\vspace*{8pt}
+\begin{tabular}{ c c c c c c }
+\hline
+\hline
+Simulation \ \ & \ \ Halo Property \ \  & $\Delta=200$ & $\Delta=100$ & $\Delta=75$ & $\Delta=50$ \ \\
+\hline
+{\tt L0125} & $c_{\mathrm{NFW}}$ & 12 & 13 & 14 & 15  \\
+{\tt L0125} & $c_{\mathrm{V}}$ & 12 & 13 & 14 & 15 \\
+\hline
+{\tt L0250} & $c_{\mathrm{NFW}}$ & 12 & 13 & 14 & 15 \\
+{\tt L0250} & $c_{\mathrm{V}}$ & 12 & 13 & 14 & 15 \\
+\hline
+{\tt L0500} & $c_{\mathrm{NFW}}$ & 12 & 13 & 14 & 15 \\
+{\tt L0500} & $s$ & 12 & 13 & 14 & 15 \\
+\hline
+\hline
+\end{tabular}
+\label{table:thresholds}
+\end{table*}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 
 %% this does need to be changed over to a rerun on a Diemer simulation box, but that should be fairly quick to do. Just have to find my pipeline code for that and tweak a few things
 
+\arz{After this rewrite, the following paragraph can probably be removed with relevant info and references moved into the appropriate places above.}
 The first two marks listed above are different proxies for the concentration of the halo. The relationships between these marks are shown in Figure 1 and it can be seen that they can be related to each other with some scatter. The ROCKSTAR catalogs give us the max  circular velocity of a hypothetical particle, $v_{\mathrm{max}}$, the scale radius, $r_{\mathrm{s}}$, the halo radius, $\Rdel$, both ellipsoidal axis parameters $c$ and $a$, and the spin parameter, $\Lambda$ as introduced by \citep{peebles69} in terms of the halo angular momentrum $J$ and the total energy of the halo $E$ . The circular velocity of a particle at the halo radius is calculated by $v_{\Delta} = \sqrt{\frac{G M(< \Rdel)}{\Rdel}}$.
 
 %-----------------------
@@ -110,12 +250,6 @@ The first two marks listed above are different proxies for the concentration of 
 %-----------------------
 
 There are several well understood effects in our simulation that must be accounted for before we can draw any conclusions. The first is the matter of simulation resolution. In each of our generated halo catalogs, we can anticipate finding artificial halos. While existing under our constraint of having only a set overdensity, they will have properties that conflict with well known trends that have been shown in prior works, such as concentration decreasing as a function of halo mass \citep{wechsler06}. As shown in Figure 2, we can roughly identify the region in which these artificial halos become significant by looking for the turnover in the plot. In order to avoid our halo finding statistics being thrown off by these artificial halos, we set a lower mass threshold, limiting the sample to only those halos that are physically significant. We have chosen our threshold to be set by the L0250 Diemer box in order to minimize the shift to the remaining catalogs.
-
-\begin{figure}
-	\centering
-		\includegraphics[width=.5\textwidth]{masscut_cnfw_d200.pdf}
-	\caption{An example of the chosen lower limit on halo mass for our sample is marked as a black line, for the $\Delta = 200$ case. The shaded blue region depicts the spread on the power in the concentration-mass relationship proposed by \citet{duffy08}.  The shaded region illustrates the implied two-sigma band of \citet{duffy08} mass-concentration relation. At lower mass, halos are ill defined due to resolution limits. \arz{This caption needs to be more specific. Lower limit for which simulation? It looks like maybe for L0250? We should put our lower limits for each simulation. Also, because c(M) is thought to be nearly a power law, the y-axis should be logarithmic as well. Try that and let's see what it looks like.}}
-\end{figure}
 
 %% again, this will need to be remade and drop the Consuelo data, but should be quick enough.
 
@@ -133,18 +267,6 @@ The second method is to use a weighted correlation function, often referred to i
 %----------------------------
 
 Ultimately, as a result of the limited nature of simulation data, we must make some lower mass cutoff in our study of halo properties. Table 1 describes where we have chosen to place these cuts in a variety of different measures. The ``hosts" set of cuts has been chosen for our primary form of analysis, as it it performs well across all four halo boxes. Figure 2 shows the example of this cutoff in the $\Delta = 200$ case. While there may be some concern about the number of low mass halos included in the L0500 simulation box, results seem to demonstrate that the effect is somewhat minimal compared to other factors. This is quite likely related to our methodology by which we remove the inherent mass dependence, as provided that the ranking of the halos in some mass bin does not significantly change, it should result in the same general trends. The remaining two cuts have been chosen to explore any resolution related effects. The ``l0125'' cuts explore the lowest possible mass cutoff that excludes ill resolved halos in the Diemer et. all simulations, while the ``l0500'' set of cuts represent the mass cutoff chosen to avoid contamination due to resolution effects in our largest simulation box.
-
-\begin{table}[]
-\centering
-\caption{Chosen mass cuts on the simulation boxes, in units of $\hMsun$. The values of the halo overdensity parameter $\Delta$ chosen are listed in the first row.}
-\label{my-label}
-\begin{tabular}{l | l | l | l | l}
-           & 200  & 100  & 75   & 50     \\ \hline
-"hosts"    & 7E11 & 8E11 & 9E11 & 1.5E12 \\
-"l0125cut" & 7E10 & 8E10 & 9E10 & 1E11   \\
-"l0500cut" & 4E12 & 5E12 & 6E12 & 7E12  
-\end{tabular}
-\end{table}
 
 \begin{figure*}
 	\centering
