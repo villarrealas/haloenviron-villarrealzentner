@@ -265,18 +265,14 @@ Ultimately, as a result of the limited nature of simulation data, we must make s
 
 \begin{figure*}
 	\centering
-	\subfloat[L0125]{{\includegraphics[width=.45\textwidth]{L0125_cf_compare_z00_hosts.pdf}} }
-	\subfloat[L0250]{{\includegraphics[width=.45\textwidth]{L0250_cf_compare_z00_hosts.pdf}} }
-	\\
-	\subfloat[L0500]{{\includegraphics[width=.45\textwidth]{L0500_cf_compare_z00_hosts.pdf}} }
-	\subfloat[Consuelo]{{\includegraphics[width=.45\textwidth]{ld_cf_compare_z00_hosts.pdf}} }
-	\caption{The difference of the correlation function of all hosts compared to a cut of the 20 \% highest or lowest NFW defined concentration halos. The solid lines represent the difference from the highest concentration cut, the dashed lines represent the difference from the lowest concentration cut. \arz{We'll have to think carefully about this figure. It is very hard to read. Perhaps we can show just Delta=200 and then your "best" Delta? Also, we can remove the Consuelo reference.}}
+	\includegraphics[width=\textwidth]{all_cfhilow_z00_hostsvmatch.pdf}
+	\caption{The difference of the correlation function for only the top 20\% most concentrated halos and the bottom 20\% in concentration, normalized by the overall correlation function of the entire sample. From top to bottom, we show the results for \simA, \simB, and \simC \ respectively. The left column utilizes all host halos in the catalog. The right column contains only host halos that exist inside of our best fit value of $\Delta$, as explained in the text. The solid lines along the bottom denote the largest halo radius for a given value of the overdensity parameter. \arz{We'll have to think carefully about this figure. It is very hard to read. Perhaps we can show just Delta=200 and then your "best" Delta? Also, we can remove the Consuelo reference.}}
 	\label{fig:hvm_cfcompare}
 \end{figure*}
 
 %% this plot also escaped my workflow. I'll add it to the main plot generator.
 
-The left column of Figure~\ref{fig:hvm_cfcompare} demonstrates the results of our method as we change the value of $\Delta$. It can be seen that for between the values of $\Delta = 75$ and $\Delta = 50$ that both the high and low concentration cuts of the data can be brought into close agreement in the Diemer et. al boxes. It should be noted that both the high and low concentration cuts move closer toward a state with environmental dependencies being thoroughly removed within the margin of error from opposite directions in terms of clustering. Changing the value of $\Delta$ beyond the observed ``sweet spot" appears to reintroduce the problem we are attempting to remove.
+The left column of Figure~\ref{fig:hvm_cfcompare} demonstrates the results of our method as we change the value of $\Delta$. It can be seen that \simA, \simB, and \simC \ all minimize the difference between the two correlation functions at large scales between $\Delta = 75$ and $\Delta = 50$. It should be noted that there is effectively a ``sweet spot'' effect, where decreasing the value of $\Delta$ (or correspondingly, the size of an average halo) will start to give increasing amounts of power in the correlation function to the least concentrated halos. The physical nature of this is of interest to us, and we present an intuitive explanation below.
 
 \begin{figure*}
 	\centering
@@ -340,16 +336,14 @@ The ``sweet spot'' behavior of this method is also of interest to us. The halo r
 
 %% another thing to repeat on one of the Diemer boxes. High priority.
 
-Given the differences between the simulation results and with the data available to us with the Diemer et al. simulations, we then explore the effect of the choice in mass cut. The low mass cut effects are shown in the Figure~\ref{hvl_cfcompare} through Figure~\ref{hvl_mcf_nsat}. This cut explores the area in which we are including ill-resolved halos potentially into the simulation. Namely, utilizing this mass cut on \simB data includes halos that do not fit the form of the expected monotonic halo mass-concentration relation. We can determine several facts from this exercise in resolution testing. The first is that the general behavior of the marks seems to be the same regardless of the influence of the resolution effects. Decreasing the value of $\Delta$ still moves our marked correlation functions in the same directions as the previous mass cut, although often from a very different starting location. A second interesting fact is that despite \simA potentially having ill-resolved halos included in the sample, the effect on the overall marked correlation function result is relatively minor. Both samples seem to converge to the same answers within simulation variance. Finally, it should be noted that an unreasonable amount of reduction in $\Delta$ is necessary to bring the lowest mass halos into a region where they will work with this method. We will further explore this effect in the highest mass cuts.
+Given the differences between the simulation results and with the data available to us with the Diemer et al. simulations, we then explore the effect of the choice in mass cut. The low mass cut effects are shown in the Figure~\ref{fig:hvl_cfcompare} through Figure~\ref{fig:hvl_mcf_nsat}. This cut explores the area in which we are including ill-resolved halos potentially into the simulation. Namely, utilizing this mass cut on \simB \ data includes halos that do not fit the form of the expected monotonic halo mass-concentration relation. We can determine several facts from this exercise in resolution testing. The first is that the general behavior of the marks seems to be the same regardless of the influence of the resolution effects. Decreasing the value of $\Delta$ still moves our marked correlation functions in the same directions as the previous mass cut, although often from a very different starting location. A second interesting fact is that despite \simA \ potentially having ill-resolved halos included in the sample, the effect on the overall marked correlation function result is relatively minor. Both samples seem to converge to the same answers within simulation variance. Finally, it should be noted that an unreasonable amount of reduction in $\Delta$ is necessary to bring the lowest mass halos into a region where they will work with this method, favoring a $\Delta$ \textless \ 50. We will further explore this effect in the highest mass cuts.
 
 \begin{figure*}
 	\centering
-	\subfloat[L0125]{{\includegraphics[width=.45\textwidth]{L0125_cf_compare_z00_l0125cut.pdf}} }
-	\subfloat[L0250]{{\includegraphics[width=.45\textwidth]{L0250_cf_compare_z00_l0125cut.pdf}} }
-	\caption{The difference of the correlation function of all hosts compared to a cut of the 20 \% highest or lowest NFW defined concentration halos utilizing the 'l0125cut' mass cutoffs. The solid lines represent the difference from the highest concentration cut, the dashed lines represent the difference from the lowest concentration cut.}
+	\includegraphics[width=\textwidth]{all_cfhilow_z00_hostsvlow.pdf}
+	\caption{The difference of the correlation function for only the top 20\% most concentrated halos and the bottom 20\% in concentration, normalized by the overall correlation function of the entire sample. The top row uses \simA data while the bottom rose uses \simB data. The left column utilizes all host halos in the catalog. The right column contains only host halos that exist inside of our best fit value of $\Delta$, as explained in the text. The solid lines along the bottom denote the largest halo radius for a given value of the overdensity parameter}
 	\label{fig:hvl_cfcompare}
 \end{figure*}
-%% still need to add to pipeline
 
 \begin{figure*}
 	\centering
