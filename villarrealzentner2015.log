@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  5 NOV 2015 13:39
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  23 NOV 2015 10:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -452,25 +452,28 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
 ]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 75.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [2]
 <masscut_cnfw_d200.pdf, id=27, 578.16pt x 433.62pt>
 File: masscut_cnfw_d200.pdf Graphic file (type pdf)
 
 <use masscut_cnfw_d200.pdf>
-Package pdftex.def Info: masscut_cnfw_d200.pdf used on input line 142.
+Package pdftex.def Info: masscut_cnfw_d200.pdf used on input line 140.
 (pdftex.def)             Requested size: 240.0pt x 179.99525pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 142--143
+Overfull \hbox (12.0pt too wide) in paragraph at lines 140--141
  [][] 
  []
 
 <masscut_cV_d200.pdf, id=28, 578.16pt x 433.62pt>
 File: masscut_cV_d200.pdf Graphic file (type pdf)
  <use masscut_cV_d200.pdf>
-Package pdftex.def Info: masscut_cV_d200.pdf used on input line 152.
+Package pdftex.def Info: masscut_cV_d200.pdf used on input line 150.
 (pdftex.def)             Requested size: 240.0pt x 179.99525pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 152--153
+Overfull \hbox (12.0pt too wide) in paragraph at lines 150--151
  [][] 
  []
 
@@ -478,10 +481,10 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 152--153
 File: L0250_compare_cnfwvcV_z00.pdf Graphic file (type pdf)
 
 <use L0250_compare_cnfwvcV_z00.pdf>
-Package pdftex.def Info: L0250_compare_cnfwvcV_z00.pdf used on input line 165.
+Package pdftex.def Info: L0250_compare_cnfwvcV_z00.pdf used on input line 163.
 (pdftex.def)             Requested size: 240.0pt x 179.99525pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 165--167
+Overfull \hbox (12.0pt too wide) in paragraph at lines 163--165
  [][] 
  []
 
@@ -496,10 +499,10 @@ n: multiple pdfs with page group included in a single page
 File: masscut_shape_d200.pdf Graphic file (type pdf)
 
 <use masscut_shape_d200.pdf>
-Package pdftex.def Info: masscut_shape_d200.pdf used on input line 186.
+Package pdftex.def Info: masscut_shape_d200.pdf used on input line 184.
 (pdftex.def)             Requested size: 240.0pt x 179.99525pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 186--187
+Overfull \hbox (12.0pt too wide) in paragraph at lines 184--185
  [][] 
  []
 
@@ -507,10 +510,10 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 186--187
 File: masscut_spin_d200.pdf Graphic file (type pdf)
 
 <use masscut_spin_d200.pdf>
-Package pdftex.def Info: masscut_spin_d200.pdf used on input line 201.
+Package pdftex.def Info: masscut_spin_d200.pdf used on input line 199.
 (pdftex.def)             Requested size: 240.0pt x 179.99525pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 201--202
+Overfull \hbox (12.0pt too wide) in paragraph at lines 199--200
  [][] 
  []
 
@@ -530,23 +533,26 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: all_cfhilow_z00_hostsvmatch.pdf Graphic file (type pdf)
 
 <use all_cfhilow_z00_hostsvmatch.pdf>
-Package pdftex.def Info: all_cfhilow_z00_hostsvmatch.pdf used on input line 268
+Package pdftex.def Info: all_cfhilow_z00_hostsvmatch.pdf used on input line 270
 .
 (pdftex.def)             Requested size: 480.0pt x 479.99619pt.
-
-<all_mcf_cnfw_z00_hostsvmatch.pdf, id=812, 578.16pt x 578.16pt>
+ [5]
+<all_mcf_cnfw_z00_hostsvmatch.pdf, id=816, 578.16pt x 578.16pt>
 File: all_mcf_cnfw_z00_hostsvmatch.pdf Graphic file (type pdf)
 
 <use all_mcf_cnfw_z00_hostsvmatch.pdf>
-Package pdftex.def Info: all_mcf_cnfw_z00_hostsvmatch.pdf used on input line 27
-9.
+Package pdftex.def Info: all_mcf_cnfw_z00_hostsvmatch.pdf used on input line 28
+1.
 (pdftex.def)             Requested size: 480.0pt x 479.99619pt.
- [5]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 <all_mcf_cV_z00_hostsvmatch.pdf, id=817, 578.16pt x 578.16pt>
 File: all_mcf_cV_z00_hostsvmatch.pdf Graphic file (type pdf)
 
 <use all_mcf_cV_z00_hostsvmatch.pdf>
-Package pdftex.def Info: all_mcf_cV_z00_hostsvmatch.pdf used on input line 288.
+Package pdftex.def Info: all_mcf_cV_z00_hostsvmatch.pdf used on input line 290.
 
 (pdftex.def)             Requested size: 480.0pt x 479.99619pt.
 
@@ -554,21 +560,21 @@ Package pdftex.def Info: all_mcf_cV_z00_hostsvmatch.pdf used on input line 288.
 File: all_mcf_s_z00_hostsvmatch.pdf Graphic file (type pdf)
 
 <use all_mcf_s_z00_hostsvmatch.pdf>
-Package pdftex.def Info: all_mcf_s_z00_hostsvmatch.pdf used on input line 295.
+Package pdftex.def Info: all_mcf_s_z00_hostsvmatch.pdf used on input line 297.
 (pdftex.def)             Requested size: 480.0pt x 479.99619pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
+ [6 <./all_cfhilow_z00_hostsvmatch.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [6 <./all_cfhilow_z00_hostsvmatch.pdf>]
+
 <all_mcf_spin_z00_hostsvmatch.pdf, id=881, 578.16pt x 578.16pt>
 File: all_mcf_spin_z00_hostsvmatch.pdf Graphic file (type pdf)
 
 <use all_mcf_spin_z00_hostsvmatch.pdf>
 Package pdftex.def Info: all_mcf_spin_z00_hostsvmatch.pdf used on input line 30
-4.
+6.
 (pdftex.def)             Requested size: 480.0pt x 479.99619pt.
 
 <all_mcf_nsat_z00_hostsvmatch.pdf, id=882, 578.16pt x 578.16pt>
@@ -576,11 +582,8 @@ File: all_mcf_nsat_z00_hostsvmatch.pdf Graphic file (type pdf)
 
 <use all_mcf_nsat_z00_hostsvmatch.pdf>
 Package pdftex.def Info: all_mcf_nsat_z00_hostsvmatch.pdf used on input line 31
-1.
+3.
 (pdftex.def)             Requested size: 480.0pt x 479.99619pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -591,15 +594,15 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [8 <./all_mcf_cV_z00_hostsvmatch.pdf>]
-
-LaTeX Warning: Reference `hvm_cfcompare' on page 9 undefined on input line 320.
-
-
-
-LaTeX Warning: Reference `hvm_mcf_nsat' on page 9 undefined on input line 320.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+LaTeX Warning: Reference `hvm_cfcompare' on page 9 undefined on input line 322.
+
+
+
+LaTeX Warning: Reference `hvm_mcf_nsat' on page 9 undefined on input line 322.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -621,29 +624,29 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: plotcircles_coolwarm.pdf Graphic file (type pdf)
 
 <use plotcircles_coolwarm.pdf>
-Package pdftex.def Info: plotcircles_coolwarm.pdf used on input line 332.
+Package pdftex.def Info: plotcircles_coolwarm.pdf used on input line 334.
 (pdftex.def)             Requested size: 480.0pt x 359.99715pt.
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 339.
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 341.
 
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <9> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 339.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 341.
 
 <all_cfhilow_z00_hostsvlow.pdf, id=1293, 578.16pt x 361.35pt>
 File: all_cfhilow_z00_hostsvlow.pdf Graphic file (type pdf)
 
 <use all_cfhilow_z00_hostsvlow.pdf>
-Package pdftex.def Info: all_cfhilow_z00_hostsvlow.pdf used on input line 343.
+Package pdftex.def Info: all_cfhilow_z00_hostsvlow.pdf used on input line 345.
 (pdftex.def)             Requested size: 480.0pt x 299.99762pt.
 
 <all_mcf_cnfw_z00_hostsvlow.pdf, id=1294, 578.16pt x 433.62pt>
 File: all_mcf_cnfw_z00_hostsvlow.pdf Graphic file (type pdf)
 
 <use all_mcf_cnfw_z00_hostsvlow.pdf>
-Package pdftex.def Info: all_mcf_cnfw_z00_hostsvlow.pdf used on input line 350.
+Package pdftex.def Info: all_mcf_cnfw_z00_hostsvlow.pdf used on input line 352.
 
 (pdftex.def)             Requested size: 480.0pt x 359.99715pt.
 
@@ -651,21 +654,21 @@ Package pdftex.def Info: all_mcf_cnfw_z00_hostsvlow.pdf used on input line 350.
 File: all_mcf_cV_z00_hostsvlow.pdf Graphic file (type pdf)
 
 <use all_mcf_cV_z00_hostsvlow.pdf>
-Package pdftex.def Info: all_mcf_cV_z00_hostsvlow.pdf used on input line 357.
+Package pdftex.def Info: all_mcf_cV_z00_hostsvlow.pdf used on input line 359.
 (pdftex.def)             Requested size: 480.0pt x 359.99715pt.
 
 <all_mcf_s_z00_hostsvlow.pdf, id=1296, 578.16pt x 433.62pt>
 File: all_mcf_s_z00_hostsvlow.pdf Graphic file (type pdf)
 
 <use all_mcf_s_z00_hostsvlow.pdf>
-Package pdftex.def Info: all_mcf_s_z00_hostsvlow.pdf used on input line 364.
+Package pdftex.def Info: all_mcf_s_z00_hostsvlow.pdf used on input line 366.
 (pdftex.def)             Requested size: 480.0pt x 359.99715pt.
 
 <all_mcf_spin_z00_hostsvlow.pdf, id=1297, 578.16pt x 433.62pt>
 File: all_mcf_spin_z00_hostsvlow.pdf Graphic file (type pdf)
 
 <use all_mcf_spin_z00_hostsvlow.pdf>
-Package pdftex.def Info: all_mcf_spin_z00_hostsvlow.pdf used on input line 371.
+Package pdftex.def Info: all_mcf_spin_z00_hostsvlow.pdf used on input line 373.
 
 (pdftex.def)             Requested size: 480.0pt x 359.99715pt.
 
@@ -673,7 +676,7 @@ Package pdftex.def Info: all_mcf_spin_z00_hostsvlow.pdf used on input line 371.
 File: all_mcf_nsat_z00_hostsvlow.pdf Graphic file (type pdf)
 
 <use all_mcf_nsat_z00_hostsvlow.pdf>
-Package pdftex.def Info: all_mcf_nsat_z00_hostsvlow.pdf used on input line 378.
+Package pdftex.def Info: all_mcf_nsat_z00_hostsvlow.pdf used on input line 380.
 
 (pdftex.def)             Requested size: 480.0pt x 359.99715pt.
 
@@ -681,7 +684,7 @@ Package pdftex.def Info: all_mcf_nsat_z00_hostsvlow.pdf used on input line 378.
 File: all_cfhilow_z00_hostsvhigh.pdf Graphic file (type pdf)
 
 <use all_cfhilow_z00_hostsvhigh.pdf>
-Package pdftex.def Info: all_cfhilow_z00_hostsvhigh.pdf used on input line 387.
+Package pdftex.def Info: all_cfhilow_z00_hostsvhigh.pdf used on input line 389.
 
 (pdftex.def)             Requested size: 480.0pt x 299.99762pt.
 
@@ -689,7 +692,7 @@ Package pdftex.def Info: all_cfhilow_z00_hostsvhigh.pdf used on input line 387.
 File: all_mcf_cnfw_z00_hostsvhigh.pdf Graphic file (type pdf)
 
 <use all_mcf_cnfw_z00_hostsvhigh.pdf>
-Package pdftex.def Info: all_mcf_cnfw_z00_hostsvhigh.pdf used on input line 394
+Package pdftex.def Info: all_mcf_cnfw_z00_hostsvhigh.pdf used on input line 396
 .
 (pdftex.def)             Requested size: 480.0pt x 359.99715pt.
 
@@ -697,21 +700,21 @@ Package pdftex.def Info: all_mcf_cnfw_z00_hostsvhigh.pdf used on input line 394
 File: all_mcf_cV_z00_hostsvhigh.pdf Graphic file (type pdf)
 
 <use all_mcf_cV_z00_hostsvhigh.pdf>
-Package pdftex.def Info: all_mcf_cV_z00_hostsvhigh.pdf used on input line 401.
+Package pdftex.def Info: all_mcf_cV_z00_hostsvhigh.pdf used on input line 403.
 (pdftex.def)             Requested size: 480.0pt x 359.99715pt.
 
 <all_mcf_s_z00_hostsvhigh.pdf, id=1302, 578.16pt x 433.62pt>
 File: all_mcf_s_z00_hostsvhigh.pdf Graphic file (type pdf)
 
 <use all_mcf_s_z00_hostsvhigh.pdf>
-Package pdftex.def Info: all_mcf_s_z00_hostsvhigh.pdf used on input line 408.
+Package pdftex.def Info: all_mcf_s_z00_hostsvhigh.pdf used on input line 410.
 (pdftex.def)             Requested size: 480.0pt x 359.99715pt.
 
 <all_mcf_spin_z00_hostsvhigh.pdf, id=1303, 578.16pt x 433.62pt>
 File: all_mcf_spin_z00_hostsvhigh.pdf Graphic file (type pdf)
 
 <use all_mcf_spin_z00_hostsvhigh.pdf>
-Package pdftex.def Info: all_mcf_spin_z00_hostsvhigh.pdf used on input line 415
+Package pdftex.def Info: all_mcf_spin_z00_hostsvhigh.pdf used on input line 417
 .
 (pdftex.def)             Requested size: 480.0pt x 359.99715pt.
 
@@ -719,14 +722,11 @@ Package pdftex.def Info: all_mcf_spin_z00_hostsvhigh.pdf used on input line 415
 File: all_mcf_nsat_z00_hostsvhigh.pdf Graphic file (type pdf)
 
 <use all_mcf_nsat_z00_hostsvhigh.pdf>
-Package pdftex.def Info: all_mcf_nsat_z00_hostsvhigh.pdf used on input line 422
+Package pdftex.def Info: all_mcf_nsat_z00_hostsvhigh.pdf used on input line 424
 .
 (pdftex.def)             Requested size: 480.0pt x 359.99715pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [12]
-(./villarrealzentner2015.bbl [13 <./plotcircles_coolwarm.pdf>]) [14
+ [12] (./villarrealzentner2015.bbl
+[13 <./plotcircles_coolwarm.pdf>]) [14
 
  <./all_cfhilow_z00_hostsvlow.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -773,7 +773,7 @@ Here is how much of TeX's memory you used:
  8834 multiletter control sequences out of 15000+200000
  17384 words of font info for 64 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 44i,15n,42p,1625b,348s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,15n,42p,1622b,338s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></
@@ -795,7 +795,7 @@ exmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2012/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2012/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2012/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on villarrealzentner2015.pdf (25 pages, 1837147 bytes).
+Output written on villarrealzentner2015.pdf (25 pages, 1839771 bytes).
 PDF statistics:
  2322 PDF objects out of 2487 (max. 8388607)
  547 compressed objects within 6 object streams
