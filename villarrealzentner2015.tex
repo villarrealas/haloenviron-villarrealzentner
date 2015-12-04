@@ -205,7 +205,7 @@ where $J$ is the halo angular momentum, $E$ is the total energy of the halo, and
 In practice, the mean relations between the various halo properties and the mass thresholds must be determined 
 for each combination of simulation, halo property (e.g., $c_{\mathrm{NFW}}$ or $s$), and halo definition (e.g., value 
 of $\Delta$). We use thresholds determined by the particular case under consideration so as to ensure that resolution 
-limitations do not drive any of our primary results. As an example, we summarize some of the mass thresholds we have 
+limitations do not drive any of our primary results. A higher mass threshold necessarily means that we do not have any issues due to halo resolution, but reduces the statistics. In addition, it should be noted that halo assembly bias is weakest in the most massive halos, which may reduce the potential signal at high masses. As an example, we summarize some of the mass thresholds we have 
 used for a set of $\Delta$ values in Table~\ref{table:thresholds}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -237,8 +237,6 @@ Simulation \ \ & \ \ Halo Property \ \  & $\Delta=200$ & $\Delta=100$ & $\Delta=
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\arz{After this rewrite, the following paragraph can probably be removed with relevant info and references moved into the appropriate places above.}
-
 %-----------------------
 \section[]{Methodology}
 \label{section:methodology}
@@ -263,7 +261,7 @@ where $m$ is the value of the mark for a given halo, $\langle m \rangle$ the mea
 \label{section:results}
 %----------------------------
 
-Ultimately, as a result of the limited nature of simulation data, we must make some lower mass cutoff in our study of halo properties. Table~\ref{table:thresholds} describes where we have chosen to place these cuts in a variety of different measures. The ``hosts" set of cuts has been chosen for our primary form of analysis, as it it performs well across all four halo boxes. Figure~\ref{fig:cnfwrelation} shows an example of this cutoff in the $\Delta = 200$ case as a red line. While there may be some concern about the number of low mass halos included in the L0500 simulation box, results seem to demonstrate that the effect is somewhat minimal compared to other factors. This is quite likely related to our methodology by which we remove the inherent mass dependence, as provided that the ranking of the halos in some mass bin does not significantly change, it should result in the same general trends. The remaining two cuts have been chosen to explore any resolution related effects. The ``l0125'' cuts explore the lowest possible mass cutoff that excludes ill resolved halos in the Diemer et. all simulations, while the ``l0500'' set of cuts represent the mass cutoff chosen to avoid contamination due to resolution effects in our largest simulation box.
+Ultimately, as a result of the limited nature of simulation data, we must make some lower mass cutoff in our study of halo properties. Table~\ref{table:thresholds} describes where we have chosen to place these cuts in a variety of different measures. The ``mid mass" set of cuts has been chosen for our preliminary analysis choice, as it gives us a healthy balance between mass resolution and robust statistics. Figure~\ref{fig:cnfwrelation} shows an example of this cutoff in the $\Delta = 200$ case as a red line. We note that this of mass cut includes poorly resolved halos of middling mass in \simC. Namely, that simulation holds several bins of halos deviating significantly from a monotonic mass-concentration relation. The remaining two cuts have been chosen to explore any resolution related effects. The ``low mass'' cuts explore the lowest possible mass cutoff that excludes ill resolved halos in the Diemer et. all simulations, while the ``high mass'' set of cuts represent the mass cutoff chosen to avoid contamination due to resolution effects in our largest simulation box.
 
 \begin{figure*}
 	\centering
@@ -272,7 +270,7 @@ Ultimately, as a result of the limited nature of simulation data, we must make s
 	\label{fig:hvm_cfcompare}
 \end{figure*}
 
-%% this plot also escaped my workflow. I'll add it to the main plot generator.
+%% note: we need to remake this plot!
 
 The left column of Figure~\ref{fig:hvm_cfcompare} demonstrates the results of our method as we change the value of $\Delta$. It can be seen that \simA, \simB, and \simC \ all minimize the difference between the two correlation functions at large scales between $\Delta = 75$ and $\Delta = 50$. It should be noted that there is effectively a ``sweet spot'' effect, where decreasing the value of $\Delta$ (or correspondingly, the size of an average halo) will start to give increasing amounts of power in the correlation function to the least concentrated halos. The physical nature of this is of interest to us, and we present an intuitive explanation below.
 
@@ -338,51 +336,51 @@ The ``sweet spot'' behavior of this method is also of interest to us. The halo r
 
 %% another thing to repeat on one of the Diemer boxes. High priority.
 
-Given the differences between the simulation results and with the data available to us with the Diemer et al. simulations, we then explore the effect of the choice in mass cut. The low mass cut effects are shown in the Figure~\ref{fig:hvl_cfcompare} through Figure~\ref{fig:hvl_mcf_nsat}. This cut explores the area in which we are including ill-resolved halos potentially into the simulation. Namely, utilizing this mass cut on \simB \ data includes halos that do not fit the form of the expected monotonic halo mass-concentration relation. We can determine several facts from this exercise in resolution testing. The first is that the general behavior of the marks seems to be the same regardless of the influence of the resolution effects. Decreasing the value of $\Delta$ still moves our marked correlation functions in the same directions as the previous mass cut, although often from a very different starting location. A second interesting fact is that despite \simA \ potentially having ill-resolved halos included in the sample, the effect on the overall marked correlation function result is relatively minor. Both samples seem to converge to the same answers within simulation variance. Finally, it should be noted that an unreasonable amount of reduction in $\Delta$ is necessary to bring the lowest mass halos into a region where they will work with this method, favoring a $\Delta$ \textless \ 50. We will further explore this effect in the highest mass cuts.
+Given the differences between the simulation results and with the data available to us with the Diemer et al. simulations, we then explore the effect of the choice in mass cut. The low mass cut effects are shown in the Figure~\ref{fig:hvl_cfcompare} through Figure~\ref{fig:hvl_mcf_nsat}. This cut explores the area in which we are including ill-resolved halos potentially into the simulation. Namely, utilizing this mass cut on \simB \ data includes halos that do not fit the form of the expected monotonic halo mass-concentration relation. We can determine several facts from this exercise in resolution testing. The first is that the general behavior of the marks seems to be the same regardless of the influence of the resolution effects. Decreasing the value of $\Delta$ still moves our marked correlation functions in the same directions as the previous mass cut, although often from a very different starting location. Even with potentially ill resolved objects, the method can be brought to bear upon the problem - potentially a concern if the simulation's ability to resolve a particular statistic is questionable. Also noteable is that the level of the assembly bias is reduced in the case of this lower mass cut in \simB \ when compared to \simA. This is distinctly different from our previous example, in which both \simA \ and \simB \ both contain only well resolved halos within the mass cut and have nearly identical assembly bias at every scale, aside from simulation noise. This seems to imply that including unphysical halos in our sample makes it difficult to determine the actual assembly bias at work.
 
 \begin{figure*}
 	\centering
 	\includegraphics[width=\textwidth]{all_cfhilow_z00_hostsvlow.pdf}
-	\caption{The difference of the correlation function for only the top 20\% most concentrated halos and the bottom 20\% in concentration, normalized by the overall correlation function of the entire sample. The top row uses \simA data while the bottom rose uses \simB data. The left column utilizes the 'hosts' mass cutoff, while the right column demonstrates the 'low mass' cutoff. The solid lines along the bottom denote the largest halo radius for a given value of the overdensity parameter}
+	\caption{The difference of the correlation function for only the top 20\% most concentrated halos and the bottom 20\% in concentration, normalized by the overall correlation function of the entire sample. The top row uses \simA data while the bottom rose uses \simB data. The left column utilizes the ``hosts'' mass cutoff, while the right column demonstrates the 'low mass' cutoff. The solid lines along the bottom denote the largest halo radius for a given value of the overdensity parameter}
 	\label{fig:hvl_cfcompare}
 \end{figure*}
 
 \begin{figure*}
 	\centering
 	\includegraphics[width=\textwidth]{all_mcf_cnfw_z00_hostsvlow.pdf}
-	\caption{Comparison of the marked correlation function for the concentration defined according to the NFW profile between the 'hosts' mass cutoff (left column) and the 'low mass' cutoff (right column). The top row uses \simA data while the bottom row uses \simB data. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The solid lines along the bottom denote the largest halo radius for a given value of the overdensity parameter.}
+	\caption{Comparison of the marked correlation function for the concentration defined according to the NFW profile between the ``hosts'' mass cutoff (left column) and the 'low mass' cutoff (right column). The top row uses \simA data while the bottom row uses \simB data. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The solid lines along the bottom denote the largest halo radius for a given value of the overdensity parameter.}
 	\label{fig:hvl_mcf_cnfw}
 \end{figure*}
 
 \begin{figure*}
 	\centering
 	\includegraphics[width=\textwidth]{all_mcf_cV_z00_hostsvlow.pdf}
-	\caption{Comparison of the marked correlation function for the concentration defined according to the velocity ratio between the 'hosts' mass cutoff (left column) and the 'low mass' cutoff (right column). The top row uses \simA data while the bottom row uses \simB data. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The solid lines along the bottom denote the largest halo radius for a given value of the overdensity parameter.}
+	\caption{Comparison of the marked correlation function for the concentration defined according to the velocity ratio between the ``hosts'' mass cutoff (left column) and the 'low mass' cutoff (right column). The top row uses \simA data while the bottom row uses \simB data. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The solid lines along the bottom denote the largest halo radius for a given value of the overdensity parameter.}
 	\label{fig:hvl_mcf_cV}
 \end{figure*}
 
 \begin{figure*}
 	\centering
 	\includegraphics[width=\textwidth]{all_mcf_s_z00_hostsvlow.pdf}
-	\caption{Comparison of the marked correlation function for the shape of the halo between the 'hosts' mass cutoff (left column) and the 'low mass' cutoff (right column). The top row uses \simA data while the bottom row uses \simB data. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The solid lines along the bottom denote the largest halo radius for a given value of the overdensity parameter.}
+	\caption{Comparison of the marked correlation function for the shape of the halo between the ``hosts'' mass cutoff (left column) and the 'low mass' cutoff (right column). The top row uses \simA data while the bottom row uses \simB data. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The solid lines along the bottom denote the largest halo radius for a given value of the overdensity parameter.}
 	\label{fig:hvl_mcf_s}
 \end{figure*}
 
 \begin{figure*}
 	\centering
 	\includegraphics[width=\textwidth]{all_mcf_spin_z00_hostsvlow.pdf}
-	\caption{Comparison of the marked correlation function for the spin of the halo between the 'hosts' mass cutoff (left column) and the 'low mass' cutoff (right column). The top row uses \simA data while the bottom row uses \simB data. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The solid lines along the bottom denote the largest halo radius for a given value of the overdensity parameter.}
+	\caption{Comparison of the marked correlation function for the spin of the halo between the ``hosts'' mass cutoff (left column) and the 'low mass' cutoff (right column). The top row uses \simA data while the bottom row uses \simB data. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The solid lines along the bottom denote the largest halo radius for a given value of the overdensity parameter.}
 	\label{fig:hvl_mcf_spin}
 \end{figure*}
 
 \begin{figure*}
 	\centering
 	\includegraphics[width=\textwidth]{all_mcf_nsat_z00_hostsvlow.pdf}
-	\caption{Comparison of the marked correlation function for the satellite number between the 'hosts' mass cutoff (left column) and the 'low mass' cutoff (right column). The top row uses \simA data while the bottom row uses \simB data. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The solid lines along the bottom denote the largest halo radius for a given value of the overdensity parameter.}
+	\caption{Comparison of the marked correlation function for the satellite number between the ``hosts'' mass cutoff (left column) and the 'low mass' cutoff (right column). The top row uses \simA data while the bottom row uses \simB data. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The solid lines along the bottom denote the largest halo radius for a given value of the overdensity parameter.}
 	\label{fig:hvl_mcf_nsat}
 \end{figure*}
 
-We can repeat this exercise by looking at a different set of mass cuts. In this case we will utilize our highest mass cut on \simB and \simC. This case does not include poorly resolved halos as we were including in the previous example. Instead, the smaller sized box runs the risk of having less of the most massive halos, resulting in having a larger variance for objects at high mass. The results of this are shown in Figure~\ref{fig:hvh_cfcompare} through Figure~\ref{fig:hvh_mcf_nsat}. There are several key observations to take away from this set of figures. It should be noted that the trend for the marked correlation functions to move is the opposite of what is seen in the low mass cut case. This seems to indicate a consistency in which you move from an excess of highly concentrated pairs in low mass bins to an excess of low concentrated pairs (or a lack of high concentrated pairs) at high mass bins. This may arise from many possible effects, though the possible exclusion due to the increased halo sizes is certainly not negligible. We also note that aside from additional noise, this trend is seen in both \simB and \simC, asserting that this effect is not merely a statistical fluke.
+We can repeat this exercise by looking at a different set of mass cuts. In this case we will utilize our highest mass cut on \simB and \simC. This case does not include poorly resolved halos as we were including in the previous example. Instead, the smaller sized box runs the risk of having less of the most massive halos, resulting in having a larger variance for objects at high mass. The results of this are shown in Figure~\ref{fig:hvh_cfcompare} through Figure~\ref{fig:hvh_mcf_nsat}. There are several key observations to be taken away from this series of plots. The first is the fact that like in our previous example, we see no significant change in assembly bias when only including well resolved halos and see a considerable change when we include unresolved halos in \simC. Of greater import is the fact that we see that in several cases, when interest is only in the most massive halos we find that there is next to no assembly bias. Changing our definition of the halo radius in these cases can even induce halo assembly bias. Given the previous discussion regarding the differences in halo radius definitions chosen (e.g. critical density versus mean density), this implies that we can have very different measurements of this effect solely based on halo definition - a fact that has yet to be explored thoroughly within the literature.
 
 \begin{figure*}
 	\centering
