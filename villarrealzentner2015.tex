@@ -216,19 +216,14 @@ value of the overdensity, $\Delta$, used to define the halos. In the columns bel
 considered in units of $h^{-1}\mathrm{M}_{\odot}$. \arz{I put all of this in as a placeholder for what should be here. Please fill in all relevant cells of 
 this table and add to the table caption any additional description that might be necessary for a user to understand the plots. Keep in mind that many of the cells I have not even put in here, this is just an example to get started.}}
 \vspace*{8pt}
-\begin{tabular}{ c c c c c c }
+\begin{tabular}{ c c c c c }
 \hline
 \hline
-Simulation \ \ & \ \ Halo Property \ \  & $\Delta=200$ & $\Delta=100$ & $\Delta=75$ & $\Delta=50$ \ \\
+Cutoff Name \ \  & $\Delta=200$ & $\Delta=100$ & $\Delta=75$ & $\Delta=50$ \\
 \hline
-{\tt L0125} & $c_{\mathrm{NFW}}$ & 12 & 13 & 14 & 15  \\
-{\tt L0125} & $c_{\mathrm{V}}$ & 12 & 13 & 14 & 15 \\
-\hline
-{\tt L0250} & $c_{\mathrm{NFW}}$ & 12 & 13 & 14 & 15 \\
-{\tt L0250} & $c_{\mathrm{V}}$ & 12 & 13 & 14 & 15 \\
-\hline
-{\tt L0500} & $c_{\mathrm{NFW}}$ & 12 & 13 & 14 & 15 \\
-{\tt L0500} & $s$ & 12 & 13 & 14 & 15 \\
+\\{low mass} & $7 \times 10^{10}$ & $8 \times 10^{10}$ & $9 \times 10^{10}$ & $1 \times 10^{11}$  \\
+{mid mass} & $7 \times 10^{11}$ & $8 \times 10^{11}$ & $9 \times 10^{11}$ & $1.5 \times 10^{12}$ \\
+{high mass} & $4 \times 10^{12}$ & $5 \times 10^{12}$ & $6 \times 10^{12}$ & $7 \times 10^{12}$ \\
 \hline
 \hline
 \end{tabular}
@@ -261,23 +256,23 @@ where $m$ is the value of the mark for a given halo, $\langle m \rangle$ the mea
 \label{section:results}
 %----------------------------
 
-Ultimately, as a result of the limited nature of simulation data, we must make some lower mass cutoff in our study of halo properties. Table~\ref{table:thresholds} describes where we have chosen to place these cuts in a variety of different measures. The ``mid mass" set of cuts has been chosen for our preliminary analysis choice, as it gives us a healthy balance between mass resolution and robust statistics. Figure~\ref{fig:cnfwrelation} shows an example of this cutoff in the $\Delta = 200$ case as a red line. We note that this of mass cut includes poorly resolved halos of middling mass in \simC. Namely, that simulation holds several bins of halos deviating significantly from a monotonic mass-concentration relation. The remaining two cuts have been chosen to explore any resolution related effects. The ``low mass'' cuts explore the lowest possible mass cutoff that excludes ill resolved halos in the Diemer et. all simulations, while the ``high mass'' set of cuts represent the mass cutoff chosen to avoid contamination due to resolution effects in our largest simulation box.
+Ultimately, as a result of the limited nature of simulation data, we must make some lower mass cutoff in our study of halo properties. Table~\ref{table:thresholds} describes where we have chosen to place these cuts in a variety of different measures. The ``mid mass" set of cuts has been chosen for our preliminary analysis choice, as it gives us a healthy balance between mass resolution and robust statistics. Figure~\ref{fig:cnfwrelation} shows an example of this cutoff in the $\Delta = 200$ case as a red line. We do not include \simC \ in this initial analysis, as that simulation holds several bins of halos deviating significantly from a monotonic mass-concentration relation. This may be a result of including halos that are unphysical, but still meets the halo-finding algorithm's requirements.  The remaining two cuts have been chosen to explore any resolution related effects. The ``low mass'' cuts explore the lowest possible mass cutoff that excludes ill resolved halos in the Diemer et. all simulations, while the ``high mass'' set of cuts represent the mass cutoff chosen to avoid contamination due to resolution effects in our largest simulation box.
 
 \begin{figure*}
 	\centering
 	\includegraphics[width=\textwidth]{all_cfhilow_z00_hostsvmatch.pdf}
-	\caption{The difference of the correlation function for only the top 20\% most concentrated halos and the bottom 20\% in concentration, normalized by the overall correlation function of the entire sample. From top to bottom, we show the results for \simA, \simB, and \simC \ respectively. The left column utilizes all host halos in the catalog. The right column contains only host halos that exist inside of our best fit value of $\Delta$, as explained in the text. The solid lines along the bottom denote the largest halo radius for a given value of the overdensity parameter. \arz{We'll have to think carefully about this figure. It is very hard to read. Perhaps we can show just Delta=200 and then your "best" Delta? Also, we can remove the Consuelo reference.}}
+	\caption{The difference of the correlation function for only the top 20\% most concentrated halos and the bottom 20\% in concentration, normalized by the overall correlation function of the entire sample. From top to bottom, we show the results for \simA \ and \simB \ respectively. The left column utilizes all host halos in the mass cut. The right column contains only host halos that exist inside of our best fit value of $\Delta$, as explained in the text. The dashed lines along the bottom denote the largest halo radius for a given value of the overdensity parameter. \arz{We'll have to think carefully about this figure. It is very hard to read. Perhaps we can show just Delta=200 and then your "best" Delta? Also, we can remove the Consuelo reference.}}
 	\label{fig:hvm_cfcompare}
 \end{figure*}
 
 %% note: we need to remake this plot!
 
-The left column of Figure~\ref{fig:hvm_cfcompare} demonstrates the results of our method as we change the value of $\Delta$. It can be seen that \simA, \simB, and \simC \ all minimize the difference between the two correlation functions at large scales between $\Delta = 75$ and $\Delta = 50$. It should be noted that there is effectively a ``sweet spot'' effect, where decreasing the value of $\Delta$ (or correspondingly, the size of an average halo) will start to give increasing amounts of power in the correlation function to the least concentrated halos. The physical nature of this is of interest to us, and we present an intuitive explanation below.
+The left column of Figure~\ref{fig:hvm_cfcompare} demonstrates the results of our method as we change the value of $\Delta$. It can be seen that \simA \ and \simB \ both minimize the difference between the two correlation functions at large scales between $\Delta = 75$ and $\Delta = 50$. It should be noted that there is effectively a ``sweet spot'' effect, where decreasing the value of $\Delta$ (or correspondingly, the size of an average halo) will start to give increasing amounts of power in the correlation function to the least concentrated halos - essentially introducing a new assembly bias. The physical nature of this is of interest to us, and we attempt to present an intuitive sense of the effect further on.
 
 \begin{figure*}
 	\centering
 	\includegraphics[width=\textwidth]{all_mcf_cnfw_z00_hostsvmatch.pdf}
-	\caption{The marked correlation function for the concentration defined according to the NFW profile. From top to bottom, we show the results for \simA, \simB, and \simC \ respectively. The left column utilizes all host halos in the catalog. The right column contains only host halos that exist inside of our best fit value of $\Delta$, as explained in the text. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The solid lines along the bottom denote the largest halo radius for a given value of the overdensity parameter. \arz{This figure is beautiful now. The only recommendation I have is to remove the white space in the lowest row of panels. Perhaps make the maximum y-axis 0.25 or so.}}
+	\caption{The marked correlation function for the concentration defined according to the NFW profile. From top to bottom, we show the results for \simA \ and \simB \ respectively. The left column utilizes all host halos in the mass cut. The right column contains only host halos that exist inside of our best fit value of $\Delta$, as explained in the text. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The dashed lines along the bottom denote the largest halo radius for a given value of the overdensity parameter. \arz{This figure is beautiful now. The only recommendation I have is to remove the white space in the lowest row of panels. Perhaps make the maximum y-axis 0.25 or so.}}
 	\label{fig:hvm_mcf_cnfw}
 \end{figure*}
 
@@ -286,14 +281,14 @@ The NFW defined concentration MCF is shown in the left column of Figure~\ref{fig
 \begin{figure*}
 	\centering
 	\includegraphics[width=\textwidth]{all_mcf_cV_z00_hostsvmatch.pdf}
-	\caption{The marked correlation function for the concentration defined according to the velocity ratio. From top to bottom, we show the results for \simA, \simB, and \simC \ respectively. The left column utilizes all host halos in the catalog. The right column contains only host halos that exist inside of our best fit value of $\Delta$, as explained in the text. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The solid lines along the bottom denote the largest halo radius for a given value of the overdensity parameter. \arz{This figure needs to be made as beautiful as Figure 4.}}
+	\caption{The marked correlation function for the concentration defined according to the velocity ratio. From top to bottom, we show the results for \simA \ and \simB \ respectively. The left column utilizes all host halos in the mass cut. The right column contains only host halos that exist inside of our best fit value of $\Delta$, as explained in the text. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The dashed lines along the bottom denote the largest halo radius for a given value of the overdensity parameter. \arz{This figure needs to be made as beautiful as Figure 4.}}
 	\label{fig:hvm_mcf_cV}
 \end{figure*}
 
 \begin{figure*}
 	\centering
 	\includegraphics[width=\textwidth]{all_mcf_s_z00_hostsvmatch.pdf}
-	\caption{The marked correlation function for the shape of the halo. From top to bottom, we show the results for \simA, \simB, and \simC \ respectively. The left column utilizes all host halos in the catalog. The right column contains only host halos that exist inside of our best fit value of $\Delta$, as explained in the text. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The solid lines along the bottom denote the largest halo radius for a given value of the overdensity parameter.}
+	\caption{The marked correlation function for the shape of the halo. From top to bottom, we show the results for \simA \ and \simB \ respectively. The left column utilizes all host halos in the mass cut. The right column contains only host halos that exist inside of our best fit value of $\Delta$, as explained in the text. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The dashed lines along the bottom denote the largest halo radius for a given value of the overdensity parameter.}
 	\label{fig:hvm_mcf_s}
 \end{figure*}
 
@@ -302,14 +297,14 @@ The left column of Figure~\ref{fig:hvm_mcf_s} demonstrates a case in which the h
 \begin{figure*}
 	\centering
 	\includegraphics[width=\textwidth]{all_mcf_spin_z00_hostsvmatch.pdf}
-	\caption{The marked correlation function for the spin parameter of the halo. From top to bottom, we show the results for \simA, \simB, and \simC \ respectively. The left column utilizes all host halos in the catalog. The right column contains only host halos that exist inside of our best fit value of $\Delta$, as explained in the text. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The solid lines along the bottom denote the largest halo radius for a given value of the overdensity parameter.}
+	\caption{The marked correlation function for the spin parameter of the halo. From top to bottom, we show the results for \simA \ and \simB \ respectively. The left column utilizes all host halos in the mass cut. The right column contains only host halos that exist inside of our best fit value of $\Delta$, as explained in the text. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The dashed lines along the bottom denote the largest halo radius for a given value of the overdensity parameter.}
 	\label{fig:hvm_mcf_spin}
 \end{figure*}
 
 \begin{figure*}
 	\centering
 	\includegraphics[width=\textwidth]{all_mcf_nsat_z00_hostsvmatch.pdf}
-	\caption{The marked correlation function for the number of satellites for a host halo. From top to bottom, we show the results for \simA, \simB, and \simC \ respectively. The left column utilizes all host halos in the catalog. The right column contains only host halos that exist inside of our best fit value of $\Delta$, as explained in the text. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The solid lines along the bottom denote the largest halo radius for a given value of the overdensity parameter.}
+	\caption{The marked correlation function for the number of satellites for a host halo. From top to bottom, we show the results for \simA \ and \simB \ respectively. The left column utilizes all host halos in the catalog. The right column contains only host halos that exist inside of our best fit value of $\Delta$, as explained in the text. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The dashed lines along the bottom denote the largest halo radius for a given value of the overdensity parameter.}
 	\label{fig:hvm_mcf_nsat}
 \end{figure*}
 
@@ -325,12 +320,12 @@ Given that the removal of assembly bias is not being driven by introducing noice
 
 Halo shape and satellite number are statistics that do not end up having their environmental effects removed and can even be made more prominent by our methodology. One intuitive way to consider the former statistic is in the context of the cosmic web. Studies have shown a statistically significant alignment between filaments and satellite galaxy position \citep{tempel15, velliscig15}. Our method then expands the halo radius and subsumes material that was previously outside of the halo. A simple graphic illustrates this potential effect in Figure~\ref{fig:plotcircles}. As there is a preferential distribution of these satellites that are being subsumed into the halo, this would serve to induce a shape to the halo that would then be determined by Rockstar. In addition, as our satellite number is chosen by those halos within the halo radius, we anticipate that the most clustered regions would see the largest increase in satellite count and thus see an increase in the satellite number mark.
 
-The ``sweet spot'' behavior of this method is also of interest to us. The halo redefinition process that we use serves to decrease halo clustering for the most concentrated halos and increase halo clustering for the least concentrated halos. In the case of the high concentration cut, the reduced clustering can be seen as a result of halo exclusion. As we exchange collections of tightly clustered smaller halos for a single larger halo, then the most prominent contribution of the two-point correlation function will be reduced at all scales.
+The ``sweet spot'' behavior of this method is also of interest to us. The halo redefinition process that we use serves to decrease halo clustering for the most concentrated halos and increase halo clustering for the least concentrated halos. In the case of the high concentration cut, the reduced clustering can be seen as a result of halo exclusion. As we exchange collections of tightly clustered smaller halos for a single larger halo, then the most prominent contribution of the two-point correlation function will be reduced at all scales. Furthermore, it suggests that the assembly bias that we witness is correlated with the choice of halo definition. This effect may be necessary to explaining the mixed results in the field at determining just how strong assembly bias is.
 
 \begin{figure*}
 	\centering
 	\includegraphics[width=1\textwidth]{plotcircles_coolwarm.pdf}
-	\caption{A $60 \hMpc$ deep cut of \simB \ along the z-axis. This zoom-in demonstrates the process that decreases the shape parameter as a function of clustering. The size of each circle represents the projection of a spherical dark matter halo with a given halo radius onto the x-y plane. Filled circles use the $\Delta = 200$ catalog and unfilled circles use the $\Delta = 10$ catalog in order to make the effect more visible. Color scale refers to the log shape mark, normalized by halos of the same mass.}
+	\caption{A $20 \hMpc$ deep cut of \simB \ along the z-axis. This zoom-in demonstrates the process that decreases the shape parameter as a function of clustering. The size of each circle represents the projection of a spherical dark matter halo with a given halo radius onto the x-y plane. Filled circles use the $\Delta = 200$ catalog and unfilled circles use the $\Delta = 10$ catalog in order to make the effect more visible. Color scale refers to the log shape mark, normalized by halos of the same mass.}
 	\label{fig:plotcircles}
 \end{figure*}
 
@@ -341,42 +336,42 @@ Given the differences between the simulation results and with the data available
 \begin{figure*}
 	\centering
 	\includegraphics[width=\textwidth]{all_cfhilow_z00_hostsvlow.pdf}
-	\caption{The difference of the correlation function for only the top 20\% most concentrated halos and the bottom 20\% in concentration, normalized by the overall correlation function of the entire sample. The top row uses \simA data while the bottom rose uses \simB data. The left column utilizes the ``hosts'' mass cutoff, while the right column demonstrates the 'low mass' cutoff. The solid lines along the bottom denote the largest halo radius for a given value of the overdensity parameter}
+	\caption{The difference of the correlation function for only the top 20\% most concentrated halos and the bottom 20\% in concentration, normalized by the overall correlation function of the entire sample. The top row uses \simA \  data while the bottom row uses \simB \ data. The left column utilizes the ``mid mass'' cutoff, while the right column demonstrates the ``low mass'' cutoff. The dashed lines along the bottom denote the largest halo radius for a given value of the overdensity parameter}
 	\label{fig:hvl_cfcompare}
 \end{figure*}
 
 \begin{figure*}
 	\centering
 	\includegraphics[width=\textwidth]{all_mcf_cnfw_z00_hostsvlow.pdf}
-	\caption{Comparison of the marked correlation function for the concentration defined according to the NFW profile between the ``hosts'' mass cutoff (left column) and the 'low mass' cutoff (right column). The top row uses \simA data while the bottom row uses \simB data. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The solid lines along the bottom denote the largest halo radius for a given value of the overdensity parameter.}
+	\caption{Comparison of the marked correlation function for the concentration defined according to the NFW profile between the ``mid mass'' cutoff (left column) and the ``low mass'' cutoff (right column). The top row uses \simA \ data while the bottom row uses \simB \ data. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The dashed lines along the bottom denote the largest halo radius for a given value of the overdensity parameter.}
 	\label{fig:hvl_mcf_cnfw}
 \end{figure*}
 
 \begin{figure*}
 	\centering
 	\includegraphics[width=\textwidth]{all_mcf_cV_z00_hostsvlow.pdf}
-	\caption{Comparison of the marked correlation function for the concentration defined according to the velocity ratio between the ``hosts'' mass cutoff (left column) and the 'low mass' cutoff (right column). The top row uses \simA data while the bottom row uses \simB data. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The solid lines along the bottom denote the largest halo radius for a given value of the overdensity parameter.}
+	\caption{Comparison of the marked correlation function for the concentration defined according to the velocity ratio between the ``mid mass'' cutoff (left column) and the ``low mass'' cutoff (right column). The top row uses \simA \ data while the bottom row uses \simB \ data. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The dashed lines along the bottom denote the largest halo radius for a given value of the overdensity parameter.}
 	\label{fig:hvl_mcf_cV}
 \end{figure*}
 
 \begin{figure*}
 	\centering
 	\includegraphics[width=\textwidth]{all_mcf_s_z00_hostsvlow.pdf}
-	\caption{Comparison of the marked correlation function for the shape of the halo between the ``hosts'' mass cutoff (left column) and the 'low mass' cutoff (right column). The top row uses \simA data while the bottom row uses \simB data. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The solid lines along the bottom denote the largest halo radius for a given value of the overdensity parameter.}
+	\caption{Comparison of the marked correlation function for the shape of the halo between the ``mid mass'' cutoff (left column) and the ``low mass'' cutoff (right column). The top row uses \simA \ data while the bottom row uses \simB \ data. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The dashed lines along the bottom denote the largest halo radius for a given value of the overdensity parameter.}
 	\label{fig:hvl_mcf_s}
 \end{figure*}
 
 \begin{figure*}
 	\centering
 	\includegraphics[width=\textwidth]{all_mcf_spin_z00_hostsvlow.pdf}
-	\caption{Comparison of the marked correlation function for the spin of the halo between the ``hosts'' mass cutoff (left column) and the 'low mass' cutoff (right column). The top row uses \simA data while the bottom row uses \simB data. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The solid lines along the bottom denote the largest halo radius for a given value of the overdensity parameter.}
+	\caption{Comparison of the marked correlation function for the spin of the halo between the ``mid mass'' cutoff (left column) and the ``low mass'' cutoff (right column). The top row uses \simA \ data while the bottom row uses \simB \ data. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The dashed lines along the bottom denote the largest halo radius for a given value of the overdensity parameter.}
 	\label{fig:hvl_mcf_spin}
 \end{figure*}
 
 \begin{figure*}
 	\centering
 	\includegraphics[width=\textwidth]{all_mcf_nsat_z00_hostsvlow.pdf}
-	\caption{Comparison of the marked correlation function for the satellite number between the ``hosts'' mass cutoff (left column) and the 'low mass' cutoff (right column). The top row uses \simA data while the bottom row uses \simB data. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The solid lines along the bottom denote the largest halo radius for a given value of the overdensity parameter.}
+	\caption{Comparison of the marked correlation function for the satellite number between the ``mid mass'' cutoff (left column) and the ``low mass'' cutoff (right column). The top row uses \simA data while the bottom row uses \simB data. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The dashed lines along the bottom denote the largest halo radius for a given value of the overdensity parameter.}
 	\label{fig:hvl_mcf_nsat}
 \end{figure*}
 
@@ -385,42 +380,42 @@ We can repeat this exercise by looking at a different set of mass cuts. In this 
 \begin{figure*}
 	\centering
 	\includegraphics[width=\textwidth]{all_cfhilow_z00_hostsvhigh.pdf}
-	\caption{The difference of the correlation function for only the top 20\% most concentrated halos and the bottom 20\% in concentration, normalized by the overall correlation function of the entire sample. The top row uses \simA data while the bottom rose uses \simB data. The left column utilizes the 'hosts' mass cutoff, while the right column demonstrates the 'high mass' cutoff. The solid lines along the bottom denote the largest halo radius for a given value of the overdensity parameter}
+	\caption{The difference of the correlation function for only the top 20\% most concentrated halos and the bottom 20\% in concentration, normalized by the overall correlation function of the entire sample. The top row uses \simB \ data while the bottom row uses \simC \ data. The left column utilizes the ``mid mass'' cutoff, while the right column demonstrates the ``high mass'' cutoff. The dashed lines along the bottom denote the largest halo radius for a given value of the overdensity parameter}
 	\label{fig:hvh_cfcompare}
 \end{figure*}
 
 \begin{figure*}
 	\centering
 	\includegraphics[width=\textwidth]{all_mcf_cnfw_z00_hostsvhigh.pdf}
-	\caption{Comparison of the marked correlation function for the concentration defined according to the NFW profile between the 'hosts' mass cutoff (left column) and the 'high mass' cutoff (right column). The top row uses \simA data while the bottom row uses \simB data. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The solid lines along the bottom denote the largest halo radius for a given value of the overdensity parameter.}
+	\caption{Comparison of the marked correlation function for the concentration defined according to the NFW profile between the ``mid mass'' cutoff (left column) and the ``high mass'' cutoff (right column). The top row uses \simB \ data while the bottom row uses \simC \ data. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The dashed lines along the bottom denote the largest halo radius for a given value of the overdensity parameter.}
 	\label{fig:hvh_mcf_cnfw}
 \end{figure*}
 
 \begin{figure*}
 	\centering
 	\includegraphics[width=\textwidth]{all_mcf_cV_z00_hostsvhigh.pdf}
-	\caption{Comparison of the marked correlation function for the concentration defined according to the velocity ratio between the 'hosts' mass cutoff (left column) and the 'high mass' cutoff (right column). The top row uses \simA data while the bottom row uses \simB data. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The solid lines along the bottom denote the largest halo radius for a given value of the overdensity parameter.}
+	\caption{Comparison of the marked correlation function for the concentration defined according to the velocity ratio between the ``mid mass'' cutoff (left column) and the ``high mass'' cutoff (right column). The top row uses \simB \ data while the bottom row uses \simC \ data. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The dashed lines along the bottom denote the largest halo radius for a given value of the overdensity parameter.}
 	\label{fig:hvh_mcf_cV}
 \end{figure*}
 
 \begin{figure*}
 	\centering
 	\includegraphics[width=\textwidth]{all_mcf_s_z00_hostsvhigh.pdf}
-	\caption{Comparison of the marked correlation function for the shape of the halo between the 'hosts' mass cutoff (left column) and the 'high mass' cutoff (right column). The top row uses \simA data while the bottom row uses \simB data. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The solid lines along the bottom denote the largest halo radius for a given value of the overdensity parameter.}
+	\caption{Comparison of the marked correlation function for the shape of the halo between the ``mid mass'' cutoff (left column) and the ``high mass'' cutoff (right column). The top row uses \simB \ data while the bottom row uses \simC \ data. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The dashed lines along the bottom denote the largest halo radius for a given value of the overdensity parameter.}
 	\label{fig:hvh_mcf_s}
 \end{figure*}
 
 \begin{figure*}
 	\centering
 	\includegraphics[width=\textwidth]{all_mcf_spin_z00_hostsvhigh.pdf}
-	\caption{Comparison of the marked correlation function for the spin of the halo between the 'hosts' mass cutoff (left column) and the 'high mass' cutoff (right column). The top row uses \simA data while the bottom row uses \simB data. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The solid lines along the bottom denote the largest halo radius for a given value of the overdensity parameter.}
+	\caption{Comparison of the marked correlation function for the spin of the halo between the ``mid mass'' cutoff (left column) and the ``high mass'' cutoff (right column). The top row uses \simB \ data while the bottom row uses \simC \ data. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The dashed lines along the bottom denote the largest halo radius for a given value of the overdensity parameter.}
 	\label{fig:hvh_mcf_spin}
 \end{figure*}
 
 \begin{figure*}
 	\centering
 	\includegraphics[width=\textwidth]{all_mcf_nsat_z00_hostsvhigh.pdf}
-	\caption{Comparison of the marked correlation function for the satellite number between the 'hosts' mass cutoff (left column) and the 'high mass' cutoff (right column). The top row uses \simA data while the bottom row uses \simB data. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The solid lines along the bottom denote the largest halo radius for a given value of the overdensity parameter.}
+	\caption{Comparison of the marked correlation function for the satellite number between the ``mid mass'' cutoff (left column) and the ``high mass'' cutoff (right column). The top row uses \simB \ data while the bottom row uses \simC \ data. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The dashed lines along the bottom denote the largest halo radius for a given value of the overdensity parameter.}
 	\label{fig:hvh_mcf_nsat}
 \end{figure*}
 
@@ -441,6 +436,8 @@ We have looked at how to use CFs and MCFs in order to analyze the environmental 
 	\item The environmental effects on the shape of the host halo and the satellite number of the host halo cannot be removed regardless of the chosen redefinition of $\Delta$. We propose that this may be intrinsically tied to the nature of the filaments, whose effects cannot be removed by a simple redefinition of the halo radius.
 
 	\item This method is definitively related to the mass of the halos that are being observed. Furthermore, it appears that the majority of the reduction in assembly bias is tied to the exclusion of halos from the catalog as a result of being subsumed into larger halos. This information does not seem to be contradictory; it can be intuitively understood that the region about the most massive halos will be different than the region around the least massive halos, leading to a different frequency at which halos are being excluded. It does however warrant that careful consideration be given to the sample of halos that are of interest.
+
+	\item The selection of halo size is intrinsically related to the assembly bias and varies across scales. This might help to resolve contradictory results in the search for halo assembly bias in the literature.
 \end{itemize}
 
 This methodology, while certainly not perfect in removing environmental effects, may be of significance when applied to galaxy formation models. Provided that the properties of interest in a given model behave well under our redefinition, it will allow us to create better mock galaxy catalogs while avoiding the trouble that baryonic physics represent. This may allow us to better study the properties of galaxies within halos without having to substantially increase computation time. There remain possible uncertainties to study in the future. 
