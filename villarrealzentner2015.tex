@@ -21,7 +21,7 @@
 
 \begin{document}
 
-\title[Halo Environmental Effects as a Function of Halo Definition]{Halo Definition and Environmental Effects}
+\title[Halo Definition and Environmental Effects]{Halo Definition and Environmental Effects}
 \author[Antonio Villarreal, Andrew R. Zentner, Christopher W. Purcell]
 {Antonio Villarreal$^1$\thanks{E-mail: asv13@pitt.edu},
  Andrew R. Zentner$^1$\thanks{E-mail: zentner@pitt.edu}, 
@@ -42,7 +42,7 @@ West Virginia University, Morgantown, WV}
 
 \begin{abstract}
 %% Abstract goes here
-Recent work has shown the importance of environment to the properties of dark matter halos. This brings conflict to standard implementations of the halo model and excursion set theory which assume that the properties of a population within the halo is determined by the mass of the halo alone. We seek to find a definition of the size of a halo that allows us to minimize the impact of assembly bias on halo model calculations. We analyze the dependence on environment of our properties using the method of marked correlation functions for several different halo definitions, utilizing the Diemer et al simulations. We find that environmental dependencies are dramatically different as we vary the definition of the halo radius in terms of the overdensity parameter $\Delta$. At large length scales, we find that the majority of assembly bias is removed through suitable redefinition of $\Delta$. We are able to determine that the majority of the reduction in assembly bias is related to the elimination of host halos that would cease to be hosts in catalogs at lower values of $\Delta$. Further, we analyze the mass dependence on this effect and how it factors into the applicability of our methodology.
+Recent work has shown the importance of environment to the properties of dark matter halos. This brings conflict to standard implementations of the halo model and excursion set theory which assume that the properties of a population within the halo is determined by the mass of the halo alone. We seek to find a definition of the size of a halo that allows us to minimize the impact of assembly bias on halo model calculations. We analyze the dependence on environment of our properties using the method of marked correlation functions for several different halo definitions, utilizing the Diemer et al simulations. We find that environmental dependencies are dramatically different as we vary the definition of the halo radius in terms of the overdensity $\Delta$. At large length scales, we find that the majority of assembly bias is removed through suitable redefinition of $\Delta$. We are able to determine that the majority of the reduction in assembly bias is related to the elimination of host halos that would cease to be hosts in catalogs at lower values of $\Delta$. Further, we analyze how different mass cuts affect this methodology. We note that unresolved halos leads to assembly bias being missed and that the most massive halos seem to exhibit minimal assembly bias. We further note that the choice of halo definition can induce assembly bias and consider how this may be interpreted in the context of previous results in the literature.
 \end{abstract}
 
 \begin{keywords}
@@ -59,48 +59,39 @@ dark matter -- galaxies: halos -- galaxies: formation -- large-scale structure o
 \section{Introduction}
 \label{section:introduction}
 %-----------------------
-\arz{NEVER refer to figures, tables, or equations using the literal number. For example, do not in your tex file write "Figure 1" or "Figure 2"! Then you will lose your cross-referencing if you change anything. Instead, give each figure a name and then refer to the figure by the name of a reference in latex as in Figure~\ref{fig:cnfwrelation} (see my example in the text).}
-
  \arz{We will need to work on the introduction considerably as we get a better handle on the final results. The first two paragraphs can probably be 
  combined into a single shorter paragraph. I also like to end the first paragraph by telling the reader what it is that we aim to do in the paper. The rest of the introduction will need be be completely rewritten in a more professional manner. However, let's get the middle of the paper complete before we work a lot on the introduction and conclusion sections.}
- 
- \arz{Make sure to use consistent labels for things throughout your text. For example, once you define your simulations, you should always use the same names to refer to them, e.g., "L0125" and so on. One easy way to implement this is to use macros for such things. That also makes it easy to change notation if you decide to because then you only need to change the macros.}
 
 In the current concordance cosmology, the creation of observed galaxies and clusters is often seen as arising from the hierarchical mergers of dark matter halos.\citep{white78}. Being able to model the properties of dark matter halos and the galaxies within gives us a potential probe for the physical processes that go into galaxy formation. The excursion-set formalism of galaxy clustering \citep{bond91,lacey93,somerville99, zentner06} and the standard halo model of galaxy clustering \citep{seljak00, peacock00, scoccimarro01, berlind02, bullock02, cooray02} both can help us in this task, but rely on underlying asumptions. The first is that the statistics of the objects within a dark matter halo is a function of the mass alone. The second is that the clustering of dark matter halos is a function of mass as well. In this paper we propose a simple redefinition of halo size that will help correct for inaccuracies in these two assumptions.
 
 It has previously been demonstrated that the clustering of halos is dependent on not only the halo mass, but also on the formation time of the halo \citep{sheth04, gao05, croton07}. Furthermore, it has been shown that the clustering of a given halo is dependent on the halo concentration \citep{wechsler06}. This necessitates corrections be made to the standard implementations to account for this. More complicated methodologies have been made to extend to using merger histories directly from simulation \citep{dvorkin11}, as well as to account for the dependence due to concentration \citep{gil11}. The relationship that clustering has to the properties of the halo is commonly referred to assembly bias or environmental effects.
 
-Our method of halo redefinition is motivated by the size of a halo not necessarily being a well-motivated property. What is often referred to as the ``virial radius'' will not contain all gravitational bound dark matter particles in the halo \citep{kazan06}. Rather, it is a matter of convention that does not have a common definition across the literature. We choose to define a halo radius in a way that encompasses the nearby environmental effects. These may be due to large scale structure or driven by baryonic physics. Using a simulated box, we can then test how the redefinition of the halo size affects the relationship between the clustering and the properties of the halo. In the case that the properties of the halo become independent of the clustering, it is possible to utilize standard implementations of the halo model without necessitating more complicated theory.
+Our method of halo redefinition is motivated by the size of a halo not necessarily being a well-motivated property. What is often referred to as the ``virial radius'' will not contain all gravitational bound dark matter particles in the halo \citep{kazan06}. Rather, it is a matter of convention that does not have a common definition across the literature. For example, some studies have chosen to use halo radius defined with respect to the critical mass density of the universe, while many simulation papers choose to use the mean background mass density of the simulation. Furthermore, the overdensity often used can typically vary from 178 (from basic spherical collapse) to 200 (a common simulation definition) to 337 (``virial'' in $\Lambda\mathrm{CDM}$). This can lead to a factor of a few difference in the halo radius just as a matter of definition. We choose to define a halo radius in a way that encompasses the nearby environmental effects. These may be due to large scale structure or driven by baryonic physics. Using a simulated box, we can then test how the redefinition of the halo size affects the relationship between the clustering and the properties of the halo. In the case that the properties of the halo become independent of the clustering, it is possible to utilize standard implementations of the halo model without necessitating more complicated theory.
  
-In \S~\ref{section:data} of this paper, we consider the simulated cosmological boxes that we utilize for our statistics and our method of halo size redefinition. In \S~\ref{section:haloprops}, we consider the properties of interest within our halo simulation and their standard definitions. In \S~\ref{section:methodology}, we discuss the statistics that we have used in order to test for environmental effects and the removal of known mass scaling from these statistics. In \S~\ref{section:results}, we present our results on our tests and draw conclusions as to the natures of the encountered environmental effects. In \S~\ref{section:conclusions}, we discuss the significance of redefining environmental effects through a redefinition of halo environments and discuss possible applications of our methodology.
+In \S~\ref{section:data} of this paper, we discuss the simulated cosmological boxes that we utilize for our statistics and the halo finder utilized. In \S~\ref{section:haloprops}, we consider the properties of interest within our halo simulation and their standard definitions. In \S~\ref{section:methodology}, we discuss the statistics that we have used in order to test for environmental effects and the removal of known mass scaling from these statistics. In \S~\ref{section:results}, we present our results on our tests and consider how each definition affects assembly bias. In \S~\ref{section:conclusions}, we discuss the significance of reducing environmental effects through a redefinition of halo environments and discuss possible applications of our methodology. We also consider the nature of assembly bias as a function of halo definition.
 
 %------------------------------------
 \section[]{Simulation Data and Halo Finding}
 \label{section:data}
 %------------------------------------
 
-In order to study the effects of halo redefinition, we make extensive use of three simulation boxes. The Diemer et al simulations each utilize a Planck best fit cosmology with $\Om = 0.32$, $\Ol = 0.68$, and $h_{\mathrm{o}} = 0.67$. We use three simulation boxes with comoving sizes of 125, 250, and 500 $\hMpc$ respectively. The particle masses are $1.61555 \times 10^8$, $1.29244 \times 10^9$, and $1.03395 \times 10^{10} \hMsun$ respectively with a total of $1024^3$ particles in each simulation. We will refer to each simulation as \simA, \simB, or \simC  \ for the remainder of the paper. This set of simulations allows us to probe the resolution effects on halo finding, as each box has a factor of eight difference in effective resolution from the next box. \arz{The particle masses must all be different since the volumes are different but the particle numbers are the SAME! This must be corrected. Each simulation must also have a nominal spatial resolution that must be specified. Finally, tell the reader that you are going to refer to these simulations as L0125, L0250, and L0500 for the remainder of the paper.}
+In order to study the effects of halo redefinition, we make extensive use of three simulation boxes. The Diemer et al simulations each utilize a Planck best fit cosmology with $\Om = 0.32$, $\Ol = 0.68$, and $h_{\mathrm{o}} = 0.67$. We use three simulation boxes with comoving sizes of 125, 250, and 500 $\hMpc$ respectively. The particle masses are $1.61555 \times 10^8$, $1.29244 \times 10^9$, and $1.03395 \times 10^{10} \hMsun$ respectively with a total of $1024^3$ particles in each simulation. We will refer to each simulation as \simA, \simB, or \simC  \ for the remainder of the paper. This set of simulations allows us to probe the resolution effects on halo finding, as each box has a factor of eight difference in effective resolution from the next box. In particular, \simA \ has the least massive fully resolved halos as a result of the smaller particle mass, while \simC \ has the most robust statistics for the most massive halos as a result of the larger simulation volume.
 
 For halo finding we use the ROCKSTAR halo finder, which works on the phase space algorithm described in \citet*{behroozi13}. In short, ROCKSTAR determines the initial groupings using a Friends-of-Friends algorithm in phase space, before then applying the spherical overdensity case in order to determine the properties of interest. Unbound particles are removed prior to the calculation of halo mass and other properties of interest. In addition, we take interest of the shape of the halo, which is determined through the sorted eigenvalues of the inertia tensor, with principal ellipsoid axes defined such that $a >b > c$. Some of these parameters are determined after fitting the particles to the Navarro-Frenk-White profile \citep*{nfw97}.
 
 \arz{Try rewriting this paragraph. There are many problems here. First, halo size is not hard to define, it is just that the definitions in common use are not particularly well motivated. Second, your statement of how a halo is defined is incorrect. There is no assumption made about the distribution of mass in the halo. The definition is with respect to the mean density within a given radius.} 
-Definitions of the halo size are not particularly well-motivated. While the virial radius of a halo may be one natural choice, simulations have shown that it often misses gravitationally bound particles \citep*{kazan06}. Halo size has become a matter of definition, with $\Delta=200$ being the most common choice within the literature. Given the lack of a well-motivated standard, we choose to redefine the halo in terms of the overdensity parameter, $\Delta$, by defining the halo radius, $\Rdel$, as follows:
+While the definition of halo size is fairly straightforward, the individual choices that make up the calculation are not particularly well-motivated. While the virial radius of a halo may be one natural choice, simulations have shown that it often misses gravitationally bound particles \citep*{kazan06}. Halo size has become a matter of definition, with $\Delta=200$ being the most common choice within the literature. However, it is not uncommon to see calculations carried out utilizing $\Delta = 178$, as derived through spherical collapse models, or $\Delta = 337$, as calculated in the case of $\Lambda\mathrm{CDM}$. Given the lack of a well-motivated standard, we choose to redefine the halo in terms of the overdensity parameter, $\Delta$, by defining the halo radius, $\Rdel$, as follows:
 \beq
 	\bar{\rho}(\Rdel) = \Delta \rho_{\mathrm{m}}
 \eeq
-Here, $\rho_{\mathrm{m}}$ is the mean background mass density of the simulation box, while $\bar{\rho}$ is the mean density within $\Rdel$. It should be noted that the use of the critical density or the mean background mass density is interchanged within the literature, though the results of such changes are relatively mild. We allow the overdensity parameter $\Delta$ to vary over the range of the fiducial definition of $\Delta = 200$ down to values as low as $\Delta = 10$. As discussed above, this change is motivated due to the fact that the definition of halo size is primarily a matter of convention.
+Here, $\rho_{\mathrm{m}}$ is the mean background mass density of the simulation box, while $\bar{\rho}$ is the mean density within $\Rdel$. It should be noted that the use of the critical density or the mean background mass density is interchanged within the literature. The difference between these two values can be as high as a factor of a few, which will then carry forward into the calculation. We allow the overdensity parameter $\Delta$ to vary over the range of the fiducial definition of $\Delta = 200$ down to values as low as $\Delta = 10$. As discussed above, this change is motivated due to the fact that the definition of halo size is primarily a matter of convention.
 
 %-------------------------------------
 \section{Halo Properties}
 \label{section:haloprops}
 %-------------------------------------
-
-\arz{I think we should start with a new section here where you list the halo properties that we will explore.}
-
 \arz{This section needs to be rewritten to include more details and a more professional style. I will try to outline 
 this section as it should be written here.}
-
-\arz{I'm changing your notation from $c_{\mathrm{ratio}}$ to $c_{\mathrm{V}}$ as it seems less cumbersome.}
 
 We explore the clustering of halos as a function of a number of halo properties that are commonly explored in the 
 literature and can be easily measured for a halo from an individual simulation snapshot. The first of these is the 
@@ -117,7 +108,6 @@ c_{\mathrm{V}} = \frac{V_{\mathrm{max}}}{V_{\Delta}},
 where $V_{\mathrm{max}}$ is the maximum circular velocity achieved within the halo and $V_{\Delta}$ is the circular 
 velocity at the halo radius, $\Rdel$. The quantity $c_{\mathrm{V}}$ can be measured from simulations without 
 any need for fitting halo density profiles to determine scale radii and is therefore robust to choices of fitting methods. 
-
 
 Halo concentrations are useful to explore for these purposes for a number of reasons. First of all, environment dependence 
 of concentrations is of direct interest in modeling gravitational lensing statistics. Secondly, concentrations can be measured 
@@ -138,7 +128,7 @@ relation for the alternative definition of halo concentration, $c_{\mathrm{V}}$.
 \begin{figure}
 \centering
 \includegraphics[width=.5\textwidth]{masscut_cnfw_d200.pdf}
-\caption{An example of the relationship between the NFW concentration and halo mass for each of our simulations for $\Delta =200$. The chosen lower limit on halo mass for our sample is marked as a blue, red, or cyan line for \simA, \simB, and \simC \ respectively. At lower mass, halos are likely ill defined due to resolution limits. \arz{This caption needs to be more specific. Lower limit for which simulation? It looks like maybe for L0250? We should put our lower limits for each simulation. Also, because c(M) is thought to be nearly a power law, the y-axis should be logarithmic as well. Try that and let's see what it looks like. Since we have a good resolution check, we no longer need the Duffy et al. result. It can be removed.} \arz{Show only L0125, L0250, and L0500 and rewrite the caption to include more detail. Show the mass cutoffs for EACH OF THE SIMULATIONS.}}
+\caption{An example of the relationship between the NFW concentration and halo mass for each of our simulations for $\Delta =200$. The chosen lower limit on halo mass for our sample is marked as a blue, red, or cyan line for \simA, \simB, and \simC \ respectively. At lower mass, halos are likely ill defined due to resolution limits.}
 \label{fig:cnfwrelation}
 \end{figure}
 %--------------------------------------------------------------------------------
@@ -161,8 +151,7 @@ with relatively small scatter indicating that these two quantities largely conta
 \begin{figure}
 \centering
 \includegraphics[width=.5\textwidth]{L0250_compare_cnfwvcV_z00.pdf}
-\caption{The relationship between the two different marks of concentration, using halos in \simB.
-\arz{For this figure, you can show the results for only one simulation, say L0250 as an example.}}
+\caption{The relationship between the two different marks of concentration, using halos in \simB.}
 \label{fig:concentrations}
 \end{figure}
 %--------------------------------------------------------------------------------------------------------------------------------
@@ -211,10 +200,7 @@ used for a set of $\Delta$ values in Table~\ref{table:thresholds}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table*}
 \caption{
-Minimum mass thresholds for each of our analyses depending upon the simulation being used, the halo property under consideration, and the 
-value of the overdensity, $\Delta$, used to define the halos. In the columns below the values of $\Delta$ we show the minimum host halo masses 
-considered in units of $h^{-1}\mathrm{M}_{\odot}$. \arz{I put all of this in as a placeholder for what should be here. Please fill in all relevant cells of 
-this table and add to the table caption any additional description that might be necessary for a user to understand the plots. Keep in mind that many of the cells I have not even put in here, this is just an example to get started.}}
+Minimum mass thresholds for each of our analyses depending upon the value of the overdensity, $\Delta$, used to define the halos. In the columns below the values of $\Delta$ we show the minimum host halo masses considered in units of $h^{-1}\mathrm{M}_{\odot}$.}
 \vspace*{8pt}
 \begin{tabular}{ c c c c c }
 \hline
@@ -260,8 +246,8 @@ Ultimately, as a result of the limited nature of simulation data, we must make s
 
 \begin{figure*}
 	\centering
-	\includegraphics[width=\textwidth]{all_cfhilow_z00_hostsvmatch.pdf}
-	\caption{The difference of the correlation function for only the top 20\% most concentrated halos and the bottom 20\% in concentration, normalized by the overall correlation function of the entire sample. From top to bottom, we show the results for \simA \ and \simB \ respectively. The left column utilizes all host halos in the mass cut. The right column contains only host halos that exist inside of our best fit value of $\Delta$, as explained in the text. The dashed lines along the bottom denote the largest halo radius for a given value of the overdensity parameter. \arz{We'll have to think carefully about this figure. It is very hard to read. Perhaps we can show just Delta=200 and then your "best" Delta? Also, we can remove the Consuelo reference.}}
+	\includegraphics[width=.9\textwidth]{all_cfhilow_z00_hostsvmatch.pdf}
+	\caption{The difference of the correlation function for only the top 20\% most concentrated halos and the bottom 20\% in concentration, normalized by the overall correlation function of the entire sample. From top to bottom, we show the results for \simA \ and \simB \ respectively. The left column utilizes all host halos in the mass cut. The right column contains only host halos that exist inside of our best fit value of $\Delta$, as explained in the text. The dashed lines along the bottom denote the largest halo radius for a given value of the overdensity parameter.}
 	\label{fig:hvm_cfcompare}
 \end{figure*}
 
@@ -271,8 +257,8 @@ The left column of Figure~\ref{fig:hvm_cfcompare} demonstrates the results of ou
 
 \begin{figure*}
 	\centering
-	\includegraphics[width=\textwidth]{all_mcf_cnfw_z00_hostsvmatch.pdf}
-	\caption{The marked correlation function for the concentration defined according to the NFW profile. From top to bottom, we show the results for \simA \ and \simB \ respectively. The left column utilizes all host halos in the mass cut. The right column contains only host halos that exist inside of our best fit value of $\Delta$, as explained in the text. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The dashed lines along the bottom denote the largest halo radius for a given value of the overdensity parameter. \arz{This figure is beautiful now. The only recommendation I have is to remove the white space in the lowest row of panels. Perhaps make the maximum y-axis 0.25 or so.}}
+	\includegraphics[width=.9\textwidth]{all_mcf_cnfw_z00_hostsvmatch.pdf}
+	\caption{The marked correlation function for the concentration defined according to the NFW profile. From top to bottom, we show the results for \simA \ and \simB \ respectively. The left column utilizes all host halos in the mass cut. The right column contains only host halos that exist inside of our best fit value of $\Delta$, as explained in the text. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The dashed lines along the bottom denote the largest halo radius for a given value of the overdensity parameter.}
 	\label{fig:hvm_mcf_cnfw}
 \end{figure*}
 
@@ -280,14 +266,14 @@ The NFW defined concentration MCF is shown in the left column of Figure~\ref{fig
 
 \begin{figure*}
 	\centering
-	\includegraphics[width=\textwidth]{all_mcf_cV_z00_hostsvmatch.pdf}
-	\caption{The marked correlation function for the concentration defined according to the velocity ratio. From top to bottom, we show the results for \simA \ and \simB \ respectively. The left column utilizes all host halos in the mass cut. The right column contains only host halos that exist inside of our best fit value of $\Delta$, as explained in the text. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The dashed lines along the bottom denote the largest halo radius for a given value of the overdensity parameter. \arz{This figure needs to be made as beautiful as Figure 4.}}
+	\includegraphics[width=.9\textwidth]{all_mcf_cV_z00_hostsvmatch.pdf}
+	\caption{The marked correlation function for the concentration defined according to the velocity ratio. From top to bottom, we show the results for \simA \ and \simB \ respectively. The left column utilizes all host halos in the mass cut. The right column contains only host halos that exist inside of our best fit value of $\Delta$, as explained in the text. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The dashed lines along the bottom denote the largest halo radius for a given value of the overdensity parameter.}
 	\label{fig:hvm_mcf_cV}
 \end{figure*}
 
 \begin{figure*}
 	\centering
-	\includegraphics[width=\textwidth]{all_mcf_s_z00_hostsvmatch.pdf}
+	\includegraphics[width=.9\textwidth]{all_mcf_s_z00_hostsvmatch.pdf}
 	\caption{The marked correlation function for the shape of the halo. From top to bottom, we show the results for \simA \ and \simB \ respectively. The left column utilizes all host halos in the mass cut. The right column contains only host halos that exist inside of our best fit value of $\Delta$, as explained in the text. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The dashed lines along the bottom denote the largest halo radius for a given value of the overdensity parameter.}
 	\label{fig:hvm_mcf_s}
 \end{figure*}
@@ -296,14 +282,14 @@ The left column of Figure~\ref{fig:hvm_mcf_s} demonstrates a case in which the h
 
 \begin{figure*}
 	\centering
-	\includegraphics[width=\textwidth]{all_mcf_spin_z00_hostsvmatch.pdf}
+	\includegraphics[width=.9\textwidth]{all_mcf_spin_z00_hostsvmatch.pdf}
 	\caption{The marked correlation function for the spin parameter of the halo. From top to bottom, we show the results for \simA \ and \simB \ respectively. The left column utilizes all host halos in the mass cut. The right column contains only host halos that exist inside of our best fit value of $\Delta$, as explained in the text. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The dashed lines along the bottom denote the largest halo radius for a given value of the overdensity parameter.}
 	\label{fig:hvm_mcf_spin}
 \end{figure*}
 
 \begin{figure*}
 	\centering
-	\includegraphics[width=\textwidth]{all_mcf_nsat_z00_hostsvmatch.pdf}
+	\includegraphics[width=.9\textwidth]{all_mcf_nsat_z00_hostsvmatch.pdf}
 	\caption{The marked correlation function for the number of satellites for a host halo. From top to bottom, we show the results for \simA \ and \simB \ respectively. The left column utilizes all host halos in the catalog. The right column contains only host halos that exist inside of our best fit value of $\Delta$, as explained in the text. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The dashed lines along the bottom denote the largest halo radius for a given value of the overdensity parameter.}
 	\label{fig:hvm_mcf_nsat}
 \end{figure*}
@@ -324,7 +310,7 @@ The ``sweet spot'' behavior of this method is also of interest to us. The halo r
 
 \begin{figure*}
 	\centering
-	\includegraphics[width=1\textwidth]{plotcircles_coolwarm.pdf}
+	\includegraphics[width=.9\textwidth]{plotcircles_coolwarm.pdf}
 	\caption{A $20 \hMpc$ deep cut of \simB \ along the z-axis. This zoom-in demonstrates the process that decreases the shape parameter as a function of clustering. The size of each circle represents the projection of a spherical dark matter halo with a given halo radius onto the x-y plane. Filled circles use the $\Delta = 200$ catalog and unfilled circles use the $\Delta = 10$ catalog in order to make the effect more visible. Color scale refers to the log shape mark, normalized by halos of the same mass.}
 	\label{fig:plotcircles}
 \end{figure*}
@@ -335,42 +321,42 @@ Given the differences between the simulation results and with the data available
 
 \begin{figure*}
 	\centering
-	\includegraphics[width=\textwidth]{all_cfhilow_z00_hostsvlow.pdf}
+	\includegraphics[width=.9\textwidth]{all_cfhilow_z00_hostsvlow.pdf}
 	\caption{The difference of the correlation function for only the top 20\% most concentrated halos and the bottom 20\% in concentration, normalized by the overall correlation function of the entire sample. The top row uses \simA \  data while the bottom row uses \simB \ data. The left column utilizes the ``mid mass'' cutoff, while the right column demonstrates the ``low mass'' cutoff. The dashed lines along the bottom denote the largest halo radius for a given value of the overdensity parameter}
 	\label{fig:hvl_cfcompare}
 \end{figure*}
 
 \begin{figure*}
 	\centering
-	\includegraphics[width=\textwidth]{all_mcf_cnfw_z00_hostsvlow.pdf}
+	\includegraphics[width=.9\textwidth]{all_mcf_cnfw_z00_hostsvlow.pdf}
 	\caption{Comparison of the marked correlation function for the concentration defined according to the NFW profile between the ``mid mass'' cutoff (left column) and the ``low mass'' cutoff (right column). The top row uses \simA \ data while the bottom row uses \simB \ data. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The dashed lines along the bottom denote the largest halo radius for a given value of the overdensity parameter.}
 	\label{fig:hvl_mcf_cnfw}
 \end{figure*}
 
 \begin{figure*}
 	\centering
-	\includegraphics[width=\textwidth]{all_mcf_cV_z00_hostsvlow.pdf}
+	\includegraphics[width=.9\textwidth]{all_mcf_cV_z00_hostsvlow.pdf}
 	\caption{Comparison of the marked correlation function for the concentration defined according to the velocity ratio between the ``mid mass'' cutoff (left column) and the ``low mass'' cutoff (right column). The top row uses \simA \ data while the bottom row uses \simB \ data. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The dashed lines along the bottom denote the largest halo radius for a given value of the overdensity parameter.}
 	\label{fig:hvl_mcf_cV}
 \end{figure*}
 
 \begin{figure*}
 	\centering
-	\includegraphics[width=\textwidth]{all_mcf_s_z00_hostsvlow.pdf}
+	\includegraphics[width=.9\textwidth]{all_mcf_s_z00_hostsvlow.pdf}
 	\caption{Comparison of the marked correlation function for the shape of the halo between the ``mid mass'' cutoff (left column) and the ``low mass'' cutoff (right column). The top row uses \simA \ data while the bottom row uses \simB \ data. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The dashed lines along the bottom denote the largest halo radius for a given value of the overdensity parameter.}
 	\label{fig:hvl_mcf_s}
 \end{figure*}
 
 \begin{figure*}
 	\centering
-	\includegraphics[width=\textwidth]{all_mcf_spin_z00_hostsvlow.pdf}
+	\includegraphics[width=.9\textwidth]{all_mcf_spin_z00_hostsvlow.pdf}
 	\caption{Comparison of the marked correlation function for the spin of the halo between the ``mid mass'' cutoff (left column) and the ``low mass'' cutoff (right column). The top row uses \simA \ data while the bottom row uses \simB \ data. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The dashed lines along the bottom denote the largest halo radius for a given value of the overdensity parameter.}
 	\label{fig:hvl_mcf_spin}
 \end{figure*}
 
 \begin{figure*}
 	\centering
-	\includegraphics[width=\textwidth]{all_mcf_nsat_z00_hostsvlow.pdf}
+	\includegraphics[width=.9\textwidth]{all_mcf_nsat_z00_hostsvlow.pdf}
 	\caption{Comparison of the marked correlation function for the satellite number between the ``mid mass'' cutoff (left column) and the ``low mass'' cutoff (right column). The top row uses \simA data while the bottom row uses \simB data. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The dashed lines along the bottom denote the largest halo radius for a given value of the overdensity parameter.}
 	\label{fig:hvl_mcf_nsat}
 \end{figure*}
@@ -379,42 +365,42 @@ We can repeat this exercise by looking at a different set of mass cuts. In this 
 
 \begin{figure*}
 	\centering
-	\includegraphics[width=\textwidth]{all_cfhilow_z00_hostsvhigh.pdf}
+	\includegraphics[width=.9\textwidth]{all_cfhilow_z00_hostsvhigh.pdf}
 	\caption{The difference of the correlation function for only the top 20\% most concentrated halos and the bottom 20\% in concentration, normalized by the overall correlation function of the entire sample. The top row uses \simB \ data while the bottom row uses \simC \ data. The left column utilizes the ``mid mass'' cutoff, while the right column demonstrates the ``high mass'' cutoff. The dashed lines along the bottom denote the largest halo radius for a given value of the overdensity parameter}
 	\label{fig:hvh_cfcompare}
 \end{figure*}
 
 \begin{figure*}
 	\centering
-	\includegraphics[width=\textwidth]{all_mcf_cnfw_z00_hostsvhigh.pdf}
+	\includegraphics[width=.9\textwidth]{all_mcf_cnfw_z00_hostsvhigh.pdf}
 	\caption{Comparison of the marked correlation function for the concentration defined according to the NFW profile between the ``mid mass'' cutoff (left column) and the ``high mass'' cutoff (right column). The top row uses \simB \ data while the bottom row uses \simC \ data. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The dashed lines along the bottom denote the largest halo radius for a given value of the overdensity parameter.}
 	\label{fig:hvh_mcf_cnfw}
 \end{figure*}
 
 \begin{figure*}
 	\centering
-	\includegraphics[width=\textwidth]{all_mcf_cV_z00_hostsvhigh.pdf}
+	\includegraphics[width=.9\textwidth]{all_mcf_cV_z00_hostsvhigh.pdf}
 	\caption{Comparison of the marked correlation function for the concentration defined according to the velocity ratio between the ``mid mass'' cutoff (left column) and the ``high mass'' cutoff (right column). The top row uses \simB \ data while the bottom row uses \simC \ data. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The dashed lines along the bottom denote the largest halo radius for a given value of the overdensity parameter.}
 	\label{fig:hvh_mcf_cV}
 \end{figure*}
 
 \begin{figure*}
 	\centering
-	\includegraphics[width=\textwidth]{all_mcf_s_z00_hostsvhigh.pdf}
+	\includegraphics[width=.9\textwidth]{all_mcf_s_z00_hostsvhigh.pdf}
 	\caption{Comparison of the marked correlation function for the shape of the halo between the ``mid mass'' cutoff (left column) and the ``high mass'' cutoff (right column). The top row uses \simB \ data while the bottom row uses \simC \ data. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The dashed lines along the bottom denote the largest halo radius for a given value of the overdensity parameter.}
 	\label{fig:hvh_mcf_s}
 \end{figure*}
 
 \begin{figure*}
 	\centering
-	\includegraphics[width=\textwidth]{all_mcf_spin_z00_hostsvhigh.pdf}
+	\includegraphics[width=.9\textwidth]{all_mcf_spin_z00_hostsvhigh.pdf}
 	\caption{Comparison of the marked correlation function for the spin of the halo between the ``mid mass'' cutoff (left column) and the ``high mass'' cutoff (right column). The top row uses \simB \ data while the bottom row uses \simC \ data. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The dashed lines along the bottom denote the largest halo radius for a given value of the overdensity parameter.}
 	\label{fig:hvh_mcf_spin}
 \end{figure*}
 
 \begin{figure*}
 	\centering
-	\includegraphics[width=\textwidth]{all_mcf_nsat_z00_hostsvhigh.pdf}
+	\includegraphics[width=.9\textwidth]{all_mcf_nsat_z00_hostsvhigh.pdf}
 	\caption{Comparison of the marked correlation function for the satellite number between the ``mid mass'' cutoff (left column) and the ``high mass'' cutoff (right column). The top row uses \simB \ data while the bottom row uses \simC \ data. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. The dashed lines along the bottom denote the largest halo radius for a given value of the overdensity parameter.}
 	\label{fig:hvh_mcf_nsat}
 \end{figure*}
@@ -440,7 +426,9 @@ We have looked at how to use CFs and MCFs in order to analyze the environmental 
 	\item The selection of halo size is intrinsically related to the assembly bias and varies across scales. This might help to resolve contradictory results in the search for halo assembly bias in the literature.
 \end{itemize}
 
-This methodology, while certainly not perfect in removing environmental effects, may be of significance when applied to galaxy formation models. Provided that the properties of interest in a given model behave well under our redefinition, it will allow us to create better mock galaxy catalogs while avoiding the trouble that baryonic physics represent. This may allow us to better study the properties of galaxies within halos without having to substantially increase computation time. There remain possible uncertainties to study in the future. 
+This methodology, while certainly not perfect in accounting for assembly bias, may be of significance when applied to galaxy formation models and give insight into seemingly conflicting results. Provided that the properties of interest in a given model behave well under our redefinition, it will allow us to create better mock galaxy catalogs without resorting to more complicated models requiring halo formation histories - giving us another powerful tool to test observation against.
+
+There remain possible uncertainties to study in the future. One possible area of follow-up is the matter of simulation cosmology, which is not explored in this text. It is possible that the choice of cosmology may change observed assembly bias as a function of the halo masses, something that our methodology should be capable of observing. Furthermore, we can determine if the choice of halo size that best reduces assembly bias is a function of the chosen cosmology. This may be of interest in attempting to determine signatures of assembly bias in observational samples in the future.
 
 \section*{Acknowledgments}
 
