@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.1.31)  16 DEC 2015 15:09
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.1.31)  5 JAN 2016 14:24
 entering extended mode
 **villarrealzentner2015.tex
 
@@ -304,7 +304,9 @@ lzentner_macros.tex)
 LaTeX Warning: Unused global option(s):
     [letterpaper].
 
-No file villarrealzentner2015.aux.
+
+(C:\Users\Antonio\Documents\haloenviron\haloenviron-villarrealzentner\villarrea
+lzentner2015.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
 LaTeX Font Info:    ... okay on input line 22.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
@@ -317,6 +319,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
 LaTeX Font Info:    ... okay on input line 22.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
 LaTeX Font Info:    ... okay on input line 22.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -388,73 +391,6 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 41.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-
-Package natbib Warning: Citation `white78' on page 1 undefined on input line 65
-.
-
-
-Package natbib Warning: Citation `bond91' on page 1 undefined on input line 65.
-
-
-
-Package natbib Warning: Citation `lacey93' on page 1 undefined on input line 65
-.
-
-
-Package natbib Warning: Citation `somerville99' on page 1 undefined on input li
-ne 65.
-
-
-Package natbib Warning: Citation `zentner06' on page 1 undefined on input line 
-65.
-
-
-Package natbib Warning: Citation `seljak00' on page 1 undefined on input line 6
-5.
-
-
-Package natbib Warning: Citation `peacock00' on page 1 undefined on input line 
-65.
-
-
-Package natbib Warning: Citation `scoccimarro01' on page 1 undefined on input l
-ine 65.
-
-
-Package natbib Warning: Citation `berlind02' on page 1 undefined on input line 
-65.
-
-
-Package natbib Warning: Citation `bullock02' on page 1 undefined on input line 
-65.
-
-
-Package natbib Warning: Citation `cooray02' on page 1 undefined on input line 6
-5.
-
-
-Package natbib Warning: Citation `sheth04' on page 1 undefined on input line 67
-.
-
-
-Package natbib Warning: Citation `gao05' on page 1 undefined on input line 67.
-
-
-Package natbib Warning: Citation `croton07' on page 1 undefined on input line 6
-7.
-
-
-Package natbib Warning: Citation `wechsler06' on page 1 undefined on input line
- 67.
-
-
-Package natbib Warning: Citation `dvorkin11' on page 1 undefined on input line 
-67.
-
-
-Package natbib Warning: Citation `gil11' on page 1 undefined on input line 67.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 68.
@@ -470,55 +406,9 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
 
 
 ]
-
-Package natbib Warning: Citation `kazan06' on page 2 undefined on input line 69
-.
-
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 71.
-
-LaTeX Warning: Reference `section:data' on page 2 undefined on input line 71.
-
-
-LaTeX Warning: Reference `section:haloprops' on page 2 undefined on input line 
-71.
-
-
-LaTeX Warning: Reference `section:methodology' on page 2 undefined on input lin
-e 71.
-
-
-LaTeX Warning: Reference `section:results' on page 2 undefined on input line 71
-.
-
-
-LaTeX Warning: Reference `section:conclusions' on page 2 undefined on input lin
-e 71.
-
-
-Package natbib Warning: Citation `behroozi13' on page 2 undefined on input line
- 80.
-
-
-Package natbib Warning: Citation `nfw97' on page 2 undefined on input line 80.
-
-
-Package natbib Warning: Citation `kazan06' on page 2 undefined on input line 83
-.
-
-[2]
-
-LaTeX Warning: Reference `fig:cnfwrelation' on page 3 undefined on input line 1
-23.
-
-
-LaTeX Warning: Reference `fig:cnfwrelation' on page 3 undefined on input line 1
-24.
-
-
-LaTeX Warning: Reference `fig:cvrelation' on page 3 undefined on input line 124
-.
-
+ [2]
 <masscut_cnfw_d200.pdf, id=26, 578.16pt x 433.62pt>
 File: masscut_cnfw_d200.pdf Graphic file (type pdf)
 
@@ -540,10 +430,6 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 140--141
  [][] 
  []
 
-
-LaTeX Warning: Reference `fig:concentrations' on page 3 undefined on input line
- 146.
-
 <L0250_compare_cnfwvcV_z00.pdf, id=28, 578.16pt x 433.62pt>
 File: L0250_compare_cnfwvcV_z00.pdf Graphic file (type pdf)
 
@@ -554,10 +440,6 @@ Package pdftex.def Info: L0250_compare_cnfwvcV_z00.pdf used on input line 153.
 Overfull \hbox (12.0pt too wide) in paragraph at lines 153--154
  [][] 
  []
-
-
-LaTeX Warning: Reference `fig:srelation' on page 3 undefined on input line 166.
-
 
 <masscut_shape_d200.pdf, id=29, 578.16pt x 433.62pt>
 File: masscut_shape_d200.pdf Graphic file (type pdf)
@@ -571,14 +453,16 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 173--174
  []
 
 
-Package natbib Warning: Citation `peebles69' on page 3 undefined on input line 
-179.
+Underfull \vbox (badness 1205) has occurred while \output is active []
 
+ [3 <C:/Users/Antonio/Documents/haloenviron/haloenviron-villarrealzentner/massc
+ut_cnfw_d200.pdf> <C:/Users/Antonio/Documents/haloenviron/haloenviron-villarrea
+lzentner/masscut_cV_d200.pdf
 
-LaTeX Warning: Reference `fig:spinrelation' on page 3 undefined on input line 1
-83.
-
-<masscut_spin_d200.pdf, id=30, 578.16pt x 433.62pt>
+pdfTeX warning: pdflatex.exe (file C:/Users/Antonio/Documents/haloenviron/haloe
+nviron-villarrealzentner/masscut_cV_d200.pdf): PDF inclusion: multiple pdfs wit
+h page group included in a single page
+>] <masscut_spin_d200.pdf, id=274, 578.16pt x 433.62pt>
 File: masscut_spin_d200.pdf Graphic file (type pdf)
 
 <use masscut_spin_d200.pdf>
@@ -588,38 +472,6 @@ Package pdftex.def Info: masscut_spin_d200.pdf used on input line 188.
 Overfull \hbox (12.0pt too wide) in paragraph at lines 188--189
  [][] 
  []
-
-
-LaTeX Warning: Reference `table:thresholds' on page 3 undefined on input line 1
-98.
-
-[3 <C:/Users/Antonio/Documents/haloenviron/haloenviron-villarrealzentner/masscu
-t_cnfw_d200.pdf> <C:/Users/Antonio/Documents/haloenviron/haloenviron-villarreal
-zentner/masscut_cV_d200.pdf
-
-pdfTeX warning: pdflatex.exe (file C:/Users/Antonio/Documents/haloenviron/haloe
-nviron-villarrealzentner/masscut_cV_d200.pdf): PDF inclusion: multiple pdfs wit
-h page group included in a single page
->]
-
-Package natbib Warning: Citation `wechsler06' on page 4 undefined on input line
- 226.
-
-
-LaTeX Warning: Reference `fig:cnfwrelation' on page 4 undefined on input line 2
-26.
-
-
-Underfull \vbox (badness 5490) has occurred while \output is active []
-
-
-
-Package natbib Warning: Citation `duffy08' on page 4 undefined on input line 22
-8.
-
-
-Package natbib Warning: Citation `wechsler06' on page 4 undefined on input line
- 230.
 
 [4 <C:/Users/Antonio/Documents/haloenviron/haloenviron-villarrealzentner/L0250_
 compare_cnfwvcV_z00.pdf> <C:/Users/Antonio/Documents/haloenviron/haloenviron-vi
@@ -634,104 +486,58 @@ _spin_d200.pdf
 pdfTeX warning: pdflatex.exe (file C:/Users/Antonio/Documents/haloenviron/haloe
 nviron-villarrealzentner/masscut_spin_d200.pdf): PDF inclusion: multiple pdfs w
 ith page group included in a single page
->]
-
-Package natbib Warning: Citation `wechsler06' on page 5 undefined on input line
- 234.
-
-
-Package natbib Warning: Citation `harker06' on page 5 undefined on input line 2
-34.
-
-
-Package natbib Warning: Citation `wechsler06' on page 5 undefined on input line
- 234.
-
-
-LaTeX Warning: Reference `table:thresholds' on page 5 undefined on input line 2
-45.
-
-
-LaTeX Warning: Reference `fig:cnfwrelation' on page 5 undefined on input line 2
-45.
-
-<all_cfhilow_z00_cutcomp.pdf, id=810, 289.08pt x 578.16pt>
+>] <all_cfhilow_z00_cutcomp.pdf, id=810, 289.08pt x 578.16pt>
 File: all_cfhilow_z00_cutcomp.pdf Graphic file (type pdf)
 
 <use all_cfhilow_z00_cutcomp.pdf>
 Package pdftex.def Info: all_cfhilow_z00_cutcomp.pdf used on input line 249.
 (pdftex.def)             Requested size: 191.99707pt x 383.99518pt.
 
-
-LaTeX Warning: Reference `fig:cc_cfcompare' on page 5 undefined on input line 2
-56.
-
-[5 <C:/Users/Antonio/Documents/haloenviron/haloenviron-villarrealzentner/all_cf
-hilow_z00_cutcomp.pdf>]
-<all_mcf_cnfw_z00_cutcomp.pdf, id=864, 289.08pt x 578.16pt>
+<all_mcf_cnfw_z00_cutcomp.pdf, id=811, 289.08pt x 578.16pt>
 File: all_mcf_cnfw_z00_cutcomp.pdf Graphic file (type pdf)
 
 <use all_mcf_cnfw_z00_cutcomp.pdf>
 Package pdftex.def Info: all_mcf_cnfw_z00_cutcomp.pdf used on input line 260.
 (pdftex.def)             Requested size: 191.99707pt x 383.99518pt.
 
-
-LaTeX Warning: Reference `fig:cc_mcf_cnfw' on page 6 undefined on input line 26
-5.
-
-
-LaTeX Warning: Reference `fig:cc_mcf_cV' on page 6 undefined on input line 265.
-
-
-<all_mcf_cV_z00_cutcomp.pdf, id=865, 289.08pt x 578.16pt>
+<all_mcf_cV_z00_cutcomp.pdf, id=812, 289.08pt x 578.16pt>
 File: all_mcf_cV_z00_cutcomp.pdf Graphic file (type pdf)
 
 <use all_mcf_cV_z00_cutcomp.pdf>
 Package pdftex.def Info: all_mcf_cV_z00_cutcomp.pdf used on input line 269.
 (pdftex.def)             Requested size: 191.99707pt x 383.99518pt.
 
-<all_mcf_s_z00_cutcomp.pdf, id=866, 289.08pt x 578.16pt>
+<all_mcf_s_z00_cutcomp.pdf, id=813, 289.08pt x 578.16pt>
 File: all_mcf_s_z00_cutcomp.pdf Graphic file (type pdf)
 
 <use all_mcf_s_z00_cutcomp.pdf>
 Package pdftex.def Info: all_mcf_s_z00_cutcomp.pdf used on input line 276.
 (pdftex.def)             Requested size: 191.99707pt x 383.99518pt.
 
+Underfull \vbox (badness 4072) has occurred while \output is active []
 
-LaTeX Warning: Reference `fig:cc_mcf_s' on page 6 undefined on input line 281.
-
-
-LaTeX Warning: Reference `fig:cc_mcf_spin' on page 6 undefined on input line 28
-1.
-
-
-LaTeX Warning: Reference `fig:cc_mcf_nsat' on page 6 undefined on input line 28
-1.
-
-<all_mcf_spin_z00_cutcomp.pdf, id=867, 289.08pt x 578.16pt>
+ [5]
+<all_mcf_spin_z00_cutcomp.pdf, id=817, 289.08pt x 578.16pt>
 File: all_mcf_spin_z00_cutcomp.pdf Graphic file (type pdf)
 
 <use all_mcf_spin_z00_cutcomp.pdf>
 Package pdftex.def Info: all_mcf_spin_z00_cutcomp.pdf used on input line 285.
 (pdftex.def)             Requested size: 191.99707pt x 383.99518pt.
 
-<all_mcf_nsat_z00_cutcomp.pdf, id=868, 289.08pt x 578.16pt>
+<all_mcf_nsat_z00_cutcomp.pdf, id=818, 289.08pt x 578.16pt>
 File: all_mcf_nsat_z00_cutcomp.pdf Graphic file (type pdf)
 
 <use all_mcf_nsat_z00_cutcomp.pdf>
 Package pdftex.def Info: all_mcf_nsat_z00_cutcomp.pdf used on input line 292.
 (pdftex.def)             Requested size: 191.99707pt x 383.99518pt.
- [6 <C:/Users/Antonio/Documents/haloenviron/haloenviron-villarrealzentner/all_m
-cf_cnfw_z00_cutcomp.pdf>]
+ [6 <C:/Users/Antonio/Documents/haloenviron/haloenviron-villarrealzentner/all_c
+fhilow_z00_cutcomp.pdf> <C:/Users/Antonio/Documents/haloenviron/haloenviron-vil
+larrealzentner/all_mcf_cnfw_z00_cutcomp.pdf
 
-LaTeX Warning: Reference `fig:hvm_cfcompare' on page 7 undefined on input line 
-301.
-
-
-LaTeX Warning: Reference `fig:hvm_mcf_nsat' on page 7 undefined on input line 3
-01.
-
-<all_cfhilow_z00_hostsvmatch.pdf, id=931, 578.16pt x 361.35pt>
+pdfTeX warning: pdflatex.exe (file C:/Users/Antonio/Documents/haloenviron/haloe
+nviron-villarrealzentner/all_mcf_cnfw_z00_cutcomp.pdf): PDF inclusion: multiple
+ pdfs with page group included in a single page
+>] <all_cfhilow_z00_hostsvmatch.pdf, id=930, 578.16pt x 361.35pt>
 File: all_cfhilow_z00_hostsvmatch.pdf Graphic file (type pdf)
 
 <use all_cfhilow_z00_hostsvmatch.pdf>
@@ -739,7 +545,7 @@ Package pdftex.def Info: all_cfhilow_z00_hostsvmatch.pdf used on input line 305
 .
 (pdftex.def)             Requested size: 431.99707pt x 269.9973pt.
 
-<all_mcf_cnfw_z00_hostsvmatch.pdf, id=932, 578.16pt x 361.35pt>
+<all_mcf_cnfw_z00_hostsvmatch.pdf, id=931, 578.16pt x 361.35pt>
 File: all_mcf_cnfw_z00_hostsvmatch.pdf Graphic file (type pdf)
 
 <use all_mcf_cnfw_z00_hostsvmatch.pdf>
@@ -747,7 +553,7 @@ Package pdftex.def Info: all_mcf_cnfw_z00_hostsvmatch.pdf used on input line 31
 2.
 (pdftex.def)             Requested size: 431.99707pt x 269.9973pt.
 
-<all_mcf_cV_z00_hostsvmatch.pdf, id=933, 578.16pt x 361.35pt>
+<all_mcf_cV_z00_hostsvmatch.pdf, id=932, 578.16pt x 361.35pt>
 File: all_mcf_cV_z00_hostsvmatch.pdf Graphic file (type pdf)
 
 <use all_mcf_cV_z00_hostsvmatch.pdf>
@@ -755,14 +561,14 @@ Package pdftex.def Info: all_mcf_cV_z00_hostsvmatch.pdf used on input line 319.
 
 (pdftex.def)             Requested size: 431.99707pt x 269.9973pt.
 
-<all_mcf_s_z00_hostsvmatch.pdf, id=934, 578.16pt x 361.35pt>
+<all_mcf_s_z00_hostsvmatch.pdf, id=933, 578.16pt x 361.35pt>
 File: all_mcf_s_z00_hostsvmatch.pdf Graphic file (type pdf)
 
 <use all_mcf_s_z00_hostsvmatch.pdf>
 Package pdftex.def Info: all_mcf_s_z00_hostsvmatch.pdf used on input line 326.
 (pdftex.def)             Requested size: 431.99707pt x 269.9973pt.
 
-<all_mcf_spin_z00_hostsvmatch.pdf, id=935, 578.16pt x 361.35pt>
+<all_mcf_spin_z00_hostsvmatch.pdf, id=934, 578.16pt x 361.35pt>
 File: all_mcf_spin_z00_hostsvmatch.pdf Graphic file (type pdf)
 
 <use all_mcf_spin_z00_hostsvmatch.pdf>
@@ -770,7 +576,7 @@ Package pdftex.def Info: all_mcf_spin_z00_hostsvmatch.pdf used on input line 33
 3.
 (pdftex.def)             Requested size: 431.99707pt x 269.9973pt.
 
-<all_mcf_nsat_z00_hostsvmatch.pdf, id=936, 578.16pt x 361.35pt>
+<all_mcf_nsat_z00_hostsvmatch.pdf, id=935, 578.16pt x 361.35pt>
 File: all_mcf_nsat_z00_hostsvmatch.pdf Graphic file (type pdf)
 
 <use all_mcf_nsat_z00_hostsvmatch.pdf>
@@ -814,49 +620,28 @@ on-villarrealzentner/all_mcf_nsat_z00_hostsvmatch.pdf
 pdfTeX warning: pdflatex.exe (file C:/Users/Antonio/Documents/haloenviron/haloe
 nviron-villarrealzentner/all_mcf_nsat_z00_hostsvmatch.pdf): PDF inclusion: mult
 iple pdfs with page group included in a single page
->]
-
-Package natbib Warning: Citation `tempel15' on page 11 undefined on input line 
-349.
-
-
-Package natbib Warning: Citation `velliscig15' on page 11 undefined on input li
-ne 349.
-
-
-LaTeX Warning: Reference `fig:plotcircles' on page 11 undefined on input line 3
-49.
-
-[11 <C:/Users/Antonio/Documents/haloenviron/haloenviron-villarrealzentner/all_m
-cf_spin_z00_cutcomp.pdf> <C:/Users/Antonio/Documents/haloenviron/haloenviron-vi
-llarrealzentner/all_mcf_nsat_z00_cutcomp.pdf
+>] [11 <C:/Users/Antonio/Documents/haloenviron/haloenviron-villarrealzentner/al
+l_mcf_spin_z00_cutcomp.pdf> <C:/Users/Antonio/Documents/haloenviron/haloenviron
+-villarrealzentner/all_mcf_nsat_z00_cutcomp.pdf
 
 pdfTeX warning: pdflatex.exe (file C:/Users/Antonio/Documents/haloenviron/haloe
 nviron-villarrealzentner/all_mcf_nsat_z00_cutcomp.pdf): PDF inclusion: multiple
  pdfs with page group included in a single page
->] <plotcircles_coolwarm.pdf, id=1555, 578.16pt x 433.62pt>
+>] <plotcircles_coolwarm.pdf, id=1554, 578.16pt x 433.62pt>
 File: plotcircles_coolwarm.pdf Graphic file (type pdf)
 
 <use plotcircles_coolwarm.pdf>
 Package pdftex.def Info: plotcircles_coolwarm.pdf used on input line 355.
 (pdftex.def)             Requested size: 431.99707pt x 323.99677pt.
 
-
-LaTeX Warning: Reference `fig:hvl_cfcompare' on page 12 undefined on input line
- 362.
-
-
-LaTeX Warning: Reference `fig:hvl_mcf_nsat' on page 12 undefined on input line 
-362.
-
-<all_cfhilow_z00_hostsvlow.pdf, id=1556, 578.16pt x 361.35pt>
+<all_cfhilow_z00_hostsvlow.pdf, id=1555, 578.16pt x 361.35pt>
 File: all_cfhilow_z00_hostsvlow.pdf Graphic file (type pdf)
 
 <use all_cfhilow_z00_hostsvlow.pdf>
 Package pdftex.def Info: all_cfhilow_z00_hostsvlow.pdf used on input line 366.
 (pdftex.def)             Requested size: 431.99707pt x 269.9973pt.
 
-<all_mcf_cnfw_z00_hostsvlow.pdf, id=1557, 578.16pt x 361.35pt>
+<all_mcf_cnfw_z00_hostsvlow.pdf, id=1556, 578.16pt x 361.35pt>
 File: all_mcf_cnfw_z00_hostsvlow.pdf Graphic file (type pdf)
 
 <use all_mcf_cnfw_z00_hostsvlow.pdf>
@@ -864,21 +649,21 @@ Package pdftex.def Info: all_mcf_cnfw_z00_hostsvlow.pdf used on input line 373.
 
 (pdftex.def)             Requested size: 431.99707pt x 269.9973pt.
 
-<all_mcf_cV_z00_hostsvlow.pdf, id=1558, 578.16pt x 361.35pt>
+<all_mcf_cV_z00_hostsvlow.pdf, id=1557, 578.16pt x 361.35pt>
 File: all_mcf_cV_z00_hostsvlow.pdf Graphic file (type pdf)
 
 <use all_mcf_cV_z00_hostsvlow.pdf>
 Package pdftex.def Info: all_mcf_cV_z00_hostsvlow.pdf used on input line 380.
 (pdftex.def)             Requested size: 431.99707pt x 269.9973pt.
 
-<all_mcf_s_z00_hostsvlow.pdf, id=1559, 578.16pt x 361.35pt>
+<all_mcf_s_z00_hostsvlow.pdf, id=1558, 578.16pt x 361.35pt>
 File: all_mcf_s_z00_hostsvlow.pdf Graphic file (type pdf)
 
 <use all_mcf_s_z00_hostsvlow.pdf>
 Package pdftex.def Info: all_mcf_s_z00_hostsvlow.pdf used on input line 387.
 (pdftex.def)             Requested size: 431.99707pt x 269.9973pt.
 
-<all_mcf_spin_z00_hostsvlow.pdf, id=1560, 578.16pt x 361.35pt>
+<all_mcf_spin_z00_hostsvlow.pdf, id=1559, 578.16pt x 361.35pt>
 File: all_mcf_spin_z00_hostsvlow.pdf Graphic file (type pdf)
 
 <use all_mcf_spin_z00_hostsvlow.pdf>
@@ -886,7 +671,7 @@ Package pdftex.def Info: all_mcf_spin_z00_hostsvlow.pdf used on input line 394.
 
 (pdftex.def)             Requested size: 431.99707pt x 269.9973pt.
 
-<all_mcf_nsat_z00_hostsvlow.pdf, id=1561, 578.16pt x 361.35pt>
+<all_mcf_nsat_z00_hostsvlow.pdf, id=1560, 578.16pt x 361.35pt>
 File: all_mcf_nsat_z00_hostsvlow.pdf Graphic file (type pdf)
 
 <use all_mcf_nsat_z00_hostsvlow.pdf>
@@ -894,15 +679,7 @@ Package pdftex.def Info: all_mcf_nsat_z00_hostsvlow.pdf used on input line 401.
 
 (pdftex.def)             Requested size: 431.99707pt x 269.9973pt.
 
-
-LaTeX Warning: Reference `fig:hvh_cfcompare' on page 12 undefined on input line
- 406.
-
-
-LaTeX Warning: Reference `fig:hvh_mcf_nsat' on page 12 undefined on input line 
-406.
-
-<all_cfhilow_z00_hostsvhigh.pdf, id=1562, 578.16pt x 361.35pt>
+<all_cfhilow_z00_hostsvhigh.pdf, id=1561, 578.16pt x 361.35pt>
 File: all_cfhilow_z00_hostsvhigh.pdf Graphic file (type pdf)
 
 <use all_cfhilow_z00_hostsvhigh.pdf>
@@ -910,7 +687,7 @@ Package pdftex.def Info: all_cfhilow_z00_hostsvhigh.pdf used on input line 410.
 
 (pdftex.def)             Requested size: 431.99707pt x 269.9973pt.
 
-<all_mcf_cnfw_z00_hostsvhigh.pdf, id=1563, 578.16pt x 361.35pt>
+<all_mcf_cnfw_z00_hostsvhigh.pdf, id=1562, 578.16pt x 361.35pt>
 File: all_mcf_cnfw_z00_hostsvhigh.pdf Graphic file (type pdf)
 
 <use all_mcf_cnfw_z00_hostsvhigh.pdf>
@@ -918,21 +695,21 @@ Package pdftex.def Info: all_mcf_cnfw_z00_hostsvhigh.pdf used on input line 417
 .
 (pdftex.def)             Requested size: 431.99707pt x 269.9973pt.
 
-<all_mcf_cV_z00_hostsvhigh.pdf, id=1564, 578.16pt x 361.35pt>
+<all_mcf_cV_z00_hostsvhigh.pdf, id=1563, 578.16pt x 361.35pt>
 File: all_mcf_cV_z00_hostsvhigh.pdf Graphic file (type pdf)
 
 <use all_mcf_cV_z00_hostsvhigh.pdf>
 Package pdftex.def Info: all_mcf_cV_z00_hostsvhigh.pdf used on input line 424.
 (pdftex.def)             Requested size: 431.99707pt x 269.9973pt.
 
-<all_mcf_s_z00_hostsvhigh.pdf, id=1565, 578.16pt x 361.35pt>
+<all_mcf_s_z00_hostsvhigh.pdf, id=1564, 578.16pt x 361.35pt>
 File: all_mcf_s_z00_hostsvhigh.pdf Graphic file (type pdf)
 
 <use all_mcf_s_z00_hostsvhigh.pdf>
 Package pdftex.def Info: all_mcf_s_z00_hostsvhigh.pdf used on input line 431.
 (pdftex.def)             Requested size: 431.99707pt x 269.9973pt.
 
-<all_mcf_spin_z00_hostsvhigh.pdf, id=1566, 578.16pt x 361.35pt>
+<all_mcf_spin_z00_hostsvhigh.pdf, id=1565, 578.16pt x 361.35pt>
 File: all_mcf_spin_z00_hostsvhigh.pdf Graphic file (type pdf)
 
 <use all_mcf_spin_z00_hostsvhigh.pdf>
@@ -940,23 +717,20 @@ Package pdftex.def Info: all_mcf_spin_z00_hostsvhigh.pdf used on input line 438
 .
 (pdftex.def)             Requested size: 431.99707pt x 269.9973pt.
 
-<all_mcf_nsat_z00_hostsvhigh.pdf, id=1567, 578.16pt x 361.35pt>
+<all_mcf_nsat_z00_hostsvhigh.pdf, id=1566, 578.16pt x 361.35pt>
 File: all_mcf_nsat_z00_hostsvhigh.pdf Graphic file (type pdf)
 
 <use all_mcf_nsat_z00_hostsvhigh.pdf>
 Package pdftex.def Info: all_mcf_nsat_z00_hostsvhigh.pdf used on input line 445
 .
 (pdftex.def)             Requested size: 431.99707pt x 269.9973pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [12]
-(C:\Users\Antonio\Documents\haloenviron\haloenviron-villarrealzentner\villarrea
-lzentner2015.bbl
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 4940) has occurred while \output is active []
 
- [13 <C:/Users/Antonio/Documents/haloenviron/haloenviron-villarrealzentner/plot
-circles_coolwarm.pdf>]
+
+(C:\Users\Antonio\Documents\haloenviron\haloenviron-villarrealzentner\villarrea
+lzentner2015.bbl [13 <C:/Users/Antonio/Documents/haloenviron/haloenviron-villar
+realzentner/plotcircles_coolwarm.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [14 <C:/Users/Antonio/Documents/haloenviron/haloenviron-villarrealzentner/all_
@@ -1016,35 +790,21 @@ n-villarrealzentner/all_mcf_nsat_z00_hostsvhigh.pdf
 pdfTeX warning: pdflatex.exe (file C:/Users/Antonio/Documents/haloenviron/haloe
 nviron-villarrealzentner/all_mcf_nsat_z00_hostsvhigh.pdf): PDF inclusion: multi
 ple pdfs with page group included in a single page
->])
-
-Package natbib Warning: There were undefined citations.
-
-[20
-
-]
+>]) [20]
 (C:\Users\Antonio\Documents\haloenviron\haloenviron-villarrealzentner\villarrea
-lzentner2015.aux
-
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
-)
-
-LaTeX Warning: There were undefined references.
-
+lzentner2015.aux)
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 5380 strings out of 493921
- 77346 string characters out of 3144870
- 160408 words of memory out of 3000000
- 8570 multiletter control sequences out of 15000+200000
+ 5386 strings out of 493921
+ 77608 string characters out of 3144870
+ 162541 words of memory out of 3000000
+ 8574 multiletter control sequences out of 15000+200000
  17216 words of font info for 63 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 44i,15n,42p,1670b,358s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,15n,42p,1673b,334s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/P
@@ -1065,9 +825,9 @@ nts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
 pe1/public/amsfonts/cm/cmsy9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/p
 ublic/amsfonts/cm/cmti8.pfb>
-Output written on villarrealzentner2015.pdf (20 pages, 1836030 bytes).
+Output written on villarrealzentner2015.pdf (20 pages, 1839513 bytes).
 PDF statistics:
- 2558 PDF objects out of 2984 (max. 8388607)
+ 2557 PDF objects out of 2984 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  151 words of extra memory for PDF output out of 10000 (max. 10000000)
 
