@@ -280,11 +280,41 @@ There are several well understood effects in our simulation that must be account
 
 \arz{I thought that the Duffy et al. paper only looked at concentration? Is this correct? Either way, there is an 
 Allgood et al. paper that comprehensively examines this for various halo properties and should be cited here.}
-Another well known effect is the scaling of our properties as a function of halo mass, as well demonstrated within the literature \citep{duffy08}. We are interested in the clustering behavior beyond this well known effect, so we seek to remove this scaling. We take all host halos of interest and sort them by their halo mass. Each set of halo properties are then placed in bins of equal population in order to assure that enough data points exist for robust statistics. We then normalize each mark in a given bin to the mean value. The end result is halo properties that do not change as a function of mass, allowing us to more accurately analyze clustering behavior within our simulation.
+Another well known effect is the scaling of our properties as a function of halo mass, as well demonstrated within the literature \citep{duffy08}. We are interested in studying the clustering behavior of halos as a function of properties other than mass. However, 
+the simulations we analyze do not have a sufficiently large number of halos to make isolating halos of fixed mass a powerful method 
+with which to study this clustering. Consequently, we remove the mass dependence of the auxiliary properties (those properties other than mass, such as concentration $c_{\rm NFW}$ or shape $s$) as follows. 
+We take all host halos of interest and sort them by their halo mass, $M_{\Delta}$. 
+Each set of halo properties is then placed in bins of equal population in order to assure 
+that enough data points exist for robust statistics. We then normalize each mark in a 
+given bin to the mean value. The end result is halo properties that do not 
+change as a function of mass, allowing us to more accurately analyze clustering behavior within our simulation. 
+\arz{First, you need some equations here. It is unclear to the reader what the word ``normalize" means 
+in this context. YOU MUST provide enough information so that someone with access to these simulations 
+could reproduce your calculations. Also, you don't give important details. How many are in the ``equal populations" 
+for example. You may also want to add an additional paragraph speculating briefly on other ways to 
+remove the gross mass dependence.}
 
-To normalize the satellite number we follow the prescription of \citet{wechsler06}. In addition to the mass cutoffs on our data, we eliminate ill-resolved satellites by choosing a cutoff in $v_{\mathrm{max}}$ for the host halo. We then attempt to match subhalos to this mass halo, making a secondary cutoff in the case that the value of $v_{\mathrm{max,sub}} / v_{\mathrm{max,host}}$ is not above a threshold value. We set these two parameters such that there are no isolated or poorly resolved subhalos in our data sample.
+\arz{Flesh this out a bit. See the discussion in Wechsler et al. 06 as a model. The specific 
+values of the thresholds need to be given}
+To mitigate the correlation between mass satellite number, 
+we follow the prescription of \citet{wechsler06}. We select only satellite halos 
+with $v_{\mathrm{max,sub}} \ge number$. This ensures that the satellite counts 
+are minimally affected by finite resolution. We select subhalos using 
+maximum circular velocity, $v_{\mathrm{max,host}}$ because it is more robustly 
+determined for subhalos and more easily enable comparisons with other working 
+undertaken using distinct halo identification algorithms. 
+We then choose only host halos that are sufficiently 
+large to contain, on average, $number$ such satellite halos. This corresponds to a cut on host halo 
+maximum circular velocity of $v_{\mathrm{max}} \ge number$. Finally, we enumerate for each 
+host, the number of subhalos within the radius $R_{\Delta}$ of the host above a threshold 
+in the ratio $v_{\mathrm{max,sub}}/v_{\mathrm{max,host}} \ge number$. The subhalo velocity 
+function is a very nearly self-similar function \arz{Cite Zentner, Berlind et al. 2005 and references therein 
+on this point.}, so that scaling subhalo $v_{\mathrm{max,sub}}$ by 
+host $v_{\mathrm{max,host}}$ in this way eliminates the 
+gross mass dependence of satellite number.
 
-In order to test for environmental effects, we choose to utilize two primary methods. The first is to look at the two-point correlation functions of the host halo catalogs. We take the difference between the samples of the top 20\% and bottom 20\% in normalized concentration, and then normalize these results by the overall correlation function.. Assuming that each halo was statistically similar, regardless of host halo clustering, we would expect that this statistic would approach zero at all scales.
+We study two manifestations of assembly bias or halo clustering strength dependent upon properties other than halo mass. 
+The first is to look at the two-point correlation functions of the host halo catalogs. We take the difference between the samples of the top 20\% and bottom 20\% in normalized concentration, and then normalize these results by the overall correlation function.. Assuming that each halo was statistically similar, regardless of host halo clustering, we would expect that this statistic would approach zero at all scales.
 
 The second method is to use a weighted correlation function, often referred to in the literature as the marked correlation function (MCF). Our marks in this case are the log values of the halo concentration proxies described previously, the halo shape, and the halo satellite number. The use of this tool in measuring clustering has been shown previously in \citet{wechsler06} or \citet{harker06}. We follow the methodology of \citet{wechsler06} in defining the MCF as
 \beq
