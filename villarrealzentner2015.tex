@@ -165,9 +165,11 @@ with relatively small scatter indicating that these two quantities largely conta
 \begin{figure}
 \centering
 \includegraphics[width=.5\textwidth]{L0250_compare_cnfwvcV_z00.pdf}
-\caption{The relationship between the two different marks of concentration, using halos in \simB. 
+\caption{
+The relationship between the two different marks of concentration, using halos in \simB. 
 \arz{This is not sufficiently specific as a caption. For example, you don't say what the color code is 
-or what the color scale is.}}
+or what the color scale is.}
+}
 \label{fig:concentrations}
 \end{figure}
 %--------------------------------------------------------------------------------------------------------------------------------
@@ -187,22 +189,39 @@ thresholds selected to ensure that our results are not compromised by resolution
 \begin{figure}
 \centering
 \includegraphics[width=.5\textwidth]{masscut_shape_d200.pdf}
-\caption{An example of the relationship between halo shape and halo mass for each of our simulations for $\Delta =200$. The chosen lower limit on halo mass for our sample is marked as a blue, red, or cyan line for \simA, \simB, and \simC \ respectively. At lower mass, halos are likely ill defined due to resolution limits.}
+\caption{
+An example of the relationship between halo shape and 
+halo mass for each of our simulations for $\Delta =200$. The chosen 
+lower limit on halo mass for our sample is marked as a blue, red, or 
+cyan line for \simA, \simB, and \simC \ respectively. At lower mass, 
+halos are likely ill defined due to resolution limits.
+}
 \label{fig:srelation}
 \end{figure}
 %--------------------------------------------------------------------------------
 
-We also explore halo clustering as a function of halo spin quantified by the spin parameter $\lambda$ as introduced by \citep{peebles69},
+We also explore halo clustering as a function of halo spin quantified 
+by the spin parameter $\lambda$ as introduced by \citep{peebles69},
 \beq
 \lambda = \frac{J \sqrt{\lvert E\rvert}}{G M_{\Delta}^{2.5}}
 \eeq
-where $J$ is the halo angular momentum, $E$ is the total energy of the halo, and $M_{\Delta}$ is the mass at the halo radius, $r_{\Delta}$. The mean relations of halo spins as a function of halo mas for $\Delta=200$ is shown in Figure~\ref{fig:spinrelation} along with the mass thresholds selected to ensure that our results are not compromised by resolution.
+where $J$ is the halo angular momentum, $E$ is the total energy of the 
+halo, and $M_{\Delta}$ is the mass at the halo radius, $r_{\Delta}$. 
+The mean relations of halo spins as a function of halo mas for $\Delta=200$ 
+is shown in Figure~\ref{fig:spinrelation} along with the mass thresholds 
+selected to ensure that our results are not compromised by resolution.
 
 %------------------------------------------ Figure for lambda(M)
 \begin{figure}
 \centering
 \includegraphics[width=.5\textwidth]{masscut_spin_d200.pdf}
-\caption{An example of the relationship between halo spin $\lambda$ and halo mass for each of our simulations for $\Delta =200$. The chosen lower limit on halo mass for our sample is marked as a blue, red, or cyan line for \simA, \simB, and \simC \ respectively. At lower mass, halos are likely ill defined due to resolution limits.}
+\caption{
+An example of the relationship between halo spin $\lambda$ 
+and halo mass for each of our simulations for $\Delta =200$. 
+The chosen lower limit on halo mass for our sample is marked 
+as a blue, red, or cyan line for \simA, \simB, and \simC \ respectively. 
+At lower mass, halos are likely ill defined due to resolution limits.
+}
 \label{fig:spinrelation}
 \end{figure}
 %--------------------------------------------------------------------------------
@@ -210,13 +229,25 @@ where $J$ is the halo angular momentum, $E$ is the total energy of the halo, and
 In practice, the mean relations between the various halo properties and the mass thresholds must be determined 
 for each combination of simulation, halo property (e.g., $c_{\mathrm{NFW}}$ or $s$), and halo definition (e.g., value 
 of $\Delta$). We use thresholds determined by the particular case under consideration so as to ensure that resolution 
-limitations do not drive any of our primary results. A higher mass threshold necessarily means that we do not have any issues due to halo resolution, but reduces the statistics. In addition, it should be noted that halo assembly bias is weakest in the most massive halos, which may reduce the potential signal at high masses. As an example, we summarize some of the mass thresholds we have 
-used for a set of $\Delta$ values in Table~\ref{table:thresholds}.
+limitations do not drive any of our primary results. A higher mass threshold means that we do not have any 
+issues due to halo resolution, but of course, higher mass thresholds reduce statistical power. As an example, we 
+summarize the mass thresholds we have used for a subset of $\Delta$ values in Table~\ref{table:thresholds}. 
+At most values of $\Delta$, the minimum mass thresholds are driven by the requirement that the shape parameter, $s$, 
+not suffer significantly from finite resolution effects. \arz{Please check the veracity of this last sentence. Some such 
+sentence summarizing the factors that limit our mass cuts should be in the paper.}
+
+\arz{In the table, don't ``low mass," ``mid mass," and ``high mass" correspond to the different simulations? For example, 
+low mass corresponds to \simA~and so on? If not, then I don't understand. If so, then 
+you should label each cut by the relevant simulation name as well.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table*}
 \caption{
-Minimum mass thresholds for each of our analyses depending upon the value of the overdensity, $\Delta$, used to define the halos. In the columns below the values of $\Delta$ we show the minimum host halo masses considered in units of $h^{-1}\mathrm{M}_{\odot}$.}
+Minimum mass thresholds for each of our analyses depending upon the 
+value of the overdensity, $\Delta$, used to define the halos. 
+In the columns below the values of $\Delta$ we show the minimum 
+host halo masses considered in units of $h^{-1}\mathrm{M}_{\odot}$.
+}
 \vspace*{8pt}
 \begin{tabular}{ c c c c c }
 \hline
@@ -233,14 +264,22 @@ Cutoff Name \ \  & $\Delta=200$ & $\Delta=100$ & $\Delta=75$ & $\Delta=50$ \\
 \end{table*}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\arz{I would like to see another figure here. I would like to see $M_{200}$ on the x-axis and $M_{\Delta}$ on the y-axis. 
+What should be plotted is the mean $M_{\delta}$ as a function of $M_{200}$ for all halos common to both catalogs. This 
+will be a nice informative plot for the reader and will help the reader to digest the table.}
 
 %-----------------------
 \section[]{Methodology}
 \label{section:methodology}
 %-----------------------
 
+\arz{I actually don't understand what you are saying in this paragraph. I hope there is nothing special about \simB~? 
+Aren't the mass limits determined as you stated in the previous section for each simulation and for each $\Delta$? If so, 
+why does this all need to be repeated here?}
 There are several well understood effects in our simulation that must be accounted for before we can draw any conclusions. The first is the matter of simulation resolution. In each of our generated halo catalogs, we can anticipate finding artificial halos. While existing under our constraint of having only a set overdensity, they will have properties that conflict with well known trends that have been shown in prior works, such as concentration decreasing as a function of halo mass \citep{wechsler06}. As shown in Figure~\ref{fig:cnfwrelation}, we can roughly identify the region in which these artificial halos become significant by determining where the monotonic relationship between concentration and mass breaks at low mass. In order to avoid our halo finding statistics being thrown off by these artificial halos, we set a lower mass threshold, limiting the sample to only those halos that are physically significant. We have chosen our threshold to be set by \simB \ in order to minimize the shift to the remaining catalogs.
 
+\arz{I thought that the Duffy et al. paper only looked at concentration? Is this correct? Either way, there is an 
+Allgood et al. paper that comprehensively examines this for various halo properties and should be cited here.}
 Another well known effect is the scaling of our properties as a function of halo mass, as well demonstrated within the literature \citep{duffy08}. We are interested in the clustering behavior beyond this well known effect, so we seek to remove this scaling. We take all host halos of interest and sort them by their halo mass. Each set of halo properties are then placed in bins of equal population in order to assure that enough data points exist for robust statistics. We then normalize each mark in a given bin to the mean value. The end result is halo properties that do not change as a function of mass, allowing us to more accurately analyze clustering behavior within our simulation.
 
 To normalize the satellite number we follow the prescription of \citet{wechsler06}. In addition to the mass cutoffs on our data, we eliminate ill-resolved satellites by choosing a cutoff in $v_{\mathrm{max}}$ for the host halo. We then attempt to match subhalos to this mass halo, making a secondary cutoff in the case that the value of $v_{\mathrm{max,sub}} / v_{\mathrm{max,host}}$ is not above a threshold value. We set these two parameters such that there are no isolated or poorly resolved subhalos in our data sample.
