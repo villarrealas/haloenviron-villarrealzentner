@@ -269,20 +269,31 @@ What should be plotted is the mean $M_{\delta}$ as a function of $M_{200}$ for a
 will be a nice informative plot for the reader and will help the reader to digest the table.}
 
 %-----------------------
-\section[]{Methodology}
+\section[]{Auxiliary Halo Properties and Probes of their Environmental Dependence}
 \label{section:methodology}
 %-----------------------
 
 \arz{I actually don't understand what you are saying in this paragraph. I hope there is nothing special about \simB~? 
 Aren't the mass limits determined as you stated in the previous section for each simulation and for each $\Delta$? If so, 
-why does this all need to be repeated here?}
+why does this all need to be repeated here? Perhaps you can just get rid of this paragraph if you are giving this information 
+in the previous section. That would be my preference for logical flow.}
 There are several well understood effects in our simulation that must be accounted for before we can draw any conclusions. The first is the matter of simulation resolution. In each of our generated halo catalogs, we can anticipate finding artificial halos. While existing under our constraint of having only a set overdensity, they will have properties that conflict with well known trends that have been shown in prior works, such as concentration decreasing as a function of halo mass \citep{wechsler06}. As shown in Figure~\ref{fig:cnfwrelation}, we can roughly identify the region in which these artificial halos become significant by determining where the monotonic relationship between concentration and mass breaks at low mass. In order to avoid our halo finding statistics being thrown off by these artificial halos, we set a lower mass threshold, limiting the sample to only those halos that are physically significant. We have chosen our threshold to be set by \simB \ in order to minimize the shift to the remaining catalogs.
+
+%----------------------------------------------------------
+\subsection{Auxiliary Halo Properties}
 
 \arz{I thought that the Duffy et al. paper only looked at concentration? Is this correct? Either way, there is an 
 Allgood et al. paper that comprehensively examines this for various halo properties and should be cited here.}
-Another well known effect is the scaling of our properties as a function of halo mass, as well demonstrated within the literature \citep{duffy08}. We are interested in studying the clustering behavior of halos as a function of properties other than mass. However, 
-the simulations we analyze do not have a sufficiently large number of halos to make isolating halos of fixed mass a powerful method 
-with which to study this clustering. Consequently, we remove the mass dependence of the auxiliary properties (those properties other than mass, such as concentration $c_{\rm NFW}$ or shape $s$) as follows. 
+Another well known effect is the scaling of our properties as a function of halo mass, as well demonstrated within the literature \citep{duffy08}. We are interested in studying the clustering behavior of halos as a function of properties other than mass. As mass is the dominant halo property correlated with halo clustering strength and environment, we refer to the additional properties that we study as 
+``auxiliary halo properties" (those properties other than mass, such as concentration $c_{\rm NFW}$ or shape $s$). 
+
+Most contemporary cosmological $N$-body simulations, including the set that we study here, 
+do not have a sufficiently large number of halos to make isolating halos of fixed mass, and then further 
+splitting these halos by an auxiliary property, a powerful method with which to study the dependence of 
+clustering on auxiliary properties. Consequently, we study this phenomenon using halo samples 
+selected according to minimum mass thresholds. To do so, we remove the mass dependence of 
+the auxiliary properties as follows. 
+
 We take all host halos of interest and sort them by their halo mass, $M_{\Delta}$. 
 Each set of halo properties is then placed in bins of equal population in order to assure 
 that enough data points exist for robust statistics. We then normalize each mark in a 
@@ -292,7 +303,9 @@ change as a function of mass, allowing us to more accurately analyze clustering 
 in this context. YOU MUST provide enough information so that someone with access to these simulations 
 could reproduce your calculations. Also, you don't give important details. How many are in the ``equal populations" 
 for example. You may also want to add an additional paragraph speculating briefly on other ways to 
-remove the gross mass dependence.}
+remove the gross mass dependence. You must also say explicitly that we use the mass-dependence-removed 
+concentrations, shapes, and spins in all following calculations. This might not be the exact wording you 
+want to use, but you can decide what you want to call these things.}
 
 \arz{Flesh this out a bit. See the discussion in Wechsler et al. 06 as a model. The specific 
 values of the thresholds need to be given}
@@ -312,15 +325,64 @@ function is a very nearly self-similar function \arz{Cite Zentner, Berlind et al
 on this point.}, so that scaling subhalo $v_{\mathrm{max,sub}}$ by 
 host $v_{\mathrm{max,host}}$ in this way eliminates the 
 gross mass dependence of satellite number.
+\arz{In the earlier draft, the preceding paragraph had a logical flow that made it 
+very difficult to follow the steps in the calculation. If you think about it for a minute, the 
+important pieces are: (1) we quantify subhalo size with $v_{\mathrm{max,sub}}$ because 
+it is more robustly measured than subhalo mass; (2) there is a minimum $v_{\mathrm{max,sub}}$ 
+that we can aspire to reach because of resolution; (3) we quantify subhalo number by scaling 
+subhalo size relative to host size, $v_{\mathrm{max,sub}}/v_{\mathrm{max,host}}$, because this 
+scales out the gross dependence of subhalo number count on host halo size; (4) we must choose 
+host halos that are sufficiently large that the contain, on average, a few subhalos above our 
+minimum subhalo $v_{\mathrm{max,sub}}$. These considerations completely specify the 
+cuts on $v_{\mathrm{max,sub}}$ and $v_{\mathrm{max,host}}$. Please make sure these 
+elements of the logic are clear to the reader.}
 
-We study two manifestations of assembly bias or halo clustering strength dependent upon properties other than halo mass. 
-The first is to look at the two-point correlation functions of the host halo catalogs. We take the difference between the samples of the top 20\% and bottom 20\% in normalized concentration, and then normalize these results by the overall correlation function.. Assuming that each halo was statistically similar, regardless of host halo clustering, we would expect that this statistic would approach zero at all scales.
+%---------------------------------------------------------------
+\subsection{Clustering Statistics}
 
-The second method is to use a weighted correlation function, often referred to in the literature as the marked correlation function (MCF). Our marks in this case are the log values of the halo concentration proxies described previously, the halo shape, and the halo satellite number. The use of this tool in measuring clustering has been shown previously in \citet{wechsler06} or \citet{harker06}. We follow the methodology of \citet{wechsler06} in defining the MCF as
+We assess the influence of assembly bias on two-point statistics of host halos. In order to do so, we 
+study both the standard two-point correlation functions of halos selected by properties other than mass 
+(e.g., the auxiliary properties concentration, shape, and spin) as well as halo mark correlation functions (MCFs). 
+MCFs quantify the manner in which a halo property (the ``mark") correlates among halo pairs as a function of 
+the distance between the pairs. Absent halo assembly bias, halo marks are uncorrelated among pairs. 
+MCFs have been used in several previous papers to quantify environmental dependence of halo 
+properties other than mass \citet{wechsler06} or \citet{harker06} \arz{I think there are also a couple of 
+Sheth papers that should be cited here, maybe more}. 
+For a specific halo property, or mark $m$, we use the MCF normalization of \citet{wechsler06}, namely 
 \beq
 \mathcal{M}_m(r) \equiv ( \langle m_1 m_2 \rangle_p (r) - \langle m \rangle^2 / \mathcal{V}(m),
 \eeq
-where $m$ is the value of the mark for a given halo, $\langle m \rangle$ the mean and $\mathcal{V}(m)$ the variance of the mark. We then compare our MCFs to an error bar representing the approximate 2-sigma confidence region generated by randomizing the marks among our halos 400 times and taking the 10th lowest and 390th highest values of the mark among the randomizations. In the case of no environmental effects upon the property of interest, one would expect that the MCF would fall within the region bounded by these limits.
+where $m_{\mathrm{i}}$ is the value of the mark for halo $\mathrm{i}$, $\langle m \rangle$ is the mean of the mark, 
+and $\mathcal{V}(m)$ the variance of the mark. The notation is intended to indicate that the average is taken over all 
+pairs of halos separated by a distance $r$. In the absence of any correlation between a halo property and the halo 
+having a neighbor a distance $r$ away, $\mathcal{M}_m(r) = 0$. Deviations of the MCF from zero indicate 
+such correlations exist and the size of the $\mathcal{M}_m(r)$ gives the excess of the mark among pairs 
+compared to the one-point mean of the mark $\langle m\rangle$ in units of the one-point variance.
+
+
+It is necessary to assess statistical fluctuations in the statistics that we measure in these simulations in order to 
+determine the significance of the signals. For two-point correlation functions, we determine the covariance of 
+the measurement through jackknife resampling of the eight octants of the simulation cube. We assess the 
+statistical significance of the MCFs by randomly re-assigning each of our marks to the halos in the sample. 
+We then compute the MCF of these randomized marks. As the mark re-assignment is random, 
+the MCF computed on these re-assigned marks {\em cannot} exhibit any 
+environment dependence other than that induced by statistical fluctuations. 
+We perform this reassignment 400 times and approximate a $2\sigma$ error region by 
+the span of the MCF between our 10$^\mathrm{th}$ lowest and 10$^\mathrm{th}$ highest (that is the 390$^\mathrm{th}$ 
+if the MCFs were sorted in ascending order) values of the MCF. In the event that there are no environmental 
+correlations with halo auxiliary properties, the MCFs measured in the simulations would fall within this error 
+band $95\%$ of the time. 
+
+
+\arz{The sentences immediately below this comment can be removed. Also, not a wise idea to 
+lock yourself into 20\% in the text. There is absolutely nothing special about 20\%. In fact, it 
+would be interesting to see if things change as this percentile changes, perhaps try 50\% and 
+10\%. We should at least know what those figures look like before proceeding to publication, 
+so you should make them even though we likely won't include them in the main text of 
+the paper. It could be very informative and will almost certainly be useful when giving talks.}
+The first is to look at the two-point correlation functions of the host halo catalogs. We take the difference between the samples of the top 20\% and bottom 20\% in normalized concentration, and then normalize these results by the overall correlation function.. Assuming that each halo was statistically similar, regardless of host halo clustering, we would expect that this statistic would approach zero at all scales.
+
+
 
 %----------------------------
 \section[]{Results and Discussion}
