@@ -389,18 +389,41 @@ The first is to look at the two-point correlation functions of the host halo cat
 \label{section:results}
 %----------------------------
 
-Ultimately, as a result of the limited nature of simulation data, we must make some lower mass cutoff in our study of halo properties. Table~\ref{table:thresholds} describes where we have chosen to place these cuts in a variety of different measures. The ``mid mass" set of cuts has been chosen for our preliminary analysis choice, as it gives us a healthy balance between mass resolution and robust statistics. Figure~\ref{fig:cnfwrelation} shows an example of this cutoff in the $\Delta = 200$ case as a red line. We do not include \simC \ in this initial analysis, as that simulation holds several bins of halos deviating significantly from a monotonic mass-concentration relation. This may be a result of including halos that are unphysical, but still meets the halo-finding algorithm's requirements.  The remaining two cuts have been chosen to explore any resolution related effects. The ``low mass'' cuts explore the lowest possible mass cutoff that excludes ill resolved halos in the \citet{diemer15} simulations, while the ``high mass'' set of cuts represent the mass cutoff chosen to avoid contamination due to resolution effects in our largest simulation box.
+\arz{We don't need to reiterate all of this stuff about the mass cuts. Just make sure the discussion in the simulations section is complete and then we can move forward. Again, I suggest changing the names of your cuts. It would be great if they can signify something either about the ACTUAL MASS involved in the cut or the simulation or possibly BOTH! Perhaps you can say the ``L0125" cut and so on? 
+If you get everything specified in the simulation section, then this paragraph is completely unnecessary.}
+The ``mid mass" set of cuts has been chosen for our preliminary analysis choice, as it gives us a healthy balance between mass resolution and robust statistics. Figure~\ref{fig:cnfwrelation} shows an example of this cutoff in the $\Delta = 200$ case as a red line. 
+\arz{It seems to me that we DO include \simC~!! Even if we don't we should. Let's treat each simulation as simply sampling a different 
+range of halo masses. That is the most useful way to proceed.}
+We do not include \simC \ in this initial analysis, as that simulation holds several bins of halos deviating significantly from a monotonic mass-concentration relation. This may be a result of including halos that are unphysical, but still meets the halo-finding algorithm's requirements.  The remaining two cuts have been chosen to explore any resolution related effects. The ``low mass'' cuts explore the lowest possible mass cutoff that excludes ill resolved halos in the \citet{diemer15} simulations, while the ``high mass'' set of cuts represent the mass cutoff chosen to avoid contamination due to resolution effects in our largest simulation box.
+
+%-----------------------------------------------
+\subsection{Correlation Functions}
+
+We begin by studying the correlation functions of halos in our mass threshold samples, sub-selected by auxiliary properties. 
+Figure~\ref{fig:cc_cfcompare} exhibits the difference between the clustering strength of halos in the $20^{\mathrm{th}}$ percentile highest concentrations and the halos with the halos that have the $20^{\mathrm{th}}$ percentile lowest concentrations as a function of the overdensity parameter $\Delta$, used to define the halos. First, it is clear that clustering strength generally depends upon the auxiliary properties of halos at all halo mass thresholds. Second, it is clear that the strength and sign of assembly bias is 
+strongly mass dependent, a result that agrees with the significant previous literature on halo assembly bias \arz{Cite all the usual 
+papers here, Gao, Wechsler, Harker, Zentner07, Dalal07, probably several more.} 
+
+\arz{The language in this paragraph is way too loose and not sufficiently clear or professional. I'll attemp to clean it up. Try to 
+follow this model in your writing.}
+
+
+We see that when we are interested in studying primarily a sample of low mass halos, such as in in \simA, it is difficult to use this method to account for assembly bias for any reasonable matter. However, when looking at a more reasonable mass range, there is a removal of assembly bias on large scales between $\Delta = 75$ and $\Delta=50$ that can be noted in the data. It should be noted that this is effectively a ``sweet spot'' effect, where decreasing the value of $\Delta$ (or correspondingly, the size of an average halo) will start to give increasing amounts of power in the correlation function to the least concentrated halos - essentially introducing a new assembly bias. The physical nature of this is of interest to us, and we attempt to present an intuitive sense of the effect further on. Furthermore, we note that when interest is focused on the most massive halos, assembly bias appears to be minimal in terms of the clustering for the largest scales with the standard definition, perhaps giving a more statistical motivation to the use of $\Delta = 200$.
+
+\arz{Given how the correlation function looks, shouldn't we include results for $\Delta<50$, at least for the L0125 results? The 
+effect is continuous so it looks like it would be removed with a smaller value of $\Delta$. I say this is a must for moving forward 
+with publication.}
 
 \begin{figure}
 	\centering
 	\includegraphics[width=.4\textwidth]{all_cfhilow_z00_cutcomp.pdf}
-	\caption{The difference of the correlation function for only the top 20\% most concentrated halos and the bottom 20\% in concentration, normalized by the overall correlation function of the entire sample. From top to bottom we show the results for the lowest mass cut in \simA, \simB, and \simC \ that excludes ill resolved halos. The dashed lines along the bottom denote the largest halo radius for a given value of the overdensity parameter.}
+	\caption{
+The difference of the correlation function for only the top 20\% most concentrated halos and the bottom 20\% in concentration, normalized by the overall correlation function of the entire sample. From top to bottom we show the results for the lowest mass cut in \simA, \simB, and \simC \ that excludes ill resolved halos. \arz{This method of specifying the mass cuts is poor style. You already gave each mass cut a name in the table. Why now use a different way of referring to the mass cuts? This confuses the reader, and even I find it confusing. I'm not sure what the plot shows! Just use the names of the cuts!} The dashed lines along the bottom denote the largest halo radius for a given value of the overdensity parameter. \arz{This figure needs to be remade. Labels need to be cleaned up. Each panel needs to be labeled with simulation name and mass threshold (as an aside, I prefer the word ``threshold" to ``cut"). I also think that you could stand to make the figure a little bit bigger. Not a big deal to me.}
+	}
 	\label{fig:cc_cfcompare}
 \end{figure}
 
 %% note: we need to remake this plot!
-
-The left column of Figure~\ref{fig:cc_cfcompare} demonstrates the results of our method as we change the value of $\Delta$. We see that when we are interested in studying primarily a sample of low mass halos, such as in in \simA, it is difficult to use this method to account for assembly bias for any reasonable matter. However, when looking at a more reasonable mass range, there is a removal of assembly bias on large scales between $\Delta = 75$ and $\Delta=50$ that can be noted in the data. It should be noted that this is effectively a ``sweet spot'' effect, where decreasing the value of $\Delta$ (or correspondingly, the size of an average halo) will start to give increasing amounts of power in the correlation function to the least concentrated halos - essentially introducing a new assembly bias. The physical nature of this is of interest to us, and we attempt to present an intuitive sense of the effect further on. Furthermore, we note that when interest is focused on the most massive halos, assembly bias appears to be minimal in terms of the clustering for the largest scales with the standard definition, perhaps giving a more statistical motivation to the use of $\Delta = 200$.
 
 \begin{figure}
 	\centering
