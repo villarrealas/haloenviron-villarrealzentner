@@ -612,7 +612,7 @@ clustering on these ``auxiliary properties." Rather generally, we find that thes
 do {\em not} mitigate the effects of assembly bias. In most cases, defining halos to have significantly 
 larger radii (lower $\Delta$) than in conventional halo definitions had only a modest influence on 
 these assembly bias effects. Moreover, to the degree that these modified halo definitions had 
-any effect at all, it was generally of the sense of 
+any effect at all, it was often of the sense of 
 making the assembly bias effect stronger, rather than weaker. 
 
 One exception to this general conclusion is the case of halo concentration. 
@@ -626,11 +626,11 @@ is both interesting and warranted.
 
 Clearly, the halo definition that best mitigates 
 concentration-dependent assembly bias must be mass dependent. Low 
-values of $\Delta$ ($\Delta \sim 25$ with $R_{25} \sim 2$R_{200}$) seem appropriate near for our lowest 
+values of $\Delta$ ($\Delta \sim 25$ with $R_{25} \sim 2R_{200}$) seem appropriate near for our lowest 
 mass-threshold sample (with $M_{200} \ge XXX$) whereas $\Delta \sim 200$ or slightly higher is adequate for 
 our highest mass threshold sample (with $M_{200} \ge YYYY$). This result is reminiscent of much 
 recent work on the so-called halo ``splashback radius." 
-\arz{Here, compare our results to the splashback radius results.}
+\arz{Here, compare our results to the splashback radius work.}
 
 
 \arz{Here is where we could use ANOTHER FIGURE! What I would like to see is a visual 
@@ -642,32 +642,124 @@ such as $R_{\Delta}/R_{200}$ and $R_{\rm splashback}/R_{200}$ and so on. This co
 be an important figure and point to future work on this subject.}
 
 
-Overall, while some statistics of the halo can be made to become independent of environmental effects, there exist several that cannot. These environmental effects are not negligible when considering applications of the halo model. In contrast, if one is only interested in the concentration of the halo, it is feasible to take advantage of our methodology in order to remove environmental effects. In contrast, it is not possible to apply the halo model directly to statistics such as the number of satellite halos or the shape without accounting for these environmental effects. We do not yet have a full understanding of what leads to the visible effects that we see on some of these marks, but we present a series of cases in which an intuitive understanding may be gained as to the root causes.
+It is useful to investigate the reasons why halo redefinitions may be helpful in the case 
+of concentrations. On the positive side, it is possible that these redefinitions do define 
+halos an a more practically useful way, better isolating objects that have been strongly 
+altered by nonlinear evolution from the larger-scale environment. In this case, halo redefinition 
+would be a step forward. However, it is also possible that the details of measuring halo 
+properties using these new halo definitions introduce new sources of noise into the 
+measurements. If this is the case, then the reduction in environmental effects stems 
+from the fact that them measurement of the halo property 
+introduces noise and is {\em less} informative about the halo itself. 
+For the case of halo concentration, which is the most interesting to 
+follow up, introducing noise can happen in numerous ways. For example, 
+the NFW concentration $c_{\mathrm{NFW}}$ is determined by a fit to the 
+NFW profile. Inferred values of $c_{\mathrm{NFW}}$ will depend upon 
+the degree to which the density profiles of the halos follow the NFW 
+functional form within some radius $R_{\Delta}$ that is different from 
+traditional halo radii, such as $\sim R_{200}$. At large halocentric 
+distances ($r \gtrsim R_{200}$) halo profiles are known to deviate 
+from the NFW form. It is worth noting that the velocity-defined concentration 
+$c_{\rm V}$ is a non-parametric measure of concentration and should be 
+less subject to such effects. 
 
-We would also like to study our sample for some insight as to how this process of correction is actually functioning. For example, we would like to know if it is a more careful selection of halos in our simulation that results in the removal of this apparent assembly bias or if it is the increased noise in the statistics as a result of reducing the number of halos. There is also the possibility of halo statistics changing as a result of the new halo definitions to be considered. One can imagine that the addition of a large amount of mass toward the edge of the halo would reasonably change measures of concentration, shape, and spin. To test some of these possibilities, we run an algorithm to match halos across our multiple catalogs. We identify halos that are within a distance tolerance that we scale such that there are no identifications of multiple halos to the same object in another catalog. Catalogs are all matched against a single target catalog. This target catalog is chosen to fit the value of $\Delta$ that we find best removes assembly bias in large scales for the concentration marks chosen. For the \citet{diemer15} simulations, we find this to be a value of approximately $\Delta = 70$. Once the catalogs have been matched against this primary catalog, we rerun our marked correlation function calculations using only host halos identified across both catalogs. This tests if the exclusion of halos that are subsumed in the lower $\Delta$ catalog is the primary cause of our results as well as those halos that are commonly referred to as backsplash halos.
 
-We can see the results of this test in Figure~\ref{fig:hvm_cfcompare} through Figure~\ref{fig:hvm_mcf_nsat}. Comparing in each case, the $\Delta = 200$ result when utilizing a catalog matched to our best fit $\Delta$ demonstrates less assembly bias than the full catalog for the mass cut would demonstrate for our concentration marks. While the magnitude of this result does vary with scale, upwards of 80\% of assembly bias can be accounted for as a result of this selection effect. Furthermore, most of the removed assembly bias occurs on scales that are comparable to the increase in the halo radius between the samples. This seems to indicate that there is significant contamination of host halo statistics by backsplash halos and other halos that would be subsumed into a common host given an increase in halo size.
+\arz{New figure needed here. This should be, for the L0250 simulation (my 
+guess this one is most instructive, but use your judgment here), a 
+comparison of the concentration-mass relation for halos defined with 
+$\Delta=200$ to the concentration-mass relation for halos defined with 
+$\Delta=70$ (of whatever you deem best). The figure must represent 
+both the mean (or median) relation AS WELL AS the dispersion in 
+this relation at fixed mass. The plot should exhibit this for both 
+$c_{\mathrm{NFW}}$ and $c_{\mathrm{V}}$. Two panels may be 
+necessary to make these points.}
 
-\begin{figure*}
-	\centering
-	\includegraphics[width=.9\textwidth]{all_cfhilow_z00_hostsvmatch.pdf}
-	\caption{The difference of the correlation function for only the top 20\% most concentrated halos and the bottom 20\% in concentration, normalized by the overall correlation function of the entire sample. The left (right) panel shows the ``mid mass'' (``matched'') cut on \simA \ and \simB. The ``matched'' cut accounts for potential backsplash halos, as discussed further in the text. The dashed lines along the bottom denote the largest halo radius for a given value of the overdensity parameter.}
-	\label{fig:hvm_cfcompare}
-\end{figure*}
+
+As such, it is useful to examine the concentration-mass relations for halos in 
+the simulations for various halo definitions. This is shown in \arz{NEW FIGURE.} 
+Notice that \arz{Now you mention the interesting part about the new figure. 
+This should be a discussion of how much larger/smaller the dispersion in 
+concentrations gets for, say $\Delta=70$ compared to $\Delta=200$.}
+
+
+We can explore in more detail the degree to which the mitigation of environmental 
+effects by halo redefinition are due to introducing noise that is uncorrelated with 
+environment into the measurement of halo properties when halos are defined 
+in a manner distinct from the more traditional definitions. We proceed as follows. 
+All host halos that are found in the halo catalogs constructed from lower values 
+of $\Delta$ (for example, $\Delta ~ 70$ which is an interesting value for exploring 
+concentration in the L0250 simulation) are present as host halos in the halo 
+catalogs constructed with higher values of threshold density (e.g., $\Delta = 200$). 
+We match each halo in the lower threshold (lower $\Delta$) simulation to 
+its corresponding halo in the higher threshold catalog. We then consider 
+the clustering of only those halos that we have matched across catalogs. 
+We refer to these as the ``matched" halo samples between two values 
+of threshold overdensity $\Delta$. 
+
+\arz{I removed the correlation function comparison here. It is too busy to read and not necessary. 
+It also opens up the whole Pandora's box of ``why choose 20\%?" I'd rather avoid that in this 
+discussion. Let's just jump straight to the MCF. This will reduce the proliferation of figures as 
+well.}
 
 \begin{figure*}
 	\centering
 	\includegraphics[width=.9\textwidth]{all_mcf_cnfw_z00_hostsvmatch.pdf}
-	\caption{The marked correlation function for the concentration defined according to the NFW profile. The left (right) panel shows the ``mid mass'' (``matched'') cut on \simA \ and \simB. The ``matched'' cut accounts for potential backsplash halos, as discussed further in the text. The dashed lines along the bottom denote the largest halo radius for a given value of the overdensity parameter.}
+	\caption{The marked correlation function for the concentration defined according to the NFW profile. The left (right) panel shows the ``mid mass'' (``matched'') cut on \simA \ and \simB. The ``matched'' cut accounts for potential backsplash halos, as discussed further in the text. The dashed lines along the bottom denote the largest halo radius for a given value of the overdensity parameter.
+	\arz{Adopt new labeling scheme. Refer to the simulation, L0250, and the mass threshold rather than using the 
+	label ``mid mass." Try as best you can to minimize overlaps in the figure. The L0125 is so noisy that it doesn't add 
+	anything here, we don't need those panels. I actually don't even think we need more than one panel. The ONLY 
+	panel we need is the lower right panel for the L0250 ``matched" sample. Add to this panel as a light blue, thick line in 
+	the background the standard result for the L0250 box (this standard result is the blue line in the left panel). Then the 
+	reader can compare directly the two lines of greatest interest, which are $\Delta=200$ (no matching) and $\Delta=200$ 
+	``matched." That is all we need unless I misunderstand something.}}
 	\label{fig:hvm_mcf_cnfw}
 \end{figure*}
+
+\arz{Please check to ensure that I know what you mean by your matched samples. Your language was not 
+specific enough for me to be 100\% sure. Modify as necessary.}
+Figure~\ref{fig:hvm_mcf_cnfw} shows a comparison between the standard $\Delta=200$, $c_{\mathrm{NFW}}$ 
+MCF and the MCF of the matched subsamples. The matched subsamples are matched to the $\Delta=70$ 
+halo catalogs and differ from the standard halo samples in that they contain only those host halos common 
+to both the catalog in question and the $\Delta=70$ catalog. The most interesting matched sample to 
+examine in this case is the $\Delta=200$ sample. In this sample, all halos are defined as they would be 
+defined in the $\Delta=200$ catalog, including all inferred halo properties; however, the matched catalog 
+contains only those host halos that also appear in the $\Delta=70$ halo catalog. Therefore, many host 
+halos have been removed from the sample because they have become subhalos in the $\Delta=70$ 
+catalogs. 
+
+From Fig.~\ref{fig:hvm_mcf_cnfw}, it is apparent that some degree of assembly bias persists in the matched 
+samples. Yet, what is interesting is that a very significant fraction of the assembly bias effect has been 
+removed compared to the standard $\Delta=200$ result. The halos in the matched catalogs have the 
+same properties (including $c_{\mathrm{NFW}}$) as those in the standard catalogs, so that removal 
+of assembly bias is {\em not} due to introducing noise or other systematics into the measurement of 
+concentration. That mitigation of assembly bias is due to the halo redefinition and, in particular, 
+subsuming those halos most subject to assembly bias effects as subhalos of the $\Delta=70$ 
+halos. This is an interesting result suggesting that seeking optimal halo definitions may be 
+one avenue to more completely separating the strongly nonlinear evolution occurring within 
+halos from large-scale evolution and mitigating assembly bias. 
+
 
 \begin{figure*}
 	\centering
 	\includegraphics[width=.9\textwidth]{all_mcf_cV_z00_hostsvmatch.pdf}
-	\caption{The marked correlation function for the concentration defined according to the velocity ratio. The left (right) panel shows the ``mid mass'' (``matched'') cut on \simA \ and \simB. The ``matched'' cut accounts for potential backsplash halos, as discussed further in the text. The dashed lines along the bottom denote the largest halo radius for a given value of the overdensity parameter.}
+	\caption{
+	\arz{All the same comments as for the $c_{\mathrm{NFW}}$ figure.}
+	The marked correlation function for the concentration defined according to the velocity ratio. The left (right) panel shows the ``mid mass'' (``matched'') cut on \simA \ and \simB. The ``matched'' cut accounts for potential backsplash halos, as discussed further in the text. The dashed lines along the bottom denote the largest halo radius for a given value of the overdensity parameter.}
 	\label{fig:hvm_mcf_cV}
 \end{figure*}
+
+\arz{Put a discussion of Fig.~\ref{fig:hvm_mcf_cV} here. It does not need to reiterate the discussion of 
+Fig.~\ref{fig:hvm_mcf_cnfw}. However, it should state that we reach the same broad conclusion and that 
+this is good in part because $c_{\mathrm{V}}$ is a nonparametric measure of halo concentration.}
+
+
+\arz{Would it be easy for you to plot the concentration-mass relation for only those host halos 
+in the ``matched" $\Delta=200$ sample? If so, that would be potentially interesting for our 
+interpretation.}
+
+
+\arz{We probably don't need the shape, spin, and nsat figures because these don't work anyway! 
+No need to interpret something that is not working.} 
 
 \begin{figure*}
 	\centering
@@ -690,13 +782,17 @@ We can see the results of this test in Figure~\ref{fig:hvm_cfcompare} through Fi
 	\label{fig:hvm_mcf_nsat}
 \end{figure*}
 
+\arz{Next two paragraphs can be largely removed, starting here ...}
 However, it is worth noting that statistics such as spin parameter, shape, and satellite numbers do not benefit from this selection effect. Assembly bias in these statistics remains nearly identical, suggesting that the selection effects that preferentially account for backsplash halos do not impact these marks. This does serve as a consistency check: given that our methodology does not seem to have a positive impact on the behavior of these marks, the fact that this selection criteria would have positive impact on the data would be an oddity. Instead, we have another confirmation as to the intrinsic ties between these halo statistics and environment.
 
 Given that the removal of assembly bias is not being driven by introducing noice, we now will attempt to determine why the different marks exhibit different behaviors. The first interesting feature is how well our two separate definitions of concentration interact with each other. In the case that the halo can be described well by an NFW profile, one expects a direct relationship between the NFW defined halo concentration and the velocity ratio defined halo concentration. While some variation can be expected due to halos not perfectly being fit by an NFW profile, we do see that the features in one concentration proxy are mirrored in the other. This allows for the two concentration markers to support each other well with regards to our ability to remove environmental effects on large scales.
+\arz{... and ending here.}
 
+
+\arz{This paragraph is good, but needs to be written a bit more professionally. Start with a sentence like, 
+``It is interesting to explore the reasons that halo shape, spin, and satellite number are not amenable 
+to having their assembly bias mitigated through simple halo redefinitions." Then move on to some specifics.}
 Halo shape and satellite number are statistics that do not end up having their environmental effects removed and can even be made more prominent by our methodology. One intuitive way to consider the former statistic is in the context of the cosmic web. Studies have shown a statistically significant alignment between filaments and satellite galaxy position \citep{tempel15, velliscig15}. Our method then expands the halo radius and subsumes material that was previously outside of the halo. A simple graphic illustrates this potential effect in Figure~\ref{fig:plotcircles}. As there is a preferential distribution of these satellites that are being subsumed into the halo, this would serve to induce a shape to the halo that would then be determined by Rockstar. In addition, as our satellite number is chosen by those halos within the halo radius, we anticipate that the most clustered regions would see the largest increase in satellite count and thus see an increase in the satellite number mark.
-
-The ``sweet spot'' behavior of this method is also of interest to us. The halo redefinition process that we use serves to decrease halo clustering for the most concentrated halos and increase halo clustering for the least concentrated halos. In the case of the high concentration cut, the reduced clustering can be seen as a result of halo exclusion. As we exchange collections of tightly clustered smaller halos for a single larger halo, then the most prominent contribution of the two-point correlation function will be reduced at all scales. Furthermore, it suggests that the assembly bias that we witness is correlated with the choice of halo definition. This effect may be necessary to explaining the mixed results in the field at determining just how strong assembly bias is.
 
 \begin{figure*}
 	\centering
@@ -707,6 +803,11 @@ The ``sweet spot'' behavior of this method is also of interest to us. The halo r
 
 %% another thing to repeat on one of the Diemer boxes. High priority.
 
+
+\arz{The way that the paper has been retooled makes this mass cut discussion completely redundant with the 
+main discussion in the paper. The mass dependence is now a fundamental part of the main line of reasoning in the 
+paper and the summary plot I asked for comparing to splashback work will emphasize this point. 
+This can all be eliminated, ... STARTING HERE...}
 Given the differences between the simulation results and with the data available to us with the \citet{diemer15} simulations, we then explore the effect of the choice in mass cut. The low mass cut effects are shown in the Figure~\ref{fig:hvl_cfcompare} through Figure~\ref{fig:hvl_mcf_nsat}. This cut explores the area in which we are including ill-resolved halos potentially into the simulation. Namely, utilizing this mass cut on \simB \ data includes halos that do not fit the form of the expected monotonic halo mass-concentration relation. We can determine several facts from this exercise in resolution testing. The first is that the general behavior of the marks seems to be the same regardless of the influence of the resolution effects. Decreasing the value of $\Delta$ still moves our marked correlation functions in the same directions as the previous mass cut, although often from a very different starting location. Even with potentially ill resolved objects, the method can be brought to bear upon the problem - potentially a concern if the simulation's ability to resolve a particular statistic is questionable. Also noteable is that the level of the assembly bias is reduced in the case of this lower mass cut in \simB \ when compared to \simA. This is distinctly different from our previous example, in which both \simA \ and \simB \ both contain only well resolved halos within the mass cut and have nearly identical assembly bias at every scale, aside from simulation noise. This seems to imply that including unphysical halos in our sample makes it difficult to determine the actual assembly bias at work.
 
 \begin{figure*}
@@ -795,11 +896,20 @@ We can repeat this exercise by looking at a different set of mass cuts. In this 
 	\label{fig:hvh_mcf_nsat}
 \end{figure*}
 
+\arz{... AND ELIMINATING ALL THE WAY TO HERE!}
+
+\arz{Instead, add one summarizing paragraph here discussing the mass dependence of assembly bias. 
+Emphasize that our findings suggest that the strength of assembly bias can be a strong function of halo 
+definition and that this may already be making it difficult to compare the results of various different research 
+groups using different halo definitions.}
+
+
 %----------------------
 \section[]{Conclusions}
 \label{section:conclusions}
 %----------------------
 
+\arz{After dealing with the comments above, let's come back to rewriting the conclusions section.}
 We have looked at how to use CFs and MCFs in order to analyze the environmental effects upon the properties of the halo. We have suggested a method of removing the mass dependence that is not subject to the small number statistics at large halo masses. Taking our various tests, we then apply a change to the threshold density $\Delta$ in an attempt to remove the effect that environment has upon these properties. We come to the following conclusions from our simulation data.
 
 \begin{itemize}
