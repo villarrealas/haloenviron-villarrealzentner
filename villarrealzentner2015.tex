@@ -22,17 +22,19 @@
 \begin{document}
 
 \title[Halo Definition and Environmental Effects]{Halo Definition and Environmental Effects}
-\author[Villareal et al.]
-{Antonio Villarreal$^1$\thanks{E-mail: asv13@pitt.edu},
-Andrew R. Zentner$^1$\thanks{E-mail: zentner@pitt.edu}, 
-Christopher W. Purcell$^2$\thanks{E-mail: cwpurcell@mail.wvu.edu},\\
- Andrew P. Hearin$^3$\thanks{xxx},
- Frank C. van den Bosch$^4$\thanks{yyy}\\
-$^{1}$Department of Physics and Astronomy \& \\
-Pittsburgh Particle Physics, Astrophysics, and Cosmology Center (Pitt-PACC),\\ 
+\author[A. Villarreal et al.]{
+Antonio S. Villarreal,$^{1}$\thanks{E-mail: asv13@pitt.edu}
+Andrew R. Zentner,$^{1}$\thanks{E-mail: zentner@pitt.edu}
+Christopher W. Purcell,$^{2}$\thanks{E-mail: cwpurcell@mail.wvu.edu}
+\newauthor
+Andrew P. Hearin,$^3$\thanks{andrew.hearin@yale.edu}
+and Frank C. van den Bosch$^3$\thanks{frank.vandenbosch@yale.edu} \\
+$^{1}$Department of Physics and Astronomy \& Pittsburgh Particle Physics, Astrophysics, and Cosmology Center (Pitt-PACC),\\ 
 University of Pittsburgh, Pittsburgh, PA\\
 $^{2}$Department of Physics and Astronomy, \\
-West Virginia University, Morgantown, WV}
+West Virginia University, Morgantown, WV \\
+$^{3}$Department of Astronomy, \\
+Yale University, Hew Haven, CT}
 
 \date{In preparation}
 
@@ -48,7 +50,7 @@ Recent work has shown the importance of environment to the properties of dark ma
 \end{abstract}
 
 \begin{keywords}
-dark matter -- galaxies: halos -- galaxies: formation -- large-scale structure of universe -- methods: numerical
+cosmology: dark matter -- cosmology: large-scale structure of Universe -- galaxies: formation --galaxies: halos -- methods: numerical
 \end{keywords}
 
 %% notes on citation style:
@@ -69,15 +71,13 @@ dark matter -- galaxies: halos -- galaxies: formation -- large-scale structure o
  Please pay close attention to your wording. As an example, it is MUCH preferable to say "galaxies and clusters form within 
  merging dark matter halos" than it is to say "the creation of observed galaxies and clusters is often seen as arising from the 
  hierarchical mergers of dark matter halos." The second option is just too long-winded without adding any information.}
+\asv{I think I've merged the first two paragraphs well, but I am uncertain if there is sufficient background at this point.}
 
-In the current concordance cosmology, the creation of observed galaxies and clusters is often seen as arising from the hierarchical mergers of dark matter halos.\citep{white78}. \arz{Add Blumenthal et al. citation here.} 
-Being able to model the properties of dark matter halos and the galaxies within gives us a potential probe for the physical processes that go into galaxy formation. The excursion-set formalism of galaxy clustering \citep{bond91,lacey93,somerville99, zentner06} and the standard halo model of galaxy clustering \citep{seljak00, peacock00, scoccimarro01, berlind02, bullock02, cooray02} both can help us in this task, but rely on underlying asumptions. The first is that the statistics of the objects within a dark matter halo is a function of the mass alone. The second is that the clustering of dark matter halos is a function of mass as well. In this paper we propose a simple redefinition of halo size that will help correct for inaccuracies in these two assumptions.
+In the concordance cosmology, galaxies and clusters form within merging dark matter halos\citep{white78, blumenthal84}. Being able to model the properties of dark matter halos and the galaxies within gives us a probe for the physical processes that go into galaxy formation. The excursion-set formalism of galaxy clustering \citep{bond91,lacey93,somerville99, zentner06} and the standard halo model of galaxy clustering \citep{seljak00, peacock00, scoccimarro01, berlind02, bullock02, cooray02} are two such methods, but rely on underlying asumptions. The first is that the statistics of objects within a dark matter halo is a function of the mass alone. The second is that the clustering of dark matter halos is a function of mass. However, it can be shown that the clustering of halos at fixed halo mass is dependent on the formation time of the halo \citep{wechsler02, sheth04, gao05, wechsler06, croton07, zentner07}. Furthermore, it has been shown that the clustering of a given halo is dependent on halo concentration \citep{wechsler02, wechsler06}. \arz{Using this twice! argh! Such a sentence is very awkward and unclear. Generally, avoiding using "this" or "that" frequently unless it is absolutely obvious what "this" and "that" are.} \asv{Hopefully this is more clear and has removed using this repeatedly!} The additional clustering dependences violate assumptions in the standard implementations; more complicated methodologies have been made to accomodate this by using merger histories directly from simulation \citep{dvorkin11} or to adjust for the concentration dependence \citep{gil11}. The relationship that clustering has to the properties of the halo is commonly referred to assembly bias or environmental effects.
 
-It has previously been demonstrated that the clustering of halos is dependent on not only the halo mass, but also on the formation time of the halo \citep{sheth04, gao05, wechsler06, croton07, zentner07}. Furthermore, it has been shown that the clustering of a given halo is dependent on the halo concentration \citep{wechsler06}. \arz{Using this twice! argh! Such a sentence is very awkward and unclear. Generally, avoiding using "this" or "that" frequently unless it is absolutely obvious what "this" and "that" are.} This necessitates corrections be made to the standard implementations to account for this. More complicated methodologies have been made to extend to using merger histories directly from simulation \citep{dvorkin11}, as well as to account for the dependence due to concentration \citep{gil11}. The relationship that clustering has to the properties of the halo is commonly referred to assembly bias or environmental effects.
-
-Our method of halo redefinition is motivated by the size of a halo not necessarily being a well-motivated property. What is often referred to as the ``virial radius'' will not contain all gravitational bound dark matter particles in the halo \citep{kazan06}. Rather, it is a matter of convention that does not have a common definition across the literature. For example, some studies have chosen to use halo radius defined with respect to the critical mass density of the universe, while many simulation papers choose to use the mean background mass density of the simulation. Furthermore, the overdensity often used can typically vary from 178 (from basic spherical collapse) to 200 (a common simulation definition) to 337 (``virial'' in $\Lambda\mathrm{CDM}$). This can lead to a change of up to tens of percent in the measured halo radius from one measurement to the other. We choose to define a halo radius in a way that encompasses the nearby environmental effects. These may be due to large scale structure or driven by baryonic physics. Using a simulated box, we can then test how the redefinition of the halo size affects the relationship between the clustering and the properties of the halo. In the case that the properties of the halo become independent of the clustering, it is possible to utilize standard implementations of the halo model without necessitating more complicated theory.
+In this work, we explore a simpler extension of the model in which the size of halos is redefined. This idea of halo redefinition is motivated by the size of a halo not being a well-motivated property. What is often referred to as the ``virial radius'' will not contain all gravitational bound dark matter particles in the halo \citep{kazan06}. Rather, it is a matter of convention that does not share a common definition across the literature. For example, some studies have chosen to use halo radius defined with respect to the critical mass density of the universe, while many simulation papers choose to use the mean background mass density of the simulation. \asv{Is there a citation to be used for this? Or is this considered common knowledge within the field?} Furthermore, the overdensity often used can typically vary from 178 (from basic spherical collapse) to 200 (a common simulation definition) to 337 (``virial'' in $\Lambda\mathrm{CDM}$). This can lead to a ten to twenty percent difference in the measured halo radius between two measurements. We instead choose to define the halo radius to encompass any nearby environmental effects. These may be due to large-scale structure or driven by baryonic physics. Using a simulated box, we then test how the redefinition of halo size affects the relationship between clustering and halo properties. In the case that halo properties become independent of the clustering, it is possible to utilize standard implementations of the halo model without necessitating more complicated modeling.\asv{Perhaps I should specifically list halo merger trees as something to be avoided due to computational cost here to motivate the work?}
  
-In \S~\ref{section:data} of this paper, we discuss the simulated cosmological boxes that we utilize for our statistics and the halo finder utilized. In \S~\ref{section:haloprops}, we consider the properties of interest within our halo simulation and their standard definitions. In \S~\ref{section:methodology}, we discuss the statistics that we have used in order to test for environmental effects and the removal of known mass scaling from these statistics. In \S~\ref{section:results}, we present our results on our tests and consider how each definition affects assembly bias. In \S~\ref{section:conclusions}, we discuss the significance of reducing environmental effects through a redefinition of halo environments and discuss possible applications of our methodology. We also consider the nature of assembly bias as a function of halo definition.
+In \S~\ref{section:data} of this paper, we discuss the cosmological simulations that we analyze and how halos are identified. In \S~\ref{section:haloprops}, we consider the properties of interest within our halo simulation and their standard definitions. In \S~\ref{section:methodology}, we discuss the statistics that we use to measure assembly bias and the removal of known mass scaling from our halo properties. In \S~\ref{section:results}, we present our results and consider how the change of halo definition impacts measures of assembly bias. In \S~\ref{section:conclusions}, we discuss the significance of reducing environmental effects through a redefinition of halo environments and discuss possible applications of our methodology. We also consider the nature of assembly bias as a function of halo definition.
 
 %------------------------------------
 \section[]{Simulations and Halo Identification}
@@ -86,33 +86,43 @@ In \S~\ref{section:data} of this paper, we discuss the simulated cosmological bo
 
 In order to study the effects of halo redefinition, we use three cosmological $N$-body simulations of structure formation. The \citet{diemer15} simulations each utilize a Planck best-fit cosmology with $\Om = 0.32$, $\Ol = 0.68$, and $h_{\mathrm{o}} = 0.67$. We use three simulation boxes with comoving sizes of 125, 250, and 500 $\hMpc$ respectively. The particle masses are $1.6 \times 10^8$, $1.3 \times 10^9$, and $1.0 \times 10^{10} \hMsun$ respectively, implying a total of $1024^3$ particles in each simulation. Furthermore, the three simulations have different force softening scales of $2.4$, $5.8$, and $14 \hkpc$. We refer to each simulation as \simA, \simB, or \simC  \ for the remainder of the paper. This set of simulations allows us to probe the resolution effects inherent in halo finding (due to the varying resolutions of the simulations) and to probe the mass dependence of halo clustering over a wider range of halo masses than would be possible with only one simulation from the set. In particular, \simA~, with its higher resolution, contains the least massive resolved halos, while \simC~has the most robust statistics for the most massive halos as a result of the larger simulation volume.
 
-To identify halos, we use the ROCKSTAR halo finder, which works on the phase space algorithm described in \citet*{behroozi13}. In short, ROCKSTAR determines the initial groupings using a Friends-of-Friends algorithm in phase space before applying the spherical overdensity halo definition in order to determine halo properties of interest. Unbound particles are removed prior to the calculation of halo mass and other halo properties. 
-
 \arz{The following sentences here seem out of place.}
-In addition, we take interest of the shape of the halo, which is determined through the sorted eigenvalues of the inertia tensor, with principal ellipsoid axes defined such that $a >b > c$. Some of these parameters are determined after fitting the particles to the Navarro-Frenk-White profile \citet*{nfw97}.
+%%In addition, we take interest of the shape of the halo, which is determined through the sorted eigenvalues of the inertia tensor, with principal ellipsoid axes defined such that $a >b > c$. %%Some of these parameters are determined after fitting the particles to the Navarro-Frenk-White profile \citet*{nfw97}.
+\asv{Probably was attempting to tie it to the rest of the ROCKSTAR calculation, but I'll shift mention of this specifically to the properties section.}
+
+\asv{new attempt at a paragraph that should be more structurally sound, I hope. The old version is commented out for comparison.}
+To identify halos, we use the ROCKSTAR halo finder, which works on the phase space algorithm described in \citet*{behroozi13}. In short, ROCKSTAR determines the initial groupings using a Friends-of-Friends algorithm in phase space before applying the spherical overdensity halo definition in order to determine halo properties of interest. Unbound particles are removed prior to the calculation of halo mass and other halo properties. Our method of halo redefinition is to change how halo size is calculated as part of the ROCKSTAR pipeline. A halo is given a radius, $\Rdel$, determined by
+\beq
+	\bar{\rho}(\Rdel) = \Delta \rho_{\mathrm{m}}.
+\eeq
+The mean density within a spherical volume of radius $\Rdel$ is $\bar{\rho}$, $\Delta$ is the overdensity parameter, and $\rho_{\mathrm{m}}$ is the mean background mass density of the entire simulation. The resulting halo size calculation can have a large variation depending on the definition $\rho_{\mathrm{m}}$ and the choice of $\Delta$. The former can often be substituted by the critical background mass density. The number chosen for $\Delta$ can vary drastically in the literature from $\Delta = 337$ to $\Delta = 178$. We choose to change the size of a halo by treating the overdensity parameter as a tunable choice, expanding the range from $\Delta = 340$ to $\Delta = 10$. While more drastic than the differences between the commonly made choices, this may allow us to account for environmental effects by subsuming them into a larger halo.
 
 \arz{Try this paragraph again. It is rambling. Also it has structural flaws such as referring to $\Delta$ before defining $\Delta$.} 
-While the definition of halo size is fairly straightforward, the individual choices that make up the calculation are not particularly well-motivated. While the virial radius of a halo may be one natural choice, simulations have shown that it often misses gravitationally bound particles \citep*{kazan06}. Halo size has become a matter of definition, with $\Delta=200$ being the most common choice within the literature. However, it is not uncommon to see calculations carried out utilizing $\Delta = 178$, as derived through spherical collapse models, or $\Delta = 337$, as calculated in the case of $\Lambda\mathrm{CDM}$. Given the lack of a well-motivated standard, we choose to redefine the halo in terms of the overdensity parameter, $\Delta$, by defining the halo radius, $\Rdel$, as follows:
-\beq
-	\bar{\rho}(\Rdel) = \Delta\, \rho_{\mathrm{m}}
-\eeq
-Here, $\rho_{\mathrm{m}}$ is the mean background mass density of the simulation box, while $\bar{\rho}$ is the mean density within $\Rdel$. It should be noted that the use of the critical density or the mean background mass density is interchanged within the literature. The difference between these two values can be as high as a factor of a few, which will then carry forward into the calculation. We allow the overdensity parameter $\Delta$ to vary over the range of the fiducial definition of $\Delta = 200$ down to values as low as $\Delta = 10$. As discussed above, this change is motivated due to the fact that the definition of halo size is primarily a matter of convention.
+%%While the definition of halo size is fairly straightforward, the individual choices that make up the calculation are not particularly well-motivated. While the virial radius of a halo may be one %%natural choice, simulations have shown that it often misses gravitationally bound particles \citep*{kazan06}. Halo size has become a matter of definition, with $\Delta=200$ being the %%most common choice within the literature. However, it is not uncommon to see calculations carried out utilizing $\Delta = 178$, as derived through spherical collapse models, or $\Delta = %%337$, as calculated in the case of $\Lambda\mathrm{CDM}$. Given the lack of a well-motivated standard, we choose to redefine the halo in terms of the overdensity parameter, $\Delta$, %%by defining the halo radius, $\Rdel$, as follows:
+%%\beq
+%%	\bar{\rho}(\Rdel) = \Delta\, \rho_{\mathrm{m}}
+%%\eeq
+%%Here, $\rho_{\mathrm{m}}$ is the mean background mass density of the simulation box, while $\bar{\rho}$ is the mean density within $\Rdel$. It should be noted that the use of the %%critical density or the mean background mass density is interchanged within the literature. The difference between these two values can be as high as a factor of a few, which will then %%carry forward into the calculation. We allow the overdensity parameter $\Delta$ to vary over the range of the fiducial definition of $\Delta = 200$ down to values as low as $\Delta = %%10$. As discussed above, this change is motivated due to the fact that the definition of halo size is primarily a matter of convention.
 
 %-------------------------------------
 \section{Halo Properties}
 \label{section:haloprops}
 %-------------------------------------
 
-We explore the clustering of halos as a function of a number of halo properties that are commonly explored in the 
-literature and can be easily measured for a halo from an individual simulation snapshot. The first of these is the 
-halo concentration parameter, 
+We explore the clustering of halos as a function of a number of halo properties that are explored in the 
+literature and can be measured for a halo from an individual simulation snapshot. Halo particles are also fit to a Navarro-Frenk-White (NFW) profile \citep{nfw97},
+\beq
+\rho(r) = \frac{\rho_0}{\frac{r}{r_{\mathrm{s}}}(1+\frac{r}{r_{\mathrm{s}}})^2},
+\eeq
+where $\rho$ is the halo density profile and $\rho_0$ and the scale radius, $r_{\mathrm{s}}$, are fit parameters that vary from halo to halo. This allows us to define the halo concentration as
 \beq
 c_{\mathrm{NFW}} = \frac{\Rdel}{r_\mathrm{s}},
 \eeq
-where $\Rdel$ is the radius of the halo given an overdensity parameter $\Delta$ used to define the halo and 
+where $\Rdel$ is the radius of the halo given an overdensity parameter $\Delta$ defining the halo and 
 $r_{\mathrm{s}}$ is the halo scale radius. \arz{The scale radius has not yet been defined. How will 
 the reader know what it is? How is it computed? You should probable introduce the NFW profile here 
-rather than above (see my earlier comment on that).}
+rather than above (see my earlier comment on that).}\asv{Should be fixed, although I am a little uncertain as to the introduction of the NFW Profile.}
+
 We also use an additional measure of the concentration of the halo density profile, 
 \beq
 c_{\mathrm{V}} = \frac{V_{\mathrm{max}}}{V_{\Delta}}, 
@@ -126,13 +136,12 @@ Halo concentrations are useful to explore for these purposes for a number of rea
 of concentrations is of direct interest in modeling galaxy clustering and gravitational lensing statistics. Secondly, 
 concentrations can be measured 
 from individual simulation snapshots relatively easily yet halo concentrations are known to be strongly correlated with the formation 
-histories of dark matter halos with earlier forming halos having higher concentrations at fixed halo mass 
+histories of dark matter halos with earlier forming halos having higher concentrations at fixed halo mass\citep{wechsler02, wechsler06} 
 \arz{Cite papers here like Wechsler et al. 2002}. As such, exploring the concentration dependence of halo clustering may 
 yield insight into the age dependence of halo clustering without the need for constructing merger trees. This 
 is particularly important in the present study in which the halo finding is performed repeatedly and constructing a 
 merger tree for each run of the halo finder with different $\Delta$ can be prohibitive. We will explore measures of 
 halo age directly in a forthcoming follow-up study dedicated to halo formation histories.
-
 
 Figure~\ref{fig:cnfwrelation} shows the mean $c_{\mathrm{NFW}}$-$M_{\Delta}$ relation for halos defined with $\Delta=200$ 
 in \simA, \simB, and \simC. For each simulation, we consider halos only above a minimum mass, as shown in Fig.~\ref{fig:cnfwrelation}, to ensure that concentration measurements are not compromised by resolution. Likewise, Figure~\ref{fig:cvrelation} shows the analogous 
@@ -166,7 +175,7 @@ with relatively small scatter indicating that these two quantities largely conta
 \centering
 \includegraphics[width=.5\textwidth]{L0250_compare_cnfwvcV_z00.pdf}
 \caption{
-The relationship between the two different marks of concentration, using halos in \simB. 
+The relationship between the two different marks of concentration, using halos in \simB. The color scale demonstrates the number of halos within a single binning in the concentration space, where redder colors demonstrate where the bulk of halos lie on this relation. 
 \arz{This is not sufficiently specific as a caption. For example, you don't say what the color code is 
 or what the color scale is.}
 }
@@ -232,13 +241,18 @@ of $\Delta$). We use thresholds determined by the particular case under consider
 limitations do not drive any of our primary results. A higher mass threshold means that we do not have any 
 issues due to halo resolution, but of course, higher mass thresholds reduce statistical power. As an example, we 
 summarize the mass thresholds we have used for a subset of $\Delta$ values in Table~\ref{table:thresholds}. 
-At most values of $\Delta$, the minimum mass thresholds are driven by the requirement that the shape parameter, $s$, 
-not suffer significantly from finite resolution effects. \arz{Please check the veracity of this last sentence. Some such 
-sentence summarizing the factors that limit our mass cuts should be in the paper.}
+At most values of $\Delta$, the minimum mass thresholds are driven by the requirement that the halo properties do 
+not suffer significantly from finite resolution effects; if too many low mass halos are included, the true relations
+can be lost in halos which have insufficient numbers of particles for robust statistics on an individual property.
+ \arz{Please check the veracity of this last sentence. Some such 
+sentence summarizing the factors that limit our mass cuts should be in the paper.}\asv{Slightly modifying this statement due to the fact that I think 
+that multiple parameters are brushed up against the lower limits of the mass cuts.}
 
 \arz{In the table, don't ``low mass," ``mid mass," and ``high mass" correspond to the different simulations? For example, 
 low mass corresponds to \simA~and so on? If not, then I don't understand. If so, then 
 you should label each cut by the relevant simulation name as well.}
+\asv{We use the various mass cuts across simulations, so I was going for a more general name - e.g. we use high mass on both L0250 and L0500, which allows us to probe
+if the relation is driven by the simulation size or the actual mass threshold. I can swap out to more specific names though, but I thought that might cause confusion.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table*}
@@ -267,6 +281,7 @@ Cutoff Name \ \  & $\Delta=200$ & $\Delta=100$ & $\Delta=75$ & $\Delta=50$ \\
 \arz{I would like to see another figure here. I would like to see $M_{200}$ on the x-axis and $M_{\Delta}$ on the y-axis. 
 What should be plotted is the mean $M_{\delta}$ as a function of $M_{200}$ for all halos common to both catalogs. This 
 will be a nice informative plot for the reader and will help the reader to digest the table.}
+\asv{Will do using the halo matched catalogs - in progress.}
 
 %-----------------------
 \section[]{Halo Clustering as a function of Auxiliary Halo Properties}
@@ -277,14 +292,16 @@ will be a nice informative plot for the reader and will help the reader to diges
 Aren't the mass limits determined as you stated in the previous section for each simulation and for each $\Delta$? If so, 
 why does this all need to be repeated here? Perhaps you can just get rid of this paragraph if you are giving this information 
 in the previous section. That would be my preference for logical flow.}
-There are several well understood effects in our simulation that must be accounted for before we can draw any conclusions. The first is the matter of simulation resolution. In each of our generated halo catalogs, we can anticipate finding artificial halos. While existing under our constraint of having only a set overdensity, they will have properties that conflict with well known trends that have been shown in prior works, such as concentration decreasing as a function of halo mass \citep{wechsler06}. As shown in Figure~\ref{fig:cnfwrelation}, we can roughly identify the region in which these artificial halos become significant by determining where the monotonic relationship between concentration and mass breaks at low mass. In order to avoid our halo finding statistics being thrown off by these artificial halos, we set a lower mass threshold, limiting the sample to only those halos that are physically significant. We have chosen our threshold to be set by \simB \ in order to minimize the shift to the remaining catalogs.
+\asv{Agreed. I think this is probably a repeat at this point. There is nothing special about any given simulation.}
+%%There are several well understood effects in our simulation that must be accounted for before we can draw any conclusions. The first is the matter of simulation resolution. In each of our %%generated halo catalogs, we can anticipate finding artificial halos. While existing under our constraint of having only a set overdensity, they will have properties that conflict with well %%known trends that have been shown in prior works, such as concentration decreasing as a function of halo mass \citep{wechsler06}. As shown in Figure~\ref{fig:cnfwrelation}, we can %%roughly identify the region in which these artificial halos become significant by determining where the monotonic relationship between concentration and mass breaks at low mass. In order %%to avoid our halo finding statistics being thrown off by these artificial halos, we set a lower mass threshold, limiting the sample to only those halos that are physically significant. We have %%chosen our threshold to be set by \simB \ in order to minimize the shift to the remaining catalogs.
 
 %----------------------------------------------------------
 \subsection{Auxiliary Halo Properties}
 
 \arz{I thought that the Duffy et al. paper only looked at concentration? Is this correct? Either way, there is an 
 Allgood et al. paper that comprehensively examines this for various halo properties and should be cited here.}
-Another well known effect is the scaling of our properties as a function of halo mass, as well demonstrated within the literature \citep{duffy08}. We are interested in studying the clustering behavior of halos as a function of properties other than mass. As mass is the dominant halo property correlated with halo clustering strength and environment, we refer to the additional properties that we study as 
+\asv{Found an Allgood paper that is looking at shape, but I'll do a lit search to see if I can't find something else explicit about some of the other parameters}
+Another well known effect is the scaling of our properties as a function of halo mass, as well demonstrated within the literature \citep{allgood06, duffy08}. We are interested in studying the clustering behavior of halos as a function of properties other than mass. As mass is the dominant halo property correlated with halo clustering strength and environment, we refer to the additional properties that we study as 
 ``auxiliary halo properties" (those properties other than mass, such as concentration $c_{\rm NFW}$ or shape $s$). 
 
 Most contemporary cosmological $N$-body simulations, including the set that we study here, 
@@ -295,10 +312,9 @@ selected according to minimum mass thresholds. To do so, we remove the mass depe
 the auxiliary properties as follows. 
 
 We take all host halos of interest and sort them by their halo mass, $M_{\Delta}$. 
-Each set of halo properties is then placed in bins of equal population in order to assure 
-that enough data points exist for robust statistics. We then normalize each mark in a 
-given bin to the mean value. The end result is halo properties that do not 
-change as a function of mass, allowing us to more accurately analyze clustering behavior within our simulation. 
+Ten equally spaced bins of log mass are generated to sort these halos into, ensuring that no bin has one or zero halos. The mean value of each halo property is calculated within each bin, and subtracted from the recorded value for each halo in the bin. This removes the strong mass trend in each of these properties, allowing us to avoid a need to just look at halos at some fixed mass. We use these mass-dependence removed concentrations, shapes, and spins in all calculations throughout the paper.
+\asv{More detail is given. I'm not necessarily comfortable with the current ten bin situation and could conceivably switch back to equally populated bins, which allows for more total
+bins with halos to look at, but unevenly spaced in log mass.}
 \arz{First, you need some equations here. It is unclear to the reader what the word ``normalize" means 
 in this context. YOU MUST provide enough information so that someone with access to these simulations 
 could reproduce your calculations. Also, you don't give important details. How many are in the ``equal populations" 

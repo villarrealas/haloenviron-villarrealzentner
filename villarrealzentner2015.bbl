@@ -8,6 +8,11 @@
   {Weinberg}}{2002}]{berlind02}
 {Berlind} A.~A.,  {Weinberg} D.~H.,  2002, \apj, 575, 587
 
+\bibitem[\protect\citeauthoryear{{Blumenthal}, {Faber}, {Primack} \&
+  {Rees}}{{Blumenthal} et~al.}{1984}]{blumenthal84}
+{Blumenthal} G.~R.,  {Faber} S.~M.,  {Primack} J.~R.,    {Rees} M.~J.,  1984,
+  \nat, 311, 517
+
 \bibitem[\protect\citeauthoryear{{Bond}, {Cole}, {Efstathiou} \&
   {Kaiser}}{{Bond} et~al.}{1991}]{bond91}
 {Bond} J.~R.,  {Cole} S.,  {Efstathiou} G.,    {Kaiser} N.,  1991, \apj, 379,
@@ -61,10 +66,6 @@
   {Cole}}{1993}]{lacey93}
 {Lacey} C.,  {Cole} S.,  1993, \mnras, 262, 627
 
-\bibitem[\protect\citeauthoryear{{Navarro}, {Frenk} \& {White}}{{Navarro}
-  et~al.}{1997}]{nfw97}
-{Navarro} J.~F.,  {Frenk} C.~S.,    {White} S.~D.~M.,  1997, \apj, 490, 493
-
 \bibitem[\protect\citeauthoryear{{Peacock} \& {Smith}}{{Peacock} \&
   {Smith}}{2000}]{peacock00}
 {Peacock} J.~A.,  {Smith} R.~E.,  2000, \mnras, 318, 1144
@@ -98,6 +99,11 @@
 {Velliscig} M.,  {Cacciato} M.,  {Schaye} J.,  {Bower} R.~G.,  {Crain} R.~A.,
   {van Daalen} M.~P.,  {Dalla Vecchia} C.,  {Frenk} C.~S.,  {Furlong} M.,
   {McCarthy} I.~G.,  {Schaller} M.,    {Theuns} T.,  2015, ArXiv e-prints
+
+\bibitem[\protect\citeauthoryear{{Wechsler}, {Bullock}, {Primack}, {Kravtsov}
+  \& {Dekel}}{{Wechsler} et~al.}{2002}]{wechsler02}
+{Wechsler} R.~H.,  {Bullock} J.~S.,  {Primack} J.~R.,  {Kravtsov} A.~V.,
+  {Dekel} A.,  2002, \apj, 568, 52
 
 \bibitem[\protect\citeauthoryear{{Wechsler}, {Zentner}, {Bullock}, {Kravtsov}
   \& {Allgood}}{{Wechsler} et~al.}{2006}]{wechsler06}
