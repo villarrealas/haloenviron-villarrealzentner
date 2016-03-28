@@ -136,7 +136,7 @@ Halo concentrations are useful to explore for these purposes for a number of rea
 of concentrations is of direct interest in modeling galaxy clustering and gravitational lensing statistics. Secondly, 
 concentrations can be measured 
 from individual simulation snapshots relatively easily yet halo concentrations are known to be strongly correlated with the formation 
-histories of dark matter halos with earlier forming halos having higher concentrations at fixed halo mass\citep{wechsler02, wechsler06} 
+histories of dark matter halos with earlier forming halos having higher concentrations at fixed halo mass \citep{wechsler02, wechsler06} 
 \arz{Cite papers here like Wechsler et al. 2002}. As such, exploring the concentration dependence of halo clustering may 
 yield insight into the age dependence of halo clustering without the need for constructing merger trees. This 
 is particularly important in the present study in which the halo finding is performed repeatedly and constructing a 
@@ -177,7 +177,7 @@ with relatively small scatter indicating that these two quantities largely conta
 \caption{
 The relationship between the two different marks of concentration, using halos in \simB. The color scale demonstrates the number of halos within a single binning in the concentration space, where redder colors demonstrate where the bulk of halos lie on this relation. 
 \arz{This is not sufficiently specific as a caption. For example, you don't say what the color code is 
-or what the color scale is.}
+or what the color scale is.}\asv{Hopefully that is sufficient! I'll look into making a label for the color bar though as well, so that it is visible by eye.}
 }
 \label{fig:concentrations}
 \end{figure}
@@ -395,8 +395,7 @@ lock yourself into 20\% in the text. There is absolutely nothing special about 2
 would be interesting to see if things change as this percentile changes, perhaps try 50\% and 
 10\%. We should at least know what those figures look like before proceeding to publication, 
 so you should make them even though we likely won't include them in the main text of 
-the paper. It could be very informative and will almost certainly be useful when giving talks.}
-The first is to look at the two-point correlation functions of the host halo catalogs. We take the difference between the samples of the top 20\% and bottom 20\% in normalized concentration, and then normalize these results by the overall correlation function.. Assuming that each halo was statistically similar, regardless of host halo clustering, we would expect that this statistic would approach zero at all scales.
+the paper. It could be very informative and will almost certainly be useful when giving talks.}\asv{Removed - the new framework with halo tools makes it easier to test any cut that we want in short order as well.}
 
 
 
@@ -406,11 +405,9 @@ The first is to look at the two-point correlation functions of the host halo cat
 %----------------------------
 
 \arz{We don't need to reiterate all of this stuff about the mass cuts. Just make sure the discussion in the simulations section is complete and then we can move forward. Again, I suggest changing the names of your cuts. It would be great if they can signify something either about the ACTUAL MASS involved in the cut or the simulation or possibly BOTH! Perhaps you can say the ``L0125" cut and so on? 
-If you get everything specified in the simulation section, then this paragraph is completely unnecessary.}
-The ``mid mass" set of cuts has been chosen for our preliminary analysis choice, as it gives us a healthy balance between mass resolution and robust statistics. Figure~\ref{fig:cnfwrelation} shows an example of this cutoff in the $\Delta = 200$ case as a red line. 
+If you get everything specified in the simulation section, then this paragraph is completely unnecessary.}\asv{Removed - still debating how to name these cuts.}
 \arz{It seems to me that we DO include \simC~!! Even if we don't we should. Let's treat each simulation as simply sampling a different 
-range of halo masses. That is the most useful way to proceed.}
-We do not include \simC \ in this initial analysis, as that simulation holds several bins of halos deviating significantly from a monotonic mass-concentration relation. This may be a result of including halos that are unphysical, but still meets the halo-finding algorithm's requirements.  The remaining two cuts have been chosen to explore any resolution related effects. The ``low mass'' cuts explore the lowest possible mass cutoff that excludes ill resolved halos in the \citet{diemer15} simulations, while the ``high mass'' set of cuts represent the mass cutoff chosen to avoid contamination due to resolution effects in our largest simulation box.
+range of halo masses. That is the most useful way to proceed.}\asv{Also removed - this was leftover from the old plots, before L0500 was included in all the plots.}
 
 %-----------------------------------------------
 \subsection{Correlation Functions}
@@ -419,13 +416,13 @@ We do not include \simC \ in this initial analysis, as that simulation holds sev
 \arz{Fix up and fill in numbers as needed, but follow this general format.}
 We begin by studying the correlation functions of halos in our mass threshold samples, sub-selected by auxiliary properties. 
 Figure~\ref{fig:cc_cfcompare} exhibits the difference between the clustering strength of halos in the $20^{\mathrm{th}}$ percentile highest concentrations and the halos with the halos that have the $20^{\mathrm{th}}$ percentile lowest concentrations as a function of the overdensity parameter $\Delta$, used to define the halos. First, it is clear that clustering strength generally depends upon the auxiliary properties of halos at all halo mass thresholds. Second, it is clear that the strength and sign of assembly bias is 
-strongly mass dependent, a result that agrees with the significant previous literature on halo assembly bias \arz{Cite all the usual 
-papers here, Gao, Wechsler, Harker, Zentner07, Dalal07, probably several more.} At relatively low mass (the L0125 panel, 
-$M_{200} > number$), high-concentration halos are considerably more strongly concentrated 
+strongly mass dependent, a result that agrees with the significant previous literature on halo assembly bias \citep{wechsler02, gao05, wechsler06, harker06, zentner06, croton07, dalal08}\arz{Cite all the usual 
+papers here, Gao, Wechsler, Harker, Zentner07, Dalal07, probably several more.}\asv{I think that is most of the usual suspects, but I'll do a double check for more important ones!} At relatively low mass (the L0125 panel, 
+$M_{200} > 7 \times 10^{10} \hMsun$), high-concentration halos are considerably more strongly concentrated 
 than low-concentration halos using the more 
-conventional $\Delta = 200$ definition for halos. At somewhat higher halo masses (the L0250 panel, $M_{200} > number$), this 
+conventional $\Delta = 200$ definition for halos. At somewhat higher halo masses (the L0250 panel, $M_{200} > 7 \times 10^{11} \hMsun$), this 
 difference is markedly reduced. Finally, for the highest mass halos that we have the capability of studying (the L0500 panel, 
-$M_{200} > number$), the effect is of opposite sign; low-concentration halos are more strongly correlated than high-concentration halos.
+$M_{200} > 4 \times 10^{12} \hMsun$), the effect is of opposite sign; low-concentration halos are more strongly correlated than high-concentration halos.
 
 \arz{The language in this paragraph is way too loose and not sufficiently clear or professional. What does it mean to be a ``reasonable" mass range, for example? I'll attemp to clean it up. Try to follow this model in your writing. Compare my version:}
 Focus first on the middle panel of Fig.~\ref{fig:cc_cfcompare}. In this panel, corresponding to the 

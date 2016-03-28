@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.1.31)  23 MAR 2016 15:13
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.1.31)  28 MAR 2016 14:27
 entering extended mode
 **villarrealzentner2015.tex
 
@@ -417,12 +417,7 @@ Underfull \hbox (badness 1107) in paragraph at lines 93--95
 []\OT1/cmr/bx/n/9 [ASV: new at-tempt at a para-graph that
  []
 
-[2]
-
-Package natbib Warning: Citation `nfw97' on page 3 undefined on input line 113.
-
-
-<masscut_cnfw_d200.pdf, id=26, 578.16pt x 433.62pt>
+[2] <masscut_cnfw_d200.pdf, id=26, 578.16pt x 433.62pt>
 File: masscut_cnfw_d200.pdf Graphic file (type pdf)
 
 <use masscut_cnfw_d200.pdf>
@@ -500,22 +495,21 @@ pdfTeX warning: pdflatex.exe (file C:/Users/Antonio/Documents/haloenviron/haloe
 nviron-villarrealzentner/masscut_spin_d200.pdf): PDF inclusion: multiple pdfs w
 ith page group included in a single page
 >]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Package natbib Warning: Citation `allgood06' on page 5 undefined on input line 
-304.
-
-[5] [6] [7] <all_cfhilow_z00_cutcomp.pdf, id=822, 289.08pt x 578.16pt>
+ [5]
+[6] [7] <all_cfhilow_z00_cutcomp.pdf, id=822, 289.08pt x 578.16pt>
 File: all_cfhilow_z00_cutcomp.pdf Graphic file (type pdf)
 
 <use all_cfhilow_z00_cutcomp.pdf>
-Package pdftex.def Info: all_cfhilow_z00_cutcomp.pdf used on input line 463.
+Package pdftex.def Info: all_cfhilow_z00_cutcomp.pdf used on input line 460.
 (pdftex.def)             Requested size: 191.99707pt x 383.99518pt.
 
 <all_mcf_cnfw_z00_cutcomp.pdf, id=823, 289.08pt x 578.16pt>
 File: all_mcf_cnfw_z00_cutcomp.pdf Graphic file (type pdf)
 
 <use all_mcf_cnfw_z00_cutcomp.pdf>
-Package pdftex.def Info: all_mcf_cnfw_z00_cutcomp.pdf used on input line 490.
+Package pdftex.def Info: all_mcf_cnfw_z00_cutcomp.pdf used on input line 487.
 (pdftex.def)             Requested size: 191.99707pt x 383.99518pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -526,7 +520,7 @@ pt>
 File: all_mcf_cV_z00_cutcomp.pdf Graphic file (type pdf)
 
 <use all_mcf_cV_z00_cutcomp.pdf>
-Package pdftex.def Info: all_mcf_cV_z00_cutcomp.pdf used on input line 527.
+Package pdftex.def Info: all_mcf_cV_z00_cutcomp.pdf used on input line 524.
 (pdftex.def)             Requested size: 191.99707pt x 383.99518pt.
  [9 <C:/Users/Antonio/Documents/haloenviron/haloenviron-villarrealzentner/all_m
 cf_cnfw_z00_cutcomp.pdf> <C:/Users/Antonio/Documents/haloenviron/haloenviron-vi
@@ -539,61 +533,62 @@ dfs with page group included in a single page
 File: all_mcf_s_z00_cutcomp.pdf Graphic file (type pdf)
 
 <use all_mcf_s_z00_cutcomp.pdf>
-Package pdftex.def Info: all_mcf_s_z00_cutcomp.pdf used on input line 556.
+Package pdftex.def Info: all_mcf_s_z00_cutcomp.pdf used on input line 553.
 (pdftex.def)             Requested size: 191.99707pt x 383.99518pt.
 
 <all_mcf_spin_z00_cutcomp.pdf, id=997, 289.08pt x 578.16pt>
 File: all_mcf_spin_z00_cutcomp.pdf Graphic file (type pdf)
 
 <use all_mcf_spin_z00_cutcomp.pdf>
-Package pdftex.def Info: all_mcf_spin_z00_cutcomp.pdf used on input line 570.
+Package pdftex.def Info: all_mcf_spin_z00_cutcomp.pdf used on input line 567.
 (pdftex.def)             Requested size: 191.99707pt x 383.99518pt.
 
 <all_mcf_nsat_z00_cutcomp.pdf, id=998, 289.08pt x 578.16pt>
 File: all_mcf_nsat_z00_cutcomp.pdf Graphic file (type pdf)
 
 <use all_mcf_nsat_z00_cutcomp.pdf>
-Package pdftex.def Info: all_mcf_nsat_z00_cutcomp.pdf used on input line 583.
+Package pdftex.def Info: all_mcf_nsat_z00_cutcomp.pdf used on input line 580.
 (pdftex.def)             Requested size: 191.99707pt x 383.99518pt.
 
-Underfull \hbox (badness 1092) in paragraph at lines 616--617
+Underfull \vbox (badness 1325) has occurred while \output is active []
+
+ [10 <C:/Users/Antonio/Documents/haloenviron/haloenviron-villarrealzentner/all_
+mcf_s_z00_cutcomp.pdf> <C:/Users/Antonio/Documents/haloenviron/haloenviron-vill
+arrealzentner/all_mcf_spin_z00_cutcomp.pdf
+
+pdfTeX warning: pdflatex.exe (file C:/Users/Antonio/Documents/haloenviron/haloe
+nviron-villarrealzentner/all_mcf_spin_z00_cutcomp.pdf): PDF inclusion: multiple
+ pdfs with page group included in a single page
+>]
+Underfull \hbox (badness 1092) in paragraph at lines 613--614
 \OT1/cmr/bx/n/9 of its im-por-tance. Look in the lit-er-a-ture to
  []
 
 
-Underfull \hbox (badness 2359) in paragraph at lines 616--617
+Underfull \hbox (badness 2359) in paragraph at lines 613--614
 \OT1/cmr/bx/n/9 mea-sured in the lit-er-a-ture be-fore. Look at
  []
 
-[10 <C:/Users/Antonio/Documents/haloenviron/haloenviron-villarrealzentner/all_m
-cf_s_z00_cutcomp.pdf>]
-Underfull \hbox (badness 1348) in paragraph at lines 643--650
+
+Underfull \hbox (badness 1348) in paragraph at lines 640--647
 []\OT1/cmr/m/n/9 Clearly, the halo def-i-ni-tion that best mit-i-gates
  []
 
 [11 <C:/Users/Antonio/Documents/haloenviron/haloenviron-villarrealzentner/all_m
-cf_spin_z00_cutcomp.pdf> <C:/Users/Antonio/Documents/haloenviron/haloenviron-vi
-llarrealzentner/all_mcf_nsat_z00_cutcomp.pdf
-
-pdfTeX warning: pdflatex.exe (file C:/Users/Antonio/Documents/haloenviron/haloe
-nviron-villarrealzentner/all_mcf_nsat_z00_cutcomp.pdf): PDF inclusion: multiple
- pdfs with page group included in a single page
->] <all_mcf_cnfw_z00_hostsvmatch.pdf, id=1179, 578.16pt x 361.35pt>
+cf_nsat_z00_cutcomp.pdf>]
+<all_mcf_cnfw_z00_hostsvmatch.pdf, id=1179, 578.16pt x 361.35pt>
 File: all_mcf_cnfw_z00_hostsvmatch.pdf Graphic file (type pdf)
 
 <use all_mcf_cnfw_z00_hostsvmatch.pdf>
-Package pdftex.def Info: all_mcf_cnfw_z00_hostsvmatch.pdf used on input line 72
-2.
+Package pdftex.def Info: all_mcf_cnfw_z00_hostsvmatch.pdf used on input line 71
+9.
 (pdftex.def)             Requested size: 431.99707pt x 269.9973pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 
 <all_mcf_cV_z00_hostsvmatch.pdf, id=1180, 578.16pt x 361.35pt>
 File: all_mcf_cV_z00_hostsvmatch.pdf Graphic file (type pdf)
 
 <use all_mcf_cV_z00_hostsvmatch.pdf>
-Package pdftex.def Info: all_mcf_cV_z00_hostsvmatch.pdf used on input line 760.
+Package pdftex.def Info: all_mcf_cV_z00_hostsvmatch.pdf used on input line 757.
 
 (pdftex.def)             Requested size: 431.99707pt x 269.9973pt.
 
@@ -601,7 +596,7 @@ Package pdftex.def Info: all_mcf_cV_z00_hostsvmatch.pdf used on input line 760.
 File: all_mcf_s_z00_hostsvmatch.pdf Graphic file (type pdf)
 
 <use all_mcf_s_z00_hostsvmatch.pdf>
-Package pdftex.def Info: all_mcf_s_z00_hostsvmatch.pdf used on input line 782.
+Package pdftex.def Info: all_mcf_s_z00_hostsvmatch.pdf used on input line 779.
 (pdftex.def)             Requested size: 431.99707pt x 269.9973pt.
 
 <all_mcf_spin_z00_hostsvmatch.pdf, id=1182, 578.16pt x 361.35pt>
@@ -609,7 +604,7 @@ File: all_mcf_spin_z00_hostsvmatch.pdf Graphic file (type pdf)
 
 <use all_mcf_spin_z00_hostsvmatch.pdf>
 Package pdftex.def Info: all_mcf_spin_z00_hostsvmatch.pdf used on input line 78
-9.
+6.
 (pdftex.def)             Requested size: 431.99707pt x 269.9973pt.
 
 <all_mcf_nsat_z00_hostsvmatch.pdf, id=1183, 578.16pt x 361.35pt>
@@ -617,7 +612,7 @@ File: all_mcf_nsat_z00_hostsvmatch.pdf Graphic file (type pdf)
 
 <use all_mcf_nsat_z00_hostsvmatch.pdf>
 Package pdftex.def Info: all_mcf_nsat_z00_hostsvmatch.pdf used on input line 79
-6.
+3.
 (pdftex.def)             Requested size: 431.99707pt x 269.9973pt.
  [12]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -627,7 +622,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: plotcircles_coolwarm.pdf Graphic file (type pdf)
 
 <use plotcircles_coolwarm.pdf>
-Package pdftex.def Info: plotcircles_coolwarm.pdf used on input line 815.
+Package pdftex.def Info: plotcircles_coolwarm.pdf used on input line 812.
 (pdftex.def)             Requested size: 431.99707pt x 323.99677pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -653,22 +648,18 @@ on-villarrealzentner/all_mcf_nsat_z00_hostsvmatch.pdf
 pdfTeX warning: pdflatex.exe (file C:/Users/Antonio/Documents/haloenviron/haloe
 nviron-villarrealzentner/all_mcf_nsat_z00_hostsvmatch.pdf): PDF inclusion: mult
 iple pdfs with page group included in a single page
->]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-<all_cfhilow_z00_hostsvlow.pdf, id=1516, 578.16pt x 361.35pt>
+>] <all_cfhilow_z00_hostsvlow.pdf, id=1516, 578.16pt x 361.35pt>
 File: all_cfhilow_z00_hostsvlow.pdf Graphic file (type pdf)
 
 <use all_cfhilow_z00_hostsvlow.pdf>
-Package pdftex.def Info: all_cfhilow_z00_hostsvlow.pdf used on input line 831.
+Package pdftex.def Info: all_cfhilow_z00_hostsvlow.pdf used on input line 828.
 (pdftex.def)             Requested size: 431.99707pt x 269.9973pt.
 
 <all_mcf_cnfw_z00_hostsvlow.pdf, id=1517, 578.16pt x 361.35pt>
 File: all_mcf_cnfw_z00_hostsvlow.pdf Graphic file (type pdf)
 
 <use all_mcf_cnfw_z00_hostsvlow.pdf>
-Package pdftex.def Info: all_mcf_cnfw_z00_hostsvlow.pdf used on input line 838.
+Package pdftex.def Info: all_mcf_cnfw_z00_hostsvlow.pdf used on input line 835.
 
 (pdftex.def)             Requested size: 431.99707pt x 269.9973pt.
 
@@ -676,21 +667,21 @@ Package pdftex.def Info: all_mcf_cnfw_z00_hostsvlow.pdf used on input line 838.
 File: all_mcf_cV_z00_hostsvlow.pdf Graphic file (type pdf)
 
 <use all_mcf_cV_z00_hostsvlow.pdf>
-Package pdftex.def Info: all_mcf_cV_z00_hostsvlow.pdf used on input line 845.
+Package pdftex.def Info: all_mcf_cV_z00_hostsvlow.pdf used on input line 842.
 (pdftex.def)             Requested size: 431.99707pt x 269.9973pt.
 
 <all_mcf_s_z00_hostsvlow.pdf, id=1519, 578.16pt x 361.35pt>
 File: all_mcf_s_z00_hostsvlow.pdf Graphic file (type pdf)
 
 <use all_mcf_s_z00_hostsvlow.pdf>
-Package pdftex.def Info: all_mcf_s_z00_hostsvlow.pdf used on input line 852.
+Package pdftex.def Info: all_mcf_s_z00_hostsvlow.pdf used on input line 849.
 (pdftex.def)             Requested size: 431.99707pt x 269.9973pt.
 
 <all_mcf_spin_z00_hostsvlow.pdf, id=1520, 578.16pt x 361.35pt>
 File: all_mcf_spin_z00_hostsvlow.pdf Graphic file (type pdf)
 
 <use all_mcf_spin_z00_hostsvlow.pdf>
-Package pdftex.def Info: all_mcf_spin_z00_hostsvlow.pdf used on input line 859.
+Package pdftex.def Info: all_mcf_spin_z00_hostsvlow.pdf used on input line 856.
 
 (pdftex.def)             Requested size: 431.99707pt x 269.9973pt.
 
@@ -698,15 +689,18 @@ Package pdftex.def Info: all_mcf_spin_z00_hostsvlow.pdf used on input line 859.
 File: all_mcf_nsat_z00_hostsvlow.pdf Graphic file (type pdf)
 
 <use all_mcf_nsat_z00_hostsvlow.pdf>
-Package pdftex.def Info: all_mcf_nsat_z00_hostsvlow.pdf used on input line 866.
+Package pdftex.def Info: all_mcf_nsat_z00_hostsvlow.pdf used on input line 863.
 
 (pdftex.def)             Requested size: 431.99707pt x 269.9973pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 <all_cfhilow_z00_hostsvhigh.pdf, id=1522, 578.16pt x 361.35pt>
 File: all_cfhilow_z00_hostsvhigh.pdf Graphic file (type pdf)
 
 <use all_cfhilow_z00_hostsvhigh.pdf>
-Package pdftex.def Info: all_cfhilow_z00_hostsvhigh.pdf used on input line 875.
+Package pdftex.def Info: all_cfhilow_z00_hostsvhigh.pdf used on input line 872.
 
 (pdftex.def)             Requested size: 431.99707pt x 269.9973pt.
 
@@ -714,7 +708,7 @@ Package pdftex.def Info: all_cfhilow_z00_hostsvhigh.pdf used on input line 875.
 File: all_mcf_cnfw_z00_hostsvhigh.pdf Graphic file (type pdf)
 
 <use all_mcf_cnfw_z00_hostsvhigh.pdf>
-Package pdftex.def Info: all_mcf_cnfw_z00_hostsvhigh.pdf used on input line 882
+Package pdftex.def Info: all_mcf_cnfw_z00_hostsvhigh.pdf used on input line 879
 .
 (pdftex.def)             Requested size: 431.99707pt x 269.9973pt.
 
@@ -722,21 +716,21 @@ Package pdftex.def Info: all_mcf_cnfw_z00_hostsvhigh.pdf used on input line 882
 File: all_mcf_cV_z00_hostsvhigh.pdf Graphic file (type pdf)
 
 <use all_mcf_cV_z00_hostsvhigh.pdf>
-Package pdftex.def Info: all_mcf_cV_z00_hostsvhigh.pdf used on input line 889.
+Package pdftex.def Info: all_mcf_cV_z00_hostsvhigh.pdf used on input line 886.
 (pdftex.def)             Requested size: 431.99707pt x 269.9973pt.
 
 <all_mcf_s_z00_hostsvhigh.pdf, id=1525, 578.16pt x 361.35pt>
 File: all_mcf_s_z00_hostsvhigh.pdf Graphic file (type pdf)
 
 <use all_mcf_s_z00_hostsvhigh.pdf>
-Package pdftex.def Info: all_mcf_s_z00_hostsvhigh.pdf used on input line 896.
+Package pdftex.def Info: all_mcf_s_z00_hostsvhigh.pdf used on input line 893.
 (pdftex.def)             Requested size: 431.99707pt x 269.9973pt.
 
 <all_mcf_spin_z00_hostsvhigh.pdf, id=1526, 578.16pt x 361.35pt>
 File: all_mcf_spin_z00_hostsvhigh.pdf Graphic file (type pdf)
 
 <use all_mcf_spin_z00_hostsvhigh.pdf>
-Package pdftex.def Info: all_mcf_spin_z00_hostsvhigh.pdf used on input line 903
+Package pdftex.def Info: all_mcf_spin_z00_hostsvhigh.pdf used on input line 900
 .
 (pdftex.def)             Requested size: 431.99707pt x 269.9973pt.
 
@@ -744,7 +738,7 @@ Package pdftex.def Info: all_mcf_spin_z00_hostsvhigh.pdf used on input line 903
 File: all_mcf_nsat_z00_hostsvhigh.pdf Graphic file (type pdf)
 
 <use all_mcf_nsat_z00_hostsvhigh.pdf>
-Package pdftex.def Info: all_mcf_nsat_z00_hostsvhigh.pdf used on input line 910
+Package pdftex.def Info: all_mcf_nsat_z00_hostsvhigh.pdf used on input line 907
 .
 (pdftex.def)             Requested size: 431.99707pt x 269.9973pt.
 
@@ -812,6 +806,9 @@ pdfTeX warning: pdflatex.exe (file C:/Users/Antonio/Documents/haloenviron/haloe
 nviron-villarrealzentner/all_mcf_nsat_z00_hostsvhigh.pdf): PDF inclusion: multi
 ple pdfs with page group included in a single page
 >]
+Underfull \vbox (badness 5064) has occurred while \output is active []
+
+
 (C:\Users\Antonio\Documents\haloenviron\haloenviron-villarrealzentner\villarrea
 lzentner2015.bbl [23])
 
@@ -819,43 +816,39 @@ Package natbib Warning: There were undefined citations.
 
 [24]
 (C:\Users\Antonio\Documents\haloenviron\haloenviron-villarrealzentner\villarrea
-lzentner2015.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+lzentner2015.aux) ) 
 Here is how much of TeX's memory you used:
- 5391 strings out of 493921
- 77576 string characters out of 3144870
- 159692 words of memory out of 3000000
- 8579 multiletter control sequences out of 15000+200000
+ 5398 strings out of 493921
+ 77693 string characters out of 3144870
+ 159945 words of memory out of 3000000
+ 8586 multiletter control sequences out of 15000+200000
  17561 words of font info for 64 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 44i,15n,42p,1779b,324s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
-:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/P
-rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Prog
-ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmex9.pfb><C:/Pr
-ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Prog
-ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program
- Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Fi
-les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Program Files
- (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x
-86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files (x86)/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files (x86)/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files (x86)/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmsy9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmti8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmti9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
-onts/symbols/msam10.pfb>
-Output written on villarrealzentner2015.pdf (24 pages, 1884081 bytes).
+ 44i,15n,42p,1779b,338s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmbx8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+mbx9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra
+/cmex9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+mi10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi
+6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.p
+fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi9.pfb>
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:
+/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Pr
+ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Fi
+les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files 
+(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files (x86
+)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files (x86)/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Program Files (x86)/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmti8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmti9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
+type1/public/amsfonts/symbols/msam10.pfb>
+Output written on villarrealzentner2015.pdf (24 pages, 1884524 bytes).
 PDF statistics:
  2526 PDF objects out of 2984 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

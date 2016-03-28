@@ -1,5 +1,10 @@
 \begin{thebibliography}{}
 
+\bibitem[\protect\citeauthoryear{{Allgood}, {Flores}, {Primack}, {Kravtsov},
+  {Wechsler}, {Faltenbacher} \& {Bullock}}{{Allgood} et~al.}{2006}]{allgood06}
+{Allgood} B.,  {Flores} R.~A.,  {Primack} J.~R.,  {Kravtsov} A.~V.,  {Wechsler}
+  R.~H.,  {Faltenbacher} A.,    {Bullock} J.~S.,  2006, \mnras, 367, 1781
+
 \bibitem[\protect\citeauthoryear{{Behroozi}, {Wechsler} \& {Wu}}{{Behroozi}
   et~al.}{2013}]{behroozi13}
 {Behroozi} P.~S.,  {Wechsler} R.~H.,    {Wu} H.-Y.,  2013, \apj, 762, 109
@@ -30,6 +35,10 @@
 \bibitem[\protect\citeauthoryear{{Croton}, {Gao} \& {White}}{{Croton}
   et~al.}{2007}]{croton07}
 {Croton} D.~J.,  {Gao} L.,    {White} S.~D.~M.,  2007, \mnras, 374, 1303
+
+\bibitem[\protect\citeauthoryear{{Dalal}, {White}, {Bond} \&
+  {Shirokov}}{{Dalal} et~al.}{2008}]{dalal08}
+{Dalal} N.,  {White} M.,  {Bond} J.~R.,    {Shirokov} A.,  2008, \apj, 687, 12
 
 \bibitem[\protect\citeauthoryear{{Diemer} \& {Kravtsov}}{{Diemer} \&
   {Kravtsov}}{2015}]{diemer15}
@@ -65,6 +74,10 @@
 \bibitem[\protect\citeauthoryear{{Lacey} \& {Cole}}{{Lacey} \&
   {Cole}}{1993}]{lacey93}
 {Lacey} C.,  {Cole} S.,  1993, \mnras, 262, 627
+
+\bibitem[\protect\citeauthoryear{{Navarro}, {Frenk} \& {White}}{{Navarro}
+  et~al.}{1997}]{nfw97}
+{Navarro} J.~F.,  {Frenk} C.~S.,    {White} S.~D.~M.,  1997, \apj, 490, 493
 
 \bibitem[\protect\citeauthoryear{{Peacock} \& {Smith}}{{Peacock} \&
   {Smith}}{2000}]{peacock00}
