@@ -127,7 +127,12 @@
   {Rees}}{1978}]{white78}
 {White} S.~D.~M.,  {Rees} M.~J.,  1978, \mnras, 183, 341
 
-\bibitem[\protect\citeauthoryear{{Zentner}}{{Zentner}}{2007}]{zentner06}
+\bibitem[\protect\citeauthoryear{{Zentner}}{{Zentner}}{2007}]{zentner07}
 {Zentner} A.~R.,  2007, International Journal of Modern Physics D, 16, 763
+
+\bibitem[\protect\citeauthoryear{{Zentner}, {Berlind}, {Bullock}, {Kravtsov} \&
+  {Wechsler}}{{Zentner} et~al.}{2005}]{zentner05}
+{Zentner} A.~R.,  {Berlind} A.~A.,  {Bullock} J.~S.,  {Kravtsov} A.~V.,
+  {Wechsler} R.~H.,  2005, \apj, 624, 505
 
 \end{thebibliography}
