@@ -1,42 +1,34 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.1.31)  30 MAR 2016 15:22
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2016.4.1)  28 APR 2016 16:20
 entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
 **villarrealzentner2015.tex
-
-(C:\Users\Antonio\Documents\haloenviron\haloenviron-villarrealzentner\villarrea
-lzentner2015.tex
+(./villarrealzentner2015.tex
 LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
-abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
-croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
-lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
-ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
- lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
-german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
-ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
-an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
-ishmax, welsh, loaded.
-(C:\Users\Antonio\Documents\haloenviron\haloenviron-villarrealzentner\mn2e.cls
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, lo
+aded.
+(./mn2e.cls
 Document Class: mn2e 2001/02/06 v2.2 LaTeX2e MN document class
 Document Style `MN' v2.2, released 2001 February 20
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
-File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: dvips.def on input line 91.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\dvips.def"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/dvips.def
 File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
 ))
 \Gin@req@height=\dimen102
@@ -60,7 +52,7 @@ LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
 \@leftskip=\skip45
 \c@dummy=\count85
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\natbib\natbib.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip46
 \bibsep=\skip47
@@ -71,18 +63,18 @@ LaTeX Info: Redefining \cite on input line 694.
 \c@figure=\count88
 \mathindent=\dimen105
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
 Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count89
@@ -97,12 +89,11 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layouthoffset=\dimen112
 \Gm@layoutvoffset=\dimen113
 \Gm@dimlist=\toks16
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks17
 \symAMSa=\mathgroup5
@@ -110,29 +101,29 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\epsfig.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/epsfig.sty
 Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
 \epsfxsize=\dimen114
 \epsfysize=\dimen115
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip48
 
 For additional information on amsmath, use the `?' option.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks18
 \ex@=\dimen116
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen117
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count92
@@ -173,29 +164,29 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\color.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 130.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count104
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -209,10 +200,10 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\dvipsnam.def"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/dvipsnam.def
 File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\subfig\subfig.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
 
 
@@ -237,12 +228,11 @@ Package subfig Warning: Your document class has a bad definition
  can't take effect on \endtable.
  Please complain to your document class author.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption.sty"
-Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2013/02/03 v3.3-65 Customizing captions (AR)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption3.sty"
-Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 57.
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2013/02/03 v1.5-62 caption3 kernel (AR)
 \captionmargin=\dimen125
 \captionmargin@=\dimen126
 \captionwidth=\dimen127
@@ -276,10 +266,10 @@ Package caption Info: \@makecaption = undefined.
 \c@lotdepth=\count112
 \sf@top=\skip56
 \sf@bottom=\skip57
-) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\rotating\rotating.sty"
+) (/usr/share/texlive/texmf-dist/tex/latex/rotating/rotating.sty
 Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \c@r@tfl@t=\count113
@@ -288,7 +278,7 @@ Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 \rot@float@box=\box28
 \rot@mess@toks=\toks23
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\array.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
 Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen133
 \extrarowheight=\dimen134
@@ -297,16 +287,16 @@ Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \backup@length=\skip61
 )
 \@input{villarrealzentner_macros.aux}
+\openout2 = `villarrealzentner_macros.aux'.
 
-(C:\Users\Antonio\Documents\haloenviron\haloenviron-villarrealzentner\villarrea
-lzentner_macros.tex)
+(./villarrealzentner_macros.tex)
 
 LaTeX Warning: Unused global option(s):
     [letterpaper].
 
+(./villarrealzentner2015.aux)
+\openout1 = `villarrealzentner2015.aux'.
 
-(C:\Users\Antonio\Documents\haloenviron\haloenviron-villarrealzentner\villarrea
-lzentner2015.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
 LaTeX Font Info:    ... okay on input line 22.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
@@ -320,6 +310,52 @@ LaTeX Font Info:    ... okay on input line 22.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
 LaTeX Font Info:    ... okay on input line 22.
 
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+34.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -354,7 +390,7 @@ LaTeX Font Info:    ... okay on input line 22.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count114
 \scratchdimen=\dimen135
@@ -383,24 +419,24 @@ See the caption package documentation for explanation.
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Try loading font information for U+msa on input line 45.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 45.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 75.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 75.
- [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
+ [1{/usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 
@@ -413,28 +449,28 @@ Underfull \hbox (badness 1107) in paragraph at lines 93--95
 []\OT1/cmr/bx/n/9 [ASV: new at-tempt at a para-graph that
  []
 
-[2] <masscut_cnfw_d200.pdf, id=26, 578.16pt x 433.62pt>
-File: masscut_cnfw_d200.pdf Graphic file (type pdf)
+[2] <masscut_cNFW_d200.pdf, id=27, 433.62pt x 289.08pt>
+File: masscut_cNFW_d200.pdf Graphic file (type pdf)
 
-<use masscut_cnfw_d200.pdf>
-Package pdftex.def Info: masscut_cnfw_d200.pdf used on input line 153.
-(pdftex.def)             Requested size: 240.0pt x 179.99525pt.
+<use masscut_cNFW_d200.pdf>
+Package pdftex.def Info: masscut_cNFW_d200.pdf used on input line 153.
+(pdftex.def)             Requested size: 240.0pt x 160.00018pt.
 
 Overfull \hbox (12.0pt too wide) in paragraph at lines 153--154
  [][] 
  []
 
-<masscut_cV_d200.pdf, id=27, 578.16pt x 433.62pt>
+<masscut_cV_d200.pdf, id=28, 433.62pt x 289.08pt>
 File: masscut_cV_d200.pdf Graphic file (type pdf)
  <use masscut_cV_d200.pdf>
 Package pdftex.def Info: masscut_cV_d200.pdf used on input line 163.
-(pdftex.def)             Requested size: 240.0pt x 179.99525pt.
+(pdftex.def)             Requested size: 240.0pt x 160.00018pt.
 
 Overfull \hbox (12.0pt too wide) in paragraph at lines 163--164
  [][] 
  []
 
-<L0250_compare_cnfwvcV_z00.pdf, id=28, 578.16pt x 433.62pt>
+<L0250_compare_cnfwvcV_z00.pdf, id=29, 578.16pt x 433.62pt>
 File: L0250_compare_cnfwvcV_z00.pdf Graphic file (type pdf)
 
 <use L0250_compare_cnfwvcV_z00.pdf>
@@ -445,117 +481,86 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 176--181
  [][] 
  []
 
-
-Underfull \vbox (badness 2237) has occurred while \output is active []
-
- [3 <C:/Users/Antonio/Documents/haloenviron/haloenviron-villarrealzentner/massc
-ut_cnfw_d200.pdf>] <masscut_shape_d200.pdf, id=155, 578.16pt x 433.62pt>
+[3 <./masscut_cNFW_d200.pdf>]
+<masscut_shape_d200.pdf, id=81, 433.62pt x 289.08pt>
 File: masscut_shape_d200.pdf Graphic file (type pdf)
 
 <use masscut_shape_d200.pdf>
 Package pdftex.def Info: masscut_shape_d200.pdf used on input line 200.
-(pdftex.def)             Requested size: 240.0pt x 179.99525pt.
+(pdftex.def)             Requested size: 240.0pt x 160.00018pt.
 
 Overfull \hbox (12.0pt too wide) in paragraph at lines 200--207
  [][] 
  []
 
-<masscut_spin_d200.pdf, id=156, 578.16pt x 433.62pt>
+<masscut_spin_d200.pdf, id=82, 433.62pt x 289.08pt>
 File: masscut_spin_d200.pdf Graphic file (type pdf)
 
 <use masscut_spin_d200.pdf>
 Package pdftex.def Info: masscut_spin_d200.pdf used on input line 226.
-(pdftex.def)             Requested size: 240.0pt x 179.99525pt.
+(pdftex.def)             Requested size: 240.0pt x 160.00018pt.
 
 Overfull \hbox (12.0pt too wide) in paragraph at lines 226--233
  [][] 
  []
 
-[4 <C:/Users/Antonio/Documents/haloenviron/haloenviron-villarrealzentner/masscu
-t_cV_d200.pdf> <C:/Users/Antonio/Documents/haloenviron/haloenviron-villarrealze
-ntner/L0250_compare_cnfwvcV_z00.pdf
+[4 <./masscut_cV_d200.pdf> <./L0250_compare_cnfwvcV_z00.pdf
 
-pdfTeX warning: pdflatex.exe (file C:/Users/Antonio/Documents/haloenviron/haloe
-nviron-villarrealzentner/L0250_compare_cnfwvcV_z00.pdf): PDF inclusion: multipl
+pdfTeX warning: pdflatex (file ./L0250_compare_cnfwvcV_z00.pdf): PDF inclusion:
+ multiple pdfs with page group included in a single page
+> <./masscut_shape_d200.pdf
+
+pdfTeX warning: pdflatex (file ./masscut_shape_d200.pdf): PDF inclusion: multip
+le pdfs with page group included in a single page
+> <./masscut_spin_d200.pdf
+
+pdfTeX warning: pdflatex (file ./masscut_spin_d200.pdf): PDF inclusion: multipl
 e pdfs with page group included in a single page
-> <C:/Users/Antonio/Documents/haloenviron/haloenviron-villarrealzentner/masscut
-_shape_d200.pdf
-
-pdfTeX warning: pdflatex.exe (file C:/Users/Antonio/Documents/haloenviron/haloe
-nviron-villarrealzentner/masscut_shape_d200.pdf): PDF inclusion: multiple pdfs 
-with page group included in a single page
-> <C:/Users/Antonio/Documents/haloenviron/haloenviron-villarrealzentner/masscut
-_spin_d200.pdf
-
-pdfTeX warning: pdflatex.exe (file C:/Users/Antonio/Documents/haloenviron/haloe
-nviron-villarrealzentner/masscut_spin_d200.pdf): PDF inclusion: multiple pdfs w
-ith page group included in a single page
->]
+>] [5]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [5]
-[6] <all_cfhilow_z00_cutcomp.pdf, id=818, 289.08pt x 578.16pt>
-File: all_cfhilow_z00_cutcomp.pdf Graphic file (type pdf)
+ [6]
+<all_cfcompare_cnfw.pdf, id=528, 433.62pt x 1084.05pt>
+File: all_cfcompare_cnfw.pdf Graphic file (type pdf)
 
-<use all_cfhilow_z00_cutcomp.pdf>
-Package pdftex.def Info: all_cfhilow_z00_cutcomp.pdf used on input line 463.
-(pdftex.def)             Requested size: 191.99707pt x 383.99518pt.
- [7]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+<use all_cfcompare_cnfw.pdf>
+Package pdftex.def Info: all_cfcompare_cnfw.pdf used on input line 463.
+(pdftex.def)             Requested size: 191.99707pt x 479.99399pt.
 
 
-<all_mcf_cnfw_z00_cutcomp.pdf, id=823, 289.08pt x 578.16pt>
-File: all_mcf_cnfw_z00_cutcomp.pdf Graphic file (type pdf)
+LaTeX Warning: Float too large for page by 53.99399pt on input line 470.
 
-<use all_mcf_cnfw_z00_cutcomp.pdf>
-Package pdftex.def Info: all_mcf_cnfw_z00_cutcomp.pdf used on input line 493.
-(pdftex.def)             Requested size: 191.99707pt x 383.99518pt.
- [8 <C:/Users/Antonio/Documents/haloenviron/haloenviron-villarrealzentner/all_c
-fhilow_z00_cutcomp.pdf>]
-<all_mcf_cV_z00_cutcomp.pdf, id=877, 289.08pt x 578.16pt>
-File: all_mcf_cV_z00_cutcomp.pdf Graphic file (type pdf)
+[7] <all_mcf_cNFW.pdf, id=533, 433.62pt x 1084.05pt>
+File: all_mcf_cNFW.pdf Graphic file (type pdf)
+ <use all_mcf_cNFW.pdf>
+Package pdftex.def Info: all_mcf_cNFW.pdf used on input line 493.
+(pdftex.def)             Requested size: 191.99707pt x 479.99399pt.
 
-<use all_mcf_cV_z00_cutcomp.pdf>
-Package pdftex.def Info: all_mcf_cV_z00_cutcomp.pdf used on input line 530.
-(pdftex.def)             Requested size: 191.99707pt x 383.99518pt.
- [9 <C:/Users/Antonio/Documents/haloenviron/haloenviron-villarrealzentner/all_m
-cf_cnfw_z00_cutcomp.pdf> <C:/Users/Antonio/Documents/haloenviron/haloenviron-vi
-llarrealzentner/all_mcf_cV_z00_cutcomp.pdf
+<all_mcf_cV.pdf, id=534, 433.62pt x 1084.05pt>
+File: all_mcf_cV.pdf Graphic file (type pdf)
+ <use all_mcf_cV.pdf>
+Package pdftex.def Info: all_mcf_cV.pdf used on input line 530.
+(pdftex.def)             Requested size: 191.99707pt x 479.99399pt.
+ [8 <./all_cfcompare_cnfw.pdf>] <all_mcf_shape.pdf, id=594, 433.62pt x 1084.05p
+t>
+File: all_mcf_shape.pdf Graphic file (type pdf)
 
-pdfTeX warning: pdflatex.exe (file C:/Users/Antonio/Documents/haloenviron/haloe
-nviron-villarrealzentner/all_mcf_cV_z00_cutcomp.pdf): PDF inclusion: multiple p
-dfs with page group included in a single page
->] <all_mcf_s_z00_cutcomp.pdf, id=996, 289.08pt x 578.16pt>
-File: all_mcf_s_z00_cutcomp.pdf Graphic file (type pdf)
+<use all_mcf_shape.pdf>
+Package pdftex.def Info: all_mcf_shape.pdf used on input line 559.
+(pdftex.def)             Requested size: 191.99707pt x 479.99399pt.
+ <all_mcf_spin.pdf, id=595, 433.62pt x 1084.05pt>
+File: all_mcf_spin.pdf Graphic file (type pdf)
 
-<use all_mcf_s_z00_cutcomp.pdf>
-Package pdftex.def Info: all_mcf_s_z00_cutcomp.pdf used on input line 559.
-(pdftex.def)             Requested size: 191.99707pt x 383.99518pt.
+<use all_mcf_spin.pdf>
+Package pdftex.def Info: all_mcf_spin.pdf used on input line 573.
+(pdftex.def)             Requested size: 191.99707pt x 479.99399pt.
+ <all_mcf_nsat.pdf, id=596, 433.62pt x 1084.05pt>
+File: all_mcf_nsat.pdf Graphic file (type pdf)
 
-<all_mcf_spin_z00_cutcomp.pdf, id=997, 289.08pt x 578.16pt>
-File: all_mcf_spin_z00_cutcomp.pdf Graphic file (type pdf)
+<use all_mcf_nsat.pdf>
+Package pdftex.def Info: all_mcf_nsat.pdf used on input line 586.
+(pdftex.def)             Requested size: 191.99707pt x 479.99399pt.
 
-<use all_mcf_spin_z00_cutcomp.pdf>
-Package pdftex.def Info: all_mcf_spin_z00_cutcomp.pdf used on input line 573.
-(pdftex.def)             Requested size: 191.99707pt x 383.99518pt.
-
-<all_mcf_nsat_z00_cutcomp.pdf, id=998, 289.08pt x 578.16pt>
-File: all_mcf_nsat_z00_cutcomp.pdf Graphic file (type pdf)
-
-<use all_mcf_nsat_z00_cutcomp.pdf>
-Package pdftex.def Info: all_mcf_nsat_z00_cutcomp.pdf used on input line 586.
-(pdftex.def)             Requested size: 191.99707pt x 383.99518pt.
-
-Underfull \vbox (badness 1325) has occurred while \output is active []
-
- [10 <C:/Users/Antonio/Documents/haloenviron/haloenviron-villarrealzentner/all_
-mcf_s_z00_cutcomp.pdf> <C:/Users/Antonio/Documents/haloenviron/haloenviron-vill
-arrealzentner/all_mcf_spin_z00_cutcomp.pdf
-
-pdfTeX warning: pdflatex.exe (file C:/Users/Antonio/Documents/haloenviron/haloe
-nviron-villarrealzentner/all_mcf_spin_z00_cutcomp.pdf): PDF inclusion: multiple
- pdfs with page group included in a single page
->]
 Underfull \hbox (badness 1092) in paragraph at lines 619--620
 \OT1/cmr/bx/n/9 of its im-por-tance. Look in the lit-er-a-ture to
  []
@@ -565,22 +570,20 @@ Underfull \hbox (badness 2359) in paragraph at lines 619--620
 \OT1/cmr/bx/n/9 mea-sured in the lit-er-a-ture be-fore. Look at
  []
 
-
+[9 <./all_mcf_cNFW.pdf>]
 Underfull \hbox (badness 1348) in paragraph at lines 646--653
 []\OT1/cmr/m/n/9 Clearly, the halo def-i-ni-tion that best mit-i-gates
  []
 
-[11 <C:/Users/Antonio/Documents/haloenviron/haloenviron-villarrealzentner/all_m
-cf_nsat_z00_cutcomp.pdf>]
-<all_mcf_cnfw_z00_hostsvmatch.pdf, id=1179, 578.16pt x 361.35pt>
+<all_mcf_cnfw_z00_hostsvmatch.pdf, id=651, 578.16pt x 361.35pt>
 File: all_mcf_cnfw_z00_hostsvmatch.pdf Graphic file (type pdf)
 
 <use all_mcf_cnfw_z00_hostsvmatch.pdf>
 Package pdftex.def Info: all_mcf_cnfw_z00_hostsvmatch.pdf used on input line 72
 5.
 (pdftex.def)             Requested size: 431.99707pt x 269.9973pt.
-
-<all_mcf_cV_z00_hostsvmatch.pdf, id=1180, 578.16pt x 361.35pt>
+ [10]
+<all_mcf_cV_z00_hostsvmatch.pdf, id=656, 578.16pt x 361.35pt>
 File: all_mcf_cV_z00_hostsvmatch.pdf Graphic file (type pdf)
 
 <use all_mcf_cV_z00_hostsvmatch.pdf>
@@ -588,14 +591,17 @@ Package pdftex.def Info: all_mcf_cV_z00_hostsvmatch.pdf used on input line 763.
 
 (pdftex.def)             Requested size: 431.99707pt x 269.9973pt.
 
-<all_mcf_s_z00_hostsvmatch.pdf, id=1181, 578.16pt x 361.35pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+<all_mcf_s_z00_hostsvmatch.pdf, id=657, 578.16pt x 361.35pt>
 File: all_mcf_s_z00_hostsvmatch.pdf Graphic file (type pdf)
 
 <use all_mcf_s_z00_hostsvmatch.pdf>
 Package pdftex.def Info: all_mcf_s_z00_hostsvmatch.pdf used on input line 785.
 (pdftex.def)             Requested size: 431.99707pt x 269.9973pt.
 
-<all_mcf_spin_z00_hostsvmatch.pdf, id=1182, 578.16pt x 361.35pt>
+<all_mcf_spin_z00_hostsvmatch.pdf, id=658, 578.16pt x 361.35pt>
 File: all_mcf_spin_z00_hostsvmatch.pdf Graphic file (type pdf)
 
 <use all_mcf_spin_z00_hostsvmatch.pdf>
@@ -603,55 +609,45 @@ Package pdftex.def Info: all_mcf_spin_z00_hostsvmatch.pdf used on input line 79
 2.
 (pdftex.def)             Requested size: 431.99707pt x 269.9973pt.
 
-<all_mcf_nsat_z00_hostsvmatch.pdf, id=1183, 578.16pt x 361.35pt>
+<all_mcf_nsat_z00_hostsvmatch.pdf, id=659, 578.16pt x 361.35pt>
 File: all_mcf_nsat_z00_hostsvmatch.pdf Graphic file (type pdf)
 
 <use all_mcf_nsat_z00_hostsvmatch.pdf>
 Package pdftex.def Info: all_mcf_nsat_z00_hostsvmatch.pdf used on input line 79
 9.
 (pdftex.def)             Requested size: 431.99707pt x 269.9973pt.
- [12]
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [11 <./all_mcf_cnfw_z00_hostsvmatch.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<plotcircles_coolwarm.pdf, id=1188, 578.16pt x 433.62pt>
+ [12 <./all_mcf_cV_z00_hostsvmatch.pdf> <./all_mcf_s_z00_hostsvmatch.pdf
+
+pdfTeX warning: pdflatex (file ./all_mcf_s_z00_hostsvmatch.pdf): PDF inclusion:
+ multiple pdfs with page group included in a single page
+>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [13 <./all_mcf_spin_z00_hostsvmatch.pdf> <./all_mcf_nsat_z00_hostsvmatch.pdf
+
+pdfTeX warning: pdflatex (file ./all_mcf_nsat_z00_hostsvmatch.pdf): PDF inclusi
+on: multiple pdfs with page group included in a single page
+>] <plotcircles_coolwarm.pdf, id=988, 578.16pt x 433.62pt>
 File: plotcircles_coolwarm.pdf Graphic file (type pdf)
 
 <use plotcircles_coolwarm.pdf>
 Package pdftex.def Info: plotcircles_coolwarm.pdf used on input line 818.
 (pdftex.def)             Requested size: 431.99707pt x 323.99677pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [13 <C:/Users/Antonio/Documents/haloenviron/haloenviron-villarrealzentner/all_
-mcf_cnfw_z00_hostsvmatch.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [14 <C:/Users/Antonio/Documents/haloenviron/haloenviron-villarrealzentner/all_
-mcf_cV_z00_hostsvmatch.pdf> <C:/Users/Antonio/Documents/haloenviron/haloenviron
--villarrealzentner/all_mcf_s_z00_hostsvmatch.pdf
-
-pdfTeX warning: pdflatex.exe (file C:/Users/Antonio/Documents/haloenviron/haloe
-nviron-villarrealzentner/all_mcf_s_z00_hostsvmatch.pdf): PDF inclusion: multipl
-e pdfs with page group included in a single page
->]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [15 <C:/Users/Antonio/Documents/haloenviron/haloenviron-villarrealzentner/all_
-mcf_spin_z00_hostsvmatch.pdf> <C:/Users/Antonio/Documents/haloenviron/haloenvir
-on-villarrealzentner/all_mcf_nsat_z00_hostsvmatch.pdf
-
-pdfTeX warning: pdflatex.exe (file C:/Users/Antonio/Documents/haloenviron/haloe
-nviron-villarrealzentner/all_mcf_nsat_z00_hostsvmatch.pdf): PDF inclusion: mult
-iple pdfs with page group included in a single page
->] <all_cfhilow_z00_hostsvlow.pdf, id=1516, 578.16pt x 361.35pt>
+<all_cfhilow_z00_hostsvlow.pdf, id=989, 578.16pt x 361.35pt>
 File: all_cfhilow_z00_hostsvlow.pdf Graphic file (type pdf)
 
 <use all_cfhilow_z00_hostsvlow.pdf>
 Package pdftex.def Info: all_cfhilow_z00_hostsvlow.pdf used on input line 834.
 (pdftex.def)             Requested size: 431.99707pt x 269.9973pt.
 
-<all_mcf_cnfw_z00_hostsvlow.pdf, id=1517, 578.16pt x 361.35pt>
+<all_mcf_cnfw_z00_hostsvlow.pdf, id=990, 578.16pt x 361.35pt>
 File: all_mcf_cnfw_z00_hostsvlow.pdf Graphic file (type pdf)
 
 <use all_mcf_cnfw_z00_hostsvlow.pdf>
@@ -659,21 +655,21 @@ Package pdftex.def Info: all_mcf_cnfw_z00_hostsvlow.pdf used on input line 841.
 
 (pdftex.def)             Requested size: 431.99707pt x 269.9973pt.
 
-<all_mcf_cV_z00_hostsvlow.pdf, id=1518, 578.16pt x 361.35pt>
+<all_mcf_cV_z00_hostsvlow.pdf, id=991, 578.16pt x 361.35pt>
 File: all_mcf_cV_z00_hostsvlow.pdf Graphic file (type pdf)
 
 <use all_mcf_cV_z00_hostsvlow.pdf>
 Package pdftex.def Info: all_mcf_cV_z00_hostsvlow.pdf used on input line 848.
 (pdftex.def)             Requested size: 431.99707pt x 269.9973pt.
 
-<all_mcf_s_z00_hostsvlow.pdf, id=1519, 578.16pt x 361.35pt>
+<all_mcf_s_z00_hostsvlow.pdf, id=992, 578.16pt x 361.35pt>
 File: all_mcf_s_z00_hostsvlow.pdf Graphic file (type pdf)
 
 <use all_mcf_s_z00_hostsvlow.pdf>
 Package pdftex.def Info: all_mcf_s_z00_hostsvlow.pdf used on input line 855.
 (pdftex.def)             Requested size: 431.99707pt x 269.9973pt.
 
-<all_mcf_spin_z00_hostsvlow.pdf, id=1520, 578.16pt x 361.35pt>
+<all_mcf_spin_z00_hostsvlow.pdf, id=993, 578.16pt x 361.35pt>
 File: all_mcf_spin_z00_hostsvlow.pdf Graphic file (type pdf)
 
 <use all_mcf_spin_z00_hostsvlow.pdf>
@@ -681,7 +677,7 @@ Package pdftex.def Info: all_mcf_spin_z00_hostsvlow.pdf used on input line 862.
 
 (pdftex.def)             Requested size: 431.99707pt x 269.9973pt.
 
-<all_mcf_nsat_z00_hostsvlow.pdf, id=1521, 578.16pt x 361.35pt>
+<all_mcf_nsat_z00_hostsvlow.pdf, id=994, 578.16pt x 361.35pt>
 File: all_mcf_nsat_z00_hostsvlow.pdf Graphic file (type pdf)
 
 <use all_mcf_nsat_z00_hostsvlow.pdf>
@@ -689,10 +685,7 @@ Package pdftex.def Info: all_mcf_nsat_z00_hostsvlow.pdf used on input line 869.
 
 (pdftex.def)             Requested size: 431.99707pt x 269.9973pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-<all_cfhilow_z00_hostsvhigh.pdf, id=1522, 578.16pt x 361.35pt>
+<all_cfhilow_z00_hostsvhigh.pdf, id=995, 578.16pt x 361.35pt>
 File: all_cfhilow_z00_hostsvhigh.pdf Graphic file (type pdf)
 
 <use all_cfhilow_z00_hostsvhigh.pdf>
@@ -700,7 +693,7 @@ Package pdftex.def Info: all_cfhilow_z00_hostsvhigh.pdf used on input line 878.
 
 (pdftex.def)             Requested size: 431.99707pt x 269.9973pt.
 
-<all_mcf_cnfw_z00_hostsvhigh.pdf, id=1523, 578.16pt x 361.35pt>
+<all_mcf_cnfw_z00_hostsvhigh.pdf, id=996, 578.16pt x 361.35pt>
 File: all_mcf_cnfw_z00_hostsvhigh.pdf Graphic file (type pdf)
 
 <use all_mcf_cnfw_z00_hostsvhigh.pdf>
@@ -708,21 +701,21 @@ Package pdftex.def Info: all_mcf_cnfw_z00_hostsvhigh.pdf used on input line 885
 .
 (pdftex.def)             Requested size: 431.99707pt x 269.9973pt.
 
-<all_mcf_cV_z00_hostsvhigh.pdf, id=1524, 578.16pt x 361.35pt>
+<all_mcf_cV_z00_hostsvhigh.pdf, id=997, 578.16pt x 361.35pt>
 File: all_mcf_cV_z00_hostsvhigh.pdf Graphic file (type pdf)
 
 <use all_mcf_cV_z00_hostsvhigh.pdf>
 Package pdftex.def Info: all_mcf_cV_z00_hostsvhigh.pdf used on input line 892.
 (pdftex.def)             Requested size: 431.99707pt x 269.9973pt.
 
-<all_mcf_s_z00_hostsvhigh.pdf, id=1525, 578.16pt x 361.35pt>
+<all_mcf_s_z00_hostsvhigh.pdf, id=998, 578.16pt x 361.35pt>
 File: all_mcf_s_z00_hostsvhigh.pdf Graphic file (type pdf)
 
 <use all_mcf_s_z00_hostsvhigh.pdf>
 Package pdftex.def Info: all_mcf_s_z00_hostsvhigh.pdf used on input line 899.
 (pdftex.def)             Requested size: 431.99707pt x 269.9973pt.
 
-<all_mcf_spin_z00_hostsvhigh.pdf, id=1526, 578.16pt x 361.35pt>
+<all_mcf_spin_z00_hostsvhigh.pdf, id=999, 578.16pt x 361.35pt>
 File: all_mcf_spin_z00_hostsvhigh.pdf Graphic file (type pdf)
 
 <use all_mcf_spin_z00_hostsvhigh.pdf>
@@ -730,116 +723,118 @@ Package pdftex.def Info: all_mcf_spin_z00_hostsvhigh.pdf used on input line 906
 .
 (pdftex.def)             Requested size: 431.99707pt x 269.9973pt.
 
-<all_mcf_nsat_z00_hostsvhigh.pdf, id=1527, 578.16pt x 361.35pt>
+<all_mcf_nsat_z00_hostsvhigh.pdf, id=1000, 578.16pt x 361.35pt>
 File: all_mcf_nsat_z00_hostsvhigh.pdf Graphic file (type pdf)
 
 <use all_mcf_nsat_z00_hostsvhigh.pdf>
 Package pdftex.def Info: all_mcf_nsat_z00_hostsvhigh.pdf used on input line 913
 .
 (pdftex.def)             Requested size: 431.99707pt x 269.9973pt.
+ [14]
+Underfull \vbox (badness 4940) has occurred while \output is active []
+
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [16 <C:/Users/Antonio/Documents/haloenviron/haloenviron-villarrealzentner/plot
-circles_coolwarm.pdf>]
+ [15 <./plotcircles_coolwarm.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [17 <C:/Users/Antonio/Documents/haloenviron/haloenviron-villarrealzentner/all_
-cfhilow_z00_hostsvlow.pdf> <C:/Users/Antonio/Documents/haloenviron/haloenviron-
-villarrealzentner/all_mcf_cnfw_z00_hostsvlow.pdf
+ [16 <./all_cfhilow_z00_hostsvlow.pdf> <./all_mcf_cnfw_z00_hostsvlow.pdf
 
-pdfTeX warning: pdflatex.exe (file C:/Users/Antonio/Documents/haloenviron/haloe
-nviron-villarrealzentner/all_mcf_cnfw_z00_hostsvlow.pdf): PDF inclusion: multip
-le pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ./all_mcf_cnfw_z00_hostsvlow.pdf): PDF inclusion
+: multiple pdfs with page group included in a single page
 >]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [18 <C:/Users/Antonio/Documents/haloenviron/haloenviron-villarrealzentner/all_
-mcf_cV_z00_hostsvlow.pdf> <C:/Users/Antonio/Documents/haloenviron/haloenviron-v
-illarrealzentner/all_mcf_s_z00_hostsvlow.pdf
+ [17 <./all_mcf_cV_z00_hostsvlow.pdf> <./all_mcf_s_z00_hostsvlow.pdf
 
-pdfTeX warning: pdflatex.exe (file C:/Users/Antonio/Documents/haloenviron/haloe
-nviron-villarrealzentner/all_mcf_s_z00_hostsvlow.pdf): PDF inclusion: multiple 
-pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ./all_mcf_s_z00_hostsvlow.pdf): PDF inclusion: m
+ultiple pdfs with page group included in a single page
 >]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [19 <C:/Users/Antonio/Documents/haloenviron/haloenviron-villarrealzentner/all_
-mcf_spin_z00_hostsvlow.pdf> <C:/Users/Antonio/Documents/haloenviron/haloenviron
--villarrealzentner/all_mcf_nsat_z00_hostsvlow.pdf
+ [18 <./all_mcf_spin_z00_hostsvlow.pdf> <./all_mcf_nsat_z00_hostsvlow.pdf
 
-pdfTeX warning: pdflatex.exe (file C:/Users/Antonio/Documents/haloenviron/haloe
-nviron-villarrealzentner/all_mcf_nsat_z00_hostsvlow.pdf): PDF inclusion: multip
-le pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ./all_mcf_nsat_z00_hostsvlow.pdf): PDF inclusion
+: multiple pdfs with page group included in a single page
 >]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [20 <C:/Users/Antonio/Documents/haloenviron/haloenviron-villarrealzentner/all_
-cfhilow_z00_hostsvhigh.pdf> <C:/Users/Antonio/Documents/haloenviron/haloenviron
--villarrealzentner/all_mcf_cnfw_z00_hostsvhigh.pdf
+ [19 <./all_cfhilow_z00_hostsvhigh.pdf> <./all_mcf_cnfw_z00_hostsvhigh.pdf
 
-pdfTeX warning: pdflatex.exe (file C:/Users/Antonio/Documents/haloenviron/haloe
-nviron-villarrealzentner/all_mcf_cnfw_z00_hostsvhigh.pdf): PDF inclusion: multi
-ple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ./all_mcf_cnfw_z00_hostsvhigh.pdf): PDF inclusio
+n: multiple pdfs with page group included in a single page
 >]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [21 <C:/Users/Antonio/Documents/haloenviron/haloenviron-villarrealzentner/all_
-mcf_cV_z00_hostsvhigh.pdf> <C:/Users/Antonio/Documents/haloenviron/haloenviron-
-villarrealzentner/all_mcf_s_z00_hostsvhigh.pdf
+ [20 <./all_mcf_cV_z00_hostsvhigh.pdf> <./all_mcf_s_z00_hostsvhigh.pdf
 
-pdfTeX warning: pdflatex.exe (file C:/Users/Antonio/Documents/haloenviron/haloe
-nviron-villarrealzentner/all_mcf_s_z00_hostsvhigh.pdf): PDF inclusion: multiple
- pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ./all_mcf_s_z00_hostsvhigh.pdf): PDF inclusion: 
+multiple pdfs with page group included in a single page
 >]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [22 <C:/Users/Antonio/Documents/haloenviron/haloenviron-villarrealzentner/all_
-mcf_spin_z00_hostsvhigh.pdf> <C:/Users/Antonio/Documents/haloenviron/haloenviro
-n-villarrealzentner/all_mcf_nsat_z00_hostsvhigh.pdf
+ [21 <./all_mcf_spin_z00_hostsvhigh.pdf> <./all_mcf_nsat_z00_hostsvhigh.pdf
 
-pdfTeX warning: pdflatex.exe (file C:/Users/Antonio/Documents/haloenviron/haloe
-nviron-villarrealzentner/all_mcf_nsat_z00_hostsvhigh.pdf): PDF inclusion: multi
-ple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ./all_mcf_nsat_z00_hostsvhigh.pdf): PDF inclusio
+n: multiple pdfs with page group included in a single page
+>] (./villarrealzentner2015.bbl) [22]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [23 <./all_mcf_cV.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [24 <./all_mcf_shape.pdf> <./all_mcf_spin.pdf
+
+pdfTeX warning: pdflatex (file ./all_mcf_spin.pdf): PDF inclusion: multiple pdf
+s with page group included in a single page
 >]
-(C:\Users\Antonio\Documents\haloenviron\haloenviron-villarrealzentner\villarrea
-lzentner2015.bbl [23]) [24]
-(C:\Users\Antonio\Documents\haloenviron\haloenviron-villarrealzentner\villarrea
-lzentner2015.aux) ) 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [25
+
+ <./all_mcf_nsat.pdf>] (./villarrealzentner2015.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 5400 strings out of 493921
- 77733 string characters out of 3144870
- 159037 words of memory out of 3000000
- 8588 multiletter control sequences out of 15000+200000
+ 5717 strings out of 495063
+ 81963 string characters out of 3182202
+ 178066 words of memory out of 3000000
+ 8769 multiletter control sequences out of 15000+200000
  17561 words of font info for 64 fonts, out of 3000000 for 9000
- 841 hyphenation exceptions out of 8191
- 44i,15n,42p,1779b,332s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmbx8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-mbx9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra
-/cmex9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
-mi10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi
-6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.p
-fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi9.pfb>
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:
-/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Pr
-ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Progra
-m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Fi
-les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files 
-(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files (x86
-)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files (x86)/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Program Files (x86)/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmti8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmti9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
-type1/public/amsfonts/symbols/msam10.pfb>
-Output written on villarrealzentner2015.pdf (24 pages, 1883813 bytes).
+ 14 hyphenation exceptions out of 8191
+ 44i,15n,42p,1779b,321s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmti8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/
+msam10.pfb>
+Output written on villarrealzentner2015.pdf (25 pages, 1510343 bytes).
 PDF statistics:
- 2526 PDF objects out of 2984 (max. 8388607)
+ 2211 PDF objects out of 2487 (max. 8388607)
+ 626 compressed objects within 7 object streams
  0 named destinations out of 1000 (max. 500000)
  146 words of extra memory for PDF output out of 10000 (max. 10000000)
 
