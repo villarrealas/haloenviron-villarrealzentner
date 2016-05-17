@@ -75,6 +75,14 @@
   {Cole}}{1993}]{lacey93}
 {Lacey} C.,  {Cole} S.,  1993, \mnras, 262, 627
 
+\bibitem[\protect\citeauthoryear{{Mao}, {Williamson} \& {Wechsler}}{{Mao}
+  et~al.}{2015}]{mao15}
+{Mao} Y.-Y.,  {Williamson} M.,    {Wechsler} R.~H.,  2015, \apj, 810, 21
+
+\bibitem[\protect\citeauthoryear{{More}, {Diemer} \& {Kravtsov}}{{More}
+  et~al.}{2015}]{more15}
+{More} S.,  {Diemer} B.,    {Kravtsov} A.~V.,  2015, \apj, 810, 36
+
 \bibitem[\protect\citeauthoryear{{Navarro}, {Frenk} \& {White}}{{Navarro}
   et~al.}{1997}]{nfw97}
 {Navarro} J.~F.,  {Frenk} C.~S.,    {White} S.~D.~M.,  1997, \apj, 490, 493
@@ -100,6 +108,11 @@
 \bibitem[\protect\citeauthoryear{{Somerville} \& {Kolatt}}{{Somerville} \&
   {Kolatt}}{1999}]{somerville99}
 {Somerville} R.~S.,  {Kolatt} T.~S.,  1999, \mnras, 305, 1
+
+\bibitem[\protect\citeauthoryear{{Sunayama}, {Hearin}, {Padmanabhan} \&
+  {Leauthaud}}{{Sunayama} et~al.}{2016}]{sunayama16}
+{Sunayama} T.,  {Hearin} A.~P.,  {Padmanabhan} N.,    {Leauthaud} A.,  2016,
+  \mnras, 458, 1510
 
 \bibitem[\protect\citeauthoryear{{Tempel}, {Guo}, {Kipper} \&
   {Libeskind}}{{Tempel} et~al.}{2015}]{tempel15}

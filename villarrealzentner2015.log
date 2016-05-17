@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2016.4.1)  12 MAY 2016 13:50
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2016.4.1)  17 MAY 2016 11:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -510,23 +510,28 @@ le pdfs with page group included in a single page
 
 pdfTeX warning: pdflatex (file ./masscut_spin_d200.pdf): PDF inclusion: multipl
 e pdfs with page group included in a single page
->] [5] [6] <all_cfcompare_cnfw.pdf, id=273, 433.62pt x 1084.05pt>
+>]
+
+Package natbib Warning: Citation `despali16' on page 5 undefined on input line 
+362.
+
+[5] [6] <all_cfcompare_cnfw.pdf, id=273, 433.62pt x 1084.05pt>
 File: all_cfcompare_cnfw.pdf Graphic file (type pdf)
 
 <use all_cfcompare_cnfw.pdf>
-Package pdftex.def Info: all_cfcompare_cnfw.pdf used on input line 528.
+Package pdftex.def Info: all_cfcompare_cnfw.pdf used on input line 527.
 (pdftex.def)             Requested size: 191.99707pt x 479.99399pt.
  [7]
 <all_mcf_cNFW.pdf, id=278, 433.62pt x 1084.05pt>
 File: all_mcf_cNFW.pdf Graphic file (type pdf)
  <use all_mcf_cNFW.pdf>
-Package pdftex.def Info: all_mcf_cNFW.pdf used on input line 546.
+Package pdftex.def Info: all_mcf_cNFW.pdf used on input line 543.
 (pdftex.def)             Requested size: 191.99707pt x 479.99399pt.
 
 <all_mcf_cV.pdf, id=279, 433.62pt x 1084.05pt>
 File: all_mcf_cV.pdf Graphic file (type pdf)
  <use all_mcf_cV.pdf>
-Package pdftex.def Info: all_mcf_cV.pdf used on input line 583.
+Package pdftex.def Info: all_mcf_cV.pdf used on input line 580.
 (pdftex.def)             Requested size: 191.99707pt x 479.99399pt.
  [8 <./all_cfcompare_cnfw.pdf>] [9 <./all_mcf_cNFW.pdf> <./all_mcf_cV.pdf
 
@@ -535,78 +540,85 @@ with page group included in a single page
 >] <all_mcf_shape.pdf, id=439, 433.62pt x 1084.05pt>
 File: all_mcf_shape.pdf Graphic file (type pdf)
  <use all_mcf_shape.pdf>
-Package pdftex.def Info: all_mcf_shape.pdf used on input line 614.
+Package pdftex.def Info: all_mcf_shape.pdf used on input line 611.
 (pdftex.def)             Requested size: 191.99707pt x 479.99399pt.
 
 <all_mcf_spin.pdf, id=440, 433.62pt x 1084.05pt>
 File: all_mcf_spin.pdf Graphic file (type pdf)
  <use all_mcf_spin.pdf>
-Package pdftex.def Info: all_mcf_spin.pdf used on input line 626.
+Package pdftex.def Info: all_mcf_spin.pdf used on input line 623.
 (pdftex.def)             Requested size: 191.99707pt x 479.99399pt.
 
 <all_mcf_nsat.pdf, id=441, 433.62pt x 1084.05pt>
 File: all_mcf_nsat.pdf Graphic file (type pdf)
  <use all_mcf_nsat.pdf>
-Package pdftex.def Info: all_mcf_nsat.pdf used on input line 637.
+Package pdftex.def Info: all_mcf_nsat.pdf used on input line 634.
 (pdftex.def)             Requested size: 191.99707pt x 479.99399pt.
 
-Underfull \hbox (badness 1092) in paragraph at lines 668--669
+[10 <./all_mcf_shape.pdf> <./all_mcf_spin.pdf
+
+pdfTeX warning: pdflatex (file ./all_mcf_spin.pdf): PDF inclusion: multiple pdf
+s with page group included in a single page
+>]
+Underfull \vbox (badness 5771) has occurred while \output is active []
+
+
+Underfull \hbox (badness 1092) in paragraph at lines 665--666
 \OT1/cmr/bx/n/9 of its im-por-tance. Look in the lit-er-a-ture to
  []
 
 
-Underfull \hbox (badness 2359) in paragraph at lines 668--669
+Underfull \hbox (badness 2359) in paragraph at lines 665--666
 \OT1/cmr/bx/n/9 mea-sured in the lit-er-a-ture be-fore. Look at
  []
 
 
-Underfull \vbox (badness 1622) has occurred while \output is active []
-
- [10 <./all_mcf_shape.pdf>]
-Underfull \hbox (badness 1348) in paragraph at lines 696--703
+Underfull \hbox (badness 1348) in paragraph at lines 693--700
 []\OT1/cmr/m/n/9 Clearly, the halo def-i-ni-tion that best mit-i-gates
  []
 
 
-Underfull \vbox (badness 1325) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [11 <./all_mcf_spin.pdf> <./all_mcf_nsat.pdf
-
-pdfTeX warning: pdflatex (file ./all_mcf_nsat.pdf): PDF inclusion: multiple pdf
-s with page group included in a single page
->] <match_mcf_cNFW.pdf, id=599, 433.62pt x 1084.05pt>
+ [11 <./all_mcf_nsat.pdf>] <match_mcf_cNFW.pdf, id=599, 433.62pt x 1084.05pt>
 File: match_mcf_cNFW.pdf Graphic file (type pdf)
- <use match_mcf_cNFW.pdf>
-Package pdftex.def Info: match_mcf_cNFW.pdf used on input line 777.
-(pdftex.def)             Requested size: 191.99707pt x 479.99399pt.
 
-<match_mcf_cV.pdf, id=600, 433.62pt x 1084.05pt>
+<use match_mcf_cNFW.pdf>
+Package pdftex.def Info: match_mcf_cNFW.pdf used on input line 774.
+(pdftex.def)             Requested size: 191.99707pt x 479.99399pt.
+ <match_mcf_cV.pdf, id=600, 433.62pt x 1084.05pt>
 File: match_mcf_cV.pdf Graphic file (type pdf)
- <use match_mcf_cV.pdf>
-Package pdftex.def Info: match_mcf_cV.pdf used on input line 810.
-(pdftex.def)             Requested size: 191.99707pt x 479.99399pt.
 
-[12] [13 <./match_mcf_cNFW.pdf> <./match_mcf_cV.pdf
+<use match_mcf_cV.pdf>
+Package pdftex.def Info: match_mcf_cV.pdf used on input line 807.
+(pdftex.def)             Requested size: 191.99707pt x 479.99399pt.
+ [12] [13 <./match_mcf_cNFW.pdf> <./match_mcf_cV.pdf
 
 pdfTeX warning: pdflatex (file ./match_mcf_cV.pdf): PDF inclusion: multiple pdf
 s with page group included in a single page
 >] <plotcircles.pdf, id=707, 433.62pt x 289.08pt>
 File: plotcircles.pdf Graphic file (type pdf)
  <use plotcircles.pdf>
-Package pdftex.def Info: plotcircles.pdf used on input line 846.
+Package pdftex.def Info: plotcircles.pdf used on input line 843.
 (pdftex.def)             Requested size: 431.99707pt x 288.01181pt.
 
-[14] (./villarrealzentner2015.bbl
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [14]
+(./villarrealzentner2015.bbl
 Underfull \vbox (badness 5403) has occurred while \output is active []
 
  [15 <./plotcircles.pdf>])
 
 LaTeX Warning: Reference `fig:hvl_cfcompare' on page 16 undefined on input line
- 940.
+ 937.
 
 
 LaTeX Warning: Reference `fig:hvl_mcf_nsat' on page 16 undefined on input line 
-940.
+937.
+
+
+Package natbib Warning: There were undefined citations.
 
 [16
 
@@ -616,13 +628,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 5609 strings out of 495063
- 78787 string characters out of 3182202
- 164812 words of memory out of 3000000
- 8676 multiletter control sequences out of 15000+200000
+ 5619 strings out of 495063
+ 78933 string characters out of 3182202
+ 165024 words of memory out of 3000000
+ 8686 multiletter control sequences out of 15000+200000
  17561 words of font info for 64 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 44i,11n,42p,1062b,360s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,11n,42p,1062b,368s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texli
@@ -644,7 +656,7 @@ ts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type
 ic/amsfonts/cm/cmti8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/sy
 mbols/msam10.pfb>
-Output written on villarrealzentner2015.pdf (16 pages, 721434 bytes).
+Output written on villarrealzentner2015.pdf (16 pages, 721557 bytes).
 PDF statistics:
  826 PDF objects out of 1000 (max. 8388607)
  348 compressed objects within 4 object streams

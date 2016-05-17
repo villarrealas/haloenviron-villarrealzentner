@@ -92,7 +92,7 @@ asumptions. The first is that the statistics of objects within a dark matter hal
 alone. The second is that the clustering of dark matter halos is a function of mass. However, it can be shown
 that the clustering of halos at fixed halo mass is dependent on the formation time of the halo \citep{wechsler02,
 sheth04, gao05, wechsler06, croton07, zentner07}. Furthermore, it has been shown that the clustering of a given
-halo is dependent on halo concentration \citep{wechsler02, wechsler06}. \arz{Using this twice! argh! Such a
+halo is dependent on halo concentration \citep{wechsler02, wechsler06, mao15}. \arz{Using this twice! argh! Such a
 sentence is very awkward and unclear. Generally, avoiding using "this" or "that" frequently unless it is
 absolutely obvious what "this" and "that" are.} \asv{Hopefully this is more clear and has removed using this
 repeatedly!} The additional clustering dependences violate assumptions in the standard implementations; more
@@ -243,7 +243,7 @@ contain the same information about each halo.
 \caption{
 The relationship between the two different marks of concentration, using halos in \simB. The color scale demonstrates the number of halos within a single binning in the concentration space, where redder colors demonstrate where the bulk of halos lie on this relation. 
 \arz{This is not sufficiently specific as a caption. For example, you don't say what the color code is or what the color scale is.}
-\asv{Hopefully that is sufficient! Unsure how to make a lebel for the color bar at this time, but looking into remaking this plot. The code may have been on the previous computer, so I'll take a little bit of time to recall how I went through this plot.}
+\asv{Hopefully that is sufficient! Unsure how to make a label for the color bar at this time, but looking into remaking this plot. The code may have been on the previous computer, so I'll take a little bit of time to recall how I went through this plot.}
 }
 \label{fig:concentrations}
 \end{figure}
@@ -359,7 +359,7 @@ Cutoff Name &  $\Delta=340$ & $\Delta=200$ & $\Delta=100$ & $\Delta=75$ & $\Delt
 Allgood et al. paper that comprehensively examines this for various halo properties and should be cited here.}
 \asv{Found an Allgood paper that is looking at shape, but I'll do a lit search to see if I can't find something else explicit about some of the other parameters}
 Another well known effect is the scaling of our properties as a function of halo mass, as well demonstrated
-within the literature \citep{allgood06, duffy08}. We are interested in studying the clustering behavior of halos
+within the literature \citep{allgood06, duffy08, despali16}. We are interested in studying the clustering behavior of halos
 as a function of properties other than mass. As mass is the dominant halo property correlated with halo
 clustering strength and environment, we refer to the additional properties that we study as 
 ``auxiliary halo properties" (those properties other than mass, such as concentration $c_{\rm NFW}$ or shape
@@ -418,7 +418,7 @@ study both the standard two-point correlation functions of halos selected by pro
 (MCFs). MCFs quantify the manner in which a halo property (the ``mark") correlates among halo pairs as a function
 of the distance between the pairs. Absent halo assembly bias, halo marks are uncorrelated among pairs. 
 MCFs have been used in several previous papers to quantify environmental dependence of halo 
-properties other than mass \citep{sheth04, harker06, wechsler06} \arz{I think there are also a couple of 
+properties other than mass \citep{sheth04, harker06, wechsler06, mao15} \arz{I think there are also a couple of 
 Sheth papers that should be cited here, maybe more}. 
 For a specific halo property, or mark $m$, we use the MCF normalization of \citet{wechsler06}, namely 
 \beq
@@ -479,7 +479,7 @@ $20^{\mathrm{th}}$ percentile lowest concentrations as a function of the overden
 define the halos. First, it is clear that clustering strength generally depends upon the auxiliary properties of
 halos at all halo mass thresholds. Second, it is clear that the strength and sign of assembly bias is 
 strongly mass dependent, a result that agrees with the significant previous literature on halo assembly bias
-\citep{wechsler02, gao05, zentner07, wechsler06, harker06, croton07, dalal08}\arz{Cite all the usual 
+\citep{wechsler02, gao05, zentner07, wechsler06, harker06, croton07, dalal08, mao15, sunayama16}\arz{Cite all the usual 
 papers here, Gao, Wechsler, Harker, Zentner07, Dalal07, probably several more.}\asv{I think that is most of the
 usual suspects, but I'll do a double check for more important ones!} At relatively low mass (the L0125 panel, 
 $M_{200} > 7 \times 10^{10} \hMsun$), high-concentration halos are considerably more strongly concentrated 
@@ -510,8 +510,7 @@ scale-dependent. Moreover, the effect is scale-dependent for all values of $\Del
 defining halos with a different value of $\Delta$ does not suffice to eliminate concentration-dependent
 clustering on all scales. In this discussion and throughout, we focus primarily on the large scale clustering,
 which we take to mean clustering on scales significantly larger than the radii, $R_{\Delta}$ of the halos in our
-samples. In each panel in Fig.~\ref{fig:cc_cfcompare}, we designate the radii of the largest halos 
-in each sample with vertical dashed lines.
+samples.
 
 \arz{Given how the correlation functions look, shouldn't we include results for $\Delta<50$, for the L0125 results? The effect is continuous so it looks like it would be removed with a smaller value of $\Delta$, say $\Delta \approx 20$. I think you have run this already, so no reason to leave it out. I say this is a must for moving forward with publication.} 
 \asv{Definitely in the works for L0125! Just finishing up some runs in order to sort things out.}
@@ -532,11 +531,9 @@ The difference of the correlation function for only the top 20\% most concentrat
 	\label{fig:cc_cfcompare}
 \end{figure}
 
-\arz{I assume that if you made the same plot for $c_V$ we would reach the same basic conclusions as for $c_{NFW}$? If this is so, then you need to add a specific statement in this regard to the end of the discussion above. In this case, no new figure would be needed. If not, then you need to show the figure.} 
-\asv{This information is not currently run, but should be trivial to add to the halotools setup. I'll add it after this initial recheck with the new normalizations.}
-
+\arz{I assume that if you made the same plot for $c_V$ we would reach the same basic conclusions as for $c_{NFW}$? If this is so, then you need to add a specific statement in this regard to the end of the discussion above. In this case, no new figure would be needed. If not, then you need to show the figure.}
 \arz{In this subsection, I advocate at least one and perhaps two new figures. First, can you make an analogous plot to Fig.~\ref{fig:cc_cfcompare} that shows some other property, such as shape or spin? This would be a nice addition for completeness. Second, what would happen if you used 50\% or 10\% cuts on concentration? Would we reach nearly the same conclusions? If so, then you do not need to show the plots explicitly. However, in this case, you DO need to state explicitly that this is the case. In other words, you need to state the the broad conclusions we reach are roughly independent of the specific percentiles that we use to select halos so that showing results for a variety of different percentiles doesn't add very much to the discussion. It is also possible that selecting on a different percentile yields an entirely different conclusion. I don't suspect that this will be the case, but it is possible. If that happens, then you need to show an example of such a figure for, say, concentration.}
-\asv{Can definitely do all of this pretty straightforward now. The plotting pipeline is all ready to go and the halo concentration cuts are fairly minimal in terms of time constraints comparedto the rest of the global work. I'll do cuts for all properties at 10\%, 20\%, and 50\% for purposes of testing, especially given our concern for the tails. It appeared that this mainly mattered with regards to spin.}
+\asv{These have all been tested at this point. They do not offer any unique conclusions, so I am uncertain if they want to be included beyond the concentration one, which shows the equivalence of the two methods.}
 
 %-----------------------------------------------------------------
 \subsection{Mark Correlation Functions}
@@ -565,9 +562,9 @@ finite sampling as discussed in the previous section. Qualitatively,
 Fig.~\ref{fig:cc_mcf_cnfw} exhibits the same features that are evident in 
 Fig.~\ref{fig:cc_cfcompare}: more concentrated halos are significantly more clustered in 
 the low-mass L0125 halo sample; concentration-dependent halo clustering weakens and 
-reverses sense as halo mass increases; for the L0250 sample with $\Delta=70$, the large-scale 
-concentration dependence of halo clustering has been reduced so as to be consistent with 
-zero within the statistical limitations of the simulation. \arz{Again, it seems like we need a 
+reverses sense as halo mass increases, consistent with work on assembly bias by \citet{sunayama16}; for the 
+L0250 sample with $\Delta=70$, the large-scale concentration dependence of halo clustering has been reduced so as to 
+be consistent with zero within the statistical limitations of the simulation. \arz{Again, it seems like we need a 
 $\Delta <50$ line for L0125. If possible, it would be great if we could put a $\Delta>200$ line 
 on this plot for the L0500 simulation.}
 
@@ -575,7 +572,7 @@ on this plot for the L0500 simulation.}
 Figure~\ref{fig:cc_mcf_cV} is a similar plot for the velocity-defined concentration, $c_{\mathrm{V}}$ MCF. 
 This figure exhibits qualitatively and quantitatively similar features to Fig.~\ref{fig:cc_mcf_cnfw}, a 
 fact that is not surprising given that we already know that $c_{\mathrm{NFW}}$ and $c_{\mathrm{V}}$ 
-quantify largely redundant information about their halos. 
+quantify largely redundant information about their halos.
 
 %---------------------------------------------------
 \begin{figure}
@@ -673,7 +670,7 @@ through a fit to the NFW profile or assigned non-parametrically as the ratio of 
 the virial velocity), halo shape, halo spin, and number of subhalos 
 for host halos over a wide range of masses. These findings are consistent 
 with the now significant literature on the subject subject of halo assembly bias. \citep{peacock00, wechsler02,
-sheth04, gao05, zentner05, allgood06, harker06, wechsler06, croton07, dalal08}
+sheth04, gao05, zentner05, allgood06, harker06, wechsler06, croton07, dalal08, mao15, sunayama16}
 \arz{Reiterate citations here.}\asv{I THINK this covers our bases, but my lit notes might be bad.}
 
 We have explored the efficacy of alternative halo definitions to mitigate the dependence of halo 
@@ -698,7 +695,7 @@ concentration-dependent assembly bias must be mass dependent. Low
 values of $\Delta$ ($\Delta \sim 25$ with $R_{25} \sim 2R_{200}$) seem appropriate near for our lowest 
 mass-threshold sample (with $M_{200} \ge 7 \times 10^{10} \hMsun$) whereas $\Delta \sim 200$ or slightly higher
 is adequate for our highest mass threshold sample (with $M_{200} \ge 4 \times 10^{12} \hMsun$). This result is
-reminiscent of much recent work on the so-called halo ``splashback radius." 
+reminiscent of much recent work on the so-called halo ``splashback radius."\citep{more15} 
 \arz{Here, compare our results to the splashback radius work.}
 
 
@@ -849,8 +846,8 @@ number count, as the most clustered regions will see the largest increase as a r
 \end{figure*}
 
 Note that the mass dependence of assembly bias is implicitly explored with our suite of simulations.
-The nature of the MCFs emphasizes halos just above the threshold mass; e.g. \simA probes the smallest mass
-halos, while \simB probes the largest mass halos. One single halo definition is insufficient to account for the
+The nature of the MCFs emphasizes halos just above the threshold mass; e.g. \simA~ probes the smallest mass
+halos, while \simB~ probes the largest mass halos. One single halo definition is insufficient to account for the
 entirety of assembly bias across the entire mass range. However, it is clear that assembly bias can be a strong
 function of halo definition at fixed halo mass. Meta-analysis of the literature remains difficult as a natural
 consequence, as different choices in the process of defining a halo can lead to significantly different results.
