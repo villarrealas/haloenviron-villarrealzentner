@@ -80,10 +80,6 @@ cosmology: dark matter -- cosmology: large-scale structure of Universe -- galaxi
 \label{section:introduction}
 %-----------------------
 
- \arz{We will need to work on the introduction considerably as we get a better handle on the final results. The first two paragraphs can probably be combined into a single shorter paragraph. I also like to end the first paragraph by telling the reader what it is that we aim to do in the paper. The rest of the introduction will need be be completely rewritten in a more professional manner. However, let's get the middle of the paper complete before we work a lot on the introduction and conclusion sections.
- Please pay close attention to your wording. As an example, it is MUCH preferable to say "galaxies and clusters form within merging dark matter halos" than it is to say "the creation of observed galaxies and clusters is often seen as arising from the hierarchical mergers of dark matter halos." The second option is just too long-winded without adding any information.}
-\asv{I think I've merged the first two paragraphs well, but I am uncertain if there is sufficient background at this point.}
-
 In the concordance cosmology, galaxies and clusters form within merging dark matter halos \citep[e.g.,][]{white78,
 blumenthal84}. Numerical simulations have provided a solid understanding of the abundances, properties, and 
 clustering of dark matter halos in the standard cosmological model. Accordingly, it is possible to compute the 
@@ -100,22 +96,39 @@ then standard halo occupation modeling will fail \citep[e.g.,][]{zentner_etal14}
 and more complex models \citep[e.g.,][]{hearin_etal16} are necessary.
 
 
-In this work, we explore a simpler extension of the model in which the size of halos is redefined. This idea of
-halo redefinition is motivated by the size of a halo not being a well-motivated property. What is often referred
-to as the ``virial radius'' will not contain all gravitational bound dark matter particles in the halo
-\citep{kazan06}. Rather, it is a matter of convention that does not share a common definition across the
-literature. For example, some studies have chosen to use halo radius defined with respect to the critical mass
-density of the universe, while many simulation papers choose to use the mean background mass density of the
-simulation. \asv{Is there a citation to be used for this? Or is this considered common knowledge within the
-field?} Furthermore, the overdensity often used can typically vary from 178 (from basic spherical collapse) to
-200 (a common simulation definition) to 337 (``virial'' in $\Lambda\mathrm{CDM}$). This can lead to a ten to
-twenty percent difference in the measured halo radius between two measurements. We instead choose to define the
-halo radius to encompass any nearby environmental effects. These may be due to large-scale structure or driven by
-baryonic physics. Using a simulated box, we then test how the redefinition of halo size affects the relationship
-between clustering and halo properties. In the case that halo properties become independent of the clustering, it
-is possible to utilize standard implementations of the halo model without necessitating more complicated
-modeling.\asv{Perhaps I should specifically list halo merger trees as something to be avoided due to
-computational cost here to motivate the work?}
+In this work, we explore the possibility of simplifying halo occupation modeling, at least for some 
+applications, by altering the definition of a halo. Traditional definitions of halo boundaries are 
+not particularly well motivated, so it seems natural to explore alternative definitions of halo size. 
+Halo definitions have become a matter of convention that vary considerably in the literature. Many 
+authors define halos using a friends-of-friend (FoF) algorithm applied to the particle distribution that designates 
+halo boundaries as regions of roughly constant density. More often, authors define halos by spherical 
+overdensity (SO) regions within which the mean density exceeds a particular threshold. The threshold used 
+varies significantly. One difference is that some studies define the density threshold with respect to the 
+mean background density, while others define the density threshold with respect to the critical density of 
+the universe. Even when the same reference density is used, the threshold level varies. With respect to the 
+mean density of the universe, commonly used thresholds are 178, 180, 200, and $\sim$340 times the mean 
+background density, the last of these being the ``virial" overdensity in a concordance $\Lambda$CDM universe. 
+These definitions exclude particles that are gravitational bound to the halo \citep[e.g.,][]{kazan06}. 
+
+
+In this paper we explore the possibility of using halo definition to work for the 
+convenience of the practitioner. We study the strength of various halo assembly bias signals 
+as a function of halo definition. This is motivated, in large part, by recent literature that suggests 
+that a large portion of the assembly bias signals are driven by halos in the relatively density environments 
+surrounding larger halos. \arz{Need citations here to work by Wang (2007), the recent work on splashback (backsplash) 
+and flyby halos, and the recent work on the splashback radius.} 
+These halos have anomalous properties (e.g., formation times, concentrations, etc.) compared to field halos 
+in part because of their interactions with their larger, neighbor halos. It seems interesting to ask whether or 
+not defining halos to contain many of these anomalous neighbor halos, thus using the halo concept to draw a 
+more meaningful boundary around regions within which highly nonlinear effects are important, can mitigate 
+halo assembly bias. This is the aim of our paper. 
+
+
+In the present paper, we restrict ourselves to halos that are defined by spherical regions and we 
+study the strength of halo assembly bias as a function of the density threshold used to delineate these 
+spherical halos. We find that \arz{two or three sentence, relatively non-technical summary of our results 
+should go here.}
+
  
 In \S~\ref{section:data} of this paper, we discuss the cosmological simulations that we analyze and how halos are
 identified. In \S~\ref{section:haloprops}, we consider the properties of interest within our halo simulation and
@@ -125,6 +138,10 @@ present our results and consider how the change of halo definition impacts measu
 \S~\ref{section:conclusions}, we discuss the significance of reducing environmental effects through a
 redefinition of halo environments and discuss possible applications of our methodology. We also consider the
 nature of assembly bias as a function of halo definition.
+
+
+
+
 
 %------------------------------------
 \section[]{Simulations and Halo Identification}
