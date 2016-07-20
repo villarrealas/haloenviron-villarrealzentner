@@ -108,7 +108,8 @@ mean background density, while others define the density threshold with respect 
 the universe. Even when the same reference density is used, the threshold level varies. With respect to the 
 mean density of the universe, commonly used thresholds are 178, 180, 200, and $\sim$340 times the mean 
 background density, the last of these being the ``virial" overdensity in a concordance $\Lambda$CDM universe. 
-These definitions exclude particles that are gravitational bound to the halo \citep[e.g.,][]{kazan06}. 
+Significantly higher values of the overdensity parameter are often used in studies of X-ray emission from cluster-sized halos. 
+These definitions exclude particles that are gravitationally bound to the halo \citep[e.g.,][]{kazan06}. 
 
 
 In this paper we explore the possibility of using halo definition to work for the 
@@ -161,67 +162,87 @@ simulation from the set. In particular, \simA~, with its higher resolution, cont
 halos, while \simC~has the most robust statistics for the most massive halos as a result of the larger simulation
 volume.
 
-To identify halos, we use the ROCKSTAR halo finder, which works on the phase space algorithm described in
-\citet*{behroozi13}. In short, ROCKSTAR determines the initial groupings using a Friends-of-Friends algorithm in
-phase space before applying the spherical overdensity halo definition in order to determine halo properties of
+To identify halos, we use the {\tt ROCKSTAR} halo finder, which works on the phase space algorithm described in
+\citet*{behroozi13}. In short, {\tt ROCKSTAR} determines initial groupings of particles using a Friends-of-Friends algorithm 
+in phase space before applying the spherical overdensity halo definition in order to determine halo properties of
 interest. Unbound particles are removed prior to the calculation of halo mass and other halo properties. Our
-method of halo redefinition is to change how halo size is calculated as part of the ROCKSTAR pipeline. A halo is
+method of halo redefinition is to change how halo size is calculated as part of the {\tt ROCKSTAR} pipeline. A halo is
 given a radius, $\Rdel$, determined by
 \beq
-	\bar{\rho}(\Rdel) = \Delta \rho_{\mathrm{m}}.
+	\bar{\rho}(\Rdel) = \Delta \rho_{\mathrm{m}}, 
 \eeq
-The mean density within a spherical volume of radius $\Rdel$ is $\bar{\rho}$, $\Delta$ is the overdensity
-parameter, and $\rho_{\mathrm{m}}$ is the mean background mass density of the entire simulation. The resulting
-halo size calculation can have a large variation depending on the definition $\rho_{\mathrm{m}}$ and the choice
-of $\Delta$. The former can often be substituted by the critical background mass density. The number chosen for
-$\Delta$ can vary drastically in the literature from $\Delta = 337$ to $\Delta = 178$. We choose to change the
-size of a halo by treating the overdensity parameter as a tunable choice, expanding the range from $\Delta = 340$
-to $\Delta = 10$. While more drastic than the differences between the commonly made choices, this may allow us to
-account for environmental effects by subsuming them into a larger halo.
+where the mean density within a spherical volume of radius $r$ is $\bar{\rho}(r)$, $\Delta$ is the overdensity
+parameter, and $\rho_{\mathrm{m}}$ is the mean background mass density of the simulation. The resulting
+halo size calculation can have a large variation depending on the choice of $\Delta$. The number chosen for
+$\Delta$ varies throughout the literature from $\Delta \approx 178$ to $\Delta \approx 340$ or higher for X-ray studies of 
+clusters. We choose to vary the size of a halo by treating the overdensity parameter as tunable, expanding the range from 
+$\Delta = 340$ to $\Delta = 10$\footnote{It is worth noting that the {\tt ROCKSTAR} linking length parameter must be adjusted 
+as $\Delta$ is adjusted in order to ensure that SO halos contain all relevant particles.}. While this range is greater than the 
+differences between most the common overdensity choices, this broad range enables a fairly extensive exploration of 
+environmental effects on halo properties as a function of halo definition.
 
-\arz{Try this paragraph again. It is rambling. Also it has structural flaws such as referring to $\Delta$ before defining $\Delta$.} 
-\asv{new attempt at a paragraph that should be more structurally sound, I hope. The old version is commented out for comparison.}
 
 %-------------------------------------
 \section{Halo Properties}
 \label{section:haloprops}
 %-------------------------------------
 
-We explore the clustering of halos as a function of a number of halo properties that are explored in the 
-literature and can be measured for a halo from an individual simulation snapshot. Halo particles are also fit to
-a Navarro-Frenk-White (NFW) profile \citep{nfw97},
+We investigate the clustering of halos as a function of a number of halo properties 
+that have been shown to influence halo clustering at fixed halo mass. We explore 
+two definitions of halo concentration. The first stems from a fit of the spherically-averaged 
+halo density profile, $\rho(r)$, to a \citet[][; hereafter, NFW]{nfw97} density profile, 
+%
 \beq
 \rho(r) = \frac{\rho_0}{\frac{r}{r_{\mathrm{s}}}(1+\frac{r}{r_{\mathrm{s}}})^2},
 \eeq
-where $\rho$ is the halo density profile and $\rho_0$ and the scale radius, $r_{\mathrm{s}}$, are fit parameters
-that vary from halo to halo. This allows us to define the halo concentration as
+%
+where the density scale, $\rho_0$, and the scale radius, $r_{\mathrm{s}}$, are parameters 
+that are fit to the density profile of each halo. The standard definition of halo concentration is then 
 \beq
 c_{\mathrm{NFW}} = \frac{\Rdel}{r_\mathrm{s}},
 \eeq
-where $\Rdel$ is the radius of the halo given an overdensity parameter $\Delta$ defining the halo and 
-$r_{\mathrm{s}}$ is the halo scale radius. 
-\arz{The scale radius has not yet been defined. How will the reader know what it is? How is it computed? You should probable introduce the NFW profile here rather than above (see my earlier comment on that).}
-\asv{Should be fixed, although I am a little uncertain as to the introduction of the NFW Profile.}
+where $\Rdel$ is the radius of the halo given an overdensity parameter, $\Delta$, defining the halo 
+and $r_{\mathrm{s}}$ is the inferred halo scale radius. We use the NFW concentrations computed by the 
+{\tt ROCKSTAR} halo finder.  
 
-We also use an additional measure of the concentration of the halo density profile, 
+The NFW concentration defined in the previous paragraph has the shortcoming that it 
+depends upon a parametric description of dark matter halos, so we study the clustering dependence 
+of halos as a function of a non-parametric description of halo concentration. In particular, we 
+define the velocity concentration as 
 \beq
 c_{\mathrm{V}} = \frac{V_{\mathrm{max}}}{V_{\Delta}}, 
 \eeq
-where $V_{\mathrm{max}}$ is the maximum circular velocity achieved within the halo and $V_{\Delta}$ is the
-circular velocity at the halo radius, $\Rdel$. The quantity $c_{\mathrm{V}}$ can be measured from simulations
-without any need for fitting halo density profiles to determine scale radii and is therefore robust to choices of
-halo profiles and fitting methods. 
+where $V_{\mathrm{max}}$ is the maximum circular velocity achieved within the halo and $V_{\Delta}$ is 
+the circular velocity at the halo radius, $\Rdel$. All halos of the same mass have the same value of $V_{\Delta}$; however, 
+they exhibit a variety of $V_{\mathrm{max}}$ values depending upon the degree to which their mass is concentrated toward 
+the halo center. The quantity $c_{\mathrm{V}}$ is a non-parametric measure of halo concentration and can be measured from 
+simulation snapshots without any need for fitting halo density profiles. Consequently, $c_{\mathrm{V}}$ is robust to halo density 
+profile parameterizations and halo profile fitting procedures. 
 
-Halo concentrations are useful to explore for these purposes for a number of reasons. First of all, environment
-dependence of concentrations is of direct interest in modeling galaxy clustering and gravitational lensing
-statistics. Secondly, concentrations can be measured from individual simulation snapshots relatively easily yet
-halo concentrations are known to be strongly correlated with the formation histories of dark matter halos with
-earlier forming halos having higher concentrations at fixed halo mass \citep{wechsler02, wechsler06} 
-\arz{Cite papers here like Wechsler et al. 2002}. As such, exploring the concentration dependence of halo
+
+Halo concentrations are interesting to investigate for these purposes for a number of reasons. 
+First of all, the environment dependence of halo concentrations is of interest in the modeling of 
+galaxy clustering and gravitational lensing statistics. In the case of galaxy clustering, the relevance 
+is indirect, because galaxies will not necessarily trace the mass density of their host halos. In the case 
+of gravitational lensing, the mass distribution is the primary quantity of interest and halo concentrations are 
+directly related to predictions for lensing statistics. Secondly, concentrations can be measured from 
+individual simulation snapshots easily and halo concentrations are known to be strongly correlated with 
+the formation histories of dark matter halos with earlier forming halos having higher concentrations at 
+fixed halo mass \citep{wechsler02, wechsler06} 
+\arz{Cite papers here like Wechsler et al. 2002. I think there are at least two Zhao et al. papers from 
+the last decade relevant here. I don't remember the years, but one of them is at least 8 years old. I think another 
+might be from around 2011.}. As such, exploring the concentration dependence of halo
 clustering may yield insight into the age dependence of halo clustering without the need for constructing merger
-trees. This is particularly important in the present study in which the halo finding is performed repeatedly and
-constructing a merger tree for each run of the halo finder with different $\Delta$ can be prohibitive. We will
-explore measures of halo age directly in a forthcoming follow-up study dedicated to halo formation histories.
+trees. This is particularly important in the present study in which the halo finding is performed repeatedly for many 
+different values of $\Delta$. Constructing a self-consistent merger tree from which halo formation history can be 
+studied requires halo finding at all simulation snapshots for each new value of $\Delta$, which is a computationally 
+prohibitive task. In the present paper, we limit our study to halo properties that can be measured from a single simulation 
+snapshot. However, halo formation histories correlate with halo concentrations with significant scatter and this correlation may 
+depend upon environment, so the reader should be wary of drawing conclusions about the environmental dependence of 
+halo formation by extrapolating our results on halo concentration. 
+We will explore measures of halo age directly in a forthcoming follow-up study dedicated to halo 
+formation histories.
+
 
 Figure~\ref{fig:cnfwrelation} shows the mean $c_{\mathrm{NFW}}$-$M_{\Delta}$ relation for halos defined with
 $\Delta=200$ in \simA, \simB, and \simC. For each simulation, we consider halos only above a minimum mass, as
