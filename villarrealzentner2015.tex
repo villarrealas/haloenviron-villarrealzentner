@@ -245,16 +245,36 @@ formation histories.
 
 
 Figure~\ref{fig:cnfwrelation} shows the mean $c_{\mathrm{NFW}}$-$M_{\Delta}$ relation for halos defined with
-$\Delta=200$ in \simA, \simB, and \simC. For each simulation, we consider halos only above a minimum mass, as
-shown in Fig.~\ref{fig:cnfwrelation}, to ensure that concentration measurements are not compromised by resolution
-effects from the choice of simulation box size and mass resolution. Likewise, Figure~\ref{fig:cvrelation} shows
-the analogous relation for the alternative definition of halo concentration, $c_{\mathrm{V}}$.
+$\Delta=200$ in \simA, \simB, and \simC. For each simulation, we consider halos only above a minimum mass threshold 
+to ensure that concentration measurements are not compromised by resolution effects. The minimum mass 
+thresholds are shown as the vertical lines in Fig.~\ref{fig:cnfwrelation} and listed in Table~\ref{table:thresholds}. 
+Similar to Fig.~\ref{fig:cnfwrelation}, Figure~\ref{fig:cvrelation} shows the relation between the velocity-ratio concentration, $c_{\mathrm{V}}$, and halo mass. In the interest of completeness, Figure~\ref{fig:concentrations} shows the relationship 
+between $c_{\mathrm{NFW}}$ and $c_{\mathrm{V}}$ on a halo-by-halo basis. As is evident, the two concentration 
+proxies are strongly correlated and exhibit a $\sim 10\%$ scatter indicating that $c_{\mathrm{NFW}}$ and $c_{\mathrm{V}}$ 
+indeed encode similar information about each halo \arz{I eyeballed this from your figure, check the scatter in 
+this relationship please to confirm that it is roughly 10\%.}.
 
 %------------------------------------------ Figure for Cnfw(M)
 \begin{figure}
 \centering
 \includegraphics[width=.5\textwidth]{masscut_cNFW_d200.pdf}
-\caption{An example of the relationship between the NFW concentration and halo mass for each of our simulations for $\Delta =200$. The chosen lower limit on halo mass for our sample is marked as a blue, red, or cyan line for \simA, \simB, and \simC \ respectively. Note the deviation from a monotonic trend as a result of resolution effects.}
+\caption{
+The relationship between the NFW concentration and halo mass for each of our simulations with $\Delta =200$. 
+In order of increasing simulation volume, the blue line corresponds to the concentration-mass relation from simulation 
+\simA, the red line corresponds to \simB, and the cyan line corresponds to \simC. The error bars designate the 
+dispersion on NFW concentration at fixed halo mass. 
+Each simulation is subject to resolution limitations at different halo masses. We show with vertical lines 
+the minimum $M_{200}$ mass thresholds that we adopt in our analyses using the same color code as 
+the concentration-mass relations. Note the deviation from a monotonic trend as a result of resolution effects. 
+\arz{This figure is still way too busy to view. First, the legend covers some of the data. Second there are too many error 
+bars. Try using error bars only for the L0250 simulation and just state in the caption that the dispersion in each simulation 
+is similar in the regime in which the results are not compromised by resolution. Use a different line type for each line so that this 
+can make sense in black and white if necessary. Lastly, is there some way to make the thresholds 
+stand out even more? Perhaps they will stand out more when there is only one set of error bars? You will have to play with this. 
+As far as the caption, this caption is way too brief. It should describe each line and it should state what the error bars are 
+showing. Please make sure this and subsequent captions are sufficiently informative such that the figures are self contained. 
+I will take a stab at this caption so that you can see what I mean.}
+}
 \label{fig:cnfwrelation}
 \end{figure}
 %--------------------------------------------------------------------------------
@@ -264,38 +284,46 @@ the analogous relation for the alternative definition of halo concentration, $c_
 \begin{figure}
 \centering
 \includegraphics[width=.5\textwidth]{masscut_cV_d200.pdf}
-\caption{An example of the relationship between the velocity ratio concentration and halo mass for each of our simulations for $\Delta =200$. The chosen lower limit on halo mass for our sample is marked as a blue, red, or cyan line for \simA, \simB, and \simC \ respectively. Note the deviation from a monotonic trend as a result of resolution effects.}
+\caption{An example of the relationship between the velocity ratio concentration and halo mass for each of our simulations for $\Delta =200$. The chosen lower limit on halo mass for our sample is marked as a blue, red, or cyan line for \simA, \simB, and \simC \ respectively. Note the deviation from a monotonic trend as a result of resolution effects. \arz{Same comments as 
+for Fig.~\ref{fig:cnfwrelation}.}
+}
 \label{fig:cvrelation}
 \end{figure}
 %--------------------------------------------------------------------------------
-
-Figure~\ref{fig:concentrations} shows the relationship between $c_{\mathrm{NFW}}$ and $c_{\mathrm{V}}$ for
-quantifying halo concentration on a halo-by-halo basis. Generally the two proxies for concentration are related
-to each other in a simple manner with relatively small scatter indicating that these two quantities largely
-contain the same information about each halo.
 
 %-------------------------------------------- Figure comparing Cnfw and Cv on a halo-by-halo basis
 \begin{figure}
 \centering
 \includegraphics[width=.5\textwidth]{cvvscnfw_relation.pdf}
 \caption{
-The relationship between the two different marks of concentration, using halos in \simB. The color scale demonstrates the number of halos within a single binning in the concentration space, where redder colors demonstrate where the bulk of halos lie on this relation. 
-\arz{This is not sufficiently specific as a caption. For example, you don't say what the color code is or what the color scale is.}
-\asv{Hopefully that is sufficient! Unsure how to make a label for the color bar at this time, but looking into remaking this plot. The code may have been on the previous computer, so I'll take a little bit of time to recall how I went through this plot.}
+The relationship between the two different marks of concentration, 
+using halos in \simB. The color scale, shown at the right, encodes the number of halos 
+within a single two-dimensional bin in the $c_{\mathrm{NFW}}--c_{\mathrm{V}}$ space. 
+Redder pixels are populated with a greater number of halos and show where the bulk of the 
+halos lie. The black dashed line shows something... \arz{I don't know what the black dashed line shows, 
+so you have to specify it.}. 
+\arz{Previous caption was STILL not sufficiently specific. Consider carefully what I have 
+written here as an example of a sufficiently specific caption.}
 }
 \label{fig:concentrations}
 \end{figure}
 %--------------------------------------------------------------------------------------------------------------------------------
 
-In addition to halo concentrations, we explore halo clustering as a function of a variety of other 
-halo properties. We explore halo clustering as a function of halo shape quantified by the ratio of 
-the minor and major axes length, 
+
+
+In addition to halo concentrations, we examine halo clustering as a function of a variety of other 
+halo properties. We study halo clustering as a function of halo shape, $s$, 
+quantified by the ratio of the halo minor and major axis lengths, 
+%
 \beq
 s = \frac{c}{a},
 \eeq
-where $a$ is the major axis length and $c$ is the minor axis length. The mean relations of halo shapes 
-as a function of halo mass for $\Delta=200$ is shown in Figure~\ref{fig:srelation} along with the mass 
-thresholds selected to ensure that our results are not compromised by resolution.
+%
+where $a$ is the major axis length and $c$ is the minor axis length. 
+The mean relations for halo shapes as a function of halo mass for $\Delta=200$ 
+are shown in Figure~\ref{fig:srelation} along with the mass 
+thresholds used to ensure that our results are not compromised by 
+resolution.
 
 
 %------------------------------------------ Figure for s(M)
@@ -303,32 +331,44 @@ thresholds selected to ensure that our results are not compromised by resolution
 \centering
 \includegraphics[width=.5\textwidth]{masscut_shape_d200.pdf}
 \caption{
-An example of the relationship between halo shape and 
-halo mass for each of our simulations for $\Delta =200$. The chosen 
-lower limit on halo mass for our sample is marked as a blue, red, or 
-cyan line for \simA, \simB, and \simC \ respectively. Note the deviation from a monotonic relation as a result of
-resolution effects.
+\arz{All the same comments as for Fig.~\ref{fig:cnfwrelation}. 
+In addition, I was under the impression that you were going to 
+select thresholds that guaranteed that the $s(M)$ relation 
+is monotonic? Am I mistaken?}
+The relationship between halo shape and 
+halo mass for each of our simulations with $\Delta =200$. 
+The chosen lower limit on halo mass for our sample is marked as 
+a blue, red, or cyan line for \simA, \simB, and \simC \ respectively. 
+Note the deviation from a monotonic relation as a result of resolution effects.
 }
 \label{fig:srelation}
 \end{figure}
 %--------------------------------------------------------------------------------
 
-We also explore halo clustering as a function of halo spin quantified 
-by the spin parameter $\lambda$ as introduced by \citep{peebles69},
+We study halo clustering as a function of halo angular momentum quantified 
+by the spin parameter, $\lambda$, as introduced by \citep{peebles69},
 \beq
 \lambda = \frac{J \sqrt{\lvert E\rvert}}{G M_{\Delta}^{2.5}}
 \eeq
 where $J$ is the halo angular momentum, $E$ is the total energy of the 
 halo, and $M_{\Delta}$ is the mass at the halo radius, $r_{\Delta}$. 
-The mean relations of halo spins as a function of halo mas for $\Delta=200$ 
-is shown in Figure~\ref{fig:spinrelation} along with the mass thresholds 
-selected to ensure that our results are not compromised by resolution.
+The mean relations for halo spin as a function of halo mass for $\Delta=200$ 
+are shown in Figure~\ref{fig:spinrelation} along with the mass thresholds 
+enforced to ensure that our results are not compromised by resolution. 
+These thresholds are summarized in Table~\ref{table:thresholds}, where 
+we also show the threshold masses at various values of the overdensity 
+parameter, $\Delta$.
 
 %------------------------------------------ Figure for lambda(M)
 \begin{figure}
 \centering
 \includegraphics[width=.5\textwidth]{masscut_spin_d200.pdf}
 \caption{
+\arz{All of the same comments as for Fig.~\ref{fig:cnfwrelation}. Also, there 
+is no reason here that the y-axis has to have such a large range. This 
+crams all of the data into a small portion of the plot and makes most 
+of the plot useless, wasted, white space. A more appropriate y-axis range 
+looks to be from -0.1 to about 0.25 or so.}
 An example of the relationship between halo spin $\lambda$ 
 and halo mass for each of our simulations for $\Delta =200$. 
 The chosen lower limit on halo mass for our sample is marked 
@@ -339,21 +379,36 @@ Note the deviation from a monotonic relation as a result of resolution effects.
 \end{figure}
 %--------------------------------------------------------------------------------
 
-In practice, the mean relations between the various halo properties and the mass thresholds must be determined 
-for each combination of simulation, halo property (e.g., $c_{\mathrm{NFW}}$ or $s$), and halo definition (e.g.,
-value of $\Delta$). We use thresholds determined by the particular case under consideration so as to ensure that
-resolution limitations do not drive any of our primary results. A higher mass threshold means that we do not have
-any issues due to halo resolution, but of course, higher mass thresholds reduce statistical power. As an example,
-we summarize the mass thresholds we have used for a subset of $\Delta$ values in Table~\ref{table:thresholds}. 
-At most values of $\Delta$, the minimum mass thresholds are driven by the requirement that the halo properties do 
-not suffer significantly from finite resolution effects; if too many low mass halos are included, the true
-relations can be lost in halos which have insufficient numbers of particles for robust statistics on an
-individual property.
-\arz{Please check the veracity of this last sentence. Some such sentence summarizing the factors that limit our mass cuts should be in the paper.}
-\asv{Slightly modifying this statement due to the fact that I think that multiple parameters are brushed up against the lower limits of the mass cuts.}
+\arz{I really don't understand what this last paragraph is saying.}
+In practice, the mean relations between the various halo properties and the mass thresholds for our analyses 
+must be determined separately for each combination of simulation, 
+halo property (e.g., $c_{\mathrm{NFW}}$ or $s$), 
+and halo definition (the value of $\Delta$ in the case of the present study). 
+\arz{The first sentence makes sense and I understand it. It is everything that 
+follows that I don't understand. Are you saying that you have a unique threshold 
+for each halo property? That is what I get from this statement, but I think that is 
+not what you are doing. Can you please clarify this discussion?}
+We use thresholds determined by the particular case under consideration so as to ensure that
+resolution limitations do not drive any of our primary results. 
+We summarize the mass thresholds we have used for a 
+subset of $\Delta$ values in Table~\ref{table:thresholds}. 
+At most values of $\Delta$, the minimum mass thresholds are 
+driven by the requirement that the halo properties do 
+not suffer significantly from finite resolution effects.
+\arz{What else could the thresholds be driven by?}
 
-\arz{In the table, don't ``low mass," ``mid mass," and ``high mass" correspond to the different simulations? For example, low mass corresponds to \simA~and so on? If not, then I don't understand. If so, then you should label each cut by the relevant simulation name as well.}
-\asv{We use the various mass cuts across simulations, so I was going for a more general name - e.g. we use high mass on both L0250 and L0500, which allows us to probe if the relation is driven by the simulation size or the actual mass threshold. I can swap out to more specific names though, but I thought that might cause confusion. It seems like we have swapped away from that methodology in the final version, so that might be best.}
+
+\arz{In the table, don't ``low mass," ``mid mass," and ``high mass" correspond to the different simulations? 
+For example, low mass corresponds to \simA~and so on? If not, then I don't understand. If so, then you 
+should label each cut by the relevant simulation name as well.}
+\asv{We use the various mass cuts across simulations, so I was going for a more general name - e.g., 
+we use high mass on both L0250 and L0500, which allows us to probe if the relation is driven by the 
+simulation size or the actual mass threshold. I can swap out to more specific names though, but I 
+thought that might cause confusion. It seems like we have swapped away from that methodology 
+in the final version, so that might be best.}
+\arz{I still prefer using the simulation name to specify the threshold, 
+otherwise the name seems arbitrary.}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table*}
@@ -379,7 +434,7 @@ Cutoff Name &  $\Delta=340$ & $\Delta=200$ & $\Delta=100$ & $\Delta=75$ & $\Delt
 \end{table*}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\arz{I would like to see another figure here. I would like to see $M_{200}$ on the x-axis and $M_{\Delta}$ on the y-axis. What should be plotted is the mean $M_{\delta}$ as a function of $M_{200}$ for all halos common to both catalogs. This will be a nice informative plot for the reader and will help the reader to digest the table.}
+\arz{I would like to see another figure here. I would like to see $M_{200}$ on the x-axis and $M_{\Delta}$ on the y-axis. What should be plotted is the mean $M_{\Delta}$ as a function of $M_{200}$ for all halos common to both catalogs. This will be a nice informative plot for the reader and will help the reader to digest the table.}
 \asv{Will do using the halo matched catalogs - in progress.}
 
 %-----------------------
