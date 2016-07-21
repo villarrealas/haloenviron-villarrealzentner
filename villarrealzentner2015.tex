@@ -398,6 +398,11 @@ not suffer significantly from finite resolution effects.
 \arz{What else could the thresholds be driven by?}
 
 
+\arz{In the next section, you discuss subhalos. However, in order for the paper to have 
+the correct flow, you should introduce the concept of subhalos here and state that we 
+will study halo clustering as a function of satellite number.}  
+
+
 \arz{In the table, don't ``low mass," ``mid mass," and ``high mass" correspond to the different simulations? 
 For example, low mass corresponds to \simA~and so on? If not, then I don't understand. If so, then you 
 should label each cut by the relevant simulation name as well.}
@@ -442,65 +447,87 @@ Cutoff Name &  $\Delta=340$ & $\Delta=200$ & $\Delta=100$ & $\Delta=75$ & $\Delt
 \label{section:methodology}
 %-----------------------
 
-\arz{I actually don't understand what you are saying in this paragraph. I hope there is nothing special about \simB~? Aren't the mass limits determined as you stated in the previous section for each simulation and for each $\Delta$? If so, why does this all need to be repeated here? Perhaps you can just get rid of this paragraph if you are giving this information in the previous section. That would be my preference for logical flow.}
-\asv{Agreed. I think this is probably a repeat at this point. There is nothing special about any given simulation.}
-
 %----------------------------------------------------------
 \subsection{Auxiliary Halo Properties}
 
-\arz{I thought that the Duffy et al. paper only looked at concentration? Is this correct? Either way, there is an 
-Allgood et al. paper that comprehensively examines this for various halo properties and should be cited here.}
-\asv{Found an Allgood paper that is looking at shape, but I'll do a lit search to see if I can't find something else explicit about some of the other parameters}
-Another well known effect is the scaling of our properties as a function of halo mass, as well demonstrated
-within the literature \citep{allgood06, duffy08, despali16}. We are interested in studying the clustering behavior of halos
-as a function of properties other than mass. As mass is the dominant halo property correlated with halo
-clustering strength and environment, we refer to the additional properties that we study as 
-``auxiliary halo properties" (those properties other than mass, such as concentration $c_{\rm NFW}$ or shape
-$s$). 
 
-Most contemporary cosmological $N$-body simulations, including the set that we study here, 
-do not have a sufficiently large number of halos to make isolating halos of fixed mass, and then further 
-splitting these halos by an auxiliary property, a powerful method with which to study the dependence of 
-clustering on auxiliary properties. Consequently, we study this phenomenon using halo samples 
-selected according to minimum mass thresholds. To do so, we remove the mass dependence of 
-the auxiliary properties as follows. 
+We are interested in studying the clustering behavior of halos as a function of 
+properties other than mass. As mass is the dominant halo property determining halo
+clustering strength and environment, we refer to the other properties that we study as 
+``auxiliary halo properties" (those properties other than mass, such as concentration 
+$c_{\rm NFW}$ or shape $s$). As has been demonstrated extensively in the literature, 
+the auxiliary properties that we consider are a function of mass \citep{bullock01,allgood06, duffy08, despali16}. 
+\arz{Cite the Bullock et al. (2001) paper on halo concentrations here. Also, search to see if there are 
+other papers with mass dependences of the other parameters. There probably will be and we probably 
+need more citations here.} 
+This mass dependence induces auxiliary-property-dependent halo clustering. 
+Most contemporary cosmological $N$-body simulations, and specifically the suite of simulations 
+that we study in this work, do not have a sufficiently large number of halos to make isolating halos 
+of fixed mass, and then further splitting these halos by an auxiliary property, a powerful method with 
+which to study the dependence of clustering on auxiliary properties. Therefore, it is 
+necessary to remove or mitigate the mass dependence of the auxiliary properties that we 
+study. 
 
-We take all host halos of interest and sort them by their halo mass, $M_{\Delta}$. 
-Ten equally spaced bins of log mass are generated to sort these halos into, ensuring that no bin has one or zero
-halos. The mean value of each halo property is calculated within each bin, and subtracted from the recorded value
-for each halo in the bin. This removes the strong mass trend in each of these properties, allowing us to avoid a
-need to just look at halos at some fixed mass. We use these mass-dependence removed concentrations, shapes, and
-spins in all calculations throughout the paper.
-\asv{More detail is given. I'm not necessarily comfortable with the current ten bin situation and could conceivably switch back to equally populated bins, which allows for more total bins with halos to look at, but unevenly spaced in log mass.}
-\arz{First, you need some equations here. It is unclear to the reader what the word ``normalize" means in this context. YOU MUST provide enough information so that someone with access to these simulations could reproduce your calculations. Also, you don't give important details. How many are in the ``equal populations" for example. You may also want to add an additional paragraph speculating briefly on other ways to remove the gross mass dependence. You must also say explicitly that we use the mass-dependence-removed concentrations, shapes, and spins in all following calculations. This might not be the exact wording you want to use, but you can decide what you want to call these things.}
+We mitigate the mass dependence of the auxiliary properties as follows. First, 
+we take all host halos more massive than our minimum mass thresholds and sort them by 
+their halo masses, $M_{\Delta}$. We place these halos into ten logarithmically-spaced bins 
+of halo mass, ensuring that no bin has fewer than XXX halos. 
+\arz{I was under the impression that you used the median value? Can you 
+check on this.}
+The mean value of each halo property is calculated within each bin, 
+and subtracted from the recorded value for each halo in the bin. 
+This removes the strong mass trend in each of these properties. 
+We use these new measures of halo auxiliary properties, those with 
+the mean mass trend removed, to study halo clustering strength 
+in the remainder of this work.
+\arz{You should make sure that your results do not change qualitatively 
+under a few modifications. First, make sure that if you use finer binning 
+that nothing qualitative changes (small quantitative changes can be acceptable). 
+We have to be sure that our results are not sensitive to the number of bins 
+that you choose here. Second, you should make sure that your results are 
+not qualitatively different if you use medians rather than means. Third, 
+I believe that you also explore removing the mass trend by removing 
+a best fit power law $c(M)$ (or $s(M)$ or $\lambda(M)$ or whatever) relationship?
+If so, that is great. You should conclude this sentence with a statement along 
+the lines of ``We have experimented with a variety of methods to remove the 
+gross mass dependence of these auxiliary properties and have verified that 
+our qualitative results are not sensitive to the number of bins we use or the 
+choice of median or mean property. Further, we have experimented with 
+removing the gross mass dependence of auxiliary halo properties by subtracting 
+away a best-fit power law relation for the property of interest and again, we 
+find that our qualitative results are not altered using this method." We have 
+to be able to give the reader some sort of confidence that our results are not 
+driven by these seemingly arbitrary choices.}
+\asv{I'm not necessarily comfortable with the current ten bin situation and could conceivably switch back to equally populated bins, which allows for more total bins with halos to look at, but unevenly spaced in log mass.}
+\arz{You should do whatever is most robust. Using either method, you should choose sufficiently large number of 
+bins that our primary results are not altered by changing the number of bins.}
 
-\arz{Flesh this out a bit. See the discussion in Wechsler et al. 06 as a model. The specific values of the thresholds need to be given} 
-\asv{Slight change - following Wechsler et al 06 does not ever put a specific limit on subhalo velocity and instead places a limit on the ratio between the subhalo velocity and the host velocity as the prime limit. Just making sure that lines up well.}
 
-To mitigate the correlation between halo mass and satellite number, 
-we follow the prescription of \citet{wechsler06}. We select only host halos 
-with $v_{\mathrm{max,host}} \ge 240 \ \mathrm{km \ s}^{-1}$ in addition to the previous mass cuts. 
-This ensures that the satellite counts will be minimally affected by finite resolution. We then select subhalos
-from the sample based on the criteria that the ratio $v_{\mathrm{max,sub}} / v_{\mathrm{max,host}} \ge 0.3$. The
-subhalo velocity function is a very nearly self-similar function \citep{zentner05} \arz{Cite Zentner, Berlind et
-al. 2005 and references therein on this point.}, so that scaling subhalo $v_{\mathrm{max,sub}}$ by host
-$v_{\mathrm{max,host}}$ in this way eliminates the gross mass dependence of satellite number. The value chosen
-for this ratio has been adopted such that all host halos that make the above cut contain, on average, one
-selected satellite halo. As a final selection cut, for each host halo, only the number of subhalos within the
-radius $R_{\Delta}$ of the host are counted. 
 
-\arz{In the earlier draft, the preceding paragraph had a logical flow that made it 
-very difficult to follow the steps in the calculation. If you think about it for a minute, the 
-important pieces are: (1) we quantify subhalo size with $v_{\mathrm{max,sub}}$ because 
-it is more robustly measured than subhalo mass; (2) there is a minimum $v_{\mathrm{max,sub}}$ 
-that we can aspire to reach because of resolution; (3) we quantify subhalo number by scaling 
-subhalo size relative to host size, $v_{\mathrm{max,sub}}/v_{\mathrm{max,host}}$, because this 
-scales out the gross dependence of subhalo number count on host halo size; (4) we must choose 
-host halos that are sufficiently large that the contain, on average, a few subhalos above our 
-minimum subhalo $v_{\mathrm{max,sub}}$. These considerations completely specify the 
-cuts on $v_{\mathrm{max,sub}}$ and $v_{\mathrm{max,host}}$. Please make sure these 
-elements of the logic are clear to the reader.}
-\asv{I think the steps should be clear at this point? Let me know if not.}
+\arz{Flesh this out a bit. See the discussion in Wechsler et al. 06 as a model. 
+The specific values of the thresholds need to be given} 
+\asv{Slight change - following Wechsler et al 06 does not ever put a specific limit on 
+subhalo velocity and instead places a limit on the ratio between the subhalo velocity and 
+the host velocity as the prime limit. Just making sure that lines up well.}
+
+
+Host halo size and the number of satellite halos 
+(above some threshold in a proxy of satellite halo size) are also strongly correlated. 
+To mitigate the correlation between halo mass and abundance of subhalos, 
+we follow the prescription of \citet{wechsler06}. First, we select host halos 
+with $v_{\mathrm{max,host}} \ge 240 \ \mathrm{km \ s}^{-1}$. This ensures that the satellite counts 
+will be minimally affected by finite resolution. We then select subhalos
+from the sample based on the criteria that the ratio $V_{\mathrm{max,sub}}/V_{\mathrm{max,host}} \ge 0.3$, 
+where $V_{\mathrm{max,sub}}$ and $V_{\mathrm{max,host}}$ are the maximum circular velocities 
+of the subhalos and host halos respectively. This scaling exploits the fact that the subhalo velocity 
+function is a very nearly self-similar function \citep[e.g.,][and references therein]{zentner05}, 
+so that scaling subhalo $V_{\mathrm{max,sub}}$ by host $V_{\mathrm{max,host}}$ 
+eliminates the gross mass dependence of satellite number. The threshold value for this velocity ratio was chosen 
+such that all host halos that make the above cut contain, on average, more than one satellite halo. 
+Subhalo maximum circular velocities were used as a proxy for subhalo size rather than subhalo masses because 
+subhalo maximum circular velocities can be more robustly measured from simulation data, making 
+comparison to other work easier.
+
 
 %---------------------------------------------------------------
 \subsection{Clustering Statistics}
