@@ -531,25 +531,34 @@ comparison to other work easier.
 
 %---------------------------------------------------------------
 \subsection{Clustering Statistics}
+%---------------------------------------------------------------
+
 
 We assess the influence of assembly bias on two-point statistics of host halos. In order to do so, we 
 study both the standard two-point correlation functions of halos selected by properties other than mass 
 (e.g., the auxiliary properties concentration, shape, and spin) as well as halo mark correlation functions
 (MCFs). MCFs quantify the manner in which a halo property (the ``mark") correlates among halo pairs as a function
-of the distance between the pairs. Absent halo assembly bias, halo marks are uncorrelated among pairs. 
-MCFs have been used in several previous papers to quantify environmental dependence of halo 
-properties other than mass \citep{sheth04, harker06, wechsler06, mao15} \arz{I think there are also a couple of 
-Sheth papers that should be cited here, maybe more}. 
+of the distance between the pairs. MCFs have the advantage that they effectively stack signal from all values of 
+the halo auxiliary property, or mark, in contrast to selecting subsets of halos based on the auxiliary property and 
+MCFs stack signal from all environments and do not require any specific definition of halo environment in order 
+to detect environmental trends. Absent halo assembly bias, the halo marks are uncorrelated among pairs. 
+MCFs have been used in many previous papers to quantify environmental dependence of halo 
+properties other than mass \citep{sheth04,harker06,wechsler06,mao15} \arz{I think there are also a couple of 
+Sheth papers that should be cited here, maybe more. Check on that.}. 
+
+
 For a specific halo property, or mark $m$, we use the MCF normalization of \citet{wechsler06}, namely 
+%
 \beq
 \mathcal{M}_m(r) \equiv ( \langle m_1 m_2 \rangle_p (r) - \langle m \rangle^2 / \mathcal{V}(m),
 \eeq
+%
 where $m_{\mathrm{i}}$ is the value of the mark for halo $\mathrm{i}$, $\langle m \rangle$ is the mean of the
 mark, and $\mathcal{V}(m)$ the variance of the mark. The notation is intended to indicate that the average is
 taken over all pairs of halos separated by a distance $r$. In the absence of any correlation between a halo
-property and the halo having a neighbor a distance $r$ away, $\mathcal{M}_m(r) = 0$. Deviations of the MCF from
+property among neighbors a separation $r$ away, $\mathcal{M}_m(r) = 0$. Deviations of the MCF from
 zero indicate such correlations exist and the size of the $\mathcal{M}_m(r)$ gives the excess of the mark among
-pairs compared to the one-point mean of the mark $\langle m\rangle$ in units of the one-point variance.
+pairs compared to the one-point mean of the mark $\langle m\rangle$ in units of the one-point variance. 
 
 
 It is necessary to assess statistical fluctuations in the statistics that we measure in these simulations in
@@ -566,26 +575,11 @@ environmental correlations with halo auxiliary properties, the MCFs measured in 
 this error band $95\%$ of the time. 
 
 
-\arz{The sentences immediately below this comment can be removed. Also, not a wise idea to 
-lock yourself into 20\% in the text. There is absolutely nothing special about 20\%. In fact, it 
-would be interesting to see if things change as this percentile changes, perhaps try 50\% and 
-10\%. We should at least know what those figures look like before proceeding to publication, 
-so you should make them even though we likely won't include them in the main text of 
-the paper. It could be very informative and will almost certainly be useful when giving talks.}
-\asv{Removed - the new framework with halo tools makes it easier to test any cut that we want in short order as well.}
-
-
-
 %----------------------------
 \section[]{Results}
 \label{section:results}
 %----------------------------
 
-\arz{We don't need to reiterate all of this stuff about the mass cuts. Just make sure the discussion in the simulations section is complete and then we can move forward. Again, I suggest changing the names of your cuts. It would be great if they can signify something either about the ACTUAL MASS involved in the cut or the simulation or possibly BOTH! Perhaps you can say the ``L0125" cut and so on? 
-If you get everything specified in the simulation section, then this paragraph is completely unnecessary.}
-\asv{Removed - still debating how to name these cuts.}
-\arz{It seems to me that we DO include \simC~!! Even if we don't we should. Let's treat each simulation as simply sampling a different range of halo masses. That is the most useful way to proceed.}
-\asv{Also removed - this was leftover from the old plots, before L0500 was included in all the plots.}
 
 %-----------------------------------------------
 \subsection{Correlation Functions}
@@ -596,21 +590,27 @@ We begin by studying the correlation functions of halos in our mass threshold sa
 properties. Figure~\ref{fig:cc_cfcompare} exhibits the difference between the clustering strength of halos in the
 $20^{\mathrm{th}}$ percentile highest concentrations and the halos with the halos that have the
 $20^{\mathrm{th}}$ percentile lowest concentrations as a function of the overdensity parameter $\Delta$, used to
-define the halos. First, it is clear that clustering strength generally depends upon the auxiliary properties of
-halos at all halo mass thresholds. Second, it is clear that the strength and sign of assembly bias is 
-strongly mass dependent, a result that agrees with the significant previous literature on halo assembly bias
+define the halos. \arz{which concentration?} 
+First, it is clear that clustering strength generally depends upon the auxiliary properties of
+halos at all halo mass thresholds. \arz{How can you make a statement about auxiliary properties 
+in general, when you only plot concentration?}
+Second, it is clear that the strength and sign of assembly bias is 
+strongly mass dependent for any fixed halo definition, 
+a result that agrees with the significant previous literature on halo assembly bias using conventional halo definitions 
 \citep{wechsler02, gao05, zentner07, wechsler06, harker06, croton07, dalal08, mao15, sunayama16}\arz{Cite all the usual 
 papers here, Gao, Wechsler, Harker, Zentner07, Dalal07, probably several more.}\asv{I think that is most of the
-usual suspects, but I'll do a double check for more important ones!} At relatively low mass (the L0125 panel, 
-$M_{200} > 7 \times 10^{10} \hMsun$), high-concentration halos are considerably more strongly concentrated 
-than low-concentration halos using the more 
-conventional $\Delta = 200$ definition for halos. At somewhat higher halo masses (the L0250 panel, $M_{200} > 7
-\times 10^{11} \hMsun$), this difference is markedly reduced. Finally, for the highest mass halos that we have
-the capability of studying (the L0500 panel, $M_{200} > 4 \times 10^{12} \hMsun$), the effect is of opposite
-sign; low-concentration halos are more strongly correlated than high-concentration halos.
+usual suspects, but I'll do a double check for more important ones!} 
+At relatively low mass (the L0125 panel, 
+$M_{200} > 7 \times 10^{10} \hMsun$), high-concentration halos are considerably 
+more strongly clustered than low-concentration halos using the more 
+conventional $\Delta = 200$ definition for halos. At somewhat higher halo masses 
+(the L0250 panel, $M_{200} > 7\times 10^{11} \hMsun$), this difference is markedly reduced. 
+Finally, for the highest mass halos that we have
+the capability of studying (the L0500 panel, $M_{200} > 4 \times 10^{12} \hMsun$), 
+the effect is of opposite sign; low-concentration halos are more strongly correlated 
+than high-concentration halos.
 
-\asv{Added a little bit of language to your version to include the new results for the new results.}
-\arz{The language in this paragraph is way too loose and not sufficiently clear or professional. What does it mean to be a ``reasonable" mass range, for example? I'll attemp to clean it up. Try to follow this model in your writing. Compare my version:}
+
 Focus first on the middle panel of Fig.~\ref{fig:cc_cfcompare}. In this panel, corresponding to the 
 \simB~mass threshold, the difference in large-scale clustering between high- and low-concentration halos 
 is dramatically reduced for a halo definition with $\Delta=75$. Further decreasing $\Delta$ leads to
@@ -618,12 +618,11 @@ concentration-dependent clustering of opposite sign. Comparing the differing clu
 strengths across the three panels of Fig.~\ref{fig:cc_cfcompare}, it is clear that this is not a universal
 conclusion. For low-mass halos, very low values of $\Delta$ (and correspondingly large definitions of halo radii,
 as $R_{\Delta} \propto \Delta^{-1/3}$) are necessary in order to mitigate the concentration dependence of halo
-clustering; while dramatically reduced for a halo definition with $\Delta \approx 10$, there is a potential
-danger of systematic effects related to halo finding algorithms at such an extreme value. Conversely, for higher
+clustering. Conversely, for higher
 mass halos (the L0500 panel), values of $\Delta \approx 200$ yield little concentration-dependent clustering. In
 this case, decreasing $\Delta$ (increasing $R_{\Delta}$) results in significantly {\em increased} concentration
-dependent halo clustering. The reasons for these changes is of interest and we return to interpreting these
-results below.
+dependent halo clustering. The reasons for these changes are of interest and we return to the interpretation of 
+these results below.
 
 Notice that in all panels of Fig.~\ref{fig:cc_cfcompare}, the effect of concentration-dependent clustering is
 scale-dependent. Moreover, the effect is scale-dependent for all values of $\Delta$. In these cases, simply
@@ -632,28 +631,34 @@ clustering on all scales. In this discussion and throughout, we focus primarily 
 which we take to mean clustering on scales significantly larger than the radii, $R_{\Delta}$ of the halos in our
 samples.
 
-\arz{Given how the correlation functions look, shouldn't we include results for $\Delta<50$, for the L0125 results? The effect is continuous so it looks like it would be removed with a smaller value of $\Delta$, say $\Delta \approx 20$. I think you have run this already, so no reason to leave it out. I say this is a must for moving forward with publication.} 
-\asv{Definitely in the works for L0125! Just finishing up some runs in order to sort things out.}
 
-\arz{On another note, did you ever compute these things for finer spacing of $\Delta$? For example, it looks like $\Delta \approx 70$ is going to work better than $\Delta=75$. It's OK if you haven't, but let me know! I thought we had discussed this. } 
-\asv{We have some finer spacing to investigate from previous runs.}
-
-\arz{For the high-mass, L0500, cut, did you try any $\Delta>200$, maybe $\Delta=210$ or so? This is not really necessary, I'm just curious how this looks.} 
-\asv{We also have finished a $\Delta = 340$ run of this to examine as necessary.}
-
-
+%---------------------------------------------------------------------------------------------------------------------------------------
 \begin{figure}
 	\centering
 	\includegraphics[width=.4\textwidth]{all_cfcompare_cnfw.pdf}
 	\caption{
-The difference of the correlation function for only the top 20\% most concentrated halos and the bottom 20\% in concentration, normalized by the overall correlation function of the entire sample. From top to bottom we show the results for the `low mass', `mid mass', and `high mass' cutoffs. \asv{May still need error bars, depending on how clean we want the overall image, but should be quick enough to whip together.}
+The difference of the correlation function for only the top 20\% most concentrated halos 
+and the bottom 20\% in concentration, normalized by the overall correlation function of 
+the entire sample. From the top panel to the bottom panel, 
+we show the results for the `low mass', `mid mass', and `high mass' cutoffs. 
+\arz{You need to describe each line type in the panels.}
+\asv{May still need error bars, depending on how clean we want the overall image, but should be quick enough to whip together.}
+\arz{For errors, you don't want the jackknife error bars. What you want is to show the range you get when you randomly 
+sub-sample 20\% of all halos repeatedly.}
 }
-	\label{fig:cc_cfcompare}
+\label{fig:cc_cfcompare}
 \end{figure}
+%----------------------------------------------------------------------------------------------------------------------------------------------
 
 \arz{I assume that if you made the same plot for $c_V$ we would reach the same basic conclusions as for $c_{NFW}$? If this is so, then you need to add a specific statement in this regard to the end of the discussion above. In this case, no new figure would be needed. If not, then you need to show the figure.}
-\arz{In this subsection, I advocate at least one and perhaps two new figures. First, can you make an analogous plot to Fig.~\ref{fig:cc_cfcompare} that shows some other property, such as shape or spin? This would be a nice addition for completeness. Second, what would happen if you used 50\% or 10\% cuts on concentration? Would we reach nearly the same conclusions? If so, then you do not need to show the plots explicitly. However, in this case, you DO need to state explicitly that this is the case. In other words, you need to state the the broad conclusions we reach are roughly independent of the specific percentiles that we use to select halos so that showing results for a variety of different percentiles doesn't add very much to the discussion. It is also possible that selecting on a different percentile yields an entirely different conclusion. I don't suspect that this will be the case, but it is possible. If that happens, then you need to show an example of such a figure for, say, concentration.}
+ 
+ \arz{You need to make some statement that the same conclusions would be reached with $c_{\mathrm{V}}$.}
+ 
+ \arz{In this subsection, I advocate at least one and perhaps two new figures. First, can you make an analogous plot to Fig.~\ref{fig:cc_cfcompare} that shows some other property, such as shape or spin? This would be a nice addition for completeness. Second, what would happen if you used 50\% or 10\% cuts on concentration? Would we reach nearly the same conclusions? If so, then you do not need to show the plots explicitly. However, in this case, you DO need to state explicitly that this is the case. In other words, you need to state the the broad conclusions we reach are roughly independent of the specific percentiles that we use to select halos so that showing results for a variety of different percentiles doesn't add very much to the discussion. It is also possible that selecting on a different percentile yields an entirely different conclusion. I don't suspect that this will be the case, but it is possible. If that happens, then you need to show an example of such a figure for, say, concentration.}
 \asv{These have all been tested at this point. They do not offer any unique conclusions, so I am uncertain if they want to be included beyond the concentration one, which shows the equivalence of the two methods.}
+
+\arz{If you have tested these things, then you really need to have a paragraph in here at this point stating 
+that you've checked these things and that they do not lead to any significantly different conclusions.}
 
 %-----------------------------------------------------------------
 \subsection{Mark Correlation Functions}
@@ -673,7 +678,7 @@ MCFs have the advantage that it is not necessary
 to specify particular auxiliary property subsamples, such as the percentiles above, 
 in order to assess assembly bias.\footnote{Of course, this comes at the cost of averaging 
 over all values of the auxiliary properties. Using MCFs it is not evident if the assembly bias effect is a smooth
-function of the auxiliary properties, dominated by the tails of the auxiliary property, or has some more complex
+function of the auxiliary property, dominated by the tails of the auxiliary property, or has some more complex
 dependence upon the auxiliary property. Our results in \S~\ref{sub:cfresults} suggest that assembly bias is a
 fairly smooth function of the auxiliary properties.} 
 The NFW concentration, $c_{\mathrm{NFW}}$, MCF is shown in Figure~\ref{fig:cc_mcf_cnfw}. 
