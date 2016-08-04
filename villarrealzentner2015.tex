@@ -80,20 +80,22 @@ cosmology: dark matter -- cosmology: large-scale structure of Universe -- galaxi
 \label{section:introduction}
 %-----------------------
 
-In the concordance cosmology, galaxies and clusters form within merging dark matter halos \citep[e.g.,][]{white78,
-blumenthal84}. Numerical simulations have provided a solid understanding of the abundances, properties, and 
+In the concordance cosmology, galaxies and clusters form within merging dark matter halos \citep{white_etal78,blumenthal_etal84, mo_etal10}. Numerical simulations have provided a solid understanding of the abundances, properties, and 
 clustering of dark matter halos in the standard cosmological model. Accordingly, it is possible to compute the 
 clustering statistics of galaxies given a model for the (probabilistic) relationship between galaxies and dark matter halos. 
 Such halo occupation models have been used to interpret large-scale structure measurements and 
-constrain models of galaxy evolution \citep[e.g.,][]{yang03,tinker05,zehavi05a,porciani06,vdBosch07,Zheng07,conroy_wechsler09,yang09b,zehavi_etal11,guo_etal11b,wake_etal11,yang11a,yang12,leauthaud_etal12,rod_puebla12,tinker_etal13,cacciato_etal13,more_etal13,guo_etal14,zu_mandelbaum15b}.
+constrain models of galaxy evolution \citep{yang_etal03,tinker_etal05,zehavi_etal05b,porciani_norberg06,vdbosch_etal07,zheng_etal07,conroy_wechsler09,
+yang_etal09b,zehavi_etal11,guo_etal11,wake_etal11,yang_etal11a,yang_etal12,leauthaud_etal12,
+rodriguezpuebla_etal12, behroozi_etal13b, moster_etal13, tinker_etal13,cacciato_etal13,more_etal13,guo_etal14,
+zu_mandelbaum15b}.
 To date, the vast majority of halo occupation models rely on a key assumption, namely that 
 the probability of a halo hosting a certain number of galaxies of a particular type 
 depends only upon halo mass. It is now well known that the clustering strength of halos depends upon 
-properties such as halo formation time \citep{gao05,wechsler06,gao_white07,croton07,zentner07,dalal_etal08}, 
-concentration \citep{wechsler06,mao15}, and other halo properties \arz{NEED SOME ADDITIONAL CITATIONS HERE.}. 
+properties such as halo formation time \citep{gao_etal05,harker_etal06, wechsler_etal06,gao_white07,croton_etal07,zentner07,dalal_etal08, li_etal08, lacerna_padilla11}, 
+concentration \citep{wechsler_etal06,faltenbacher_white10, mao_etal15}, and other halo properties \citep{bett_etal06, hahn_etal07a, hahn_etal07b, faltenbacher_white10, vandaalen_etal12, fisher_faltenbacher16, sunayama_etal16}\arz{NEED SOME ADDITIONAL CITATIONS HERE.}. 
 If galaxy properties depend upon these halo properties, a phenomenon known as galaxy {\em assembly bias}, 
-then standard halo occupation modeling will fail \citep[e.g.,][]{zentner_etal14} 
-and more complex models \citep[e.g.,][]{hearin_etal16} are necessary.
+then standard halo occupation modeling will fail \citep{zentner_etal14} 
+and more complex models \citep{gilmarin_etal11, hearin_etal16} are necessary.
 
 
 In this work, we explore the possibility of simplifying halo occupation modeling, at least for some 
@@ -109,14 +111,14 @@ the universe. Even when the same reference density is used, the threshold level 
 mean density of the universe, commonly used thresholds are 178, 180, 200, and $\sim$340 times the mean 
 background density, the last of these being the ``virial" overdensity in a concordance $\Lambda$CDM universe. 
 Significantly higher values of the overdensity parameter are often used in studies of X-ray emission from cluster-sized halos. 
-These definitions exclude particles that are gravitationally bound to the halo \citep[e.g.,][]{kazan06}. 
+These definitions exclude particles that are gravitationally bound to the halo \citep{kazantzidis_etal06, valluri_etal07, more_etal15}. 
 
 
 In this paper we explore the possibility of using halo definition to work for the 
 convenience of the practitioner. We study the strength of various halo assembly bias signals 
 as a function of halo definition. This is motivated, in large part, by recent literature that suggests 
-that a large portion of the assembly bias signals are driven by halos in the relatively density environments 
-surrounding larger halos. \arz{Need citations here to work by Wang (2007), the recent work on splashback (backsplash) 
+that a large portion of the assembly bias signals are driven by halos in the relatively dense environments 
+surrounding larger halos. \citep{wang_etal07, warnick_etal08, more_etal15} \arz{Need citations here to work by Wang (2007), the recent work on splashback (backsplash) 
 and flyby halos, and the recent work on the splashback radius.} 
 These halos have anomalous properties (e.g., formation times, concentrations, etc.) compared to field halos 
 in part because of their interactions with their larger, neighbor halos. It seems interesting to ask whether or 
@@ -163,7 +165,7 @@ halos, while \simC~has the most robust statistics for the most massive halos as 
 volume.
 
 To identify halos, we use the {\tt ROCKSTAR} halo finder, which works on the phase space algorithm described in
-\citet*{behroozi13}. In short, {\tt ROCKSTAR} determines initial groupings of particles using a Friends-of-Friends algorithm 
+\citet*{behroozi_etal13a}. In short, {\tt ROCKSTAR} determines initial groupings of particles using a Friends-of-Friends algorithm 
 in phase space before applying the spherical overdensity halo definition in order to determine halo properties of
 interest. Unbound particles are removed prior to the calculation of halo mass and other halo properties. Our
 method of halo redefinition is to change how halo size is calculated as part of the {\tt ROCKSTAR} pipeline. A halo is
