@@ -1,6 +1,6 @@
-\documentclass[usenatbib,usegraphicx,letterpaper]{mn2e}
-\usepackage[totalwidth=480pt,totalheight=680pt]{geometry}
-
+%%\documentclass[usenatbib,usegraphicx,letterpaper]{mnras}
+\documentclass[usenatbib]{mnras}
+%%\usepackage[totalwidth=480pt,totalheight=680pt]{geometry}
 \usepackage{amssymb}
 \usepackage{epsfig}
 \usepackage{amsmath}
@@ -15,7 +15,8 @@
 
 \include{villarrealzentner_macros}
 
-\bibliographystyle{mn2e}
+%%\bibliographystyle{mn2e}
+\bibliographystyle{mnras}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -51,7 +52,7 @@ to standard implementations of the halo model and excursion set theory which ass
 population within the halo is determined by the mass of the halo alone. We seek to find a definition of the size
 of a halo that allows us to minimize the impact of assembly bias on halo model calculations. We analyze the
 dependence on environment of our properties using the method of marked correlation functions for several
-different halo definitions, utilizing the \citet{diemer15} simulations. We find that environmental dependencies
+different halo definitions, utilizing the \citet{diemer_kravtsov15} simulations. We find that environmental dependencies
 are dramatically different as we vary the definition of the halo radius in terms of the overdensity $\Delta$. At
 large length scales, we find that the majority of assembly bias is removed through suitable redefinition of
 $\Delta$. We are able to determine that the majority of the reduction in assembly bias is related to the
@@ -80,19 +81,19 @@ cosmology: dark matter -- cosmology: large-scale structure of Universe -- galaxi
 \label{section:introduction}
 %-----------------------
 
-In the concordance cosmology, galaxies and clusters form within merging dark matter halos \citep{white_etal78,blumenthal_etal84, mo_etal10}. Numerical simulations have provided a solid understanding of the abundances, properties, and 
+In the concordance cosmology, galaxies and clusters form within merging dark matter halos \citep{white_rees78,blumenthal_etal84, mo_etal10}. Numerical simulations have provided a solid understanding of the abundances, properties, and 
 clustering of dark matter halos in the standard cosmological model. Accordingly, it is possible to compute the 
 clustering statistics of galaxies given a model for the (probabilistic) relationship between galaxies and dark matter halos. 
 Such halo occupation models have been used to interpret large-scale structure measurements and 
 constrain models of galaxy evolution \citep{yang_etal03,tinker_etal05,zehavi_etal05b,porciani_norberg06,vdbosch_etal07,zheng_etal07,conroy_wechsler09,
-yang_etal09b,zehavi_etal11,guo_etal11,wake_etal11,yang_etal11a,yang_etal12,leauthaud_etal12,
+yang_etal09b,zehavi_etal11,guo_etal11a,wake_etal11,yang_etal11a,yang_etal12,leauthaud_etal12,
 rodriguezpuebla_etal12, behroozi_etal13b, moster_etal13, tinker_etal13,cacciato_etal13,more_etal13,guo_etal14,
 zu_mandelbaum15b}.
 To date, the vast majority of halo occupation models rely on a key assumption, namely that 
 the probability of a halo hosting a certain number of galaxies of a particular type 
 depends only upon halo mass. It is now well known that the clustering strength of halos depends upon 
 properties such as halo formation time \citep{gao_etal05,harker_etal06, wechsler_etal06,gao_white07,croton_etal07,zentner07,dalal_etal08, li_etal08, lacerna_padilla11}, 
-concentration \citep{wechsler_etal06,faltenbacher_white10, mao_etal15}, and other halo properties \citep{bett_etal06, hahn_etal07a, hahn_etal07b, faltenbacher_white10, vandaalen_etal12, fisher_faltenbacher16, sunayama_etal16}\arz{NEED SOME ADDITIONAL CITATIONS HERE.}. 
+concentration \citep{wechsler_etal06,faltenbacher_white10, mao_etal15}, and other halo properties \citep{bett_etal06, hahn_etal07a, hahn_etal07b, faltenbacher_white10, vandaalen_etal12, fisher_faltenbacher16, sunayama_etal16, chavesmontero_etal16}\arz{NEED SOME ADDITIONAL CITATIONS HERE.}. 
 If galaxy properties depend upon these halo properties, a phenomenon known as galaxy {\em assembly bias}, 
 then standard halo occupation modeling will fail \citep{zentner_etal14} 
 and more complex models \citep{gilmarin_etal11, hearin_etal16} are necessary.
@@ -118,7 +119,9 @@ In this paper we explore the possibility of using halo definition to work for th
 convenience of the practitioner. We study the strength of various halo assembly bias signals 
 as a function of halo definition. This is motivated, in large part, by recent literature that suggests 
 that a large portion of the assembly bias signals are driven by halos in the relatively dense environments 
-surrounding larger halos. \citep{wang_etal07, warnick_etal08, more_etal15} \arz{Need citations here to work by Wang (2007), the recent work on splashback (backsplash) 
+surrounding larger halos \citep{wang_etal07, warnick_etal08, more_etal15} and the fact
+that the envionmental impact of halos has been shown to extend beyond well beyond the virial radius. \citep{adhikari_etal14, diemer_kravtsov14, wetzel_etal14, more_etal15, wetzel_nagai15} 
+\arz{Need citations here to work by Wang (2007), the recent work on splashback (backsplash) 
 and flyby halos, and the recent work on the splashback radius.} 
 These halos have anomalous properties (e.g., formation times, concentrations, etc.) compared to field halos 
 in part because of their interactions with their larger, neighbor halos. It seems interesting to ask whether or 
@@ -129,7 +132,7 @@ halo assembly bias. This is the aim of our paper.
 
 In the present paper, we restrict ourselves to halos that are defined by spherical regions and we 
 study the strength of halo assembly bias as a function of the density threshold used to delineate these 
-spherical halos. We find that \arz{two or three sentence, relatively non-technical summary of our results 
+spherical halos. We find that for the properties tracing halo concentration, we can mitigate assembly bias at large scales through an appropriate choice of overdensity parameter. We also find that this result does not hold for parameters such as halo shape, halo spin, or halo satellite number. We suggest that this result is consistent with current models of halo formation and suggests the impact of large scale structure on these parameters.\arz{two or three sentence, relatively non-technical summary of our results 
 should go here.}
 
  
@@ -152,7 +155,7 @@ nature of assembly bias as a function of halo definition.
 %------------------------------------
 
 In order to study the effects of halo redefinition, we use three cosmological $N$-body simulations of structure
-formation. The \citet{diemer15} simulations each utilize a Planck best-fit cosmology with $\Om = 0.32$, $\Ol =
+formation. The \citet{diemer_kravtsov15} simulations each utilize a Planck best-fit cosmology with $\Om = 0.32$, $\Ol =
 0.68$, and $h_{\mathrm{o}} = 0.67$. We use three simulation boxes with comoving sizes of 125, 250, and 500
 $\hMpc$ respectively. The particle masses are $1.6 \times 10^8$, $1.3 \times 10^9$, and $1.0 \times 10^{10}
 \hMsun$ respectively, implying a total of $1024^3$ particles in each simulation. Furthermore, the three
@@ -192,7 +195,7 @@ environmental effects on halo properties as a function of halo definition.
 We investigate the clustering of halos as a function of a number of halo properties 
 that have been shown to influence halo clustering at fixed halo mass. We explore 
 two definitions of halo concentration. The first stems from a fit of the spherically-averaged 
-halo density profile, $\rho(r)$, to a \citet[][; hereafter, NFW]{nfw97} density profile, 
+halo density profile, $\rho(r)$, to a \citet{navarro_etal97}; hereafter, NFW density profile, 
 %
 \beq
 \rho(r) = \frac{\rho_0}{\frac{r}{r_{\mathrm{s}}}(1+\frac{r}{r_{\mathrm{s}}})^2},
@@ -230,7 +233,7 @@ of gravitational lensing, the mass distribution is the primary quantity of inter
 directly related to predictions for lensing statistics. Secondly, concentrations can be measured from 
 individual simulation snapshots easily and halo concentrations are known to be strongly correlated with 
 the formation histories of dark matter halos with earlier forming halos having higher concentrations at 
-fixed halo mass \citep{wechsler02, wechsler06} 
+fixed halo mass \citep{wechsler_etal02, wechsler_etal06} 
 \arz{Cite papers here like Wechsler et al. 2002. I think there are at least two Zhao et al. papers from 
 the last decade relevant here. I don't remember the years, but one of them is at least 8 years old. I think another 
 might be from around 2011.}. As such, exploring the concentration dependence of halo
@@ -458,7 +461,7 @@ properties other than mass. As mass is the dominant halo property determining ha
 clustering strength and environment, we refer to the other properties that we study as 
 ``auxiliary halo properties" (those properties other than mass, such as concentration 
 $c_{\rm NFW}$ or shape $s$). As has been demonstrated extensively in the literature, 
-the auxiliary properties that we consider are a function of mass \citep{bullock01,allgood06, duffy08, despali16}. 
+the auxiliary properties that we consider are a function of mass \citep{bullock_etal02,allgood_etal06, duffy_etal08, despali_etal16}. 
 \arz{Cite the Bullock et al. (2001) paper on halo concentrations here. Also, search to see if there are 
 other papers with mass dependences of the other parameters. There probably will be and we probably 
 need more citations here.} 
@@ -516,13 +519,13 @@ the host velocity as the prime limit. Just making sure that lines up well.}
 Host halo size and the number of satellite halos 
 (above some threshold in a proxy of satellite halo size) are also strongly correlated. 
 To mitigate the correlation between halo mass and abundance of subhalos, 
-we follow the prescription of \citet{wechsler06}. First, we select host halos 
+we follow the prescription of \citet{wechsler_etal06}. First, we select host halos 
 with $v_{\mathrm{max,host}} \ge 240 \ \mathrm{km \ s}^{-1}$. This ensures that the satellite counts 
 will be minimally affected by finite resolution. We then select subhalos
 from the sample based on the criteria that the ratio $V_{\mathrm{max,sub}}/V_{\mathrm{max,host}} \ge 0.3$, 
 where $V_{\mathrm{max,sub}}$ and $V_{\mathrm{max,host}}$ are the maximum circular velocities 
 of the subhalos and host halos respectively. This scaling exploits the fact that the subhalo velocity 
-function is a very nearly self-similar function \citep[e.g.,][and references therein]{zentner05}, 
+function is a very nearly self-similar function \citep{zentner_etal05}[and references therein], 
 so that scaling subhalo $V_{\mathrm{max,sub}}$ by host $V_{\mathrm{max,host}}$ 
 eliminates the gross mass dependence of satellite number. The threshold value for this velocity ratio was chosen 
 such that all host halos that make the above cut contain, on average, more than one satellite halo. 
@@ -545,11 +548,11 @@ the halo auxiliary property, or mark, in contrast to selecting subsets of halos 
 MCFs stack signal from all environments and do not require any specific definition of halo environment in order 
 to detect environmental trends. Absent halo assembly bias, the halo marks are uncorrelated among pairs. 
 MCFs have been used in many previous papers to quantify environmental dependence of halo 
-properties other than mass \citep{sheth04,harker06,wechsler06,mao15} \arz{I think there are also a couple of 
+properties other than mass \citep{sheth_tormen04,harker_etal06,wechsler_etal06,mao_etal15} \arz{I think there are also a couple of 
 Sheth papers that should be cited here, maybe more. Check on that.}. 
 
 
-For a specific halo property, or mark $m$, we use the MCF normalization of \citet{wechsler06}, namely 
+For a specific halo property, or mark $m$, we use the MCF normalization of \citet{wechsler_etal06}, namely 
 %
 \beq
 \mathcal{M}_m(r) \equiv ( \langle m_1 m_2 \rangle_p (r) - \langle m \rangle^2 / \mathcal{V}(m),
@@ -599,7 +602,7 @@ in general, when you only plot concentration?}
 Second, it is clear that the strength and sign of assembly bias is 
 strongly mass dependent for any fixed halo definition, 
 a result that agrees with the significant previous literature on halo assembly bias using conventional halo definitions 
-\citep{wechsler02, gao05, zentner07, wechsler06, harker06, croton07, dalal08, mao15, sunayama16}\arz{Cite all the usual 
+\citep{wechsler_etal02, gao_etal05, zentner07, wechsler_etal06, harker_etal06, croton_etal07, dalal_etal08, mao_etal15, sunayama_etal16}\arz{Cite all the usual 
 papers here, Gao, Wechsler, Harker, Zentner07, Dalal07, probably several more.}\asv{I think that is most of the
 usual suspects, but I'll do a double check for more important ones!} 
 At relatively low mass (the L0125 panel, 
@@ -689,7 +692,7 @@ finite sampling as discussed in the previous section. Qualitatively,
 Fig.~\ref{fig:cc_mcf_cnfw} exhibits the same features that are evident in 
 Fig.~\ref{fig:cc_cfcompare}: more concentrated halos are significantly more clustered in 
 the low-mass L0125 halo sample; concentration-dependent halo clustering weakens and 
-reverses sense as halo mass increases, consistent with work on assembly bias by \citet{sunayama16}; for the 
+reverses sense as halo mass increases, consistent with work on assembly bias by \citet{sunayama_etal16}; for the 
 L0250 sample with $\Delta=75$, the large-scale concentration dependence of halo clustering has been reduced so as to 
 be consistent with zero within the statistical limitations of the simulation. \arz{It seems like we need 
 $\Delta \sim 65-70$ for L0250?}
@@ -795,8 +798,8 @@ halo clustering strength is a strong function of ``auxiliary properties" halo co
 through a fit to the NFW profile or assigned non-parametrically as the ratio of the maximum circular velocity to
 the virial velocity), halo shape, halo spin, and number of subhalos 
 for host halos over a wide range of masses. These findings are consistent 
-with the now significant literature on the subject subject of halo assembly bias. \citep{peacock00, wechsler02,
-sheth04, gao05, zentner05, allgood06, harker06, wechsler06, croton07, dalal08, mao15, sunayama16}
+with the now significant literature on the subject subject of halo assembly bias. \citep{peacock_smith00, wechsler_etal02,
+sheth_tormen04, gao_etal05, zentner_etal05, allgood_etal06, harker_etal06, wechsler_etal06, croton_etal07, dalal_etal08, mao_etal15, sunayama_etal16}
 \arz{Reiterate citations here.}\asv{I THINK this covers our bases, but my lit notes might be bad.}
 
 We have explored the efficacy of alternative halo definitions to mitigate the dependence of halo 
@@ -821,7 +824,7 @@ concentration-dependent assembly bias must be mass dependent. Low
 values of $\Delta$ ($\Delta \sim 25$ with $R_{25} \sim 2R_{200}$) seem appropriate near for our lowest 
 mass-threshold sample (with $M_{200} \ge 7 \times 10^{10} \hMsun$) whereas $\Delta \sim 200$ or slightly higher
 is adequate for our highest mass threshold sample (with $M_{200} \ge 4 \times 10^{12} \hMsun$). This result is
-reminiscent of much recent work on the so-called halo ``splashback radius."\citep{more15} 
+reminiscent of much recent work on the so-called halo ``splashback radius."\citep{more_etal15} 
 \arz{Here, compare our results to the splashback radius work.}
 
 
@@ -956,7 +959,7 @@ While halo shape, spin, and satellite number are not amenable to having their as
 simple halo redefinition technique we have suggested, the underlying reasons for this behavior remains of
 interest for exploration. In the case of halo shape, we suggest that the assembly bias may be driven through
 interactions with large scale structure. Studies have shown a statistically significant alignment between
-filaments and satellite galaxy position \citep{tempel15, velliscig15}\asv{need to grab paper from arxiv
+filaments and satellite galaxy position \citep{tempel_etal15, velliscig_etal15}\asv{need to grab paper from arxiv
 2016.05.09 for this}. Figure~\ref{fig:plotcircles} demonstrates the distribution of halos for the $\Delta=200$
 and $\Delta=10$ catalogs of \simB. \asv{should probably remake this with halotools results just to be robust}
 Notice the preferential distribution of satellites being subsumed into host halos.  Notice the preferential
