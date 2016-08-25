@@ -233,7 +233,7 @@ of gravitational lensing, the mass distribution is the primary quantity of inter
 directly related to predictions for lensing statistics. Secondly, concentrations can be measured from 
 individual simulation snapshots easily and halo concentrations are known to be strongly correlated with 
 the formation histories of dark matter halos with earlier forming halos having higher concentrations at 
-fixed halo mass \citep{wechsler_etal02, wechsler_etal06} 
+fixed halo mass \citep{wechsler_etal02, zhao_etal03, wechsler_etal06, zhao_etal09} 
 \arz{Cite papers here like Wechsler et al. 2002. I think there are at least two Zhao et al. papers from 
 the last decade relevant here. I don't remember the years, but one of them is at least 8 years old. I think another 
 might be from around 2011.}. As such, exploring the concentration dependence of halo
@@ -393,8 +393,16 @@ and halo definition (the value of $\Delta$ in the case of the present study).
 follows that I don't understand. Are you saying that you have a unique threshold 
 for each halo property? That is what I get from this statement, but I think that is 
 not what you are doing. Can you please clarify this discussion?}
-We use thresholds determined by the particular case under consideration so as to ensure that
-resolution limitations do not drive any of our primary results. 
+We determine our mass thresholds in such a way that no parameter exhibits
+a trend that we can associate with resolution effects; we draw attention to the
+downturn in \ref{fig:cnfwrelation} as an example of this, as the deviation from
+the underlying monotonic trend suggests that this is a result of the box size
+of the simulation and not a physically meaningful result. For ease of comparison
+between halo definitions, we choose to use a single mass threshold for each
+simulation box size and value of $\Delta$ chosen, rather than on a parameter by
+parameter basis. This allow for a better comparison as to how the choice of halo
+definition impacts each parameter simultaneously, rather than be driven by the
+choice of mass cutoff. 
 We summarize the mass thresholds we have used for a 
 subset of $\Delta$ values in Table~\ref{table:thresholds}. 
 At most values of $\Delta$, the minimum mass thresholds are 
@@ -478,7 +486,9 @@ we take all host halos more massive than our minimum mass thresholds and sort th
 their halo masses, $M_{\Delta}$. We place these halos into ten logarithmically-spaced bins 
 of halo mass, ensuring that no bin has fewer than XXX halos. 
 \arz{I was under the impression that you used the median value? Can you 
-check on this.}
+check on this.}\asv{Currently we are using the mean - as I recall this does not
+create any significant difference in result. Perhaps I should add a line though
+suggesting that our method is robust with choice of summary statistic here?}
 The mean value of each halo property is calculated within each bin, 
 and subtracted from the recorded value for each halo in the bin. 
 This removes the strong mass trend in each of these properties. 
@@ -548,8 +558,8 @@ the halo auxiliary property, or mark, in contrast to selecting subsets of halos 
 MCFs stack signal from all environments and do not require any specific definition of halo environment in order 
 to detect environmental trends. Absent halo assembly bias, the halo marks are uncorrelated among pairs. 
 MCFs have been used in many previous papers to quantify environmental dependence of halo 
-properties other than mass \citep{sheth_tormen04,harker_etal06,wechsler_etal06,mao_etal15} \arz{I think there are also a couple of 
-Sheth papers that should be cited here, maybe more. Check on that.}. 
+properties other than mass \citep{sheth_tormen04,sheth05, harker_etal06,wechsler_etal06,mao_etal15} \arz{I think there are also a couple of 
+Sheth papers that should be cited here, maybe more. Check on that.}\asv{Think I got the most relevant Sheth papers here now.}. 
 
 
 For a specific halo property, or mark $m$, we use the MCF normalization of \citet{wechsler_etal06}, namely 
@@ -593,13 +603,15 @@ this error band $95\%$ of the time.
 \arz{Fix up and fill in numbers as needed, but follow this general format.}
 We begin by studying the correlation functions of halos in our mass threshold samples, sub-selected by auxiliary
 properties. Figure~\ref{fig:cc_cfcompare} exhibits the difference between the clustering strength of halos in the
-$20^{\mathrm{th}}$ percentile highest concentrations and the halos with the halos that have the
-$20^{\mathrm{th}}$ percentile lowest concentrations as a function of the overdensity parameter $\Delta$, used to
-define the halos. \arz{which concentration?} 
-First, it is clear that clustering strength generally depends upon the auxiliary properties of
-halos at all halo mass thresholds. \arz{How can you make a statement about auxiliary properties 
-in general, when you only plot concentration?}
-Second, it is clear that the strength and sign of assembly bias is 
+$20^{\mathrm{th}}$ percentile highest NFW-defined halo concentrations and the halos with the halos that have the
+$20^{\mathrm{th}}$ percentile lowest NFW-defined halo concentrations as a function of the overdensity parameter, $\Delta$, used to
+define the halos and normalized by the clustering strength of the entire halo
+sample. \arz{which concentration?}\asv{Not sure if I should refer to them as NFW-defined concentration or NFW concentrations.} 
+If the clustering strength of halos was independent of halo concentration, we 
+would expect these lines to cluster around zero. The witnessed deviation
+demonstrates that halos of different NFW-defined halo concentration exhibit appreciably different clustering. \arz{How can you make a statement about auxiliary properties 
+in general, when you only plot concentration?}\asv{I agree that I cannot: got ahead of myself in the writing.}
+Furthermore, it is clear that the strength and sign of assembly bias due to NFW-defined halo concentration is 
 strongly mass dependent for any fixed halo definition, 
 a result that agrees with the significant previous literature on halo assembly bias using conventional halo definitions 
 \citep{wechsler_etal02, gao_etal05, zentner07, wechsler_etal06, harker_etal06, croton_etal07, dalal_etal08, mao_etal15, sunayama_etal16}\arz{Cite all the usual 
