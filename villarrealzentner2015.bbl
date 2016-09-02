@@ -261,6 +261,10 @@
   [\apj] {10.1088/0004-637X/756/1/2}, \href
   {http://adsabs.harvard.edu/abs/2012ApJ...756....2R} {756, 2}
 
+\bibitem[\protect\citeauthoryear{{Sheth}}{{Sheth}}{2005}]{sheth05}
+{Sheth} R.~K.,  2005, \mn@doi [\mnras] {10.1111/j.1365-2966.2005.09609.x},
+  \href {http://adsabs.harvard.edu/abs/2005MNRAS.364..796S} {364, 796}
+
 \bibitem[\protect\citeauthoryear{{Sheth} \& {Tormen}}{{Sheth} \&
   {Tormen}}{2004}]{sheth_tormen04}
 {Sheth} R.~K.,  {Tormen} G.,  2004, \mn@doi [\mnras]
@@ -407,6 +411,12 @@
 {Zhao} D.~H.,  {Mo} H.~J.,  {Jing} Y.~P.,   {B{\"o}rner} G.,  2003, \mn@doi
   [\mnras] {10.1046/j.1365-8711.2003.06135.x}, \href
   {http://adsabs.harvard.edu/abs/2003MNRAS.339...12Z} {339, 12}
+
+\bibitem[\protect\citeauthoryear{{Zhao}, {Jing}, {Mo}  \& {B{\"o}rner}}{{Zhao}
+  et~al.}{2009}]{zhao_etal09}
+{Zhao} D.~H.,  {Jing} Y.~P.,  {Mo} H.~J.,   {B{\"o}rner} G.,  2009, \mn@doi
+  [\apj] {10.1088/0004-637X/707/1/354}, \href
+  {http://adsabs.harvard.edu/abs/2009ApJ...707..354Z} {707, 354}
 
 \bibitem[\protect\citeauthoryear{{Zheng}, {Coil}  \& {Zehavi}}{{Zheng}
   et~al.}{2007}]{zheng_etal07}

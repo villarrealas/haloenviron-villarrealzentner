@@ -255,22 +255,23 @@ to ensure that concentration measurements are not compromised by resolution effe
 thresholds are shown as the vertical lines in Fig.~\ref{fig:cnfwrelation} and listed in Table~\ref{table:thresholds}. 
 Similar to Fig.~\ref{fig:cnfwrelation}, Figure~\ref{fig:cvrelation} shows the relation between the velocity-ratio concentration, $c_{\mathrm{V}}$, and halo mass. In the interest of completeness, Figure~\ref{fig:concentrations} shows the relationship 
 between $c_{\mathrm{NFW}}$ and $c_{\mathrm{V}}$ on a halo-by-halo basis. As is evident, the two concentration 
-proxies are strongly correlated and exhibit a $\sim 10\%$ scatter indicating that $c_{\mathrm{NFW}}$ and $c_{\mathrm{V}}$ 
+proxies are strongly correlated and exhibit a $\sim 6\%$ mean scatter indicating that $c_{\mathrm{NFW}}$ and $c_{\mathrm{V}}$ 
 indeed encode similar information about each halo \arz{I eyeballed this from your figure, check the scatter in 
-this relationship please to confirm that it is roughly 10\%.}.
+this relationship please to confirm that it is roughly 10\%.}\asv{Did a quick number crunch on this: the scatter on the relationship has a mean scatter of 6.4\%, with a max scatter of 13.27\% and and standard deviation of 2.6\%. I will cite the mean scatter for now.}
 
 %------------------------------------------ Figure for Cnfw(M)
 \begin{figure}
 \centering
 \includegraphics[width=.5\textwidth]{masscut_cNFW_d200.pdf}
-\caption{
-The relationship between the NFW concentration and halo mass for each of our simulations with $\Delta =200$. 
-In order of increasing simulation volume, the blue line corresponds to the concentration-mass relation from simulation 
-\simA, the red line corresponds to \simB, and the cyan line corresponds to \simC. The error bars designate the 
-dispersion on NFW concentration at fixed halo mass. 
-Each simulation is subject to resolution limitations at different halo masses. We show with vertical lines 
+\caption{•}
+he relationship between the NFW concentration and halo mass for each of our simulations with $\Delta =200$. 
+In order of increasing simulation volume, the blue dashed line corresponds to the concentration-mass relation from simulation 
+\simA, the red solid line corresponds to \simB, and the cyan dot-dashed line corresponds to \simC. The red error bars show the
+dispersion in the values of the mark for \simB. These errors are comparable to those of the other simulations
+within the region of interest.
+Each simulation is subject to resolution limitations at different halo masses. We show with thick vertical lines 
 the minimum $M_{200}$ mass thresholds that we adopt in our analyses using the same color code as 
-the concentration-mass relations. Note the deviation from a monotonic trend as a result of resolution effects. 
+the concentration-mass relations, going from \simA to \simC from left to right. Note the deviation from a monotonic trend as a result of resolution effects.
 \arz{This figure is still way too busy to view. First, the legend covers some of the data. Second there are too many error 
 bars. Try using error bars only for the L0250 simulation and just state in the caption that the dispersion in each simulation 
 is similar in the regime in which the results are not compromised by resolution. Use a different line type for each line so that this 
@@ -279,7 +280,6 @@ stand out even more? Perhaps they will stand out more when there is only one set
 As far as the caption, this caption is way too brief. It should describe each line and it should state what the error bars are 
 showing. Please make sure this and subsequent captions are sufficiently informative such that the figures are self contained. 
 I will take a stab at this caption so that you can see what I mean.}
-}
 \label{fig:cnfwrelation}
 \end{figure}
 %--------------------------------------------------------------------------------
@@ -289,7 +289,14 @@ I will take a stab at this caption so that you can see what I mean.}
 \begin{figure}
 \centering
 \includegraphics[width=.5\textwidth]{masscut_cV_d200.pdf}
-\caption{An example of the relationship between the velocity ratio concentration and halo mass for each of our simulations for $\Delta =200$. The chosen lower limit on halo mass for our sample is marked as a blue, red, or cyan line for \simA, \simB, and \simC \ respectively. Note the deviation from a monotonic trend as a result of resolution effects. \arz{Same comments as 
+\caption{The relationship between the velocity ratio concentration and halo mass for each of our simulations with $\Delta =200$. 
+In order of increasing simulation volume, the blue dashed line corresponds to the concentration-mass relation from simulation 
+\simA, the red solid line corresponds to \simB, and the cyan dot-dashed line corresponds to \simC. The red error bars show the
+dispersion in the values of the mark for \simB. These errors are comparable to those of the other simulations
+within the region of interest.
+Each simulation is subject to resolution limitations at different halo masses. We show with thick vertical lines 
+the minimum $M_{200}$ mass thresholds that we adopt in our analyses using the same color code as 
+the concentration-mass relations, going from \simA to \simC from left to right. Note the deviation from a monotonic trend as a result of resolution effects. \arz{Same comments as 
 for Fig.~\ref{fig:cnfwrelation}.}
 }
 \label{fig:cvrelation}
@@ -303,10 +310,10 @@ for Fig.~\ref{fig:cnfwrelation}.}
 \caption{
 The relationship between the two different marks of concentration, 
 using halos in \simB. The color scale, shown at the right, encodes the number of halos 
-within a single two-dimensional bin in the $c_{\mathrm{NFW}}--c_{\mathrm{V}}$ space. 
-Redder pixels are populated with a greater number of halos and show where the bulk of the 
-halos lie. The black dashed line shows something... \arz{I don't know what the black dashed line shows, 
-so you have to specify it.}. 
+within a single two-dimensional bin in the $c_{\mathrm{NFW}}$-$c_{\mathrm{V}}$ space. 
+The red (blue) regions on the plot show where the most (fewest) halos exist with those values of the two
+concentration parameters. The white regions indicate where no halos hold these values. The scatter on this relationship ranges from 5\% for intermediate concentration values, to a high of 13\% at high masses. \arz{I don't know what the black dashed line shows, 
+so you have to specify it.}.\asv{Currently I do not know what the black dashed line shows. I suspect it is from an old iteration of the plot - checking now.}
 \arz{Previous caption was STILL not sufficiently specific. Consider carefully what I have 
 written here as an example of a sufficiently specific caption.}
 }
@@ -339,12 +346,17 @@ resolution.
 \arz{All the same comments as for Fig.~\ref{fig:cnfwrelation}. 
 In addition, I was under the impression that you were going to 
 select thresholds that guaranteed that the $s(M)$ relation 
-is monotonic? Am I mistaken?}
-The relationship between halo shape and 
-halo mass for each of our simulations with $\Delta =200$. 
-The chosen lower limit on halo mass for our sample is marked as 
-a blue, red, or cyan line for \simA, \simB, and \simC \ respectively. 
-Note the deviation from a monotonic relation as a result of resolution effects.
+is monotonic? Am I mistaken?}\asv{Correct, reruns are currently at work due to shift in halotools}
+he relationship between the halo shape and halo mass for each of our simulations with $\Delta =200$. 
+In order of increasing simulation volume, the blue dashed line corresponds to the shape-mass relation from simulation 
+\simA, the red solid line corresponds to \simB, and the cyan dot-dashed line corresponds to \simC. The red error bars show the
+dispersion in the values of the mark for \simB. These errors are comparable to those of the other simulations
+within the region of interest.
+Each simulation is subject to resolution limitations at different halo masses. We show with thick vertical lines 
+the minimum $M_{200}$ mass thresholds that we adopt in our analyses using the same color code as 
+the shape-mass relations, going from \simA to \simC from left to right. The mass cutoffs chosen for this mark
+are at higher masses in order to account for the additional number of particles needed to properly measure the
+halo shape. Note the deviation from a monotonic trend as a result of resolution effects.
 }
 \label{fig:srelation}
 \end{figure}
@@ -374,11 +386,15 @@ is no reason here that the y-axis has to have such a large range. This
 crams all of the data into a small portion of the plot and makes most 
 of the plot useless, wasted, white space. A more appropriate y-axis range 
 looks to be from -0.1 to about 0.25 or so.}
-An example of the relationship between halo spin $\lambda$ 
-and halo mass for each of our simulations for $\Delta =200$. 
-The chosen lower limit on halo mass for our sample is marked 
-as a blue, red, or cyan line for \simA, \simB, and \simC \ respectively. 
-Note the deviation from a monotonic relation as a result of resolution effects.
+he relationship between the halo spin and halo mass for each of our simulations with $\Delta =200$. 
+In order of increasing simulation volume, the blue dashed line corresponds to the spin-mass relation from simulation 
+\simA, the red solid line corresponds to \simB, and the cyan dot-dashed line corresponds to \simC. The red error bars show the
+dispersion in the values of the mark for \simB. These errors are comparable to those of the other simulations
+within the region of interest.
+Each simulation is subject to resolution limitations at different halo masses. We show with thick vertical lines 
+the minimum $M_{200}$ mass thresholds that we adopt in our analyses using the same color code as 
+the spin-mass relations, going from \simA to \simC from left to right. Note the deviations from the near linear
+trend at low mass due to resolution effects.
 }
 \label{fig:spinrelation}
 \end{figure}
@@ -442,7 +458,7 @@ host halo masses considered in units of $h^{-1}\mathrm{M}_{\odot}$.
 \hline
 Cutoff Name &  $\Delta=340$ & $\Delta=200$ & $\Delta=100$ & $\Delta=75$ & $\Delta=50$ & $\Delta=10$ \\
 \hline
-\\{low mass} & {N/A} & $7 \times 10^{10}$ & $8 \times 10^{10}$ & $9 \times 10^{10}$ & $1 \times 10^{11}$ & $2 \times 10^{12}$  \\
+\\{low mass} & {N/A} & $7 \times 10^{10}$ & $8 \times 10^{10}$ & $9 \times 10^{10}$ & $1 \times 10^{11}$ & $2 \times 10^{11}$  \\
 {mid mass} & {N/A} & $7 \times 10^{11}$ & $8 \times 10^{11}$ & $9 \times 10^{11}$ & $1.5 \times 10^{12}$ & {N/A} \\
 {high mass} & $3 \times 10^{12}$ & $4 \times 10^{12}$ & $5 \times 10^{12}$ & $6 \times 10^{12}$ & $7 \times 10^{12}$ & {N/A} \\
 \hline
