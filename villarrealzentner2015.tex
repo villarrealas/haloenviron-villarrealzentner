@@ -186,6 +186,13 @@ as $\Delta$ is adjusted in order to ensure that SO halos contain all relevant pa
 differences between most the common overdensity choices, this broad range enables a fairly extensive exploration of 
 environmental effects on halo properties as a function of halo definition.
 
+An additional benefit to the {\tt ROCKSTAR} pipeline is the ability to identify substructure commonly referred to in the
+literature as subhalos. Effectively, all density peaks are identified within the simulation and if a halo exists within the phase
+space of another halo, the less massive of the two is defined to be a subhalo of the more massive companion. This process
+continues until all halos have been assigned. For purposes of our calculations, we only use the immediate subhalos of the host,
+as these are most likely to be associated with satellite galaxies and have the best connection to concrete observables.
+\asv{Felt it was best to put in a small section describing how {\tt ROCKSTAR} identifies subhalos in order to set up the
+discussion further.}
 
 %-------------------------------------
 \section{Halo Properties}
@@ -255,7 +262,7 @@ to ensure that concentration measurements are not compromised by resolution effe
 thresholds are shown as the vertical lines in Fig.~\ref{fig:cnfwrelation} and listed in Table~\ref{table:thresholds}. 
 Similar to Fig.~\ref{fig:cnfwrelation}, Figure~\ref{fig:cvrelation} shows the relation between the velocity-ratio concentration, $c_{\mathrm{V}}$, and halo mass. In the interest of completeness, Figure~\ref{fig:concentrations} shows the relationship 
 between $c_{\mathrm{NFW}}$ and $c_{\mathrm{V}}$ on a halo-by-halo basis. As is evident, the two concentration 
-proxies are strongly correlated and exhibit a $\sim 6\%$ mean scatter indicating that $c_{\mathrm{NFW}}$ and $c_{\mathrm{V}}$ 
+proxies are strongly correlated and exhibit a $\sim 7\%$ mean scatter indicating that $c_{\mathrm{NFW}}$ and $c_{\mathrm{V}}$ 
 indeed encode similar information about each halo \arz{I eyeballed this from your figure, check the scatter in 
 this relationship please to confirm that it is roughly 10\%.}\asv{Did a quick number crunch on this: the scatter on the relationship has a mean scatter of 6.4\%, with a max scatter of 13.27\% and and standard deviation of 2.6\%. I will cite the mean scatter for now.}
 
@@ -451,6 +458,14 @@ Minimum mass thresholds for each of our analyses depending upon the
 value of the overdensity, $\Delta$, used to define the halos. 
 In the columns below the values of $\Delta$ we show the minimum 
 host halo masses considered in units of $h^{-1}\mathrm{M}_{\odot}$.
+Those rows with a label of '-gen' refer to the mass cut chosen for all parameters other than
+halo shape. Those rows with a label of '-shape' refer to the mass cut chosen for the shape parameter.
+The latter requires a higher mass cut due to the larger number of particle required in order to have a
+robust measurement of halo shape. \asv{Tried to explain the difference in cuts
+as best I could in the caption. Need to look up exact shape parameter cuts, but
+I suspect it will be similar progression as previously, but starting at
+2e12 for L0125, 2e13 for L0250, and maybe 3e13 for L0500. Really going to be
+cutting down on the total number of halos, but it needs to be done.}
 }
 \vspace*{8pt}
 \begin{tabular}{ c c c c c c c }
@@ -458,9 +473,12 @@ host halo masses considered in units of $h^{-1}\mathrm{M}_{\odot}$.
 \hline
 Cutoff Name &  $\Delta=340$ & $\Delta=200$ & $\Delta=100$ & $\Delta=75$ & $\Delta=50$ & $\Delta=10$ \\
 \hline
-\\{low mass} & {N/A} & $7 \times 10^{10}$ & $8 \times 10^{10}$ & $9 \times 10^{10}$ & $1 \times 10^{11}$ & $2 \times 10^{11}$  \\
-{mid mass} & {N/A} & $7 \times 10^{11}$ & $8 \times 10^{11}$ & $9 \times 10^{11}$ & $1.5 \times 10^{12}$ & {N/A} \\
-{high mass} & $3 \times 10^{12}$ & $4 \times 10^{12}$ & $5 \times 10^{12}$ & $6 \times 10^{12}$ & $7 \times 10^{12}$ & {N/A} \\
+\\{L0125-gen} & {N/A} & $7 \times 10^{10}$ & $8 \times 10^{10}$ & $9 \times 10^{10}$ & $1 \times 10^{11}$ & $2 \times 10^{11}$  \\
+{L0125-shape} & {N/A} & $ something $ & $ something $ & $ something $ & $ something $ & $ something $ \\
+{L0250-gen} & {N/A} & $7 \times 10^{11}$ & $8 \times 10^{11}$ & $9 \times 10^{11}$ & $1.5 \times 10^{12}$ & {N/A} \\
+{L0250-shape} & {N/A} & $ something $ & $ something $ & $ something $ & $ something $ & {N/A} \\
+{L0500-gen} & $3 \times 10^{12}$ & $4 \times 10^{12}$ & $5 \times 10^{12}$ & $6 \times 10^{12}$ & $7 \times 10^{12}$ & {N/A} \\
+{L0500-shape} & $ something $ & $ something $ & $ something $ & $ something $ & $ something $ & {N/A} \\
 \hline
 \hline
 \end{tabular}
