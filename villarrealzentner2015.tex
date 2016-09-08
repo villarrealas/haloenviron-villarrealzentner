@@ -278,7 +278,7 @@ dispersion in the values of the mark for \simB. These errors are comparable to t
 within the region of interest.
 Each simulation is subject to resolution limitations at different halo masses. We show with thick vertical lines 
 the minimum $M_{200}$ mass thresholds that we adopt in our analyses using the same color code as 
-the concentration-mass relations, going from \simA to \simC from left to right. Note the deviation from a monotonic trend as a result of resolution effects.
+the concentration-mass relations, going from \simA \ to \simC \ from left to right. Note the deviation from a monotonic trend as a result of resolution effects.
 \arz{This figure is still way too busy to view. First, the legend covers some of the data. Second there are too many error 
 bars. Try using error bars only for the L0250 simulation and just state in the caption that the dispersion in each simulation 
 is similar in the regime in which the results are not compromised by resolution. Use a different line type for each line so that this 
@@ -303,7 +303,7 @@ dispersion in the values of the mark for \simB. These errors are comparable to t
 within the region of interest.
 Each simulation is subject to resolution limitations at different halo masses. We show with thick vertical lines 
 the minimum $M_{200}$ mass thresholds that we adopt in our analyses using the same color code as 
-the concentration-mass relations, going from \simA to \simC from left to right. Note the deviation from a monotonic trend as a result of resolution effects. \arz{Same comments as 
+the concentration-mass relations, going from \simA \ to \simC \ from left to right. Note the deviation from a monotonic trend as a result of resolution effects. \arz{Same comments as 
 for Fig.~\ref{fig:cnfwrelation}.}
 }
 \label{fig:cvrelation}
@@ -361,7 +361,7 @@ dispersion in the values of the mark for \simB. These errors are comparable to t
 within the region of interest.
 Each simulation is subject to resolution limitations at different halo masses. We show with thick vertical lines 
 the minimum $M_{200}$ mass thresholds that we adopt in our analyses using the same color code as 
-the shape-mass relations, going from \simA to \simC from left to right. The mass cutoffs chosen for this mark
+the shape-mass relations, going from \simA \ to \simC \ from left to right. The mass cutoffs chosen for this mark
 are at higher masses in order to account for the additional number of particles needed to properly measure the
 halo shape. Note the deviation from a monotonic trend as a result of resolution effects.
 }
@@ -400,7 +400,7 @@ dispersion in the values of the mark for \simB. These errors are comparable to t
 within the region of interest.
 Each simulation is subject to resolution limitations at different halo masses. We show with thick vertical lines 
 the minimum $M_{200}$ mass thresholds that we adopt in our analyses using the same color code as 
-the spin-mass relations, going from \simA to \simC from left to right. Note the deviations from the near linear
+the spin-mass relations, going from \simA \ to \simC \ from left to right. Note the deviations from the near linear
 trend at low mass due to resolution effects.
 }
 \label{fig:spinrelation}
@@ -416,27 +416,36 @@ and halo definition (the value of $\Delta$ in the case of the present study).
 follows that I don't understand. Are you saying that you have a unique threshold 
 for each halo property? That is what I get from this statement, but I think that is 
 not what you are doing. Can you please clarify this discussion?}
-We determine our mass thresholds in such a way that no parameter exhibits
-a trend that we can associate with resolution effects; we draw attention to the
+We determine our mass thresholds in order to avoid the regime in which halo parameters
+are not well measured due to resolution limits of the simulations; we draw attention to the
 downturn in \ref{fig:cnfwrelation} as an example of this, as the deviation from
-the underlying monotonic trend suggests that this is a result of the box size
-of the simulation and not a physically meaningful result. For ease of comparison
+the underlying monotonic trend shifts with the change in simulation from low to high mass resolution,
+suggesting that this is the result of resolution alone. For ease of comparison
 between halo definitions, we choose to use a single mass threshold for each
-simulation box size and value of $\Delta$ chosen, rather than on a parameter by
+simulation box size and value of $\Delta$ chosen whenever possible, rather than on a parameter by
 parameter basis. This allow for a better comparison as to how the choice of halo
 definition impacts each parameter simultaneously, rather than be driven by the
-choice of mass cutoff. 
+choice of mass cutoff. The one exception to this method is the mass thresholds chosen
+for the halo shape parameter. This parameter requires a larger number of particles to be
+well measured; we direct attention to the downturn in \ref{fig:srelation}, which occurs at
+an order of magnitude higher mass. We analyze the shape parameter with separate mass thresholds
+to maintain the larger number of halos in our sample for the other parameters. This allows us
+to have better signal-to-noise in the remaining parameters, while avoiding drawing potentially
+erroneous conclusions when analyzing the halo shape parameter.
 We summarize the mass thresholds we have used for a 
 subset of $\Delta$ values in Table~\ref{table:thresholds}. 
 At most values of $\Delta$, the minimum mass thresholds are 
 driven by the requirement that the halo properties do 
 not suffer significantly from finite resolution effects.
-\arz{What else could the thresholds be driven by?}
+\arz{What else could the thresholds be driven by?}\asv{Uncertain - I cannot think of anything else, now that we
+are treating shape as a separate parameter.}
 
 
 \arz{In the next section, you discuss subhalos. However, in order for the paper to have 
 the correct flow, you should introduce the concept of subhalos here and state that we 
-will study halo clustering as a function of satellite number.}  
+will study halo clustering as a function of satellite number.}\asv{Added a section on subhalos when discussing {\tt ROCKSTAR}.
+I am unsure if we need to discuss the concept of subhalos here now. That seemed to flow a little better than an
+introduction here, since robust identification of halos is a selling point of {\tt ROCKSTAR}.}
 
 
 \arz{In the table, don't ``low mass," ``mid mass," and ``high mass" correspond to the different simulations? 
@@ -448,7 +457,7 @@ simulation size or the actual mass threshold. I can swap out to more specific na
 thought that might cause confusion. It seems like we have swapped away from that methodology 
 in the final version, so that might be best.}
 \arz{I still prefer using the simulation name to specify the threshold, 
-otherwise the name seems arbitrary.}
+otherwise the name seems arbitrary.}\asv{Switched to using halo name and a tag.}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -522,7 +531,9 @@ of halo mass, ensuring that no bin has fewer than XXX halos.
 \arz{I was under the impression that you used the median value? Can you 
 check on this.}\asv{Currently we are using the mean - as I recall this does not
 create any significant difference in result. Perhaps I should add a line though
-suggesting that our method is robust with choice of summary statistic here?}
+suggesting that our method is robust with choice of summary statistic here? We also
+do not currently have a hard bin number cutoff. Ten was just chosen such that each
+bin has at least a few halos in it.}
 The mean value of each halo property is calculated within each bin, 
 and subtracted from the recorded value for each halo in the bin. 
 This removes the strong mass trend in each of these properties. 
