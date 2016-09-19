@@ -483,11 +483,11 @@ cutting down on the total number of halos, but it needs to be done.}
 Cutoff Name &  $\Delta=340$ & $\Delta=200$ & $\Delta=100$ & $\Delta=75$ & $\Delta=50$ & $\Delta=10$ \\
 \hline
 \\{L0125-gen} & {N/A} & $7 \times 10^{10}$ & $8 \times 10^{10}$ & $9 \times 10^{10}$ & $1 \times 10^{11}$ & $2 \times 10^{11}$  \\
-{L0125-shape} & {N/A} & $ something $ & $ something $ & $ something $ & $ something $ & $ something $ \\
+{L0125-shape} & {N/A} & $2 \times 10^{12}$ & $2 \times 10^{12}$ & $2 \times 10^{12}$ & $2 \times 10^{12}$ & $2 \times 10^{12}$ \\
 {L0250-gen} & {N/A} & $7 \times 10^{11}$ & $8 \times 10^{11}$ & $9 \times 10^{11}$ & $1.5 \times 10^{12}$ & {N/A} \\
-{L0250-shape} & {N/A} & $ something $ & $ something $ & $ something $ & $ something $ & {N/A} \\
+{L0250-shape} & {N/A} & $8 \times 10^{12}$ & $8 \times 10^{12}$ & $8 \times 10^{12}$ & $8 \times 10^{12}$ & {N/A} \\
 {L0500-gen} & $3 \times 10^{12}$ & $4 \times 10^{12}$ & $5 \times 10^{12}$ & $6 \times 10^{12}$ & $7 \times 10^{12}$ & {N/A} \\
-{L0500-shape} & $ something $ & $ something $ & $ something $ & $ something $ & $ something $ & {N/A} \\
+{L0500-shape} & $4 \times 10^{13}$ & $4 \times 10^{13}$ & $4 \times 10^{13}$ & $4 \times 10^{13}$ & $4 \times 10^{13}$ & {N/A} \\
 \hline
 \hline
 \end{tabular}
@@ -824,7 +824,29 @@ concentration in a number of ways. Notice that at all masses and at all halo def
 (halos with smaller $s$) are more strongly clustered. Furthermore, decreasing $\Delta$ (increasing halo radius)
 only serves to increase this environmental dependence in all cases. This is indicative of halo shapes being
 driven by structure on scales larger than halo radii, in particular $R_{200}$, and is not entirely surprising
-given our significant amount of knowledge of the filamentary nature of large-scale structure. \arz{If possible, a
+given our significant amount of knowledge of the filamentary nature of large-scale structure. We note that while
+there is a change from this trend for the smallest values of $\Delta$ studied, the extreme choice of $\Delta$ does
+seem to mark a reversal in this trend. We examine this possibility in Figure~\ref{fig:matched_shapecomp},
+which compares the mean measured halo shape in equally spaced bins of log halo mass, along with their mean
+dispersion. The methodology of halo matching is discussed below.
+We note that the dispersion in halo shape remains quite similar, though the average halo becomes more
+circular. Due to the nature of our method of halo redefinition and the lack of a clear trend in the halo shape
+marked correlation function, it is difficult to draw definitive conclusions as to the nature of this result.
+\asv{I feel that the $\Delta=10$ shape is questionable given the extreme value of $\Delta$, but there does not
+seem to be anything that is a smoking gun as to why it is wrong. It seems counterintuitive to me as well, as
+I thought the use of high values of $\Delta$ was to deal with the core of the halo which would be more spherical
+on average, while this seems to suggest the trend is opposite. Thoughts on this are much appreciated. Also,
+I feel I should move this further in, perhaps with the other matched catalog comparison?}
+\begin{figure}
+	\centering
+	\includegraphics[width=.4\textwidth]{matched_catalog_shapecomp.pdf}
+	\caption{A comparison of the mean value of the halo shape for halos matched across both
+	the $\Delta = 200$ and $\Delta = 10$ catalogs for \simA. The blue (red) line shows the mean value and scatter of
+	the	mean for the $\Delta = 200$ ($\Delta = 70$) catalog. Note that there is no statistically significant
+	increase in the scatter of the mean due to the change in halo definition.}
+	\label{fig:matched_cnfwcomp}
+\end{figure}
+\arz{If possible, a
 line here with $\Delta \gg 200$. Seems like it could be instructive, let me know if this is going to take a long
 time or be very onerous.}\asv{Added and continues the trend in the direction as expected. Note reversal in
 monotonic relationship for lowest mass objects though. Looking over the cuts, this may imply that the mass cuts
