@@ -948,9 +948,24 @@ concentration-dependent assembly bias must be mass dependent. Low
 values of $\Delta$ ($\Delta \sim 25$ with $R_{25} \sim 2R_{200}$) seem appropriate near for our lowest 
 mass-threshold sample (with $M_{200} \ge 7 \times 10^{10} \hMsun$) whereas $\Delta \sim 200$ or slightly higher
 is adequate for our highest mass threshold sample (with $M_{200} \ge 4 \times 10^{12} \hMsun$). This result is
-reminiscent of much recent work on the so-called halo ``splashback radius."\citep{more_etal15} 
+reminiscent of much recent work on the so-called halo ``splashback radius."\citep{more_etal15} We note that while
+the splashback radius methodology does seem similar in concept to our methodology, 
+Fig. ~\ref{fig:splashback_compare} demonstrates that a one-to-one comparison between the two methods is difficult
+at best. While both our method of halo redefinition and their determination of splashback radius seem to show a
+monotonic trend in mass, we note that our work with the lowest mass halos requires a definition of halo radius
+that substantially larger than the splashback radius method alone might suggest.
 \arz{Here, compare our results to the splashback radius work.}
 
+\begin{figure}
+	\centering
+	\includegraphics[width=.4\textwidth]{test_splashback.pdf}
+	\caption{A comparison of the average ratio between $r_{200}$ and the splashback radius as determined by
+	 \citet{more_etal15} (red circles) to the average ratio between $r_{200}$ and the halo radius determined as our
+	  best fit for removal of assembly bias as discussed above (blue circles). Note that the halo mass chosen for
+	  the blue points is determined by the mass cutoff in the simulation analysis, as the smallest (and most
+	  numerous) halos dominate the calculation.}
+	\label{fig:splashback_compare}
+\end{figure}
 
 \arz{Here is where we could use ANOTHER FIGURE! What I would like to see is a visual 
 comparison of our ``best" $\Delta$ as a function of halo mass threshold compared to 
@@ -961,7 +976,7 @@ such as $R_{\Delta}/R_{200}$ and $R_{\rm splashback}/R_{200}$ and so on. This co
 be an important figure and point to future work on this subject.}
 \asv{Working on creating this plot from the splashback radius paper.}
 \asv{New figure done and should be added in during the next iteration with
-all new figures.}
+all new figures.}\asv{And added.}
 
 
 It is useful to investigate the reasons why halo redefinitions may be helpful in the case 
@@ -1000,8 +1015,18 @@ necessary to make these points.}
 suggests that we are not significantly changing the dispersion. Numbers
 added below for now.}
 
+\begin{figure}
+	\centering
+	\includegraphics[width=.4\textwidth]{matched_catalog_cnfwcomp.pdf}
+	\caption{A comparison of the mean value of the NFW-defined halo concentration for halos matched across both
+	the $\Delta = 200$ and $\Delta = 70$ catalogs for \simB. The blue (red) line shows the mean value and scatter of
+	the	mean for the $\Delta = 200$ ($\Delta = 70$) catalog. Note that there is no statistically significant
+	increase in the scatter of the mean due to the change in halo definition.}
+	\label{fig:matched_cnfwcomp}
+\end{figure}
+
 As such, it is useful to examine the concentration-mass relations for halos in 
-the simulations for various halo definitions. This is shown in \arz{NEW FIGURE.} 
+the simulations for various halo definitions. This is shown in Fig. ~\ref{fig:matched_cnfwcomp}. 
 Notice that the mean dispersion of halo concentrations for a given mass
 bin are not significantly changed as we move to our best fit value of
 overdensity parameter, $\Delta$. This is highly suggestive of the fact
@@ -1011,7 +1036,7 @@ our halo parameters of interest.\arz{Now you mention the interesting part about 
 This should be a discussion of how much larger/smaller the dispersion in 
 concentrations gets for, say $\Delta=70$ compared to $\Delta=200$.}
 \asv{The dispersion of halo concentrations is not significantly changed -
-while a little smaller, it is well within the scatter of the dispersions as
+while a little smaller, it is well within the scatter of the dispersion as
 well.}
 
 We can explore in more detail the degree to which the mitigation of environmental 
@@ -1110,7 +1135,7 @@ interest for exploration. In the case of halo shape, we suggest that the assembl
 interactions with large scale structure. Studies have shown a statistically significant alignment between
 filaments and satellite galaxy position \citep{tempel_etal15, velliscig_etal15}\asv{need to grab paper from arxiv
 2016.05.09 for this}. Figure~\ref{fig:plotcircles} demonstrates the distribution of halos for the $\Delta=200$
-and $\Delta=10$ catalogs of \simB. \asv{should probably remake this with halotools results just to be robust}
+and $\Delta=10$ catalogs of \simB.
 Notice the preferential distribution of satellites being subsumed into host halos.  Notice the preferential
 direction in which host halos are subsumed in the latter definition. This material is likely to have significant
 impact on the measurement of halo shape, potentially driving our results. This would also impact the satellite
@@ -1203,7 +1228,7 @@ We are grateful to many people.
 One natural question that might arise in the analysis of this work is the nature of the resulting assembly bias
 trends. Our focus in the main sections of this paper is on the nature of the assembly bias changing as a function
 of the mass cut chosen. Our conclusions include the fact that there is a strong mass dependence on halo assembly
-bias that must be accounted for seperately depending on the halos of interest in a study. However, while the
+bias that must be accounted for separately depending on the halos of interest in a study. However, while the
 existence of this trend is clear within our analysis, the determination that this is solely due to the masses of
 the halos included in our calculation is less clear upon closer inspection. One possibility that might be
 particularly concerning is the potential that the different simulations have created halos that have
