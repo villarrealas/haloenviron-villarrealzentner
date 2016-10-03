@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2016.4.1)  19 SEP 2016 11:50
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2016.4.1)  3 OCT 2016 09:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -637,7 +637,7 @@ Package pdftex.def Info: all_mcf_cNFW.pdf used on input line 761.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-<all_mcf_cV.pdf, id=327, 433.62pt x 1084.05pt>
+<all_mcf_cV.pdf, id=342, 433.62pt x 1084.05pt>
 File: all_mcf_cV.pdf Graphic file (type pdf)
  <use all_mcf_cV.pdf>
 Package pdftex.def Info: all_mcf_cV.pdf used on input line 807.
@@ -647,26 +647,26 @@ Package pdftex.def Info: all_mcf_cV.pdf used on input line 807.
 LaTeX Warning: Reference `fig:matched_shapecomp' on page 10 undefined on input 
 line 829.
 
-<matched_catalog_shapecomp.pdf, id=328, 433.62pt x 289.08pt>
+<matched_catalog_shapecomp.pdf, id=343, 433.62pt x 289.08pt>
 File: matched_catalog_shapecomp.pdf Graphic file (type pdf)
 
 <use matched_catalog_shapecomp.pdf>
 Package pdftex.def Info: matched_catalog_shapecomp.pdf used on input line 842.
 (pdftex.def)             Requested size: 201.59692pt x 134.39874pt.
 
-<all_mcf_shape.pdf, id=329, 433.62pt x 1084.05pt>
+<all_mcf_shape.pdf, id=344, 433.62pt x 1084.05pt>
 File: all_mcf_shape.pdf Graphic file (type pdf)
  <use all_mcf_shape.pdf>
 Package pdftex.def Info: all_mcf_shape.pdf used on input line 867.
 (pdftex.def)             Requested size: 201.59692pt x 503.99535pt.
 
-<all_mcf_spin.pdf, id=330, 433.62pt x 1084.05pt>
+<all_mcf_spin.pdf, id=345, 433.62pt x 1084.05pt>
 File: all_mcf_spin.pdf Graphic file (type pdf)
  <use all_mcf_spin.pdf>
 Package pdftex.def Info: all_mcf_spin.pdf used on input line 884.
 (pdftex.def)             Requested size: 201.59692pt x 503.99535pt.
 
-<all_mcf_nsat.pdf, id=331, 433.62pt x 1084.05pt>
+<all_mcf_nsat.pdf, id=346, 433.62pt x 1084.05pt>
 File: all_mcf_nsat.pdf Graphic file (type pdf)
  <use all_mcf_nsat.pdf>
 Package pdftex.def Info: all_mcf_nsat.pdf used on input line 902.
@@ -718,7 +718,7 @@ Underfull \hbox (badness 4967) in paragraph at lines 968--980
 []\OT1/cmr/m/n/9 Clearly, the halo def-i-ni-tion that best mit-i-gates
  []
 
-<test_splashback.pdf, id=601, 433.62pt x 289.08pt>
+<test_splashback.pdf, id=676, 433.62pt x 289.08pt>
 File: test_splashback.pdf Graphic file (type pdf)
  <use test_splashback.pdf>
 Package pdftex.def Info: test_splashback.pdf used on input line 983.
@@ -726,7 +726,7 @@ Package pdftex.def Info: test_splashback.pdf used on input line 983.
 
 Underfull \vbox (badness 6380) has occurred while \output is active []
 
- [13 <./all_mcf_nsat.pdf>] <matched_catalog_cnfwcomp.pdf, id=656, 433.62pt x 28
+ [13 <./all_mcf_nsat.pdf>] <matched_catalog_cnfwcomp.pdf, id=746, 433.62pt x 28
 9.08pt>
 File: matched_catalog_cnfwcomp.pdf Graphic file (type pdf)
 
@@ -734,7 +734,7 @@ File: matched_catalog_cnfwcomp.pdf Graphic file (type pdf)
 Package pdftex.def Info: matched_catalog_cnfwcomp.pdf used on input line 1042.
 (pdftex.def)             Requested size: 201.59692pt x 134.39874pt.
 
-<match_mcf_cNFW.pdf, id=657, 433.62pt x 1084.05pt>
+<match_mcf_cNFW.pdf, id=747, 433.62pt x 1084.05pt>
 File: match_mcf_cNFW.pdf Graphic file (type pdf)
  <use match_mcf_cNFW.pdf>
 Package pdftex.def Info: match_mcf_cNFW.pdf used on input line 1086.
@@ -748,7 +748,7 @@ multiple pdfs with page group included in a single page
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-<match_mcf_cV.pdf, id=775, 433.62pt x 1084.05pt>
+<match_mcf_cV.pdf, id=862, 433.62pt x 1084.05pt>
 File: match_mcf_cV.pdf Graphic file (type pdf)
  <use match_mcf_cV.pdf>
 Package pdftex.def Info: match_mcf_cV.pdf used on input line 1127.
@@ -760,7 +760,7 @@ Underfull \vbox (badness 6380) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-<plotcircles.pdf, id=831, 433.62pt x 289.08pt>
+<plotcircles.pdf, id=931, 433.62pt x 289.08pt>
 File: plotcircles.pdf Graphic file (type pdf)
  <use plotcircles.pdf>
 Package pdftex.def Info: plotcircles.pdf used on input line 1168.
@@ -833,9 +833,9 @@ fonts/cm/cmti8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on villarrealzentner2015.pdf (19 pages, 807968 bytes).
+Output written on villarrealzentner2015.pdf (19 pages, 841714 bytes).
 PDF statistics:
- 1012 PDF objects out of 1200 (max. 8388607)
+ 1128 PDF objects out of 1200 (max. 8388607)
  419 compressed objects within 5 object streams
  0 named destinations out of 1000 (max. 500000)
  86 words of extra memory for PDF output out of 10000 (max. 10000000)
