@@ -22,7 +22,7 @@
 
 \begin{document}
 
-\title[Halo Definition and Environmental Effects]{Halo Definition and Environmental Effects}
+\title[The Immitigable Nature of Assembly Bias: a study of halo environments]
 \author[A. Villarreal et al.]{
 Antonio S. Villarreal,$^{1}$\thanks{E-mail: asv13@pitt.edu}
 Andrew R. Zentner,$^{1}$\thanks{E-mail: zentner@pitt.edu}
@@ -52,15 +52,12 @@ to standard implementations of the halo model and excursion set theory which ass
 population within the halo is determined by the mass of the halo alone. We seek to find a definition of the size
 of a halo that allows us to minimize the impact of assembly bias on halo model calculations. We analyze the
 dependence on environment of our properties using the method of marked correlation functions for several
-different halo definitions, utilizing the \citet{diemer_kravtsov15} simulations. We find that environmental dependencies
-are dramatically different as we vary the definition of the halo radius in terms of the overdensity $\Delta$. At
-large length scales, we find that the majority of assembly bias is removed through suitable redefinition of
-$\Delta$. We are able to determine that the majority of the reduction in assembly bias is related to the
-elimination of host halos that would cease to be hosts in catalogs at lower values of $\Delta$. Further, we
-analyze how different mass cuts affect this methodology. We note that unresolved halos leads to assembly bias
-being missed and that the most massive halos seem to exhibit minimal assembly bias. We further note that the
-choice of halo definition can induce assembly bias and consider how this may be interpreted in the context of
-previous results in the literature.
+different halo definitions, utilizing the \citet{diemer_kravtsov15} simulations. We find that the strength of assembly
+bias has a strong dependence on the measured halo mass, even after the removal of gross mass dependencies at fixed
+halo mass. We note that differences in halo definition, sample selection, and properties of interest can greatly impact
+the measurement of assembly bias, potentially explaining conflicting results in the literature. These results suggest that
+halo assembly bias appears increasingly difficult to resolve using the definitions common in current halo finder techniques,
+possibly pointing toward the necessity of methods such as utilizing the halo splashback radius.
 \end{abstract}
 
 \begin{keywords}
@@ -132,17 +129,21 @@ halo assembly bias. This is the aim of our paper.
 
 In the present paper, we restrict ourselves to halos that are defined by spherical regions and we 
 study the strength of halo assembly bias as a function of the density threshold used to delineate these 
-spherical halos. We find that for the properties tracing halo concentration, we can mitigate assembly bias at large scales through an appropriate choice of overdensity parameter. We also find that this result does not hold for parameters such as halo shape, halo spin, or halo satellite number. We suggest that this result is consistent with current models of halo formation and suggests the impact of large scale structure on these parameters.\arz{two or three sentence, relatively non-technical summary of our results 
-should go here.}
+spherical halos. We find that for the properties tracing halo concentration, there exist scales and mass selections in which
+assembly bias is mitigated for certain definitions of halo size. In particular, we note that the highest mass halos appear to have
+minimal assembly bias at the fiducial halo definition, while low mass halos require a dramatic increase in halo size to accomodate for the
+effect of assembly bias. We also find that this result does not hold for parameters such as halo shape, halo spin, or halo satellite number. 
+We suggest that this result is consistent with current models of halo formation and suggests the impact of large scale structure on these 
+parameters.\arz{two or three sentence, relatively non-technical summary of our results should go here.}
 
  
 In \S~\ref{section:data} of this paper, we discuss the cosmological simulations that we analyze and how halos are
 identified. In \S~\ref{section:haloprops}, we consider the properties of interest within our halo simulation and
-their standard definitions. In \S~\ref{section:methodology}, we discuss the statistics that we use to measure
+their standard definitions. In \S~\ref{section:methodology}, we discuss the statistics that we use to measureeducing environmental effects through a
+redefinition of halo environments and discuss possible applications of our methodology.
 assembly bias and the removal of known mass scaling from our halo properties. In \S~\ref{section:results}, we
 present our results and consider how the change of halo definition impacts measures of assembly bias. In
-\S~\ref{section:conclusions}, we discuss the significance of reducing environmental effects through a
-redefinition of halo environments and discuss possible applications of our methodology. We also consider the
+\S~\ref{section:conclusions}, we discuss the significance of r We also consider the
 nature of assembly bias as a function of halo definition.
 
 
@@ -258,7 +259,7 @@ formation histories.
 
 Figure~\ref{fig:cnfwrelation} shows the mean $c_{\mathrm{NFW}}$-$M_{\Delta}$ relation for halos defined with
 $\Delta=200$ in \simA, \simB, and \simC. For each simulation, we consider halos only above a minimum mass threshold 
-to ensure that concentration measurements are not compromised by resolution effects. The minimum mass 
+to ensure that property measurements are not compromised by resolution effects. The minimum mass 
 thresholds are shown as the vertical lines in Fig.~\ref{fig:cnfwrelation} and listed in Table~\ref{table:thresholds}. 
 Similar to Fig.~\ref{fig:cnfwrelation}, Figure~\ref{fig:cvrelation} shows the relation between the velocity-ratio concentration, $c_{\mathrm{V}}$, and halo mass. In the interest of completeness, Figure~\ref{fig:concentrations} shows the relationship 
 between $c_{\mathrm{NFW}}$ and $c_{\mathrm{V}}$ on a halo-by-halo basis. As is evident, the two concentration 
@@ -270,23 +271,14 @@ this relationship please to confirm that it is roughly 10\%.}\asv{Did a quick nu
 \begin{figure}
 \centering
 \includegraphics[width=.5\textwidth]{masscut_cNFW_d200.pdf}
-\caption{•}
-he relationship between the NFW concentration and halo mass for each of our simulations with $\Delta =200$. 
+\caption{The relationship between the NFW concentration and halo mass for each of our simulations with $\Delta =200$. 
 In order of increasing simulation volume, the blue dashed line corresponds to the concentration-mass relation from simulation 
 \simA, the red solid line corresponds to \simB, and the cyan dot-dashed line corresponds to \simC. The red error bars show the
 dispersion in the values of the mark for \simB. These errors are comparable to those of the other simulations
 within the region of interest.
 Each simulation is subject to resolution limitations at different halo masses. We show with thick vertical lines 
 the minimum $M_{200}$ mass thresholds that we adopt in our analyses using the same color code as 
-the concentration-mass relations, going from \simA \ to \simC \ from left to right. Note the deviation from a monotonic trend as a result of resolution effects.
-\arz{This figure is still way too busy to view. First, the legend covers some of the data. Second there are too many error 
-bars. Try using error bars only for the L0250 simulation and just state in the caption that the dispersion in each simulation 
-is similar in the regime in which the results are not compromised by resolution. Use a different line type for each line so that this 
-can make sense in black and white if necessary. Lastly, is there some way to make the thresholds 
-stand out even more? Perhaps they will stand out more when there is only one set of error bars? You will have to play with this. 
-As far as the caption, this caption is way too brief. It should describe each line and it should state what the error bars are 
-showing. Please make sure this and subsequent captions are sufficiently informative such that the figures are self contained. 
-I will take a stab at this caption so that you can see what I mean.}
+the concentration-mass relations, going from \simA \ to \simC \ from left to right. Note the deviation from a monotonic trend as a result of resolution effects.}
 \label{fig:cnfwrelation}
 \end{figure}
 %--------------------------------------------------------------------------------
@@ -303,8 +295,7 @@ dispersion in the values of the mark for \simB. These errors are comparable to t
 within the region of interest.
 Each simulation is subject to resolution limitations at different halo masses. We show with thick vertical lines 
 the minimum $M_{200}$ mass thresholds that we adopt in our analyses using the same color code as 
-the concentration-mass relations, going from \simA \ to \simC \ from left to right. Note the deviation from a monotonic trend as a result of resolution effects. \arz{Same comments as 
-for Fig.~\ref{fig:cnfwrelation}.}
+the concentration-mass relations, going from \simA \ to \simC \ from left to right. Note the deviation from a monotonic trend as a result of resolution effects.
 }
 \label{fig:cvrelation}
 \end{figure}
@@ -319,10 +310,7 @@ The relationship between the two different marks of concentration,
 using halos in \simB. The color scale, shown at the right, encodes the number of halos 
 within a single two-dimensional bin in the $c_{\mathrm{NFW}}$-$c_{\mathrm{V}}$ space. 
 The red (blue) regions on the plot show where the most (fewest) halos exist with those values of the two
-concentration parameters. The white regions indicate where no halos hold these values. The scatter on this relationship ranges from 5\% for intermediate concentration values, to a high of 13\% at high masses. \arz{I don't know what the black dashed line shows, 
-so you have to specify it.}.\asv{Currently I do not know what the black dashed line shows. I suspect it is from an old iteration of the plot - checking now.}
-\arz{Previous caption was STILL not sufficiently specific. Consider carefully what I have 
-written here as an example of a sufficiently specific caption.}
+concentration parameters. The white regions indicate where no halos hold these values. The scatter on this relationship ranges from 5\% for intermediate concentration values, to a high of 13\% at high masses.
 }
 \label{fig:concentrations}
 \end{figure}
@@ -350,11 +338,7 @@ resolution.
 \centering
 \includegraphics[width=.5\textwidth]{masscut_shape_d200.pdf}
 \caption{
-\arz{All the same comments as for Fig.~\ref{fig:cnfwrelation}. 
-In addition, I was under the impression that you were going to 
-select thresholds that guaranteed that the $s(M)$ relation 
-is monotonic? Am I mistaken?}\asv{Correct, reruns are currently at work due to shift in halotools}
-he relationship between the halo shape and halo mass for each of our simulations with $\Delta =200$. 
+The relationship between the halo shape and halo mass for each of our simulations with $\Delta =200$. 
 In order of increasing simulation volume, the blue dashed line corresponds to the shape-mass relation from simulation 
 \simA, the red solid line corresponds to \simB, and the cyan dot-dashed line corresponds to \simC. The red error bars show the
 dispersion in the values of the mark for \simB. These errors are comparable to those of the other simulations
@@ -418,7 +402,7 @@ for each halo property? That is what I get from this statement, but I think that
 not what you are doing. Can you please clarify this discussion?}
 We determine our mass thresholds in order to avoid the regime in which halo parameters
 are not well measured due to resolution limits of the simulations; we draw attention to the
-downturn in \ref{fig:cnfwrelation} as an example of this, as the deviation from
+downturn in Figure~\ref{fig:cnfwrelation} as an example of this, as the deviation from
 the underlying monotonic trend shifts with the change in simulation from low to high mass resolution,
 suggesting that this is the result of resolution alone. For ease of comparison
 between halo definitions, we choose to use a single mass threshold for each
@@ -427,7 +411,7 @@ parameter basis. This allow for a better comparison as to how the choice of halo
 definition impacts each parameter simultaneously, rather than be driven by the
 choice of mass cutoff. The one exception to this method is the mass thresholds chosen
 for the halo shape parameter. This parameter requires a larger number of particles to be
-well measured; we direct attention to the downturn in \ref{fig:srelation}, which occurs at
+well measured; we direct attention to the downturn in Figure~\ref{fig:srelation}, which occurs at
 an order of magnitude higher mass. We analyze the shape parameter with separate mass thresholds
 to maintain the larger number of halos in our sample for the other parameters. This allows us
 to have better signal-to-noise in the remaining parameters, while avoiding drawing potentially
@@ -467,27 +451,22 @@ Minimum mass thresholds for each of our analyses depending upon the
 value of the overdensity, $\Delta$, used to define the halos. 
 In the columns below the values of $\Delta$ we show the minimum 
 host halo masses considered in units of $h^{-1}\mathrm{M}_{\odot}$.
-Those rows with a label of '-gen' refer to the mass cut chosen for all parameters other than
+Those rows without a label of '-shape' refer to the mass cut chosen for all parameters other than
 halo shape. Those rows with a label of '-shape' refer to the mass cut chosen for the shape parameter.
 The latter requires a higher mass cut due to the larger number of particle required in order to have a
-robust measurement of halo shape. \asv{Tried to explain the difference in cuts
-as best I could in the caption. Need to look up exact shape parameter cuts, but
-I suspect it will be similar progression as previously, but starting at
-2e12 for L0125, 2e13 for L0250, and maybe 3e13 for L0500. Really going to be
-cutting down on the total number of halos, but it needs to be done.}
-}
+robust measurement of halo shape.}
 \vspace*{8pt}
 \begin{tabular}{ c c c c c c c }
 \hline
 \hline
 Cutoff Name &  $\Delta=340$ & $\Delta=200$ & $\Delta=100$ & $\Delta=75$ & $\Delta=50$ & $\Delta=10$ \\
 \hline
-\\{L0125-gen} & {N/A} & $7 \times 10^{10}$ & $8 \times 10^{10}$ & $9 \times 10^{10}$ & $1 \times 10^{11}$ & $2 \times 10^{11}$  \\
-{L0125-shape} & {N/A} & $2 \times 10^{12}$ & $2 \times 10^{12}$ & $2 \times 10^{12}$ & $2 \times 10^{12}$ & $2 \times 10^{12}$ \\
-{L0250-gen} & {N/A} & $7 \times 10^{11}$ & $8 \times 10^{11}$ & $9 \times 10^{11}$ & $1.5 \times 10^{12}$ & {N/A} \\
-{L0250-shape} & {N/A} & $8 \times 10^{12}$ & $8 \times 10^{12}$ & $8 \times 10^{12}$ & $8 \times 10^{12}$ & {N/A} \\
-{L0500-gen} & $3 \times 10^{12}$ & $4 \times 10^{12}$ & $5 \times 10^{12}$ & $6 \times 10^{12}$ & $7 \times 10^{12}$ & {N/A} \\
-{L0500-shape} & $4 \times 10^{13}$ & $4 \times 10^{13}$ & $4 \times 10^{13}$ & $4 \times 10^{13}$ & $4 \times 10^{13}$ & {N/A} \\
+\\{low mass} & {N/A} & $7 \times 10^{10}$ & $8 \times 10^{10}$ & $9 \times 10^{10}$ & $1 \times 10^{11}$ & $2 \times 10^{11}$  \\
+{low mass-shape} & {N/A} & $2 \times 10^{12}$ & $2 \times 10^{12}$ & $2 \times 10^{12}$ & $2 \times 10^{12}$ & $2 \times 10^{12}$ \\
+{mid mass} & {N/A} & $7 \times 10^{11}$ & $8 \times 10^{11}$ & $9 \times 10^{11}$ & $1.5 \times 10^{12}$ & {N/A} \\
+{mid mass-shape} & {N/A} & $8 \times 10^{12}$ & $8 \times 10^{12}$ & $8 \times 10^{12}$ & $8 \times 10^{12}$ & {N/A} \\
+{high mass} & $3 \times 10^{12}$ & $4 \times 10^{12}$ & $5 \times 10^{12}$ & $6 \times 10^{12}$ & $7 \times 10^{12}$ & {N/A} \\
+{high mass-shape} & $4 \times 10^{13}$ & $4 \times 10^{13}$ & $4 \times 10^{13}$ & $4 \times 10^{13}$ & $4 \times 10^{13}$ & {N/A} \\
 \hline
 \hline
 \end{tabular}
@@ -662,26 +641,26 @@ a result that agrees with the significant previous literature on halo assembly b
 \citep{wechsler_etal02, gao_etal05, zentner07, wechsler_etal06, harker_etal06, croton_etal07, dalal_etal08, mao_etal15, sunayama_etal16}\arz{Cite all the usual 
 papers here, Gao, Wechsler, Harker, Zentner07, Dalal07, probably several more.}\asv{I think that is most of the
 usual suspects, but I'll do a double check for more important ones!} 
-At relatively low mass (the L0125 panel, 
+At relatively low mass (the low mass panel, 
 $M_{200} > 7 \times 10^{10} \hMsun$), high-concentration halos are considerably 
 more strongly clustered than low-concentration halos using the more 
 conventional $\Delta = 200$ definition for halos. At somewhat higher halo masses 
-(the L0250 panel, $M_{200} > 7\times 10^{11} \hMsun$), this difference is markedly reduced. 
+(the mid mass panel, $M_{200} > 7\times 10^{11} \hMsun$), this difference is markedly reduced. 
 Finally, for the highest mass halos that we have
-the capability of studying (the L0500 panel, $M_{200} > 4 \times 10^{12} \hMsun$), 
+the capability of studying (the high mass panel, $M_{200} > 4 \times 10^{12} \hMsun$), 
 the effect is of opposite sign; low-concentration halos are more strongly correlated 
 than high-concentration halos.
 
 
 Focus first on the middle panel of Fig.~\ref{fig:cc_cfcompare}. In this panel, corresponding to the 
-\simB~mass threshold, the difference in large-scale clustering between high- and low-concentration halos 
+mid mass threshold, the difference in large-scale clustering between high- and low-concentration halos 
 is dramatically reduced for a halo definition with $\Delta=75$. Further decreasing $\Delta$ leads to
 concentration-dependent clustering of opposite sign. Comparing the differing clustering 
 strengths across the three panels of Fig.~\ref{fig:cc_cfcompare}, it is clear that this is not a universal
-conclusion. For low-mass halos, very low values of $\Delta$ (and correspondingly large definitions of halo radii,
+conclusion. For low-mass halos (the top panel), very low values of $\Delta$ (and correspondingly large definitions of halo radii,
 as $R_{\Delta} \propto \Delta^{-1/3}$) are necessary in order to mitigate the concentration dependence of halo
 clustering. Conversely, for higher
-mass halos (the L0500 panel), values of $\Delta \approx 200$ yield little concentration-dependent clustering. In
+mass halos (the bottom panel), values of $\Delta \approx 200$ yield little concentration-dependent clustering. In
 this case, decreasing $\Delta$ (increasing $R_{\Delta}$) results in significantly {\em increased} concentration
 dependent halo clustering. The reasons for these changes are of interest and we return to the interpretation of 
 these results below.
@@ -704,7 +683,7 @@ In each panel, the solid lines plot the difference between the correlation funct
 correlation function of the entire sample. In each plot the line with the most positive value
 corresponds with the largest value of overdensity parameter, $\Delta$, and demonstrates a smooth
 trend down to the lowest value of $\Delta$. The top (middle/bottom) panel shows the results for the
-\simA \ (\simB /\simC) data set utilizing the \simA -gen (\simB -gen/\simC -gen) mass cutoffs. Note
+\simA \ (\simB /\simC) data set utilizing the low mass (mid mass/high mass) cutoffs. Note
 that the top panel is the only one where exploring the extreme regime of $\Delta = 10$ is
 necessary, while the bottom panel is the only one where the exploration of $\Delta = 340$
 is necessary.}
@@ -765,7 +744,7 @@ NFW profile. The solid lines plot the marked correlation function using NFW-defi
 positive value corresponds with the largest value of overdensity parameter, 
 $\Delta$, and demonstrates a smooth trend down to the lowest value of 
 $\Delta$. The top (middle/bottom) panel shows the results for the
-\simA \ (\simB /\simC) data set utilizing the \simA -gen (\simB -gen/\simC -gen) mass cutoffs. Note
+\simA \ (\simB /\simC) data set utilizing the low mass (mid mass/high mass) cutoffs. Note
 that the top panel is the only one where exploring the extreme regime of $\Delta = 10$ is
 necessary, while the bottom panel is the only one where the exploration of $\Delta = 340$
 is necessary. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks.
@@ -809,7 +788,7 @@ quantify largely redundant information about their halos.
 positive value corresponds with the largest value of overdensity parameter, 
 $\Delta$, and demonstrates a smooth trend down to the lowest value of 
 $\Delta$. The top (middle/bottom) panel shows the results for the
-\simA \ (\simB /\simC) data set utilizing the \simA -gen (\simB -gen/\simC -gen) mass cutoffs. Note
+\simA \ (\simB /\simC) data set utilizing the low mass (mid mass/high mass) cutoffs. Note
 that the top panel is the only one where exploring the extreme regime of $\Delta = 10$ is
 necessary, while the bottom panel is the only one where the exploration of $\Delta = 340$
 is necessary. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks.
@@ -829,6 +808,7 @@ there is a change from this trend for the smallest values of $\Delta$ studied, t
 seem to mark a reversal in this trend. We examine this possibility in Figure~\ref{fig:matched_shapecomp},
 which compares the mean measured halo shape in equally spaced bins of log halo mass, along with their mean
 dispersion. The methodology of halo matching is discussed below.
+
 We note that the dispersion in halo shape remains quite similar, though the average halo becomes more
 circular. Due to the nature of our method of halo redefinition and the lack of a clear trend in the halo shape
 marked correlation function, it is difficult to draw definitive conclusions as to the nature of this result.
@@ -844,7 +824,7 @@ I feel I should move this further in, perhaps with the other matched catalog com
 	the $\Delta = 200$ and $\Delta = 10$ catalogs for \simA. The blue (red) line shows the mean value and scatter of
 	the	mean for the $\Delta = 200$ ($\Delta = 70$) catalog. Note that there is no statistically significant
 	increase in the scatter of the mean due to the change in halo definition.}
-	\label{fig:matched_cnfwcomp}
+	\label{fig:matched_shapecomp}
 \end{figure}
 \arz{If possible, a
 line here with $\Delta \gg 200$. Seems like it could be instructive, let me know if this is going to take a long
@@ -867,12 +847,10 @@ in halo definitions only drives spin-dependent halo clustering to be stronger.
 	\includegraphics[width=.4\textwidth]{all_mcf_shape.pdf}
 	\caption{
 	The marked correlation function for the halo shape parameter. The solid lines plot the marked correlation function using halo shape as the mark. The top (middle/bottom) panel shows the results for the
-\simA \ (\simB /\simC) data set utilizing the \simA -shape (\simB -shape/\simC -shape) mass cutoffs. Note
+\simA \ (\simB /\simC) data set utilizing the low mass-shape (mid mass-shape/high mass-shape) cutoffs. Note
 that the top panel is the only one where exploring the extreme regime of $\Delta = 10$ is
 necessary, while the bottom panel is the only one where the exploration of $\Delta = 340$
-is necessary. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks.}\asv{Some of this might be driven by not having
-an aggressive enough mass cutoff, but if this trend continues, it is difficult
-to write the ordering of the $\Delta$ values.}
+is necessary. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks.}
 	\label{fig:cc_mcf_s}
 \end{figure}
 %--------------------------------------------
@@ -886,7 +864,7 @@ to write the ordering of the $\Delta$ values.}
 positive value corresponds with the smallest value of overdensity parameter, 
 $\Delta$, and demonstrates a smooth trend down to the largest value of 
 $\Delta$. The top (middle/bottom) panel shows the results for the
-\simA \ (\simB /\simC) data set utilizing the \simA -gen (\simB -gen/\simC -gen) mass cutoffs. Note
+\simA \ (\simB /\simC) data set utilizing the low mass (mid mass/high mass) cutoffs. Note
 that the top panel is the only one where exploring the extreme regime of $\Delta = 10$ is
 necessary, while the bottom panel is the only one where the exploration of $\Delta = 340$
 is necessary. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks.
@@ -904,7 +882,7 @@ is necessary. The shaded bands represent 2-sigma confidence regions generated by
 positive value corresponds with the smallest value of overdensity parameter, 
 $\Delta$, and demonstrates a smooth trend down to the largest value of 
 $\Delta$. The top (middle/bottom) panel shows the results for the
-\simA \ (\simB /\simC) data set utilizing the \simA -gen (\simB -gen/\simC -gen) mass cutoffs. Note
+\simA \ (\simB /\simC) data set utilizing the low mass (mid mass/high mass) cutoffs. Note
 that the top panel is the only one where exploring the extreme regime of $\Delta = 10$ is
 necessary, while the bottom panel is the only one where the exploration of $\Delta = 340$
 is necessary. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks.}
@@ -1088,7 +1066,7 @@ comfortable working with 2pt functions.}
 positive value corresponds with the smallest value of overdensity parameter, 
 $\Delta$, and demonstrates a smooth trend down to the largest value of 
 $\Delta$. The top (middle/bottom) panel shows the results for the
-\simA \ (\simB /\simC) data set utilizing the \simA -gen (\simB -gen/\simC -gen) mass cutoffs. Note
+\simA \ (\simB /\simC) data set utilizing the low mass (mid mass/high mass) cutoffs. Note
 that the top panel is the only one where exploring the extreme regime of $\Delta = 10$ is
 necessary, while the bottom panel is the only one where the exploration of $\Delta = 340$
 is necessary. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. Only host halos consistent with the best-fit catalog from above are included in the analysis.}
@@ -1129,7 +1107,7 @@ halos from large-scale evolution and mitigating assembly bias.
 positive value corresponds with the smallest value of overdensity parameter, 
 $\Delta$, and demonstrates a smooth trend down to the largest value of 
 $\Delta$. The top (middle/bottom) panel shows the results for the
-\simA \ (\simB /\simC) data set utilizing the \simA -gen (\simB -gen/\simC -gen) mass cutoffs. Note
+\simA \ (\simB /\simC) data set utilizing the low mass (mid mass/high mass) cutoffs. Note
 that the top panel is the only one where exploring the extreme regime of $\Delta = 10$ is
 necessary, while the bottom panel is the only one where the exploration of $\Delta = 340$
 is necessary. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. Only host halos consistent with the best-fit catalog from above are included in the analysis.}
@@ -1156,25 +1134,15 @@ simple halo redefinition technique we have suggested, the underlying reasons for
 interest for exploration. In the case of halo shape, we suggest that the assembly bias may be driven through
 interactions with large scale structure. Studies have shown a statistically significant alignment between
 filaments and satellite galaxy position \citep{tempel_etal15, velliscig_etal15}\asv{need to grab paper from arxiv
-2016.05.09 for this}. Figure~\ref{fig:plotcircles} demonstrates the distribution of halos for the $\Delta=200$
-and $\Delta=10$ catalogs of \simB.
-Notice the preferential distribution of satellites being subsumed into host halos.  Notice the preferential
-direction in which host halos are subsumed in the latter definition. This material is likely to have significant
-impact on the measurement of halo shape, potentially driving our results. This would also impact the satellite
-number count, as the most clustered regions will see the largest increase as a result of this halo radius change.
-
-\begin{figure*}
-	\centering
-	\includegraphics[width=.9\textwidth]{plotcircles.pdf}
-	\caption{A $20 \hMpc$ deep cut of \simB \ along the z-axis. This zoom-in demonstrates the process that decreases the shape parameter as a function of clustering. The radius of each circle corresponds directly with the the value of $r_{\Delta}$ determined for each host halo. Filled circles use the $\Delta = 200$ catalog and unfilled circles use the $\Delta = 10$ catalog in order to make the effect more visible. Color scale refers to the shape mark, normalized by halos of the same mass where red (blue) corresponds to higher (lower) values of halo shape compared against halos of the same mass.}
-	\label{fig:plotcircles}
-\end{figure*}
+2016.05.09 for this}.
 
 Note that the mass dependence of assembly bias is implicitly explored with our suite of simulations.
 The nature of the MCFs emphasizes halos just above the threshold mass; e.g. \simA~ probes the smallest mass
-halos, while \simB~ probes the largest mass halos. One single halo definition is insufficient to account for the
-entirety of assembly bias across the entire mass range. However, it is clear that assembly bias can be a strong
-function of halo definition at fixed halo mass. Meta-analysis of the literature remains difficult as a natural
+halos, while \simB~ probes the largest mass halos. To more explicitly explore this mass dependence, Figure~\ref{fig:biascompare}
+demonstrates how bias scales as a function of both fixed halo mass and choice of overdensity $\Delta$. This demonstrates
+that one single halo definition is insufficient to account for the
+entirety of assembly bias across the entire mass range. Futhermore, note that halo assembly bias appears as a
+strong function of halo mass. Meta-analysis of the literature remains difficult as a natural
 consequence, as different choices in the process of defining a halo can lead to significantly different results.
 \arz{Instead, add one summarizing paragraph here discussing the mass dependence of assembly bias. 
 Emphasize that our findings suggest that the strength of assembly bias can be a strong function of halo 
