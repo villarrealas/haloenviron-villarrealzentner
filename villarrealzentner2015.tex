@@ -22,15 +22,18 @@
 
 \begin{document}
 
-\title[The Immitigable Nature of Assembly Bias: a study of halo environments]
+
+\title[The Immitigable Nature of Assembly Bias]{The Immitigable Nature of Assembly
+Bias: the Impact of Halo Definition on Environmental Effects}
 \author[A. Villarreal et al.]{
 Antonio S. Villarreal,$^{1}$\thanks{E-mail: asv13@pitt.edu}
 Andrew R. Zentner,$^{1}$\thanks{E-mail: zentner@pitt.edu}
 Christopher W. Purcell,$^{2}$\thanks{E-mail: cwpurcell@mail.wvu.edu}
 \newauthor
-Andrew P. Hearin,$^3$\thanks{andrew.hearin@yale.edu}
-and Frank C. van den Bosch$^3$\thanks{frank.vandenbosch@yale.edu} \\
-$^{1}$Department of Physics and Astronomy \& Pittsburgh Particle Physics, Astrophysics, and Cosmology Center (Pitt-PACC),\\ 
+Andrew P. Hearin,$^{3}$\thanks{andrew.hearin@yale.edu}
+and Frank C. van den Bosch$^{3}$\thanks{frank.vandenbosch@yale.edu} 
+\\
+$^{1}$Department of Physics and Astronomy \& Pittsburgh Particle Physics,\\ Astrophysics, and Cosmology Center (Pitt-PACC), \\
 University of Pittsburgh, Pittsburgh, PA\\
 $^{2}$Department of Physics and Astronomy, \\
 West Virginia University, Morgantown, WV \\
@@ -462,11 +465,11 @@ robust measurement of halo shape.}
 Cutoff Name &  $\Delta=340$ & $\Delta=200$ & $\Delta=100$ & $\Delta=75$ & $\Delta=50$ & $\Delta=10$ \\
 \hline
 \\{low mass} & {N/A} & $7 \times 10^{10}$ & $8 \times 10^{10}$ & $9 \times 10^{10}$ & $1 \times 10^{11}$ & $2 \times 10^{11}$  \\
-{low mass-shape} & {N/A} & $2 \times 10^{12}$ & $2 \times 10^{12}$ & $2 \times 10^{12}$ & $2 \times 10^{12}$ & $2 \times 10^{12}$ \\
+{low mass-shape} & {N/A} & $1 \times 10^{11}$ & $1 \times 10^{11}$ & $1 \times 10^{11}$ & $1 \times 10^{11}$ & $1 \times 10^{11}$ \\
 {mid mass} & {N/A} & $7 \times 10^{11}$ & $8 \times 10^{11}$ & $9 \times 10^{11}$ & $1.5 \times 10^{12}$ & {N/A} \\
-{mid mass-shape} & {N/A} & $8 \times 10^{12}$ & $8 \times 10^{12}$ & $8 \times 10^{12}$ & $8 \times 10^{12}$ & {N/A} \\
+{mid mass-shape} & {N/A} & $1 \times 10^{12}$ & $1 \times 10^{12}$ & $1 \times 10^{12}$ & $1 \times 10^{12}$ & {N/A} \\
 {high mass} & $3 \times 10^{12}$ & $4 \times 10^{12}$ & $5 \times 10^{12}$ & $6 \times 10^{12}$ & $7 \times 10^{12}$ & {N/A} \\
-{high mass-shape} & $4 \times 10^{13}$ & $4 \times 10^{13}$ & $4 \times 10^{13}$ & $4 \times 10^{13}$ & $4 \times 10^{13}$ & {N/A} \\
+{high mass-shape} & $1 \times 10^{13}$ & $1 \times 10^{13}$ & $1 \times 10^{13}$ & $1 \times 10^{13}$ & $1 \times 10^{13}$ & {N/A} \\
 \hline
 \hline
 \end{tabular}
@@ -821,8 +824,8 @@ I feel I should move this further in, perhaps with the other matched catalog com
 	\centering
 	\includegraphics[width=.4\textwidth]{matched_catalog_shapecomp.pdf}
 	\caption{A comparison of the mean value of the halo shape for halos matched across both
-	the $\Delta = 200$ and $\Delta = 10$ catalogs for \simA. The blue (red) line shows the mean value and scatter of
-	the	mean for the $\Delta = 200$ ($\Delta = 70$) catalog. Note that there is no statistically significant
+	the $\Delta = 200$ and $\Delta = 70$ catalogs for \simB. The blue (red) line shows the mean value and scatter of
+	the	mean for the $\Delta = 200$ ($\Delta = 70$) catalog. Note that there is no significant
 	increase in the scatter of the mean due to the change in halo definition.}
 	\label{fig:matched_shapecomp}
 \end{figure}
@@ -1020,7 +1023,7 @@ added below for now.}
 	\includegraphics[width=.4\textwidth]{matched_catalog_cnfwcomp.pdf}
 	\caption{A comparison of the mean value of the NFW-defined halo concentration for halos matched across both
 	the $\Delta = 200$ and $\Delta = 70$ catalogs for \simB. The blue (red) line shows the mean value and scatter of
-	the	mean for the $\Delta = 200$ ($\Delta = 70$) catalog. Note that there is no statistically significant
+	the	mean for the $\Delta = 200$ ($\Delta = 70$) catalog. Note that there is no significant
 	increase in the scatter of the mean due to the change in halo definition.}
 	\label{fig:matched_cnfwcomp}
 \end{figure}
@@ -1207,7 +1210,9 @@ observational samples in the future.
 
 \section*{Acknowledgments}
 
-We are grateful to many people.
+We are grateful to many people. Our calculations are carried out utilizing the
+{\tt numpy} \citep{numpy}, {\tt astropy} \citep{astropy}, {\tt matplotlib} 
+\citep{matplotlib}, and {\tt halo-tools} \citep{halotools} packages in Python.
 
 %%\bibliographystyle{plainnat}
 \bibliography{master}

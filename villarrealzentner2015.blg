@@ -6,45 +6,45 @@ Database file #1: master.bib
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--empty publisher in mo_etal10
-You've used 72 entries,
+You've used 76 entries,
             2881 wiz_defined-function locations,
-            1288 strings with 25669 characters,
-and the built_in function-call counts, 35374 in all, are:
-= -- 2764
-> -- 2791
-< -- 160
-+ -- 1199
-- -- 448
-* -- 4559
-:= -- 5660
+            1319 strings with 27520 characters,
+and the built_in function-call counts, 36972 in all, are:
+= -- 2893
+> -- 2897
+< -- 166
++ -- 1257
+- -- 456
+* -- 4771
+:= -- 5906
 add.period$ -- 0
-call.type$ -- 72
-change.case$ -- 144
-chr.to.int$ -- 70
-cite$ -- 73
-duplicate$ -- 1638
-empty$ -- 1603
-format.name$ -- 660
-if$ -- 5972
-int.to.chr$ -- 3
+call.type$ -- 76
+change.case$ -- 152
+chr.to.int$ -- 73
+cite$ -- 77
+duplicate$ -- 1724
+empty$ -- 1693
+format.name$ -- 680
+if$ -- 6237
+int.to.chr$ -- 4
 int.to.str$ -- 0
-missing$ -- 73
-newline$ -- 229
-num.names$ -- 538
-pop$ -- 352
+missing$ -- 77
+newline$ -- 241
+num.names$ -- 560
+pop$ -- 372
 preamble$ -- 1
-purify$ -- 288
+purify$ -- 304
 quote$ -- 0
-skip$ -- 940
+skip$ -- 988
 stack$ -- 0
-substring$ -- 1872
-swap$ -- 1046
-text.length$ -- 288
+substring$ -- 1951
+swap$ -- 1078
+text.length$ -- 304
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 645
+type$ -- 681
 warning$ -- 1
-while$ -- 550
+while$ -- 576
 width$ -- 0
-write$ -- 735
+write$ -- 776
 (There was 1 warning)

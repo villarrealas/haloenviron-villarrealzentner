@@ -31,6 +31,12 @@
   {10.1111/j.1365-2966.2006.10094.x}, \href
   {http://adsabs.harvard.edu/abs/2006MNRAS.367.1781A} {367, 1781}
 
+\bibitem[\protect\citeauthoryear{{Astropy Collaboration} et~al.,}{{Astropy
+  Collaboration} et~al.}{2013}]{astropy}
+{Astropy Collaboration} et~al., 2013, \mn@doi [\aap]
+  {10.1051/0004-6361/201322068}, \href
+  {http://adsabs.harvard.edu/abs/2013A%26A...558A..33A} {558, A33}
+
 \bibitem[\protect\citeauthoryear{{Behroozi}, {Wechsler}  \& {Wu}}{{Behroozi}
   et~al.}{2013a}]{behroozi_etal13a}
 {Behroozi} P.~S.,  {Wechsler} R.~H.,   {Wu} H.-Y.,  2013a, \mn@doi [\apj]
@@ -175,11 +181,21 @@
   \mn@doi [\mnras] {10.1111/j.1365-2966.2006.10022.x}, \href
   {http://adsabs.harvard.edu/abs/2006MNRAS.367.1039H} {367, 1039}
 
+\bibitem[\protect\citeauthoryear{{Hearin} et~al.,}{{Hearin}
+  et~al.}{2016a}]{halotools}
+{Hearin} A.,  et~al., 2016a, preprint, \href
+  {http://adsabs.harvard.edu/abs/2016arXiv160604106H} {} (\mn@eprint {arXiv}
+  {1606.04106})
+
 \bibitem[\protect\citeauthoryear{{Hearin}, {Zentner}, {van den Bosch},
-  {Campbell}  \& {Tollerud}}{{Hearin} et~al.}{2016}]{hearin_etal16}
+  {Campbell}  \& {Tollerud}}{{Hearin} et~al.}{2016b}]{hearin_etal16}
 {Hearin} A.~P.,  {Zentner} A.~R.,  {van den Bosch} F.~C.,  {Campbell} D.,
-  {Tollerud} E.,  2016, \mn@doi [\mnras] {10.1093/mnras/stw840}, \href
+  {Tollerud} E.,  2016b, \mn@doi [\mnras] {10.1093/mnras/stw840}, \href
   {http://adsabs.harvard.edu/abs/2016MNRAS.460.2552H} {460, 2552}
+
+\bibitem[\protect\citeauthoryear{Hunter}{Hunter}{2007}]{matplotlib}
+Hunter J.~D.,  2007, \mn@doi [Computing In Science \& Engineering]
+  {10.1109/MCSE.2007.55}, 9, 90
 
 \bibitem[\protect\citeauthoryear{{Kazantzidis}, {Zentner}  \&
   {Kravtsov}}{{Kazantzidis} et~al.}{2006}]{kazantzidis_etal06}
@@ -313,6 +329,11 @@
   et~al.}{2011}]{wake_etal11}
 {Wake} D.~A.,  et~al., 2011, \mn@doi [\apj] {10.1088/0004-637X/728/1/46}, \href
   {http://adsabs.harvard.edu/abs/2011ApJ...728...46W} {728, 46}
+
+\bibitem[\protect\citeauthoryear{Walt, Colbert  \& Varoquaux}{Walt
+  et~al.}{2011}]{numpy}
+Walt S. v.~d.,  Colbert S.~C.,   Varoquaux G.,  2011, \mn@doi [Computing in
+  Science and Engg.] {10.1109/MCSE.2011.37}, 13, 22
 
 \bibitem[\protect\citeauthoryear{{Wang}, {Mo}  \& {Jing}}{{Wang}
   et~al.}{2007}]{wang_etal07}
