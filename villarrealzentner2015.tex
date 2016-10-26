@@ -1142,15 +1142,34 @@ filaments and satellite galaxy position \citep{tempel_etal15, velliscig_etal15}\
 Note that the mass dependence of assembly bias is implicitly explored with our suite of simulations.
 The nature of the MCFs emphasizes halos just above the threshold mass; e.g. \simA~ probes the smallest mass
 halos, while \simB~ probes the largest mass halos. To more explicitly explore this mass dependence, Figure~\ref{fig:biascompare}
-demonstrates how bias scales as a function of both fixed halo mass and choice of overdensity $\Delta$. This demonstrates
-that one single halo definition is insufficient to account for the
-entirety of assembly bias across the entire mass range. Futhermore, note that halo assembly bias appears as a
-strong function of halo mass. Meta-analysis of the literature remains difficult as a natural
-consequence, as different choices in the process of defining a halo can lead to significantly different results.
+demonstrates how bias scales as a function of both fixed halo mass and choice of overdensity $\Delta$.
+There are two clear trends to be determined from this data. The first is the trend for the assembly bias with
+halo concentration to be reduced as a function of halo mass. This trend helps to resolve the apparent
+inconsistencies in measures of assembly bias in the literature; namely, a change in halo mass of
+interest can lead to a considerably different measure of halo assembly bias - at high masses, halo assembly
+bias due to NFW-defined concentration is fairly minimal. The second visible trend is that a change in halo
+definition chosen has a trend of decreasing the halo bias determined. Furthermore, it should be noted that this
+can lead to an anticlustering of halos of high concentration at high masses. These two discoveries seem to
+suggest that halo assembly bias of NFW-defined halo concentration is a coincidence; choosing a halo size
+across all halo masses as a function of an overdensity will be insufficient in creating self-similiar dark
+matter halos.
 \arz{Instead, add one summarizing paragraph here discussing the mass dependence of assembly bias. 
 Emphasize that our findings suggest that the strength of assembly bias can be a strong function of halo 
 definition and that this may already be making it difficult to compare the results of various different research 
 groups using different halo definitions.}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=.4\textwidth]{biasplot.pdf}
+	\caption{The bias with respect to NFW-defined halo concentration against halo mass measured at the halo
+	radius. The displayed lines descend from highest values of overdensity parameter $\Delta$ in that mass
+	range to the lowest value. The low mass range (dotted lines) covers from $\Delta=200$ to $\Delta=10$, 
+	the mid mass range (dashed lines) covers	from $\Delta=200$ to $\Delta=50$, and the 
+	high mass range (solid lines) covers from $\Delta=340$ to $Delta=50$. The
+	error bars show where 68\% of bias measurements lie within sampling noise. The solid black line
+	shows where there is no assembly bias driven by NFW-defined halo concentration.}
+	\label{fig:biascompare}
+\end{figure}
 
 
 %----------------------
@@ -1212,7 +1231,7 @@ observational samples in the future.
 
 We are grateful to many people. Our calculations are carried out utilizing the
 {\tt numpy} \citep{numpy}, {\tt astropy} \citep{astropy}, {\tt matplotlib} 
-\citep{matplotlib}, and {\tt halo-tools} \citep{halotools} packages in Python.
+\citep{matplotlib}, and {\tt halotools} \citep{halotools} packages in Python.
 
 %%\bibliographystyle{plainnat}
 \bibliography{master}
