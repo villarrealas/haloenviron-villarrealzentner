@@ -276,10 +276,10 @@ this relationship please to confirm that it is roughly 10\%.}\asv{Did a quick nu
 \includegraphics[width=.5\textwidth]{masscut_cNFW_d200.pdf}
 \caption{The relationship between the NFW concentration and halo mass for each of our simulations with $\Delta =200$. 
 In order of increasing simulation volume, the blue dashed line corresponds to the concentration-mass relation from simulation 
-\simA, the red solid line corresponds to \simB, and the cyan dot-dashed line corresponds to \simC. The red error bars show the
-dispersion in the values of the mark for \simB. These errors are comparable to those of the other simulations
+\simA, the red solid line corresponds to \simB, and the cyan dot-dashed line corresponds to \simC. The red error bars show the 68\% spread in
+parameter values within that mass bin for \simB. These errors are comparable to those of the other simulations
 within the region of interest.
-Each simulation is subject to resolution limitations at different halo masses. We show with thick vertical lines 
+Each simulation is subject to resolution limitations at different halo masses. We show with black arrows 
 the minimum $M_{200}$ mass thresholds that we adopt in our analyses using the same color code as 
 the concentration-mass relations, going from \simA \ to \simC \ from left to right. Note the deviation from a monotonic trend as a result of resolution effects.}
 \label{fig:cnfwrelation}
@@ -293,10 +293,10 @@ the concentration-mass relations, going from \simA \ to \simC \ from left to rig
 \includegraphics[width=.5\textwidth]{masscut_cV_d200.pdf}
 \caption{The relationship between the velocity ratio concentration and halo mass for each of our simulations with $\Delta =200$. 
 In order of increasing simulation volume, the blue dashed line corresponds to the concentration-mass relation from simulation 
-\simA, the red solid line corresponds to \simB, and the cyan dot-dashed line corresponds to \simC. The red error bars show the
-dispersion in the values of the mark for \simB. These errors are comparable to those of the other simulations
+\simA, the red solid line corresponds to \simB, and the cyan dot-dashed line corresponds to \simC. The red error bars show the 68\% spread in
+parameter values within that mass bin for \simB. These errors are comparable to those of the other simulations
 within the region of interest.
-Each simulation is subject to resolution limitations at different halo masses. We show with thick vertical lines 
+Each simulation is subject to resolution limitations at different halo masses. We show with black arrows 
 the minimum $M_{200}$ mass thresholds that we adopt in our analyses using the same color code as 
 the concentration-mass relations, going from \simA \ to \simC \ from left to right. Note the deviation from a monotonic trend as a result of resolution effects.
 }
@@ -343,10 +343,10 @@ resolution.
 \caption{
 The relationship between the halo shape and halo mass for each of our simulations with $\Delta =200$. 
 In order of increasing simulation volume, the blue dashed line corresponds to the shape-mass relation from simulation 
-\simA, the red solid line corresponds to \simB, and the cyan dot-dashed line corresponds to \simC. The red error bars show the
-dispersion in the values of the mark for \simB. These errors are comparable to those of the other simulations
+\simA, the red solid line corresponds to \simB, and the cyan dot-dashed line corresponds to \simC. The red error bars show the 68\% spread in
+parameter values within that mass bin for \simB. These errors are comparable to those of the other simulations
 within the region of interest.
-Each simulation is subject to resolution limitations at different halo masses. We show with thick vertical lines 
+Each simulation is subject to resolution limitations at different halo masses. We show with black arrows 
 the minimum $M_{200}$ mass thresholds that we adopt in our analyses using the same color code as 
 the shape-mass relations, going from \simA \ to \simC \ from left to right. The mass cutoffs chosen for this mark
 are at higher masses in order to account for the additional number of particles needed to properly measure the
@@ -382,10 +382,10 @@ of the plot useless, wasted, white space. A more appropriate y-axis range
 looks to be from -0.1 to about 0.25 or so.}
 he relationship between the halo spin and halo mass for each of our simulations with $\Delta =200$. 
 In order of increasing simulation volume, the blue dashed line corresponds to the spin-mass relation from simulation 
-\simA, the red solid line corresponds to \simB, and the cyan dot-dashed line corresponds to \simC. The red error bars show the
-dispersion in the values of the mark for \simB. These errors are comparable to those of the other simulations
+\simA, the red solid line corresponds to \simB, and the cyan dot-dashed line corresponds to \simC. The red error bars show the 68\% spread in
+parameter values within that mass bin for \simB. These errors are comparable to those of the other simulations
 within the region of interest.
-Each simulation is subject to resolution limitations at different halo masses. We show with thick vertical lines 
+Each simulation is subject to resolution limitations at different halo masses. We show with black arrows 
 the minimum $M_{200}$ mass thresholds that we adopt in our analyses using the same color code as 
 the spin-mass relations, going from \simA \ to \simC \ from left to right. Note the deviations from the near linear
 trend at low mass due to resolution effects.
@@ -1142,7 +1142,21 @@ filaments and satellite galaxy position \citep{tempel_etal15, velliscig_etal15}\
 Note that the mass dependence of assembly bias is implicitly explored with our suite of simulations.
 The nature of the MCFs emphasizes halos just above the threshold mass; e.g. \simA~ probes the smallest mass
 halos, while \simB~ probes the largest mass halos. To more explicitly explore this mass dependence, Figure~\ref{fig:biascompare}
-demonstrates how bias scales as a function of both fixed halo mass and choice of overdensity $\Delta$.
+demonstrates how bias scales as a function of both fixed halo mass and choice of overdensity $\Delta$. Here we calculate the bias as follows:
+\beq
+b^2(r) = \xi_{c_\mathrm{NFW}} / \xi_{\mathrm{all}},
+\eeq
+where $\xi_{c_\mathrm{NFW}}$ consists of those halos with the 20\% highest marks in NFW-defined concentration
+and $\xi_{\mathrm{all}}$ consists of all halos. To explore the mass dependency of the bias, we choose to
+examine a fixed scale of 5 to 10 $\hMpc$. We calculate the bias using halos in bins of fixed mass, with errors
+calculated using resampling in which $\xi_{\mathrm{all}}$ is replaced with the correlation function calculated
+using a randomly chosen subsample of equal number to the biased subsample. The displayed error bars represent
+the region in which 68\% of these random subsamples lie. We explore our dataset with the following binning,
+in which the larger simulations are able to push to higher masses than the smallest simulation:
+$7\times10^{10}-2\times10^{10}, 2\times10^{10}-7\times10^{11},7\times10^{11}-2\times10^{12},
+2\times10^{12}-7\times10^{12},7\times10^{12}-2\times10^{13},2\times10^{13}-7\times10^{13},
+7\times10^{13}-2\times10^{14} \hMsun$.
+
 There are two clear trends to be determined from this data. The first is the trend for the assembly bias with
 halo concentration to be reduced as a function of halo mass. This trend helps to resolve the apparent
 inconsistencies in measures of assembly bias in the literature; namely, a change in halo mass of
@@ -1163,10 +1177,11 @@ groups using different halo definitions.}
 	\includegraphics[width=.4\textwidth]{biasplot.pdf}
 	\caption{The bias with respect to NFW-defined halo concentration against halo mass measured at the halo
 	radius. The displayed lines descend from highest values of overdensity parameter $\Delta$ in that mass
-	range to the lowest value. The low mass range (dotted lines) covers from $\Delta=200$ to $\Delta=10$, 
-	the mid mass range (dashed lines) covers	from $\Delta=200$ to $\Delta=50$, and the 
-	high mass range (solid lines) covers from $\Delta=340$ to $Delta=50$. The
-	error bars show where 68\% of bias measurements lie within sampling noise. The solid black line
+	range to the lowest value. The low mass range (solid lines) covers from $\Delta=200$ to $\Delta=10$, 
+	the mid mass range (dot-dashed lines) covers	from $\Delta=200$ to $\Delta=50$, and the 
+	high mass range (dashed lines) covers from $\Delta=340$ to $Delta=50$. The
+	error bars encompass 68\% of measurements using two hundred subsamples
+	of the mark of the same size as the biased sample. The solid black line
 	shows where there is no assembly bias driven by NFW-defined halo concentration.}
 	\label{fig:biascompare}
 \end{figure}
