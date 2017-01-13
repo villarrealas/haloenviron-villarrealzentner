@@ -148,7 +148,7 @@ halos. These results suggest that any mitigation schemes will likely be quite co
 practical. \arz{I plan to add something here after I complete my run through the paper.}
 
  
- arz{This paragraph makes no sense. I suspect there is some sort of editor problem. Please fix this.}
+\arz{This paragraph makes no sense. I suspect there is some sort of editor problem. Please fix this.}
 In \S~\ref{section:data} of this paper, we discuss the cosmological simulations 
 that we analyze and halo identification. In \S~\ref{section:haloprops}, we consider 
 the halo properties of interest and their standard definitions. In \S~\ref{section:methodology}, 
@@ -168,25 +168,27 @@ nature of assembly bias as a function of halo definition.
 \label{section:data}
 %------------------------------------
 
+
 In order to study the effects of halo redefinition, we use three cosmological $N$-body simulations of structure
 formation. The \citet{diemer_kravtsov15} simulations each utilize a Planck best-fit cosmology with $\Om = 0.32$, $\Ol =
-0.68$, and $h_{\mathrm{o}} = 0.67$. We use three simulation boxes with comoving sizes of 125, 250, and 500
+0.68$, and $h_0 = 0.67$. We use three simulation boxes with comoving sizes of 125, 250, and 500
 $\hMpc$ respectively. The particle masses are $1.6 \times 10^8$, $1.3 \times 10^9$, and $1.0 \times 10^{10}
-\hMsun$ respectively, implying a total of $1024^3$ particles in each simulation. Furthermore, the three
-simulations have different force softening scales of $2.4$, $5.8$, and $14 \hkpc$. We refer to each simulation as
-\simA, \simB, or \simC  \ for the remainder of the paper. This set of simulations allows us to probe the
+\hMsun$ respectively, implying a total of $1024^3$ particles in each simulation. The three
+simulations have force softening scales of $2.4$, $5.8$, and $14 \hkpc$. We refer to each simulation as
+\simA, \simB, or \simC~  for the remainder of the paper. This set of simulations allows us to probe the
 resolution effects inherent in halo finding (due to the varying resolutions of the simulations) and to probe the
 mass dependence of halo clustering over a wider range of halo masses than would be possible with only one
-simulation from the set. In particular, \simA~, with its higher resolution, contains the least massive resolved
+simulation from the set. For example, \simA, with its higher resolution, contains the least massive resolved
 halos, while \simC~has the most robust statistics for the most massive halos as a result of the larger simulation
 volume.
+
 
 To identify halos, we use the {\tt ROCKSTAR} halo finder, which works on the phase space algorithm described in
 \citet*{behroozi_etal13a}. In short, {\tt ROCKSTAR} determines initial groupings of particles using a Friends-of-Friends algorithm 
 in phase space before applying the spherical overdensity halo definition in order to determine halo properties of
 interest. Unbound particles are removed prior to the calculation of halo mass and other halo properties. Our
-method of halo redefinition is to change how halo size is calculated as part of the {\tt ROCKSTAR} pipeline. A halo is
-given a radius, $\Rdel$, determined by
+method of halo redefinition is to change how halo size is calculated as part of the {\tt ROCKSTAR} pipeline. 
+A halo is given a radius, $\Rdel$, determined by
 \beq
 	\bar{\rho}(\Rdel) = \Delta \rho_{\mathrm{m}}, 
 \eeq
@@ -195,12 +197,13 @@ parameter, and $\rho_{\mathrm{m}}$ is the mean background mass density of the si
 halo size calculation can have a large variation depending on the choice of $\Delta$. The number chosen for
 $\Delta$ varies throughout the literature from $\Delta \approx 178$ to $\Delta \approx 340$ or higher for X-ray studies of 
 clusters. We choose to vary the size of a halo by treating the overdensity parameter as tunable, expanding the range from 
-$\Delta = 340$ to $\Delta = 10$\footnote{It is worth noting that the {\tt ROCKSTAR} linking length parameter must be adjusted 
-as $\Delta$ is adjusted in order to ensure that SO halos contain all relevant particles.}. While this range is greater than the 
-differences between most the common overdensity choices, this broad range enables a fairly extensive exploration of 
-environmental effects on halo properties as a function of halo definition.
+$\Delta = 340$ to $\Delta = 10$. While this range is greater than the differences between most 
+the common overdensity choices, this broad range enables a fairly extensive exploration of 
+environmental effects on halo properties as a function of halo definition\footnote{It is worth noting that the 
+{\tt ROCKSTAR} linking length parameter must be adjusted as $\Delta$ varies in order to ensure 
+that SO halos contain all relevant particles.}.
 
-An additional benefit to the {\tt ROCKSTAR} pipeline is the ability to identify substructure commonly referred to in the
+An additional benefit of the {\tt ROCKSTAR} software is the ability to identify substructure, commonly referred to in the
 literature as subhalos. Effectively, all density peaks are identified within the simulation and if a halo exists within the phase
 space of another halo, the less massive of the two is defined to be a subhalo of the more massive companion. This process
 continues until all halos have been assigned. For purposes of our calculations, we only use the immediate subhalos of the host,
