@@ -81,6 +81,11 @@ cosmology: dark matter -- cosmology: large-scale structure of Universe -- galaxi
 \label{section:introduction}
 %-----------------------
 
+\arz{There is still a notation problem. In some parts of the text you use ``L0125" etc. while in some parts, like Table~1, you 
+use ``low-mass", ``mid-mass", etc. You have to choose one and go with it. If you like, you can say that the halo samples that 
+you extract from the L0125 simulation will be referred to as ``low-mass" and so on. That would be fine. However, you have 
+to explicitly say that when you discuss your sample selections."}
+
 In the concordance cosmology, galaxies and clusters form within merging dark matter halos \citep{white_rees78,blumenthal_etal84, mo_etal10}. Numerical simulations have provided a solid understanding of the abundances, properties, and 
 clustering of dark matter halos in the standard cosmological model. Accordingly, it is possible to compute the 
 clustering statistics of galaxies given a model for the (probabilistic) relationship between galaxies and dark matter halos. 
@@ -216,6 +221,14 @@ discussion further.}
 \label{section:haloprops}
 %-------------------------------------
 
+As has long been well known, halo mass is the property that most strongly affects halo clustering. In 
+this paper, we aim to study the strength of halo clustering as a function of halo properties other than 
+mass. We will refer to these properties as ``auxiliary" halo properties in this paper. The properties 
+we study are described in this section.
+
+%----------------------------------------
+\subsection{Measures of Halo Concentration}
+
 We investigate the clustering of halos as a function of a number of halo properties 
 that have been shown to influence halo clustering at fixed halo mass. We explore 
 two definitions of halo concentration. The first stems from a fit of the spherically-averaged 
@@ -232,40 +245,43 @@ c_{\mathrm{NFW}} = \frac{\Rdel}{r_\mathrm{s}},
 \eeq
 where $\Rdel$ is the radius of the halo given an overdensity parameter, $\Delta$, defining the halo 
 and $r_{\mathrm{s}}$ is the inferred halo scale radius. We use the NFW concentrations computed by the 
-{\tt ROCKSTAR} halo finder.  
+{\tt ROCKSTAR} halo finder, which are derived from a fit to the halo density profile.  
+
 
 The NFW concentration defined in the previous paragraph has the shortcoming that it 
 depends upon a parametric description of dark matter halos, so we study the clustering dependence 
-of halos as a function of a non-parametric description of halo concentration. In particular, we 
-define the velocity concentration as 
+of halos as a function of a non-parametric description of halo concentration as well. In particular, we 
+use the ``velocity-ratio" concentration,
 \beq
 c_{\mathrm{V}} = \frac{V_{\mathrm{max}}}{V_{\Delta}}, 
 \eeq
 where $V_{\mathrm{max}}$ is the maximum circular velocity achieved within the halo and $V_{\Delta}$ is 
 the circular velocity at the halo radius, $\Rdel$. All halos of the same mass have the same value of $V_{\Delta}$; however, 
-they exhibit a variety of $V_{\mathrm{max}}$ values depending upon the degree to which their mass is concentrated toward 
+they exhibit a variety of $V_{\mathrm{max}}$ values depending upon the degree to which their masses are concentrated toward 
 the halo center. The quantity $c_{\mathrm{V}}$ is a non-parametric measure of halo concentration and can be measured from 
-simulation snapshots without any need for fitting halo density profiles. Consequently, $c_{\mathrm{V}}$ is robust to halo density 
+simulation snapshots without fitting halo density profiles. Consequently, $c_{\mathrm{V}}$ is robust to halo density 
 profile parameterizations and halo profile fitting procedures. 
 
 
 Halo concentrations are interesting to investigate for these purposes for a number of reasons. 
-First of all, the environment dependence of halo concentrations is of interest in the modeling of 
-galaxy clustering and gravitational lensing statistics. In the case of galaxy clustering, the relevance 
-is indirect, because galaxies will not necessarily trace the mass density of their host halos. In the case 
+First of all, the environment dependence of halo concentrations is known to be strong for 
+standard halo definitions. Second, halo concentrations are of interest in the modeling of 
+galaxy clustering and gravitational lensing statistics (and their cross correlations). 
+In the case of galaxy clustering, the relevance is indirect, because galaxies may 
+not trace the mass densities of their host halos. In the case 
 of gravitational lensing, the mass distribution is the primary quantity of interest and halo concentrations are 
-directly related to predictions for lensing statistics. Secondly, concentrations can be measured from 
+directly related to predictions for lensing statistics. Third, concentrations can be measured from 
 individual simulation snapshots easily and halo concentrations are known to be strongly correlated with 
 the formation histories of dark matter halos with earlier forming halos having higher concentrations at 
-fixed halo mass \citep{wechsler_etal02, zhao_etal03, wechsler_etal06, zhao_etal09} 
-\arz{Cite papers here like Wechsler et al. 2002. I think there are at least two Zhao et al. papers from 
-the last decade relevant here. I don't remember the years, but one of them is at least 8 years old. I think another 
-might be from around 2011.}. As such, exploring the concentration dependence of halo
+fixed halo mass \citep{wechsler_etal02, zhao_etal03, wechsler_etal06, zhao_etal09}. 
+As such, exploring the concentration dependence of halo
 clustering may yield insight into the age dependence of halo clustering without the need for constructing merger
 trees. This is particularly important in the present study in which the halo finding is performed repeatedly for many 
 different values of $\Delta$. Constructing a self-consistent merger tree from which halo formation history can be 
 studied requires halo finding at all simulation snapshots for each new value of $\Delta$, which is a computationally 
-prohibitive task. In the present paper, we limit our study to halo properties that can be measured from a single simulation 
+prohibitive task. 
+
+In the present paper, we limit our study to halo properties that can be measured from a single simulation 
 snapshot. However, halo formation histories correlate with halo concentrations with significant scatter and this correlation may 
 depend upon environment, so the reader should be wary of drawing conclusions about the environmental dependence of 
 halo formation by extrapolating our results on halo concentration. 
@@ -273,15 +289,21 @@ We will explore measures of halo age directly in a forthcoming follow-up study d
 formation histories.
 
 
+\arz{There should be uniformity in your presentation in Figures~\ref{fig:cnfwrelation} and \ref{fig:cvrelation}. Right 
+now, they present nearly identical information in different ways. I personally find Fig.~\ref{fig:cvrelation} easier to read, 
+so I would make the other figures follow that model. The only thing I would add is to color code the arrows as well. 
+Then adjust the text accordingly.}
 Figure~\ref{fig:cnfwrelation} shows the mean $c_{\mathrm{NFW}}$-$M_{\Delta}$ relation for halos defined with
 $\Delta=200$ in \simA, \simB, and \simC. For each simulation, we consider halos only above a minimum mass threshold 
 to ensure that property measurements are not compromised by resolution effects. The minimum mass 
 thresholds are shown as the vertical lines in Fig.~\ref{fig:cnfwrelation} and listed in Table~\ref{table:thresholds}. 
-Similar to Fig.~\ref{fig:cnfwrelation}, Figure~\ref{fig:cvrelation} shows the relation between the velocity-ratio concentration, $c_{\mathrm{V}}$, and halo mass. In the interest of completeness, Figure~\ref{fig:concentrations} shows the relationship 
-between $c_{\mathrm{NFW}}$ and $c_{\mathrm{V}}$ on a halo-by-halo basis. As is evident, the two concentration 
-proxies are strongly correlated and exhibit a $\sim 7\%$ mean scatter indicating that $c_{\mathrm{NFW}}$ and $c_{\mathrm{V}}$ 
-indeed encode similar information about each halo \arz{I eyeballed this from your figure, check the scatter in 
-this relationship please to confirm that it is roughly 10\%.}\asv{Did a quick number crunch on this: the scatter on the relationship has a mean scatter of 6.4\%, with a max scatter of 13.27\% and and standard deviation of 2.6\%. I will cite the mean scatter for now.}
+Similar to Fig.~\ref{fig:cnfwrelation}, Figure~\ref{fig:cvrelation} shows the relation between the 
+velocity-ratio concentration, $c_{\mathrm{V}}$, and halo mass. 
+In the interest of completeness, Figure~\ref{fig:concentrations} shows the relationship 
+between $c_{\mathrm{NFW}}$ and $c_{\mathrm{V}}$ on a halo-by-halo basis. As is evident, 
+the two concentration proxies are strongly correlated and exhibit a $\sim 6\%$ scatter indicating 
+that $c_{\mathrm{NFW}}$ and $c_{\mathrm{V}}$ indeed encode similar information about each 
+halo.
 
 %------------------------------------------ Figure for Cnfw(M)
 \begin{figure}
@@ -333,16 +355,21 @@ concentration parameters. The white regions indicate where no halos hold these v
 %--------------------------------------------------------------------------------------------------------------------------------
 
 
+%---------------------------------------
+\subsection{Halo Shape}
 
 In addition to halo concentrations, we examine halo clustering as a function of a variety of other 
 halo properties. We study halo clustering as a function of halo shape, $s$, 
-quantified by the ratio of the halo minor and major axis lengths, 
+quantified by the ratio of the halo minor, $c$ and major axis, $a$, lengths, 
 %
 \beq
-s = \frac{c}{a},
+s = \frac{c}{a}.
 \eeq
 %
-where $a$ is the major axis length and $c$ is the minor axis length. 
+The halo shapes we used were measured by \arz{Now you need to put a sentence or 
+two in here about how shapes were measured. If you refer to Rockstar that is fine. But in 
+that case put at least one or two sentences describing what Rockstar does to measure 
+halo shapes.}
 The mean relations for halo shapes as a function of halo mass for $\Delta=200$ 
 are shown in Figure~\ref{fig:srelation} along with the mass 
 thresholds used to ensure that our results are not compromised by 
@@ -369,6 +396,9 @@ halo shape. Note the deviation from a monotonic trend as a result of resolution 
 \end{figure}
 %--------------------------------------------------------------------------------
 
+%-----------------------------
+\subsection{Halo Spin}
+
 We study halo clustering as a function of halo angular momentum quantified 
 by the spin parameter, $\lambda$, as introduced by \citep{peebles69},
 \beq
@@ -376,6 +406,8 @@ by the spin parameter, $\lambda$, as introduced by \citep{peebles69},
 \eeq
 where $J$ is the halo angular momentum, $E$ is the total energy of the 
 halo, and $M_{\Delta}$ is the mass at the halo radius, $r_{\Delta}$. 
+\arz{Brief note on how $\lambda$ is measured. Again, this may refer to 
+Rockstar, but put a sentence or two summarizing the Rockstar procedure.}
 The mean relations for halo spin as a function of halo mass for $\Delta=200$ 
 are shown in Figure~\ref{fig:spinrelation} along with the mass thresholds 
 enforced to ensure that our results are not compromised by resolution. 
@@ -407,91 +439,76 @@ trend at low mass due to resolution effects.
 \end{figure}
 %--------------------------------------------------------------------------------
 
-\arz{I really don't understand what this last paragraph is saying.}
-In practice, the mean relations between the various halo properties and the mass thresholds for our analyses 
-must be determined separately for each combination of simulation, 
-halo property (e.g., $c_{\mathrm{NFW}}$ or $s$), 
-and halo definition (the value of $\Delta$ in the case of the present study). 
-\arz{The first sentence makes sense and I understand it. It is everything that 
-follows that I don't understand. Are you saying that you have a unique threshold 
-for each halo property? That is what I get from this statement, but I think that is 
-not what you are doing. Can you please clarify this discussion?}
-We determine our mass thresholds in order to avoid the regime in which halo parameters
-are not well measured due to resolution limits of the simulations; we draw attention to the
-downturn in Figure~\ref{fig:cnfwrelation} as an example of this, as the deviation from
-the underlying monotonic trend shifts with the change in simulation from low to high mass resolution,
-suggesting that this is the result of resolution alone. For ease of comparison
-between halo definitions, we choose to use a single mass threshold for each
-simulation box size and value of $\Delta$ chosen whenever possible, rather than on a parameter by
-parameter basis. This allow for a better comparison as to how the choice of halo
-definition impacts each parameter simultaneously, rather than be driven by the
-choice of mass cutoff. The one exception to this method is the mass thresholds chosen
+%---------------------------------
+\subsection{Halo Samples}
+
+In practice, the mean relations between the various halo properties and the mass 
+thresholds for our analyses must be determined separately for each combination of simulation, 
+halo property (e.g., $c_{\mathrm{NFW}}$ or $s$), and halo definition (i.e., value of $\Delta$ in the case of the present study). 
+For each analysis, we set mass thresholds in order to avoid the regime in which 
+halo parameters are not well measured due to resolution limits of the simulations; 
+we draw attention to the downturn in Figure~\ref{fig:cnfwrelation} as an example of this, 
+as the deviation from the underlying monotonic trend shifts with the change in 
+simulation from lower to higher resolution, suggesting that this is the result of resolution alone. 
+
+
+For ease of comparison between halo definitions, we choose to use a single mass threshold for each
+simulation and value of $\Delta$ whenever possible, rather than on a parameter-by-parameter basis. 
+The one exception to this method is the mass thresholds chosen
 for the halo shape parameter. This parameter requires a larger number of particles to be
 well measured; we direct attention to the downturn in Figure~\ref{fig:srelation}, which occurs at
-an order of magnitude higher mass. We analyze the shape parameter with separate mass thresholds
-to maintain the larger number of halos in our sample for the other parameters. This allows us
+an order of magnitude higher mass \arz{than what? if you're making a comparison, you have to 
+say what you are comparing it to.}. 
+We analyze the shape parameter with separate, larger minimum mass thresholds to account for 
+the requirement for a larger number of particles. This allows us
 to have better signal-to-noise in the remaining parameters, while avoiding drawing potentially
 erroneous conclusions when analyzing the halo shape parameter.
 We summarize the mass thresholds we have used for a 
 subset of $\Delta$ values in Table~\ref{table:thresholds}. 
 At most values of $\Delta$, the minimum mass thresholds are 
 driven by the requirement that the halo properties do 
-not suffer significantly from finite resolution effects.
-\arz{What else could the thresholds be driven by?}\asv{Uncertain - I cannot think of anything else, now that we
-are treating shape as a separate parameter.}
+not suffer significantly from finite resolution effects. We alert the reader to the fact 
+that the mass of an individual halo will vary as $\Delta$ varies. Roughly speaking, 
+the threshold masses in Table~\ref{table:thresholds} vary in such a way that the 
+same physical objects are selected at each halo definition.
 
 
-\arz{In the next section, you discuss subhalos. However, in order for the paper to have 
-the correct flow, you should introduce the concept of subhalos here and state that we 
-will study halo clustering as a function of satellite number.}\asv{Added a section on subhalos when discussing {\tt ROCKSTAR}.
-I am unsure if we need to discuss the concept of subhalos here now. That seemed to flow a little better than an
-introduction here, since robust identification of halos is a selling point of {\tt ROCKSTAR}.}
-
-
-\arz{In the table, don't ``low mass," ``mid mass," and ``high mass" correspond to the different simulations? 
-For example, low mass corresponds to \simA~and so on? If not, then I don't understand. If so, then you 
-should label each cut by the relevant simulation name as well.}
-\asv{We use the various mass cuts across simulations, so I was going for a more general name - e.g., 
-we use high mass on both L0250 and L0500, which allows us to probe if the relation is driven by the 
-simulation size or the actual mass threshold. I can swap out to more specific names though, but I 
-thought that might cause confusion. It seems like we have swapped away from that methodology 
-in the final version, so that might be best.}
-\arz{I still prefer using the simulation name to specify the threshold, 
-otherwise the name seems arbitrary.}\asv{Switched to using halo name and a tag.}
+\arz{I though we discussed making a plot of $M_{\Delta}$ as a function of $M_{200}$ for a few 
+values of $\Delta$ and putting it in this section? I think that would be instructive for non-expert 
+readers.} \asv{Will do using the halo matched catalogs - in progress.} \arz{This still needs to 
+be completed.}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table*}
 \caption{
-Minimum mass thresholds for each of our analyses depending upon the 
-value of the overdensity, $\Delta$, used to define the halos. 
-In the columns below the values of $\Delta$ we show the minimum 
+Minimum mass thresholds for each of our analyses. 
+In the columns below each value of $\Delta$, we show the minimum 
 host halo masses considered in units of $h^{-1}\mathrm{M}_{\odot}$.
-Those rows without a label of '-shape' refer to the mass cut chosen for all parameters other than
-halo shape. Those rows with a label of '-shape' refer to the mass cut chosen for the shape parameter.
-The latter requires a higher mass cut due to the larger number of particle required in order to have a
-robust measurement of halo shape.}
+Those rows without a label of ``-shape" refer to the mass cut chosen for 
+all analyses other than halo shape. Those rows with a label of ``-shape" refer to 
+the mass cut chosen for the shape parameter analyses. The latter require higher mass thresholds.}
 \vspace*{8pt}
 \begin{tabular}{ c c c c c c c }
 \hline
 \hline
 Cutoff Name &  $\Delta=340$ & $\Delta=200$ & $\Delta=100$ & $\Delta=75$ & $\Delta=50$ & $\Delta=10$ \\
 \hline
-\\{low mass} & {N/A} & $7 \times 10^{10}$ & $8 \times 10^{10}$ & $9 \times 10^{10}$ & $1 \times 10^{11}$ & $2 \times 10^{11}$  \\
+\vspace*{2pt}
+{low mass} & {N/A} & $7 \times 10^{10}$ & $8 \times 10^{10}$ & $9 \times 10^{10}$ & $1 \times 10^{11}$ & $2 \times 10^{11}$  \\ \vspace*{4pt}
 {low mass-shape} & {N/A} & $1 \times 10^{11}$ & $1 \times 10^{11}$ & $1 \times 10^{11}$ & $1 \times 10^{11}$ & $1 \times 10^{11}$ \\
-{mid mass} & {N/A} & $7 \times 10^{11}$ & $8 \times 10^{11}$ & $9 \times 10^{11}$ & $1.5 \times 10^{12}$ & {N/A} \\
+{mid mass} & {N/A} & $7 \times 10^{11}$ & $8 \times 10^{11}$ & $9 \times 10^{11}$ & $1.5 \times 10^{12}$ & {N/A} \\ \vspace*{4pt}
 {mid mass-shape} & {N/A} & $1 \times 10^{12}$ & $1 \times 10^{12}$ & $1 \times 10^{12}$ & $1 \times 10^{12}$ & {N/A} \\
-{high mass} & $3 \times 10^{12}$ & $4 \times 10^{12}$ & $5 \times 10^{12}$ & $6 \times 10^{12}$ & $7 \times 10^{12}$ & {N/A} \\
+{high mass} & $3 \times 10^{12}$ & $4 \times 10^{12}$ & $5 \times 10^{12}$ & $6 \times 10^{12}$ & $7 \times 10^{12}$ & {N/A} \\ \vspace*{2pt}
 {high mass-shape} & $1 \times 10^{13}$ & $1 \times 10^{13}$ & $1 \times 10^{13}$ & $1 \times 10^{13}$ & $1 \times 10^{13}$ & {N/A} \\
 \hline
-\hline
+\hline \\
 \end{tabular}
 \label{table:thresholds}
 \end{table*}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\arz{I would like to see another figure here. I would like to see $M_{200}$ on the x-axis and $M_{\Delta}$ on the y-axis. What should be plotted is the mean $M_{\Delta}$ as a function of $M_{200}$ for all halos common to both catalogs. This will be a nice informative plot for the reader and will help the reader to digest the table.}
-\asv{Will do using the halo matched catalogs - in progress.}
+
 
 %-----------------------
 \section[]{Halo Clustering as a function of Auxiliary Halo Properties}
@@ -507,28 +524,21 @@ properties other than mass. As mass is the dominant halo property determining ha
 clustering strength and environment, we refer to the other properties that we study as 
 ``auxiliary halo properties" (those properties other than mass, such as concentration 
 $c_{\rm NFW}$ or shape $s$). As has been demonstrated extensively in the literature, 
-the auxiliary properties that we consider are a function of mass \citep{bullock_etal02,allgood_etal06, duffy_etal08, despali_etal16}. 
-\arz{Cite the Bullock et al. (2001) paper on halo concentrations here. Also, search to see if there are 
-other papers with mass dependences of the other parameters. There probably will be and we probably 
-need more citations here.} 
-This mass dependence induces auxiliary-property-dependent halo clustering. 
+the auxiliary properties that we consider are themselves 
+a function of mass \citep[e.g.,][and many others]{bullock_etal02,allgood_etal06, duffy_etal08, despali_etal16}. 
+This mass dependence, if not accounted for, induces auxiliary-property-dependent halo clustering. 
 Most contemporary cosmological $N$-body simulations, and specifically the suite of simulations 
 that we study in this work, do not have a sufficiently large number of halos to make isolating halos 
-of fixed mass, and then further splitting these halos by an auxiliary property, a powerful method with 
-which to study the dependence of clustering on auxiliary properties. Therefore, it is 
-necessary to remove or mitigate the mass dependence of the auxiliary properties that we 
-study. 
+of fixed mass, and then further splitting these halos by an auxiliary property, a statistically 
+powerful method with which to study the dependence of clustering on auxiliary properties. 
+Therefore, it is necessary to remove and/or mitigate the mass dependence of the auxiliary 
+properties that we study. 
 
 We mitigate the mass dependence of the auxiliary properties as follows. First, 
 we take all host halos more massive than our minimum mass thresholds and sort them by 
 their halo masses, $M_{\Delta}$. We place these halos into ten logarithmically-spaced bins 
 of halo mass, ensuring that no bin has fewer than XXX halos. 
-\arz{I was under the impression that you used the median value? Can you 
-check on this.}\asv{Currently we are using the mean - as I recall this does not
-create any significant difference in result. Perhaps I should add a line though
-suggesting that our method is robust with choice of summary statistic here? We also
-do not currently have a hard bin number cutoff. Ten was just chosen such that each
-bin has at least a few halos in it.}
+\arz{We need some number here or this needs to be rephrased.}
 The mean value of each halo property is calculated within each bin, 
 and subtracted from the recorded value for each halo in the bin. 
 This removes the strong mass trend in each of these properties. 
@@ -553,35 +563,40 @@ away a best-fit power law relation for the property of interest and again, we
 find that our qualitative results are not altered using this method." We have 
 to be able to give the reader some sort of confidence that our results are not 
 driven by these seemingly arbitrary choices.}
-\asv{I'm not necessarily comfortable with the current ten bin situation and could conceivably switch back to equally populated bins, which allows for more total bins with halos to look at, but unevenly spaced in log mass.}
-\arz{You should do whatever is most robust. Using either method, you should choose sufficiently large number of 
-bins that our primary results are not altered by changing the number of bins.}
+\asv{I'm not necessarily comfortable with the current ten bin situation 
+and could conceivably switch back to equally populated bins, which allows 
+for more total bins with halos to look at, but unevenly spaced in log mass.}
+\arz{This issue is important and unresolved. You must resolve it before we can 
+move on. I don't understand why this important issue has been left unresolved 
+during this last iteration of the draft?}
 
 
+In addition to the properties of the host halos described in the previous section, 
+we also study the strength of halo clustering as a function of subhalo number. 
+Host halo size and the number of satellite halos (above some threshold in a proxy of satellite halo size) 
+are also strongly correlated. Roughly speaking, the number of satellite halos above a fixed 
+size threshold grows in approximate proportion to host halo mass \cite[e.g.,][]{zentner_etal05}. 
 
-\arz{Flesh this out a bit. See the discussion in Wechsler et al. 06 as a model. 
-The specific values of the thresholds need to be given} 
-\asv{Slight change - following Wechsler et al 06 does not ever put a specific limit on 
-subhalo velocity and instead places a limit on the ratio between the subhalo velocity and 
-the host velocity as the prime limit. Just making sure that lines up well.}
 
-
-Host halo size and the number of satellite halos 
-(above some threshold in a proxy of satellite halo size) are also strongly correlated. 
-To mitigate the correlation between halo mass and abundance of subhalos, 
+To account for the correlation between halo mass and abundance of subhalos, 
 we follow the prescription of \citet{wechsler_etal06}. First, we select host halos 
 with $v_{\mathrm{max,host}} \ge 240 \ \mathrm{km \ s}^{-1}$. This ensures that the satellite counts 
 will be minimally affected by finite resolution. We then select subhalos
 from the sample based on the criteria that the ratio $V_{\mathrm{max,sub}}/V_{\mathrm{max,host}} \ge 0.3$, 
 where $V_{\mathrm{max,sub}}$ and $V_{\mathrm{max,host}}$ are the maximum circular velocities 
 of the subhalos and host halos respectively. This scaling exploits the fact that the subhalo velocity 
-function is a very nearly self-similar function \citep{zentner_etal05}[and references therein], 
+function is a very nearly self-similar function \citep[][, and references therein]{zentner_etal05}, 
 so that scaling subhalo $V_{\mathrm{max,sub}}$ by host $V_{\mathrm{max,host}}$ 
 eliminates the gross mass dependence of satellite number. The threshold value for this velocity ratio was chosen 
-such that all host halos that make the above cut contain, on average, more than one satellite halo. 
+such that all host that make the above cut contain, on average, more than one satellite halo. 
 Subhalo maximum circular velocities were used as a proxy for subhalo size rather than subhalo masses because 
 subhalo maximum circular velocities can be more robustly measured from simulation data, making 
 comparison to other work easier.
+\arz{I still don't understand this last choice in relation to the figures in the next section. For satellite number, 
+you are selecting hosts above a Vmax threshold. I get that. But why is there a fixed Vmax threshold for 
+each simulation? The L0500 simulation CERTAINLY CANNOT BE UNAFFECTED BY RESOLUTION for 
+satellites with $V_{\mathrm{max}} \sim 72\, \mathrm{km/s}$, as your criteria require. So, either you 
+are still doing something invalid here or I don't understand, which means the text needs to be modified.}
 
 
 %---------------------------------------------------------------
