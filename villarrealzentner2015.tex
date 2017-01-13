@@ -516,8 +516,8 @@ Cutoff Name &  $\Delta=340$ & $\Delta=200$ & $\Delta=100$ & $\Delta=75$ & $\Delt
 %-----------------------
 
 %----------------------------------------------------------
-\subsection{Auxiliary Halo Properties}
-
+\subsection{Auxiliary Halo Properties and Their Mass Dependence}
+\label{subsection:properties}
 
 We are interested in studying the clustering behavior of halos as a function of 
 properties other than mass. As mass is the dominant halo property determining halo
@@ -604,34 +604,42 @@ are still doing something invalid here or I don't understand, which means the te
 %---------------------------------------------------------------
 
 
-We assess the influence of assembly bias on two-point statistics of host halos. In order to do so, we 
+We assess the influence of assembly bias specifically on two-point statistics of host halos. In order to do so, we 
 study both the standard two-point correlation functions of halos selected by properties other than mass 
 (e.g., the auxiliary properties concentration, shape, and spin) as well as halo mark correlation functions
 (MCFs). MCFs quantify the manner in which a halo property (the ``mark") correlates among halo pairs as a function
 of the distance between the pairs. MCFs have the advantage that they effectively stack signal from all values of 
-the halo auxiliary property, or mark, in contrast to selecting subsets of halos based on the auxiliary property and 
-MCFs stack signal from all environments and do not require any specific definition of halo environment in order 
-to detect environmental trends. Absent halo assembly bias, the halo marks are uncorrelated among pairs. 
+the halo auxiliary property, or mark, in contrast to selecting subsets of halos based on the auxiliary property. 
+MCFs also stack signal from all environments and do not require any specific definition of halo environment in 
+order to detect ``environmental" trends that are usually referred to as assembly bias in the literature. 
+Absent halo assembly bias, the halo marks are uncorrelated among pairs. 
 MCFs have been used in many previous papers to quantify environmental dependence of halo 
-properties other than mass \citep{sheth_tormen04,sheth05, harker_etal06,wechsler_etal06,mao_etal15} \arz{I think there are also a couple of 
-Sheth papers that should be cited here, maybe more. Check on that.}\asv{Think I got the most relevant Sheth papers here now.}. 
+properties other than mass \citep{sheth_tormen04,sheth05, harker_etal06,wechsler_etal06,mao_etal15}. 
+Although it does not necessarily have to be the case, we find that using correlation functions of halo sub-samples 
+and using MCFs lead to the same broad conclusions. 
 
 
 For a specific halo property, or mark $m$, we use the MCF normalization of \citet{wechsler_etal06}, namely 
 %
 \beq
-\mathcal{M}_m(r) \equiv ( \langle m_1 m_2 \rangle_p (r) - \langle m \rangle^2 / \mathcal{V}(m),
+\mathcal{M}_m(r) \equiv \frac{\langle m_1 m_2 \rangle_p (r) - \langle m \rangle^2}{\mathcal{V}(m)},
 \eeq
 %
 where $m_{\mathrm{i}}$ is the value of the mark for halo $\mathrm{i}$, $\langle m \rangle$ is the mean of the
 mark, and $\mathcal{V}(m)$ the variance of the mark. The notation is intended to indicate that the average is
 taken over all pairs of halos separated by a distance $r$. In the absence of any correlation between a halo
 property among neighbors a separation $r$ away, $\mathcal{M}_m(r) = 0$. Deviations of the MCF from
-zero indicate such correlations exist and the size of the $\mathcal{M}_m(r)$ gives the excess of the mark among
+zero indicate such correlations exist and the magnitude of $\mathcal{M}_m(r)$ gives the excess of the mark among
 pairs compared to the one-point mean of the mark $\langle m\rangle$ in units of the one-point variance. 
 
+The marks that we use in the case of concentration, shape, and spin, are the differences between 
+the values of the halo property for an individual halo of mass $M$ and the mean 
+value of that property at mass $M$, as described in Section~\ref{subsection:properties}. 
+For our study of satellite number, we choose the marks to be the satellite numbers 
+computed after scaling out the gross dependence of satellite number on halo size, 
+also described in Section~\ref{subsection:properties}. 
 
-It is necessary to assess statistical fluctuations in the statistics that we measure in these simulations in
+In each case, it is necessary to assess statistical fluctuations in the statistics that we measure in these simulations in
 order to determine the significance of the signals. For two-point correlation functions, we determine the
 covariance of the measurement through jackknife resampling of the eight octants of the simulation cube. We assess
 the statistical significance of the MCFs by randomly re-assigning each of our marks to the halos in the sample. 
