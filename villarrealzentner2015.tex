@@ -85,6 +85,8 @@ cosmology: dark matter -- cosmology: large-scale structure of Universe -- galaxi
 use ``low-mass", ``mid-mass", etc. You have to choose one and go with it. If you like, you can say that the halo samples that 
 you extract from the L0125 simulation will be referred to as ``low-mass" and so on. That would be fine. However, you have 
 to explicitly say that when you discuss your sample selections."}
+\asv{My intent is to use ``L0125'' and the like to refer to the N-Body simulation and ``low-mass'' to refer to the mass cuts, though I understand the confusion.
+I made a pass to attempt to be more consistent with this.}
 
 In the concordance cosmology, galaxies and clusters form within merging dark matter halos \citep{white_rees78,blumenthal_etal84, mo_etal10}. Numerical simulations have provided a solid understanding of the abundances, properties, and 
 clustering of dark matter halos in the standard cosmological model. Accordingly, it is possible to compute the 
@@ -127,7 +129,8 @@ the environmental impacts of halos on one another has been shown to extend beyon
 traditional virial radii. 
 \citep{adhikari_etal14, diemer_kravtsov14, wetzel_etal14, more_etal15, wetzel_nagai15} 
 \arz{Need citations here to work by Wang (2007), the recent work on splashback (backsplash) 
-and flyby halos, and the recent work on the splashback radius.} 
+and flyby halos, and the recent work on the splashback radius.}\asv{Should be fairly complete here, but I'll do
+another round of looking over the literature to see if I have missed anything recent.}
 Halos in dense environments (e.g., near other large halos) exhibit anomalous properties 
 (e.g., formation times, concentrations, etc.) compared to field halos 
 in part because of their interactions with their larger, neighbor halos. It seems interesting to ask 
@@ -154,15 +157,16 @@ practical. \arz{I plan to add something here after I complete my run through the
 
  
 \arz{This paragraph makes no sense. I suspect there is some sort of editor problem. Please fix this.}
-In \S~\ref{section:data} of this paper, we discuss the cosmological simulations 
-that we analyze and halo identification. In \S~\ref{section:haloprops}, we consider 
-the halo properties of interest and their standard definitions. In \S~\ref{section:methodology}, 
-we discuss the statistics that we use to measure environmental effects through a
-redefinition of halo environments and discuss possible applications of our methodology.
-assembly bias and the removal of known mass scaling from our halo properties. In \S~\ref{section:results}, we
-present our results and consider how the change of halo definition impacts measures of assembly bias. In
-\S~\ref{section:conclusions}, we discuss the significance of r We also consider the
-nature of assembly bias as a function of halo definition.
+\asv{Attempted a pass at fixing this up, not sure I am entirely happy with it as of yet.}
+In \S~\ref{section:data} of this paper, we discuss the cosmological simulations and halo finders
+utilized in the analysis. In \S~\ref{section:haloprops}, we discuss 
+and define the halo properties used as our tracers of assembly bias. In \S~\ref{section:methodology}, 
+we discuss the statistics that we use to measure environmental effects after
+halo redefinition. We also discuss our method of removing known mass scaling from halo properties.
+In \S~\ref{section:results}, we present our findings and consider how the change
+of halo definition impacts measures of assembly bias. In
+\S~\ref{section:conclusions}, we discuss the significance of our results in the context of halo modelling.
+ We also consider the nature of assembly bias as a function of halo definition.
 
 
 
@@ -366,10 +370,12 @@ quantified by the ratio of the halo minor, $c$ and major axis, $a$, lengths,
 s = \frac{c}{a}.
 \eeq
 %
-The halo shapes we used were measured by \arz{Now you need to put a sentence or 
+The halo shapes we used were measured with \tt{ROCKSTAR} by calculating the mass distribution tensor for
+all particles within the halo radius, excluding identified substructure. The sorted eigenvalues of the matrix represent
+the squares of the principal ellipsoid axes, where a \textgreater b \textgreater c. \arz{Now you need to put a sentence or 
 two in here about how shapes were measured. If you refer to Rockstar that is fine. But in 
 that case put at least one or two sentences describing what Rockstar does to measure 
-halo shapes.}
+halo shapes.}\asv{Not sure if I should include the equation for the mass distribution tensor.}
 The mean relations for halo shapes as a function of halo mass for $\Delta=200$ 
 are shown in Figure~\ref{fig:srelation} along with the mass 
 thresholds used to ensure that our results are not compromised by 
@@ -405,7 +411,9 @@ by the spin parameter, $\lambda$, as introduced by \citep{peebles69},
 \lambda = \frac{J \sqrt{\lvert E\rvert}}{G M_{\Delta}^{2.5}}
 \eeq
 where $J$ is the halo angular momentum, $E$ is the total energy of the 
-halo, and $M_{\Delta}$ is the mass at the halo radius, $r_{\Delta}$. 
+halo, and $M_{\Delta}$ is the mass at the halo radius, $r_{\Delta}$. We measure
+this quantity using \tt{ROCKSTAR} which calculates the angular momentum, total energy,
+and total mass within $\Delta$ using bound particles out to the corresponding halo radius.
 \arz{Brief note on how $\lambda$ is measured. Again, this may refer to 
 Rockstar, but put a sentence or two summarizing the Rockstar procedure.}
 The mean relations for halo spin as a function of halo mass for $\Delta=200$ 
@@ -457,8 +465,10 @@ simulation and value of $\Delta$ whenever possible, rather than on a parameter-b
 The one exception to this method is the mass thresholds chosen
 for the halo shape parameter. This parameter requires a larger number of particles to be
 well measured; we direct attention to the downturn in Figure~\ref{fig:srelation}, which occurs at
-an order of magnitude higher mass \arz{than what? if you're making a comparison, you have to 
-say what you are comparing it to.}. 
+a significantly higher mass than demonstrated with other halo properties (see Figure~\ref{fig:cnfwrelation}
+for comparison). \arz{than what? if you're making a comparison, you have to 
+say what you are comparing it to.}\asv{Order of magnitude comment is removed since more recent Rockstar version
+allowed us to push down to lower mass in shape.}
 We analyze the shape parameter with separate, larger minimum mass thresholds to account for 
 the requirement for a larger number of particles. This allows us
 to have better signal-to-noise in the remaining parameters, while avoiding drawing potentially
@@ -544,7 +554,10 @@ and subtracted from the recorded value for each halo in the bin.
 This removes the strong mass trend in each of these properties. 
 We use these new measures of halo auxiliary properties, those with 
 the mean mass trend removed, to study halo clustering strength 
-in the remainder of this work.
+in the remainder of this work. We have experimented with a variety of methods
+to remove the gross mass dependences of these auxillary properties including
+different choices in property binning. We find that our qualitative results are not sensitive to
+the number of bins we use or the choice of median or mean property.
 \arz{You should make sure that your results do not change qualitatively 
 under a few modifications. First, make sure that if you use finer binning 
 that nothing qualitative changes (small quantitative changes can be acceptable). 
@@ -569,6 +582,12 @@ for more total bins with halos to look at, but unevenly spaced in log mass.}
 \arz{This issue is important and unresolved. You must resolve it before we can 
 move on. I don't understand why this important issue has been left unresolved 
 during this last iteration of the draft?}
+\asv{This was tested and I did not come back to changing my comment. We are still using
+equally populated mass bins, but it does not seem to qualitatively change our results. While I do not
+have one at the moment, making a comparison plot for two different bin sizes is pretty straightforward.
+Should I make a plot of that for the paper, or leave it for the referee process if needed? I also am not
+currently using the power law implementation, since I did not wish to worry about choice of interpolation
+method, but I certainly could whip that together pretty quickly, if still desired.}
 
 
 In addition to the properties of the host halos described in the previous section, 
@@ -795,10 +814,10 @@ The shaded bands in the figure delineate the statistical fluctuations in MCFs in
 finite sampling as discussed in Section~\ref{subsection:clusteringstatistics}. 
 Qualitatively, Fig.~\ref{fig:cc_mcf_cnfw} exhibits the same features that are evident in 
 Fig.~\ref{fig:cc_cfcompare}: more concentrated halos are significantly more clustered in 
-the low-mass L0125 halo sample; concentration-dependent halo clustering weakens and 
+the low-mass cut L0125 halo sample; concentration-dependent halo clustering weakens and 
 reverses sense as halo mass increases (at fixed $\Delta$), 
 consistent with work on assembly bias \citep{wechsler_etal06,sunayama_etal16}; for the 
-L0250 sample with $\Delta=75$, the large-scale concentration dependence of halo clustering has been reduced so as to 
+mid-mass cut L0250 sample with $\Delta=75$, the large-scale concentration dependence of halo clustering has been reduced so as to 
 be consistent with zero within the statistical limitations of the simulation. \arz{It seems like we need 
 $\Delta \sim 65-70$ for L0250?}\asv{We have (or will have) the data from
 $\Delta = 70$, though it is not currently plotted due to cleanliness. I could
@@ -1091,7 +1110,7 @@ environment into the measurement of halo properties when halos are defined
 in a manner distinct from the more traditional definitions. We proceed as follows. 
 All host halos that are found in the halo catalogs constructed from lower values 
 of $\Delta$ (for example, $\Delta ~ 70$ which is an interesting value for exploring 
-concentration in the L0250 simulation) are present as host halos in the halo 
+concentration in the mid-mass cut of the L0250 simulation) are present as host halos in the halo 
 catalogs constructed with higher values of threshold density (e.g., $\Delta = 200$). 
 We match each halo in the lower threshold (lower $\Delta$) simulation to 
 its corresponding halo in the higher threshold catalog. We then consider 
