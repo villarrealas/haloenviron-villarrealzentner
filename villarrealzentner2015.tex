@@ -616,6 +616,10 @@ you are selecting hosts above a Vmax threshold. I get that. But why is there a f
 each simulation? The L0500 simulation CERTAINLY CANNOT BE UNAFFECTED BY RESOLUTION for 
 satellites with $V_{\mathrm{max}} \sim 72\, \mathrm{km/s}$, as your criteria require. So, either you 
 are still doing something invalid here or I don't understand, which means the text needs to be modified.}
+\asv{I agree with that and will give this a second lookover. I attempted to mimic the requirements of the Wechsler
+paper, but it does feel odd that there would be no resolution effects for the largest simulation. The only thing that
+might balance it out is the fact that it is still being hit by the first cut on host halos, but I do not think that should
+significantly increase the host halo circular velocities enough to counteract this effect.}
 
 
 %---------------------------------------------------------------
@@ -711,7 +715,8 @@ low-concentration halos are more strongly clustered than high-concentration halo
 
 \arz{Did you ever run $\Delta=70$ or $\Delta=65$ like we discussed? If you make the plot color code 
 based on the darkness of a single color, then I don't think we have to worry too much about making the 
-plot look too busy.}
+plot look too busy.}\asv{It is run for $\Delta = 70$ and actually used for all our matching procedures with
+L0250. I can include that and see how we feel.}
 Focus, for example, on the middle panel of Fig.~\ref{fig:cc_cfcompare}. In this panel, 
 corresponding to the mid-mass threshold, the difference in large-scale clustering between 
 high- and low-concentration halos is dramatically reduced for a halo definition with 
@@ -749,11 +754,11 @@ samples.
 	\caption{
 \arz{1. Can you show the $\Delta=20$ run for low-mass as it might interestingly fill in that white space? If you 
 have $\Delta=70$ for the mid-mass, can you also show that. If you implement my comment 2., then I think 
-we do not need to worry too much about making the plots look too busy.}
+we do not need to worry too much about making the plots look too busy.}\asv{Can do.}
 \arz{2. Is it possible to avoid using yellow, it is nearly invisible to me? Also, I like the idea of using a color 
 scheme that is based on a single color, similar to what Cat does in her plots. Making multiple colors 
 requires the reader to check the legend. Using the darkness of a single color is more obvious: darker 
-values give higher $\Delta$. That would be much better.}
+values give higher $\Delta$. That would be much better.}\asv{I will experiment with the blues Color Map and shifting to only using the darker section of it.}
 In each panel, the solid lines plot the difference between the correlation function for the top
 20\% and the bottom 20\% of halos by NFW concentration, normalized by the
 correlation function of the entire sample. In each plot the line with the most positive value
