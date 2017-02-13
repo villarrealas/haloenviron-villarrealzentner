@@ -598,19 +598,17 @@ size threshold grows in approximate proportion to host halo mass \cite[e.g.,][]{
 
 
 To account for the correlation between halo mass and abundance of subhalos, 
-we follow the prescription of \citet{wechsler_etal06}. First, we select host halos 
-with $v_{\mathrm{max,host}} \ge 240 \ \mathrm{km \ s}^{-1}$. This ensures that the satellite counts 
-will be minimally affected by finite resolution. We then select subhalos
-from the sample based on the criteria that the ratio $V_{\mathrm{max,sub}}/V_{\mathrm{max,host}} \ge 0.3$, 
-where $V_{\mathrm{max,sub}}$ and $V_{\mathrm{max,host}}$ are the maximum circular velocities 
-of the subhalos and host halos respectively. This scaling exploits the fact that the subhalo velocity 
-function is a very nearly self-similar function \citep[][, and references therein]{zentner_etal05}, 
-so that scaling subhalo $V_{\mathrm{max,sub}}$ by host $V_{\mathrm{max,host}}$ 
-eliminates the gross mass dependence of satellite number. The threshold value for this velocity ratio was chosen 
-such that all host that make the above cut contain, on average, more than one satellite halo. 
-Subhalo maximum circular velocities were used as a proxy for subhalo size rather than subhalo masses because 
-subhalo maximum circular velocities can be more robustly measured from simulation data, making 
-comparison to other work easier.
+we follow the prescription of \citet{wechsler_etal06}. We first select all subhalos from the sample
+that meet the criteria that the ratio $V_{\mathrmPmax,sub}}/V_{\mathrm{max,host}} \ge 0.3$, where
+$V_{\mathrm{max,sub}}$ and $V_{mathrm{max,host}}$ are the maximum circular velocities of the subhalos and host halos respectively.
+This choice of scaling exploits the fact that the subhalo velocity function is a very nearly self-similar function \citep{zentner_etal05}
+so that the scaling eliminates the gross mass dependence of satellite number. \asv{need to add in additional citations here.} 
+In addition, this choice of threshold will mean that for subhalos above the resolution threshold of the simulation, there shall be of order one
+satellite halo per host on average. We then choose
+a cutoff in the max circular velocity such that all subhalos are well-resolved in the simulation volumes: $135, 235$, and $400 \mathrm{km \ s^{-1}}$
+for \simA, \simB, and \simC respectively. Subhalo maximum circular velocities were used as a proxy for subhalo size rather than subhalo
+masses because subhalo maximum circular velocities can be more robustly measured from simulation data, making comparison
+to other work easier.
 \arz{I still don't understand this last choice in relation to the figures in the next section. For satellite number, 
 you are selecting hosts above a Vmax threshold. I get that. But why is there a fixed Vmax threshold for 
 each simulation? The L0500 simulation CERTAINLY CANNOT BE UNAFFECTED BY RESOLUTION for 
@@ -620,7 +618,7 @@ are still doing something invalid here or I don't understand, which means the te
 paper, but it does feel odd that there would be no resolution effects for the largest simulation. The only thing that
 might balance it out is the fact that it is still being hit by the first cut on host halos, but I do not think that should
 significantly increase the host halo circular velocities enough to counteract this effect.}
-
+\asv{And comments addressed.}
 
 %---------------------------------------------------------------
 \subsection{Clustering Statistics}
@@ -975,7 +973,8 @@ makes little difference to this dependence. In fact, defining halos to have larg
 $\Delta$) generally makes the environmental dependence of halo clustering more 
 significant. Of course, our results pertain to satellite halos, or subhalos, rather than 
 satellite galaxies, so the connection to observations and how one might 
-model observed galaxy clustering is indirect, yet suggestive. 
+model observed galaxy clustering is indirect, yet suggestive. We also note that the fact that the clustering
+appears reduced at lower masses is qualitatively in agreement with the predictions from \citet{wechsler_etal06}. 
 
 
 %---------------------------------------------------------------------------------------------
