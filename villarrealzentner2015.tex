@@ -316,11 +316,11 @@ halo.
 \caption{
 \arz{Can you try making this a log-log plot? Does it look better or worse?}
 The relationship between the NFW concentration and halo mass for each of our simulations with $\Delta =200$. 
-In order of increasing simulation volume, the blue dashed line corresponds to the concentration-mass relation from simulation 
-\simA, the red solid line corresponds to \simB, and the cyan dot-dashed line corresponds to \simC. The red error bars show the 68\% spread in
+In order of increasing simulation volume, the blue line corresponds to the concentration-mass relation from simulation 
+\simA, the red line corresponds to \simB, and the cyan line corresponds to \simC. The red error bars show the 68\% spread in
 parameter values within that mass bin for \simB. These errors are comparable to those of the other simulations
 within the region of interest.
-Each simulation is subject to resolution limitations at different halo masses. We show with black arrows 
+Each simulation is subject to resolution limitations at different halo masses. We show with arrows 
 the minimum $M_{200}$ mass thresholds that we adopt in our analyses using the same color code as 
 the concentration-mass relations, going from \simA \ to \simC \ from left to right. Note the deviation from a monotonic trend as a result of resolution effects.}
 \label{fig:cnfwrelation}
@@ -333,11 +333,11 @@ the concentration-mass relations, going from \simA \ to \simC \ from left to rig
 \centering
 \includegraphics[width=.5\textwidth]{masscut_cV_d200.pdf}
 \caption{The relationship between the velocity ratio concentration and halo mass for each of our simulations with $\Delta =200$. 
-In order of increasing simulation volume, the blue dashed line corresponds to the concentration-mass relation from simulation 
-\simA, the red solid line corresponds to \simB, and the cyan dot-dashed line corresponds to \simC. The red error bars show the 68\% spread in
+In order of increasing simulation volume, the blue line corresponds to the concentration-mass relation from simulation 
+\simA, the red line corresponds to \simB, and the cyan line corresponds to \simC. The red error bars show the 68\% spread in
 parameter values within that mass bin for \simB. These errors are comparable to those of the other simulations
 within the region of interest.
-Each simulation is subject to resolution limitations at different halo masses. We show with black arrows 
+Each simulation is subject to resolution limitations at different halo masses. We show with arrows
 the minimum $M_{200}$ mass thresholds that we adopt in our analyses using the same color code as 
 the concentration-mass relations, going from \simA \ to \simC \ from left to right. Note the deviation from a monotonic trend as a result of resolution effects.
 }
@@ -390,11 +390,11 @@ resolution.
 \includegraphics[width=.5\textwidth]{masscut_shape_d200.pdf}
 \caption{
 The relationship between the halo shape and halo mass for each of our simulations with $\Delta =200$. 
-In order of increasing simulation volume, the blue dashed line corresponds to the shape-mass relation from simulation 
-\simA, the red solid line corresponds to \simB, and the cyan dot-dashed line corresponds to \simC. The red error bars show the 68\% spread in
+In order of increasing simulation volume, the blue line corresponds to the shape-mass relation from simulation 
+\simA, the red line corresponds to \simB, and the cyan line corresponds to \simC. The red error bars show the 68\% spread in
 parameter values within that mass bin for \simB. These errors are comparable to those of the other simulations
 within the region of interest.
-Each simulation is subject to resolution limitations at different halo masses. We show with black arrows 
+Each simulation is subject to resolution limitations at different halo masses. We show with arrows 
 the minimum $M_{200}$ mass thresholds that we adopt in our analyses using the same color code as 
 the shape-mass relations, going from \simA \ to \simC \ from left to right. The mass cutoffs chosen for this mark
 are at higher masses in order to account for the additional number of particles needed to properly measure the
@@ -435,16 +435,14 @@ is no reason here that the y-axis has to have such a large range. This
 crams all of the data into a small portion of the plot and makes most 
 of the plot useless, wasted, white space. A more appropriate y-axis range 
 looks to be from -0.1 to about 0.25 or so.}
-he relationship between the halo spin and halo mass for each of our simulations with $\Delta =200$. 
-In order of increasing simulation volume, the blue dashed line corresponds to the spin-mass relation from simulation 
-\simA, the red solid line corresponds to \simB, and the cyan dot-dashed line corresponds to \simC. The red error bars show the 68\% spread in
+The relationship between the halo spin and halo mass for each of our simulations with $\Delta =200$. 
+In order of increasing simulation volume, the blue line corresponds to the spin-mass relation from simulation 
+\simA, the red line corresponds to \simB, and the cyan line corresponds to \simC. The red error bars show the 68\% spread in
 parameter values within that mass bin for \simB. These errors are comparable to those of the other simulations
 within the region of interest.
-Each simulation is subject to resolution limitations at different halo masses. We show with black arrows 
+Each simulation is subject to resolution limitations at different halo masses. We show with arrows 
 the minimum $M_{200}$ mass thresholds that we adopt in our analyses using the same color code as 
-the spin-mass relations, going from \simA \ to \simC \ from left to right. Note the deviations from the near linear
-trend at low mass due to resolution effects.
-}
+the spin-mass relations, going from \simA \ to \simC \ from left to right. Note the deviations from the near linear trend at low mass due to resolution effects.}
 \label{fig:spinrelation}
 \end{figure}
 %--------------------------------------------------------------------------------
@@ -480,15 +478,25 @@ subset of $\Delta$ values in Table~\ref{table:thresholds}.
 At most values of $\Delta$, the minimum mass thresholds are 
 driven by the requirement that the halo properties do 
 not suffer significantly from finite resolution effects. We alert the reader to the fact 
-that the mass of an individual halo will vary as $\Delta$ varies. Roughly speaking, 
+that the mass of an individual halo will vary as $\Delta$ varies. This effect can be seen in Figure~\ref{fig:massmatch}, which demonstrates that while a decreased value of $\Delta$ leads to larger masses on average, there is a scatter due to changes in halo identification. Roughly speaking, 
 the threshold masses in Table~\ref{table:thresholds} vary in such a way that the 
 same physical objects are selected at each halo definition.
+
+\begin{figure}
+\centering
+\includegraphics[width=.5\textwidth]{massdeltacompare.pdf}
+\caption{
+The ratio between host halo mass for a given definition of $\Delta$ and the equivalent halo for a definition of $\Delta=60$ in logarithmic space. The blue (red, green) lines look at the ratio with respect to the values of $\Delta=200$ ($100, 50$). Note that while the expectation is that the halo mass will be larger for lower values of $\Delta$, there are some differences due to differences in halo identification. 
+}
+\label{fig:massmatch}
+\end{figure}
+
 
 
 \arz{I though we discussed making a plot of $M_{\Delta}$ as a function of $M_{200}$ for a few 
 values of $\Delta$ and putting it in this section? I think that would be instructive for non-expert 
 readers.} \asv{Will do using the halo matched catalogs - in progress.} \arz{This still needs to 
-be completed.}
+be completed.}\asv{Added!}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -507,10 +515,10 @@ the mass cut chosen for the shape parameter analyses. The latter require higher 
 Cutoff Name &  $\Delta=340$ & $\Delta=200$ & $\Delta=100$ & $\Delta=75$ & $\Delta=50$ & $\Delta=10$ \\
 \hline
 \vspace*{2pt}
-{low mass} & {N/A} & $7 \times 10^{10}$ & $8 \times 10^{10}$ & $9 \times 10^{10}$ & $1 \times 10^{11}$ & $2 \times 10^{11}$  \\ \vspace*{4pt}
-{low mass-shape} & {N/A} & $1 \times 10^{11}$ & $1 \times 10^{11}$ & $1 \times 10^{11}$ & $1 \times 10^{11}$ & $1 \times 10^{11}$ \\
-{mid mass} & {N/A} & $7 \times 10^{11}$ & $8 \times 10^{11}$ & $9 \times 10^{11}$ & $1.5 \times 10^{12}$ & {N/A} \\ \vspace*{4pt}
-{mid mass-shape} & {N/A} & $1 \times 10^{12}$ & $1 \times 10^{12}$ & $1 \times 10^{12}$ & $1 \times 10^{12}$ & {N/A} \\
+{low mass} & $6 \times 10^{10}$ & $7 \times 10^{10}$ & $8 \times 10^{10}$ & $9 \times 10^{10}$ & $1 \times 10^{11}$ & $2 \times 10^{11}$  \\ \vspace*{4pt}
+{low mass-shape} & $1 \times 10^{11}$ & $1 \times 10^{11}$ & $1 \times 10^{11}$ & $1 \times 10^{11}$ & $1 \times 10^{11}$ & $1 \times 10^{11}$ \\
+{mid mass} & $6 \times 10^{11}$ & $7 \times 10^{11}$ & $8 \times 10^{11}$ & $9 \times 10^{11}$ & $1.5 \times 10^{12}$ & {N/A} \\ \vspace*{4pt}
+{mid mass-shape} & $1 \times 10^{12}$ & $1 \times 10^{12}$ & $1 \times 10^{12}$ & $1 \times 10^{12}$ & $1 \times 10^{12}$ & {N/A} \\
 {high mass} & $3 \times 10^{12}$ & $4 \times 10^{12}$ & $5 \times 10^{12}$ & $6 \times 10^{12}$ & $7 \times 10^{12}$ & {N/A} \\ \vspace*{2pt}
 {high mass-shape} & $1 \times 10^{13}$ & $1 \times 10^{13}$ & $1 \times 10^{13}$ & $1 \times 10^{13}$ & $1 \times 10^{13}$ & {N/A} \\
 \hline
@@ -549,8 +557,8 @@ properties that we study.
 We mitigate the mass dependence of the auxiliary properties as follows. First, 
 we take all host halos more massive than our minimum mass thresholds and sort them by 
 their halo masses, $M_{\Delta}$. We place these halos into ten logarithmically-spaced bins 
-of halo mass, ensuring that no bin has fewer than XXX halos. 
-\arz{We need some number here or this needs to be rephrased.}
+of halo mass, ensuring that no bin has fewer than 10 halos, with the exception of the most massive bin. The objects in this final bin are rare and exceptional enough that they have little statistical value in the calculation process. 
+\arz{We need some number here or this needs to be rephrased.}\asv{So the last bin typically has a halo that is high enough mass that no reasonable binning structure will get that bin up to 10 halos with evenly spaced bins.}
 The mean value of each halo property is calculated within each bin, 
 and subtracted from the recorded value for each halo in the bin. 
 This removes the strong mass trend in each of these properties. 
@@ -559,7 +567,7 @@ the mean mass trend removed, to study halo clustering strength
 in the remainder of this work. We have experimented with a variety of methods
 to remove the gross mass dependences of these auxillary properties including
 different choices in property binning. We find that our qualitative results are not sensitive to
-the number of bins we use or the choice of median or mean property.
+the number of bins we use or the choice of median or mean property. Furthermore, the choice of equally populated bins versus evenly spaced bins makes no qualitative difference in the calculation.
 \arz{You should make sure that your results do not change qualitatively 
 under a few modifications. First, make sure that if you use finer binning 
 that nothing qualitative changes (small quantitative changes can be acceptable). 
@@ -758,16 +766,12 @@ it very difficult to see which line corresponds to which value of $\Delta$. Can 
 each value of $\Delta$ is represented on each panel? Otherwise labels for at least some of the 
 values of the $\Delta$s will be needed. I have the same comment for each of the marked 
 correlation function plots.
-}
+}\asv{Fixed in most recent versions.}
 In each panel, the solid lines plot the difference between the correlation function for the top
 20\% and the bottom 20\% of halos by NFW concentration, normalized by the
-correlation function of the entire sample. In each plot the line with the most positive value
-corresponds with the largest value of overdensity parameter, $\Delta$. 
+correlation function of the entire sample. In each plot the lines correspond to different values of $\Delta$, with dark blue (light blue) corresponding to $\Delta = 340$ ($\Delta = 50$). The red dashed line corresponds to the overdensity chosen for matching as possibly removing assembly bias on most scales.
 The top (middle/bottom) panel shows the results for the \simA \ (\simB /\simC) data 
-set utilizing the low mass (mid mass/high mass) cutoffs. Note
-that the top panel is the only one where exploring the extreme regime of $\Delta = 10$ is
-necessary, while the bottom panel is the only one where the exploration of $\Delta = 340$
-is necessary.
+set utilizing the low mass (mid mass/high mass) cutoffs
 }
 \arz{Let's stick with these errors. They should be conservative.}
 \label{fig:cc_cfcompare}
@@ -802,14 +806,8 @@ Same comment as for Figure 6.
 }
 The marked correlation function for the concentration defined according to the 
 NFW profile. The solid lines plot the marked correlation function using NFW-defined 
-concentration as the mark. In each plot the line with the most 
-positive value corresponds with the largest value of overdensity parameter, 
-$\Delta$, and demonstrates a smooth trend down to the lowest value of 
-$\Delta$. The top (middle/bottom) panel shows the results for the
-\simA \ (\simB /\simC) data set utilizing the low mass (mid mass/high mass) cutoffs. Note
-that the top panel is the only one where exploring the extreme regime of $\Delta = 10$ is
-necessary, while the bottom panel is the only one where the exploration of $\Delta = 340$
-is necessary. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks.
+concentration as the mark. In each plot the lines correspond to different values of $\Delta$, with dark blue (light blue) corresponding to $\Delta = 340$ ($\Delta = 50$). The red dashed line corresponds to the overdensity chosen for matching as possibly removing assembly bias on most scales. The top (middle/bottom) panel shows the results for the
+\simA \ (\simB /\simC) data set utilizing the low mass (mid mass/high mass) cutoffs. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks.
 }
 	\label{fig:cc_mcf_cnfw}
 \end{figure}
@@ -831,7 +829,7 @@ be consistent with zero within the statistical limitations of the simulation. \a
 $\Delta \sim 65-70$ for L0250?}\asv{We have (or will have) the data from
 $\Delta = 70$, though it is not currently plotted due to cleanliness. I could
 always drop the $\Delta = 75$ in favor of it across the board.} \arz{I think if you make 
-the color scheme change I'm asking for, cleanliness of the plot should not be a real issue.}
+the color scheme change I'm asking for, cleanliness of the plot should not be a real issue.}\asv{Color change in!}
 
 
 Figure~\ref{fig:cc_mcf_cV} is a similar plot for the MCF of the velocity-ratio concentration, $c_{\mathrm{V}}$. 
@@ -845,6 +843,7 @@ distribution of the $c_{\mathrm{NFW}}$ mark. If my hypothesis is correct, the PD
 narrower and have few significant outliers. Second, show my the plot for the correlation functions (not MCFs) for 
 a couple of percentiles of $c_{\mathrm{V}}$. These should show an effect that is larger in magnitude. Show me 
 both of these plots as soon as you can so I can write this interpretation here.}
+]asv{These plots will be hit in the next patch. I believe your hypothesis is correct from previous runs, but I will doublecheck to confirm}
 
 %---------------------------------------------------
 \begin{figure}
@@ -852,14 +851,8 @@ both of these plots as soon as you can so I can write this interpretation here.}
 	\includegraphics[width=.4\textwidth]{all_mcf_cV.pdf}
 	\caption{
 \arz{Same comment as for Fig. 6.}	
-The marked correlation function for the concentration defined according to the ratio of max circular velocities. The solid lines plot the marked correlation function using velocity ratio concentration as the mark. In each plot the line with the most 
-positive value corresponds with the largest value of overdensity parameter, 
-$\Delta$, and demonstrates a smooth trend down to the lowest value of 
-$\Delta$. The top (middle/bottom) panel shows the results for the
-\simA \ (\simB /\simC) data set utilizing the low mass (mid mass/high mass) cutoffs. Note
-that the top panel is the only one where exploring the extreme regime of $\Delta = 10$ is
-necessary, while the bottom panel is the only one where the exploration of $\Delta = 340$
-is necessary. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks.
+The marked correlation function for the concentration defined according to the ratio of max circular velocities. The solid lines plot the marked correlation function using velocity ratio concentration as the mark. In each plot the lines correspond to different values of $\Delta$, with dark blue (light blue) corresponding to $\Delta = 340$ ($\Delta = 50$). The red dashed line corresponds to the overdensity chosen for matching as possibly removing assembly bias on most scales. The top (middle/bottom) panel shows the results for the
+\simA \ (\simB /\simC) data set utilizing the low mass (mid mass/high mass) cutoffs. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks.
 }
 	\label{fig:cc_mcf_cV}
 \end{figure}
@@ -876,11 +869,8 @@ is necessary. The shaded bands represent 2-sigma confidence regions generated by
 	\caption{
 \arz{Same comment as for Fig. 6.}
 \arz{It looks like we still need $\Delta=10$ line in the mid-mass and low-mass panels as well, just to be sure.}
-The marked correlation function for the halo shape parameter. The solid lines plot the marked correlation function using halo shape as the mark. The top (middle/bottom) panel shows the results for the
-\simA \ (\simB /\simC) data set utilizing the low mass-shape (mid mass-shape/high mass-shape) cutoffs. Note
-that the top panel is the only one where exploring the extreme regime of $\Delta = 10$ is
-necessary, while the bottom panel is the only one where the exploration of $\Delta = 340$
-is necessary. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks.}
+The marked correlation function for the halo shape parameter. In each plot the lines correspond to different values of $\Delta$, with dark blue (light blue) corresponding to $\Delta = 340$ ($\Delta = 50$). The red dashed line corresponds to the overdensity chosen for matching as possibly removing assembly bias on most scales. The top (middle/bottom) panel shows the results for the
+\simA \ (\simB /\simC) data set utilizing the low mass-shape (mid mass-shape/high mass-shape) cutoffs. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks.}
 	\label{fig:cc_mcf_s}
 \end{figure}
 %--------------------------------------------
@@ -939,14 +929,8 @@ in halo definitions only drives spin-dependent halo clustering to be stronger.
 	\caption{
 \arz{Same comment as for Fig. 6.}
 The marked correlation function for the halo spin parameter. 
-The solid lines plot the marked correlation function using halo spin as the mark. In each plot the line with the most 
-positive value corresponds with the smallest value of overdensity parameter, 
-$\Delta$, and demonstrates a smooth trend down to the largest value of 
-$\Delta$. The top (middle/bottom) panel shows the results for the
-\simA \ (\simB /\simC) data set utilizing the low mass (mid mass/high mass) cutoffs. Note
-that the top panel is the only one where exploring the extreme regime of $\Delta = 10$ is
-necessary, while the bottom panel is the only one where the exploration of $\Delta = 340$
-is necessary. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks.
+The solid lines plot the marked correlation function using halo spin as the mark. In each plot the lines correspond to different values of $\Delta$, with dark blue (light blue) corresponding to $\Delta = 340$ ($\Delta = 50$). The red dashed line corresponds to the overdensity chosen for matching as possibly removing assembly bias on most scales. The top (middle/bottom) panel shows the results for the
+\simA \ (\simB /\simC) data set utilizing the low mass (mid mass/high mass) cutoffs. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks.
 	}
 	\label{fig:cc_mcf_spin}
 \end{figure}
@@ -960,14 +944,8 @@ is necessary. The shaded bands represent 2-sigma confidence regions generated by
 	\includegraphics[width=.4\textwidth]{all_mcf_nsat.pdf}
 	\caption{
 \arz{Same comment as for Fig. 6.}
-The marked correlation function for the satellite number parameter. The solid lines plot the marked correlation function using halo satellite number as the mark. In each plot the line with the most 
-positive value corresponds with the smallest value of overdensity parameter, 
-$\Delta$, and demonstrates a smooth trend down to the largest value of 
-$\Delta$. The top (middle/bottom) panel shows the results for the
-\simA \ (\simB /\simC) data set utilizing the low mass (mid mass/high mass) cutoffs. Note
-that the top panel is the only one where exploring the extreme regime of $\Delta = 10$ is
-necessary, while the bottom panel is the only one where the exploration of $\Delta = 340$
-is necessary. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks.}
+The marked correlation function for the satellite number parameter. The solid lines plot the marked correlation function using halo satellite number as the mark. In each plot the lines correspond to different values of $\Delta$, with dark blue (light blue) corresponding to $\Delta = 340$ ($\Delta = 50$). The red dashed line corresponds to the overdensity chosen for matching as possibly removing assembly bias on most scales. The top (middle/bottom) panel shows the results for the
+\simA \ (\simB /\simC) data set utilizing the low mass (mid mass/high mass) cutoffs. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks.}
 	\label{fig:cc_mcf_nsat}
 \end{figure}
 %-------------------------------------------------------------------------------------------
@@ -1145,14 +1123,8 @@ comfortable working with 2pt functions.}
 \begin{figure}
 	\centering
 	\includegraphics[width=.4\textwidth]{match_mcf_cNFW.pdf}
-	\caption{The marked correlation function for the NFW-defined halo concentration parameter. The solid lines plot the marked correlation function using NFW-defined halo concentration as the mark. In each plot the line with the most 
-positive value corresponds with the smallest value of overdensity parameter, 
-$\Delta$, and demonstrates a smooth trend down to the largest value of 
-$\Delta$. The top (middle/bottom) panel shows the results for the
-\simA \ (\simB /\simC) data set utilizing the low mass (mid mass/high mass) cutoffs. Note
-that the top panel is the only one where exploring the extreme regime of $\Delta = 10$ is
-necessary, while the bottom panel is the only one where the exploration of $\Delta = 340$
-is necessary. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. Only host halos consistent with the best-fit catalog from above are included in the analysis.}
+	\caption{The marked correlation function for the NFW-defined halo concentration parameter. The solid lines plot the marked correlation function using NFW-defined halo concentration as the mark, for a catalog matched against the best fit $\Delta$ shown in red. The dashed lines plot the original marked correlation function results. In each plot the lines correspond to different values of $\Delta$, with dark blue (light blue) corresponding to $\Delta = 340$ ($\Delta = 50$). The red dashed line corresponds to the overdensity chosen for matching as possibly removing assembly bias on most scales. The top (middle/bottom) panel shows the results for the
+\simA \ (\simB /\simC) data set utilizing the low mass (mid mass/high mass) cutoffs. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. Only host halos consistent with the best-fit catalog from above are included in the analysis.}
 	\label{fig:hvm_mcf_cnfw}
 \end{figure}
 
@@ -1186,14 +1158,8 @@ halos from large-scale evolution and mitigating assembly bias.
 \begin{figure}
 	\centering
 	\includegraphics[width=.4\textwidth]{match_mcf_cV.pdf}
-	\caption{The marked correlation function for the velocity ratio defined halo concentration parameter. The solid lines plot the marked correlation function using velocity ratio halo concentration as the mark. In each plot the line with the most 
-positive value corresponds with the smallest value of overdensity parameter, 
-$\Delta$, and demonstrates a smooth trend down to the largest value of 
-$\Delta$. The top (middle/bottom) panel shows the results for the
-\simA \ (\simB /\simC) data set utilizing the low mass (mid mass/high mass) cutoffs. Note
-that the top panel is the only one where exploring the extreme regime of $\Delta = 10$ is
-necessary, while the bottom panel is the only one where the exploration of $\Delta = 340$
-is necessary. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. Only host halos consistent with the best-fit catalog from above are included in the analysis.}
+	\caption{The marked correlation function for the velocity ratio defined halo concentration parameter. The solid lines plot the marked correlation function using velocity ratio halo concentration as the mark, for a catalog matched against the best fit $\Delta$ shown in red. The dashed lines plot the original marked correlation function results. In each plot the lines correspond to different values of $\Delta$, with dark blue (light blue) corresponding to $\Delta = 340$ ($\Delta = 50$). The red dashed line corresponds to the overdensity chosen for matching as possibly removing assembly bias on most scales. The top (middle/bottom) panel shows the results for the
+\simA \ (\simB /\simC) data set utilizing the low mass (mid mass/high mass) cutoffs. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks.}
 	\label{fig:hvm_mcf_cV}
 \end{figure}
 
@@ -1262,11 +1228,12 @@ groups using different halo definitions.}
 	the error bars are all similar!}
 	\arz{In the caption, you need to say what this is the bias of, namely the top 20\% in concentration.}
 	\arz{Also, can you please make the same figure with the lowest 20\%?}
+	\asv{I can and will be changing this plot - this has been primarily put off due to the fact that this is by far the largest calculation time plot and I wanted to sort out any kinks. I'll cut out all but one error bar and rerun with new colors.}
 	The bias with respect to NFW-defined halo concentration against halo mass measured at the halo
 	radius. The displayed lines descend from highest values of overdensity parameter $\Delta$ in that mass
-	range to the lowest value. The low mass range (solid lines) covers from $\Delta=200$ to $\Delta=10$, 
-	the mid mass range (dot-dashed lines) covers	from $\Delta=200$ to $\Delta=50$, and the 
-	high mass range (dashed lines) covers from $\Delta=340$ to $Delta=50$. The
+	range to the lowest value. The low mass range (solid lines) covers from $\Delta=340$ to $\Delta=10$, 
+	the mid mass range (dot-dashed lines) covers	from $\Delta=340$ to $\Delta=50$, and the 
+	high mass range (dashed lines) covers from $\Delta=340$ to $\Delta=50$. The
 	error bars encompass 68\% of measurements using two hundred subsamples
 	of the mark of the same size as the biased sample. The solid black line
 	shows where there is no assembly bias driven by NFW-defined halo concentration.}
