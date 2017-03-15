@@ -549,7 +549,7 @@ clustering strength and environment, we refer to the other properties that we st
 ``auxiliary halo properties" (those properties other than mass, such as concentration 
 $c_{\rm NFW}$ or shape $s$). As has been demonstrated extensively in the literature, 
 the auxiliary properties that we consider are themselves 
-a function of mass \citep[e.g.,][and many others]{bullock_etal02,allgood_etal06, duffy_etal08, despali_etal16}. 
+a function of mass \citep{bullock_etal02,allgood_etal06, duffy_etal08, despali_etal16}. 
 This mass dependence, if not accounted for, induces auxiliary-property-dependent halo clustering. 
 Most contemporary cosmological $N$-body simulations, and specifically the suite of simulations 
 that we study in this work, do not have a sufficiently large number of halos to make isolating halos 
@@ -563,7 +563,7 @@ we take all host halos more massive than our minimum mass thresholds and sort th
 their halo masses, $M_{\Delta}$. We place these halos into twenty logarithmically-spaced bins 
 of halo mass, ensuring that no bin has fewer than 10 halos, with the exception of the most massive bin. The objects in this final bin are rare and exceptional enough that they have little statistical value in the calculation process. 
 \arz{We need some number here or this needs to be rephrased.}\asv{So the last bin typically has a halo that is high enough mass that no reasonable binning structure will get that bin up to 10 halos with evenly spaced bins.}
-We then calculate the rank of each mark within the bin of halo mass, from 1 to N, where N is the number of halos in the bin. If multiple halos share mark values (e.g. rank 2 and 3 have the same halo shape), than the average value is assigned as the mark (e.g. 2.5 to each). We then normalize the marks between 0 and 1 by dividing out the number of halos in the bin, assuring that the distribution of marks within a bin fits a uniform distribution.
+We then calculate the rank of each mark within the bin of halo mass, from 1 to N, where N is the number of halos assigned to a given bin. If multiple halos share mark values (e.g. rank 2 and 3 have the same halo shape), then the average value is assigned as the mark (e.g. 2.5 to each). We normalize the marks between 0 and 1 by dividing out the number of halos in the bin, assuring that the distribution of marks within a bin fits a uniform distribution.
 This removes the strong mass trend in each of these properties. 
 We use these new measures of halo auxiliary properties, those with 
 the mean mass trend removed, to study halo clustering strength 
@@ -597,7 +597,7 @@ equally populated mass bins, but it does not seem to qualitatively change our re
 have one at the moment, making a comparison plot for two different bin sizes is pretty straightforward.
 Should I make a plot of that for the paper, or leave it for the referee process if needed? I also am not
 currently using the power law implementation, since I did not wish to worry about choice of interpolation
-method, but I certainly could whip that together pretty quickly, if still desired.}
+method, but I certainly could whip that together pretty quickly, if still desired.}\asv{Changed to address our new method of using rank as our mark.}
 
 
 In addition to the properties of the host halos described in the previous section, 
@@ -618,7 +618,7 @@ satellite halo per host on average. We then choose
 a cutoff in the max circular velocity such that all subhalos are well-resolved in the simulation volumes: $135, 235$, and $400 \mathrm{km \ s^{-1}}$
 for \simA, \simB, and \simC~ respectively. Subhalo maximum circular velocities were used as a proxy for subhalo size rather than subhalo
 masses because subhalo maximum circular velocities can be more robustly measured from simulation data, making comparison
-to other work easier.
+to other work easier. Once these cuts have been applied, we again divide the halos that meet these cutoffs into bins in logarithmic halo mass and follow the same procedure as with the other auxilary halo properties.
 \arz{I still don't understand this last choice in relation to the figures in the next section. For satellite number, 
 you are selecting hosts above a Vmax threshold. I get that. But why is there a fixed Vmax threshold for 
 each simulation? The L0500 simulation CERTAINLY CANNOT BE UNAFFECTED BY RESOLUTION for 
@@ -662,13 +662,14 @@ mark, and $\mathcal{V}(m)$ the variance of the mark. The notation is intended to
 taken over all pairs of halos separated by a distance $r$. In the absence of any correlation between a halo
 property among neighbors a separation $r$ away, $\mathcal{M}_m(r) = 0$. Deviations of the MCF from
 zero indicate such correlations exist and the magnitude of $\mathcal{M}_m(r)$ gives the excess of the mark among
-pairs compared to the one-point mean of the mark $\langle m\rangle$ in units of the one-point variance. 
+pairs compared to the one-point mean of the mark $\langle m\rangle$ in units of the one-point variance. Given that our
+marks are distributed in a uniform distribution from 0 to 1, we anticipate that $\langle m \rangle^2 = 0.25$ and that $\mathcal{V}(m) = 1/12$. 
 
 The marks that we use throughout our calculations are the ranks of the halo NFW-defined concentration, halo velocity ratio, halo shape, halo spin, and halo satellite number; in each case this serves to correct the underlying mass trends in these parameters as detailed in Section~\ref{subsection:properties}. 
 
 In each case, it is necessary to assess statistical fluctuations in the statistics that we measure in these simulations in
 order to determine the significance of the signals. For two-point correlation functions, we determine the
-covariance of the measurement through jackknife resampling of the eight octants of the simulation cube. We assess the significance of the MCFs by taking advantage of the inherent uniform distribution. For each radial bin in the marked correlation function, we determine the number of pairs, n, and draw from a uniform distribution n times to calculate the value of the marked correlation function in each bin. We then determine the 2\% and 98\% of the resulting randomizations; if the actual MCF signal lies within these two values, it is suggestive of a nondetection of assembly bias. 
+covariance of the measurement through jackknife resampling of the eight octants of the simulation cube. We assess the significance of the MCFs by taking advantage of the inherent uniform distribution. For each radial bin in the marked correlation function, we determine the number of pairs, n, and draw from a uniform distribution n times to calculate the value of the marked correlation function in each bin. We then determine the 2\% and 98\% of the resulting randomizations; if the actual MCF signal lies within these two values, it is suggestive of a nondetection of assembly bias. We note that since we investigate the product of two uniformly distributed variables, a negative value of the MCF has two different interpretations. One interpretation is that halos with high (low) values of the mark experience enhanced (diminished) clustering. The other possible interpretation is an enhanced clustering of high value marks with low value marks. While we cannot distinguish between these two possibilities, it does not impact our ability to make statements about a potential non-detection of assembly bias, as our randomization implicitly accounts for the impact of a uniform product distribution.
 
 
 %----------------------------
@@ -714,7 +715,7 @@ L0250. I can include that and see how we feel.}
 Focus, for example, on the middle panel of Fig.~\ref{fig:cc_cfcompare}. In this panel, 
 corresponding to the mid-mass threshold, the difference in large-scale clustering between 
 high- and low-concentration halos is dramatically reduced for a halo definition with 
-$\Delta \approx 75$ as compared to a more traditional halo definition, such as $\Delta=200$. 
+$\Delta \approx 60$ as compared to a more traditional halo definition, such as $\Delta=200$. 
 However, further decreasing $\Delta$ leads to concentration-dependent clustering of opposite sign. 
 Both the strength and the sense of halo assembly bias depend upon halo definition! This is a 
 point that may seem somewhat obvious in retrospect, but does not seem to be addressed 
@@ -810,7 +811,7 @@ Fig.~\ref{fig:cc_cfcompare}: more concentrated halos are significantly more clus
 the low-mass cut L0125 halo sample; concentration-dependent halo clustering weakens and 
 reverses sense as halo mass increases (at fixed $\Delta$), 
 consistent with work on assembly bias \citep{wechsler_etal06,sunayama_etal16}; for the 
-mid-mass cut L0250 sample with $\Delta=75$, the large-scale concentration dependence of halo clustering has been reduced so as to 
+mid-mass cut L0250 sample with $\Delta=60$, the large-scale concentration dependence of halo clustering has been reduced so as to 
 be consistent with zero within the statistical limitations of the simulation. \arz{It seems like we need 
 $\Delta \sim 65-70$ for L0250?}\asv{We have (or will have) the data from
 $\Delta = 70$, though it is not currently plotted due to cleanliness. I could
