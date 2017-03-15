@@ -61,8 +61,7 @@ population within the halo is determined by the mass of the halo alone. We seek 
 of a halo that allows us to minimize the impact of assembly bias on halo model calculations. We analyze the
 dependence on environment of our properties using the method of marked correlation functions for several
 different halo definitions, utilizing the \citet{diemer_kravtsov15} simulations. We find that the strength of assembly
-bias has a strong dependence on the measured halo mass, even after the removal of gross mass dependencies at fixed
-halo mass. We note that differences in halo definition, sample selection, and properties of interest can greatly impact
+bias has a strong dependence on the measured halo mass, even when using marks normalized around fixed mass. We note that differences in halo definition, sample selection, and properties of interest can greatly impact
 the measurement of assembly bias, potentially explaining conflicting results in the literature. These results suggest that
 halo assembly bias appears increasingly difficult to resolve using the definitions common in current halo finder techniques,
 possibly pointing toward the necessity of methods such as utilizing the halo splashback radius.
@@ -153,7 +152,7 @@ greatly mitigated. However, the definitions which mitigate concentration-based a
 bias are mass dependent; high-mass, cluster-sized halos appear to have little assembly bias 
 for a traditional overdensity definition of $\Delta \approx 200$, 
 while low-mass halos ($\sim 10^{11}\, h^{-1}\mathrm{M}_{\odot}$) require 
-$\Delta \approx 10$. Any mitigation strategy must be complex and mass dependent, 
+$\Delta \approx 20$. Any mitigation strategy must be complex and mass dependent, 
 as might be expected given the mass dependence of the assembly bias effect \cite{wechsler_etal06}. 
 We find that we cannot mitigate the assembly bias of halos selected by properties 
 other than concentration, such as halo spin, halo shape, and number of satellite 
@@ -211,7 +210,7 @@ parameter, and $\rho_{\mathrm{m}}$ is the mean background mass density of the si
 halo size calculation can have a large variation depending on the choice of $\Delta$. The number chosen for
 $\Delta$ varies throughout the literature from $\Delta \approx 178$ to $\Delta \approx 340$ or higher for X-ray studies of 
 clusters. We choose to vary the size of a halo by treating the overdensity parameter as tunable, expanding the range from 
-$\Delta = 340$ to $\Delta = 10$. While this range is greater than the differences between most 
+$\Delta = 340$ to $\Delta = 20$. While this range is greater than the differences between most 
 the common overdensity choices, this broad range enables a fairly extensive exploration of 
 environmental effects on halo properties as a function of halo definition\footnote{It is worth noting that the 
 {\tt ROCKSTAR} linking length parameter must be adjusted as $\Delta$ varies in order to ensure 
@@ -355,7 +354,7 @@ the concentration-mass relations, going from \simA \ to \simC \ from left to rig
 \centering
 \includegraphics[width=.5\textwidth]{cvvscnfw_relation.pdf}
 \caption{
-The relationship between the two different marks of concentration, 
+The relationship between the two different measures of concentration, 
 using halos in \simB. The color scale, shown at the right, encodes the number of halos 
 within a single two-dimensional bin in the $c_{\mathrm{NFW}}$-$c_{\mathrm{V}}$ space. 
 The red (blue) regions on the plot show where the most (fewest) halos exist with those values of the two
@@ -521,9 +520,9 @@ Cutoff Name &  $\Delta=340$ & $\Delta=200$ & $\Delta=100$ & $\Delta=75$ & $\Delt
 \hline
 \vspace*{2pt}
 {low mass} & $6 \times 10^{10}$ & $7 \times 10^{10}$ & $8 \times 10^{10}$ & $9 \times 10^{10}$ & $1 \times 10^{11}$ & $2 \times 10^{11}$  \\ \vspace*{4pt}
-{low mass-shape} & $1 \times 10^{11}$ & $1 \times 10^{11}$ & $1 \times 10^{11}$ & $1 \times 10^{11}$ & $1 \times 10^{11}$ & $1 \times 10^{11}$ \\
-{mid mass} & $6 \times 10^{11}$ & $7 \times 10^{11}$ & $8 \times 10^{11}$ & $9 \times 10^{11}$ & $1.5 \times 10^{12}$ & {N/A} \\ \vspace*{4pt}
-{mid mass-shape} & $1 \times 10^{12}$ & $1 \times 10^{12}$ & $1 \times 10^{12}$ & $1 \times 10^{12}$ & $1 \times 10^{12}$ & {N/A} \\
+{low mass-shape} & $2 \times 10^{11}$ & $2 \times 10^{11}$ & $2 \times 10^{11}$ & $2 \times 10^{11}$ & $2 \times 10^{11}$ & $2 \times 10^{11}$ \\
+{mid mass} & $6 \times 10^{11}$ & $7 \times 10^{11}$ & $8 \times 10^{11}$ & $9 \times 10^{11}$ & $2 \times 10^{12}$ & {N/A} \\ \vspace*{4pt}
+{mid mass-shape} & $2 \times 10^{12}$ & $2 \times 10^{12}$ & $2 \times 10^{12}$ & $2 \times 10^{12}$ & $2 \times 10^{12}$ & {N/A} \\
 {high mass} & $3 \times 10^{12}$ & $4 \times 10^{12}$ & $5 \times 10^{12}$ & $6 \times 10^{12}$ & $7 \times 10^{12}$ & {N/A} \\ \vspace*{2pt}
 {high mass-shape} & $1 \times 10^{13}$ & $1 \times 10^{13}$ & $1 \times 10^{13}$ & $1 \times 10^{13}$ & $1 \times 10^{13}$ & {N/A} \\
 \hline
@@ -561,18 +560,14 @@ properties that we study.
 
 We mitigate the mass dependence of the auxiliary properties as follows. First, 
 we take all host halos more massive than our minimum mass thresholds and sort them by 
-their halo masses, $M_{\Delta}$. We place these halos into ten logarithmically-spaced bins 
+their halo masses, $M_{\Delta}$. We place these halos into twenty logarithmically-spaced bins 
 of halo mass, ensuring that no bin has fewer than 10 halos, with the exception of the most massive bin. The objects in this final bin are rare and exceptional enough that they have little statistical value in the calculation process. 
 \arz{We need some number here or this needs to be rephrased.}\asv{So the last bin typically has a halo that is high enough mass that no reasonable binning structure will get that bin up to 10 halos with evenly spaced bins.}
-The mean value of each halo property is calculated within each bin, 
-and subtracted from the recorded value for each halo in the bin. 
+We then calculate the rank of each mark within the bin of halo mass, from 1 to N, where N is the number of halos in the bin. If multiple halos share mark values (e.g. rank 2 and 3 have the same halo shape), than the average value is assigned as the mark (e.g. 2.5 to each). We then normalize the marks between 0 and 1 by dividing out the number of halos in the bin, assuring that the distribution of marks within a bin fits a uniform distribution.
 This removes the strong mass trend in each of these properties. 
 We use these new measures of halo auxiliary properties, those with 
 the mean mass trend removed, to study halo clustering strength 
-in the remainder of this work. We have experimented with a variety of methods
-to remove the gross mass dependences of these auxillary properties including
-different choices in property binning. We find that our qualitative results are not sensitive to
-the number of bins we use or the choice of median or mean property. Furthermore, the choice of equally populated bins versus evenly spaced bins makes no qualitative difference in the calculation.
+in the remainder of this work. We have experimented with different choices in property binning for defining the marks. We find that our qualitative results are not sensitive to the number of bins we use. Furthermore, the choice of equally populated bins versus evenly spaced bins makes no significant difference in the results.
 \arz{You should make sure that your results do not change qualitatively 
 under a few modifications. First, make sure that if you use finer binning 
 that nothing qualitative changes (small quantitative changes can be acceptable). 
@@ -621,7 +616,7 @@ so that the scaling eliminates the gross mass dependence of satellite number. \a
 In addition, this choice of threshold will mean that for subhalos above the resolution threshold of the simulation, there shall be of order one
 satellite halo per host on average. We then choose
 a cutoff in the max circular velocity such that all subhalos are well-resolved in the simulation volumes: $135, 235$, and $400 \mathrm{km \ s^{-1}}$
-for \simA, \simB, and \simC respectively. Subhalo maximum circular velocities were used as a proxy for subhalo size rather than subhalo
+for \simA, \simB, and \simC~ respectively. Subhalo maximum circular velocities were used as a proxy for subhalo size rather than subhalo
 masses because subhalo maximum circular velocities can be more robustly measured from simulation data, making comparison
 to other work easier.
 \arz{I still don't understand this last choice in relation to the figures in the next section. For satellite number, 
@@ -669,25 +664,11 @@ property among neighbors a separation $r$ away, $\mathcal{M}_m(r) = 0$. Deviatio
 zero indicate such correlations exist and the magnitude of $\mathcal{M}_m(r)$ gives the excess of the mark among
 pairs compared to the one-point mean of the mark $\langle m\rangle$ in units of the one-point variance. 
 
-The marks that we use in the case of concentration, shape, and spin, are the differences between 
-the values of the halo property for an individual halo of mass $M$ and the mean 
-value of that property at mass $M$, as described in Section~\ref{subsection:properties}. 
-For our study of satellite number, we choose the marks to be the satellite numbers 
-computed after scaling out the gross dependence of satellite number on halo size, 
-also described in Section~\ref{subsection:properties}. 
+The marks that we use throughout our calculations are the ranks of the halo NFW-defined concentration, halo velocity ratio, halo shape, halo spin, and halo satellite number; in each case this serves to correct the underlying mass trends in these parameters as detailed in Section~\ref{subsection:properties}. 
 
 In each case, it is necessary to assess statistical fluctuations in the statistics that we measure in these simulations in
 order to determine the significance of the signals. For two-point correlation functions, we determine the
-covariance of the measurement through jackknife resampling of the eight octants of the simulation cube. We assess
-the statistical significance of the MCFs by randomly re-assigning each of our marks to the halos in the sample. 
-We then compute the MCF of these randomized marks. As the mark re-assignment is random, 
-the MCF computed on these re-assigned marks {\em cannot} exhibit any 
-environment dependence other than that induced by statistical fluctuations. 
-We perform this reassignment 400 times and approximate a $2\sigma$ error region by 
-the span of the MCF between our 10$^\mathrm{th}$ lowest and 10$^\mathrm{th}$ highest (that is the
-390$^\mathrm{th}$ if the MCFs were sorted in ascending order) values of the MCF. In the event that there are no
-environmental correlations with halo auxiliary properties, the MCFs measured in the simulations would fall within
-this error band $95\%$ of the time. 
+covariance of the measurement through jackknife resampling of the eight octants of the simulation cube. We assess the significance of the MCFs by taking advantage of the inherent uniform distribution. For each radial bin in the marked correlation function, we determine the number of pairs, n, and draw from a uniform distribution n times to calculate the value of the marked correlation function in each bin. We then determine the 2\% and 98\% of the resulting randomizations; if the actual MCF signal lies within these two values, it is suggestive of a nondetection of assembly bias. 
 
 
 %----------------------------
