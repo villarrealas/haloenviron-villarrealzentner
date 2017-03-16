@@ -1180,7 +1180,7 @@ demonstrates how bias scales as a function of both fixed halo mass and choice of
 b^2(r) = \xi_{c_\mathrm{NFW}} / \xi_{\mathrm{all}},
 \eeq
 where $\xi_{c_\mathrm{NFW}}$ consists of those halos with the 20\% highest marks in NFW-defined concentration
-and $\xi_{\mathrm{all}}$ consists of all halos. To explore the mass dependency of the bias, we choose to
+and $\xi_{\mathrm{all}}$ consists of all halos. Note that due to the limited number of halos in each mass bin, we choose not to use the binning and rank weighting that is utilized in previous analysis. \asv{This is currently how it is run and I am not sure if this is the best approach. We could probably afford to use ~5 bins and it would be a little more fine than when we carry out the full analysis.} To explore the mass dependency of the bias, we choose to
 examine a fixed scale of 5 to 10 $\hMpc$. We calculate the bias using halos in bins of fixed mass, with errors
 calculated using resampling in which $\xi_{\mathrm{all}}$ is replaced with the correlation function calculated
 using a randomly chosen subsample of equal number to the biased subsample. The displayed error bars represent
@@ -1216,14 +1216,10 @@ groups using different halo definitions.}
 	\arz{In the caption, you need to say what this is the bias of, namely the top 20\% in concentration.}
 	\arz{Also, can you please make the same figure with the lowest 20\%?}
 	\asv{I can and will be changing this plot - this has been primarily put off due to the fact that this is by far the largest calculation time plot and I wanted to sort out any kinks. I'll cut out all but one error bar and rerun with new colors.}
-	The bias with respect to NFW-defined halo concentration against halo mass measured at the halo
-	radius. The displayed lines descend from highest values of overdensity parameter $\Delta$ in that mass
-	range to the lowest value. The low mass range (solid lines) covers from $\Delta=340$ to $\Delta=10$, 
-	the mid mass range (dot-dashed lines) covers	from $\Delta=340$ to $\Delta=50$, and the 
-	high mass range (dashed lines) covers from $\Delta=340$ to $\Delta=50$. The
+	The bias of the 20\% highest concentration sample to the full sample, plotted against halo mass measured at the halo radius. The halo mass binning is defined in full detail in the text. Halo definitions descend from the largest definition to lowest definition, from dark to light in color. The dark blue (light blue) line uses a halo definition drawn from $\Delta = 340$ ($\Delta = 50$). The solid (dot-dashed, dashsed) lines use host halos from the \simA (\simB,\simC) catalogs. The
 	error bars encompass 68\% of measurements using two hundred subsamples
 	of the mark of the same size as the biased sample. The solid black line
-	shows where there is no assembly bias driven by NFW-defined halo concentration.}
+	shows where there is no detected assembly bias driven by NFW-defined halo concentration.}
 	\label{fig:biascompare}
 \end{figure}
 
