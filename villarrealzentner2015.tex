@@ -1,5 +1,7 @@
 %%\documentclass[usenatbib,usegraphicx,letterpaper]{mnras}
-\documentclass[usenatbib]{mnras}
+\documentclass[usenatbib,fleqn]{mnras}
+\pdfoutput=1 %for arxiv
+\setlength{\topmargin}{-0.3in}
 %%\usepackage[totalwidth=480pt,totalheight=680pt]{geometry}
 \usepackage{amssymb}
 \usepackage{epsfig}
@@ -11,6 +13,9 @@
 \usepackage{subfig}
 \usepackage{rotating}
 \usepackage{fixltx2e}
+\usepackage[T1]{fontenc}
+\usepackage{newtxtext,newtxmath}
+\usepackage[figure,figure*]{hypcap}
 %%\usepackage{physics}
 
 \include{villarrealzentner_macros}
@@ -36,20 +41,17 @@ Frank C. van den Bosch,$^{3}$\thanks{E-mail: frank.vandenbosch@yale.edu}
 \newauthor
 and Benedikt Diemer$^{4}$\thanks{E-mail: benedikt.diemer@cfa.harvard.edu}
 \\
-$^{1}$Department of Physics and Astronomy \& Pittsburgh Particle Physics,\\ Astrophysics, and Cosmology Center (Pitt-PACC), \\
-University of Pittsburgh, Pittsburgh, PA\\
-$^{2}$Department of Physics and Astronomy, \\
-West Virginia University, Morgantown, WV \\
-$^{3}$Department of Astronomy, \\
-Yale University, Hew Haven, CT\\
-$^{4}$Center for Astrophysics, \\
-Harvard University, Cambridge, MA}
+$^{1}$Department of Physics and Astronomy \& Pittsburgh Particle Physics, Astrophysics, and Cosmology Center (Pitt-PACC), \\
+\phantom{$^{1}$}University of Pittsburgh, Pittsburgh, PA\\
+$^{2}$Department of Physics and Astronomy, West Virginia University, Morgantown, WV \\
+$^{3}$Department of Astronomy, Yale University, Hew Haven, CT\\
+$^{4}$Center for Astrophysics, Harvard University, Cambridge, MA}
 
 \date{\today}
 
-%%\pagerange{\pageref{firstpage}--\pageref{lastpage}} \pubyear{2015}
+\pagerange{\pageref{firstpage}--\pageref{lastpage}} \pubyear{2017}
 
-%% \label{firstpage}
+\label{firstpage}
 
 \maketitle
 
