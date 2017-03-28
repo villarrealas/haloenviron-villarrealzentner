@@ -810,36 +810,22 @@ alternative halo definitions can mitigate the dependence of halo clustering on t
 
 Second, the halo definitions that mitigate assembly bias are halo mass dependent. In the case of halo concentration, which we examine in the most detail, assembly bias is strongly mitigated for halo definitions of $\Delta \approx 20$, $\Delta \approx 60$, and $\Delta \approx 200$ for halos in our $M \geq 6 \times 10^{10} \hMsun$, $M \geq 6 \times 10^{10} \hMsun$, and $M \geq 3 \times 10^{12} \hMsun$ mass threshold samples respectively. Of course, this 
 mass dependence may not be surprising given the well-known mass dependence 
-of assembly bias. 
+of assembly bias. These two observations suggest that it may well be possible to mitigate assembly bias for a single halo property (e.g., concentration) by using a mass-dependent halo definition. We discuss the particular case of concentration-dependent clustering further below.
 
 Our work emphasizes the important dependence of halo assembly bias upon halo definition, which is not yet widely appreciated. In each of Figures \ref{fig:cc_mcf_cnfw} through \ref{fig:cc_mcf_nsat}, the strength of assembly bias is a strong function of halo definition. This definition dependence is not restricted to extreme choices of the overdensity parameter $\Delta$. The difference in the strength of assembly bias between a ``virial'' halo definition, with $\Delta=340$, and a definition with $\Delta=200$ is considerable. Likewise, defining halos using an overdensity of 200 relative to the critical density, corresponding roughly to $\Delta \approx 625$ in our notation, also leads to significant, quantitative differences in the strength of assembly bias. Indeed, distinct halo definitions may even lead to assembly bias of opposite sense. For example, at fixed halo mass, higher concentration halos may be more strongly clustered by one halo definition and more weakly clustered by another. It is interesting to consider that some of the variety of results pertaining to the strength of assembly bias in the literature may be partly induced by the different halo definitions used by different authors.
 
-%------------------------------
-\subsection{Mitigating Concentration-Dependent Clustering with Halo Definition}
-%------------------------------
 
-Our results suggest that halo redefinition may be able to mitigate concentration dependent halo clustering. This is evident in Fig.~\ref{fig:cc_mcf_cnfw} and Fig.~\ref{fig:cc_mcf_cV}. Halo concentration is strongly correlated with halo formation time, so this suggests that such a redefinition {\em may} aid in reducing assembly bias associated with halo formation time; however, this is a non-trivial extrapolation of our results and a follow-up study to assess halo formation times in alternative halo definitions is both interesting and warranted. 
+%------------------------------------------------
+\subsection{Mitigation of Concentration-Dependent Halo Clustering}
+%------------------------------------------------
 
-Clearly, the halo definition that best mitigates concentration-dependent assembly bias must be mass dependent. Low values of $\Delta$ ($\Delta \sim 25$ with $R_{25} \sim 2R_{200}$) seem appropriate near for our lowest mass-threshold sample (with $M_{200} \ge 7 \times 10^{10} \hMsun$) whereas $\Delta \sim 200$ or slightly higher is adequate for our highest mass threshold sample (with $M_{200} \ge 4 \times 10^{12} \hMsun$). 
-
-This result is reminiscent of much recent work on the so-called halo ``splashback radius" \citep{more_etal15} and, indeed, our efforts were partly motivated by this work. We note that while the splashback radius methodology does seem similar in concept to our methodology, Fig. ~\ref{fig:splashback_compare} demonstrates that a one-to-one comparison between the two methods is difficult
-at best. While both our method of halo redefinition and their determination of splashback radius seem to show a
-monotonic trend in mass, we note that our work with the lowest mass halos requires a definition of halo radius
-that substantially larger than the splashback radius method alone might suggest.
-
-
-\begin{figure}
-	\centering
-	\includegraphics[width=.4\textwidth]{test_splashback.pdf}
-	\caption{A comparison of the average ratio between $r_{200}$ and the splashback radius as determined by
-	 \citet{more_etal15} (red circles) to the average ratio between $r_{200}$ and the halo radius determined as our
-	  best fit for removal of assembly bias as discussed above (blue circles). Note that the halo mass chosen for
-	  the blue points is determined by the mass cutoff in the simulation analysis, as the smallest (and most
-	  numerous) halos dominate the calculation.}
-	\label{fig:splashback_compare}
-\end{figure}
-
-
+As mentioned above, our results indicate that one may mitigate auxiliary 
+property dependent clustering through a mass-dependent choice of halo 
+definition. It is interesting to ask why halo redefinitions may be 
+helpful. In this subsection, we discuss the particular case of halo 
+concentration dependent clustering in more detail in part because concentrations may be the most physically interesting property we examine and 
+in part because our two distinct quantifications of halo concentration enable 
+control of measurement systematics. 
 It is useful to investigate the reasons why halo redefinitions may be helpful in the case 
 of concentrations. On the positive side, it is possible that these redefinitions do define 
 halos an a more practically useful way, better isolating objects that have been strongly 
@@ -988,6 +974,32 @@ groups using different halo definitions.}
 	\label{fig:biascompare}
 \end{figure*}
 
+
+%------------------------------
+\subsection{Mitigating Concentration-Dependent Clustering with Halo Definition}
+%------------------------------
+
+Our results suggest that halo redefinition may be able to mitigate concentration dependent halo clustering. This is evident in Fig.~\ref{fig:cc_mcf_cnfw} and Fig.~\ref{fig:cc_mcf_cV}. Halo concentration is strongly correlated with halo formation time, so this suggests that such a redefinition {\em may} aid in reducing assembly bias associated with halo formation time; however, this is a non-trivial extrapolation of our results and a follow-up study to assess halo formation times in alternative halo definitions is both interesting and warranted. 
+
+Clearly, the halo definition that best mitigates concentration-dependent assembly bias must be mass dependent. Low values of $\Delta$ ($\Delta \sim 25$ with $R_{25} \sim 2R_{200}$) seem appropriate near for our lowest mass-threshold sample (with $M_{200} \ge 7 \times 10^{10} \hMsun$) whereas $\Delta \sim 200$ or slightly higher is adequate for our highest mass threshold sample (with $M_{200} \ge 4 \times 10^{12} \hMsun$). 
+
+This result is reminiscent of much recent work on the so-called halo ``splashback radius" \citep{more_etal15} and, indeed, our efforts were partly motivated by this work. We note that while the splashback radius methodology does seem similar in concept to our methodology, Fig. ~\ref{fig:splashback_compare} demonstrates that a one-to-one comparison between the two methods is difficult
+at best. While both our method of halo redefinition and their determination of splashback radius seem to show a
+monotonic trend in mass, we note that our work with the lowest mass halos requires a definition of halo radius
+that substantially larger than the splashback radius method alone might suggest.
+
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width=.4\textwidth]{test_splashback.pdf}
+	\caption{A comparison of the average ratio between $r_{200}$ and the splashback radius as determined by
+	 \citet{more_etal15} (red circles) to the average ratio between $r_{200}$ and the halo radius determined as our
+	  best fit for removal of assembly bias as discussed above (blue circles). Note that the halo mass chosen for
+	  the blue points is determined by the mass cutoff in the simulation analysis, as the smallest (and most
+	  numerous) halos dominate the calculation.}
+	\label{fig:splashback_compare}
+\end{figure}
 
 %----------------------
 \section[]{Conclusions}
