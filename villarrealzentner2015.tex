@@ -97,7 +97,7 @@ To date, the vast majority of halo occupation models rely on a key assumption, n
 the probability of a halo to host a number of galaxies of a particular type 
 depends only upon halo mass. It is now well known that the clustering strength of halos depends upon 
 properties such as halo formation time \citep{gao_etal05,harker_etal06, wechsler_etal06,gao_white07,croton_etal07,zentner07,dalal_etal08, li_etal08, lacerna_padilla11}, 
-concentration \citep{wechsler_etal06,faltenbacher_white10, mao_etal15}, and other halo properties \citep{bett_etal06, hahn_etal07a, hahn_etal07b, faltenbacher_white10, vandaalen_etal12, fisher_faltenbacher16, sunayama_etal16, chavesmontero_etal16}. 
+concentration \citep{wechsler_etal06,faltenbacher_white10, mao_etal15}, and other halo properties \citep{bett_etal07, hahn_etal07a, hahn_etal07b, faltenbacher_white10, vandaalen_etal12, fisher_faltenbacher16, sunayama_etal16, chavesmontero_etal16}. 
 If galaxy properties depend upon these halo properties, a phenomenon known as galaxy {\em assembly bias}, 
 then standard halo occupation modeling will fail \citep{zentner_etal14} 
 and more complex models \citep{gilmarin_etal11, hearin_etal16} are necessary.
@@ -732,7 +732,7 @@ It should be noted that the process by which {\tt ROCKSTAR} calculates shape doe
 %------------------
 \subsubsection{Halo Spin}
 
-\arz{Spin-dependent clustering does NOT give qualitatively the 
+\arz{Spin-dependent clustering does NOT give qual	itatively the 
 same results as shape-dependent clustering. This paragraph needs 
 to be re-written. And again, in Fig.~\ref{fig:cc_mcf_spin}, the red dashed lines do not make sense to me. They are clearly NOT the best choices for the case of spin.}\asv{Some incorrect holdovers here. Fixing now.}
 The spin MCFs are shown in Figure~\ref{fig:cc_mcf_spin}. Halos that are more clustered show higher values of the spin mark than would be expected from a uniform distribution of ranks, consistent with results in the literature \citep{bett_etal07,faltenbacher_white10,lacerna_padilla12}. As with halo shape, it can be seen that the best match for halo concentration (the red-dashed lines in Figure~\ref{fig:cc_mcf_spin}) are poor fits for removing assembly bias from halo spin.\arz{Search the literature, particularly Brandon Allgood's papers and Andreas Faltenbacher whose 
@@ -849,18 +849,21 @@ distances ($r \gtrsim R_{200}$) halo profiles are known to deviate
 from the NFW form. It may be possible to reduce assembly bias by redifinitions if one probes scales on which halos deviate from NFW in a way that is not well correlated with the interior structure of the halo (particularly the location of the NFW scale radius); however, such a reduction in assembly bias is of limited practicality because it arises from characterizing a halo by a quantity that is less informative about its interior structure. Of course, it is worth noting that the velocity-defined concentration $c_{\rm V}$ is a non-parametric measure of concentration and should be less subject to such effects. 
 
 We can explore in more detail the degree to which the mitigation of environmental effects by halo redefinition are due to introducing noise 
-that is uncorrelated with environment into the measurement of halo properties. We proceed as follows. All host halos that are found in the halo catalogs constructed from lower values of $\Delta$ (e.g., $\Delta=60$) are also present as host halos in the halo catalogs constructed with all higher values of threshold density (e.g., $\Delta=200>60$). The converse is not true because lowering $\Delta$ increases halo radii so that host halos at higher values of $\Delta$ may become subhalos at lower values of $\Delta$\footnote{Indeed, this is largely the motivation for exploring various $\Delta$!}. Therefore, we consider the clustering of only those host halos that exist in both the 
-lower $\Delta$ and higher $\Delta$ catalogs. We refer to these as the ``matched" halo samples between two values of threshold overdensity $\Delta$. 
+that is uncorrelated with environment into the measurement of halo properties. We proceed as follows. All host halos that are found in the halo catalogs constructed from lower values of $\Delta$ (e.g., $\Delta=60$) are also present as host halos in the halo catalogs constructed with all higher values of threshold density (e.g., $\Delta=200>60$). The converse is not true because lowering $\Delta$ increases halo radii so that host halos at higher values of $\Delta$ may become subhalos at lower values of $\Delta$\footnote{Indeed, this is largely the motivation for exploring various $\Delta$!}. Therefore, we consider the clustering of only those host halos that exist in a higher $\Delta$ catalog as well as a lower $\Delta$ catalog. As a matter of clarification, an example is to consider the clustering of the subset of host halos identified within the the $\Delta=200$ catalog (and with all properties assigned to a conventional $\Delta=200$ halo), that also exist within a 
+$\Delta=60$ catalog. Those host halos that {\em do not} exist in the $\Delta=60$ catalog are precisely those halos that have been subsumed by the larger halo radii in this case and thus been classified as subhalos. This achieves the goal of redefining halos by the lower $\Delta$ threshold ($\Delta=60$ in this example), but eliminates that fact that the properties we are studying are also defined differently in the lower $\Delta$ catalog, because we are studying their clustering as a function of the properties defined in the higher $\Delta$ ($\Delta=200$ in this example) catalog. We refer to samples constructed in this way as ``matched" halo samples between two values of threshold overdensity $\Delta$. 
 
 
-Figure~\ref{fig:hvm_mcf_cnfw} shows the same statistic as Figure~\ref{fig:cc_mcf_cnfw}, except for matched subsamples. The matched subsamples are matched to a catalog generated for the value of $\Delta$ most likely to remove assembly bias at large scales for the concentration marks; $\Delta=20$ for the `Low Mass' cut, $\Delta=60$,
-for the `Mid Mass' cut, and $\Delta=200$ for the `High Mass' cut. 
-These matched halo catalogs only differ from the standard halo samples in 
-that they contain only those host halos common to both the catalog in question and the best fit $\Delta$ catalog. 
+The dashed lines in Figure~\ref{fig:hvm_mcf_cnfw} show the same MCFs depicted 
+in Fig.~\ref{fig:cc_mcf_cnfw}. The solid lines in Fig.~\ref{fig:hvm_mcf_cnfw} show MCFs for halo samples in ``matched'' halo catalogs in which the lower $\Delta$ is indicated in each panel (and depicted by the red, dashed lines). These lower 
+values of $\Delta$ are chosen to effectively remove assembly bias at large scales based on the results in Fig.~\ref{fig:cc_mcf_cnfw}, 
+$\Delta=20$ for the `Low Mass' cut, 
+$\Delta=60$ for the `Mid Mass' cut, 
+and $\Delta=200$ for the `High Mass' cut. 
 
 
-One particularly interesting result is noted in the \simB~ data. First draw your attention to the
-difference between the unmatched (dashed lines) and matched (solid lines) catalog results; this change is driven entirely by the exclusion of host halos due to a change in halo definition, as all other properties are consistent between catalogs. This is highly suggestive that most of the assembly bias signal is driven by the interaction of host halos with other nearby halos. The remaining component of the reduction of assembly bias signal is driven by an increase in noise or some more fundamental difference in how the marks are measured or mass is assigned. We look forward to probing the impact of these effects in the future.
+In comparing a pair of dashed and solid lines at the same $\Delta$ threshold in 
+Fig.~\ref{fig:hvm_mcf_cnfw}, one is comparing the MCF of all halos at that $\Delta$ threshold, to the MCF of only those halos identified in the lower threshold samples. 
+The difference between a pair of solid and dashed lines at fixed $\Delta$ is caused  entirely by the exclusion of host halos due to a change in halo definition. Notice that these solid lines show greatly reduced concentration-dependent clustering. This suggests that much of assembly bias is driven by the interactions of nearby halos and that subsuming a larger region into a halo to accommodate these interaction may be well motivated and useful. In each case, there is some residual assembly bias exhibited by the solid lines which are not all consistent with zero. The remaining component of the reduction of assembly bias signal is driven by an increase in noise or some more fundamental difference in how the marks are measured or mass is assigned. We look forward to probing the impact of these effects in the future.
 
 From Fig.~\ref{fig:hvm_mcf_cnfw}, it is apparent that some degree of assembly bias persists in the matched 
 samples. Yet, what is interesting is that a very significant fraction of the assembly bias effect has been 
