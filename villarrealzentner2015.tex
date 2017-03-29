@@ -60,7 +60,7 @@ $^{4}$Center for Astrophysics, Harvard University, Cambridge, MA}
 Recent work has shown the importance of environment to the properties of dark matter halos. This brings conflict
 to standard implementations of the halo model and excursion set theory which assume that the properties of a
 population within the halo is determined by the mass of the halo alone. We seek to find a definition of the size
-of a halo that allows us to minimize the impact of assembly bias on halo model calculations. We analyze the
+of a halo that allows us to minimize the impact of assembly bias on halo model calculations. We analyse the
 dependence on environment of our properties using the method of marked correlation functions for several
 different halo definitions, utilizing the \citet{diemer_kravtsov15} simulations. We find that the strength of assembly
 bias has a strong dependence on the measured halo mass, even when using marks normalized around fixed mass. We note that differences in halo definition, sample selection, and properties of interest can greatly impact
@@ -431,8 +431,7 @@ same physical objects are selected at each halo definition.
 \includegraphics[width=.5\textwidth]{massdeltacompare.pdf}
 \caption{
 The logarithmic difference between host halo mass for a given definition of $\Delta$ and the equivalent halo for a definition of $\Delta=200$ in logarithmic space. The blue (red, green) lines look at the ratio with respect to the values of $\Delta=340$ ($100, 50$). Error bars show one standard deviation of the distribution in that mass bin. Note that while the expectation is that the halo mass will be larger for lower values of $\Delta$, there are some differences due to differences in halo identification. 
-\arz{Several comments. First, plot $\log(M_{\Delta}/M_{200})$ because 
-$M_{200}$ is the quantity people will be familiar with. Second, you should compute these ratios from the ``matched'' catalogs! That way there is no issue of having the ratio affected by including or excluding certain halos. Third, you have to specify what the lines and errorbars are? Are they mean and scatter? Lastly, I think it is best if the x-axis is logarithmic. Most of your data is piled up against the y-axis here because that is where most of yourh halos are! A logarithmic x-axis running from $\sim 10^{11}$ to $\sim 10^{14}$ seems most sensible to me.}
+\arz{Need more x-axis labels!!!! Also, can you make a plot of  $R_{\Delta}/R_{200}$ as a function of $\Delta$?}
 }
 \label{fig:massmatch}
 \end{figure}
@@ -787,7 +786,7 @@ model observed galaxy clustering is indirect, yet suggestive. We also note that 
 appears reduced at lower masses is qualitatively in agreement with the predictions from \citet{wechsler_etal06}. 
 
 
-
+%----------- NFW match figure
 \begin{figure}
 	\centering
 	\includegraphics[width=.4\textwidth]{match_mcf_cNFW.pdf}
@@ -866,10 +865,11 @@ In each panel in Fig.~\ref{fig:hvm_mcf_cnfw}, there is some modest residual asse
 
 \subsection{Halo Definitions and the Splashback Radius}
 
-Our study is reminscent of, and indeed motivated by, much of the recent work on halo splashback radii \citep{more_etal15}. \arz{Cite Phil Mansfield's paper here as well.} Briefly, the splashback radius of a halo is intended to be the halo-centric distance that characterizes the orbital apocenters of accreted halo material. It is, therfore, a well motivated criterion for separating the halo region, within which halo interactions are clearly important, from larger scales, where halo interactions may be less important. Our perspective is to generalize this idea by identifying the importance of interactions by investigating the environment dependence of halo properties themselves (e.g., halo concentrations). 
+Our study is reminscent of, and indeed motivated by, much of the recent work on halo splashback radii \citep{more_etal15}. \arz{Cite Phil Mansfield's paper here as well.} Briefly, the splashback radius of a halo is intended to be the halo-centric distance that characterizes the orbital apocenters of accreted halo material. It is, therfore, a well motivated criterion for separating the halo region, within which halo interactions are clearly important, from larger scales, where halo interactions may be less important. Our perspective is to generalize this idea by identifying the importance of interactions by investigating the environment dependence of halo properties themselves (e.g., halo concentrations). Consequently, it is interesting to compare our results with halo splashback radii. 
 
+In Figure~\ref{fig:splashback_compare}, we show a first, broad comparison of our work with halo splashback radii. 
 
-and, indeed, our efforts were partly motivated by this work. We note that while the splashback radius methodology does seem similar in concept to our methodology, Fig. ~\ref{fig:splashback_compare} demonstrates that a one-to-one comparison between the two methods is difficult
+that a one-to-one comparison between the two methods is difficult
 at best. While both our method of halo redefinition and their determination of splashback radius seem to show a
 monotonic trend in mass, we note that our work with the lowest mass halos requires a definition of halo radius
 that substantially larger than the splashback radius method alone might suggest.
