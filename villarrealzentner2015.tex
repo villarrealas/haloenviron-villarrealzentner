@@ -729,18 +729,6 @@ capable of removing the enhanced clustering at the scales that we study, though 
 
 It should be noted that the process by which {\tt ROCKSTAR} calculates shape does inherently exclude substructure. Since subsumed host halos are identified as substructure in catalogs with lower values of $\Delta$, their mass is not included in the calculation of halo shapes. While beyond the scope of this work, it is possible that inclusion of substructure into our halo shape calculations could result in an improved reduction of assembly bias. This may merit future investigation.\asv{Or so I propose. I figure that this requires full particle data or a modification to {\tt ROCKSTAR}. It would be valuable to do, but would delay the paper more than I care to sort out in the meantime. That being said, if it does work for spin, it would be important to know about.}
 
-%------------------
-\subsubsection{Halo Spin}
-
-\arz{Spin-dependent clustering does NOT give qual	itatively the 
-same results as shape-dependent clustering. This paragraph needs 
-to be re-written. And again, in Fig.~\ref{fig:cc_mcf_spin}, the red dashed lines do not make sense to me. They are clearly NOT the best choices for the case of spin.}\asv{Some incorrect holdovers here. Fixing now.}
-The spin MCFs are shown in Figure~\ref{fig:cc_mcf_spin}. Halos that are more clustered show higher values of the spin mark than would be expected from a uniform distribution of ranks, consistent with results in the literature \citep{bett_etal07,faltenbacher_white10,lacerna_padilla12}. As with halo shape, it can be seen that the best match for halo concentration (the red-dashed lines in Figure~\ref{fig:cc_mcf_spin}) are poor fits for removing assembly bias from halo spin.\arz{Search the literature, particularly Brandon Allgood's papers and Andreas Faltenbacher whose 
-names come to mind, for spin-dependent assembly bias. I'm trying to figure out if yours is the first paper 
-to point this out.}\asv{Need to track down all the specific citations, but after changing our normalization
-method, it seems to match up better with existing texts.}
-\arz{Citations here still need to be done.}\asv{Can't find the Allgood citation for spin as first author. I'll do another pass.} However, halo spin shows a qualitative response to our methodology which is opposite from previous results. Increasing halo radii by decreasing $\Delta$ only serves to increase the impact of assembly bias in this case; effectively our newly defined halos have higher spins than average in this case. As with halo shape, one can invoke a model relating back to filamentary structure. If new material is accumulated along some preferred direction, it is not unreasonable to conclude an increased value of spin. This might enhance the impact of assembly bias as a result of our method.
-
 
 %---------------- spin MCF
 \begin{figure}
@@ -755,6 +743,19 @@ The solid lines plot the marked correlation function using halo spin as the mark
 \end{figure}
 %-------------------------------
 
+%------------------
+\subsubsection{Halo Spin}
+
+\arz{Spin-dependent clustering does NOT give qual	itatively the 
+same results as shape-dependent clustering. This paragraph needs 
+to be re-written. And again, in Fig.~\ref{fig:cc_mcf_spin}, the red dashed lines do not make sense to me. They are clearly NOT the best choices for the case of spin.}\asv{Some incorrect holdovers here. Fixing now.}
+The spin MCFs are shown in Figure~\ref{fig:cc_mcf_spin}. Halos that are more clustered show higher values of the spin mark than would be expected from a uniform distribution of ranks, consistent with results in the literature \citep{bett_etal07,faltenbacher_white10,lacerna_padilla12}. As with halo shape, it can be seen that the best match for halo concentration (the red-dashed lines in Figure~\ref{fig:cc_mcf_spin}) are poor fits for removing assembly bias from halo spin.\arz{Search the literature, particularly Brandon Allgood's papers and Andreas Faltenbacher whose 
+names come to mind, for spin-dependent assembly bias. I'm trying to figure out if yours is the first paper 
+to point this out.}\asv{Need to track down all the specific citations, but after changing our normalization
+method, it seems to match up better with existing texts.}
+\arz{Citations here still need to be done.}\asv{Can't find the Allgood citation for spin as first author. I'll do another pass.} However, halo spin shows a qualitative response to our methodology which is opposite from previous results. Increasing halo radii by decreasing $\Delta$ only serves to increase the impact of assembly bias in this case; effectively our newly defined halos have higher spins than average in this case. As with halo shape, one can invoke a model relating back to filamentary structure. If new material is accumulated along some preferred direction, it is not unreasonable to conclude an increased value of spin. This might enhance the impact of assembly bias as a result of our method.
+
+%-------------------------------------------
 \subsubsection{Subhalo Abundance}
 
 %----------------- satellite number MCF
@@ -766,7 +767,7 @@ The marked correlation function for the satellite number parameter. The solid li
 \simA \ (\simB /\simC) data set utilizing the low mass (mid mass/high mass) cutoffs. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks.}
 	\label{fig:cc_mcf_nsat}
 \end{figure}
-%-------------------------------------------------------------------------------------------
+%-------------------
 
 
 The clustering of halos as a function of the number of satellite galaxies at fixed mass is of 
@@ -776,7 +777,6 @@ typically make the assumption that the multiplicity of satellite galaxies within
 halo depends solely upon halo mass. If this assumption is violated, then the phenomenological 
 modeling of galaxy clustering can be more complicated than in these simplest scenarios.
 
-\arz{Same comments here as with spin and shape. Red dashed lines are clearly not the best choices. I don't know what you are trying to illustrate with them?}\asv{Changes made to the caption and mention in the text.}
 Figure~\ref{fig:cc_mcf_nsat} shows clustering marked by satellite number as described in 
 \S~\ref{section:methodology}. For all values of $\Delta$, halo clustering is strongly dependent 
 upon satellite occupation at all masses. We note that as we move to higher masses, the most clustered halos have higher satellite occupations. Once again we note that the halo definition that removes assembly bias from halo concentration does not serve as a good definition for satellite occupation. As with halo spin, defining halos to have larger radii (smaller 
@@ -804,11 +804,10 @@ appears reduced at lower masses is qualitatively in agreement with the predictio
 %---------------------------------------------------------------------------------------------
 
 %----------------------------
-\subsection{General}
+\subsection{Broad Conclusions}
 %----------------------------
 
-We have studied the clustering of dark matter halos as a function of halo properties other than mass. We have confirmed that for conventional halo definitions halo clustering strength is a strong function of the  ``auxiliary properties" that we studied, namely halo concentration (either measured through a fit to the NFW profile or assigned non-parametrically as the ratio of the maximum circular velocity to
-the virial velocity), halo shape, halo spin, and substructure content. These findings are consistent with the now significant literature on the subject subject of halo assembly bias. \citep{peacock_smith00, wechsler_etal02,sheth_tormen04, gao_etal05, zentner_etal05, allgood_etal06, harker_etal06, wechsler_etal06, croton_etal07, zentner07, dalal_etal08, zentner_etal14, mao_etal15, sunayama_etal16}
+We have studied the clustering of dark matter halos as a function of halo properties other than mass. We have confirmed that for conventional halo definitions halo clustering strength is a strong function of the  ``auxiliary properties" that we studied, namely halo concentration (either measured through a fit to the NFW profile or assigned non-parametrically as the ratio of the maximum circular velocity to the virial velocity), halo shape, halo spin, and substructure content. These findings are consistent with the now significant literature on the subject subject of halo assembly bias. \citep{peacock_smith00, wechsler_etal02,sheth_tormen04, gao_etal05, zentner_etal05, allgood_etal06, harker_etal06, wechsler_etal06, croton_etal07, zentner07, dalal_etal08, zentner_etal14, mao_etal15, sunayama_etal16}
 
 We have explored auxiliary property dependent halo clustering as a function of halo definition, parameterized by overdensity parameter $\Delta$. This exploration was motivated, in part, to determine whether alternative halo definitions can mitigate the dependence of halo clustering on these ``auxiliary properties." In general, we find that these alternative halo definitions do {\em not} generally mitigate the effects of assembly bias. We are led to this conclusion for two reasons. First, no single halo definition serves to mitigate auxiliary property dependent clustering for all of the auxiliary properties that we have investigated. Indeed, modified halo definitions, with low values of $\Delta$, often lead to stronger auxiliary property dependent clustering as is the case with halo spin, for example.
 
@@ -865,11 +864,30 @@ In each panel in Fig.~\ref{fig:hvm_mcf_cnfw}, there is some modest residual asse
 \end{figure}
 %-----------------------------------------------
 
-While halo shape, spin, and satellite number are not amenable to having their assembly bias mitigated through the
-simple halo redefinition technique we have suggested, the underlying reasons for this behavior remains of
-interest for exploration. In the case of halo shape, we suggest that the assembly bias may be driven through
-interactions with large scale structure. Studies have shown a statistically significant alignment between
-filaments and satellite galaxy position \citep{tempel_etal15, velliscig_etal15, shao_etal16}.
+\subsection{Halo Definitions and the Splashback Radius}
+
+
+
+This result is reminiscent of much recent work on the so-called halo ``splashback radius" \citep{more_etal15} and, indeed, our efforts were partly motivated by this work. We note that while the splashback radius methodology does seem similar in concept to our methodology, Fig. ~\ref{fig:splashback_compare} demonstrates that a one-to-one comparison between the two methods is difficult
+at best. While both our method of halo redefinition and their determination of splashback radius seem to show a
+monotonic trend in mass, we note that our work with the lowest mass halos requires a definition of halo radius
+that substantially larger than the splashback radius method alone might suggest.
+
+%-------------- splashback comparison --
+\begin{figure}
+	\centering
+	\includegraphics[width=.4\textwidth]{test_splashback.pdf}
+	\caption{A comparison of the average ratio between $r_{200}$ and the splashback radius as determined by
+	 \citet{more_etal15} (red circles) to the average ratio between $r_{200}$ and the halo radius determined as our
+	  best fit for removal of assembly bias as discussed above (blue circles). Note that the halo mass chosen for
+	  the blue points is determined by the mass cutoff in the simulation analysis, as the smallest (and most
+	  numerous) halos dominate the calculation.}
+	\label{fig:splashback_compare}
+\end{figure}
+%---------------------------------------
+
+
+
 
 Note that the mass dependence of assembly bias is implicitly explored with our suite of simulations.
 The nature of the MCFs emphasizes halos just above the threshold mass; e.g. \simA~ probes the smallest mass
@@ -938,23 +956,6 @@ Our results suggest that halo redefinition may be able to mitigate concentration
 
 Clearly, the halo definition that best mitigates concentration-dependent assembly bias must be mass dependent. Low values of $\Delta$ ($\Delta \sim 25$ with $R_{25} \sim 2R_{200}$) seem appropriate near for our lowest mass-threshold sample (with $M_{200} \ge 7 \times 10^{10} \hMsun$) whereas $\Delta \sim 200$ or slightly higher is adequate for our highest mass threshold sample (with $M_{200} \ge 4 \times 10^{12} \hMsun$). 
 
-This result is reminiscent of much recent work on the so-called halo ``splashback radius" \citep{more_etal15} and, indeed, our efforts were partly motivated by this work. We note that while the splashback radius methodology does seem similar in concept to our methodology, Fig. ~\ref{fig:splashback_compare} demonstrates that a one-to-one comparison between the two methods is difficult
-at best. While both our method of halo redefinition and their determination of splashback radius seem to show a
-monotonic trend in mass, we note that our work with the lowest mass halos requires a definition of halo radius
-that substantially larger than the splashback radius method alone might suggest.
-
-
-
-\begin{figure}
-	\centering
-	\includegraphics[width=.4\textwidth]{test_splashback.pdf}
-	\caption{A comparison of the average ratio between $r_{200}$ and the splashback radius as determined by
-	 \citet{more_etal15} (red circles) to the average ratio between $r_{200}$ and the halo radius determined as our
-	  best fit for removal of assembly bias as discussed above (blue circles). Note that the halo mass chosen for
-	  the blue points is determined by the mass cutoff in the simulation analysis, as the smallest (and most
-	  numerous) halos dominate the calculation.}
-	\label{fig:splashback_compare}
-\end{figure}
 
 %----------------------
 \section[]{Conclusions}
