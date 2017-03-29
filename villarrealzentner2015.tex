@@ -160,11 +160,20 @@ parameter, and $\rho_{\mathrm{m}}$ is the mean background mass density of the si
 halo size calculation can have a large variation depending on the choice of $\Delta$. The number chosen for
 $\Delta$ varies throughout the literature from $\Delta \approx 178$ to $\Delta \approx 340$ or higher for X-ray studies of 
 clusters. We choose to vary the size of a halo by treating the overdensity parameter as tunable, expanding the range from 
-$\Delta = 340$ to $\Delta = 20$. While this range is greater than the differences between most 
+$\Delta = 340$ to $\Delta = 20$. The impact of the choice of $\Delta$ on the mean halo size can be seen in Figure \ref{fig:radiusmatch}. While this range is greater than the differences between most 
 the common overdensity choices, this broad range enables a fairly extensive exploration of 
 environmental effects on halo properties as a function of halo definition\footnote{It is worth noting that the 
 {\tt ROCKSTAR} linking length parameter must be adjusted as $\Delta$ varies in order to ensure 
 that SO halos contain all relevant particles. The value we choose ($0.4 \hMpc$) is large enough that it works for all definitions, but it is not well-suited to computational speed.}.
+
+\begin{figure}
+\centering
+\includegraphics[width=\columnwidth]{rdeltacompare.pdf}
+\caption{
+The logarithmic difference between host halo radius for a given definition of $\Delta$ and the equivalent halo radius for a definition of $\Delta=200$ in logarithmic space. The blue (red, green) lines look at the ratio with respect to the values of $\Delta=340$ ($100, 50$). Error bars show one standard deviation of the distribution in that mass bin. Note that while the expectation is that the halo mass will be larger for lower values of $\Delta$, there are some differences due to differences in halo identification. The deviation at low mass for the $\Delta=50$ line corresponds with the edge of resolution for that value of the overdensity. 
+}
+\label{fig:radiusmatch}
+\end{figure}
 
 An additional benefit of the {\tt ROCKSTAR} software is the ability to identify substructure, commonly referred to in the
 literature as subhalos. Effectively, all density peaks are identified within the simulation and if a halo exists within the phase
@@ -413,8 +422,8 @@ same physical objects are selected at each halo definition.
 \centering
 \includegraphics[width=\columnwidth]{massdeltacompare.pdf}
 \caption{
-The logarithmic difference between host halo mass for a given definition of $\Delta$ and the equivalent halo for a definition of $\Delta=200$ in logarithmic space. The blue (red, green) lines look at the ratio with respect to the values of $\Delta=340$ ($100, 50$). Error bars show one standard deviation of the distribution in that mass bin. Note that while the expectation is that the halo mass will be larger for lower values of $\Delta$, there are some differences due to differences in halo identification. 
-\arz{Need more x-axis labels!!!! Also, can you make a plot of  $R_{\Delta}/R_{200}$ as a function of $\Delta$?}
+The logarithmic difference between host halo mass for a given definition of $\Delta$ and the equivalent halo for a definition of $\Delta=200$ in logarithmic space. The blue (red, green) lines look at the ratio with respect to the values of $\Delta=340$ ($100, 50$). Error bars show one standard deviation of the distribution in that mass bin. Note that while the expectation is that the halo mass will be larger for lower values of $\Delta$, there are some differences due to differences in halo identification. The deviation at low mass for the $\Delta=50$ line corresponds with the edge of resolution for that value of the overdensity. 
+\arz{Need more x-axis labels!!!! Also, can you make a plot of  $R_{\Delta}/R_{200}$ as a function of $\Delta$?}\asv{Added some more x labels - I may come back to this plot to improve it - it currently only has host halos matched and this may be improved on, but that is a non-trivial addition to the plot routine and I want to get the conclusion sorted.}
 }
 \label{fig:massmatch}
 \end{figure}
@@ -899,41 +908,15 @@ Both the mass dependence of concentration-dependent halo clustering and its depd
 \section[]{Conclusions}
 \label{section:conclusions}
 %----------------------
-
-We have looked at how to use CFs and MCFs in order to analyze the environmental effects upon the properties of the halo. We have suggested a method of removing the mass dependence that is not subject to the small number statistics at large halo masses. Taking our various tests, we then apply a change to the threshold density $\Delta$ in an attempt to remove the effect that environment has upon these properties. We come to the following conclusions from our simulation data.
+We have explored how a method of halo redefinition can be applied to mitigate assembly bias on halo auxilliary properties. We have tested this method across a wide range of halo masses taking the advantage of a wide range of well resolved simulations. Using both correlation function and marked correlation function (MCF) tests on these auxilliary properties, we have come to the following conclusions with regards to our halo redefinition method:
 
 \begin{itemize}
-	\item Our halo redefinition method does not cause any substantial breakdown in the ROCKSTAR halo finding
-algorithm, though this may not be the case for every halo finding methodology. This is something that should be
-considered prior to utilization of this method, unless working directly from particle data. As our initial halo
-sizes and locations are determined through spherical overdensities, it cannot be assumed that starting from a FoF
-grouping and then determining values through particle data directly will produce identical results. Similarly,
-different cosmologies may remove environmental effects at different scales.
-
-	\item When looking at the two-point correlation function, there appears to be a ``sweet spot'' that appears
-to remove environmental effects the most efficiently. Going beyond that seems to reintroduce environmental
-effects, possibly as an extreme side effect of halo exclusion.
-
-	\item For our marked correlation functions we see that both proxies of concentration that we use as marks
-show significant removal of environmental effects at large scales for similar values of the overdensity parameter
-$\Delta$. In cases where one is only interested in the concentration of dark matter halos and large scales (or
-correspondingly small values of k), this method will allow you to compensate for bias that environment could
-introduce to calculations dependent upon the halo model. This may prove valuable for calculations such as that of
-the shear power spectrum calculated through weak lensing.
-
-	\item The environmental effects on the shape of the host halo and the satellite number of the host halo
-cannot be removed regardless of the chosen redefinition of $\Delta$. We propose that this may be intrinsically
-tied to the nature of the filaments, whose effects cannot be removed by a simple redefinition of the halo radius.
-
-	\item This method is definitively related to the mass of the halos that are being observed. Furthermore, it
-appears that the majority of the reduction in assembly bias is tied to the exclusion of halos from the catalog as
-a result of being subsumed into larger halos. This information does not seem to be contradictory; it can be
-intuitively understood that the region about the most massive halos will be different than the region around the
-least massive halos, leading to a different frequency at which halos are being excluded. It does however warrant
-that careful consideration be given to the sample of halos that are of interest.
-
-	\item The selection of halo size is intrinsically related to the assembly bias and varies across scales. This
-might help to resolve contradictory results in the search for halo assembly bias in the literature.
+    \item The auxiliary property of halo concentration shows the most promise for having the impact of halo assembly bias mitigated. The increase in halo size (or decrease of $\Delta$) reduces the impact of halo assembly bias. Figure \ref{fig:hvm_mcf_cnfw} strongly suggests that our method accomplishes this mitigation by the exclusion of halos from the catalog. However, there is no mass-independent definition to this halo redefinition: a definition of $\Delta=20$ that mitigates assembly bias at low masses in fact induces assembly bias of opposite sign (e.g., clustered halos have preferentially smaller concentrations) at high masses.
+    \item The auxiliary property of halo shape would require an extreme halo definition to remove assembly bias that we consider the method infeasible. This may be suggestive that environmental effects impacting halo shape are driven on much larger scales than the halo.
+    \item The auxiliary property of halo spin demonstrates an increased assembly bias with halo redefinition. This result is consistent with our expectations for increasing the size of halos inside of large-scale structure.
+    \item The auxiliary property of halo occupation likewise shows no improvement with change of halo definition. We propose a toy model by which halos in high density environments preferentially would accumulate more substructure due to an increase in halo size, which may drive this result.
+    \item We note that though similarities exist between our methodology and recent studies \citep{more_etal15} focusing on implementation of a ``splashback radius'', there is no clear connection between our best fit values of $\Delta$ and the splashback radius at this time. This remains an exploration for future work.
+    \item We show that the bias ratio on large scales is dependent on both halo definition and halo mass. Comparison between different works in the literature is difficult without taking into account the impact of this.
 \end{itemize}
 
 This methodology, while certainly not perfect in accounting for assembly bias, may be of significance when
