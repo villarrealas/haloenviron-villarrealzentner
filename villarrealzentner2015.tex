@@ -105,7 +105,7 @@ and more complex models \citep{gilmarin_etal11, hearin_etal16} are necessary.
 
 
 In this work, we explore the possibility of simplifying halo occupation modelling, at least for some 
-applications, by altering the definition of a halo. \bdr{This is purely a matter of taste, but I would say ``definition of halo boundary''. We're not really changing the definition of what a halo is...} Though motivated broadly by spherical collapse \citep{gunn_gott72, fillmore_goldreich84, ryden_gunn87, lacey_cole93, eke_etal96, mota_vandebruck04, pace_etal10}, specific halo definitions have become a matter of convention that vary considerably in the literature. Many authors define halos using a friends-of-friend (FoF) algorithm applied to the particle distribution \citep{davis_etal85, knebe_etal11}. More often, authors define halos by spherical overdensity (SO) regions within which the mean density exceeds a particular threshold \citep{knebe_etal11}. \bdr{Need older citations, e.g. Cole and Lacey 96. Otherwise it looks like SO was invented in 2011 ;)} The threshold used varies significantly. With respect to the mean density of the universe, commonly used thresholds are 178, 180, 200, and $\sim$340 times the mean background density, the last of these being the ``virial'' overdensity in a concordance $\Lambda$CDM universe.\bdr{Citations, e.g. Gunn and Gott, Lacey and Cole 93} Many authors define halos by an overdensity of 200 with respect to the critical density of the universe. This corresponds to $\Delta \approx 625$ with respect to the mean density in a concordance cosmological model. Significantly higher values of the overdensity parameter are often used in studies of X-ray emission from cluster-sized halos.\bdr{It would be good to say a little about why people are using these definitions. Virial is ``theoretically motivated'', 200c is an approximation to virial at high z, and cluster observations cover only very small radii and thus large overdensities.}
+applications, by altering the definition of halo boundary. \bdr{This is purely a matter of taste, but I would say ``definition of halo boundary''. We're not really changing the definition of what a halo is...} Though motivated broadly by spherical collapse \citep{gunn_gott72, fillmore_goldreich84, ryden_gunn87, lacey_cole93, eke_etal96, mota_vandebruck04, pace_etal10}, specific halo definitions have become a matter of convention that vary considerably in the literature. Many authors define halos using a friends-of-friend (FoF) algorithm applied to the particle distribution \citep{davis_etal85, knebe_etal11}. More often, authors define halos by spherical overdensity (SO) regions within which the mean density exceeds a particular threshold \citep{knebe_etal11}. \bdr{Need older citations, e.g. Cole and Lacey 96. Otherwise it looks like SO was invented in 2011 ;)} The threshold used varies significantly. With respect to the mean density of the universe, commonly used thresholds are 178, 180, 200, and $\sim$340 times the mean background density, motivated by spherical collapse models for different cosmologies	.\bdr{Citations, e.g. Gunn and Gott, Lacey and Cole 93} Many authors define halos by an overdensity of 200 with respect to the critical density of the universe, motivated as an approximation to the virial radius at high redshift. This corresponds to $\Delta \approx 625$ with respect to the mean density in a concordance cosmological model. Significantly higher values of the overdensity parameter are often used in studies of X-ray emission from cluster-sized halos, where observations only cover very small radii and correspondingly large overdensities.\bdr{It would be good to say a little about why people are using these definitions. Virial is ``theoretically motivated'', 200c is an approximation to virial at high z, and cluster observations cover only very small radii and thus large overdensities.}
 
 
 Our work is an attempt to exploit halo definition to work for the 
@@ -124,7 +124,7 @@ greatly mitigated. However, the definitions which mitigate concentration-based a
 for a traditional overdensity definition of $\Delta \approx 200$, 
 while low-mass halos ($\sim 10^{11}\, h^{-1}\mathrm{M}_{\odot}$) require 
 $\Delta \approx 20$. Any mitigation strategy must be complex and mass dependent, as might be expected given the mass dependence of the assembly bias effect \citep{wechsler_etal06}. 
-We find that we cannot mitigate the assembly bias of halos selected by properties other than concentration, such as halo spin, halo shape, and number of satellite halos. These results suggest that any mitigation scheme will likely be quite complex if it all practical. \arz{I plan to add something here after I complete my run through the paper.}
+We find that we cannot mitigate the assembly bias of halos selected by properties other than concentration, such as halo spin or halo shape. These results suggest that any mitigation scheme will likely be quite complex if it all practical. \arz{I plan to add something here after I complete my run through the paper.}
 
  
 In \S~\ref{section:data} of this paper, we discuss the cosmological simulations and halo finders
@@ -148,9 +148,9 @@ of halo definition impacts measures of assembly bias. In
 
 
 In order to study the effects of halo redefinition, we use three cosmological $N$-body simulations of structure
-formation. The \citet{diemer_kravtsov15} simulations each utilize a Planck best-fit cosmology with $\Om = 0.32$, $\Ol = 0.68$, and $h_0 = 0.67$. We use three simulation boxes with comoving box lengths of 125, 250, and 500
+formation. The three \citet{diemer_kravtsov15} simulations we choose for our analysis each utilize a Planck best-fit cosmology with $\Om = 0.32$, $\Ol = 0.68$, and $h_0 = 0.67$. We use three simulation boxes with comoving box lengths of 125, 250, and 500
 $\hMpc$ respectively.\bdr{This makes it sound like all of our simulations used the planck cosmology, though the majority didn't. I'd say something like ``we use some of the DK15 simulations, namely those of the planck cosmology...''} The particle masses are $1.6 \times 10^8$, $1.3 \times 10^9$, and $1.0 \times 10^{10}
-\hMsun$ respectively, implying a total of $1024^3$ particles in each simulation. \bdr{this is correct, but sounds funny: one choose a resolution which then determines the particle mass, not the other way round} The three
+\hMsun$ respectively, for the total of $1024^3$ particles in each simulation. \bdr{this is correct, but sounds funny: one choose a resolution which then determines the particle mass, not the other way round} The three
 simulations have force softening scales of $2.4$, $5.8$, and $14 \hkpc$. We refer to each simulation as
 \simA, \simB, or \simC~  for the remainder of the paper. This set of simulations allows us to probe the
 resolution effects inherent in halo finding (due to the varying resolutions of the simulations) and to probe the
@@ -199,7 +199,7 @@ two definitions of halo concentration. The first stems from a fit of the spheric
 halo density profile, $\rho(r)$, to a \citet{navarro_etal97} (hereafter, NFW) density profile, 
 %
 \beq
-\rho(r) = \frac{\rho_0}{\frac{r}{r_{\mathrm{s}}}(1+\frac{r}{r_{\mathrm{s}}})^2},
+\rho(r) = \frac{\rho_0}{\frac{r}{r_{\mathrm{s}}}\left(1+\frac{r}{r_{\mathrm{s}}}\right)^2},
 \eeq
 %
 \bdr{pedantic comment: the brackets in the above equation will look better if yuo use the right and left latex math commands.}where the density scale, $\rho_0$, and the scale radius, $r_{\mathrm{s}}$, are parameters 
@@ -334,10 +334,10 @@ s = \frac{c}{a}.
 %
 The halo shapes we used were measured with {\tt ROCKSTAR} by calculating the mass distribution tensor,
 \beq
-M_{ij}=\frac{1}{N}\sum\limits_{N}x_i x_j,
+M_{ij}=\frac{1}{N}\sum\limits_{N}\frac{x_i x_j}{r_{ij}^2},
 \eeq
 for
-all particles within the halo radius, including particles associated with identified substructure. The sorted eigenvalues of the matrix represent
+all particles within the halo radius, including particles associated with identified substructure, where $x_i$ is the position from the halo center along a given axis and $r_{ij}$ is the distance between the particle and the halo center and weights the overall calculation. The sorted eigenvalues of the matrix represent
 the squares of the principal ellipsoid axes, where $a > b > c$. The mean relations for halo shapes as a function of halo mass for $\Delta=200$ are shown in Figure~\ref{fig:srelation} along with the mass 
 thresholds used to ensure that our results are not compromised by 
 resolution.
@@ -457,13 +457,9 @@ the mass cut chosen for the shape parameter analyses. The latter require higher 
 Cutoff Name &  $\Delta=340$ & $\Delta=200$ & $\Delta=100$ & $\Delta=75$ & $\Delta=50$ & $\Delta=20$ \\
 \hline
 \vspace*{2pt}
-{low mass} & $6 \times 10^{10}$ & $7 \times 10^{10}$ & $8 \times 10^{10}$ & $9 \times 10^{10}$ & $1 \times 10^{11}$ & $2 \times 10^{11}$  \\ \vspace*{4pt}
-{low mass-shape} & $2 \times 10^{11}$ & $2 \times 10^{11}$ & $2 \times 10^{11}$ & $2 \times 10^{11}$ & $2 \times 10^{11}$ & $2 \times 10^{11}$ \\
-{mid mass} & $6 \times 10^{11}$ & $7 \times 10^{11}$ & $8 \times 10^{11}$ & $9 \times 10^{11}$ & $2 \times 10^{12}$ & {N/A} \\ \vspace*{4pt}
-{mid mass-shape} & $2 \times 10^{12}$ & $2 \times 10^{12}$ & $2 \times 10^{12}$ & $2 \times 10^{12}$ & $2 \times 10^{12}$ & {N/A} \\
-{high mass} & $3 \times 10^{12}$ & $4 \times 10^{12}$ & $5 \times 10^{12}$ & $6 \times 10^{12}$ & $7 \times 10^{12}$ & {N/A} \\ \vspace*{2pt}
-{high mass-shape} & $1 \times 10^{13}$ & $1 \times 10^{13}$ & $1 \times 10^{13}$ & $1 \times 10^{13}$ & $1 \times 10^{13}$ & {N/A} \\
-\hline
+{low mass} & $1.67 \times 10^{11}$ & $1.83 \times 10^{11}$ & $1.94 \times 10^{11}$ & $1.97 \times 10^{11}$ & $2 \times 10^{11}$ & $2.03 \times 10^{11}$  \\ \vspace*{4pt}
+{mid mass} & $6.49 \times 10^{11}$ & $7.1 \times 10^{11}$ & $7.55 \times 10^{11}$ & $7.66 \times 10^{11}$ & $7.77 \times 10^{11}$ & {N/A} \\ \vspace*{4pt}
+{high mass} & $3.71 \times 10^{12}$ & $4.06 \times 10^{12}$ & $4.31 \times 10^{12}$ & $4.38 \times 10^{12}$ & $4.44 \times 10^{12}$ & {N/A} \\
 \hline \\
 \end{tabular}
 \label{table:thresholds}
@@ -501,17 +497,6 @@ we take all host halos more massive than our minimum mass thresholds and sort th
 their halo masses, $M_{\Delta}$. We place these halos into twenty logarithmically-spaced bins 
 of halo mass, ensuring that no bin has fewer than 10 halos\footnote{This is not true for the most massive bins which are limited to very rare objects. These have little statistical value and do not impact our results.}. 
 We then calculate the rank of each auxiliary property within the bin of halo mass, from 1 to N, where N is the number of halos assigned to a given bin. If multiple halos share auxiliary property values (e.g. rank 2 and 3 have the same halo shape), then the average value of the rank is assigned to each halo (e.g. 2.5 to each). We normalize the rank distribution to be between 0 and 1 by dividing out the number of halos in the bin, resulting in a uniform distribution of ranks. This removes the strong mass trend in each of these properties. We use these normalized ranks of halo auxiliary properties to study halo clustering strength in the remainder of this work. We have experimented with different bin sizes and find that our qualitative results are not sensitive to the chosen number of bins. Furthermore, the choice of equally populated bins versus evenly spaced bins makes no significant difference to our results.
-
-In addition to the properties of the host halos described in the previous section, we also study the strength of halo clustering as a function of subhalo number. Host halo size and the number of satellite halos (above some threshold in a proxy of satellite halo size) 
-are also strongly correlated. Roughly speaking, the number of satellite halos above a fixed size threshold grows in approximate proportion to host halo mass \citep{kravtsov_etal04, zentner_etal05}.
-
-To account for the correlation between halo mass and abundance of subhalos, we follow the prescription of \citet{wechsler_etal06}. We first select all subhalos from the sample
-that meet the criterion that the ratio $V_{\mathrm{max,sub}}/V_{\mathrm{max,host}} \ge 0.3$, where
-$V_{\mathrm{max,sub}}$ and $V_{\mathrm{max,host}}$ are the maximum circular velocities of the subhalos and host halos respectively.
-This choice of scaling exploits the fact that the subhalo velocity function is a very nearly self-similar function \citep{zentner_etal05,mao_etal15}
-so that the scaling eliminates the gross mass dependence of satellite number.
-In addition, this choice of threshold will mean that for subhalos above the resolution threshold of the simulation, there shall be of order a few satellite halos per host on average. We then choose
-a threshold for the host maximum circular velocity such that all subhalos are well-resolved in the simulation volumes: $135, 235$, and $400 \mathrm{km \ s^{-1}}$ for \simA, \simB, and \simC~ respectively. Subhalo maximum circular velocities were used as a proxy for subhalo size rather than subhalo masses because subhalo maximum circular velocities can be more robustly measured from simulation data, making comparison to other work easier. Once these cuts have been applied, we again divide the halos that meet these cutoffs into logarithmic bins of halo mass and follow the same procedure for auxiliary halo properties outlined above. \arz{Now that you use ranks, this means you are ``doubly'' removing the mass dependence. This is OK. It just may not be necessary now that you have moved to using ranks.}\asv{Probably not necessary, though it does serve as an informed cut on minimum subhalo mass, so I will leave it in.}
 
 %---------------------------------------------------------------
 \subsection{Clustering Statistics}
@@ -575,18 +560,18 @@ Furthermore, it is clear that the strength and sign of assembly bias due to NFW 
 strongly mass dependent for any fixed halo definition, a result that also agrees with the significant 
 previous literature on halo assembly bias using conventional halo definitions 
 \citep{wechsler_etal02, gao_etal05, zentner07, wechsler_etal06, harker_etal06, croton_etal07, dalal_etal08, mao_etal15, sunayama_etal16}.
-At relatively low mass (the low-mass panel, $M_{200} > 7 \times 10^{10} \hMsun$), 
+At relatively low mass (the low-mass panel, $M_{200} > 1.83 \times 10^{11} \hMsun$), 
 high-concentration halos are considerably more strongly clustered than low-concentration halos using the more 
 conventional $\Delta = 200$ definition for halos. At somewhat higher halo masses 
-(e.g., the mid-mass panel, $M_{200} > 7 \times 10^{11} \hMsun$), this difference is markedly reduced. 
+(e.g., the mid-mass panel, $M_{200} > 7.1 \times 10^{11} \hMsun$), this difference is markedly reduced. 
 Finally, for the highest-mass halos that we have the capability of studying (the high-mass panel, 
-$M_{200} > 4 \times 10^{12} \hMsun$), the effect is weaker and also of opposite sign; 
+$M_{200} > 4.06 \times 10^{12} \hMsun$), the effect is weaker and also of opposite sign; 
 low-concentration halos are more strongly clustered than high-concentration halos.
 
 Focus, for example, on the middle panel of Fig.~\ref{fig:cc_cfcompare}. In this panel, 
 corresponding to the mid-mass threshold, the difference in large-scale clustering between 
 high- and low-concentration halos is dramatically reduced for a halo definition with 
-$\Delta \approx 60$ as compared to a more traditional halo definition, such as $\Delta=200$. 
+$\Delta \approx 40$ as compared to a more traditional halo definition, such as $\Delta=200$. 
 However, further decreasing $\Delta$ leads to concentration-dependent clustering of opposite sign. 
 Both the strength and the sense of halo assembly bias depend upon halo definition! This is a 
 point that may seem somewhat obvious in retrospect, but does not seem to be addressed 
@@ -670,7 +655,7 @@ Fig.~\ref{fig:cc_cfcompare}: more concentrated halos are significantly more clus
 the low-mass cut L0125 halo sample; concentration-dependent halo clustering weakens and 
 reverses sense as halo mass increases (at fixed $\Delta$), 
 consistent with work on assembly bias \citep{wechsler_etal06,sunayama_etal16}; for the 
-mid-mass cut L0250 sample with $\Delta=60$, the large-scale concentration dependence of halo clustering has been reduced so as to 
+mid-mass cut L0250 sample with $\Delta=40$, the large-scale concentration dependence of halo clustering has been reduced so as to 
 be consistent with zero within the statistical limitations of the simulation. 
 
 Figure~\ref{fig:cc_mcf_cV} is a similar plot for the MCF of the velocity-ratio concentration, $c_{\mathrm{V}}$. 
@@ -735,42 +720,12 @@ The solid lines plot the marked correlation function using halo spin as the mark
 %------------------
 \subsubsection{Halo Spin}
 
-The spin MCFs are shown in Figure~\ref{fig:cc_mcf_spin}. Halos that are more clustered show higher values of the spin mark than would be expected from a uniform distribution of ranks, consistent with results in the literature \citep{bett_etal07,faltenbacher_white10,lacerna_padilla12}. Further, halos of higher mass show stronger spin-driven assembly bias; for the least massive halos ($M_{200} > 7\times10^{10}\hMsun$) we see that $\Delta=340$ has minimal assembly bias, while higher mass bins would demand significantly higher $\Delta$. As with halo shape, it can be seen that the best matches for halo concentration (the red-dashed lines in Figure~\ref{fig:cc_mcf_spin}) are poor fits for removing assembly bias from halo spin.\arz{Search the literature, particularly Brandon Allgood's papers and Andreas Faltenbacher whose 
+The spin MCFs are shown in Figure~\ref{fig:cc_mcf_spin}. Halos that are more clustered show higher values of the spin mark than would be expected from a uniform distribution of ranks, consistent with results in the literature \citep{bett_etal07,faltenbacher_white10,lacerna_padilla12}. Further, halos of higher mass show stronger spin-driven assembly bias; for the least massive halos ($M_{200} > 1.83 \times10^{11}\hMsun$) we see that $\Delta=340$ has minimal assembly bias, while higher mass bins would demand significantly higher $\Delta$. As with halo shape, it can be seen that the best matches for halo concentration (the red-dashed lines in Figure~\ref{fig:cc_mcf_spin}) are poor fits for removing assembly bias from halo spin.\arz{Search the literature, particularly Brandon Allgood's papers and Andreas Faltenbacher whose 
 names come to mind, for spin-dependent assembly bias. I'm trying to figure out if yours is the first paper 
 to point this out.}\asv{Need to track down all the specific citations, but after changing our normalization
 method, it seems to match up better with existing texts.}
 \arz{Citations here still need to be done.}\asv{Can't find the Allgood citation for spin as first author. I'll do another pass.} However, halo spin shows a qualitative response to our methodology opposite from that of halo concentration or halo shape. Increasing halo radii by decreasing $\Delta$ only serves to increase the impact of assembly bias in this case; effectively our newly defined halos have higher spins than average in this case. As with halo shape, one can invoke a model relating back to filamentary structure. If new material is accumulated along some preferred direction, it is not unreasonable to conclude an increased value of spin. This might enhance the impact of assembly bias as a result of our method.
 
-%-------------------------------------------
-\subsubsection{Subhalo Abundance}
-
-%----------------- satellite number MCF
-\begin{figure}
-	\centering
-	\includegraphics[width=.4\textwidth]{all_mcf_nsat.pdf}
-	\caption{
-The marked correlation function for the satellite number parameter. The solid lines plot the marked correlation function using halo satellite number as the mark. In each plot the lines correspond to different values of $\Delta$, with dark blue (light blue) corresponding to $\Delta = 340$ ($\Delta = 50$). The red dashed line corresponds to the overdensity chosen for matching as possibly removing assembly bias on most scales for halo concentration. The top (middle/bottom) panel shows the results for the
-\simA \ (\simB /\simC) data set utilizing the low mass (mid mass/high mass) cutoffs. The shaded bands represent 2-sigma confidence regions generated by randomization of the marks. \yao{see my comment on Fig.~\ref{fig:cc_mcf_s}}}
-	\label{fig:cc_mcf_nsat}
-\end{figure}
-%-------------------
-
-
-The clustering of halos as a function of the number of satellite galaxies at fixed mass is of 
-particular practical interest. Efforts to model survey data on the large-scale galaxy distribution, 
-such as the halo occupation distribution (HOD) or conditional luminosity function (CLF) formalisms 
-typically make the assumption that the multiplicity of satellite galaxies within a host dark matter 
-halo depends solely upon halo mass. If this assumption is violated, then the phenomenological 
-modeling of galaxy clustering can be more complicated than in these simplest scenarios.
-
-Figure~\ref{fig:cc_mcf_nsat} shows clustering marked by subhalo abundance as described in 
-\S~\ref{section:methodology}. For all values of $\Delta$, halo clustering is strongly dependent 
-upon subhalo abundance at all masses. We note that as we move to higher masses, the most clustered halos have higher satellite occupations. The lowest masses ($M_{200} > 7\times10^{10}\hMsun$) show little assembly bias for definitions such as $\Delta = 340 \sim 200$, but higher mass halos ($M_{200} > 4\times10^{12}\hMsun$) require higher values of $\Delta$. Once again we note that the halo definition that removes assembly bias from halo concentration does not serve as a good definition for satellite occupation. As with halo spin, defining halos to have larger radii (smaller 
-$\Delta$) generally makes the environmental dependence of halo clustering more 
-significant. Of course, our results pertain to satellite halos, or subhalos, rather than 
-satellite galaxies, so the connection to observations and how one might 
-model observed galaxy clustering is indirect, yet suggestive. We note that the fact that the clustering
-appears reduced at lower masses is qualitatively in agreement with the predictions from \citet{wechsler_etal06}. 
 
 
 %----------- NFW match figure
@@ -783,7 +738,6 @@ appears reduced at lower masses is qualitatively in agreement with the predictio
 \end{figure}
 
 
-
 %---------------------------------------------------------------------------------------------
 \section{Discussion}
 \label{section:discussion}
@@ -793,13 +747,13 @@ appears reduced at lower masses is qualitatively in agreement with the predictio
 \subsection{Broad Conclusions}
 %----------------------------
 
-We have studied the clustering of dark matter halos as a function of halo properties other than mass. We have confirmed that for conventional halo definitions halo clustering strength is a strong function of the  ``auxiliary properties'' that we studied, namely halo concentration (either measured through a fit to the NFW profile or assigned non-parametrically as the ratio of the maximum circular velocity to the virial velocity), halo shape, halo spin, and substructure content. These findings are consistent with the now significant literature on the subject subject of halo assembly bias. \citep{peacock_smith00, wechsler_etal02,sheth_tormen04, gao_etal05, zentner_etal05, allgood_etal06, harker_etal06, wechsler_etal06, croton_etal07, zentner07, dalal_etal08, zentner_etal14, mao_etal15, sunayama_etal16}
+We have studied the clustering of dark matter halos as a function of halo properties other than mass. We have confirmed that for conventional halo definitions halo clustering strength is a strong function of the  ``auxiliary properties'' that we studied, namely halo concentration (either measured through a fit to the NFW profile or assigned non-parametrically as the ratio of the maximum circular velocity to the virial velocity), halo shape, and halo spin. These findings are consistent with the now significant literature on the subject subject of halo assembly bias. \citep{peacock_smith00, wechsler_etal02,sheth_tormen04, gao_etal05, zentner_etal05, allgood_etal06, harker_etal06, wechsler_etal06, croton_etal07, zentner07, dalal_etal08, zentner_etal14, mao_etal15, sunayama_etal16}
 
 We have explored auxiliary property dependent halo clustering as a function of halo definition, parameterized by overdensity parameter $\Delta$. This exploration was motivated, in part, to determine whether alternative halo definitions can mitigate the dependence of halo clustering on these ``auxiliary properties.'' In general, we find that these alternative halo definitions do {\em not} generally mitigate the effects of assembly bias. We are led to this conclusion for two reasons. First, no single halo definition serves to mitigate auxiliary property dependent clustering for all of the auxiliary properties that we have investigated. Indeed, modified halo definitions, with low values of $\Delta$, often lead to stronger auxiliary property dependent clustering as is the case with halo spin, for example.
 
-Second, the halo definitions that mitigate assembly bias are strongly halo mass dependent. In the case of halo concentration, which we examine in the most detail, assembly bias is strongly mitigated for halo definitions of $\Delta \approx 20$, $\Delta \approx 60$, and $\Delta \approx 200$ for halos in our $M \geq 6 \times 10^{10} \hMsun$, $M \geq 6 \times 10^{10} \hMsun$, and $M \geq 3 \times 10^{12} \hMsun$ mass threshold samples respectively. Of course, this mass dependence may not be surprising given the well-known mass dependence of assembly bias. These two observations together suggest that it may well be possible to mitigate assembly bias for a single halo property (e.g., concentration) by using a mass-dependent halo definition. We discuss the particular case of concentration-dependent clustering further below.
+Second, the halo definitions that mitigate assembly bias are strongly halo mass dependent. In the case of halo concentration, which we examine in the most detail, assembly bias is strongly mitigated for halo definitions of $\Delta \approx 20$, $\Delta \approx 40$, and $\Delta \approx 250$ for halos in our $M \geq 1.83 \times 10^{11} \hMsun$, $M \geq 7.1 \times 10^{11} \hMsun$, and $M \geq 4.06 \times 10^{12} \hMsun$ mass threshold samples respectively. Of course, this mass dependence may not be surprising given the well-known mass dependence of assembly bias. These two observations together suggest that it may well be possible to mitigate assembly bias for a single halo property (e.g., concentration) by using a mass-dependent halo definition. We discuss the particular case of concentration-dependent clustering further below.
 
-Our work emphasizes the important dependence of halo assembly bias upon halo definition, which is not yet widely appreciated. In each of Figures \ref{fig:cc_mcf_cnfw} through \ref{fig:cc_mcf_nsat}, the strength of assembly bias is a strong function of halo definition. This definition dependence is not restricted to extreme choices of the overdensity parameter $\Delta$. The difference in the strength of assembly bias between a ``virial'' halo definition, with $\Delta=340$, and a definition with $\Delta=200$ is considerable. Likewise, defining halos using an overdensity of 200 relative to the critical density, corresponding roughly to $\Delta \approx 625$ in our notation, also leads to significant, quantitative differences in the strength of assembly bias. Indeed, distinct halo definitions may even lead to assembly bias of opposite sense. For example, at fixed halo mass, higher concentration halos may be more strongly clustered by one halo definition and more weakly clustered by another. It is interesting to consider that some of the variety of results pertaining to the strength of assembly bias in the literature may be partly induced by the different halo definitions used by different authors.
+Our work emphasizes the important dependence of halo assembly bias upon halo definition, which is not yet widely appreciated. In each of Figures \ref{fig:cc_mcf_cnfw} through \ref{fig:cc_mcf_spin}, the strength of assembly bias is a strong function of halo definition. This definition dependence is not restricted to extreme choices of the overdensity parameter $\Delta$. The difference in the strength of assembly bias between a ``virial'' halo definition, with $\Delta=340$, and a definition with $\Delta=200$ is considerable. Likewise, defining halos using an overdensity of 200 relative to the critical density, corresponding roughly to $\Delta \approx 625$ in our notation, also leads to significant, quantitative differences in the strength of assembly bias. Indeed, distinct halo definitions may even lead to assembly bias of opposite sense. For example, at fixed halo mass, higher concentration halos may be more strongly clustered by one halo definition and more weakly clustered by another. It is interesting to consider that some of the variety of results pertaining to the strength of assembly bias in the literature may be partly induced by the different halo definitions used by different authors.
 
 
 %------------------------------------------------
@@ -826,15 +780,15 @@ distances ($r \gtrsim R_{200}$) halo profiles are known to deviate
 from the NFW form. It may be possible to reduce assembly bias by redefinitions if one probes scales on which halos deviate from NFW in a way that is not well correlated with the interior structure of the halo (particularly the location of the NFW scale radius); however, such a reduction in assembly bias is of limited practicality because it arises from characterizing a halo by a quantity that is less informative about its interior structure. Of course, it is worth noting that the velocity-defined concentration $c_{\rm V}$ is a non-parametric measure of concentration and should be less subject to such effects. 
 
 We can explore in more detail the degree to which the mitigation of environmental effects by halo redefinition are due to introducing noise 
-that is uncorrelated with environment into the measurement of halo properties. We proceed as follows. All host halos that are found in the halo catalogs constructed from lower values of $\Delta$ (e.g., $\Delta=60$) are also present as host halos in the halo catalogs constructed with all higher values of threshold density (e.g., $\Delta=200>60$). The converse is not true because lowering $\Delta$ increases halo radii so that host halos at higher values of $\Delta$ may become subhalos at lower values of $\Delta$\footnote{Indeed, this is largely the motivation for exploring various $\Delta$!}. Therefore, we consider the clustering of only those host halos that exist in a higher $\Delta$ catalog as well as a lower $\Delta$ catalog. As a matter of clarification, an example is to consider the clustering of the subset of host halos identified within the the $\Delta=200$ catalog (and with all properties assigned to a conventional $\Delta=200$ halo), that also exist within a $\Delta=60$ catalog. Those host halos that {\em do not} exist in the $\Delta=60$ catalog are precisely those halos that have been subsumed by the larger halo radii in this case and thus been classified as subhalos. This achieves the goal of redefining halos by the lower $\Delta$ threshold ($\Delta=60$ in this example), but eliminates that fact that the properties we are studying are also defined differently in the lower $\Delta$ catalog, because we are studying their clustering as a function of the properties defined in the higher $\Delta$ ($\Delta=200$ in this example) catalog. We refer to samples constructed in this way as ``matched'' halo samples between two values of threshold overdensity $\Delta$. 
+that is uncorrelated with environment into the measurement of halo properties. We proceed as follows. All host halos that are found in the halo catalogs constructed from lower values of $\Delta$ (e.g., $\Delta=40$) are also present as host halos in the halo catalogs constructed with all higher values of threshold density (e.g., $\Delta=200>40$). The converse is not true because lowering $\Delta$ increases halo radii so that host halos at higher values of $\Delta$ may become subhalos at lower values of $\Delta$\footnote{Indeed, this is largely the motivation for exploring various $\Delta$!}. Therefore, we consider the clustering of only those host halos that exist in a higher $\Delta$ catalog as well as a lower $\Delta$ catalog. As a matter of clarification, an example is to consider the clustering of the subset of host halos identified within the the $\Delta=200$ catalog (and with all properties assigned to a conventional $\Delta=200$ halo), that also exist within a $\Delta=40$ catalog. Those host halos that {\em do not} exist in the $\Delta=40$ catalog are precisely those halos that have been subsumed by the larger halo radii in this case and thus been classified as subhalos. This achieves the goal of redefining halos by the lower $\Delta$ threshold ($\Delta=40$ in this example), but eliminates that fact that the properties we are studying are also defined differently in the lower $\Delta$ catalog, because we are studying their clustering as a function of the properties defined in the higher $\Delta$ ($\Delta=200$ in this example) catalog. We refer to samples constructed in this way as ``matched'' halo samples between two values of threshold overdensity $\Delta$. 
 
 
 The dashed lines in Figure~\ref{fig:hvm_mcf_cnfw} show the same MCFs depicted 
 in Fig.~\ref{fig:cc_mcf_cnfw}. The solid lines in Fig.~\ref{fig:hvm_mcf_cnfw} show MCFs for halo samples in ``matched'' halo catalogs in which the lower $\Delta$ is indicated in each panel (and depicted by the red, dashed lines). These lower 
 values of $\Delta$ are chosen to effectively remove assembly bias at large scales based on the results in Fig.~\ref{fig:cc_mcf_cnfw}, 
 $\Delta=20$ for the `Low Mass' cut, 
-$\Delta=60$ for the `Mid Mass' cut, 
-and $\Delta=200$ for the `High Mass' cut. 
+$\Delta=40$ for the `Mid Mass' cut, 
+and $\Delta=250$ for the `High Mass' cut. 
 
 In comparing a pair of dashed and solid lines at the same $\Delta$ threshold in Fig.~\ref{fig:hvm_mcf_cnfw}, one is comparing the MCF of all halos at that $\Delta$ threshold, to the MCF of only those halos identified in the lower threshold samples. The difference between a pair of solid and dashed lines at fixed $\Delta$ is caused entirely by the exclusion of some halos from the lower $\Delta$ catalog due to a change in halo definition. Notice that the solid lines exhibit greatly reduced concentration-dependent clustering. Selecting particular halos as hosts eliminates a large contribution to concentration-dependent clustering. Fig.~\ref{fig:hvm_mcf_cV} displays analogous results for the velocity-defined concentration parameter $c_{\rm V}$. These results suggest that much of concentration-dependent clustering is driven by the interactions of nearby halos. They also suggest that subsuming larger regions into halo definitions to accommodate these interactions may be well motivated and practically useful in the context of halo occupation models. It may even be possible to optimize halo definitions for specific applications. 
 
@@ -905,10 +859,9 @@ Both the mass dependence of concentration-dependent halo clustering and its depd
 %----------------------
 We have explored how halo redefinition can be applied to mitigate assembly bias on auxiliary halo properties. We have tested this method across a wide range of halo masses taking advantage of the \citet{diemer_kravtsov15} simulation suite. Using both correlation functions and marked correlation functions (MCFs), we test how auxiliary halo properties drive halo assembly bias. We draw attention to the following conclusions:
 \begin{itemize}
-    \item The auxiliary property of halo concentration \bdr{awkward phrasing... I'd just say concentration} shows the most promise for assembly bias mitigation. Halo redefinition reduces the impact of halo assembly bias. Figure \ref{fig:hvm_mcf_cnfw} strongly suggests that our method accomplishes this mitigation through the exclusion of halos from the catalog \bdr{...by making them subhalos}. However, there is no mass-independent definition to this halo redefinition: a definition of $\Delta=20$ that mitigates assembly bias at low masses ($M_{200} > 7\times10^{10}\hMsun$) in fact induces assembly bias of opposite sign (e.g., clustered halos have preferentially smaller concentrations) at high masses ($M_{200} > 4\times10^{12}\hMsun$).
+    \item The auxiliary property of halo concentration \bdr{awkward phrasing... I'd just say concentration} shows the most promise for assembly bias mitigation. Halo redefinition reduces the impact of halo assembly bias. Figure \ref{fig:hvm_mcf_cnfw} strongly suggests that our method accomplishes this mitigation through the exclusion of halos from the catalog \bdr{...by making them subhalos}. However, there is no mass-independent definition to this halo redefinition: a definition of $\Delta=20$ that mitigates assembly bias at low masses ($M_{200} > 1.83\times10^{11}\hMsun$) in fact induces assembly bias of opposite sign (e.g., clustered halos have preferentially smaller concentrations) at high masses ($M_{200} > 4.06\times10^{12}\hMsun$).
     \item The auxiliary property of halo shape requires an extreme halo definition to remove assembly bias; we consider halo redefinition infeasible for mitigating shape-driven assembly bias. This may be suggestive of environmental effects impacting halo shape measurements on scales significantly larger than $\Rvir$.
-    \item The auxiliary property of halo spin demonstrates increased assembly bias with halo mass. Assembly bias is mitigated for $\Delta \sim 340$ for the lowest masses ($M_{200} > 7\times10^{10}\hMsun$), while larger values of $\Delta$ must be explored for the highest masses. The fact that spin-driven assembly bias increases as we increase $\Rdel$ is suggestive of the impact of large scale structure upon this measurement.
-    \item The auxiliary property of subhalo abundance is similar in behavior to halo spin. Assembly bias is mitigated for $\Delta \sim 340$ for the lowest masses ($M_{200} > 7\times10^{10}\hMsun$) and increases as one moves to larger halo mass. Increasing $\Rdel$ only results in an increase in subhalo abundance driven assembly bias. We propose a toy model by which halos in high density environments preferentially would accumulate more substructure due to an increase in halo size, which may drive this result.
+    \item The auxiliary property of halo spin demonstrates increased assembly bias with halo mass. Assembly bias is mitigated for $\Delta \sim 340$ for the lowest masses ($M_{200} > 1.83\times10^{11}\hMsun$), while larger values of $\Delta$ must be explored for the highest masses. The fact that spin-driven assembly bias increases as we increase $\Rdel$ is suggestive of the impact of large scale structure upon this measurement.
     \item We note that though similarities exist between our methodology and recent studies \citep{more_etal15} focusing on implementation of a ``splashback radius'', there is no clear connection between our best fit values of $\Delta$ and the splashback radius at this time. This remains an exploration for future work.
     \item We show that the halo bias ratio for the $80^{\mathrm{th}}$ percentile cut on concentration is dependent on both halo definition and halo mass. Comparison between different works in the literature may be difficult without taking into account the impact of this.
 \end{itemize}
