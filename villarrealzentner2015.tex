@@ -8,7 +8,6 @@
 \usepackage[T1]{fontenc}
 \usepackage{newtxtext,newtxmath}
 \usepackage[figure,figure*]{hypcap}
-
 \include{villarrealzentner_macros}
 
 % attempt stolen from Google to try to fix figure pileup.
@@ -47,6 +46,9 @@ $^{4}$Center for Astrophysics, Harvard University, Cambridge, MA}
 
 \pubyear{2017}
 
+%% to allow it to compile until we find where the link problem is
+%% and fix with clever wording.
+\hypersetup{draft}
 \begin{document}
 \label{firstpage}
 \pagerange{\pageref{firstpage}--\pageref{lastpage}} 
@@ -57,16 +59,16 @@ $^{4}$Center for Astrophysics, Harvard University, Cambridge, MA}
 %% Abstract goes here
 
 
-Recent work has shown the importance of environment to the properties of dark matter halos. This brings conflict
-to standard implementations of the halo model and excursion set theory which assume that the properties of a
-population within the halo is determined by the mass of the halo alone. We seek to find a definition of the size
-of a halo that allows us to minimize the impact of assembly bias on halo model calculations. We analyse the
-dependence on environment of our properties using the method of marked correlation functions for several
-different halo definitions, utilizing the \citet{diemer_kravtsov15} simulations. We find that the strength of assembly
-bias has a strong dependence on the measured halo mass, even when using marks normalized around fixed mass. We note that differences in halo definition, sample selection, and properties of interest can greatly impact
+It has recently been demonstrated that the properties of dark matter halos depend on their environment, questioning standard
+implementations of the halo model and excursion set theory with the ansatz that properties within the halo are determined by halo mass alone. We carry out a careful examination of how the
+definition of the halo boundary impacts the measurement of assembly bias in simulation, with the intent of determining if there is some halo definition to mitigate this complication on
+halo model approaches. We analyse the dependence on environment of our properties using the method of marked correlation functions for several different halo definitions, utilizing the
+\citet{diemer_kravtsov15} simulations. We find that the strength of assembly bias has a strong dependence on the measured halo mass, even when using marks normalized around fixed mass. We note that differences in halo definition, sample selection, and
+properties of interest can greatly impact
 the measurement of assembly bias, potentially explaining conflicting results in the literature. These results suggest that
 halo assembly bias appears increasingly difficult to resolve using the definitions common in current halo finder techniques,
 possibly pointing toward the necessity of methods such as utilizing the halo splashback radius.
+\arz{I will rewrite the abstract last.}
 \bdr{Solid abstract. Some phrases sound a little awkward, like ``brings conflict'' and ``dependence on environment of our properties''. I'd reduce the explanatory intro part to one sentence if possible, e.g. ``It has recently been demonstrated that the properties of dark matter halos depend on their environment, questioning the theoretical foundation of the halo model which assumes that mass alone determines a halo's properties.'' or something like that. In the second sentence, I would try to say as precisely as possible what this paper achieves. You are already doing it, but I think it could be even sharper: are you really mimizing the impact on halo model calculations?}
 
 \end{abstract}
@@ -87,56 +89,29 @@ cosmology: dark matter -- cosmology: large-scale structure of Universe -- galaxi
 \label{section:introduction}
 %-----------------------
 
-\bdr{More about the abstract: I'd add a few concrete numbers. For example, that lower overdensity (i.e. larger halo radii) reduce the assembly bias by X factor, say for concentration.} In the concordance cosmology, galaxies and clusters form within dark matter halos \citep{white_rees78,blumenthal_etal84, mo_etal10}. Numerical simulations have provided a solid understanding of the abundances, properties, and 
-	clustering of dark matter halos in the standard cosmological model. Accordingly, it is possible to compute the 
-clustering statistics of galaxies given a model for the relationship between galaxies and dark matter halos. 
+\bdr{More about the abstract: I'd add a few concrete numbers. For example, that lower overdensity (i.e. larger halo radii) reduce the assembly bias by X factor, say for concentration.} \arz{I will rewrite abstract as a final step.}
+
+In the concordance cosmology, galaxies and clusters form within dark matter halos \citep{white_rees78,blumenthal_etal84, mo_etal10}. Numerical simulations have provided a solid understanding of the abundances, properties, and clustering of dark matter halos. Accordingly, it is possible to compute the clustering statistics of galaxies given a model for the relationship between galaxies and dark matter halos. 
 Such halo occupation models have been used to interpret large-scale structure measurements and 
 constrain models of galaxy evolution \citep{yang_etal03,tinker_etal05,zehavi_etal05b,porciani_norberg06,vdbosch_etal07,zheng_etal07,conroy_wechsler09,
 yang_etal09b,zehavi_etal11,guo_etal11a,wake_etal11,yang_etal11a,yang_etal12,leauthaud_etal12,
 rodriguezpuebla_etal12, behroozi_etal13b, moster_etal13, tinker_etal13,cacciato_etal13,more_etal13,guo_etal14,
 zu_mandelbaum15b}.
-To date, the vast majority of halo occupation models rely on a key assumption, namely that 
-the probability of a halo to host a number of galaxies of a particular type 
-depends only upon halo mass. It is now well known that the clustering strength of halos depends upon 
-properties such as halo formation time \citep{gao_etal05,harker_etal06, wechsler_etal06,gao_white07,croton_etal07,zentner07,dalal_etal08, li_etal08, lacerna_padilla11}, 
-concentration \citep{wechsler_etal06,faltenbacher_white10, mao_etal15}, and other halo properties \citep{bett_etal07, hahn_etal07a, hahn_etal07b, faltenbacher_white10, vandaalen_etal12, fisher_faltenbacher16, sunayama_etal16, chavesmontero_etal16}. 
-If galaxy properties depend upon these halo properties, a phenomenon known as galaxy {\em assembly bias}, 
-then standard halo occupation modeling will fail \citep{zentner_etal14} 
-and more complex models \citep{gilmarin_etal11, hearin_etal16} are necessary.
+To date, the vast majority of halo occupation models rely on a key assumption, namely that the probability of a halo to host a number of galaxies of a particular type depends only upon halo mass. It is now well known that the clustering strength of halos depends upon properties such as halo formation time \citep{gao_etal05,harker_etal06, wechsler_etal06,gao_white07,croton_etal07,zentner07,dalal_etal08, li_etal08, lacerna_padilla11}, concentration \citep{wechsler_etal06,faltenbacher_white10, mao_etal15}, and other halo properties \citep{bett_etal07, hahn_etal07a, hahn_etal07b, faltenbacher_white10, vandaalen_etal12, fisher_faltenbacher16, sunayama_etal16, chavesmontero_etal16}. If galaxy properties depend upon these halo properties, a phenomenon known as galaxy {\em assembly bias}, then standard halo occupation modeling will fail \citep{zentner_etal14} and more complex models \citep{gilmarin_etal11, hearin_etal16} are necessary.
 
 
-In this work, we explore the possibility of simplifying halo occupation modelling, at least for some 
-applications, by altering the definition of halo boundary. \bdr{This is purely a matter of taste, but I would say ``definition of halo boundary''. We're not really changing the definition of what a halo is...} Though motivated broadly by spherical collapse \citep{gunn_gott72, fillmore_goldreich84, ryden_gunn87, lacey_cole93, eke_etal96, mota_vandebruck04, pace_etal10}, specific halo definitions have become a matter of convention that vary considerably in the literature. Many authors define halos using a friends-of-friend (FoF) algorithm applied to the particle distribution \citep{davis_etal85, knebe_etal11}. More often, authors define halos by spherical overdensity (SO) regions within which the mean density exceeds a particular threshold \citep{knebe_etal11}. \bdr{Need older citations, e.g. Cole and Lacey 96. Otherwise it looks like SO was invented in 2011 ;)} The threshold used varies significantly. With respect to the mean density of the universe, commonly used thresholds are 178, 180, 200, and $\sim$340 times the mean background density, motivated by spherical collapse models for different cosmologies	.\bdr{Citations, e.g. Gunn and Gott, Lacey and Cole 93} Many authors define halos by an overdensity of 200 with respect to the critical density of the universe, motivated as an approximation to the virial radius at high redshift. This corresponds to $\Delta \approx 625$ with respect to the mean density in a concordance cosmological model. Significantly higher values of the overdensity parameter are often used in studies of X-ray emission from cluster-sized halos, where observations only cover very small radii and correspondingly large overdensities.\bdr{It would be good to say a little about why people are using these definitions. Virial is ``theoretically motivated'', 200c is an approximation to virial at high z, and cluster observations cover only very small radii and thus large overdensities.}
+In this work, we explore the possibility of simplifying halo occupation modelling, at least for some applications, by altering the definition of the boundary of a halo. Though motivated broadly by spherical collapse \citep{gunn_gott72, fillmore_goldreich84, ryden_gunn87, lacey_cole93, eke_etal96, mota_vandebruck04, pace_etal10}, specific halo definitions have become a matter of convention that vary considerably in the literature. Many authors define halos using a friends-of-friend (FoF) algorithm applied to the particle distribution \citep[e.g., ][]{davis_etal85}. More often, authors define halos by spherical overdensity (SO) regions within which the mean density exceeds a particular threshold \citep[e.g., ][]{lacey_cole93}. These halo definitions are reviewed in \citet[][and references therein]{knebe_etal11}. The threshold used varies significantly. With respect to the mean density of the universe, commonly used thresholds are 178, 180, 200, and $\sim$340 times the mean background density, motivated by spherical collapse models for different cosmologies. Many authors define halos by an overdensity of 200 with respect to the critical density of the universe, motivated as an approximation to the virial radius at high redshift. This corresponds to $\Delta \approx 625$ with respect to the mean density in a concordance cosmological model. Significantly higher values of the overdensity parameter are often used in studies of X-ray emission from cluster-sized halos, where observations only cover large overdensities and correspondingly small radii.
 
+We study the strength of various halo assembly bias signals as a function of halo definition. To be specific, we restrict ourselves to halos that are defined by spherical regions and we study the strength of halo assembly bias as a function of the density threshold used to demarcate these halos. This is motivated, in large part, by recent literature suggesting that a large portion of assembly bias stems from halos in the relatively dense environments surrounding larger halos \citep{wang_etal07,warnick_etal08,more_etal15,sunayama_etal16}. The picture is that interactions with a relatively small number of large halos influence the evolution and structural properties of nearby, smaller halos. Indeed, the environmental impacts of halos on one another has been shown to extend beyond well beyond traditional 
+virial radii\citep{wetzel_etal14,diemer_kravtsov14,behroozi_etal14,adhikari_etal14,wetzel_nagai15,more_etal15}. Halos in dense environments (e.g., near other large halos) exhibit anomalous properties (e.g., formation times, concentrations, shapes) compared to field halos in part because of their interactions with their larger, neighbours. It seems interesting to ask whether or not a halo definition in which large halos contain many of these smaller, anomalous neighbour halos can mitigate halo assembly bias. In this way, the halo boundary may serve as a more meaningful boundary around regions within which highly nonlinear effects are important. 
+\bdr{Sentence is too long, hard to read. It'd make for perfect German though! ;)} 
+\arz{Is that a challenge? I think English can provide very long sentences as well. Ausserdem, habe ich gerade mein neues deutsches Lieblingswort gelernt! Weltraumbahnhof! Es ist etwas besser als "Umweltverschmutzung."} Assessing this strategy is the aim of our paper. 
 
-Our work is an attempt to exploit halo definition to work for the 
-convenience of the practitioner.\bdr{Phrasing} We study the strength of various halo assembly bias signals as a function of halo definition. This is motivated, in large part, by recent literature that suggests 
-that a large portion of assembly bias stems from halos in the relatively dense environments surrounding larger halos \citep{wang_etal07, warnick_etal08, more_etal15,sunayama_etal16}. Moreover, 
-the environmental impacts of halos on one another has been shown to extend beyond well beyond traditional virial radii. 
-\citep{wetzel_etal14, diemer_kravtsov14, adhikari_etal14, wetzel_nagai15, more_etal15} \bdr{I'd add Behroozi et al 2014. Not to be pedantic, but I changed the papers to the order in which they came out ;)} Halos in dense environments (e.g., near other large halos) exhibit anomalous properties 
-(e.g., formation times, concentrations, etc.) compared to field halos 
-in part because of their interactions with their larger, neighbour halos. It seems interesting to ask 
-whether or not a halo definition in which large halos contain many of these smaller, anomalous neighbour halos, thus 
-using the halo concept to draw a more meaningful boundary around regions within which highly nonlinear effects are important, can mitigate halo assembly bias.\bdr{Sentence is too long, hard to read. It'd make for perfect German though! ;)} Assessing this strategy is the aim of our paper. 
-
-
-We restrict ourselves to halos that are defined by spherical regions and we study the strength of halo assembly bias as a function of the density threshold used to demarcate these halos. We find that for halo properties that measure the degree of central mass concentration, there exist halo definitions in which assembly bias may be 
-greatly mitigated. However, the definitions which mitigate concentration-based assembly bias are mass dependent; high-mass, cluster-sized halos appear to have little assembly bias 
-for a traditional overdensity definition of $\Delta \approx 200$, 
-while low-mass halos ($\sim 10^{11}\, h^{-1}\mathrm{M}_{\odot}$) require 
-$\Delta \approx 20$. Any mitigation strategy must be complex and mass dependent, as might be expected given the mass dependence of the assembly bias effect \citep{wechsler_etal06}. 
-We find that we cannot mitigate the assembly bias of halos selected by properties other than concentration, such as halo spin or halo shape. These results suggest that any mitigation scheme will likely be quite complex if it all practical. \arz{I plan to add something here after I complete my run through the paper.}
-
+We conclude that alternative halo definitions do {\em not} generally mitigate halo assembly bias for two reasons. First, no single halo definition mitigates all forms of halo assembly bias. For example, a halo definition that mitigates concentration-based halo clustering does not simultaneously mitigate angular momentum-dependent halo clustering. Second, any halo definition that mitigates any form  of assembly bias must be strongly mass dependence, adding a great deal of complexity to halo finding. The details of our work have other interesting implications. Perhaps most importantly, 
+our work emphasizes the fact that halo assembly bias effects are strongly dependent upon halo definitions. Therefore, one must exercise care in comparing the work of different authors who may have used different halo definitions.
  
-In \S~\ref{section:data} of this paper, we discuss the cosmological simulations and halo finders
-utilized in the analysis. In \S~\ref{section:haloprops}, we discuss 
-and define the halo properties used as our tracers of assembly bias. In \S~\ref{section:methodology}, 
-we discuss the statistics that we use to measure environmental effects after
-halo redefinition. We also discuss our method of removing known mass scaling from halo properties.
-In \S~\ref{section:results}, we present our findings and consider how the change
-of halo definition impacts measures of assembly bias. In
-\S~\ref{section:conclusions}, we discuss the significance of our results in the context of halo modelling.
- We also consider the nature of assembly bias as a function of halo definition.
+In \S~\ref{section:data} of this paper, we discuss the cosmological simulations and halo finders utilized in the analysis. In \S~\ref{section:haloprops}, we discuss 
+and define the halo properties used as our tracers of assembly bias. In \S~\ref{section:methodology}, we discuss the statistics that we use to measure environmental effects after halo redefinition. We also discuss our method of removing known mass scaling from halo properties. In \S~\ref{section:results}, we present our findings and consider how the change of halo definition impacts measures of assembly bias. In \S~\ref{section:conclusions}, we discuss the significance of our results in the context of halo modelling. We also consider the nature of assembly bias as a function of halo definition.
 
 
 
@@ -158,7 +133,6 @@ resolution effects inherent in halo finding (due to the varying resolutions of t
 mass dependence of halo clustering over a wider range of halo masses than would be possible with only one
 simulation from the set. For example, \simA, with its higher resolution, contains the least massive resolved
 halos, while \simC~has the most robust statistics for the most massive halos as a result of the larger simulation volume.
-
 
 To identify halos, we use the {\tt ROCKSTAR} halo finder, which works on the phase space algorithm described in
 \citet*{behroozi_etal13a}. In short, {\tt ROCKSTAR} determines initial groupings of particles using a Friends-of-Friends algorithm in phase space before applying the spherical overdensity halo definition in order to calculate halo properties of interest. Unbound particles are removed prior to the calculation of halo mass and other halo properties. Our method of halo redefinition is to change how halo size is calculated as part of the {\tt ROCKSTAR} pipeline. A halo is given a radius, $\Rdel$, determined by
@@ -768,10 +742,10 @@ Both the mass dependence of concentration-dependent halo clustering and its depd
 	\includegraphics[width=\textwidth]{biasplot.pdf}
 	\caption{
     \arz{Can you put a $\Delta=20$ line on this plot? Can you make this plot with a square aspect ratio?}\asv{I'll see about getting square aspect ratio in the next major pass. $\Delta = 20$ would take more time as I would need to do some L0500 reruns and we are currently grinding out $\Delta = 625$.}
-	The bias of the 20\% highest concentration sample to the full sample, plotted against halo mass measured at the halo radius. The halo mass binning is defined in full detail in the text. Halo definitions descend from the largest definition to lowest definition, from dark to light in color. The dark blue (light blue) line uses a halo definition drawn from $\Delta = 340$ ($\Delta = 50$). The solid (dot-dashed, dashsed) lines use host halos from the \simA (\simB,\simC) catalogs. The
+	Each panel contains the relative bias of the 20\% highest marked sample to the full sample, plotted against halo mass measured at the halo radius. The marks of interest are labelled above each plot: clockwise from the top-left these are NFW concentration, velocity ratio concentration, spin parameter, and halo shape. The halo mass binning is defined in full detail in the text. Halo definitions descend from the largest definition to lowest definition, from dark to light in color. The dark blue (light blue) line uses a halo definition drawn from $\Delta = 6250$ ($\Delta = 50$). The solid (dot-dashed, dashed) lines use host halos from the \simA (\simB,\simC) catalogs. The
 	error bars encompass 68\% of measurements using two hundred subsamples
 	of the mark of the same size as the biased sample. The solid black line
-	shows where there is no detected assembly bias driven by NFW-defined halo concentration.}
+	shows where there is no detected assembly bias driven by mark of interest.}
 	\label{fig:biascompare}
 \end{figure*}
 %--------------------------------------------
@@ -794,7 +768,7 @@ The results, while not perfect in mitigating assembly bias, are encouraging. The
 
 There are several clear paths of follow-up to gain a better understanding of how halo definition impacts both the halo model and observables. While we cover a large range of halo masses in this study, we may be able to extend the explored mass range through the use of larger simulation volumes and simulations with higher mass resolution. Further, we do not explore how this relationship may evolve with redshift or cosmology. We hope to extend our framework to exploring these possibilities in future work, as the implications for deviations from the $z=0$ relation for assembly bias is important in both observational and simulation work.
 
-\section*{Acknowledgments}
+\section*{Acknowledgements}
 
 We are grateful to many people. Our calculations are carried out utilizing the
 {\tt numpy} \citep{numpy}, {\tt astropy} \citep{astropy}, {\tt matplotlib} 
@@ -802,30 +776,6 @@ We are grateful to many people. Our calculations are carried out utilizing the
 
 \bibliographystyle{mnras}
 \bibliography{master}
-
-\section*{Appendix}
-\label{section:appendix_massres}
-\asv{This appendix is probably entirely extraneous at this point. I am not sure if it should be removed or if we want to reword it with a different set of plots. Originally, this showed the higher mass cuts extrapolated down to the lower size simulation boxes, which resulted in the same impact with more noise. I could regenerate those plots (they were in a pre-{\tt halotools} version of the code, but it shouldn't take too long with the new ranked version to remake them), or we could leave the figures out. I am inclined to say the paper is crowded with enough figures as it is though.}
-One natural question that might arise in the analysis of this work is the nature of the resulting assembly bias
-trends. Our focus in the main sections of this paper is on the nature of the assembly bias changing as a function
-of the mass cut chosen. Our conclusions include the fact that there is a strong mass dependence on halo assembly
-bias that must be accounted for separately depending on the halos of interest in a study. However, while the
-existence of this trend is clear within our analysis, the determination that this is solely due to the masses of
-the halos included in our calculation is less clear upon closer inspection. One possibility that might be
-particularly concerning is the potential that the different simulations have created halos that have
-fundamentally different clustering and this is leading to the result that we are interpreting as a mass
-dependence on assembly bias. Thankfully, though our statistics become less meaningful to carry out this
-calculation, we can carry out a comparison using the same mass cut across two of our simulations, knowing that
-these will only contain well resolved halos.
-
-While not addressed directly, Figure~\ref{fig:hvl_cfcompare} through Figure~\ref{fig:hvl_mcf_nsat} \yao{where are these figures?}\asv{These figures evolved into the ones further back when we decided to focus on the mass resolution aspects rather than a single common solution.} contain a
-demonstration of the result that we are seeking in the left column of panels. The lower left panels show various
-marks of interest for \simB \ using the ``mid mass'' cut on the data set. In comparison, the upper left panel
-contains the same marks of interest for the \simA \ using the same mass cut. In the latter, there are fewer halos
-in this mass cut range, as a result of the smaller simulation box size. However, we note that despite the
-additional noise in the data set, the behavior of the assembly bias measurement is nearly identical within
-tolerances accounting for differences between simulations and noise. This motivates our conclusion that the
-driver behind the behavior is the mass cut of the data sets rather than the resolution of the simulation.
 
 \label{lastpage}
 
