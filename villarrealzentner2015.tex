@@ -272,15 +272,15 @@ Minimum mass thresholds for each of our analyses.
 In the columns below each value of $\Delta$, we show the minimum 
 host halo masses considered in units of $h^{-1}\mathrm{M}_{\odot}$ and the associated minimum number of particles.}
 \vspace*{8pt}
-\begin{tabular}{ c c c c c c c }
+\begin{tabular}{c c c c c c c c }
 \hline
 \hline
-Cutoff Name &  $\Delta=340$ & $\Delta=200$ & $\Delta=100$ & $\Delta=75$ & $\Delta=50$ & $\Delta=20$ \\
+Cutoff Name & $\Delta=625$ & $\Delta=340$ & $\Delta=200$ & $\Delta=100$ & $\Delta=75$ & $\Delta=50$ & $\Delta=20$ \\
 \hline
 \vspace*{2pt}
-{low mass} & $1.67 \times 10^{11} |~ 1043$ & $1.83 \times 10^{11} |~ 1143$ & $1.94 \times 10^{11} |~ 1212$ & $1.97 \times 10^{11} |~ 1231$ & $2 \times 10^{11} |~ 1250$ & $2.03 \times 10^{11} |~ 1268$  \\ \vspace*{4pt}
-{mid mass} & $6.49 \times 10^{11} |~ 499$ & $7.1 \times 10^{11} |~ 546$ & $7.55 \times 10^{11} |~ 580$ & $7.66 \times 10^{11} |~ 589$ & $7.77 \times 10^{11} |~ 597$ & {N/A} \\ \vspace*{4pt}
-{high mass} & $3.71 \times 10^{12} |~ 371$ & $4.06 \times 10^{12} |~ 406$ & $4.31 \times 10^{12} |~ 431$ & $4.38 \times 10^{12} |~ 438$ & $4.44 \times 10^{12} |~ 444$ & {N/A} \\
+{\simA} & $1.34 \times 10^{11} |~ 837$ & $1.67 \times 10^{11} |~ 1043$ & $1.83 \times 10^{11} |~ 1143$ & $1.94 \times 10^{11} |~ 1212$ & $1.97 \times 10^{11} |~ 1231$ & $2 \times 10^{11} |~ 1250$ & $2.03 \times 10^{11} |~ 1268$  \\ \vspace*{4pt}
+{\simB} & $5.23 \times 10^{11} |~ 402$ & $6.49 \times 10^{11} |~ 499$ & $7.1 \times 10^{11} |~ 546$ & $7.55 \times 10^{11} |~ 580$ & $7.66 \times 10^{11} |~ 589$ & $7.77 \times 10^{11} |~ 597$ & {N/A} \\ \vspace*{4pt}
+{\simC} & $2.99 \times 10^{12}|~ 299 $ & $3.71 \times 10^{12} |~ 371$ & $4.06 \times 10^{12} |~ 406$ & $4.31 \times 10^{12} |~ 431$ & $4.38 \times 10^{12} |~ 438$ & $4.44 \times 10^{12} |~ 444$ & {N/A} \\
 \hline \\
 \end{tabular}
 \label{table:thresholds}
@@ -350,7 +350,7 @@ strongly mass dependent for any fixed halo definition, a result that also agrees
 At relatively low mass (the low-mass panel, $M_{200} > 1.83 \times 10^{11} \hMsun$), 
 high-concentration halos are considerably more strongly clustered than low-concentration halos, using the $\Delta = 200$ halo definition. At somewhat higher halo masses (e.g., the middle panel, $M_{200} > 7.1 \times 10^{11} \hMsun$), this difference is markedly reduced. Finally, for the highest-mass halos that we have the capability of studying (the right panel of Fig.~\ref{fig:cc_cfcompare}, $M_{200} > 4.06 \times 10^{12} \hMsun$), the halo assembly bias effect is weaker and of opposite sign; low-concentration halos are more strongly clustered than high-concentration halos.
 
-Another interesting effect is noticeable in Fig.~\ref{fig:cc_cfcompare}. Consider the middle panel of Fig.~\ref{fig:cc_cfcompare}, corresponding to \simB and the mid-mass threshold. In this panel, the difference between the large-scale clustering of high- and low-concentration halos is dramatically reduced for a halo definition with $\Delta \approx 40$ as compared to a more traditional halo definition, such as $\Delta=200$. 
+Another interesting effect is noticeable in Fig.~\ref{fig:cc_cfcompare}. Consider the middle panel of Fig.~\ref{fig:cc_cfcompare}, corresponding to \simB~ and the mid-mass threshold. In this panel, the difference between the large-scale clustering of high- and low-concentration halos is dramatically reduced for a halo definition with $\Delta \approx 40$ as compared to a more traditional halo definition, such as $\Delta=200$. 
 Further decreasing $\Delta$ leads to concentration-dependent clustering of opposite sense. Both the strength and the sense of halo assembly bias depend upon halo definition. This is a point may seem sensible in retrospect, but has not been addressed explicitly anywhere in the literature, despite its importance.
 
 Comparing CFs across all three panels of Fig.~\ref{fig:cc_cfcompare}, it is clear that any specific conclusions about halo definitions that mitigate auxiliary property dependent clustering are mass dependent. For low-mass halos (left panel), very low values of $\Delta \approx 20$ (and correspondingly large halo radii, as $R_{\Delta}$ varies roughly in proportion to $\Delta^{-1/3}$) are necessary in order to mitigate the concentration dependence of halo clustering. Yet, for higher-mass halos (right panel), conventional values of $\Delta \sim 200-340$ yield little concentration-dependent clustering. In this case, decreasing $\Delta$ (increasing $R_{\Delta}$) results in significantly {\em increased} concentration dependent halo clustering. The reasons for 
@@ -363,7 +363,7 @@ Notice that in all panels of Fig.~\ref{fig:cc_cfcompare}, the effect of concentr
 	\centering
 	\includegraphics[width=\textwidth]{all_cfcompare_cnfw.pdf}
 	\caption{
-Concentration-dependent correlation functions. In each panel, the solid lines plot the difference between the correlation function for the top 20\% and the bottom 20\% of halos by NFW concentration, normalized by the correlation function of the entire halo sample. The lines correspond to different values of $\Delta$, with dark blue (light blue) corresponding to $\Delta = 625$ ($\Delta = 50$). \arz{Is this still true? Check this. The legend text $\Delta=340$ appears twice!} The red dashed line in each panel  corresponds to an overdensity that greatly mitigates concentration-dependent halo clustering selected from the various values of halo overdensity that we explored. We will refer to these values throughout the text. The left (middle/right) panel shows the results for \simA \ (\simB /\simC) utilizing the low-mass (mid-mass/high-mass) halo threshold samples. Error bars correspond to the $2\sigma$ error on the measurement.\bdr{The legends are a little confusing. When I look at the main legend in the bottom panel, I thought that the red dashed line was Delta = 200 in all panels, because the little legends in those panels are very small. I'd separate the legends also in the bottom panels and make the red-line legend much bigger to highlight that those lines represet different Deltas.}\arz{I agree with Benedikt. The red legend should always be physically separated from the others and in a larger font to avoid any possibility of confusion.}
+Concentration-dependent correlation functions. In each panel, the solid lines plot the difference between the correlation function for the top 20\% and the bottom 20\% of halos by NFW concentration, normalized by the correlation function of the entire halo sample. The lines correspond to different values of $\Delta$, with dark blue (light blue) corresponding to $\Delta = 625$ ($\Delta = 50$). The red dashed line in each panel  corresponds to an overdensity that greatly mitigates concentration-dependent halo clustering selected from the various values of halo overdensity that we explored. We will refer to these values throughout the text. The left (middle/right) panel shows the results for \simA \ (\simB /\simC) utilizing the low-mass (mid-mass/high-mass) halo threshold samples. The shaded bands in each panel represent the level of statistical fluctuations due to finite sampling. In particular, the shaded bands contain $98\%$ of 200 CF ratios computed from randomly subsampling halos in the $\Delta=200$ sample. In principle, each sample with a distinct $\Delta$ should have a distinct error band, but in practice they are all very similar to that of the $\Delta=200$ sample.
 }
 \label{fig:cc_cfcompare}
 \end{figure*}
@@ -383,7 +383,7 @@ studying MCFs. Consequently, we now move on to a more comprehensive discussion o
 	\centering
 	\includegraphics[width=\textwidth]{all_mcf_cNFW.pdf}
 	\caption{
-The marked correlation function for the concentration defined according to the NFW profile, $c_{\rm NFW}$. The solid lines plot the marked correlation function using normalized ranks of NFW concentration as the mark. In each plot the lines correspond to different values of $\Delta$, with dark blue (light blue) corresponding to $\Delta = 625$ ($\Delta = 50$). The red dashed lines correspond to the overdensities that greatly mitigate assembly bias for concentration (the same values of $\Delta$ as depicted by the red dashed lines in Fig.~\ref{fig:cc_cf_compare}). The top (middle/bottom) panel shows the results for the\simA \ (\simB /\simC) data set utilizing the low mass (mid mass/high mass) cutoffs. The shaded bands in each panel represent the level of statistical fluctuations due to finite sampling. In particular, the shaded bands contain $98\%$ of 400 MCFs computed from shuffling the halo marks among all of the halos in the $\Delta=200$ sample. In principle, each sample with a distinct $\Delta$ should have a distinct error band, but in practice they are all very similar to that of the $\Delta=200$ sample.
+The marked correlation function for the concentration defined according to the NFW profile, $c_{\rm NFW}$. The solid lines plot the marked correlation function using normalized ranks of NFW concentration as the mark. In each plot the lines correspond to different values of $\Delta$, with dark blue (light blue) corresponding to $\Delta = 625$ ($\Delta = 50$). The red dashed lines correspond to the overdensities that greatly mitigate assembly bias for concentration (the same values of $\Delta$ as depicted by the red dashed lines in Fig.~\ref{fig:cc_cfcompare}). The top (middle/bottom) panel shows the results for the\simA \ (\simB /\simC) data set utilizing the low mass (mid mass/high mass) cutoffs. The shaded bands in each panel represent the level of statistical fluctuations due to finite sampling. In particular, the shaded bands contain $98\%$ of 200 MCFs computed from shuffling the halo marks among all of the halos in the $\Delta=200$ sample. In principle, each sample with a distinct $\Delta$ should have a distinct error band, but in practice they are all very similar to that of the $\Delta=200$ sample.
 }
 	\label{fig:cc_mcf_cnfw}
 \end{figure*}
@@ -429,8 +429,6 @@ The same as Fig.~\ref{fig:cc_mcf_cnfw} for a halo shape MCF.
 
 
 Shape-dependent halo clustering also behaves differently from concentration-dependent halo clustering in that it persists even if halos are defined relative to an extremely low overdensity parameter, such as $\Delta=20$. In no case in Fig.~\ref{fig:cc_mcf_s} is shape-dependent clustering consistent with zero. No reasonable value of $\Delta$ seems to be capable of removing the enhanced clustering at the scales that we study, though the magnitude of shape-dependent clustering can be reduced by decreasing $\Delta$ (and increasing halo radii). In particular, the most effective values of $\Delta$ for removing concentration-dependent clustering, the red-dashed lines in Figure~\ref{fig:cc_mcf_s}, do not correspond with removing assembly bias from shape. 
-
-\arz{I removed the speculation about shape-dependent clustering. It seems like it no longer fits with the updated shape results. You can add some other discussion if you think it is necessary.}
 
 %---------------- spin MCF
 \begin{figure*}
