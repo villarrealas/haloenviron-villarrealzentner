@@ -193,7 +193,7 @@ The relationship between halo properties and halo mass for each of our simulatio
 \centering
 \includegraphics[width=\columnwidth]{cvvscnfw_relation.pdf}
 \caption{
-The relationship between the two different measures of concentration, using haloes in \simB~ defined with $\Delta=200$m. The colour scale, shown at the right, encodes the number of haloes within a single two-dimensional bin in the $c_{\mathrm{NFW}}-c_{\mathrm{V}}$ space. The dark (light) blue regions on the plot show where the most (fewest) haloes exist with those values of the two concentration parameters. The white regions indicate where no haloes hold these values. The scatter on this relationship ranges from 5\% for intermediate concentration values, to a high of 13\% at high masses. The red line shows the prediction from  assuming an NFW profile assuming a halo with ${\rm M}_{200{\rm m}} = 7 \times 10^{11} \hMsun$.}
+The relationship between the two different measures of concentration, using haloes in \simB~ defined with $\Delta=200$m. The colour scale, shown at the right, encodes the number of haloes within a single two-dimensional bin in the $c_{\mathrm{NFW}}-c_{\mathrm{V}}$ space. The dark (light) blue regions on the plot show where the most (fewest) haloes exist with those values of the two concentration parameters. The white regions indicate where no haloes hold these values. The scatter on this relationship ranges from 5\% for intermediate concentration values, to a high of 13\% at high masses. The red line shows the prediction from  assuming an NFW profile.}
 \label{fig:concentrations}
 \end{figure}
 %--------------------------------------------------------------------------------------------------------------------------------
@@ -213,15 +213,6 @@ The halo shapes we used were measured by {\tt ROCKSTAR} using the method in \cit
 M_{ij}=\frac{1}{N}\sum\limits_{k=1}^{N}\frac{x_{i,k} x_{j,k}}{r_{k}^2}\,.
 \eeq
 Here $x_{i,k}$ is the location of particle $k$ along axis $i$ with respect to the halo centre and $r_{k}$ is the distance between the particle and the halo centre. The factor $1/r_{k}^2$, which is not part of the standard definition of the inertia tensor, is included in order to diminish the influence of large subhaloes with large halocentric positions on the measurement of the halo shape. The calculation starts with using all particles within a sphere of the halo radius; the shape of boundary then changes iteratively according to the shape measurement of each iteration. Particles associated with identified substructure are included in the calculation. ,The sorted eigenvalues of the matrix represent the squares of the principal ellipsoid axes, where $a > b > c$. 
-% * <asv13@pitt.edu> 2017-05-04T22:12:33.047Z:
-%
-% ^.
-% * <asv13@pitt.edu> 2017-05-04T22:12:32.151Z:
-%
-% ^.
-% * <asv13@pitt.edu> 2017-05-04T22:12:27.879Z:
-%
-% ^.
 
 The mean relations for halo shapes as a function of halo mass for $\Delta=200$ are shown in the lower left panel of Fig.~\ref{fig:massrelation} along with the mass thresholds used to ensure that our results are not compromised by resolution. The relationship between halo shape and halo mass is such that haloes become somewhat less spherical as halo mass increases in accord with previous studies of halo shapes \citep[e.g.,][]{jing_suto02,allgood_etal06}.
 
